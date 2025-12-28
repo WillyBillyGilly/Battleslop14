@@ -1,5 +1,6 @@
-﻿using Content.Server.Explosion.Components;
+using Content.Server.Explosion.Components;
 using Content.Server.Weapons.Ranged.Systems;
+using Content.Shared.Projectiles;
 using Robust.Server.GameObjects;
 using Robust.Shared.Containers;
 using Robust.Shared.Map;
@@ -7,32 +8,31 @@ using Robust.Shared.Random;
 
 namespace Content.Server.Explosion.EntitySystems;
 
-public sealed class ProjectileGrenadeSystem : EntitySystem
+public sealed class ProjectileFragSystem : EntitySystem
 {
     [Dependency] private readonly GunSystem _gun = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly SharedContainerSystem _container = default!;
     [Dependency] private readonly TransformSystem _transformSystem = default!;
 
-
     public override void Initialize()
     {
         base.Initialize();
 
-        SubscribeLocalEvent<ProjectileGrenadeComponent, ComponentInit>(OnFragInit);
-        SubscribeLocalEvent<ProjectileGrenadeComponent, ComponentStartup>(OnFragStartup);
-        SubscribeLocalEvent<ProjectileGrenadeComponent, TriggerEvent>(OnFragTrigger);
+        SubscribeLocalEvent<HeFragProjectileComponent, ComponentInit>(OnFragInit);
+        SubscribeLocalEvent<HeFragProjectileComponent, ComponentStartup>(OnFragStartup);
+        SubscribeLocalEvent<HeFragProjectileComponent, ProjectileHitEvent>(OnFragHit);
     }
 
-    private void OnFragInit(Entity<ProjectileGrenadeComponent> entity, ref ComponentInit args)
+    private void OnFragInit(Entity<HeFragProjectileComponent> entity, ref ComponentInit args)
     {
-        entity.Comp.Container = _container.EnsureContainer<Container>(entity.Owner, "cluster-payload");
+        entity.Comp.Container = _container.EnsureContainer<Container>(entity.Owner, "frag-payload");
     }
 
     /// <summary>
     /// Setting the unspawned count based on capacity so we know how many new entities to spawn
     /// </summary>
-    private void OnFragStartup(Entity<ProjectileGrenadeComponent> entity, ref ComponentStartup args)
+    private void OnFragStartup(Entity<HeFragProjectileComponent> entity, ref ComponentStartup args)
     {
         if (entity.Comp.FillPrototype == null)
             return;
@@ -41,26 +41,25 @@ public sealed class ProjectileGrenadeSystem : EntitySystem
     }
 
     /// <summary>
-    /// Can be triggered either by damage or the use in hand timer
+    /// Triggered when the projectile hits an entity
     /// </summary>
-    private void OnFragTrigger(Entity<ProjectileGrenadeComponent> entity, ref TriggerEvent args)
+    private void OnFragHit(Entity<HeFragProjectileComponent> entity, ref ProjectileHitEvent args)
     {
         FragmentIntoProjectiles(entity.Owner, entity.Comp);
-        args.Handled = true;
     }
 
     /// <summary>
-    /// Spawns projectiles at the coordinates of the grenade upon triggering
+    /// Spawns projectiles at the coordinates of the projectile upon collision
     /// Can customize the angle and velocity the projectiles come out at
     /// </summary>
-    private void FragmentIntoProjectiles(EntityUid uid, ProjectileGrenadeComponent component)
+    private void FragmentIntoProjectiles(EntityUid uid, HeFragProjectileComponent component)
     {
-        var grenadeCoord = _transformSystem.GetMapCoordinates(uid);
+        var projectileCoord = _transformSystem.GetMapCoordinates(uid);
         var shootCount = 0;
         var totalCount = component.Container.ContainedEntities.Count + component.UnspawnedCount;
         var segmentAngle = 360 / totalCount;
 
-        while (TrySpawnContents(grenadeCoord, component, out var contentUid))
+        while (TrySpawnContents(projectileCoord, component, out var contentUid))
         {
             Angle angle;
             if (component.RandomAngle)
@@ -80,7 +79,7 @@ public sealed class ProjectileGrenadeSystem : EntitySystem
             
             // Move fragment to offset position to prevent all fragments from hitting the same entity
             var spawnOffset = direction * 0.5f; // Offset by 0.5 meters in the fragment's direction
-            var spawnCoord = new MapCoordinates(grenadeCoord.Position + spawnOffset, grenadeCoord.MapId);
+            var spawnCoord = new MapCoordinates(projectileCoord.Position + spawnOffset, projectileCoord.MapId);
             _transformSystem.SetMapCoordinates(contentUid, spawnCoord);
             
             _gun.ShootProjectile(contentUid, direction, velocity, uid, null);
@@ -90,7 +89,7 @@ public sealed class ProjectileGrenadeSystem : EntitySystem
     /// <summary>
     /// Spawns one instance of the fill prototype or contained entity at the coordinate indicated
     /// </summary>
-    private bool TrySpawnContents(MapCoordinates spawnCoordinates, ProjectileGrenadeComponent component, out EntityUid contentUid)
+    private bool TrySpawnContents(MapCoordinates spawnCoordinates, HeFragProjectileComponent component, out EntityUid contentUid)
     {
         contentUid = default;
 
@@ -114,3 +113,5 @@ public sealed class ProjectileGrenadeSystem : EntitySystem
         return false;
     }
 }
+
+
