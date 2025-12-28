@@ -66,8 +66,8 @@
   - type: ExplosionResistance
     damageCoefficient: 0.9
  # - type: ExtendDescription
-    descriptionList:
-    - description: "Maximum health: 400. Armour type: Ceramic"
-      fontSize: 12
-      color: "#2a740a"
-      requireDetailRange: true
+#    descriptionList:
+#    - description: "Maximum health: 400. Armour type: Ceramic"
+#      fontSize: 12
+#      color: "#2a740a"
+#      requireDetailRange: true
