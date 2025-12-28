@@ -1,7 +1,4 @@
-# Battlefield14 NATO Projectiles
-# Using placeholder sprites from existing ship projectiles
-
-# 17.76mm TRUMPCARD Railgun Projectile
+# 17.76mm TRUMPCARD Railgun
 - type: entity
   id: Bullet1776mmRailgun
   name: 17.76mm railgun projectile
@@ -126,7 +123,7 @@
     shape: triangle
     radarColor: "#FF6600"
 
-# 25mm M242 Bushmaster AP-T (Armor Piercing Tracer)
+# 25mm M242 Bushmaster AP-T
 - type: entity
   id: Bullet25mmAPT
   name: 25mm AP-T projectile
@@ -162,7 +159,7 @@
     shape: triangle
     radarColor: "#FF6600"
 
-# 25mm M242 Bushmaster HEAT-T (Budget HEAT)
+# 25mm M242 Bushmaster HEAT
 - type: entity
   id: Bullet25mmHEAT
   name: 25mm HEAT-T projectile
@@ -239,7 +236,7 @@
     shape: triangle
     radarColor: "#FF9900"
 
-# 25mm M242 Bushmaster Fragmentation
+# 25mm M242 Bushmaster Frag
 - type: entity
   id: Bullet25mmFrag
   name: 25mm fragmentation projectile
@@ -277,7 +274,7 @@
     shape: triangle
     radarColor: "#FF3300"
 
-# 25mm M242 Bushmaster Fragmentation Fragment
+# 25mm M242 Bushmaster Frag Fragment
 - type: entity
   id: Bullet25mmFragFragment
   name: 25mm fragment
@@ -385,7 +382,7 @@
     shape: triangle
     radarColor: "#FF3300"
 
-# 40x46mm MK20 HEDP (Light HEAT capability)
+# 40x46mm MK20 HEDP
 - type: entity
   id: Bullet40x46mmHEDP
   name: 40x46mm HEDP grenade
@@ -497,7 +494,7 @@
     shape: triangle
     radarColor: "#FF9900"
 
-# 40x46mm MK20 Fragmentation Fragment
+# 40x46mm MK20 Frag Fragment
 - type: entity
   id: Bullet40x46mmFragFragment
   name: 40x46mm fragment
@@ -704,7 +701,7 @@
     shape: triangle
     radarColor: "#FF7700"
 
-# Plasma Gas Projectile Example - 40x46mm Plasma Gas Shell (NATO Specialty - Area Denial)
+# 40x46mm MK20 Plasma Gas
 - type: entity
   id: Bullet40x46mmPlasmaGas
   name: 40x46mm plasma gas shell

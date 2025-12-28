@@ -1,4 +1,3 @@
-# Battlefield14 PACT Ship Weapon Magazines
 
 # K-145 "Kord-N" 12.7mm HMG
 - type: entity
@@ -196,7 +195,7 @@
     damageContainer: Inorganic
     damageModifierSet: Metallic
 
-# Z-230 "Volna-N" 23mm Fragmentation
+# Z-230 "Volna-N" 23mm Frag
 - type: entity
   id: Cartridge23mmFrag
   name: cartridge (23mm fragmentation)
@@ -274,7 +273,7 @@
   - type: StaticPrice
     price: 1
 
-# Z-230 "Volna-N" 23mm Fragmentation Magazine
+# Z-230 "Volna-N" 23mm Frag Magazine
 - type: entity
   id: Magazine23mmFrag
   name: "23mm fragmentation magazine"
@@ -471,7 +470,7 @@
     damageContainer: Inorganic
     damageModifierSet: Metallic
 
-# A-300 "Grom-N" 30mm Fragmentation
+# A-300 "Grom-N" 30mm Frag
 - type: entity
   id: Cartridge30mmFrag
   name: cartridge (30mm fragmentation)
@@ -549,7 +548,7 @@
   - type: StaticPrice
     price: 1
 
-# A-300 "Grom-N" 30mm Fragmentation Magazine
+# A-300 "Grom-N" 30mm Frag Magazine
 - type: entity
   id: Magazine30mmFrag
   name: "30mm fragmentation magazine"
@@ -691,6 +690,8 @@
       - Cartridge83mmMortarSmoke
       - Cartridge83mmMortarHEFrag
       - Cartridge83mmMortarSteelCore
+      - Cartridge83mmMortarCSGas
+      - Cartridge83mmMortarSarin
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
@@ -749,7 +750,7 @@
     damageContainer: Inorganic
     damageModifierSet: Metallic
 
-# V-830 "Vasilek-N" 83mm Mortar - Incendiary Cartridge
+# V-830 "Vasilek-N" 83mm Mortar Incendiary
 - type: entity
   id: Cartridge83mmMortarIncendiary
   name: cartridge (83mm incendiary mortar)
@@ -790,7 +791,7 @@
     damageContainer: Inorganic
     damageModifierSet: Metallic
 
-# V-830 "Vasilek-N" 83mm Mortar - Smoke Cartridge
+# V-830 "Vasilek-N" 83mm Mortar Smoke
 - type: entity
   id: Cartridge83mmMortarSmoke
   name: cartridge (83mm smoke mortar)
@@ -831,7 +832,7 @@
     damageContainer: Inorganic
     damageModifierSet: Metallic
 
-# V-830 "Vasilek-N" 83mm Mortar - HE-Frag Cartridge
+# V-830 "Vasilek-N" 83mm Mortar HE-Frag
 - type: entity
   id: Cartridge83mmMortarHEFrag
   name: cartridge (83mm HE-Frag mortar)
@@ -872,7 +873,7 @@
     damageContainer: Inorganic
     damageModifierSet: Metallic
 
-# V-830 "Vasilek-N" 83mm Mortar - Steel Core Cartridge
+# V-830 "Vasilek-N" 83mm Mortar Steel Core
 - type: entity
   id: Cartridge83mmMortarSteelCore
   name: cartridge (83mm steel core mortar)
@@ -908,6 +909,88 @@
     maxIntensity: 100
     intensitySlope: 3
     totalIntensity: 0.3
+  - type: ExplodeOnTrigger
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+
+# V-830 "Vasilek-N" 83mm Mortar CS Gas
+- type: entity
+  id: Cartridge83mmMortarCSGas
+  name: cartridge (83mm CS gas mortar)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge83mmMortarCSGas
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+    proto: Bullet83mmMortarCSGas
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: grenade
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 250
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 100
+    intensitySlope: 3
+    totalIntensity: 1.2
+  - type: ExplodeOnTrigger
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+
+# V-830 "Vasilek-N" 83mm Mortar Sarin
+- type: entity
+  id: Cartridge83mmMortarSarin
+  name: cartridge (83mm Sarin mortar)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge83mmMortarSarin
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+    proto: Bullet83mmMortarSarin
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: grenade
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 250
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 100
+    intensitySlope: 3
+    totalIntensity: 1.5
   - type: ExplodeOnTrigger
   - type: Damageable
     damageContainer: Inorganic

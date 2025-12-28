@@ -1,6 +1,3 @@
-# Battlefield14 PACT Projectiles
-# Using placeholder sprites from existing ship projectiles
-
 # K-145 "Kord-N" 12.7mm AP
 - type: entity
   id: Bullet127mmKordN
@@ -32,7 +29,7 @@
     shape: triangle
     radarColor: "#FF6600"
 
-# Z-230 "Volna-N" 23mm HE (Light HE - Area Suppression)
+# Z-230 "Volna-N" 23mm HE
 - type: entity
   id: Bullet23mmHE
   name: 23mm HE projectile
@@ -76,7 +73,7 @@
     shape: triangle
     radarColor: "#FF6600"
 
-# Z-230 "Volna-N" 23mm AP-T (Armor Piercing Tracer)
+# Z-230 "Volna-N" 23mm AP-T
 - type: entity
   id: Bullet23mmAPT
   name: 23mm AP-T projectile
@@ -148,7 +145,7 @@
     shape: triangle
     radarColor: "#FF3300"
 
-# Z-230 "Volna-N" 23mm Fragmentation Fragment
+# Z-230 "Volna-N" 23mm Frag Fragment
 - type: entity
   id: Bullet23mmFragFragment
   name: 23mm fragment
@@ -211,7 +208,7 @@
     shape: triangle
     radarColor: "#FF6600"
 
-# A-300 "Grom-N" 30mm AP-T (Armor Piercing Tracer)
+# A-300 "Grom-N" 30mm AP-T
 - type: entity
   id: Bullet30mmAPT
   name: 30mm AP-T projectile
@@ -285,7 +282,7 @@
     shape: triangle
     radarColor: "#FF3300"
 
-# A-300 "Grom-N" 30mm Fragmentation Fragment
+# A-300 "Grom-N" 30mm Frag Fragment
 - type: entity
   id: Bullet30mmFragFragment
   name: 30mm fragment
@@ -316,7 +313,7 @@
     shape: triangle
     radarColor: "#FF9900"
 
-# A-300 "Grom-N" 30mm HEI-T
+# A-300 "Grom-N" 30mm HEI
 - type: entity
   id: Bullet30mmHEI
   name: 30mm HEI-T projectile
@@ -433,7 +430,7 @@
     shape: triangle
     radarColor: "#FF6600"
 
-# V-830 "Vasilek-N" 83mm Mortar - High Explosive (Standard)
+# V-830 "Vasilek-N" 83mm Mortar HE
 - type: entity
   id: Bullet83mmMortar
   name: 83mm mortar projectile (HE)
@@ -471,7 +468,7 @@
     shape: triangle
     radarColor: "#FF6600"
 
-# V-830 "Vasilek-N" 83mm Mortar - Incendiary
+# V-830 "Vasilek-N" 83mm Mortar Incendiary
 - type: entity
   id: Bullet83mmMortarIncendiary
   name: 83mm incendiary mortar projectile
@@ -512,7 +509,7 @@
     shape: triangle
     radarColor: "#FF3300"
 
-# V-830 "Vasilek-N" 83mm Mortar - Smoke (Lexorin-based)
+# V-830 "Vasilek-N" 83mm Mortar Smoke
 - type: entity
   id: Bullet83mmMortarSmoke
   name: 83mm smoke mortar projectile
@@ -551,7 +548,7 @@
     shape: triangle
     radarColor: "#666666"
 
-# V-830 "Vasilek-N" 83mm Mortar - High Explosive Fragmentation
+# V-830 "Vasilek-N" 83mm Mortar HE-Frag
 - type: entity
   id: Bullet83mmMortarHEFrag
   name: 83mm HE-Frag mortar projectile
@@ -627,7 +624,7 @@
     shape: triangle
     radarColor: "#FF9900"
 
-# V-830 "Vasilek-N" 83mm Mortar - Steel Core (Armor Piercing)
+# V-830 "Vasilek-N" 83mm Mortar Steel Core
 - type: entity
   id: Bullet83mmMortarSteelCore
   name: 83mm steel core mortar projectile
@@ -657,6 +654,96 @@
     requireNoGrid: true
     shape: triangle
     radarColor: "#CCCCCC"
+
+# V-830 "Vasilek-N" 83mm Mortar CS Gas
+- type: entity
+  id: Bullet83mmMortarCSGas
+  name: 83mm CS gas mortar projectile
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 80
+        Blunt: 50
+    deleteOnCollide: true
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 100
+    intensitySlope: 3
+    maxIntensity: 15
+    maxTileBreak: 1
+  - type: SmokeOnTrigger
+    duration: 90
+    spreadAmount: 100
+    smokePrototype: Smoke
+    solution:
+      reagents:
+      - ReagentId: CSGas
+        Quantity: 40
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: grenade
+  - type: ShipWeaponProjectile
+  - type: TimedDespawn
+    lifetime: 8
+  - type: PointLight
+    radius: 2.5
+    color: "#ffcc99"
+    energy: 0.4
+  - type: RadarBlip
+    scale: 1.5
+    requireNoGrid: true
+    shape: triangle
+    radarColor: "#FFAA66"
+
+# V-830 "Vasilek-N" 83mm Mortar Sarin
+- type: entity
+  id: Bullet83mmMortarSarin
+  name: 83mm Sarin mortar projectile
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 100
+        Blunt: 60
+    deleteOnCollide: true
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 120
+    intensitySlope: 3
+    maxIntensity: 18
+    maxTileBreak: 1
+  - type: SmokeOnTrigger
+    duration: 120
+    spreadAmount: 120
+    smokePrototype: Smoke
+    solution:
+      reagents:
+      - ReagentId: Sarin
+        Quantity: 50
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: grenade
+  - type: ShipWeaponProjectile
+  - type: TimedDespawn
+    lifetime: 8
+  - type: PointLight
+    radius: 2.5
+    color: "#ff8239"
+    energy: 0.4
+  - type: RadarBlip
+    scale: 1.5
+    requireNoGrid: true
+    shape: triangle
+    radarColor: "#FF8844"
 
 # K-1250 "Molot-N" 125mm APFSDS Penetrator
 - type: entity
