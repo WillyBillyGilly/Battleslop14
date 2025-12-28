@@ -32,11 +32,11 @@
     shape: triangle
     radarColor: "#FF6600"
 
-# Z-230 "Volna-N" 23mm HE
+# Z-230 "Volna-N" 23mm HE (Light HE - Area Suppression)
 - type: entity
   id: Bullet23mmHE
   name: 23mm HE projectile
-  parent: BaseBulletTrigger
+  parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -46,7 +46,12 @@
         Blunt: 50
         Heat: 30
     penetrationThreshold: 200
-    deleteOnCollide: true
+    deleteOnCollide: false
+  - type: Heat
+    explosionDelay: 0
+    fragmentationDelay: 0
+    fragmentationCount: 0
+    plasmaAmount: 0
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
@@ -70,6 +75,109 @@
     requireNoGrid: true
     shape: triangle
     radarColor: "#FF6600"
+
+# Z-230 "Volna-N" 23mm AP-T (Armor Piercing Tracer)
+- type: entity
+  id: Bullet23mmAPT
+  name: 23mm AP-T projectile
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 70
+        Piercing: 90
+    penetrationThreshold: 250
+    deleteOnCollide: true
+  - type: Sprite
+    sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
+    layers:
+    - state: base-projectile
+  - type: ShipWeaponProjectile
+  - type: TimedDespawn
+    lifetime: 3
+  - type: PointLight
+    radius: 2.5
+    color: orange
+    energy: 0.4
+  - type: Tracer
+    color: "#FF6600FF"
+    length: 5
+    lifetime: 3
+  - type: RadarBlip
+    scale: 1.1
+    requireNoGrid: true
+    shape: triangle
+    radarColor: "#FF6600"
+
+# Z-230 "Volna-N" 23mm Fragmentation
+- type: entity
+  id: Bullet23mmFrag
+  name: 23mm fragmentation projectile
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 60
+        Blunt: 30
+    deleteOnCollide: true
+  - type: HeFragProjectile
+    fillPrototype: Bullet23mmFragFragment
+    capacity: 70
+    randomAngle: true
+    minVelocity: 5
+    maxVelocity: 10
+  - type: ExplodeOnTrigger
+  - type: Sprite
+    sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
+    layers:
+    - state: base-projectile
+  - type: ShipWeaponProjectile
+  - type: TimedDespawn
+    lifetime: 3
+  - type: PointLight
+    radius: 2.5
+    color: orange
+    energy: 0.4
+  - type: RadarBlip
+    scale: 1.1
+    requireNoGrid: true
+    shape: triangle
+    radarColor: "#FF3300"
+
+# Z-230 "Volna-N" 23mm Fragmentation Fragment
+- type: entity
+  id: Bullet23mmFragFragment
+  name: 23mm fragment
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 10
+        Piercing: 7
+    deleteOnCollide: true
+  - type: Sprite
+    sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
+    layers:
+    - state: base-projectile
+    scale: 0.3, 0.3
+  - type: ShipWeaponProjectile
+  - type: TimedDespawn
+    lifetime: 1.5
+  - type: PointLight
+    radius: 0.7
+    color: orange
+    energy: 0.12
+  - type: RadarBlip
+    scale: 0.35
+    requireNoGrid: true
+    shape: triangle
+    radarColor: "#FF9900"
 
 # A-300 "Grom-N" 30mm APDS
 - type: entity
@@ -103,11 +211,116 @@
     shape: triangle
     radarColor: "#FF6600"
 
+# A-300 "Grom-N" 30mm AP-T (Armor Piercing Tracer)
+- type: entity
+  id: Bullet30mmAPT
+  name: 30mm AP-T projectile
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 170
+        Piercing: 200
+    penetrationThreshold: 800
+    deleteOnCollide: true
+  - type: Sprite
+    sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
+    layers:
+    - state: 57-shell
+    scale: 0.95, 0.95
+  - type: ShipWeaponProjectile
+  - type: TimedDespawn
+    lifetime: 4
+  - type: PointLight
+    radius: 3
+    color: orange
+    energy: 0.5
+  - type: Tracer
+    color: "#FF6600FF"
+    length: 5
+    lifetime: 4
+  - type: RadarBlip
+    scale: 1.3
+    requireNoGrid: true
+    shape: triangle
+    radarColor: "#FF6600"
+
+# A-300 "Grom-N" 30mm Fragmentation
+- type: entity
+  id: Bullet30mmFrag
+  name: 30mm fragmentation projectile
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 90
+        Blunt: 50
+    deleteOnCollide: true
+  - type: HeFragProjectile
+    fillPrototype: Bullet30mmFragFragment
+    capacity: 90
+    randomAngle: true
+    minVelocity: 6
+    maxVelocity: 12
+  - type: ExplodeOnTrigger
+  - type: Sprite
+    sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
+    layers:
+    - state: 57-shell
+    scale: 0.95, 0.95
+  - type: ShipWeaponProjectile
+  - type: TimedDespawn
+    lifetime: 4
+  - type: PointLight
+    radius: 3
+    color: orange
+    energy: 0.5
+  - type: RadarBlip
+    scale: 1.3
+    requireNoGrid: true
+    shape: triangle
+    radarColor: "#FF3300"
+
+# A-300 "Grom-N" 30mm Fragmentation Fragment
+- type: entity
+  id: Bullet30mmFragFragment
+  name: 30mm fragment
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 14
+        Piercing: 9
+    deleteOnCollide: true
+  - type: Sprite
+    sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
+    layers:
+    - state: base-projectile
+    scale: 0.38, 0.38
+  - type: ShipWeaponProjectile
+  - type: TimedDespawn
+    lifetime: 1.5
+  - type: PointLight
+    radius: 0.85
+    color: orange
+    energy: 0.15
+  - type: RadarBlip
+    scale: 0.45
+    requireNoGrid: true
+    shape: triangle
+    radarColor: "#FF9900"
+
 # A-300 "Grom-N" 30mm HEI-T
 - type: entity
   id: Bullet30mmHEI
   name: 30mm HEI-T projectile
-  parent: BaseBulletTrigger
+  parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -117,7 +330,13 @@
         Piercing: 60
         Heat: 40
     penetrationThreshold: 450
-    deleteOnCollide: true
+    deleteOnCollide: false
+  - type: Heat
+    explosionDelay: 0
+    fragmentationDelay: 0
+    fragmentationCount: 8
+    fragmentationPrototype: Bullet30mmHEIFragment
+    plasmaAmount: 0
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
@@ -142,6 +361,37 @@
     requireNoGrid: true
     shape: triangle
     radarColor: "#FF6600"
+
+# A-300 "Grom-N" 30mm HEI Fragment
+- type: entity
+  id: Bullet30mmHEIFragment
+  name: 30mm HEI fragment
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 12
+        Piercing: 8
+    deleteOnCollide: true
+  - type: Sprite
+    sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
+    layers:
+    - state: base-projectile
+    scale: 0.35, 0.35
+  - type: ShipWeaponProjectile
+  - type: TimedDespawn
+    lifetime: 1.5
+  - type: PointLight
+    radius: 0.8
+    color: orange
+    energy: 0.15
+  - type: RadarBlip
+    scale: 0.4
+    requireNoGrid: true
+    shape: triangle
+    radarColor: "#FF9900"
 
 # S-570 "Burevestnik-N" 57mm
 - type: entity
@@ -253,6 +503,7 @@
     shape: triangle
     radarColor: "#FF0000"
 
+
 # K-1250 "Molot-N" 125mm APFSDS Sabot
 - type: entity
   id: Bullet125mmAPFSDS
@@ -268,16 +519,16 @@
     deleteOnCollide: false
   - type: SubmunitionProjectile
     submunitionPrototype: Bullet125mmPenetrator
-    distanceDelay: 110  # Discard sabot after 110 meters
-    submunitionDelay: 0
-    submunitionCount: 1
+    distanceDelay: 0  # Use time delay only
+    submunitionDelay: 0.1  # Release penetrator after 0.1 seconds
+    submunitionCount: 1  # Single penetrator only
     spreadAngle: 0
     velocityMultiplier: 2.1  # Penetrator is slightly faster than US version
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/630_armorpiercing_shell_casing.rsi
     layers:
     - state: base-projectile
-    scale: 1.9, 1.9
+      scale: 1.9, 1.9
   - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 12

@@ -18,28 +18,28 @@
     startingCharge: 50000
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 400
+    autoRechargeRate: 500
   - type: ExaminableBattery
   - type: WirelessNetworkConnection
     range: 500
   - type: Gun
-    fireRate: 25
+    fireRate: 20
     minAngle: 0
-    maxAngle: 5
-    shootThermalSignature: 30000
+    maxAngle: 0
+    shootThermalSignature: 2000000
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/ship_svalinn.ogg
     soundEmpty:
       path: /Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg
   - type: SpaceArtillery
-    powerChargeRate: 150
-    powerUsePassive: 200
+    powerChargeRate: 200
+    powerUsePassive: 300
     powerUseActive: 0
   - type: FireControlRotate
   - type: Actions
   - type: HitscanBatteryAmmoProvider
     proto: iPhalanxLaser
-    fireCost: 30
+    fireCost: 25
   - type: Destructible
     thresholds:
     - trigger:

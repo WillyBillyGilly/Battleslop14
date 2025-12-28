@@ -13,9 +13,9 @@
   - type: Item
     size: Medium
   - type: BallisticAmmoProvider
-    infiniteUnspawned: true
+    infiniteUnspawned: false
     proto: Cartridge1776mmRailgun
-    capacity: 1  # Infinite ammo, capacity is placeholder
+    capacity: 40
     mayTransfer: true
     whitelist:
       tags:
@@ -74,8 +74,8 @@
 # 12.7mm M5 Browning HMG
 - type: entity
   id: Magazine127mmM5
-  name: "12.7mm M5 HMG magazine"
-  description: "An ammunition belt for the M5 Browning heavy machine gun."
+  name: "12.7mm M5 HMG magazine (AP)"
+  description: "An ammunition belt for the M5 Browning heavy machine gun. Loaded with armor-piercing rounds."
   parent: [BaseItem, RecyclableItemSteelTiny]
   components:
   - type: Tag
@@ -84,9 +84,9 @@
   - type: Item
     size: Small
   - type: BallisticAmmoProvider
-    infiniteUnspawned: true
+    infiniteUnspawned: false
     proto: Cartridge127mmAP
-    capacity: 1
+    capacity: 40
     mayTransfer: true
     whitelist:
       tags:
@@ -152,7 +152,7 @@
 - type: entity
   id: Magazine20mmPhalanx
   name: "20mm Phalanx CIWS magazine"
-  description: "An ammunition drum for the Phalanx close-in weapon system."
+  description: "An ammunition drum for the Phalanx close-in weapon system. Loaded with armor-piercing rounds."
   parent: [BaseItem, RecyclableItemSteelTiny]
   components:
   - type: Tag
@@ -161,9 +161,9 @@
   - type: Item
     size: Small
   - type: BallisticAmmoProvider
-    infiniteUnspawned: true
+    infiniteUnspawned: false
     proto: Cartridge20mmPhalanx
-    capacity: 1
+    capacity: 40
     mayTransfer: true
     whitelist:
       tags:
@@ -228,8 +228,8 @@
 # 25mm M242 Bushmaster
 - type: entity
   id: Magazine25mmBushmaster
-  name: "25mm M242 Bushmaster magazine"
-  description: "An ammunition loader for the M242 Bushmaster autocannon."
+  name: "25mm M242 Bushmaster magazine (APDS)"
+  description: "An ammunition loader for the M242 Bushmaster autocannon. Loaded with armor-piercing discarding sabot rounds."
   parent: [BaseItem, RecyclableItemSteelTiny]
   components:
   - type: Tag
@@ -238,14 +238,16 @@
   - type: Item
     size: Small
   - type: BallisticAmmoProvider
-    infiniteUnspawned: true
+    infiniteUnspawned: false
     proto: Cartridge25mmAPDS
-    capacity: 1
+    capacity: 40
     mayTransfer: true
     whitelist:
       tags:
       - Cartridge25mmAPDS
+      - Cartridge25mmAPT
       - Cartridge25mmHEIT
+      - Cartridge25mmFrag
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
@@ -342,11 +344,168 @@
     damageContainer: Inorganic
     damageModifierSet: Metallic
 
+# 25mm M242 Bushmaster AP-T
+- type: entity
+  id: Cartridge25mmAPT
+  name: cartridge (25mm AP-T)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge25mmAPT
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+    proto: Bullet25mmAPT
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/generic_cartridges.rsi
+    layers:
+    - state: 90mm
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 400
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 100
+    intensitySlope: 3
+    totalIntensity: 0.7
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+
+# 25mm M242 Bushmaster Fragmentation
+- type: entity
+  id: Cartridge25mmFrag
+  name: cartridge (25mm fragmentation)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge25mmFrag
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+    proto: Bullet25mmFrag
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/generic_cartridges.rsi
+    layers:
+    - state: 90mm
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 350
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 100
+    intensitySlope: 3
+    totalIntensity: 0.9
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+
+# 25mm M242 Bushmaster AP-T Magazine
+- type: entity
+  id: Magazine25mmAPT
+  name: "25mm AP-T magazine"
+  description: "An ammunition loader for the M242 Bushmaster autocannon, loaded with armor-piercing tracer rounds."
+  parent: [BaseItem, RecyclableItemSteelTiny]
+  components:
+  - type: Tag
+    tags:
+    - Magazine25mmAPT
+  - type: Item
+    size: Small
+  - type: BallisticAmmoProvider
+    infiniteUnspawned: false
+    proto: Cartridge25mmAPT
+    capacity: 40
+    mayTransfer: true
+    whitelist:
+      tags:
+      - Cartridge25mmAPT
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_shipgun_box.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: false
+  - type: Appearance
+  - type: StaticPrice
+    price: 1
+
+# 25mm M242 Bushmaster Fragmentation Magazine
+- type: entity
+  id: Magazine25mmFrag
+  name: "25mm fragmentation magazine"
+  description: "An ammunition loader for the M242 Bushmaster autocannon, loaded with fragmentation rounds."
+  parent: [BaseItem, RecyclableItemSteelTiny]
+  components:
+  - type: Tag
+    tags:
+    - Magazine25mmFrag
+  - type: Item
+    size: Small
+  - type: BallisticAmmoProvider
+    infiniteUnspawned: false
+    proto: Cartridge25mmFrag
+    capacity: 40
+    mayTransfer: true
+    whitelist:
+      tags:
+      - Cartridge25mmFrag
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_shipgun_box.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: false
+  - type: Appearance
+  - type: StaticPrice
+    price: 1
+
+
 # 40x46mm MK20 Automatic Grenade Launcher
 - type: entity
   id: Magazine40x46mmMK20
-  name: "40x46mm MK20 AGL magazine"
-  description: "An ammunition drum for the MK20 automatic grenade launcher."
+  name: "40x46mm MK20 AGL magazine (HE)"
+  description: "An ammunition drum for the MK20 automatic grenade launcher. Loaded with high-explosive rounds."
   parent: [BaseItem, RecyclableItemSteelTiny]
   components:
   - type: Tag
@@ -355,9 +514,9 @@
   - type: Item
     size: Small
   - type: BallisticAmmoProvider
-    infiniteUnspawned: true
+    infiniteUnspawned: false
     proto: Cartridge40x46mmHE
-    capacity: 1
+    capacity: 40
     mayTransfer: true
     whitelist:
       tags:
@@ -365,6 +524,8 @@
       - Cartridge40x46mmHEDP
       - Cartridge40x46mmFrag
       - Cartridge40x46mmMPAPERS
+      - Cartridge40x46mmPlasmaGas
+      - Cartridge40x46mmChemicalSmoke
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
@@ -547,11 +708,95 @@
     damageContainer: Inorganic
     damageModifierSet: Metallic
 
+# 40x46mm MK20 Plasma Gas
+- type: entity
+  id: Cartridge40x46mmPlasmaGas
+  name: cartridge (40x46mm plasma gas)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge40x46mmPlasmaGas
+    - Cartridge40x46mmGrenade
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+    proto: Bullet40x46mmPlasmaGas
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: grenade
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 100
+    intensitySlope: 3
+    totalIntensity: 1.5
+  - type: ExplodeOnTrigger
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+
+# 40x46mm MK20 Chemical Smoke
+- type: entity
+  id: Cartridge40x46mmChemicalSmoke
+  name: cartridge (40x46mm chemical smoke)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge40x46mmChemicalSmoke
+    - Cartridge40x46mmGrenade
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+    proto: Bullet40x46mmChemicalSmoke
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: grenade
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 100
+    intensitySlope: 3
+    totalIntensity: 1.5
+  - type: ExplodeOnTrigger
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+
 # 40mm L/99 Bofors
 - type: entity
   id: Magazine40mmBofors
-  name: "40mm L/99 Bofors magazine"
-  description: "An ammunition loader for the L/99 Bofors autocannon."
+  name: "40mm L/99 Bofors magazine (HE)"
+  description: "An ammunition loader for the L/99 Bofors autocannon. Loaded with high-explosive rounds."
   parent: [BaseItem, RecyclableItemSteelSmall]
   components:
   - type: Tag
@@ -560,9 +805,9 @@
   - type: Item
     size: Medium
   - type: BallisticAmmoProvider
-    infiniteUnspawned: true
+    infiniteUnspawned: false
     proto: Cartridge40mmBofors
-    capacity: 1
+    capacity: 40
     mayTransfer: true
     whitelist:
       tags:
@@ -628,8 +873,8 @@
 # 120mm M256 Heavy Cannon
 - type: entity
   id: Magazine120mmM256
-  name: "120mm M256 magazine"
-  description: "An ammunition loader for the M256 heavy cannon."
+  name: "120mm M256 magazine (APFSDS)"
+  description: "An ammunition loader for the M256 heavy cannon. Loaded with armor-piercing fin-stabilized discarding sabot rounds."
   parent: [BaseItem, RecyclableItemSteelSmall]
   components:
   - type: Tag
@@ -638,9 +883,9 @@
   - type: Item
     size: Medium
   - type: BallisticAmmoProvider
-    infiniteUnspawned: true
+    infiniteUnspawned: false
     proto: Cartridge120mmAPFSDS
-    capacity: 1
+    capacity: 40
     mayTransfer: true
     whitelist:
       tags:
@@ -701,4 +946,80 @@
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Metallic
+
+# 40x46mm MK20 Plasma Gas Magazine
+- type: entity
+  id: Magazine40x46mmPlasmaGas
+  name: "40x46mm plasma gas magazine"
+  description: "An ammunition drum for the MK20 automatic grenade launcher, loaded with plasma gas rounds."
+  parent: [BaseItem, RecyclableItemSteelTiny]
+  components:
+  - type: Tag
+    tags:
+    - Magazine40x46mmPlasmaGas
+  - type: Item
+    size: Small
+  - type: BallisticAmmoProvider
+    infiniteUnspawned: false
+    proto: Cartridge40x46mmPlasmaGas
+    capacity: 40
+    mayTransfer: true
+    whitelist:
+      tags:
+      - Cartridge40x46mmPlasmaGas
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_shipgun_box.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: false
+  - type: Appearance
+  - type: StaticPrice
+    price: 1
+
+# 40x46mm MK20 Chemical Smoke Magazine
+- type: entity
+  id: Magazine40x46mmChemicalSmoke
+  name: "40x46mm chemical smoke magazine"
+  description: "An ammunition drum for the MK20 automatic grenade launcher, loaded with chemical smoke rounds."
+  parent: [BaseItem, RecyclableItemSteelTiny]
+  components:
+  - type: Tag
+    tags:
+    - Magazine40x46mmChemicalSmoke
+  - type: Item
+    size: Small
+  - type: BallisticAmmoProvider
+    infiniteUnspawned: false
+    proto: Cartridge40x46mmChemicalSmoke
+    capacity: 40
+    mayTransfer: true
+    whitelist:
+      tags:
+      - Cartridge40x46mmChemicalSmoke
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_shipgun_box.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: false
+  - type: Appearance
+  - type: StaticPrice
+    price: 1
 

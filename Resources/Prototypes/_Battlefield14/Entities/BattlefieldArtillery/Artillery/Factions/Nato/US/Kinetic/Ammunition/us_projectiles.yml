@@ -126,6 +126,188 @@
     shape: triangle
     radarColor: "#FF6600"
 
+# 25mm M242 Bushmaster AP-T (Armor Piercing Tracer)
+- type: entity
+  id: Bullet25mmAPT
+  name: 25mm AP-T projectile
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 140
+        Piercing: 180
+    penetrationThreshold: 700
+    deleteOnCollide: true
+  - type: Sprite
+    sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
+    layers:
+    - state: 57-shell
+    scale: 0.9, 0.9
+  - type: ShipWeaponProjectile
+  - type: TimedDespawn
+    lifetime: 4
+  - type: PointLight
+    radius: 3
+    color: orange
+    energy: 0.5
+  - type: Tracer
+    color: "#FF6600FF"
+    length: 5
+    lifetime: 4
+  - type: RadarBlip
+    scale: 1.2
+    requireNoGrid: true
+    shape: triangle
+    radarColor: "#FF6600"
+
+# 25mm M242 Bushmaster HEAT-T (Budget HEAT)
+- type: entity
+  id: Bullet25mmHEAT
+  name: 25mm HEAT-T projectile
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 80
+        Piercing: 100
+        Heat: 30
+    penetrationThreshold: 500
+    deleteOnCollide: false
+  - type: Heat
+    explosionDelay: 0
+    fragmentationDelay: 0
+    fragmentationCount: 2
+    fragmentationPrototype: Bullet25mmHEATFragment
+    plasmaAmount: 0
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 60
+    intensitySlope: 3
+    maxIntensity: 10
+    maxTileBreak: 1
+  - type: Sprite
+    sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
+    layers:
+    - state: 57-shell
+    scale: 0.9, 0.9
+  - type: ShipWeaponProjectile
+  - type: TimedDespawn
+    lifetime: 4
+  - type: PointLight
+    radius: 3
+    color: orange
+    energy: 0.5
+  - type: RadarBlip
+    scale: 1.2
+    requireNoGrid: true
+    shape: triangle
+    radarColor: "#FF3300"
+
+# 25mm M242 Bushmaster HEAT Fragment
+- type: entity
+  id: Bullet25mmHEATFragment
+  name: 25mm HEAT fragment
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 15
+        Piercing: 10
+    deleteOnCollide: true
+  - type: Sprite
+    sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
+    layers:
+    - state: base-projectile
+    scale: 0.35, 0.35
+  - type: ShipWeaponProjectile
+  - type: TimedDespawn
+    lifetime: 1.5
+  - type: PointLight
+    radius: 0.8
+    color: orange
+    energy: 0.15
+  - type: RadarBlip
+    scale: 0.4
+    requireNoGrid: true
+    shape: triangle
+    radarColor: "#FF9900"
+
+# 25mm M242 Bushmaster Fragmentation
+- type: entity
+  id: Bullet25mmFrag
+  name: 25mm fragmentation projectile
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 80
+        Blunt: 40
+    deleteOnCollide: true
+  - type: HeFragProjectile
+    fillPrototype: Bullet25mmFragFragment
+    capacity: 80
+    randomAngle: true
+    minVelocity: 6
+    maxVelocity: 12
+  - type: ExplodeOnTrigger
+  - type: Sprite
+    sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
+    layers:
+    - state: 57-shell
+    scale: 0.9, 0.9
+  - type: ShipWeaponProjectile
+  - type: TimedDespawn
+    lifetime: 4
+  - type: PointLight
+    radius: 3
+    color: orange
+    energy: 0.5
+  - type: RadarBlip
+    scale: 1.2
+    requireNoGrid: true
+    shape: triangle
+    radarColor: "#FF3300"
+
+# 25mm M242 Bushmaster Fragmentation Fragment
+- type: entity
+  id: Bullet25mmFragFragment
+  name: 25mm fragment
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 12
+        Piercing: 8
+    deleteOnCollide: true
+  - type: Sprite
+    sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
+    layers:
+    - state: base-projectile
+    scale: 0.35, 0.35
+  - type: ShipWeaponProjectile
+  - type: TimedDespawn
+    lifetime: 1.5
+  - type: PointLight
+    radius: 0.8
+    color: orange
+    energy: 0.15
+  - type: RadarBlip
+    scale: 0.4
+    requireNoGrid: true
+    shape: triangle
+    radarColor: "#FF9900"
+
 # 25mm M242 Bushmaster HEI-T
 - type: entity
   id: Bullet25mmHEIT
@@ -203,11 +385,11 @@
     shape: triangle
     radarColor: "#FF3300"
 
-# 40x46mm MK20 HEDP
+# 40x46mm MK20 HEDP (Light HEAT capability)
 - type: entity
   id: Bullet40x46mmHEDP
   name: 40x46mm HEDP grenade
-  parent: BaseBulletTrigger
+  parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -216,7 +398,13 @@
         Structural: 80
         Piercing: 40
     penetrationThreshold: 200
-    deleteOnCollide: true
+    deleteOnCollide: false
+  - type: Heat
+    explosionDelay: 0
+    fragmentationDelay: 0
+    fragmentationCount: 150
+    fragmentationPrototype: Bullet40x46mmHEDPFragment
+    plasmaAmount: 0
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
@@ -261,12 +449,6 @@
     minVelocity: 8
     maxVelocity: 15
   - type: ExplodeOnTrigger
-  - type: Explosive
-    explosionType: Default
-    totalIntensity: 100
-    intensitySlope: 4
-    maxIntensity: 18
-    maxTileBreak: 1
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
@@ -283,6 +465,37 @@
     requireNoGrid: true
     shape: triangle
     radarColor: "#FF3300"
+
+# 40x46mm MK20 HEDP Fragment
+- type: entity
+  id: Bullet40x46mmHEDPFragment
+  name: 40x46mm HEDP fragment
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 20
+        Piercing: 15
+    deleteOnCollide: true
+  - type: Sprite
+    sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
+    layers:
+    - state: base-projectile
+    scale: 0.5, 0.5
+  - type: ShipWeaponProjectile
+  - type: TimedDespawn
+    lifetime: 2
+  - type: PointLight
+    radius: 1.5
+    color: orange
+    energy: 0.3
+  - type: RadarBlip
+    scale: 0.6
+    requireNoGrid: true
+    shape: triangle
+    radarColor: "#FF9900"
 
 # 40x46mm MK20 Fragmentation Fragment
 - type: entity
@@ -335,12 +548,6 @@
     minVelocity: 10
     maxVelocity: 18
   - type: ExplodeOnTrigger
-  - type: Explosive
-    explosionType: Default
-    totalIntensity: 60
-    intensitySlope: 3
-    maxIntensity: 12
-    maxTileBreak: 1
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
@@ -474,9 +681,9 @@
     deleteOnCollide: false
   - type: SubmunitionProjectile
     submunitionPrototype: Bullet120mmPenetrator
-    distanceDelay: 100  # Discard sabot after 100 meters
-    submunitionDelay: 0
-    submunitionCount: 1
+    distanceDelay: 0  # Use time delay only
+    submunitionDelay: 0.1  # Release penetrator after 0.1 seconds
+    submunitionCount: 1  # Single penetrator only
     spreadAngle: 0
     velocityMultiplier: 2.0  # Penetrator is twice as fast
   - type: Sprite
@@ -497,11 +704,11 @@
     shape: triangle
     radarColor: "#FF7700"
 
-# Plasma Gas Projectile Example - 40x46mm Plasma Gas Shell
+# Plasma Gas Projectile Example - 40x46mm Plasma Gas Shell (NATO Specialty - Area Denial)
 - type: entity
   id: Bullet40x46mmPlasmaGas
   name: 40x46mm plasma gas shell
-  parent: BaseBulletTrigger
+  parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -512,8 +719,11 @@
         Heat: 50
     penetrationThreshold: 400
     deleteOnCollide: false
-  - type: PlasmaGas
-    releaseDelay: 0  # Instant release after penetration stops
+  - type: Heat
+    explosionDelay: 0
+    fragmentationDelay: 0
+    fragmentationCount: 0
+    plasmaReleaseDelay: 0  # Instant release after penetration stops
     plasmaAmount: 150  # Moles of plasma gas
     plasmaTemperature: 1500  # Kelvin - very hot to rapidly heat environment
   - type: Sprite
@@ -533,7 +743,6 @@
     shape: triangle
     radarColor: "#9900FF"
 
-# Chemical Smoke Projectile Example - 40x46mm Chemical Smoke Shell
 - type: entity
   id: Bullet40x46mmChemicalSmoke
   name: 40x46mm chemical smoke shell
@@ -554,7 +763,7 @@
     smokePrototype: Smoke
     solution:
       reagents:
-      - ReagentId: TearGas  # Example chemical - can be changed in prototype
+      - ReagentId: TearGas  # Example
         Quantity: 50
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi

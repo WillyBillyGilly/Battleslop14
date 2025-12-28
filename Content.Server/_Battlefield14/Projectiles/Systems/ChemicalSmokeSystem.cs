@@ -39,17 +39,22 @@ public sealed class ChemicalSmokeSystem : EntitySystem
             if (!projectile.ProjectileSpent || smoke.ReleaseTriggered)
                 continue;
 
+            // Mark as triggered to prevent multiple releases
             smoke.ReleaseTriggered = true;
             Dirty(uid, smoke);
 
-            // Release smoke (with delay if specified)
+            // Schedule release (with delay if specified)
             if (smoke.ReleaseDelay <= 0)
             {
+                // Instant release - call directly
                 ReleaseSmoke(uid, smoke);
+                // Mark as completed to prevent re-triggering
+                smoke.ReleaseTriggered = false;
+                Dirty(uid, smoke);
             }
             else
             {
-                // Delayed release using timer
+                // Delayed release using timer - event handler will be called when timer fires
                 _triggerSystem.HandleTimerTrigger(uid, null, smoke.ReleaseDelay, 0, null, null);
             }
         }
@@ -57,11 +62,15 @@ public sealed class ChemicalSmokeSystem : EntitySystem
 
     private void OnChemicalSmokeTriggered(EntityUid uid, ChemicalSmokeComponent component, TriggerEvent args)
     {
-        // Only release if this was triggered by our delay timer
-        if (component.ReleaseTriggered)
-        {
-            ReleaseSmoke(uid, component);
-        }
+        // Only release if release was scheduled (ReleaseTriggered is true)
+        // This prevents double-release and ensures only our timer triggers the release
+        if (!component.ReleaseTriggered)
+            return;
+
+        ReleaseSmoke(uid, component);
+        // Mark as completed to prevent re-triggering
+        component.ReleaseTriggered = false;
+        Dirty(uid, component);
     }
 
     private void ReleaseSmoke(EntityUid uid, ChemicalSmokeComponent component)

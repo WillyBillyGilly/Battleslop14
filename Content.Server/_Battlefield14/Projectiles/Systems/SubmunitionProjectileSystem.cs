@@ -1,4 +1,6 @@
 using System.Numerics;
+using Content.Server.Administration.Logs;
+using Content.Shared.Database;
 using Content.Shared.Projectiles;
 using Content.Shared.Projectiles.Components;
 using Robust.Shared.Map;
@@ -14,6 +16,7 @@ public sealed class SubmunitionProjectileSystem : EntitySystem
 {
     [Dependency] private readonly SharedPhysicsSystem _physics = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
+    [Dependency] private readonly IAdminLogManager _adminLogger = default!;
 
     public override void Initialize()
     {
@@ -39,14 +42,21 @@ public sealed class SubmunitionProjectileSystem : EntitySystem
 
             // Check if we should spawn submunitions
             bool shouldSpawn = false;
+
+            // Distance-based triggering takes priority
             if (submunition.DistanceDelay > 0)
             {
                 shouldSpawn = submunition.DistanceTraveled >= submunition.DistanceDelay;
             }
+            // Time-based triggering (if distance not configured)
+            else if (submunition.SubmunitionDelay > 0)
+            {
+                shouldSpawn = submunition.TimeElapsed >= submunition.SubmunitionDelay;
+            }
+            // Immediate spawn (both delays are 0 or negative)
             else
             {
-                // If delay is 0 or negative, spawn immediately, otherwise wait
-                shouldSpawn = submunition.SubmunitionDelay <= 0 || submunition.TimeElapsed >= submunition.SubmunitionDelay;
+                shouldSpawn = true;
             }
 
             if (!shouldSpawn)
@@ -62,6 +72,10 @@ public sealed class SubmunitionProjectileSystem : EntitySystem
     {
         component.SubmunitionsSpawned = true;
         Dirty(uid, component);
+        
+        // Log submunition deployment
+        _adminLogger.Add(LogType.Action, LogImpact.Medium,
+            $"Submunitions deployed from {ToPrettyString(uid):projectile} - spawned {component.SubmunitionCount} submunitions of type {component.SubmunitionPrototype}");
 
         var currentPosition = _transform.GetWorldPosition(xform);
         var currentVelocity = physics.LinearVelocity;

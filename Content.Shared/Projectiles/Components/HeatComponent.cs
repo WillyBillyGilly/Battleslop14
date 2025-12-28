@@ -4,9 +4,9 @@ using Robust.Shared.Prototypes;
 namespace Content.Shared.Projectiles.Components;
 
 /// <summary>
-/// Component for HEAT (High Explosive Anti-Tank) projectiles.
+/// Component for HEAT (High Explosive Anti-Tank) projectiles and similar penetration-based projectiles.
 /// Causes the projectile to explode after penetration threshold is reached, with optional delay.
-/// Can also fragment into additional projectiles.
+/// Can also fragment into additional projectiles and/or release plasma gas after penetration.
 /// </summary>
 [RegisterComponent, NetworkedComponent]
 public sealed partial class HeatComponent : Component
@@ -34,5 +34,44 @@ public sealed partial class HeatComponent : Component
     /// </summary>
     [DataField]
     public int FragmentationCount = 0;
+
+    /// <summary>
+    /// Delay in seconds before fragmentation occurs after penetration stops. If 0, fragments instantly.
+    /// </summary>
+    [DataField]
+    public float FragmentationDelay = 0f;
+
+    /// <summary>
+    /// Whether fragmentation has been triggered.
+    /// </summary>
+    [DataField]
+    public bool FragmentationTriggered = false;
+
+    /// <summary>
+    /// If set, the projectile will release plasma gas after penetration stops.
+    /// Amount of plasma gas to spawn in moles.
+    /// </summary>
+    [DataField]
+    public float PlasmaAmount = 0f;
+
+    /// <summary>
+    /// Temperature of the plasma gas in Kelvin. High temperatures will rapidly heat the environment.
+    /// Only used if PlasmaAmount > 0.
+    /// </summary>
+    [DataField]
+    public float PlasmaTemperature = 1000f;
+
+    /// <summary>
+    /// Delay in seconds before releasing plasma after penetration stops. If 0, releases instantly.
+    /// Only used if PlasmaAmount > 0.
+    /// </summary>
+    [DataField]
+    public float PlasmaReleaseDelay = 0f;
+
+    /// <summary>
+    /// Whether plasma release has been triggered.
+    /// </summary>
+    [DataField]
+    public bool PlasmaReleaseTriggered = false;
 }
 

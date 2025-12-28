@@ -4,6 +4,7 @@
 - type: entity
   id: WeaponTurretTRUMPCARD
   name: TRUMPCARD 17.76mm railgun
+  suffix: US
   parent: BattlefieldArtilleryMagazine
   description: A capital ship mounted electromagnetic railgun chambered in 17.76 mm. Designed for deliberate, single-shot engagements against orbital infrastructure and designated enemies of freedom. Deployed almost exclusively aboard U.S. capital vessels, with limited NATO export.
   components:
@@ -62,7 +63,7 @@
     radarColor: "#0099FF"
     scale: 3
   - type: ShipGunType
-    shipType: Kinetic
+    shipType: Ballistic
   - type: ShipGunClass
     shipClass: Heavy
 
@@ -70,6 +71,7 @@
 - type: entity
   id: WeaponTurretM5Browning
   name: M5 Browning Heavy Machine Gun
+  suffix: US
   parent: BattlefieldArtilleryMagazine
   description: A remotely operated heavy machine gun produced under Browning Corporation contract for U.S. naval service. Intended for suppressing infantry and defeating light armor during boarding actions. Performs poorly against real warship armor.
   components:
@@ -134,7 +136,7 @@
     radarColor: "#FF6600"
     scale: 1
   - type: ShipGunType
-    shipType: Kinetic
+    shipType: Ballistic
   - type: ShipGunClass
     shipClass: Light
 
@@ -142,6 +144,7 @@
 - type: entity
   id: WeaponTurretPhalanx
   name: Phalanx CIWS (LPWS)
+  suffix: US
   parent: BattlefieldArtilleryMagazine
   description: A close-in weapon system standard across U.S. and NATO fleets. Designed to intercept missiles, rockets, and light craft using extreme rates of fire and automated targeting. Doctrine discourages use against personnel.
   components:
@@ -206,7 +209,7 @@
     radarColor: "#FF6600"
     scale: 1
   - type: ShipGunType
-    shipType: Kinetic
+    shipType: Ballistic
   - type: ShipGunClass
     shipClass: Light
 
@@ -214,6 +217,7 @@
 - type: entity
   id: WeaponTurretM242Bushmaster
   name: M242 Bushmaster Autocannon
+  suffix: US
   parent: BattlefieldArtilleryMagazine
   description: A next-generation, chain-driven autocannon mounted to remote gunnery systems. Widely deployed by U.S. forces and licensed to NATO partners for engaging armored targets and light vehicles. Reliable under proper maintenance, power-hungry by design, and unforgiving when neglected.
   components:
@@ -247,13 +251,16 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine25mmBushmaster
+        startingItem: Magazine25mmAPT
         insertSound: /Audio/Weapons/Guns/MagIn/hpistol_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/sfrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
           - Magazine25mmBushmaster
+          - Magazine25mmAPT
+          - Magazine25mmFrag
+          - Magazine25mmRIP
         whitelistFailPopup: gun-magazine-whitelist-fail
   - type: Destructible
     thresholds:
@@ -270,7 +277,7 @@
     radarColor: "#FF6600"
     scale: 1.5
   - type: ShipGunType
-    shipType: Kinetic
+    shipType: Ballistic
   - type: ShipGunClass
     shipClass: Medium
 
@@ -278,6 +285,7 @@
 - type: entity
   id: WeaponTurretMK20
   name: Mk 20 Automatic Grenade Launcher
+  suffix: US
   parent: BattlefieldArtilleryMagazine
   description: A remotely operated 40 mm automatic grenade launcher favored by U.S. naval security forces. Effective against clustered infantry and loitering craft. Features an airburst mode that remains deactivated.
   components:
@@ -318,6 +326,8 @@
         whitelist:
           tags:
           - Magazine40x46mmMK20
+          - Magazine40x46mmPlasmaGas
+          - Magazine40x46mmChemicalSmoke
         whitelistFailPopup: gun-magazine-whitelist-fail
   - type: Destructible
     thresholds:
@@ -334,7 +344,7 @@
     radarColor: "#FF3300"
     scale: 1.5
   - type: ShipGunType
-    shipType: Kinetic
+    shipType: Ballistic
   - type: ShipGunClass
     shipClass: Medium
 
@@ -342,6 +352,7 @@
 - type: entity
   id: WeaponTurretBofors40mm
   name: L/99 Bofors Cannon
+  suffix: US
   parent: BattlefieldArtilleryMagazine
   description: A modernized Bofors pattern autocannon retained through NATO standardization agreements. Adapted for naval and orbital defense roles. Long service lineage, incremental improvements, and familiar limitations. Remains in service largely due to projectile mass and institutional inertia.
   components:
@@ -398,7 +409,7 @@
     radarColor: "#FF4400"
     scale: 2
   - type: ShipGunType
-    shipType: Kinetic
+    shipType: Ballistic
   - type: ShipGunClass
     shipClass: Medium
 
@@ -406,6 +417,7 @@
 - type: entity
   id: WeaponTurretM256
   name: 120 mm M256 Heavy Cannon
+  suffix: US
   parent: BattlefieldArtilleryMagazine
   description: A high-caliber heavy cannon derived from the M256 Abrams tank gun lineage. Developed under U.S. defense contracts at extreme cost through iterative scaling rather than conceptual redesign. Adopted by NATO fleets. Delivers overwhelming force with minimal novelty.
   components:
@@ -464,7 +476,7 @@
     radarColor: "#FF6600"
     scale: 3
   - type: ShipGunType
-    shipType: Kinetic
+    shipType: Ballistic
   - type: ShipGunClass
     shipClass: Heavy
 
