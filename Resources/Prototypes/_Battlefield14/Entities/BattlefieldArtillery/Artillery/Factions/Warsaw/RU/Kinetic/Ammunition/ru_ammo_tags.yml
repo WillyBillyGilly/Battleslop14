@@ -38,7 +38,7 @@
   id: Cartridge30mmFrag
 
 - type: Tag
-  id: Cartridge30mmHEIT
+  id: Cartridge30mmHEI
 
 - type: Tag
   id: Magazine30mmAPT
@@ -84,3 +84,8 @@
 
 - type: Tag
   id: Cartridge125mmAPFSDS
+
+# Kornet-N Guided Missile System Launcher
+
+- type: Tag
+  id: KornetNCartridge

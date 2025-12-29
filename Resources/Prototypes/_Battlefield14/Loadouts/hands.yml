@@ -5,7 +5,6 @@
 
 - type: loadout
   id: LoadoutHandsGlovesSoldierCombat
-  category: Hands
   equipment:
     gloves: ClothingHandsGlovesCombat
 

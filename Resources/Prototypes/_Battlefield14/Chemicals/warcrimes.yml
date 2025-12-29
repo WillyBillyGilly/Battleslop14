@@ -88,11 +88,11 @@
     Narcotic:
       metabolismRate: 0.15
       effects:
-      - !type:HealthChange
-        damage:
-          types:
-            Poison: 1.5
-            Heat: 0.5
+#      - !type:HealthChange
+#        damage:
+#          types:
+#            Poison: 1.5
+#            Heat: 0.5
       - !type:PopupMessage
         type: Local
         visualType: Large
@@ -161,20 +161,20 @@
         conditions:
         - !type:ReagentThreshold
           min: 5
-  reactiveEffects:
-    Acidic:
-      methods: [ Touch ]
-      effects:
-      - !type:HealthChange
-        scaleByQuantity: true
-        ignoreResistances: false
-        damage:
-          types:
-            Caustic: 2
-            Heat: 1
-        # conditions:
-        # - !type:HasComponentOnEquipmentCondition
-        #   components:
-        #   - type: PressureProtection
-        #   invert: true
+#  reactiveEffects:
+#    Acidic:
+#      methods: [ Touch ]
+#      effects:
+#      - !type:HealthChange
+#        scaleByQuantity: true
+#        ignoreResistances: false
+#        damage:
+#          types:
+#            Caustic: 2
+#            Heat: 1
+#        # conditions:
+#        # - !type:HasComponentOnEquipmentCondition
+#        #   components:
+#        #   - type: PressureProtection
+#        #   invert: true
 

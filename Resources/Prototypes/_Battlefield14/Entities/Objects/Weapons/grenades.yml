@@ -86,14 +86,14 @@
     soundHit:
       collection: MetalThud
     bluntStaminaDamageFactor: 1.25
-    heavyRateModifier: 1.25
-    heavyDamageBaseModifier: 1.2
-    heavyStaminaCost: 1.5
+#    heavyRateModifier: 1.25
+#    heavyDamageBaseModifier: 1.2
+#    heavyStaminaCost: 1.5
   - type: DamageOtherOnHit
     damage:
       types:
-        Blunt: 0
-    staminaCost: 65
+        Blunt: 10
+#    staminaCost: 65
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
