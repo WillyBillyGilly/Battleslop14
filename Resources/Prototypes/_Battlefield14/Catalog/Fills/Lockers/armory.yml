@@ -32,6 +32,25 @@
   - type: AccessReader
     access: [["NATOSoldier"]]
 
+- type: entity
+  id: LockerArmoryNATOFilledM320
+  suffix: Filled, M320
+  parent: LockerSyndicatePersonal
+  name: M320 locker
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponGrenadeLauncherUSM320
+          amount: 2
+        - id: BoxMagazine40x46HE
+          amount: 2
+        - id: BoxMagazine40x46Frag
+          amount: 2
+        - id: BoxMagazine40x46ChemicalSmoke
+          amount: 2
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
 # PACT | Russia
 
 - type: entity

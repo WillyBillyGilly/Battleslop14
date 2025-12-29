@@ -486,7 +486,7 @@
     deleteOnCollide: true
   - type: HeFragProjectile
     fillPrototype: Bullet40x46mmFragFragment
-    capacity: 100
+    capacity: 40
     randomAngle: true
     minVelocity: 8
     maxVelocity: 15

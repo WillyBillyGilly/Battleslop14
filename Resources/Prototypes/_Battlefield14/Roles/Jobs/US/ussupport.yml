@@ -25,8 +25,13 @@
   requireAdminNotify: false
   supervisors: job-supervisors-usgov
   canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    languagesUnderstood:
+    - English
   # COMMENTED OUT: AddComponentSpecial requires at least one component, but all components are commented out
-  # special:
   # - !type:AddComponentSpecial
   #   components:
   #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
@@ -34,11 +39,6 @@
   #     #   rank: BF-rank-corporal
   #     # - type: HullrotFaction
   #     #   faction: USMC
-  #     # - type: LanguageAdder
-  #     #   addSpoken:
-  #     #     - English
-  #     #   addUnderstood:
-  #     #     - English
   access:
   - Maintenance
   - Service
@@ -63,9 +63,9 @@
     shoes: ClothingShoesBootsJackFilled
     back: ClothingBackpackRucksackTan
     suitstorage: WeaponRifleUSM27IAR
+    pocket1: PouchFirstAidFilled
     pocket2: PouchGrenadesFilledUSMCRifleman
   storage:
     back:
     - SupplyBoxAmmoUSFilled
     - Tourniquet
-    - ArmorPlateMedium

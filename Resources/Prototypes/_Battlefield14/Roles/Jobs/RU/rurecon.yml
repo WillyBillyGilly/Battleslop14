@@ -25,10 +25,12 @@
   requireAdminNotify: false
   supervisors: job-supervisors-rugov
   canBeAntag: false
-  # COMMENTED OUT: AddComponentSpecial requires at least one component, but all components are commented out
-  # special:
-  # - !type:AddComponentSpecial
-  #   components:
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    languagesUnderstood:
+    - Russian
   #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
   #     # - type: ChatRank
   #     #   rank: BF-rank-private
@@ -63,6 +65,7 @@
     shoes: ClothingShoesBootsJackFilled
     back: ClothingBackpackRucksackBlack
     suitstorage: WeaponRifleRUASVAL
+    pocket1: PouchFirstAidFilled
     pocket2: PouchGrenadesFilledVDVScout
   storage:
     back:

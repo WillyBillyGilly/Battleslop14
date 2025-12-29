@@ -22,6 +22,15 @@
     price: 100
 
 - type: entity
+  id: PouchFirstAid
+  parent: BasePouch
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/pouches.rsi
+    layers:
+      - state: small_firstaid
+
+- type: entity
   id: PouchMags
   parent: BasePouch
   name: magazine pouch

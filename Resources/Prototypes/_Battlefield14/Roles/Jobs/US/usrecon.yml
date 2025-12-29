@@ -25,8 +25,12 @@
   requireAdminNotify: false
   supervisors: job-supervisors-usgov
   canBeAntag: false
-  # COMMENTED OUT: AddComponentSpecial requires at least one component, but all components are commented out
-  # special:
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    languagesUnderstood:
+    - English
   # - !type:AddComponentSpecial
   #   components:
   #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
@@ -63,6 +67,7 @@
     shoes: ClothingShoesBootsJackFilled
     back: ClothingBackpackRucksackTan
     suitstorage: WeaponRifleUSM4A1SUPP
+    pocket1: PouchFirstAidFilled
     pocket2: PouchGrenadesFilledUSMCScout
   storage:
     back:

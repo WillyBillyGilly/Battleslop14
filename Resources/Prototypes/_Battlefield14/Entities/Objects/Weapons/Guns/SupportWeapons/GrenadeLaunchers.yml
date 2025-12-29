@@ -24,7 +24,7 @@
         priority: 1
         whitelist:
           tags:
-            - Grenade # Cartridge40x46mmGrenade
+            - Cartridge40x46mmGrenade
   - type: Gun
     fireRate: 1
     selectedMode: SemiAuto

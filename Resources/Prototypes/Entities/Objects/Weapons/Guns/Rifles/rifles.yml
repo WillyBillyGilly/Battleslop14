@@ -68,23 +68,16 @@
   - type: EmitSoundOnLand
     sound:
       collection: RiflesDrop
-  # Goobstation edit end
-#  - type: MeleeWeapon BF14, sadly does not work
-#    attackRate: 1.3333
-#    damage:
-#      types:
-#        Blunt: 8.5
-#    bluntStaminaDamageFactor: 1.25
-#    swapKeys: true
-#    disableHeavy: true
-#    animation: WeaponArcThrust
-#    wideAnimationRotation: 180
-#    soundHit:
-#      collection: MetalThud
-#  - type: IncreaseDamageOnWield
-#    damage:
-#      types:
-#        Blunt: 4.5
+  - type: AltFireMelee # BF14
+    attackType: Heavy
+  - type: MeleeWeapon
+    damage:
+      types:
+       Blunt: 20
+    angle: 0
+    wideAnimationRotation: 90 # -90 if it takes bayonets (hits with muzzle) 90 if not (hits with butt)
+    soundHit:
+      collection: MetalThud
 
 - type: entity
   name: LWC AKM (7.62x39mm)
