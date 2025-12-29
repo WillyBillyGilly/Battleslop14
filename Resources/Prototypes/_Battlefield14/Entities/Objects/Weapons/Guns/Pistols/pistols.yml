@@ -13,7 +13,7 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
     fireRate: 5
-    projectileSpeed: 20
+    projectileSpeed: 30
     availableModes:
     - SemiAuto
     soundGunshot:
@@ -58,7 +58,7 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
     fireRate: 5
-    projectileSpeed: 20
+    projectileSpeed: 30
     availableModes:
     - SemiAuto
     soundGunshot:

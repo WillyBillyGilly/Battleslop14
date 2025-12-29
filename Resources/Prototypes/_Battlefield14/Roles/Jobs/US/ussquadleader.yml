@@ -11,6 +11,8 @@
     # COMMENTED OUT: FactionRequirement not supported (faction system not implemented)
     # - !type:FactionRequirement
     #   factionID: "NATO"
+#    - !type:SexRequirement # Not implemented
+#      sex: Male
     - !type:TraitsRequirement
       inverted: true
       traits:
@@ -25,9 +27,14 @@
   requireAdminNotify: false
   supervisors: job-supervisors-usgov
   canBeAntag: false
-  # COMMENTED OUT: AddComponentSpecial requires at least one component, but all components are commented out
-  # special:
-  # - !type:AddComponentSpecial
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    - Esperanto
+    languagesUnderstood:
+    - English
+    - Esperanto
   #   components:
   #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
   #     # - type: ChatRank
@@ -64,6 +71,7 @@
     shoes: ClothingShoesBootsJackFilled
     back: ClothingBackpackRucksackTan
     suitstorage: WeaponRifleUSM4A1
+    pocket1: PouchFirstAidFilled
     pocket2: PouchGrenadesFilledUSMCRifleman
   storage:
     back:

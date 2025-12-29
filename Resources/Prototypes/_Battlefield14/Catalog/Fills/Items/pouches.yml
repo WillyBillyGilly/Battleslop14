@@ -1,4 +1,17 @@
 - type: entity
+  parent: PouchFirstAid
+  id: PouchFirstAidFilled
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: Brutepack
+    - id: Ointment
+    - id: Gauze
+    - id: PillCanisterTricordrazine
+#    - id: PillCanisterTramadol
+
+- type: entity
   parent: PouchMagsPistolLarge
   id: PouchMagsPistolLargeFilledMP5
   suffix: Filled, MP5

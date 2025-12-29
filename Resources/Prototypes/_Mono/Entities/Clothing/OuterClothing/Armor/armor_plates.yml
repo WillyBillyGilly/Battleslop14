@@ -16,7 +16,7 @@
     maxDurability: 100 # BF14
     walkSpeedModifier: 1 # BF14
     sprintSpeedModifier: 1 # BF14
-    staminaDamageMultiplier: 0.0 # BF14
+    staminaDamageMultiplier: 0.2 # BF14
   - type: Damageable
     damageContainer: Inorganic
   - type: Destructible
@@ -32,13 +32,14 @@
           path: /Audio/_Battlefield14/Effects/armor_break.ogg
           params:
             volume: 5
+            variation: 0.125
 
 # Ceramic
 - type: entity
   parent: BaseItem
   id: ArmorPlateMedium
   name: ceramic plate
-  description: Ceramic armour absorbs impacts by using ceramic tiles that the bullet breaks on impact instead of you, not the most durable but quite good protection, uncountable soldiers depend on this kind of plate to save their life. # BF14
+  description: Ceramic armour absorbs impacts by using ceramic tiles that the bullet breaks on impact instead of you, uncountable soldiers depend on this kind of plate to save their life. # BF14
   suffix: Medium
   components:
   - type: Sprite
@@ -51,7 +52,7 @@
     maxDurability: 200 # BF14
     walkSpeedModifier: 1 # BF14
     sprintSpeedModifier: 1 # BF14
-    staminaDamageMultiplier: 0.0 # BF14
+    staminaDamageMultiplier: 0.2 # BF14
   - type: Damageable
     damageContainer: Inorganic
   - type: Destructible
@@ -67,6 +68,7 @@
           path: /Audio/_Battlefield14/Effects/armor_break.ogg
           params:
             volume: 5
+            variation: 0.125
 
 # Plasteel
 - type: entity
@@ -86,7 +88,7 @@
     maxDurability: 300 # BF14
     walkSpeedModifier: 0.90
     sprintSpeedModifier: 0.90
-    staminaDamageMultiplier: 0.0 # BF14
+    staminaDamageMultiplier: 0.3 # BF14
   - type: Damageable
     damageContainer: Inorganic
   - type: Destructible
@@ -102,6 +104,7 @@
           path: /Audio/_Battlefield14/Effects/armor_break.ogg
           params:
             volume: 5
+            variation: 0.125
 
 # Plastitanium
 - type: entity
@@ -121,7 +124,7 @@
     maxDurability: 350 # BF14
     walkSpeedModifier: 1.0
     sprintSpeedModifier: 1.0
-    staminaDamageMultiplier: 0.0
+    staminaDamageMultiplier: 0.3 # BF14
   - type: Damageable
     damageContainer: Inorganic
   - type: Destructible
@@ -137,3 +140,4 @@
           path: /Audio/_Battlefield14/Effects/armor_break.ogg
           params:
             volume: 5
+            variation: 0.125

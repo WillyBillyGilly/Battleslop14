@@ -586,8 +586,6 @@
   - type: StaticPrice
     price: 1
 
-# V-830 "Vasilek-N" 83mm Mortar
-
 # S-570 "Burevestnik-N" 57mm Heavy Cannon
 - type: entity
   id: Magazine57mmBurevestnikN
