@@ -1,3 +1,4 @@
+# US
 - type: entity
   id: ClothingBeltMilitaryWebbingUSFilledSTANAG
   parent: ClothingBeltMilitaryWebbingUS
@@ -17,6 +18,8 @@
     contents:
       - id: MagazineSubmachinegunMP5
         amount: 8
+
+# RU
 
 - type: entity
   id: ClothingBeltMilitaryWebbingRUFilledAK74
@@ -87,3 +90,66 @@
     contents:
       - id: MagazineRifleASVALShort
         amount: 8
+
+# MISC
+
+- type: entity
+  id: ClothingBeltStationSecurityFilled
+  parent: ClothingBeltStationSecurity
+  suffix: Filled
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - WeaponPistolM9
+  - type: StorageFill
+    contents:
+      - id: Stunbaton
+      - id: Handcuffs
+        amount: 2
+      - id: Flash
+      - id: FlashlightSeclite
+      - id: MagazinePistolM9
+        amount: 2
+
+- type: entity
+  id: ClothingBeltCommandFilledUS
+  parent: ClothingBeltCommand
+  suffix: Filled, US
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - WeaponPistolM9
+  - type: StorageFill
+    contents:
+      - id: Handcuffs
+      - id: Flash
+      - id: MagazinePistolM9
+        amount: 3
+
+- type: entity
+  id: ClothingBeltCommandFilledRU
+  parent: ClothingBeltCommand
+  suffix: Filled, RU
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - WeaponPistolMP443
+  - type: StorageFill
+    contents:
+      - id: Handcuffs
+      - id: Flash
+      - id: MagazinePistolMP443
+        amount: 3
+
+- type: entity
+  id: ClothingBeltMacheteFilled
+  parent: ClothingBeltMachete
+  suffix: Filled
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - Machete

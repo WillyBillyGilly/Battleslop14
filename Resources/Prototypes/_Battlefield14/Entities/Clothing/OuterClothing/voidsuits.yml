@@ -52,7 +52,7 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.5
+        Blunt: 0.7
         Slash: 0.5
         Piercing: 0.5
         Heat: 0.5
@@ -77,12 +77,6 @@
 #   COMMENTED OUT: ClothingAddFaction not supported (faction system not implemented)
 #   - type: ClothingAddFaction
 #     faction: PACT
-#  - type: ExtendDescription
-#    descriptionList:
-#    - description: "Maximum health: 750. Armour type: Metallic"
-#      fontSize: 12
-#      color: "#1c89b1"
-#      requireDetailRange: true
 
 - type: entity
   parent: [ ClothingOuterHardsuitBase , ClothingArmorPlateMedium ]
@@ -119,12 +113,6 @@
   # COMMENTED OUT: ClothingAddFaction not supported (faction system not implemented)
   # - type: ClothingAddFaction
   #   faction: PACT
- # - type: ExtendDescription
-    descriptionList:
-    - description: "Maximum health: 2000. Armour type: Ceramic"
-      fontSize: 12
-      color: "#1c89b1"
-      requireDetailRange: true
 
 - type: entity
   parent: [ ClothingOuterHardsuitBase , BaseIntegratedManeuveringThrusters , ClothingArmorPlateMedium ]
@@ -147,7 +135,7 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.5
+        Blunt: 0.7
         Slash: 0.5
         Piercing: 0.5
         Heat: 0.5
@@ -172,9 +160,3 @@
   # COMMENTED OUT: ClothingAddFaction not supported (faction system not implemented)
   # - type: ClothingAddFaction
   #   faction: NATO
-#   - type: ExtendDescription
-#    descriptionList:
-#    - description: "Maximum health: 750. Armour type: Metallic"
-#      fontSize: 12
-#      color: "#1c89b1"
-#      requireDetailRange: true
