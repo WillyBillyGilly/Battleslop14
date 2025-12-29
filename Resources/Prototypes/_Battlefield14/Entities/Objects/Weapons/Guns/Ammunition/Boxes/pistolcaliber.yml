@@ -5,7 +5,7 @@
   components:
   - type: BallisticAmmoProvider
     capacity: 300
-    proto: CartridgePistol9mm
+    proto: BF_CartridgePistol9x19
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/9x19mm.rsi
     layers:

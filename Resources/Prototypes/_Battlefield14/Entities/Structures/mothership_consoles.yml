@@ -7,8 +7,7 @@
   components:
   - type: ShipyardListing
     shuttles:
-    - UnionfallConquest
-    - UnionfallValor
+    - Prowler # TBD
 
 - type: entity
   id: PACTSVOGoydinClementineMothershipComputer
@@ -19,5 +18,4 @@
   components:
   - type: ShipyardListing
     shuttles:
-    - UnionfallKhopesh
-    - UnionfallBroadsword
+    - Prowler # TBD

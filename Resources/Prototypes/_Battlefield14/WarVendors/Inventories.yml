@@ -56,7 +56,6 @@
     ClothingOuterArmorPlateCarrierTan: 100
     ClothingHeadHelmetSoftsuitNasa: 50
     ClothingOuterSoftsuitNASA: 50
-    ClothingShoesBootsMagCombat: 50
 
 - type: vendingMachineInventory
   id: NATOUSMCShipInventory
@@ -97,7 +96,6 @@
     ClothingOuterArmorPlateCarrierBlack: 100
     ClothingHeadHelmetSoftsuitVKS: 50
     ClothingOuterSoftsuitVKS: 50
-    ClothingShoesBootsMagCombat: 50
 
 - type: vendingMachineInventory
   id: PACTVDVAmmoInventory
