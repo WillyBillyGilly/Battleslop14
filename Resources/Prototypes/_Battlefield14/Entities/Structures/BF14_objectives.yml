@@ -4,10 +4,10 @@
   name: NT-X8 'Jamrock' deflector emitter (MAIN OBJECTIVE)
   description: An experimental shield emitter thought to be lost to time. Capable of blocking even subnuclear fire without flinching. Once configured to an IFF signature, it activates and allows those signatures in as well.
   components:
-  - type: AmbientSound
-    volume: -5
-    range: 30
-    enabled: true
+#  - type: AmbientSound
+#    volume: -5
+#    range: 30
+#    enabled: true
 #    sound:
 #      path: /Audio/_EE/Supermatter/delamming.ogg
   - type: Sprite
@@ -89,21 +89,20 @@
   name: NATO Main Cloner Database (MAIN OBJECTIVE)
   description: This device holds all the DNA samples and data for cloning. Protect this with your life, because without it you will not get another.
   components:
-  - type: AmbientSound
-    volume: -5
-    range: 30
-    enabled: true
-    sound:
-      path: /Audio/_EE/Supermatter/delamming.ogg
-  # COMMENTED OUT: Missing RSI '_Crescent/Structures/capturepoint.rsi'
-  # - type: Sprite
-  #   noRot: true
-  #   sprite: _Crescent/Structures/capturepoint.rsi
-  #   layers:
-  #   - state: icon
-  #   - state: unlit
-  #     shader: unshaded
-  #     map: ["enum.PowerDeviceVisualLayers.Powered"]
+#  - type: AmbientSound
+#    volume: -5
+#    range: 30
+#    enabled: true
+#    sound:
+#      path: /Audio/_EE/Supermatter/delamming.ogg
+  - type: Sprite
+    noRot: true
+    sprite: _Battlefield14/Structures/armoury.rsi
+    layers:
+    - state: 'off'
+    - state: normal-unshaded
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
   - type: GenericVisualizer
     visuals:
       enum.PowerDeviceVisuals.Powered:
@@ -179,10 +178,10 @@
   name: PACT Main Cloner Database (MAIN OBJECTIVE)
   description: This device holds all the DNA samples and data for cloning. Protect this with your life, because without it you will not get another.
   components:
-  - type: AmbientSound
-    volume: -5
-    range: 30
-    enabled: true
+#  - type: AmbientSound
+#    volume: -5
+#    range: 30
+#    enabled: true
 #    sound:
 #      path: /Audio/_EE/Supermatter/delamming.ogg
   - type: Sprite
@@ -268,10 +267,10 @@
   name: BF14Announcer
   description: Dont look at this
   components:
-  - type: AmbientSound
-    volume: -5
-    range: 30
-    enabled: true
+#  - type: AmbientSound
+#    volume: -5
+#    range: 30
+#    enabled: true
 #    sound:
 #      path: /Audio/_EE/Supermatter/delamming.ogg
   - type: Sprite
