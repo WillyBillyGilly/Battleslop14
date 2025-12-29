@@ -50,7 +50,6 @@
     state: goggle
   - type: Clothing
     sprite: null
-
 #  - type: NightVision
 #    isEquipment: true
 

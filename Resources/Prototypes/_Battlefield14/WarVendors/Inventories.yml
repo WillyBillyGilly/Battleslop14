@@ -2,7 +2,7 @@
   id: NATOUSMCWarInventory
   startingInventory:
     WeaponRifleUSM16A4: 100
-    WeaponRifleUSM4A1: 3
+    WeaponRifleUSM4A1: 5
     MagazineRifleSTANAG: 100
     WeaponSubmachinegunUSMP5: 5
     MagazineSubmachinegunMP5: 20
@@ -61,6 +61,7 @@
 - type: vendingMachineInventory
   id: NATOUSMCShipInventory
   startingInventory:
+    WeaponRifleUSM4A1: 1
 #    ShipVoucherUnionfallRaider: 2
 #    ShipVoucherUnionfallIbis: 2
 
@@ -133,5 +134,6 @@
 - type: vendingMachineInventory
   id: PACTVDVShipInventory
   startingInventory:
+    MagazineRifleAK74: 1
 #    ShipVoucherUnionfallRaider: 2
 #    ShipVoucherUnionfallIbis: 2
