@@ -11,8 +11,8 @@
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-  - type: Advertise
-    pack: WarVendAds
+#  - type: Advertise
+#    pack: WarVendAds
   - type: SpeakOnUIClosed
     pack: GenericVendGoodbyes
   - type: Speech
@@ -42,8 +42,8 @@
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-  - type: Advertise
-    pack: WarVendAds
+#  - type: Advertise
+#    pack: WarVendAds
   - type: SpeakOnUIClosed
     pack: GenericVendGoodbyes
   - type: Speech
@@ -73,8 +73,8 @@
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-  - type: Advertise
-    pack: WarVendAds
+#  - type: Advertise
+#    pack: WarVendAds
   - type: SpeakOnUIClosed
     pack: GenericVendGoodbyes
   - type: Speech
@@ -104,8 +104,8 @@
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-  - type: Advertise
-    pack: WarVendAds
+#  - type: Advertise
+#    pack: WarVendAds
   - type: SpeakOnUIClosed
     pack: GenericVendGoodbyes
   - type: Speech
@@ -135,8 +135,8 @@
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-  - type: Advertise
-    pack: WarVendAds
+#  - type: Advertise
+#    pack: WarVendAds
   - type: SpeakOnUIClosed
     pack: GenericVendGoodbyes
   - type: Speech
@@ -166,8 +166,8 @@
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-  - type: Advertise
-    pack: WarVendAds
+#  - type: Advertise
+#    pack: WarVendAds
   - type: SpeakOnUIClosed
     pack: GenericVendGoodbyes
   - type: Speech
@@ -197,8 +197,8 @@
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-  - type: Advertise
-    pack: WarVendAds
+#  - type: Advertise
+#    pack: WarVendAds
   - type: SpeakOnUIClosed
     pack: GenericVendGoodbyes
   - type: Speech
@@ -228,8 +228,8 @@
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-  - type: Advertise
-    pack: WarVendAds
+#  - type: Advertise
+#    pack: WarVendAds
   - type: SpeakOnUIClosed
     pack: GenericVendGoodbyes
   - type: Speech

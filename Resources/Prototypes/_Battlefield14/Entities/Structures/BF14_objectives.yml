@@ -8,17 +8,16 @@
     volume: -5
     range: 30
     enabled: true
-    sound:
-      path: /Audio/_EE/Supermatter/delamming.ogg
-  # COMMENTED OUT: Missing RSI '_Crescent/Structures/capturepoint.rsi'
-  # - type: Sprite
-  #   noRot: true
-  #   sprite: _Crescent/Structures/capturepoint.rsi
-  #   layers:
-  #   - state: icon
-  #   - state: unlit
-  #     shader: unshaded
-  #     map: ["enum.PowerDeviceVisualLayers.Powered"]
+#    sound:
+#      path: /Audio/_EE/Supermatter/delamming.ogg
+  - type: Sprite
+    noRot: true
+    sprite: _Battlefield14/Structures/armoury.rsi
+    layers:
+    - state: 'off'
+    - state: normal-unshaded
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
   - type: GenericVisualizer
     visuals:
       enum.PowerDeviceVisuals.Powered:
@@ -184,17 +183,16 @@
     volume: -5
     range: 30
     enabled: true
-    sound:
-      path: /Audio/_EE/Supermatter/delamming.ogg
-  # COMMENTED OUT: Missing RSI '_Crescent/Structures/capturepoint.rsi'
-  # - type: Sprite
-  #   noRot: true
-  #   sprite: _Crescent/Structures/capturepoint.rsi
-  #   layers:
-  #   - state: icon
-  #   - state: unlit
-  #     shader: unshaded
-  #     map: ["enum.PowerDeviceVisualLayers.Powered"]
+#    sound:
+#      path: /Audio/_EE/Supermatter/delamming.ogg
+  - type: Sprite
+    noRot: true
+    sprite: _Battlefield14/Structures/armoury.rsi
+    layers:
+    - state: 'off'
+    - state: normal-unshaded
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
   - type: GenericVisualizer
     visuals:
       enum.PowerDeviceVisuals.Powered:
@@ -274,17 +272,16 @@
     volume: -5
     range: 30
     enabled: true
-    sound:
-      path: /Audio/_EE/Supermatter/delamming.ogg
-  # COMMENTED OUT: Missing RSI '_Crescent/Structures/capturepoint.rsi'
-  # - type: Sprite
-  #   noRot: true
-  #   sprite: _Crescent/Structures/capturepoint.rsi
-  #   layers:
-  #   - state: icon
-  #   - state: unlit
-  #     shader: unshaded
-  #     map: ["enum.PowerDeviceVisualLayers.Powered"]
+#    sound:
+#      path: /Audio/_EE/Supermatter/delamming.ogg
+  - type: Sprite
+    noRot: true
+    sprite: _Battlefield14/Structures/armoury.rsi
+    layers:
+    - state: 'off'
+    - state: normal-unshaded
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
   - type: GenericVisualizer
     visuals:
       enum.PowerDeviceVisuals.Powered:

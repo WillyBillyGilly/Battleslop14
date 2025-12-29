@@ -18,7 +18,6 @@
     - SemiAuto
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/viper_fire.ogg
-    fireOnDropChance: 0.5
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -63,7 +62,6 @@
     - SemiAuto
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/viper_fire.ogg
-    fireOnDropChance: 0.5
   - type: ItemSlots
     slots:
       gun_magazine:
