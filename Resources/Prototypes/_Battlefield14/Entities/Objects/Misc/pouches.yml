@@ -138,6 +138,7 @@
     whitelist:
       tags:
       - Grenade
+      - Cartridge40x46mmGrenade
   - type: PhysicalComposition
     materialComposition:
       Plastic: 100

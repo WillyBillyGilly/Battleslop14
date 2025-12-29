@@ -548,6 +548,8 @@
   name: cartridge (40x46mm HE)
   parent: BaseCartridge
   components:
+  - type: Item
+    size: Small
   - type: Tag
     tags:
     - Cartridge
@@ -589,6 +591,8 @@
   name: cartridge (40x46mm HEDP)
   parent: BaseCartridge
   components:
+  - type: Item
+    size: Small
   - type: Tag
     tags:
     - Cartridge
@@ -630,6 +634,8 @@
   name: cartridge (40x46mm fragmentation)
   parent: BaseCartridge
   components:
+  - type: Item
+    size: Small
   - type: Tag
     tags:
     - Cartridge
@@ -671,6 +677,8 @@
   name: cartridge (40x46mm MP-APERS)
   parent: BaseCartridge
   components:
+  - type: Item
+    size: Small
   - type: Tag
     tags:
     - Cartridge
@@ -695,6 +703,8 @@
   name: cartridge (40x46mm plasma gas)
   parent: BaseCartridge
   components:
+  - type: Item
+    size: Small
   - type: Tag
     tags:
     - Cartridge
@@ -737,6 +747,8 @@
   name: cartridge (40x46mm chemical smoke)
   parent: BaseCartridge
   components:
+  - type: Item
+    size: Small
   - type: Tag
     tags:
     - Cartridge
