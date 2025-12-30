@@ -1244,6 +1244,9 @@
   id: TimerSignalElectronics
 
 - type: Tag
+  id: TurretControlElectronics # Used in the construction of sentry turret control panels
+
+- type: Tag
   id: Toolbox
 
 - type: Tag
