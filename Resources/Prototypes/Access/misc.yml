@@ -80,3 +80,8 @@
   - Pilot
 
 # Mono end
+
+- type: accessGroup
+  id: General
+  tags:
+  - Maintenance
