@@ -59,3 +59,70 @@
           amount: 2
   - type: AccessReader
     access: [["NATOSoldier"]]
+
+## PACT
+# RU
+
+- type: entity
+  id: CrateSecgearPACTFilledAK12
+  suffix: Filled, AK-12
+  parent: CrateSecgear
+  name: AK-12 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponRifleRUAK12
+          amount: 10
+        - id: BoxMagazineAK12
+          amount: 2
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
+- type: entity
+  id: CrateSecgearPACTFilledAK74
+  suffix: Filled, AK-74
+  parent: CrateSecgear
+  name: AK-74 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponRifleRUAK74
+          amount: 10
+        - id: BoxMagazineAK74
+          amount: 2
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
+- type: entity
+  id: CrateSecgearPACTFilledAK203
+  suffix: Filled, AK-203
+  parent: CrateSecgear
+  name: AK-203 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponRifleRUAK203
+          amount: 10
+        - id: BoxMagazineAKM
+          amount: 2
+        - id: ClothingUniformJumpsuitCombatSuitDigitalRed
+          amount: 5
+        - id: ClothingHelmetCoverRedDigital
+          amount: 5
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
+- type: entity
+  id: CrateSecgearPACTFilledSV98
+  suffix: Filled, SV-98
+  parent: CrateSecgear
+  name: SV-98 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponSniperRUSV98
+          amount: 2
+        - id: BoxMagazineSV98
+          amount: 2
+  - type: AccessReader
+    access: [["PACTSoldier"]]

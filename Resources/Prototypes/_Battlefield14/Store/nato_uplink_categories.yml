@@ -1,6 +1,6 @@
 ## NATO
 # US
-
+# Weapons
 - type: listing
   id: UplinkNATOUSM249Para
   name:  uplink-natous-m249para-name
@@ -81,6 +81,8 @@
         tags:
           - AmericanUplink
 
+# Ammo
+
 - type: listing
   id: UplinkNATOUSAmmoBox
   name:  uplink-natous-ammo-box-name
@@ -97,11 +99,13 @@
         tags:
           - AmericanUplink
 
+# Armour
+
 - type: listing
   id: UplinkNATOUSArmorPlateLight
   name:  uplink-natous-armor-plate-light-name
   description: uplink-natous-armor-plate-light-name
-  productEntity: ArmorPlateMedium
+  productEntity: ArmorPlateLight
   icon: { sprite: _Mono/Clothing/ArmorPlate/armor_light.rsi, state: icon }
   cost:
     NATORequisition: 3 # 30 seconds
@@ -129,6 +133,8 @@
         tags:
           - AmericanUplink
 
+# Utility
+
 - type: listing
   id: UplinkNATOUSMacheteBelt
   name:  uplink-natous-machete-belt-name
@@ -145,6 +151,8 @@
         tags:
           - AmericanUplink
 
+# Medical
+
 - type: listing
   id: UplinkNATOUSCombatMedkit
   name:  uplink-natous-medkit-combat-name
@@ -160,6 +168,8 @@
       whitelist:
         tags:
           - AmericanUplink
+
+# Explosives
 
 - type: listing
   id: UplinkNATOUSBoxGrenadesMK21
@@ -264,7 +274,7 @@
   productEntity: BoxMagazine40x46PlasmaGas
   icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi, state: emp }
   cost:
-    NATORequisition: 18 # 3 minutes
+    NATORequisition: 60 # 10 minutes
   categories:
     - UplinkNATOUSExplosives
   conditions:
@@ -289,11 +299,13 @@
         tags:
           - AmericanUplink
 
+# Ship weapons
+
 - type: listing
   id: UplinkNATOUS25mmAPDS
   name:  uplink-natous-M242-APDS-name
   description: uplink-natous-M242-APDS-desc
-  productEntity: Magazine25mmBushmaster
+  productEntity: Magazine30mmFrag
   icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_shipgun_box.rsi, state: base }
   cost:
     NATORequisition: 15

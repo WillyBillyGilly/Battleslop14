@@ -53,7 +53,7 @@
   parent: [ BaseMachine , StorePresetNATOUSUplink ]
   id: NATOUSUplinkMachine
   name: NATO Requisition Uplink # working name
-  description: It's like a government-sanctioned bitcoin miner.
+  description: Insert your requisition chips here to purchase faction equipment.
   components:
   - type: Sprite
     sprite: _Battlefield14/Structures/armoury.rsi
@@ -75,13 +75,41 @@
     tags:
     - AmericanUplink
 
+- type: entity
+  parent: [ BaseMachine , StorePresetPACTRUUplink ]
+  id: PACTRUUplinkMachine
+  name: PACT Requisition Uplink # working name
+  description: Insert your requisition chips here to purchase faction equipment.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/armoury.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "normal-unshaded"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+#    - state: panel
+#      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: UserInterface
+    interfaces:
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+  - type: ActivatableUI
+    key: enum.StoreUiKey.Key
+  - type: Tag
+    tags:
+    - RussianUplink
+
 # Handheld uplink
+
+# US
 
 - type: entity
   parent: [ BaseItem, StorePresetNATOUSUplink ]
   id: BaseNATOUSUplink
   name: NATO requisitions uplink
-  description: NATO requisitions uplink, american edition
+  description: NATO requisitions uplink, American edition
   suffix: Empty
   categories: [ HideSpawnMenu ]
   components:
@@ -104,9 +132,70 @@
 
 - type: entity
   parent: BaseNATOUSUplink
-  id: BaseNATOUplinkAmericanDebug
-  suffix: NATOUS, DEBUG
+  id: BaseNATOUSUplinkDebug
+  suffix: NATO US, DEBUG
   components:
   - type: Store
     balance:
       NATORequisition: 99999
+
+# RU
+
+- type: entity
+  parent: [ BaseItem, StorePresetPACTRUUplink ]
+  id: BasePACTRUUplink
+  name: PACT requisitions uplink
+  description: PACT requisitions uplink, Russian edition
+  suffix: Empty
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Objects/Devices/communication.rsi
+    layers:
+    - state: old-radio
+  - type: Item
+    sprite: Objects/Devices/communication.rsi
+    heldPrefix: old-radio
+  - type: UserInterface
+    interfaces:
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+  - type: ActivatableUI
+    key: enum.StoreUiKey.Key
+  - type: Tag
+    tags:
+    - RussianUplink
+
+- type: entity
+  parent: [ BaseItem, StorePresetPACTRUUplink ]
+  id: BasePACTRUUplinkDebug
+  name: PACT requisitions uplink
+  description: NATO requisitions uplink, Russian edition
+  suffix: Empty
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Objects/Devices/communication.rsi
+    layers:
+    - state: old-radio
+  - type: Item
+    sprite: Objects/Devices/communication.rsi
+    heldPrefix: old-radio
+  - type: UserInterface
+    interfaces:
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+  - type: ActivatableUI
+    key: enum.StoreUiKey.Key
+  - type: Tag
+    tags:
+    - RussianUplink
+
+- type: entity
+  parent: BasePACTRUUplink
+  id: BasePACTRUUplinkDebug
+  suffix: PACT RU, DEBUG
+  components:
+  - type: Store
+    balance:
+      PACTRequisition: 99999

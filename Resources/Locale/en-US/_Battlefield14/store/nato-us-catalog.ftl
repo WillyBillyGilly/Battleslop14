@@ -1,24 +1,42 @@
 ## Weapons
 
 uplink-natous-m249para-name = M249 Para LMG x2
-uplink-natous-m249para-desc = A crate with two M249 Para's with four spare belt boxes
+uplink-natous-m249para-desc = A crate with two M249 Para's with four spare belt boxes.
 
 uplink-natous-m320-name = M320 grenade launcher
 uplink-natous-m320-desc = One M320 grenade launcher, fires 40x46mm grenades, no ammo included.
 
 uplink-natous-m16a4crate-name = M16A4 x10
-uplink-natous-m16a4crate-desc = A crate with ten M16A4 rifles in a crate.
+uplink-natous-m16a4crate-desc = A crate with ten M16A4 rifles and two boxes of spare ammunition.
 
 uplink-natous-m4a1crate-name = M4A1 x10
-uplink-natous-m4a1crate-desc = A crate with ten M4A1 rifles.
+uplink-natous-m4a1crate-desc = A crate with ten M4A1 rifles and two boxes of spare ammunition.
 
 uplink-natous-m27iarcrate-name = M27-IAR x10
-uplink-natous-m27iarcrate-desc = A crate with ten M27-IAR automatic rifles.
+uplink-natous-m27iarcrate-desc = A crate with ten M27-IAR automatic rifles and two boxes of spare ammunition.
+
+uplink-natous-SMAWcrate-name = SMAW x2
+uplink-natous-SMAWcrate-desc = Two Shoulder-Launched Multipurpose Assault Weapons, firing 83mm projectiles, comes with 4 frag and 4 HEAT rounds.
+
+uplink-natous-SMAW-Dcrate-name = SMAW-D x5
+uplink-natous-SMAW-Dcrate-desc = 5 disposable anti-infantry SMAW rounds.
+
+uplink-natous-AT4crate-name = AT-4 x5
+uplink-natous-AT4crate-desc = 5 disposable 'eighty-four' milimeter launchers firing a HEAT rounds.
+
+uplink-natous-1776railgun-name = 17.76mm Liberator railgun
+uplink-natous-1776railgun-desc = A singlular unit of the Liberator railgun, fires shortened 17.76mm uranium rods.
 
 ## Ammo
 
 uplink-natous-ammo-box-name = Ammo Box
-uplink-natous-ammo-box-desc = Contains 200 loose 5.56x45mm rounds, 16 STANAG magazines, and 300 loose rounds of 9x19mm round.
+uplink-natous-ammo-box-desc = Contains 200 loose 5.56x45mm rounds, 16 STANAG magazines, and 300 loose rounds of 9x19mm.
+
+uplink-natous-83mm-HEAA-name = 83mm HEAA round x4 (SMAW)
+uplink-natous-83mm-HEAA-desc = Four 83mm High Explosive Anti Armour rounds for the SMAW.
+
+uplink-natous-83mm-SMAWNE-name = 83mm SMAW-NE round x4 (SMAW)
+uplink-natous-83mm-SMAWNE-desc = Four 83mm Novel Explosive rounds for the SMAW, more effective against infantry than armour.
 
 ## Armour
 
