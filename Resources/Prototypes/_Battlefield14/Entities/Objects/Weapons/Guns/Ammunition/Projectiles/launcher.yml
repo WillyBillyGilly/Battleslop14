@@ -18,7 +18,7 @@
     - Structural
     deleteOnCollide: false
   - type: Heat
-    explosionDelay: 1
+    explosionDelay: 0.1
     fragmentationDelay: 0.1
     fragmentationCount: 40
     fragmentationPrototype: Bullet84mmHEATFragment
@@ -27,9 +27,9 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    totalIntensity: 150
+    totalIntensity: 300
     intensitySlope: 5
-    maxIntensity: 25
+    maxIntensity: 50
     maxTileBreak: 2
 
 - type: entity
@@ -73,7 +73,8 @@
     damage:
       types:
         Structural: 30
-        Piercing: 30
+        Slash: 15
+        Piercing: 15
   - type: StaminaDamageOnCollide
     damage: 15 # ~7 hits to stun
     deleteOnCollide: true

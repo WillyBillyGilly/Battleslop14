@@ -40,6 +40,9 @@
     walkModifier: 0.95
     sprintModifier: 0.95
   - type: HeldSpeedModifier
+  - type: EyeCursorOffset
+    maxOffset: 5
+    pvsIncrease: 0.25
 
 # RU
 
