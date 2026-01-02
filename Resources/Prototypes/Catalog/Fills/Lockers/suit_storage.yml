@@ -159,8 +159,7 @@
   - type: StorageFill
     contents:
         - id: OxygenTankFilled
-        - id: NitrogenTankFilled
-        - id: UndeterminedVoidsuitSecurity # Goob edit
+        - id: ClothingOuterHardsuitSecurity # BF14 edit
         - id: ClothingMaskBreath
         - id: JetpackSecurityFilled # Frontier
         - id: ClothingShoesBootsMagSecurityFilled # Frontier
