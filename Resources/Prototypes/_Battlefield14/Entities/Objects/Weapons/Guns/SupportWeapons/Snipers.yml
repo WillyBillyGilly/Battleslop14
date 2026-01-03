@@ -53,6 +53,7 @@
     magState: mag
     steps: 1
     zeroVisible: true
+  - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
     maxOffset: 10
     pvsIncrease: 0.8

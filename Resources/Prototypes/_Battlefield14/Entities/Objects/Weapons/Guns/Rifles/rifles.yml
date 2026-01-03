@@ -69,6 +69,7 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+  - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
     maxOffset: 5
     pvsIncrease: 0.25
