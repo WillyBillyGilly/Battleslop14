@@ -2,7 +2,6 @@
   id: LockerSecurityFilledBF
   suffix: Filled, BF14
   parent: LockerSecurity
-  categories: [ HideSpawnMenu ] # Frontier
   components:
   - type: StorageFill
     contents:
@@ -23,7 +22,6 @@
   id: LockerWardenFilledBF
   suffix: Filled, BF14
   parent: LockerWarden
-  categories: [ HideSpawnMenu ] # Frontier
   components:
   - type: StorageFill
     contents:
