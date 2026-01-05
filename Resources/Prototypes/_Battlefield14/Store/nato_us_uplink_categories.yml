@@ -165,24 +165,24 @@
 #        tags:
 #          - AmericanUplink
 #
-## Utility
-#
-#- type: listing
-#  id: UplinkNATOUSMacheteBelt
-#  name:  uplink-natous-machete-belt-name
-#  description: uplink-natous-machete-belt-desc
-#  productEntity: ClothingBeltMacheteFilled
-#  icon: { sprite: _Battlefield14/Clothing/Belt/machetebelt.rsi, state: icon }
-#  cost:
-#    NATORequisition: 15 # 2 minutes 30 seconds
-#  categories:
-#    - UplinkNATOUSUtility
-#  conditions:
-#    - !type:StoreWhitelistCondition
-#      whitelist:
-#        tags:
-#          - AmericanUplink
-#
+# Utility
+
+- type: listing
+  id: UplinkNATOUSFUBAR
+  name:  uplink-natous-FUBAR-name
+  description: uplink-natous-FUBAR-desc
+  productEntity: FUBAR
+  icon: { sprite: _NF/Objects/Tools/maintenance-jack.rsi, state: icon }
+  cost:
+    NATORequisition: 30 # 5 minutes
+  categories:
+    - UplinkNATOUSUtility
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
 ## Medical
 #
 #- type: listing

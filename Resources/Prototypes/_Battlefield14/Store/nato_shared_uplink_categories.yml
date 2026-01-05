@@ -2,8 +2,8 @@
 
 - type: listing
   id: UplinkNATOArmorPlateLight
-  name:  uplink-natous-armor-plate-light-name
-  description: uplink-natous-armor-plate-light-name
+  name:  uplink-nato-armor-plate-light-name
+  description: uplink-nato-armor-plate-light-name
   productEntity: ArmorPlateLight
   icon: { sprite: _Mono/Clothing/ArmorPlate/armor_light.rsi, state: icon }
   cost:
@@ -18,8 +18,8 @@
 
 - type: listing
   id: UplinkNATOArmorPlateMedium
-  name:  uplink-natous-armor-plate-medium-name
-  description: uplink-natous-armor-plate-medium-name
+  name:  uplink-nato-armor-plate-medium-name
+  description: uplink-nato-armor-plate-medium-name
   productEntity: ArmorPlateMedium
   icon: { sprite: _Mono/Clothing/ArmorPlate/armor_medium.rsi, state: icon }
   cost:
@@ -36,8 +36,8 @@
 
 - type: listing
   id: UplinkNATOMacheteBelt
-  name:  uplink-natous-machete-belt-name
-  description: uplink-natous-machete-belt-desc
+  name:  uplink-nato-machete-belt-name
+  description: uplink-nato-machete-belt-desc
   productEntity: ClothingBeltMacheteFilled
   icon: { sprite: _Battlefield14/Clothing/Belt/machetebelt.rsi, state: icon }
   cost:
@@ -54,8 +54,8 @@
 
 - type: listing
   id: UplinkNATOCombatMedkit
-  name:  uplink-natous-medkit-combat-name
-  description: uplink-natous-medkit-combat-desc
+  name:  uplink-nato-medkit-combat-name
+  description: uplink-nato-medkit-combat-desc
   productEntity: MedkitCombatFilled
   icon: { sprite: _NF/Objects/Specific/Medical/firstaidkits.rsi, state: blackkit }
   cost:

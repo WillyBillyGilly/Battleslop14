@@ -409,7 +409,7 @@
   - type: Appearance
 
 - type: entity
-  name: AK-203
+  name: AK-103
   parent: WeaponRifleRUAKMS
   id: WeaponRifleRUAK203
   description: A later revision of the AKM rifle, with even moderner design.

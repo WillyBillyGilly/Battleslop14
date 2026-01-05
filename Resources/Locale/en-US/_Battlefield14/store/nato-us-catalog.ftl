@@ -40,21 +40,12 @@ uplink-natous-83mm-SMAWNE-desc = Four 83mm Novel Explosive rounds for the SMAW, 
 
 ## Armour
 
-uplink-natous-armor-plate-light-name = Kevlar insert
-uplink-natous-armor-plate-light-desc = One singular kevlar insert.
-
-uplink-natous-armor-plate-medium-name = Ceramic armour plate
-uplink-natous-armor-plate-medium-desc = One singular ceramic armour plate.
-
 ## Utility
 
-uplink-natous-machete-belt-name = Machete belt
-uplink-natous-machete-belt-desc = A belt that has a special holster for a machete, includes one machete along with the belt.
+uplink-natous-FUBAR-name = FUBAR
+uplink-natous-FUBAR-desc = A big heavy piece of shit for ripping open airlocks and crushing hardsuit helmets.
 
 ## Medical
-
-uplink-natous-medkit-combat-name = Combat medkit
-uplink-natous-medkit-combat-desc = One singular combat medkit.
 
 ## Explosives
 
