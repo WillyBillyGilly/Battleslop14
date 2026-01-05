@@ -22,10 +22,10 @@ uplink-natous-SMAW-Dcrate-name = SMAW-D x5
 uplink-natous-SMAW-Dcrate-desc = 5 disposable anti-infantry SMAW rounds.
 
 uplink-natous-AT4crate-name = AT4 x5
-uplink-natous-AT4crate-desc = 5 disposable 'eighty-four' milimeter launchers firing a HEAT rounds.
+uplink-natous-AT4crate-desc = 5 disposable 'eighty-four' milimeter launchers firing HEAT warheads.
 
 uplink-natous-1776railgun-name = 17.76mm Liberator railgun
-uplink-natous-1776railgun-desc = A singlular unit of the Liberator railgun, fires shortened 17.76mm uranium rods.
+uplink-natous-1776railgun-desc = A singlular unit of the Liberator railgun, fires shortened 17.76mm depleted-uranium penetrators.
 
 ## Ammo
 

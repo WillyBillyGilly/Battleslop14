@@ -31,7 +31,7 @@
     - !type:StoreWhitelistCondition
       whitelist:
         tags:
-          - AmericanUplink
+          - AmericanUplink # USMC, give the regular army and airborne M3 MAAWS
 
 - type: listing
   id: UplinkNATOUSAT4
