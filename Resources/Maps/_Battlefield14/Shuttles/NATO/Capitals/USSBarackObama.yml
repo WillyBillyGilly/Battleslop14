@@ -46,7 +46,7 @@ entities:
     - type: MetaData
       name: grid
     - type: Transform
-      rot: 0.20534725487232208 rad
+#      rot: 0.20534725487232208 rad
       pos: 1,1
       parent: invalid
     - type: MapGrid

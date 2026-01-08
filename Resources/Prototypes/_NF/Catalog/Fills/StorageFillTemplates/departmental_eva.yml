@@ -131,7 +131,7 @@
     - id: JetpackBlueFilled # BF14
     - id: ClothingShoesBootsMag # BF14
     - id: HandheldGPSBasic # BF14
-    - id: HandheldMassScanner # BF14
+    - id: HandHeldMassScanner # BF14
 
 - type: entity
   abstract: true

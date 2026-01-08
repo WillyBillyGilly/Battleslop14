@@ -132,7 +132,7 @@
         - id: ClothingMaskBreath
         - id: JetpackBlackFilled # BF14
         - id: HandheldGPSBasic # BF14
-        - id: HandheldMassScanner # BF14
+        - id: HandHeldMassScanner # BF14
   - type: AccessReader
     access: [["Engineering"]] # BF14 uncommented, frontier commented this out
 
@@ -166,7 +166,7 @@
         - id: JetpackSecurityFilled # Frontier
         - id: ClothingShoesBootsMagAshenFilled # BF14
         - id: HandheldGPSBasic # BF14
-        - id: HandheldMassScanner # BF14
+        - id: HandHeldMassScanner # BF14
   - type: AccessReader
     access: [["Security"]]
 
