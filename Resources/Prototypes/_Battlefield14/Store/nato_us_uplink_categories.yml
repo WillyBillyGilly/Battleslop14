@@ -69,7 +69,7 @@
   id: UplinkNATOUSM27IARCrate
   name:  uplink-natous-m27iarcrate-name
   description: uplink-natous-m27iarcrate-desc
-  productEntity: LockerArmoryNATOFilledM27IAR
+  productEntity: CrateSecgearNATOFilledM27IAR
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/M27-IAR.rsi, state: icon }
   cost:
     NATORequisition: 18 # 3 minutes

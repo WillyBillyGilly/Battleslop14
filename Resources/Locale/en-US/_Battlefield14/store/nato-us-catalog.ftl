@@ -9,11 +9,11 @@ uplink-natous-m320-desc = One M320 grenade launcher, fires 40x46mm grenades, no 
 uplink-natous-m16a4crate-name = M16A4 x10
 uplink-natous-m16a4crate-desc = A crate with ten M16A4 rifles and two boxes of spare ammunition.
 
-uplink-natous-m4a1crate-name = M4A1 x10
-uplink-natous-m4a1crate-desc = A crate with ten M4A1 rifles and two boxes of spare ammunition.
+uplink-natous-m4a1crate-name = M4A1 x5
+uplink-natous-m4a1crate-desc = A crate with five M4A1 rifles and two boxes of spare ammunition.
 
-uplink-natous-m27iarcrate-name = M27-IAR x10
-uplink-natous-m27iarcrate-desc = A crate with ten M27-IAR automatic rifles and two boxes of spare ammunition.
+uplink-natous-m27iarcrate-name = M27-IAR x5
+uplink-natous-m27iarcrate-desc = A crate with five M27-IAR automatic rifles and two boxes of spare ammunition.
 
 uplink-natous-SMAWcrate-name = SMAW x2
 uplink-natous-SMAWcrate-desc = Two Shoulder-Launched Multipurpose Assault Weapons, firing 83mm projectiles, comes with 4 frag and 4 HEAT rounds.
