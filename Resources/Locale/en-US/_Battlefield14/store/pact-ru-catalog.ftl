@@ -6,8 +6,8 @@ uplink-PACTRU-ak74crate-desc = A crate of ten AK-74 rifles and two boxes of spar
 uplink-PACTRU-ak12crate-name = AK-12 x10
 uplink-PACTRU-ak12crate-desc = A crate of ten AK-12 rifles and two boxes of spare ammunition.
 
-uplink-PACTRU-ak203crate-name = AK-203 x10
-uplink-PACTRU-ak203crate-desc = A crate of ten AK-203 7.62x39 rifles and two boxes of spare ammunition.
+uplink-PACTRU-ak203crate-name = AK-203 x5
+uplink-PACTRU-ak203crate-desc = A crate of five AK-203 7.62x39 rifles and two boxes of spare ammunition.
 
 uplink-PACTRU-sv98crate-name = SV-98 x2
 uplink-PACTRU-sv98crate-desc = A crate of two SV-98 7.62x54mmR sniper rifles and two boxes of spare ammunition.
@@ -31,6 +31,9 @@ uplink-PACTRU-RPG-HEAT-desc = Four High Explosive Anti Tank rounds for the RPG-7
 
 uplink-PACTRU-RPG-frag-name = RPG-7 frag round x4
 uplink-PACTRU-RPG-frag-desc = Four Fragmentation rounds for the RPG-7, more effective against infantry than armour.
+
+uplink-PACTRU-ammo-AK203-name = AK-203 magazine box
+uplink-PACTRU-ammo-AK203-desc = Contains 8 7.62x39 magazines for the AK-203.
 
 ## Armour
 

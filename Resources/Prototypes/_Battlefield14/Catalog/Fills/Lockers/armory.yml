@@ -26,7 +26,7 @@
   - type: StorageFill
     contents:
         - id: WeaponRifleUSM27IAR
-          amount: 10
+          amount: 5
         - id: BoxMagazineSTANAG
           amount: 2
   - type: AccessReader
@@ -77,7 +77,7 @@
   - type: StorageFill
     contents:
         - id: WeaponRifleRUAK203
-          amount: 10
+          amount: 5
         - id: BoxMagazineAK203
           amount: 2
         - id: ClothingUniformJumpsuitCombatSuitDigitalRed
