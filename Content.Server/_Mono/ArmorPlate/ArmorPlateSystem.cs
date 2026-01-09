@@ -63,28 +63,26 @@ public sealed class ArmorPlateSystem : SharedArmorPlateSystem
         EntityUid armorUid,
         ArmorPlateHolderComponent holder,
         Entity<ArmorPlateItemComponent> plate,
-        Shared.FixedPoint.FixedPoint2 damage,
-        Shared.FixedPoint.FixedPoint2 structuralDamage) // BF14 edit, allows armour plates to take structural damage
+        Shared.FixedPoint.FixedPoint2 piercingDamage, // BF14
+        Shared.FixedPoint.FixedPoint2 structuralDamage) // BF14
     {
         var damageSpec = new DamageSpecifier();
 
-             damageSpec.DamageDict.Add("Blunt", piercingDamage); // BF14
+        damageSpec.DamageDict.Add("Blunt", piercingDamage); // BF14
 
-             if (structuralDamage > 0) // BF14
-             {
-                 damageSpec.DamageDict["Blunt"] += structuralDamage; // BF14
-             }
+        if (structuralDamage > 0) // BF14
+        {
+            damageSpec.DamageDict["Blunt"] += structuralDamage; // BF14
+        }
 
-             _damageable.TryChangeDamage( // BF14
-                 plate.Owner,
-                 damageSpec,
-                 ignoreResistances: true
-             );
+        _damageable.TryChangeDamage(
+            plate.Owner,
+            damageSpec,
+            ignoreResistances: true
+        );
 
-        _damageable.TryChangeDamage(plate.Owner, damageSpec, ignoreResistances: true);
-
-        var staminaDamage = damage.Float() * plate.Comp.StaminaDamageMultiplier;
-        _stamina.TakeStaminaDamage(wearer, staminaDamage);
+        var staminaDamage = piercingDamage.Float() * plate.Comp.StaminaDamageMultiplier; // BF14
+        _stamina.TakeStaminaDamage(wearer, staminaDamage); // BF14
     }
 
     private void OnPlateDestroyed(Entity<ArmorPlateItemComponent> ent, ref EntityTerminatingEvent args)
