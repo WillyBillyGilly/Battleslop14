@@ -40,7 +40,7 @@
             - MagazineRifleSV98
       gun_chamber:
         name: Chamber
-        startingItem: BF_CartridgeRifle762x54r
+        startingItem: BF_CartridgeRifle762x54rAP
         priority: 1
         whitelist:
           tags:

@@ -34,6 +34,8 @@ public sealed class ArmorPlateSystem : SharedArmorPlateSystem
         if (!args.Damage.DamageDict.TryGetValue("Piercing", out var piercingDamage) || piercingDamage <= 0)
             return;
 
+        args.Damage.DamageDict.TryGetValue("Structural", out var structuralDamage); // BF14 edit, allows armour plates to take structural damage
+
         if (!_inventory.TryGetSlots(ent, out var slots))
             return;
 
@@ -48,7 +50,7 @@ public sealed class ArmorPlateSystem : SharedArmorPlateSystem
             if (!TryGetActivePlate((equipped.Value, holder), out var plate))
                 continue;
 
-            AbsorbDamage(ent, equipped.Value, holder, plate, piercingDamage);
+            AbsorbDamage(ent, equipped.Value, holder, plate, piercingDamage, structuralDamage); // BF14 edit, allows armour plates to take structural damage
 
             args.Damage.DamageDict.Remove("Piercing");
 
@@ -61,15 +63,26 @@ public sealed class ArmorPlateSystem : SharedArmorPlateSystem
         EntityUid armorUid,
         ArmorPlateHolderComponent holder,
         Entity<ArmorPlateItemComponent> plate,
-        Shared.FixedPoint.FixedPoint2 damage)
+        Shared.FixedPoint.FixedPoint2 piercingDamage, // BF14
+        Shared.FixedPoint.FixedPoint2 structuralDamage) // BF14
     {
         var damageSpec = new DamageSpecifier();
-        damageSpec.DamageDict.Add("Blunt", damage);
 
-        _damageable.TryChangeDamage(plate.Owner, damageSpec, ignoreResistances: true);
+        damageSpec.DamageDict.Add("Blunt", piercingDamage); // BF14
 
-        var staminaDamage = damage.Float() * plate.Comp.StaminaDamageMultiplier;
-        _stamina.TakeStaminaDamage(wearer, staminaDamage);
+        if (structuralDamage > 0) // BF14
+        {
+            damageSpec.DamageDict["Blunt"] += structuralDamage; // BF14
+        }
+
+        _damageable.TryChangeDamage(
+            plate.Owner,
+            damageSpec,
+            ignoreResistances: true
+        );
+
+        var staminaDamage = piercingDamage.Float() * plate.Comp.StaminaDamageMultiplier; // BF14
+        _stamina.TakeStaminaDamage(wearer, staminaDamage); // BF14
     }
 
     private void OnPlateDestroyed(Entity<ArmorPlateItemComponent> ent, ref EntityTerminatingEvent args)
