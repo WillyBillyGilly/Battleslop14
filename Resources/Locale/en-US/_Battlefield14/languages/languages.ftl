@@ -14,7 +14,7 @@ language-German-description = Also known as Deutche, native speakers have been t
 chat-language-German-name = German
 
 language-Mexican-name = Mexican
-language-Mexican-description = A modern gutterlanguage, a bastardisation of the Spanish language that has earned its reputation.
+language-Mexican-description = A modern gutterlanguage, a bastardisation of the Spanish language that has earned its reputation as a language spoken by the poor and the criminal.
 chat-language-Mexican-name = Mexican
 
 language-Esperanto-name = Esperanto

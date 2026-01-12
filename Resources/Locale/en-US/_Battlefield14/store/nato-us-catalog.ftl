@@ -40,6 +40,9 @@ uplink-natous-83mm-SMAWNE-desc = Four 83mm Novel Explosive rounds for the SMAW, 
 
 ## Armour
 
+uplink-natous-evakit-combat-name = Combat EVA Kit
+uplink-natous-evakit-combat-desc = Contains a 'Devil Dog' combat voidsuit, tactical magboots, a double emergency oxygen tank, a handheld mass scanner, a GPS, and a crowbar.
+
 ## Utility
 
 uplink-natous-FUBAR-name = FUBAR

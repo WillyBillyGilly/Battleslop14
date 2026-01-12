@@ -149,39 +149,23 @@
           - RussianUplink
 
 ## Armour
-#
-#- type: listing
-#  id: UplinkPACTRUArmorPlateLight
-#  name:  uplink-PACTRU-armor-plate-light-name
-#  description: uplink-PACTRU-armor-plate-light-name
-#  productEntity: ArmorPlateLight
-#  icon: { sprite: _Mono/Clothing/ArmorPlate/armor_light.rsi, state: icon }
-#  cost:
-#    PACTRequisition: 3 # 30 seconds
-#  categories:
-#    - UplinkPACTRUArmour
-#  conditions:
-#    - !type:StoreWhitelistCondition
-#      whitelist:
-#        tags:
-#          - RussianUplink
-#
-#- type: listing
-#  id: UplinkPACTRUArmorPlateMedium
-#  name:  uplink-PACTRU-armor-plate-medium-name
-#  description: uplink-PACTRU-armor-plate-medium-name
-#  productEntity: ArmorPlateMedium
-#  icon: { sprite: _Mono/Clothing/ArmorPlate/armor_medium.rsi, state: icon }
-#  cost:
-#    PACTRequisition: 6 # 1 minute
-#  categories:
-#    - UplinkPACTRUArmour
-#  conditions:
-#    - !type:StoreWhitelistCondition
-#      whitelist:
-#        tags:
-#          - RussianUplink
-#
+
+- type: listing
+  id: UplinkPACTRUEVAKitCombat
+  name:  uplink-PACTRU-evakit-combat-name
+  description: uplink-PACTRU-evakit-combat-desc
+  productEntity: EVAKitCombatRU
+  icon: { sprite: _Battlefield14/Clothing/OuterClothing/Voidsuits/russiancombat.rsi, state: icon }
+  cost:
+    PACTRequisition: 12 # 2 minutes
+  categories:
+    - UplinkPACTRUArmour
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
 ## Utility
 #
 #- type: listing
