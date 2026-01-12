@@ -46,7 +46,8 @@ uplink-PACTRU-ammo-KSKSlug-desc = 8 mags of 8 rounds of 12 gauge slugs in magazi
 
 ## Armour
 
-
+uplink-PACTRU-evakit-combat-name = Combat EVA Kit
+uplink-PACTRU-evakit-combat-desc = Contains a 'Goida' combat voidsuit, tactical magboots, a double emergency oxygen tank, a handheld mass scanner, a GPS, and a crowbar.
 
 ## Utility
 

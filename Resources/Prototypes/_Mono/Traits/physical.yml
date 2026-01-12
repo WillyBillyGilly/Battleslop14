@@ -3,7 +3,7 @@
   name: trait-prybar-prosthetics-name
   description: trait-prybar-prosthetics-desc
   category: Physical
-  cost: 2
+  cost: 4 # BF14 2 > 4 bionics like this exist but are expensive
   components:
   - type: PrybarProsthetics
 
@@ -117,7 +117,7 @@
   name: trait-bionic-legs-name
   description: trait-bionic-legs-desc
   category: Physical
-  cost: 2
+  cost: 4 # BF14 2 > 4 bionics like this exist but are expensive
   components:
   - type: BionicLegs
 
@@ -167,24 +167,24 @@
     - type: Voracious
       consumptionSpeedMultiplier: 2.0
 
-- type: trait
-  id: BionicSpinarette
-  name: trait-bionic-spinarette-name
-  description: trait-bionic-spinarette-desc
-  category: Physical
-  cost: 2
-  speciesBlacklist:
-    - IPC
-    - Arachnid
-  blacklist:
-    components:
-    - BorgChassis
-  components:
-    - type: Sericulture
-      action: ActionSericulture
-      productionLength: 2
-      entityProduced: MaterialWebSilk1
-      hungerCost: 4
+#- type: trait BF14
+#  id: BionicSpinarette
+#  name: trait-bionic-spinarette-name
+#  description: trait-bionic-spinarette-desc
+#  category: Physical
+#  cost: 2
+#  speciesBlacklist:
+#    - IPC
+#    - Arachnid
+#  blacklist:
+#    components:
+#    - BorgChassis
+#  components:
+#    - type: Sericulture
+#      action: ActionSericulture
+#      productionLength: 2
+#      entityProduced: MaterialWebSilk1
+#      hungerCost: 4
 
 - type: trait
   id: Feeble
@@ -309,15 +309,15 @@
           Slash: 1.5
           Piercing: 1.5
 
-- type: trait
-  id: Ironman
-  name: trait-ironman-name
-  description: trait-ironman-desc
-  category: Physical
-  cost: -5 # This shit was FREE for factions practically
-  components:
-  - type: Ironman
-  traitGear: SpaceCash10000
+#- type: trait BF14 doesnt fit gameplay style, bloaty
+#  id: Ironman
+#  name: trait-ironman-name
+#  description: trait-ironman-desc
+#  category: Physical
+#  cost: -5 # This shit was FREE for factions practically
+#  components:
+#  - type: Ironman
+#  traitGear: SpaceCash10000
 
 - type: trait
   id: TemperatureTolerance

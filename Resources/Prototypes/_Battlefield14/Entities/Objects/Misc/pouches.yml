@@ -24,6 +24,7 @@
 - type: entity
   id: PouchFirstAid
   parent: BasePouch
+  name: first aid pouch
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Misc/pouches.rsi

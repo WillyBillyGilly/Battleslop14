@@ -133,38 +133,22 @@
 
 # Armour
 
-#- type: listing
-#  id: UplinkNATOUSArmorPlateLight
-#  name:  uplink-natous-armor-plate-light-name
-#  description: uplink-natous-armor-plate-light-name
-#  productEntity: ArmorPlateLight
-#  icon: { sprite: _Mono/Clothing/ArmorPlate/armor_light.rsi, state: icon }
-#  cost:
-#    NATORequisition: 3 # 30 seconds
-#  categories:
-#    - UplinkNATOUSArmour
-#  conditions:
-#    - !type:StoreWhitelistCondition
-#      whitelist:
-#        tags:
-#          - AmericanUplink
-#
-#- type: listing
-#  id: UplinkNATOUSArmorPlateMedium
-#  name:  uplink-natous-armor-plate-medium-name
-#  description: uplink-natous-armor-plate-medium-name
-#  productEntity: ArmorPlateMedium
-#  icon: { sprite: _Mono/Clothing/ArmorPlate/armor_medium.rsi, state: icon }
-#  cost:
-#    NATORequisition: 6 # 1 minute
-#  categories:
-#    - UplinkNATOUSArmour
-#  conditions:
-#    - !type:StoreWhitelistCondition
-#      whitelist:
-#        tags:
-#          - AmericanUplink
-#
+- type: listing
+  id: UplinkNATOUSEVAKitCombat
+  name:  uplink-natous-evakit-combat-name
+  description: uplink-natous-evakit-combat-desc
+  productEntity: EVAKitCombatUSMC
+  icon: { sprite: _Battlefield14/Clothing/OuterClothing/Voidsuits/americancombatmarine.rsi, state: icon }
+  cost:
+    NATORequisition: 12 # 2 minutes
+  categories:
+    - UplinkNATOUSArmour
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
 # Utility
 
 - type: listing
