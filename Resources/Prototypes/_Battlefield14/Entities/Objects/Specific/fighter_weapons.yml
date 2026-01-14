@@ -119,7 +119,7 @@
 
 - type: entity
   id: MediumFighterMaverick
-  name: AGM-65 Maverick missile gantry
+  name: AGM-67 Maverick missile gantry
   description: An american classic, fins removed and replaced with shifting titanium cubes to steer and thruster redesigned to work in space.
   suffix: Fighter weapon, Light, Missile
   parent: [ BaseMechWeaponRange, LightFighterEquipment ]
@@ -147,7 +147,7 @@
 
 - type: entity
   id: FighterMissileMaverick
-  name: AGM-65 Maverick
+  name: AGM-67 Maverick
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:

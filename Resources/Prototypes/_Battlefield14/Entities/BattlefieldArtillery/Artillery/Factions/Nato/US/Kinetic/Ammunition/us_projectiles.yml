@@ -107,7 +107,7 @@
       types:
         Structural: 1800
         Piercing: 1400
-    armorPenetration: 3
+    armorPenetration: 5
     deleteOnCollide: false
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
