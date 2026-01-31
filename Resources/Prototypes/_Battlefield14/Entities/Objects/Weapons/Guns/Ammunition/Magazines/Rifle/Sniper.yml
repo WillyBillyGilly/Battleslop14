@@ -63,9 +63,10 @@
   id: MagazineSniperM107
   name: "M107 magazine (.50 BMG)"
   description: A 5 round magazine for the M107, but dont let its small size fool you, these rounds pack a punchmade to disable engine blocks on lightly armoured vehicles.
+  components:
   - type: Tag
     tags:
-      - MagazineSniperM107
+      - MagazineRifleSV98
       - Magazine
   - type: BallisticAmmoProvider
     proto: Cartridge127mmAP
