@@ -31,6 +31,10 @@ using Content.Shared._Mono.FireControl;
 using Content.Shared._Mono.Ships.Components;
 using Content.Shared.Verbs;
 
+// BF14
+using Content.Shared._Battlefield14.Sonar;
+using Robust.Shared.Map.Components;
+
 namespace Content.Server.Shuttles.Systems;
 
 public sealed partial class ShuttleConsoleSystem : SharedShuttleConsoleSystem
@@ -560,6 +564,26 @@ public sealed partial class ShuttleConsoleSystem : SharedShuttleConsoleSystem
         if (!Resolve(entity, ref entity.Comp1, ref entity.Comp2, false))
             return new NavInterfaceState(SharedRadarConsoleSystem.DefaultMaxRange, GetNetCoordinates(coordinates), angle, docks, InertiaDampeningMode.Dampen); // Frontier: add inertial dampening
 
+        // BF14: query sonar
+        var hasSonar = false;
+        var sonarWidth = new Angle();
+        var sonarDistance = 0f;
+        var sonarDuration = new TimeSpan();
+        var sonarCooldown = new TimeSpan();
+        if (entity.Comp1.HasSonar && entity.Comp2?.GridUid is { } grid && TryComp<MapGridComponent>(grid, out var gridComp))
+        {
+            var sonars = new HashSet<Entity<SonarModuleComponent>>();
+            _lookup.GetLocalEntitiesIntersecting(grid, gridComp.LocalAABB, sonars);
+            if (sonars.FirstOrNull() is { } sonar)
+            {
+                hasSonar = true;
+                sonarWidth = sonar.Comp.SonarWidth;
+                sonarDistance = sonar.Comp.SonarDistance;
+                sonarDuration = sonar.Comp.SonarDuration;
+                sonarCooldown = sonar.Comp.SonarCooldown;
+            }
+        }
+
         return new NavInterfaceState(
             entity.Comp1.MaxRange,
             GetNetCoordinates(coordinates),
@@ -569,11 +593,11 @@ public sealed partial class ShuttleConsoleSystem : SharedShuttleConsoleSystem
             portNames,
             entity.Comp1.Pannable, // Mono
             entity.Comp1.RelativePanning, // Mono
-            entity.Comp1.HasSonar, // BF14
-            entity.Comp1.SonarWidth, // BF14
-            entity.Comp1.SonarDistance, // BF14
-            entity.Comp1.SonarDuration, // BF14
-            entity.Comp1.SonarCooldown); // BF14
+            entity.Comp1.HasSonar && hasSonar, // BF14
+            sonarWidth, // BF14
+            sonarDistance, // BF14
+            sonarDuration, // BF14
+            sonarCooldown); // BF14
     }
 
     /// <summary>

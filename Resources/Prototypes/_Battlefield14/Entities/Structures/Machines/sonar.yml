@@ -21,6 +21,7 @@
       visible: false
       shader: unshaded
       color: "#349BEB"
+  - type: SonarModule
   - type: Destructible
     thresholds:
     - trigger:

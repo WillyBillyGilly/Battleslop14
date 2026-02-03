@@ -49,34 +49,10 @@ public sealed partial class RadarConsoleComponent : Component
     // </Mono>
 
     /// <summary>
-    /// BF14 - whether sonar is available to this radar.
+    /// BF14 - whether sonar is available to this radar at all.
     /// </summary>
     [DataField]
     public bool HasSonar = false;
-
-    /// <summary>
-    /// BF14 - the coverage arc of this radar's sonar.
-    /// </summary>
-    [DataField]
-    public Angle SonarWidth = Angle.FromDegrees(30);
-
-    /// <summary>
-    /// BF14 - how far can this radar's sonar scan.
-    /// </summary>
-    [DataField]
-    public float SonarDistance = 800f;
-
-    /// <summary>
-    /// BF14 - for how long do sonar scan from this reveal grids.
-    /// </summary>
-    [DataField]
-    public TimeSpan SonarDuration = TimeSpan.FromSeconds(7);
-
-    /// <summary>
-    /// BF14 - for how long does the sonar on this recharge.
-    /// </summary>
-    [DataField]
-    public TimeSpan SonarCooldown = TimeSpan.FromSeconds(10);
 
     /// <summary>
     /// BF14 - when we last pulsed sonar. Only updated on client.
