@@ -239,10 +239,10 @@
   id: WeaponRifleRUAK74
   description: The communist response to the success of the M16.
   components:
-  - type: Item
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK74.rsi
+#  - type: Item
+#    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK74.rsi
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK74new.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK74.rsi
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]

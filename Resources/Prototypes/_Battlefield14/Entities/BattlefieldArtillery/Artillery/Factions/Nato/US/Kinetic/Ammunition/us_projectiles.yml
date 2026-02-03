@@ -44,9 +44,9 @@
       types:
         Structural: 60
         Piercing: 80
+    armorPenetration: 1
   - type: StaminaDamageOnCollide
     damage: 60 # ~2 hits to stun
-    armorPenetration: 1
     penetrationThreshold: 300
   - type: ArmorPiercing
     piercingThickness: 1
@@ -80,9 +80,9 @@
       types:
         Structural: 70
         Piercing: 70
+    armorPenetration: 1
   - type: StaminaDamageOnCollide
     damage: 60 # ~2 hits to stun
-    armorPenetration: 1
     penetrationThreshold: 200
   - type: ArmorPiercing
     piercingThickness: 1
