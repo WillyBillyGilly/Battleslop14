@@ -2,6 +2,12 @@
   id: MagazineRifleSTANAG
 
 - type: Tag
+  id: BF_CartridgePistol45ACP
+
+- type: Tag
+  id: BF_CartridgePDW46x30
+
+- type: Tag
   id: BF_CartridgeRifle556x45
 
 - type: Tag
@@ -78,6 +84,9 @@
 
 - type: Tag
   id: MagazinePistolMP5
+
+- type: Tag
+  id: MagazinePistolMP7
 
 - type: Tag
   id: MagazinePistolVityaz
