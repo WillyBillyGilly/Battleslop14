@@ -3,7 +3,7 @@
                       xmlns:ui="clr-namespace:Content.Client.Shuttles.UI"
                       Title="{Loc 'radar-console-window-title'}"
                       SetSize="648 672"
-                      MinSize="256 256">
+                      MinSize="648 740">
     <ui:ShuttleNavControl Name="RadarScreen"
                      Margin="4"
                      HorizontalExpand = "True"

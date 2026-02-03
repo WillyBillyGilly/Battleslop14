@@ -568,7 +568,12 @@ public sealed partial class ShuttleConsoleSystem : SharedShuttleConsoleSystem
             _shuttle.NfGetInertiaDampeningMode(entity), // Frontier: inertia dampening
             portNames,
             entity.Comp1.Pannable, // Mono
-            entity.Comp1.RelativePanning); // Mono
+            entity.Comp1.RelativePanning, // Mono
+            entity.Comp1.HasSonar, // BF14
+            entity.Comp1.SonarWidth, // BF14
+            entity.Comp1.SonarDistance, // BF14
+            entity.Comp1.SonarDuration, // BF14
+            entity.Comp1.SonarCooldown); // BF14
     }
 
     /// <summary>

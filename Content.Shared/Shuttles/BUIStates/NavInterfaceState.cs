@@ -49,6 +49,14 @@ public sealed class NavInterfaceState
     public bool Pannable = true; // Mono
     public bool RelativePanning = false; // Mono
 
+    // <BF14>
+    public bool HasSonar = false;
+    public Angle SonarWidth;
+    public float SonarDistance;
+    public TimeSpan SonarDuration;
+    public TimeSpan SonarCooldown;
+    // </BF14>
+
     public NavInterfaceState(
         float maxRange,
         NetCoordinates? coordinates,
@@ -57,7 +65,12 @@ public sealed class NavInterfaceState
         InertiaDampeningMode dampeningMode, // Frontier: add dampeningMode
         Dictionary<string, string>? networkPortNames = null,
         bool pannable = true, // Mono
-        bool relativePan = false) // Mono
+        bool relativePan = false, // Mono
+        bool hasSonar = false, // BF14
+        Angle sonarWidth = new(), // BF14
+        float sonarDistance = 0f, // BF14
+        TimeSpan sonarDuration = new(), // BF14
+        TimeSpan sonarCooldown = new()) // BF14
     {
         MaxRange = maxRange;
         Coordinates = coordinates;
@@ -67,6 +80,13 @@ public sealed class NavInterfaceState
         NetworkPortNames = networkPortNames ?? new Dictionary<string, string>();
         Pannable = pannable; // Mono
         RelativePanning = relativePan; // Mono
+        // <BF14>
+        HasSonar = hasSonar;
+        SonarWidth = sonarWidth;
+        SonarDistance = sonarDistance;
+        SonarDuration = sonarDuration;
+        SonarCooldown = sonarCooldown;
+        // </BF14>
     }
 }
 
