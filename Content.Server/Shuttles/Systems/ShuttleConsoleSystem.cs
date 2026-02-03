@@ -574,13 +574,17 @@ public sealed partial class ShuttleConsoleSystem : SharedShuttleConsoleSystem
         {
             var sonars = new HashSet<Entity<SonarModuleComponent>>();
             _lookup.GetLocalEntitiesIntersecting(grid, gridComp.LocalAABB, sonars);
-            if (sonars.FirstOrNull() is { } sonar)
+            foreach (var sonar in sonars)
             {
+                if (!Transform(sonar).Anchored || !this.IsPowered(sonar, EntityManager))
+                    continue;
+
                 hasSonar = true;
                 sonarWidth = sonar.Comp.SonarWidth;
                 sonarDistance = sonar.Comp.SonarDistance;
                 sonarDuration = sonar.Comp.SonarDuration;
                 sonarCooldown = sonar.Comp.SonarCooldown;
+                break;
             }
         }
 
