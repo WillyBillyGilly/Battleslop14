@@ -77,3 +77,13 @@
   - "/Audio/_Battlefield14/Weapons/Guns/UZI/uc_uzi_fire-04.ogg"
   - "/Audio/_Battlefield14/Weapons/Guns/UZI/uc_uzi_fire-05.ogg"
   - "/Audio/_Battlefield14/Weapons/Guns/UZI/uc_uzi_fire-06.ogg"
+
+- type: soundCollection
+  id: BF_MP7_Gunshots # MP7 - Used for MP7
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/MP7/uc_mp7_fire-01.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/MP7/uc_mp7_fire-02.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/MP7/uc_mp7_fire-03.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/MP7/uc_mp7_fire-04.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/MP7/uc_mp7_fire-05.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/MP7/uc_mp7_fire-06.ogg"
