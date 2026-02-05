@@ -1,0 +1,15 @@
+- type: entity
+  id: TrackingImplanterNATOUS
+  parent: BaseImplantOnlyImplanter
+  suffix: tracking, NATO US
+  components:
+    - type: Implanter
+      implant: TrackingImplantNATOUS
+
+- type: entity
+  id: TrackingImplanterPACTRU
+  parent: BaseImplantOnlyImplanter
+  suffix: tracking, PACT RU
+  components:
+    - type: Implanter
+      implant: TrackingImplantPACTRU
