@@ -1,3 +1,5 @@
+## US
+
 # USMC
 - type: playTimeTracker
   id: JobUSMCSquadLeader
@@ -36,6 +38,8 @@
 - type: playTimeTracker
   id: JobUSSFCrewman
 
+## RU
+
 # VDV
 
 - type: playTimeTracker
@@ -60,3 +64,16 @@
 
 - type: playTimeTracker
   id: JobVKSCrewman
+
+## IND
+
+# Western Private Security
+
+- type: playTimeTracker
+  id: JobWPSSecurityOfficer
+
+- type: playTimeTracker
+  id: JobWPSWarden
+
+- type: playTimeTracker
+  id: JobWPSMarshal
