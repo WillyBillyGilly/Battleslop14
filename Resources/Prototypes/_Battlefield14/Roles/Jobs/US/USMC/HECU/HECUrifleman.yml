@@ -59,7 +59,7 @@
   equipment:
     id: HECURiflemanPDA
     ears: ClothingHeadsetAltUS
-    belt: ClothingBeltMilitaryWebbingUSFilledMP5
+    belt: ClothingBeltMilitaryWebbingUSFilledSTANAG
     jumpsuit: ClothingUniformJumpsuitCombatSuitUrbanWhite
     head: ClothingHeadHatHelmetUSUrban
 #    eyes: ClothingEyesGogglesTan
@@ -68,7 +68,7 @@
     outerClothing: ClothingOuterArmorPCV
     shoes: ClothingShoesBootsJackFilled
     back: ClothingBackpackMercenary
-    suitstorage: WeaponSubmachinegunUSMP5
+    suitstorage: WeaponRifleUSM4A1
     pocket1: PouchFirstAidFilled
     pocket2: PouchGrenadesFilledUSMCRifleman
     leftarmband: Tourniquet
