@@ -60,6 +60,7 @@
   equipment:
     id: HECUSupportPDA
     ears: ClothingHeadsetAltUS
+    neck: FlashlightMilitaryUS
     belt: ClothingBeltMilitaryWebbingUSFilled12GaugeBuckSlugBreach
     jumpsuit: ClothingUniformJumpsuitCombatSuitUrbanWhite
     balaclava: ClothingBalaclavaMilitary
@@ -90,6 +91,7 @@
   equipment:
     id: HECUSupportPDA
     ears: ClothingHeadsetAltUS
+    neck: FlashlightMilitaryUS
     belt: ClothingBeltMilitaryWebbingUSFilledM249
     jumpsuit: ClothingUniformJumpsuitCombatSuitUrbanWhite
     balaclava: ClothingBalaclavaMilitary
@@ -117,6 +119,7 @@
   equipment:
     id: HECUSupportPDA
     ears: ClothingHeadsetAltUS
+    neck: FlashlightMilitaryUS
     belt: ClothingBeltMilitaryWebbingUSFilledSMAW
     jumpsuit: ClothingUniformJumpsuitCombatSuitUrbanWhite
     balaclava: ClothingBalaclavaMilitary

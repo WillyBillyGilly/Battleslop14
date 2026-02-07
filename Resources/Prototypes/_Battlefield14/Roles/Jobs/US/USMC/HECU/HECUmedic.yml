@@ -62,6 +62,7 @@
   equipment:
     id: HECUMedicPDA
     ears: ClothingHeadsetAltUS
+    neck: FlashlightMilitaryUS
     belt: ClothingBeltMedicalEMTFilledBF14
     jumpsuit: ClothingUniformJumpsuitCombatSuitUrbanWhite
     head: ClothingHeadHatHelmetUSUrban

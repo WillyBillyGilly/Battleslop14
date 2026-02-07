@@ -56,7 +56,9 @@
     pocket2: PouchFirstAidFilled
   storage:
     back:
+    - ClothingMaskGasM40
+    - FlashlightMilitaryUS
+    - MagazinePistolM9
+    - MagazinePistolM9
     - Tourniquet
     - Zipties
-    - MagazinePistolM9
-    - MagazinePistolM9

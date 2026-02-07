@@ -59,6 +59,7 @@
   equipment:
     id: HECURiflemanPDA
     ears: ClothingHeadsetAltUS
+    neck: FlashlightMilitaryUS
     belt: ClothingBeltMilitaryWebbingUSFilledSTANAG
     jumpsuit: ClothingUniformJumpsuitCombatSuitUrbanWhite
     head: ClothingHeadHatHelmetUSUrban
@@ -81,5 +82,6 @@
     - Cartridge40x46mmHE
     - Cartridge40x46mmHE
     - Cartridge40x46mmHE
+    - BoxFlare
     - Tourniquet
     - Zipties
