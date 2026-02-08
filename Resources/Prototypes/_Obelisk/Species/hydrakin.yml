@@ -5,7 +5,7 @@
 - type: species
   id: Hydrakin
   name: species-name-hydrakin
-  roundStart: false # BF14
+  roundStart: true
   prototype: MobHydrakin
   sprites: MobHydrakinSprites
   defaultSkinTone: "#ffffff"

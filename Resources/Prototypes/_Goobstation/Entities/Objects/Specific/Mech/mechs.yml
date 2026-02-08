@@ -212,7 +212,6 @@
     openState: gygax-open
     brokenState: gygax-broken
     mechToPilotDamageMultiplier: 0.1 # Mono
-    criticalPowerStateSpeedPenalty: 0.5 # Mono
     maxIntegrity: 500 # Mono
     airtight: true
     pilotWhitelist:
@@ -290,8 +289,7 @@
     brokenState: durand-broken
     mechToPilotDamageMultiplier: 0.25
     airtight: true
-    maxIntegrity: 1350
-    maxEquipmentAmount: 3
+    maxIntegrity: 1200
     pilotWhitelist:
       components:
         - HumanoidAppearance
@@ -301,8 +299,8 @@
     attackRate: 1
     damage:
       types:
-        Blunt: 60
-        Structural: 250
+        Blunt: 40
+        Structural: 220
   - type: MovementSpeedModifier
     baseWalkSpeed: 1.5
     baseSprintSpeed: 2
@@ -312,8 +310,8 @@
   - type: CanMoveInAir
   - type: MovementAlwaysTouching
   - type: Repairable
-    fuelCost: 55
-    doAfterDelay: 20
+    fuelCost: 30
+    doAfterDelay: 15
   - type: StaticPrice
     price: 5000
   - type: Tag
@@ -655,7 +653,7 @@
     attackRate: 1
     damage:
       types:
-        Blunt: 60
+        Blunt: 50
         Structural: 400
   - type: MovementSpeedModifier
     baseWalkSpeed: 1

@@ -1,34 +1,35 @@
 - type: vessel
-  id: Buran
+  id: Tunguska
   parent: BaseVesselAntag
-  name: VEF Buran
-  description: USSP capital-sized frigate with tremendous broadside firepower and thick armor. Glory to commissariat.
-  price: 320000
+  name: NCS Tunguska
+  description: A refitted Seraphim with as many guns as it could sustain. Prepare for a onslaught of autocannon fire.
+  limit: 2
+  price: 215700
   category: Large
   group: Ussp
   access: Mercenary
-  shuttlePath: /Maps/_Mono/Shuttles/USSP/buran.yml
+  shuttlePath: /Maps/_Mono/Shuttles/USSP/tunguska.yml
   guidebookPage: Null
   class:
-  - Capital
+  - Patrol
   - Frigate
   engine:
   - AME
 
 - type: gameMap
-  id: Buran
-  mapName: 'Buran'
-  mapPath: /Maps/_Mono/Shuttles/USSP/buran.yml
+  id: Tunguska
+  mapName: 'Tunguska'
+  mapPath: /Maps/_Mono/Shuttles/USSP/tunguska.yml
   minPlayers: 0
   stations:
-    Buran:
+    Tunguska:
       stationProto: StandardFrontierVessel
       gridComponents:
       - type: VesselInfo
         description: "Outdated, yet still reliable."
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Buran MIL{1}'
+          mapNameTemplate: 'Tunguska MIL{1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

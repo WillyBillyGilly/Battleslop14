@@ -72,7 +72,6 @@
     pocket2: PouchGrenadesFilledVDVRifleman
   storage:
     back:
-    - ArmorPlateMedium
-    - FlashlightMilitaryAlt
     - Tourniquet
     - Zipties
+    - ArmorPlateMedium

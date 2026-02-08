@@ -36,33 +36,28 @@ namespace Content.Shared.VendingMachines
 
         // Frontier: random ejection
         /// <summary>
-        /// Used by the server to determine how many items the machine allowed to eject from random triggers. (Default 2)
+        /// Used by the server to determine how many items the machine allowed to eject from random triggers.
         /// </summary>
         [DataField]
-        public int EjectRandomMax = 1;
+        public int EjectRandomMax = 2;
 
         /// <summary>
-        /// Used by the server to determine how many items the machine ejected from random triggers. (Default 2)
+        /// Used by the server to determine how many items the machine ejected from random triggers.
         /// </summary>
         [DataField]
-        public int EjectRandomCounter = 1;
+        public int EjectRandomCounter = 2;
 
         /// <summary>
-        /// The time it takes to regain a single charge (Default 1800)
+        /// The time it takes to regain a single charge
         /// </summary>
         [DataField]
-        public TimeSpan EjectRechargeDuration = TimeSpan.FromSeconds(720);
+        public TimeSpan EjectRechargeDuration = TimeSpan.FromSeconds(1800);
 
         /// <summary>
         /// The time when the next charge will be added
         /// </summary>
         [DataField(customTypeSerializer: typeof(TimeOffsetSerializer))]
         public TimeSpan EjectNextChargeTime;
-		
-        /// <summary>
-        /// Mono: Chance you can hit that vend wire again (Default 0)
-        /// </summary>
-		[DataField] public float EjectNoCountChance = 0.3f;
         // End Frontier: random ejection
 
         [DataField, AutoNetworkedField]

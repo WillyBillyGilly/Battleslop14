@@ -29,11 +29,6 @@
   order: 5
   lawString: law-ads-5
 
-- type: siliconLaw
-  id: Redacted6
-  order: 6
-  lawString: law-ads-6
-
 - type: siliconLawset
   id: Redacted
   laws:
@@ -42,7 +37,6 @@
   - Redacted3
   - Redacted4
   - Redacted5
-  - Redacted6
   obeysTo: laws-owner-syndicate
 
 - type: siliconLawset
@@ -53,7 +47,6 @@
   - Redacted3
   - Redacted4
   - Redacted5
-  - Redacted6
   obeysTo: laws-owner-syndicate
 
 # Vessel lawset

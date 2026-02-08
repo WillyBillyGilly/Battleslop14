@@ -143,7 +143,7 @@
 - type: entity
   parent: [ClothingHeadsetAlt]
   id: ClothingHeadsetAltFreelancer
-  name: over-ear headset # BF14 also fuck monolith for not making their own fucking prototypes
+  name: vanguard over-ear headset
   components:
     - type: Headset
   #  - type: EncryptionKeyHolder #Mono parity with ClothingHeadset key capacity.

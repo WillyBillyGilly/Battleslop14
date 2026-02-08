@@ -97,7 +97,6 @@
     openState: broadsword-open
     brokenState: broadsword-broken
     mechToPilotDamageMultiplier: 0
-    criticalPowerStateSpeedPenalty: 0.85
     maxEquipmentAmount: 3
     airtight: true
     maxIntegrity: 1500
@@ -186,7 +185,6 @@
     openState: broadsword-open
     brokenState: broadsword-broken
     mechToPilotDamageMultiplier: 0
-    criticalPowerStateSpeedPenalty: 0.85
     maxEquipmentAmount: 3
     airtight: true
     maxIntegrity: 1100
@@ -234,7 +232,6 @@
     openState: broadsword-open
     brokenState: broadsword-broken
     mechToPilotDamageMultiplier: 0
-    criticalPowerStateSpeedPenalty: 0.45
     maxEquipmentAmount: 3
     airtight: false
     maxIntegrity: 1400
@@ -312,7 +309,6 @@
     openState: flail-open
     brokenState: flail-broken
     mechToPilotDamageMultiplier: 0
-    criticalPowerStateSpeedPenalty: 0.85
     maxEquipmentAmount: 3
     airtight: true
     maxIntegrity: 4000
@@ -388,7 +384,6 @@
     openState: flail-open
     brokenState: flail-broken
     mechToPilotDamageMultiplier: 0
-    criticalPowerStateSpeedPenalty: 0.85
     maxEquipmentAmount: 3
     airtight: true
     maxIntegrity: 2250
@@ -437,7 +432,6 @@
     openState: flail-open
     brokenState: flail-broken
     mechToPilotDamageMultiplier: 0
-    criticalPowerStateSpeedPenalty: 0.95
     maxEquipmentAmount: 1
     airtight: true
     maxIntegrity: 2000

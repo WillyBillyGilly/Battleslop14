@@ -1,16 +1,14 @@
 - type: entity
-  id: MonoDroneSpawnerT1
+  id: MonoRamDroneSpawnerT1
   parent: MarkerBase
   components:
   - type: RandomSpawner
     prototypes:
     - SpawnDroneBasicSmall
     - SpawnDroneBasicMedium
-    - SpawnDroneMPulsar
-    - SpawnDroneLance
 
 - type: entity
-  id: MonoDroneSpawnerT2Inner
+  id: MonoRamDroneSpawnerT2Inner
   parent: MarkerBase
   components:
   - type: RandomSpawner
@@ -18,10 +16,9 @@
     - SpawnDroneWasp
     - SpawnDroneCrown
     - SpawnDroneGust
-    - SpawnDronePiercer
 
 - type: entity
-  id: MonoDroneSpawnerT2Middle
+  id: MonoRamDroneSpawnerT2Middle
   parent: MarkerBase
   components:
   - type: EntityTableSpawner
@@ -38,8 +35,6 @@
     - id: SpawnDroneCrown
       weight: 20
     - id: SpawnDroneGust
-      weight: 20
-    - id: SpawnDronePiercer
       weight: 20
     # T2 medium
     - id: SpawnDroneMedusa
@@ -114,20 +109,6 @@
   - type: GridSpawner
     path: /Maps/_Mono/Shuttles/World/ramdronemedium.yml
 
-- type: entity
-  id: SpawnDroneMPulsar
-  parent: SpawnDroneBase
-  components:
-  - type: GridSpawner
-    path: /Maps/_Mono/Shuttles/World/mpulsar.yml
-
-- type: entity
-  id: SpawnDroneLance
-  parent: SpawnDroneBase
-  components:
-  - type: GridSpawner
-    path: /Maps/_Mono/Shuttles/World/lance.yml
-
 #region T2-1
 
 - type: entity
@@ -143,13 +124,6 @@
   components:
   - type: GridSpawner
     path: /Maps/_Mono/Shuttles/World/crown.yml
-
-- type: entity
-  id: SpawnDronePiercer
-  parent: SpawnDroneBase
-  components:
-  - type: GridSpawner
-    path: /Maps/_Mono/Shuttles/World/piercer.yml
 
 #region T2-2
 

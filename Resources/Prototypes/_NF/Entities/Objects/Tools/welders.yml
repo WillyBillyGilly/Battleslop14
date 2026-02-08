@@ -29,7 +29,7 @@
     solutions:
       Welder:
         reagents: []
-        maxVol: 350
+        maxVol: 250
 
 - type: entity
   parent: WelderExperimental
@@ -40,4 +40,4 @@
     solutions:
       Welder:
         reagents: []
-        maxVol: 2500
+        maxVol: 1000
