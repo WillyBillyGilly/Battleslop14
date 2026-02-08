@@ -92,7 +92,7 @@
     shuttles:
     - Hazel
     - Tethys
-    - Spyglass MKII
+    - Spyglass
   - type: Sprite
     sprite: _NF/Structures/Machines/computers.rsi
     layers:

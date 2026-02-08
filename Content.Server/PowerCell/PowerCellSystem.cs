@@ -10,7 +10,6 @@ using Content.Server.Kitchen.Components;
 using Content.Server.Power.EntitySystems;
 using Content.Server.UserInterface;
 using Content.Shared.Containers.ItemSlots;
-using Content.Shared.Mech.Components;
 using Content.Shared.Popups;
 using ActivatableUISystem = Content.Shared.UserInterface.ActivatableUISystem;
 
@@ -75,12 +74,6 @@ public sealed partial class PowerCellSystem : SharedPowerCellSystem
         {
             if (itemSlot.Item == uid)
                 RaiseLocalEvent(container.Owner, new PowerCellChangedEvent(false));
-        }
-        // Mono edit - Also check if there are any batteries in mech
-        else if (_containerSystem.TryGetContainingContainer((uid, null, null), out var mechContainer)
-                 && mechContainer.Contains(uid))
-        {
-            RaiseLocalEvent(mechContainer.Owner, new PowerCellChangedEvent(false));
         }
     }
 

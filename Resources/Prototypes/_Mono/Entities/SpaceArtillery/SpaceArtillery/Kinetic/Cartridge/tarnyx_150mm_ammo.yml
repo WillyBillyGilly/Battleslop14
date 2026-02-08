@@ -18,6 +18,7 @@
   - type: RadarBlip
     radarColor: "#035EFC"
     scale: 1.5
+    requireNoGrid: true
     shape: circle
   - type: TimedDespawn
     lifetime: 5
@@ -93,6 +94,7 @@
   - type: ShipWeaponProjectile
   - type: RadarBlip
     scale: 1.75
+    requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
     lifetime: 5

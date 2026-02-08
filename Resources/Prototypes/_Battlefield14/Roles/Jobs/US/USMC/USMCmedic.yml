@@ -77,8 +77,6 @@
     back:
     - SupplyBoxMedicalFilled
     - DefibrillatorCompactBF
-    - SyringeCaseFilledBF14
-    - ClothingMaskGasM40
-    - FlashlightMilitaryUS
     - Tourniquet
     - Zipties
+    - SyringeCaseFilledBF14

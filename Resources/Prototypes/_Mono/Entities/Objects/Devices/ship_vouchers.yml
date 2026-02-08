@@ -86,7 +86,7 @@
     companyName: USSP
     vessels:
     - Sulak
-    - Buran
+    - Tunguska
 
 - type: entity
   parent: BaseShipLPC

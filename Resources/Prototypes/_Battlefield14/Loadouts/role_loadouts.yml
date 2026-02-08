@@ -1,7 +1,3 @@
-### NATO
-
-## US
-
 # USMC
 
 - type: roleLoadout
@@ -48,11 +44,6 @@
   - BF_NATOIFF
   - BF_GoggleCover
   - ContractorWallet
-
-
-## PACT
-
-## RU
 
 # VDV
 
@@ -104,30 +95,4 @@
   - BF_PACTIFF
   - BF_GoggleCover
   - BF_VDVHead
-  - ContractorWallet
-
-
-### IND
-
-# WPS
-
-- type: roleLoadout
-  id: JobWPSSecurityOfficer
-  groups:
-  - BF_WPSGloves
-  - BF_CombatMasks
-  - ContractorWallet
-
-- type: roleLoadout
-  id: JobWPSWarden
-  groups:
-  - BF_WPSGloves
-  - BF_CombatMasks
-  - ContractorWallet
-
-- type: roleLoadout
-  id: JobWPSMarshal
-  groups:
-  - BF_WPSGloves
-  - BF_CombatMasks
   - ContractorWallet

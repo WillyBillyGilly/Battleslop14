@@ -56,7 +56,7 @@
         sound:
           collection: MetalBreak
   - type: RadarBlip
-    radarColor: "#0080FF"
+    radarColor: "#FF0000"
     scale: 1.5
     visibleFromOtherGrids: true
   - type: ShipGunType
@@ -123,14 +123,8 @@
         sound:
           collection: MetalBreak
   - type: RadarBlip
-    radarColor: "#4080FF"
+    radarColor: "#FF0000"
     scale: 2.5
-    gridConfig:
-      color: "#4080FF"
-      shape: Square
-      respectZoom: true
-      rotate: true
-      bounds: "-1,-1.5,1,1.5"
   - type: ShipGunType
     shipType: Ballistic
   - type: ShipGunClass

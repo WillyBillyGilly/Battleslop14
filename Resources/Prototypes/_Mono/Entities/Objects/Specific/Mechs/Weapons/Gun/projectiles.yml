@@ -44,6 +44,7 @@
     - state: omnilaser
   - type: RadarBlip
     scale: 0.5
+    requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
     lifetime: 1
@@ -60,6 +61,7 @@
         Piercing: 17
   - type: RadarBlip
     scale: 0.5
+    requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
     lifetime: 1
@@ -78,6 +80,7 @@
         Piercing: 210
   - type: RadarBlip
     scale: 2.5
+    requireNoGrid: true
     shape: triangle
   - type: Explosive
     explosionType: Default
@@ -112,6 +115,7 @@
   - type: RadarBlip
     radarColor: "#C92BCC"
     scale: 2.5
+    requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
     lifetime: 5
@@ -138,6 +142,7 @@
   - type: RadarBlip
     radarColor: "#FCBA03"
     scale: 4
+    requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
     lifetime: 5
@@ -201,6 +206,7 @@
     netsync: false
   - type: RadarBlip
     scale: 40
+    requireNoGrid: true
     shape: circle
   - type: Projectile
     deleteOnCollide: false
@@ -248,6 +254,7 @@
     netsync: false
   - type: RadarBlip
     scale: 4
+    requireNoGrid: true
     shape: square
   - type: Projectile
     deleteOnCollide: false
@@ -272,6 +279,7 @@
   - type: ShipWeaponProjectile
   - type: RadarBlip
     scale: 1.5
+    requireNoGrid: true
     shape: triangle
     radarColor: "#1df1f5"
   - type: Projectile
@@ -312,6 +320,7 @@
   - type: RadarBlip
     radarColor: "#C92BCC"
     scale: 2.5
+    requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
     lifetime: 8

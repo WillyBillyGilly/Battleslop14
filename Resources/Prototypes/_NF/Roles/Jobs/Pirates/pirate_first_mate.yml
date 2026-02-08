@@ -48,7 +48,7 @@
   equipment:
     ears: ClothingHeadsetAltVanguardCommand
     #belt: ClothingBeltUtility
-    pocket1: BasePirateUplinkAsvaran
+    pocket1: BasePirateUplinkPirateCrew
     #pocket2: AppraisalTool
   storage:
     back:

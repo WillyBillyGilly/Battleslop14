@@ -170,9 +170,6 @@
         layer:
         - GlassLayer
   - type: Repairable
-    qualities:
-    - Welding #Mono
-    - Applicating #Mono
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: Glass

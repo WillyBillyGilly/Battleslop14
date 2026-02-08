@@ -74,10 +74,7 @@
   storage:
     back:
     - SupplyBoxAmmoUSFilled
-    - FlashlightMilitaryUS
-    - MagazinePistolM9
-    - MagazinePistolM9
-    - ClothingMaskGasM40
     - Tourniquet
     - Zipties
-
+    - MagazinePistolM9
+    - MagazinePistolM9

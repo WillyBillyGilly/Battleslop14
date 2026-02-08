@@ -1,5 +1,5 @@
 - type: entity
-  parent: MagazineBox762x51Big
+  parent: MagazineBoxBigBF14
   id: MagazineBox9x19mmBig
   name: bulk ammunition box (9x19mm)
   components:
@@ -19,6 +19,4 @@
     zeroVisible: false
   - type: Item
     size: Large
-    shape:
-      - 0,0,2,1 # 3 wide, basically 3 magazines wide
   - type: Appearance
