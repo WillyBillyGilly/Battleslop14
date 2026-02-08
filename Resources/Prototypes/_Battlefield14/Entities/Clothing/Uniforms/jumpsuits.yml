@@ -18,16 +18,18 @@
   id: ClothingUniformJumpsuitSpaceForceCrewman
   name: USSF crewman uniform
   description: A full uniform for crew aboard United States Space Force vessels.
-- type: Faction
-  factionId: "Nato"
+  components:
+  - type: Faction
+    factionId: "Nato"
 
 - type: entity
   parent: ClothingUniformJumpsuitMilitaryCaptain # TODO better/unique sprites
   id: ClothingUniformJumpsuitSpaceForceCaptain
   name: USSF captain uniform
   description: A full uniform for captains aboard United States Space Force vessels.
-- type: Faction
-  factionId: "Nato"
+  components:
+  - type: Faction
+    factionId: "Nato"
 
 - type: entity
   parent: ClothingUniformJumpsuitCombatSuitUrbanWhite
@@ -45,8 +47,8 @@
   - type: SuitSensor
     randomMode: false
     mode: SensorVitals
-- type: Faction
-  factionId: "Nato"
+  - type: Faction
+    factionId: "Nato"
 
 # RU
 
@@ -81,6 +83,7 @@
   id: ClothingUniformJumpsuitVKSCrewman
   name: VKS crewman uniform
   description: A full uniform for crew aboard Russian Aerospace Forces vessels.
+  components:
   - type: Faction
     factionId: "Warpact"
 
@@ -89,6 +92,7 @@
   id: ClothingUniformJumpsuitVKSCaptain
   name: VKS captain uniform
   description: A full uniform for captains aboard Russian Aerospace Forces vessels.
+  components:
   - type: Faction
     factionId: "Warpact"
 
@@ -113,9 +117,5 @@
   components:
   - type: Sprite
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/black_utility_sec.rsi
-#    layers:
-#    - state: icon
-#    - state: icon-cuffs
-#      color: "#860000"
   - type: Clothing
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/black_utility_sec.rsi

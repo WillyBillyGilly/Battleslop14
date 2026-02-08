@@ -548,7 +548,7 @@ public partial class ShuttleNavControl : BaseShuttleControl // Mono
                 pingPos = wantPingPos > 1f ? null : wantPingPos;
             }
 
-            var worldToView = worldToShuttle * shuttleToView;
+            // worldToView already calculated above, reusing it
 
             var halfWidth = new Angle(SonarWidth * 0.5);
             var worldCenter = _transform.GetWorldPosition(cons); // mr president..
