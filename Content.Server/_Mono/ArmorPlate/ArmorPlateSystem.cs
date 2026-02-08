@@ -110,7 +110,7 @@ public sealed class ArmorPlateSystem : SharedArmorPlateSystem
         var damageSpec = new DamageSpecifier();
         damageSpec.DamageDict.Add("Blunt", plateDamage);
 
-//        damageSpec.DamageDict.Add("Blunt", piercingDamage); // BF14
+    //    damageSpec.DamageDict.Add("Blunt", piercingDamage); // BF14
 
         var staminaDamage = absorbed.Float() * plate.Comp.StaminaDamageMultiplier;
         _stamina.TakeStaminaDamage(wearer, staminaDamage);
