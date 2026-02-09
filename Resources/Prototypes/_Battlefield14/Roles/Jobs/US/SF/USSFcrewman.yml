@@ -4,10 +4,6 @@
   description: job-description-ussf-crewman
   playTimeTracker: JobUSSFCrewman
   requirements:
-    # COMMENTED OUT: CharacterSpeciesRequirement not supported (species requirement system not implemented)
-    # - !type:CharacterSpeciesRequirement
-    #   species:
-    #     - Human
     - !type:TraitsRequirement
       inverted: true
       traits:
@@ -30,6 +26,13 @@
     - English
   - !type:AddImplantSpecial
     implants: [ TrackingImplantNATOUS ]
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - NATO
+    - type: SurgerySpeedModifier
+      SpeedModifier: 1.25
   access:
   - Maintenance
   - Service

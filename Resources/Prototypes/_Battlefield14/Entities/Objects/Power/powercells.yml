@@ -5,11 +5,13 @@
   suffix: Full
   parent: BasePowerCell
   components:
+  - type: Item
+    storedRotation: 0
   - type: Sprite
-    sprite: _Mono/Objects/Power/power_cells.rsi
+    sprite: _Battlefield14/Objects/Power/power_cells.rsi
     layers:
     - map: [ "enum.PowerCellVisualLayers.Base" ]
-      state: combat
+      state: pcv
     - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
       state: o2
       shader: unshaded
