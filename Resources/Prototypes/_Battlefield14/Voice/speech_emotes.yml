@@ -2,7 +2,7 @@
   id: GruntUSMedicClean
   name: chat-emote-name-grunt-us-medic
   category: Vocal
-  icon: Interface/Actions/scream.png
+  icon: _Battlefield14/Actions/Voicelines/medic.png
   whitelist:
     components:
     - Vocal
@@ -18,7 +18,7 @@
   id: GruntUSContactClean
   name: chat-emote-name-grunt-us-contact
   category: Vocal
-  icon: Interface/Actions/scream.png
+  icon: _Battlefield14/Actions/Voicelines/contact.png
   whitelist:
     components:
     - Vocal
@@ -39,7 +39,7 @@
   id: GruntUSChargeClean
   name: chat-emote-name-grunt-us-charge
   category: Vocal
-  icon: Interface/Actions/scream.png
+  icon: _Battlefield14/Actions/Voicelines/charge.png
   whitelist:
     components:
     - Vocal
@@ -55,7 +55,7 @@
   id: GruntUSGrenadeThrowingClean
   name: chat-emote-name-grunt-us-grenadethrowing
   category: Vocal
-  icon: Interface/Actions/scream.png
+  icon: _Battlefield14/Actions/Voicelines/grenadeout.png
   whitelist:
     components:
     - Vocal
