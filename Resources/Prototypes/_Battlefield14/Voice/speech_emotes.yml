@@ -8,7 +8,7 @@
     - Vocal
   chatMessages: ["chat-emote-msg-grunt-us-medic"]
   chatTriggers:
-    - screams for a medic!
+    - screams for a medic
     - medic
     - corpsman
     - doc
@@ -24,7 +24,7 @@
     - Vocal
   chatMessages: ["chat-emote-msg-grunt-us-contact"]
   chatTriggers:
-    - yells contact!
+    - yells contact
     - contact
     - contacts
     - enemy
@@ -45,8 +45,23 @@
     - Vocal
   chatMessages: ["chat-emote-msg-grunt-us-charge"]
   chatTriggers:
-    - urges you to push forward!
+    - urges you to push forward
     - charge
     - push
     - attack
     - forward
+
+- type: emote
+  id: GruntUSGrenadeThrowingClean
+  name: chat-emote-name-grunt-us-grenadethrowing
+  category: Vocal
+  icon: Interface/Actions/scream.png
+  whitelist:
+    components:
+    - Vocal
+  chatMessages: ["chat-emote-mgs-grunt-us-grenadethrowing"]
+  chatTriggers:
+    - is throwing a grenade
+    - grenade out
+    - nade out
+    - frag out

@@ -56,6 +56,17 @@
   - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Charge/hg_charge12_var01.ogg
   - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Charge/hg_charge12_var02.ogg
 
+- type: soundCollection
+  id: GruntUSGrenadeThrowingClean
+  files:
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Grenadethrowing/hg_throw01.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Grenadethrowing/hg_throw02.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Grenadethrowing/hg_throw02_var01.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Grenadethrowing/hg_throw03.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Grenadethrowing/hg_throw04.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Grenadethrowing/hg_throw05.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Grenadethrowing/hg_throw05_var01.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Grenadethrowing/hg_throw06.ogg
 
 - type: soundCollection
   id: GruntUSScreamClean

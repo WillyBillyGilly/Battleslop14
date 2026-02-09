@@ -48,6 +48,8 @@
       collection: GruntUSContactClean # BF14
     GruntUSChargeClean: # BF14
       collection: GruntUSChargeClean # BF14
+    GruntUSGrenadeThrowingClean: # BF14
+      collection: GruntUSGrenadeThrowingClean # BF14
 
 - type: emoteSounds
   id: FemaleHuman
