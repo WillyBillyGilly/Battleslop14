@@ -17,7 +17,7 @@
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/GrenadeLauncher/XM25.rsi
     layers:
-    - state: base
+    - state: base-red
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
@@ -41,6 +41,14 @@
       tags:
         - BF_CartridgeGrenade25x40
     capacity: 5
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/GrenadeLauncher/XM25.rsi
+    layers:
+    - state: base-yellow
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    scale: 1.5, 1.5
 
 - type: entity
   parent: MagazineGrenadeLauncherXM25HE
@@ -54,6 +62,14 @@
       tags:
         - BF_CartridgeGrenade25x40
     capacity: 5
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/GrenadeLauncher/XM25.rsi
+    layers:
+    - state: base-purple
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    scale: 1.5, 1.5
 
 - type: entity
   parent: MagazineGrenadeLauncherXM25HE
@@ -67,6 +83,14 @@
       tags:
         - BF_CartridgeGrenade25x40
     capacity: 5
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/GrenadeLauncher/XM25.rsi
+    layers:
+    - state: base-darkblue
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    scale: 1.5, 1.5
 
 - type: entity
   parent: MagazineGrenadeLauncherXM25HE
@@ -80,3 +104,11 @@
       tags:
         - BF_CartridgeGrenade25x40
     capacity: 5
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/GrenadeLauncher/XM25.rsi
+    layers:
+    - state: base-green
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    scale: 1.5, 1.5
