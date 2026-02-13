@@ -78,8 +78,8 @@
   components:
   - type: Projectile
     damage:
-      types:
-        Structural: 100
+      types: # For reference, air to air missiles should be mainly direct damage, so they are worse at taking out ships; fighters have 1,000 health
+        Structural: 200
         Blunt: 70
         Heat: 30
   - type: Sprite
@@ -91,7 +91,7 @@
   - type: ShipWeaponProjectile
   - type: RadarBlip
     radarColor: "#FCBA03"
-    scale: 1
+    scale: 2
     requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
@@ -166,7 +166,7 @@
   - type: ShipWeaponProjectile
   - type: RadarBlip
     radarColor: "#FCBA03"
-    scale: 1
+    scale: 3
     requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
@@ -188,10 +188,10 @@
   - type: TargetSeeking
     acceleration: 80
     detectionRange: 512
-    scanArc: 35
+    scanArc: 30
     launchSpeed: 1 # 90
     maxSpeed: 130
-    trackDelay: 0.2
+    trackDelay: 1
 
 # PACT
 
