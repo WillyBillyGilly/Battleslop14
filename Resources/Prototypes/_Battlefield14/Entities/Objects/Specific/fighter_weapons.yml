@@ -38,7 +38,7 @@
     maxCharge: 180
   - type: ProjectileBatteryAmmoProvider
     proto: Bullet20mmPhalanx
-    fireCost: 25
+    fireCost: 25 # 300 shots
   - type: Appearance
   - type: AmmoCounter
 
@@ -63,10 +63,10 @@
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/lmg.ogg
   - type: Battery
-    maxCharge: 500
+    maxCharge: 1500
   - type: ProjectileBatteryAmmoProvider
     proto: FighterMissileAim9xs
-    fireCost: 500
+    fireCost: 1500 # 5 shots at max
   - type: Appearance
   - type: AmmoCounter
 
@@ -138,10 +138,10 @@
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/lmg.ogg
   - type: Battery
-    maxCharge: 500
+    maxCharge: 1500
   - type: ProjectileBatteryAmmoProvider
     proto: FighterMissileMaverick
-    fireCost: 500
+    fireCost: 1500 # 5 shots at max
   - type: Appearance
   - type: AmmoCounter
 
@@ -209,7 +209,7 @@
     projectileSpeed: 90
     fireRate: 5
     minAngle: 0
-    maxAngle: 20
+    maxAngle: 8
     angleIncrease: 1
     angleDecay: 20
     selectedMode: FullAuto
@@ -221,7 +221,7 @@
     maxCharge: 180
   - type: ProjectileBatteryAmmoProvider
     proto: Bullet23mmFrag
-    fireCost: 35
+    fireCost: 35 # ~200 shots
   - type: Appearance
   - type: AmmoCounter
 
@@ -251,7 +251,7 @@
     maxCharge: 180
   - type: ProjectileBatteryAmmoProvider
     proto: BulletRocketS8
-    fireCost: 50
+    fireCost: 50 # ~180 shots
   - type: Appearance
   - type: AmmoCounter
 
