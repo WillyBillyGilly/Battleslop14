@@ -57,9 +57,7 @@
           min: 1.75
       - !type:Emote
         emote: Scream
-        probability: 0.5
-#      - !type:ReagentThreshold
-#        min: 0.2
+        probability: 0.3
   reactiveEffects:
     Acidic:
       methods: [ Touch ]
@@ -156,9 +154,7 @@
         probability: 0.15
       - !type:Emote
         emote: Scream
-        probability: 0.01
-      - !type:ReagentThreshold
-        min: 4
+        probability: 0.05
       - !type:Paralyze
         probability: 0.3
         paralyzeTime: 2

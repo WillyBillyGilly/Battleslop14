@@ -29,7 +29,7 @@
           !type:PhysShapeAabb
           bounds: "-0.4,-0.4,0.4,0.4"
         layer:
-          - SlipLayer # LowImpassable ?
+          - SlipLayer # LowImpassable ? this thing goes under catwalks visually
         mask:
           - ItemMask
         density: 1000
