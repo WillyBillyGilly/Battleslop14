@@ -4,7 +4,7 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 02/13/2026 12:50:57
+  time: 02/20/2026 07:30:20
   entityCount: 1748
 maps: []
 grids:
@@ -92,10 +92,10 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
       spreadQueues:
-        Smoke: []
-        Kudzu: []
         Puddle: []
+        Kudzu: []
         MetalFoam: []
+        Smoke: []
       updateAccumulator: 0.50004435
     - type: Shuttle
       dampingModifier: 0.25
@@ -5476,6 +5476,13 @@ entities:
       powerLoad: 5
     - type: Battery
       startingCharge: 0
+- proto: CrateMaterialsBasicFilled
+  entities:
+  - uid: 770
+    components:
+    - type: Transform
+      pos: 0.5,5.5
+      parent: 1
 - proto: CrateSecgearNATOFilledSMAW
   entities:
   - uid: 927
@@ -6405,13 +6412,6 @@ entities:
     components:
     - type: Transform
       pos: 1.4999998,5.499999
-      parent: 1
-- proto: LockerArmoryNATOFilledM320
-  entities:
-  - uid: 770
-    components:
-    - type: Transform
-      pos: 0.49999964,5.5
       parent: 1
 - proto: LockerMedicineFilled
   entities:
