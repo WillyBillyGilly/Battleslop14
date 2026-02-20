@@ -112,14 +112,14 @@
     timeMultiplier: 0.67
     identifyHidden: true
 
-- type: trait
-  id: BionicLegs
-  name: trait-bionic-legs-name
-  description: trait-bionic-legs-desc
-  category: Physical
-  cost: 4 # BF14 2 > 4 bionics like this exist but are expensive
-  components:
-  - type: BionicLegs
+#BF14- type: trait
+#BF14  id: BionicLegs
+#BF14  name: trait-bionic-legs-name
+#BF14  description: trait-bionic-legs-desc
+#BF14  category: Physical
+#BF14  cost: 4 # BF14 2 > 4 bionics like this exist but are expensive
+#BF14  components:
+#BF14  - type: BionicLegs
 
 #- type: trait BF14 we dont need this
 #  id: OsteogenesisImperfecta
