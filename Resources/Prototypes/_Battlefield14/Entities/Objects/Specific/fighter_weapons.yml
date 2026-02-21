@@ -26,7 +26,7 @@
     projectileSpeed: 110
     fireRate: 8
     minAngle: 0
-    maxAngle: 10
+    maxAngle: 5
     angleIncrease: 0.1
     angleDecay: 20
     selectedMode: FullAuto
@@ -209,7 +209,7 @@
     projectileSpeed: 90
     fireRate: 5
     minAngle: 0
-    maxAngle: 8
+    maxAngle: 5
     angleIncrease: 1
     angleDecay: 20
     selectedMode: FullAuto
