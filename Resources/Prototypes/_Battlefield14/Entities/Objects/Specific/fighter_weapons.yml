@@ -79,7 +79,7 @@
   - type: Projectile
     damage:
       types: # For reference, air to air missiles should be mainly direct damage, so they are worse at taking out ships; fighters have 1,000 health
-        Structural: 300
+        Structural: 600
         Blunt: 70
         Heat: 70
   - type: Sprite
@@ -103,7 +103,7 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    totalIntensity: 5
+    totalIntensity: 2
     intensitySlope: 8
     maxIntensity: 8
   - type: GatheringProjectile
@@ -111,7 +111,7 @@
   - type: MiningGatheringHard
   - type: TargetSeeking
     acceleration: 300
-    detectionRange: 300
+    detectionRange: 275
     scanArc: 40
     launchSpeed: 150
     maxSpeed: 180
