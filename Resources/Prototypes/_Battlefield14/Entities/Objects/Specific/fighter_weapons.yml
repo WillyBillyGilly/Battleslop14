@@ -79,9 +79,9 @@
   - type: Projectile
     damage:
       types: # For reference, air to air missiles should be mainly direct damage, so they are worse at taking out ships; fighters have 1,000 health
-        Structural: 200
+        Structural: 300
         Blunt: 70
-        Heat: 30
+        Heat: 70
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/fighterweapon_projectiles.rsi
     layers:
@@ -103,7 +103,7 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    totalIntensity: 15
+    totalIntensity: 5
     intensitySlope: 8
     maxIntensity: 8
   - type: GatheringProjectile
@@ -111,7 +111,7 @@
   - type: MiningGatheringHard
   - type: TargetSeeking
     acceleration: 300
-    detectionRange: 500
+    detectionRange: 300
     scanArc: 40
     launchSpeed: 150
     maxSpeed: 180
