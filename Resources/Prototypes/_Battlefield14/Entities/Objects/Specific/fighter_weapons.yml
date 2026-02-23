@@ -33,7 +33,7 @@
     availableModes:
       - FullAuto
     soundGunshot:
-      path: /Audio/_Mono/Weapons/Guns/Gunshots/slammer.ogg
+      path: /Audio/_Battlefield14/Weapons/FighterWeapons/machinegun.ogg
   - type: Battery
     maxCharge: 180
   - type: ProjectileBatteryAmmoProvider
@@ -61,7 +61,7 @@
     availableModes:
       - SemiAuto
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/lmg.ogg
+      path: /Audio/_Battlefield14/Weapons/FighterWeapons/rocket1.ogg
   - type: Battery
     maxCharge: 1500
   - type: ProjectileBatteryAmmoProvider
@@ -136,7 +136,7 @@
     availableModes:
       - SemiAuto
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/lmg.ogg
+      path: /Audio/_Battlefield14/Weapons/FighterWeapons/rocket2.ogg
   - type: Battery
     maxCharge: 1500
   - type: ProjectileBatteryAmmoProvider
@@ -246,7 +246,7 @@
     availableModes:
       - FullAuto
     soundGunshot:
-      path: /Audio/_Mono/Weapons/Guns/Gunshots/slammer.ogg
+      path: /Audio/_Battlefield14/Weapons/FighterWeapons/rocket3.ogg
   - type: Battery
     maxCharge: 180
   - type: ProjectileBatteryAmmoProvider
@@ -321,7 +321,7 @@
     availableModes:
       - FullAuto
     soundGunshot:
-      path: /Audio/_Mono/Weapons/Guns/Gunshots/slammer.ogg
+      path: /Audio/_Battlefield14/Weapons/FighterWeapons/flare.ogg
   - type: Battery
     maxCharge: 180
   - type: ProjectileBatteryAmmoProvider
