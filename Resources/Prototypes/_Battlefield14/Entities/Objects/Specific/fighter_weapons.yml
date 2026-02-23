@@ -26,14 +26,14 @@
     projectileSpeed: 110
     fireRate: 8
     minAngle: 0
-    maxAngle: 10
+    maxAngle: 5
     angleIncrease: 0.1
     angleDecay: 20
     selectedMode: FullAuto
     availableModes:
       - FullAuto
     soundGunshot:
-      path: /Audio/_Mono/Weapons/Guns/Gunshots/slammer.ogg
+      path: /Audio/_Battlefield14/Weapons/FighterWeapons/machinegun.ogg
   - type: Battery
     maxCharge: 180
   - type: ProjectileBatteryAmmoProvider
@@ -61,7 +61,7 @@
     availableModes:
       - SemiAuto
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/lmg.ogg
+      path: /Audio/_Battlefield14/Weapons/FighterWeapons/rocket1.ogg
   - type: Battery
     maxCharge: 1500
   - type: ProjectileBatteryAmmoProvider
@@ -79,9 +79,9 @@
   - type: Projectile
     damage:
       types: # For reference, air to air missiles should be mainly direct damage, so they are worse at taking out ships; fighters have 1,000 health
-        Structural: 200
+        Structural: 600
         Blunt: 70
-        Heat: 30
+        Heat: 70
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/fighterweapon_projectiles.rsi
     layers:
@@ -103,7 +103,7 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    totalIntensity: 15
+    totalIntensity: 2
     intensitySlope: 8
     maxIntensity: 8
   - type: GatheringProjectile
@@ -111,11 +111,11 @@
   - type: MiningGatheringHard
   - type: TargetSeeking
     acceleration: 300
-    detectionRange: 500
+    detectionRange: 275
     scanArc: 40
     launchSpeed: 150
     maxSpeed: 180
-    trackDelay: 0.1
+    trackDelay: 1
 
 - type: entity
   id: MediumFighterMaverick
@@ -136,7 +136,7 @@
     availableModes:
       - SemiAuto
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/lmg.ogg
+      path: /Audio/_Battlefield14/Weapons/FighterWeapons/rocket2.ogg
   - type: Battery
     maxCharge: 1500
   - type: ProjectileBatteryAmmoProvider
@@ -191,7 +191,7 @@
     scanArc: 30
     launchSpeed: 1
     maxSpeed: 90
-    trackDelay: 1
+    trackDelay: 2
 
 # PACT
 
@@ -209,7 +209,7 @@
     projectileSpeed: 90
     fireRate: 5
     minAngle: 0
-    maxAngle: 8
+    maxAngle: 5
     angleIncrease: 1
     angleDecay: 20
     selectedMode: FullAuto
@@ -246,7 +246,7 @@
     availableModes:
       - FullAuto
     soundGunshot:
-      path: /Audio/_Mono/Weapons/Guns/Gunshots/slammer.ogg
+      path: /Audio/_Battlefield14/Weapons/FighterWeapons/rocket3.ogg
   - type: Battery
     maxCharge: 180
   - type: ProjectileBatteryAmmoProvider
@@ -321,7 +321,7 @@
     availableModes:
       - FullAuto
     soundGunshot:
-      path: /Audio/_Mono/Weapons/Guns/Gunshots/slammer.ogg
+      path: /Audio/_Battlefield14/Weapons/FighterWeapons/flare.ogg
   - type: Battery
     maxCharge: 180
   - type: ProjectileBatteryAmmoProvider
@@ -338,8 +338,6 @@
   - type: Physics
     bodyType: Dynamic
     fixedRotation: false
-  - type: EmbeddableProjectile
-    deleteOnRemove: true
   - type: Fixtures
     fixtures:
       projectile:
@@ -372,13 +370,13 @@
     radius: 15.0
     energy: 9.0
   - type: Projectile
-    deleteOnCollide: false
+    deleteOnCollide: true
     damage:
       types:
         Heat: 5
   - type: RadarBlip
-    radarColor: "#a63536"
-    scale: 5
+    radarColor: "#FCBA03"
+    scale: 2
     requireNoGrid: true
     shape: diamond
   - type: TargetSeekingTarget
