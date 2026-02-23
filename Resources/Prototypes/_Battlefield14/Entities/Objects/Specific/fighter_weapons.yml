@@ -115,7 +115,7 @@
     scanArc: 40
     launchSpeed: 150
     maxSpeed: 180
-    trackDelay: 0.1
+    trackDelay: 1
 
 - type: entity
   id: MediumFighterMaverick
@@ -191,7 +191,7 @@
     scanArc: 30
     launchSpeed: 1
     maxSpeed: 90
-    trackDelay: 1
+    trackDelay: 2
 
 # PACT
 
