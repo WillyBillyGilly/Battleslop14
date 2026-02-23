@@ -10,7 +10,7 @@
     tags:
     - Magazine1776mmRailgun
   - type: Item
-    size: Normal
+    size: Huge
   - type: BallisticAmmoProvider
     infiniteUnspawned: false
     proto: Cartridge1776mmRailgun
@@ -47,16 +47,18 @@
     tags:
     - Cartridge
     - Cartridge1776mmRailgun
+  - type: Item
+    size: Ginormous
   - type: CartridgeAmmo
     deleteOnSpawn: true
     proto: Bullet1776mmRailgun
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/generic_cartridges.rsi
+    sprite: _Battlefield14/Objects/Weapons/BattlefieldArtillery/Cartridges/Trumpcard.rsi
     layers:
-    - state: 220mm
+    - state: icon
       map: ["enum.AmmoVisualLayers.Base"]
   - type: Appearance
-  - type: SpentAmmoVisuals
+#  - type: SpentAmmoVisuals
   - type: StaticPrice
     price: 1
   - type: Destructible
@@ -70,6 +72,11 @@
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Metallic
+  - type: MultiHandedItem
+  - type: ClothingSpeedModifier
+    walkModifier: 0.5
+    sprintModifier: 0.5
+  - type: HeldSpeedModifier
 
 # 12.7mm M5 Browning HMG
 - type: entity
@@ -941,11 +948,18 @@
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Metallic
+  - type: Item
+    size: Large
+  - type: MultiHandedItem
+  - type: ClothingSpeedModifier
+    walkModifier: 0.8
+    sprintModifier: 0.8
+  - type: HeldSpeedModifier
 
 - type: entity
   id: Cartridge120mmCanister
   name: cartridge (120mm Canister)
-  parent: BaseCartridge
+  parent: Cartridge120mmAPFSDS
   components:
   - type: Tag
     tags:
@@ -962,25 +976,6 @@
       map: ["enum.AmmoVisualLayers.Base"]
   - type: Appearance
   - type: SpentAmmoVisuals
-  - type: StaticPrice
-    price: 1
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 1000
-      behaviors:
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
-      - !type:ExplodeBehavior
-  - type: Explosive
-    explosionType: Default
-    maxIntensity: 100
-    intensitySlope: 3
-    totalIntensity: 5
-  - type: Damageable
-    damageContainer: Inorganic
-    damageModifierSet: Metallic
 
 # 40x46mm MK20 Plasma Gas Magazine
 - type: entity

@@ -1,24 +1,24 @@
 # 17.76mm TRUMPCARD Railgun
 - type: entity
   id: Bullet1776mmRailgun
-  name: 17.76mm railgun projectile
+  name: 17.76mm depleted uranium penetrator
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
       types:
-        Structural: 800
-        Piercing: 600
+        Structural: 8000
+        Piercing: 6000
+    armorPenetration: 10000
+#    penetrationThreshold: 2000
+    deleteOnCollide: false
   - type: StaminaDamageOnCollide
     damage: 200 # just incase you somehow some way survive
-    armorPenetration: 1
-    penetrationThreshold: 2000
-    deleteOnCollide: false
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
+    sprite: _Battlefield14/Objects/Weapons/BattlefieldArtillery/Projectiles/Trumpcard.rsi
     layers:
-    - state: 57-shell
+    - state: icon
   - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 200
@@ -30,7 +30,7 @@
     scale: 2.5
     requireNoGrid: true
     shape: triangle
-    radarColor: "#0099FF"
+    radarColor: "#ffffff"
 
 # 12.7mm M5 Browning AP
 - type: entity
@@ -754,7 +754,7 @@
         Structural: 100
         Piercing: 80
     penetrationThreshold: 300
-    deleteOnCollide: false
+    deleteOnCollide: true
   - type: SubmunitionProjectile
     submunitionPrototype: Bullet120mmPenetrator
     distanceDelay: 0
