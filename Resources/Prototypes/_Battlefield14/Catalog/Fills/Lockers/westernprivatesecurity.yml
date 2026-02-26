@@ -81,7 +81,6 @@
       - id: BoxMagazineMP7
       - id: CrowbarRed
 
-
 - type: entity
   parent: GunSafeBaseSecure
   id: GunSafeWPSM9
