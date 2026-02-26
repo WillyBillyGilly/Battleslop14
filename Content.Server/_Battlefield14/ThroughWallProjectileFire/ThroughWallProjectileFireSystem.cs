@@ -53,7 +53,6 @@ public sealed class ThroughWallProjectileFireSystem : VirtualController
     public override void Initialize()
     {
         base.Initialize();
-        SubscribeLocalEvent<ThroughWallProjectileFireComponent, ActiveTimerTriggerEvent>(onActive);
         SubscribeLocalEvent<ThroughWallProjectileFireComponent, TriggerEvent>(onTrigger);
         SubscribeLocalEvent<ThroughWallProjectileFireComponent, EntityStuckEvent>(onStuck);
         SubscribeLocalEvent<ThroughWallProjectileFireComponent, EntityUnstuckEvent>(onUnstuck);
