@@ -60,7 +60,8 @@ public sealed class ThroughWallProjectileFireSystem : VirtualController
 
     public void onTrigger(Entity<ThroughWallProjectileFireComponent> ent, ref TriggerEvent ev)
     {
-        EnsureComp<ActiveThroughWallProjectileFireComponent>(ent);
+        if(ent.Comp.projectileCount > 0)
+            EnsureComp<ActiveThroughWallProjectileFireComponent>(ent);
     }
 
     public void onStuck(Entity<ThroughWallProjectileFireComponent> ent, ref EntityStuckEvent ev)
