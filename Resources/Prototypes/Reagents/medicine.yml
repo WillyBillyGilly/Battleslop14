@@ -311,13 +311,11 @@
   color: "#0041a8"
   metabolisms:
     Medicine:
-      metabolismRate: 0.2 #Bf14
+      metabolismRate: 0.2 #BF14
       effects:
-      - !type:HealthChange
+      - !type:EvenHealthChange # BF14
         damage:
-          types:
-            Asphyxiation: -1.5 # BF14
-            Bloodloss: -1.5 # BF14
+          Airloss: -1.5
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
