@@ -16,8 +16,8 @@
   name: 'TSFMC Flagship Halcyon'
   minimumDistance: 2500 # Mono
   maximumDistance: 4000 # Mono
-  spawnGamePreset: [ NFAdventure, NFPirate, MonoStandard, MonoRogueTSF, MonoTSFUSSP, MonoADS, MonoChimera, MonoMixed, MonoAllAtOnce ]
-  spawnGroup: Required
+  spawnGamePreset: [ MonoStandard, MonoRogueTSF, MonoRogueUSSP, MonoADS, MonoChimera, MonoMixed, MonoAllAtOnce ] #BF14 [ NFAdventure, NFPirate, MonoStandard, MonoRogueTSF, MonoRogueUSSP, MonoADS, MonoChimera, MonoMixed, MonoAllAtOnce ]
+  spawnGroup: Optional #BF14
   gridPath: /Maps/_Mono/POI/tsfmchalcyon.yml
   addComponents:
   - type: IFF

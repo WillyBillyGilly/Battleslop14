@@ -187,7 +187,7 @@
   productEntity: CrateSecgearFilledBarbwire
   icon: { sprite: _RMC14/Objects/barbed_wire.rsi, state: barbed_wire_3 }
   cost:
-    PACTRequisition: 15 # 2 minutes 30 seconds
+    PACTRequisition: 4 # 40 seconds
   categories:
     - UplinkPACTRUUtility
   conditions:
