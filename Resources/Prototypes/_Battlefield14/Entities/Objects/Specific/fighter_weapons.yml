@@ -7,6 +7,8 @@
   - type: Tag
     tags:
     - LightFighterEquipment
+  - type: MechEquipment
+    preventFireOnGrid: true
   - type: StaticPrice
     price: 500
 

@@ -4,6 +4,7 @@
     components:
     - type: Mech
       maxEquipmentAmount: 3
+      zoom: 3, 3
     - type: Physics
       bodyType: Dynamic
     - type: PassiveThermalSignature
