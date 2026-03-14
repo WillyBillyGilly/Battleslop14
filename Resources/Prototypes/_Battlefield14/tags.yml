@@ -150,3 +150,9 @@
 
 - type: Tag
   id: FitsInVoidsuitKit
+
+- type: Tag
+  id: Cartridge43x30mmGrenade
+
+- type: Tag
+  id: Cartridge43x30mmChemicalSmoke
