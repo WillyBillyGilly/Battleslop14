@@ -33,6 +33,9 @@ uplink-PACTRU-rshg2crate-desc = 5 disposable RShG-2 thermobaric launchers.
 uplink-PACTRU-RPOAShmelcrate-name = RPO-A Shmel x5
 uplink-PACTRU-RPOAShmelcrate-desc = 5 disposable RPO-A thermobaric launchers.
 
+uplink-PACTRU-GM94crate-name = GM-94 x2
+uplink-PACTRU-GM94crate-desc = 2 GM-94 pump-action grenade launchers, along with two boxes each of HE-Frag, Thermobaric, and chemical smoke grenades.
+
 ## Ammo
 
 uplink-PACTRU-ammo-bag-name = Ammo bag
@@ -88,6 +91,15 @@ uplink-PACTRU-zarya-box-desc = Contains 8 RGO 'zarya' flashbang grenades.
 
 uplink-PACTRU-rdg2-box-name = RDG-2 Grenade box
 uplink-PACTRU-rdg2-box-desc = Contains 8 RDG-2 smoke grenades.
+
+uplink-PACTRU-43x30-box-HEFrag-name = 43x30 HE-Frag Grenade box
+uplink-PACTRU-43x30-box-HEFrag-desc = Contains 8 43x30 high explosive fragmenting grenades.
+
+uplink-PACTRU-43x30-box-Thermobaric-name = 43x30 Thermobaric Grenade box
+uplink-PACTRU-43x30-box-Thermobaric-desc = Contains 8 43x30 thermobaric grenades.
+
+uplink-PACTRU-43x30-box-ChemicalSmoke-name = 43x30 CS gas Grenade box
+uplink-PACTRU-43x30-box-ChemicalSmoke-desc = Contains 8 43x30 chemical smoke grenades.
 
 ## Ship ammo
 

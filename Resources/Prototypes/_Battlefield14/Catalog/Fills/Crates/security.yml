@@ -92,7 +92,7 @@
   id: CrateSecgearNATOFilledM4A1
   suffix: Filled, M4A1
   parent: CrateSecgear
-  name: M16A4 crate
+  name: M4A1 crate
   components:
   - type: StorageFill
     contents:
@@ -319,6 +319,25 @@
         - id: ShellBoxBF4GaugeShrap10
           amount: 4
         - id: ShellBoxBF4GaugeBarricade
+          amount: 2
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
+- type: entity
+  id: CrateSecgearPACTFilledGM94
+  suffix: Filled, GM-94
+  parent: CrateSecgear
+  name: GM-94 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponGrenadeLauncherRUGM94
+          amount: 2
+        - id: BoxMagazine43x30HEFrag
+          amount: 2
+        - id: BoxMagazine43x30Thermobaric
+          amount: 2
+        - id: BoxMagazine43x30ChemicalSmoke
           amount: 2
   - type: AccessReader
     access: [["PACTSoldier"]]
