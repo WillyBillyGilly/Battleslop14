@@ -451,7 +451,7 @@
   - type: Projectile
     damage:
       types:
-        Structural: 80
+        Structural: 110
         Piercing: 40
     deleteOnCollide: false
   - type: ArmorPiercing

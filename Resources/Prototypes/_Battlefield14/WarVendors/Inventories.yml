@@ -56,9 +56,11 @@
     BoxIFFNATOYellow: 10
     BoxIFFNATOGreen: 10
     RemoteSignallerM57: 10
+    HandheldStationMapUnpowered: 5
     Handcuffs: 5
     Zipties: 15
     IPOCK: 10
+    Whistle: 3
     Boombox: 2
     ClothingHeadHatHelmetUS: 100
     ClothingOuterArmorPlateCarrierTan: 5 # FREE PLATES
@@ -133,8 +135,10 @@
     BoxIFFPACTWhite: 10
     BoxIFFPACTRed: 10
     BoxIFFPACTStGeorge: 10
+    HandheldStationMapUnpowered: 5
     Handcuffs: 5
     Zipties: 15
+    SyndicateWhistle: 3
     Boombox: 2
     ClothingHeadHatHelmetRUEMR: 100
     ClothingOuterArmorPlateCarrierBlack: 5 # FREE PLATES

@@ -73,12 +73,6 @@
         Structural: 80
         Piercing: 50
     deleteOnCollide: true
-  - type: HeFragProjectile
-    explosionDelay: 0
-    fragmentationDelay: 0
-    fragmentationCount: 20
-    fragmentationPrototype: Bullet43x30mmFragFragment
-    plasmaAmount: 0
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: FireBomb
