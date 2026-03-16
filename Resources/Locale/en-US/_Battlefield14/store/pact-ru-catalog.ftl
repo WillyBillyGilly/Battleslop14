@@ -87,7 +87,7 @@ uplink-PACTRU-rgo-box-name = RGO Grenade box
 uplink-PACTRU-rgo-box-desc = Contains 8 RGO offensive high explosive impact grenades.
 
 uplink-PACTRU-zarya-box-name = Zarya Flashbang Grenade box
-uplink-PACTRU-zarya-box-desc = Contains 8 RGO 'zarya' flashbang grenades.
+uplink-PACTRU-zarya-box-desc = Contains 8 'zarya' flashbang grenades.
 
 uplink-PACTRU-rdg2-box-name = RDG-2 Grenade box
 uplink-PACTRU-rdg2-box-desc = Contains 8 RDG-2 smoke grenades.
