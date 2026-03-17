@@ -456,11 +456,12 @@
       path: /Audio/_Battlefield14/Weapons/Grenades/disable1.ogg
   - type: Damageable
     damageContainer: Inorganic
+    damageModifierSet: Grenade
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 10
+        damage: 20
       behaviors:
       - !type:TriggerBehavior
       - !type:DoActsBehavior
@@ -470,7 +471,7 @@
     - type: DamageOnLand
       damage:
         types:
-          Blunt: 50
+          Blunt: 60
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
