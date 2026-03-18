@@ -3,7 +3,7 @@
   name: trait-prybar-prosthetics-name
   description: trait-prybar-prosthetics-desc
   category: Physical
-  cost: 4 # BF14 2 > 4 bionics like this exist but are expensive
+  cost: 8 # BF14 2 > 8 bionics like this exist but are expensive
   components:
   - type: PrybarProsthetics
 

@@ -119,4 +119,4 @@
         Structural: 500 # this is made to take out engine blocks at 100 meters
     armorPenetration: -0.2
   - type: StaminaDamageOnCollide
-    damage: 70 # ~2 hits to stun
+    damage: 20 # ~5 hits to stun | if this is any higher you will one-shot stun anyone with a plate

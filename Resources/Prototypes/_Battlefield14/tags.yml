@@ -62,6 +62,9 @@
   id: CartridgeRPG7
 
 - type: Tag
+  id: CartridgeLauncher
+
+- type: Tag
   id: MagazineRPG7
 
 - type: Tag
