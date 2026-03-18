@@ -2,6 +2,32 @@
 
 - type: entity
   categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: BulletRocket84mmHEATArmingDistance
+  name: 84mm HEAT rocket
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: frag
+  - type: Projectile
+    damage:
+      types:
+        Structural: 100
+        Blunt: 50
+    deleteOnCollide: true
+  - type: SubmunitionProjectile
+    submunitionPrototype: BulletRocket84mmHEAT
+    distanceDelay: 6
+    submunitionDelay: 0
+    submunitionCount: 1
+    spreadAngle: 0
+    velocityMultiplier: 1
+  - type: StaminaDamageOnCollide
+    damage: 50
+
+- type: entity
+  categories: [ HideSpawnMenu ]
   parent: BaseBulletTrigger
   id: BulletRocket84mmHEAT # High explosive anti tank, pierces and does damage on the inside
   name: 84mm HEAT rocket # Used for the AT4 and HEAA SMAW cartridge
@@ -35,9 +61,35 @@
 
 - type: entity
   categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: BulletRocket83mmNEArmingDistance
+  name: 83mm Novel Explosive projectile
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: frag
+  - type: Projectile
+    damage:
+      types:
+        Structural: 100
+        Blunt: 50
+    deleteOnCollide: true
+  - type: SubmunitionProjectile
+    submunitionPrototype: BulletRocket83mmNE
+    distanceDelay: 6
+    submunitionDelay: 0
+    submunitionCount: 1
+    spreadAngle: 0
+    velocityMultiplier: 1
+  - type: StaminaDamageOnCollide
+    damage: 50
+
+- type: entity
+  categories: [ HideSpawnMenu ]
   parent: BaseBulletTrigger
   id: BulletRocket83mmNE
-  name: 83mm Novel Explosive rocket # anti infantry, explodes on contact and sends fragments everywhere with a wide explosive for killing infantry
+  name: 83mm Novel Explosive projectile # anti infantry, explodes on contact and sends fragments everywhere with a wide explosive for killing infantry
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
@@ -97,9 +149,35 @@
 
 - type: entity
   categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: BulletRocket83mmHEDMArmingDistance
+  name: 83mm HEDM projectile
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: frag
+  - type: Projectile
+    damage:
+      types:
+        Structural: 100
+        Blunt: 50
+    deleteOnCollide: true
+  - type: SubmunitionProjectile
+    submunitionPrototype: BulletRocket83mmHEDM
+    distanceDelay: 6
+    submunitionDelay: 0
+    submunitionCount: 1
+    spreadAngle: 0
+    velocityMultiplier: 1
+  - type: StaminaDamageOnCollide
+    damage: 50
+
+- type: entity
+  categories: [ HideSpawnMenu ]
   parent: BaseBulletTrigger
   id: BulletRocket83mmHEDM
-  name: 83mm HEDM rocket # High explosive dual mode, explodes on contact in a 3x3 area to blast open walls and such
+  name: 83mm HEDM projectile # High explosive dual mode, explodes on contact in a 3x3 area to blast open walls and such
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
@@ -121,6 +199,32 @@
     damage: 200 # It's a fucking rocket
 
 ## RU
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: BulletRocketRPG7HEATArmingDistance
+  name: PG-7VL HEAT rocket
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Launcher/RPG7.rsi
+    layers:
+    - state: base-spent
+  - type: Projectile
+    damage:
+      types:
+        Structural: 100
+        Blunt: 50
+    deleteOnCollide: true
+  - type: SubmunitionProjectile
+    submunitionPrototype: BulletRocketRPG7HEAT
+    distanceDelay: 6
+    submunitionDelay: 0
+    submunitionCount: 1
+    spreadAngle: 0
+    velocityMultiplier: 1
+  - type: StaminaDamageOnCollide
+    damage: 50
 
 - type: entity
   categories: [ HideSpawnMenu ]
@@ -153,6 +257,32 @@
     intensitySlope: 5
     maxIntensity: 50
     maxTileBreak: 2
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: BulletRocketRPG7FragArmingDistance
+  name: OG-7V frag rocket
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Launcher/RPG7.rsi
+    layers:
+    - state: base-spent
+  - type: Projectile
+    damage:
+      types:
+        Structural: 100
+        Blunt: 50
+    deleteOnCollide: true
+  - type: SubmunitionProjectile
+    submunitionPrototype: BulletRocketRPG7Frag
+    distanceDelay: 6
+    submunitionDelay: 0
+    submunitionCount: 1
+    spreadAngle: 0
+    velocityMultiplier: 1
+  - type: StaminaDamageOnCollide
+    damage: 50
 
 - type: entity
   categories: [ HideSpawnMenu ]
@@ -217,6 +347,32 @@
 
 - type: entity
   categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: BulletRocketRPG26HEATArmingDistance
+  name: 72.5mm HEAT rocket
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Launcher/RPG7.rsi
+    layers:
+    - state: base-spent
+  - type: Projectile
+    damage:
+      types:
+        Structural: 100
+        Blunt: 50
+    deleteOnCollide: true
+  - type: SubmunitionProjectile
+    submunitionPrototype: BulletRocketRPG26HEAT
+    distanceDelay: 6
+    submunitionDelay: 0
+    submunitionCount: 1
+    spreadAngle: 0
+    velocityMultiplier: 1
+  - type: StaminaDamageOnCollide
+    damage: 50
+
+- type: entity
+  categories: [ HideSpawnMenu ]
   parent: BaseBulletTrigger
   id: BulletRocketRPG26HEAT
   name: 72.5mm HEAT rocket
@@ -247,6 +403,32 @@
     intensitySlope: 5
     maxIntensity: 50
     maxTileBreak: 1
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: BulletRocketRPG26ThermobaricArmingDistance
+  name: 72.5mm thermobaric rocket
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Launcher/RPG7.rsi
+    layers:
+    - state: frag-spent
+  - type: Projectile
+    damage:
+      types:
+        Structural: 100
+        Blunt: 50
+    deleteOnCollide: true
+  - type: SubmunitionProjectile
+    submunitionPrototype: BulletRocketRPG26Thermobaric
+    distanceDelay: 6
+    submunitionDelay: 0
+    submunitionCount: 1
+    spreadAngle: 0
+    velocityMultiplier: 1
+  - type: StaminaDamageOnCollide
+    damage: 50
 
 - type: entity
   categories: [ HideSpawnMenu ]

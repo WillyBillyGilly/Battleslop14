@@ -18,7 +18,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 750000 # so you cant just magdump it lol you need to unlock it
+        damage: 750000000 # so you cant just magdump it lol you need to unlock it
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -47,9 +47,9 @@
     contents:
         - id: WeaponShotgunUSUSAS12Frag
         - id: MagazineShotgunUSASDrum
-          amount: 4
-        - id: MagazineShotgunUSASDrumFrag
           amount: 2
+        - id: MagazineShotgunUSASDrumFrag
+          amount: 1
 
 - type: entity
   id: CratePowerWeaponFilledAEK971

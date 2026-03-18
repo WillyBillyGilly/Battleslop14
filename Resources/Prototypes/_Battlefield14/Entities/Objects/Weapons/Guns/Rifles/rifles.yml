@@ -256,7 +256,7 @@
     unwieldOnUse: false
   - type: GunWieldBonus
     minAngle: -19
-    maxAngle: -24
+    maxAngle: -20
   - type: Gun
     minAngle: 21
     maxAngle: 32
@@ -421,6 +421,18 @@
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK12worn.rsi
+  - type: GunWieldBonus
+    minAngle: -19
+    maxAngle: -24
+  - type: Gun
+    minAngle: 21
+    maxAngle: 32
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    selectedMode: FullAuto
+    fireRate: 6
+    projectileSpeed: 45
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -492,7 +504,7 @@
   - type: Gun
     minAngle: 21
     maxAngle: 30
-    angleIncrease: 1
+    angleIncrease: 2
     angleDecay: 16
     availableModes:
     - SemiAuto

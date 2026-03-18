@@ -84,8 +84,7 @@
     armorPenetration: 1
     deleteOnCollide: true
   - type: StaminaDamageOnCollide
-    damage: 60 # ~2 hits to stun
-    penetrationThreshold: 200
+    damage: 20 # ~5 hits to stun
   - type: ArmorPiercing
     piercingThickness: 1
   - type: Sprite

@@ -125,9 +125,7 @@
   storage:
     back:
     - WeaponSubmachinegunUSMP5
-    - CartridgeSMAWHEDM
-    - ClothingMaskGasM40
-    - CartridgeSMAWHEDM
     - CartridgeSMAWNE
-    - CartridgeSMAWHEAA
+    - CartridgeSMAWNE
+    - ClothingMaskGasM40
     - CrowbarRed

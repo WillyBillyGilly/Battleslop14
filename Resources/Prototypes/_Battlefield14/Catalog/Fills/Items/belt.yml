@@ -88,9 +88,7 @@
   - type: StorageFill
     contents:
       - id: CartridgeSMAWHEAA
-        amount: 2
-      - id: CartridgeSMAWNE
-        amount: 2
+      - id: CartridgeSMAWHEDM
 
 # MARSOC
 
