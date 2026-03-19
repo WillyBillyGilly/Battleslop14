@@ -22,7 +22,4 @@
     state: red
   - type: Item
     size: Small
-  - type: BallisticCalculator
-    secondsPerTile: 0.1
-    deviationPerTile: 0.03
-    minDeviation: 0.15
+  - type: BasicCalculator
