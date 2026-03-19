@@ -8,8 +8,7 @@
     WeaponSubmachinegunUSMP5: 5
     WeaponPistolM9: 2
     MagazinePistolM9: 10
-    TelescopicShield: 2
-    RiotShield: 2
+    RiotShield: 3
     CombatKnife: 100
     ClothingBeltMedicalEMTFilledBF14Basic: 4
     ClothingBeltMilitaryWebbingUS: 50
@@ -57,6 +56,8 @@
     BoxIFFNATOGreen: 10
     RemoteSignallerM57: 10
     HandheldStationMapUnpowered: 5
+    ClothingArmbandDumpPouchBlack: 2
+    PouchMags: 5
     Handcuffs: 5
     Zipties: 15
     IPOCK: 10
@@ -81,8 +82,7 @@
     WeaponSubmachinegunRUVityaz: 5
     WeaponPistolMP443: 2
     MagazinePistolMP443: 10
-    TelescopicShield: 2
-    RiotShield: 2
+    RiotShield: 3
     CombatKnife: 100
     ClothingBeltMedicalEMTFilledBF14Basic: 4
     ClothingBeltMilitaryWebbingRU: 50
@@ -136,6 +136,8 @@
     BoxIFFPACTRed: 10
     BoxIFFPACTStGeorge: 10
     HandheldStationMapUnpowered: 5
+    PouchMags: 5
+    ClothingArmbandDumpPouchBlack: 2
     Handcuffs: 5
     Zipties: 15
     SyndicateWhistle: 3
