@@ -48,6 +48,7 @@ entities:
   entities:
   - uid: 1
     components:
+    - type: InitRepairSnapshot
     - type: MetaData
       name: Independant 'Box' station
     - type: Transform
