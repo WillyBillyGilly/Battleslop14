@@ -293,7 +293,7 @@
   name: SR2MP
   parent: [ BaseWeaponSubMachineGun , BaseGunWieldable ]
   id: WeaponSubmachinegunRUSR2MP
-  description: A compact, lightweight, and armour penetrating PDW, or Personal Defence Weapon. It's expensive, but you get what you pay for, if you use it right.
+  description: Designed alongside the SR1MP to use the new armour penetrating 9x21 round.
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP7.rsi
@@ -339,21 +339,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazineSubmachinegunMP7
+        startingItem: MagazinePistolSR2MP
         insertSound: /Audio/_Battlefield14/Weapons/Guns/MP7/uc_mp7_magin.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/MP7/uc_mp7_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazinePistolMP7
+            - MagazinePistolSR2MP
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: BF_CartridgePDW46x30
+        startingItem: BF_CartridgePDW9x21
         priority: 1
         whitelist:
           tags:
-            - BF_CartridgePDW46x30
+            - BF_CartridgePDW9x21
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
