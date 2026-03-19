@@ -22,7 +22,7 @@
     openSound:
       path: /Audio/Effects/door_open.ogg
     closeSound:
-      path: /Audio/Effects/door_close.ogg # huh
+      path: /Audio/Effects/door_close.ogg
   - type: Appearance
   - type: Damageable
     damageContainer: StructuralInorganic
