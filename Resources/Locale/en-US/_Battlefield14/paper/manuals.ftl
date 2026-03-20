@@ -24,8 +24,8 @@ book-text-manual-artillery-mortar = Instructional guide on the proper usage of m
       It is a good idea to pre-sight targets, in order to set up an ambush or begin firing at a target without having to re-calculate. Inside your utility box will be a folder and pen for writing your calculations down.
 
       Once you have a known firing position (such as a friendly spotter) then you can start thinking about offsets
-      Say you have a spotter, at -93, 100, and you already have the firing solution for those coordinates, being 15, -10
-      He calls out to you "Fire on my position, offset 5 meters north", simply increase your Y offset by 5, the end result being 15, -10
+      Say you have a spotter, at -93, 100, and you already have the firing solution for those coordinates, being 15, -10 (Coordinates in this format are always X, Y)
+      He calls out to you "Fire on my position, offset 5 meters north", simply increase your Y offset by 5, the end result being 15, -5
 
 
       Here is a graph visualising X and Y coordinates

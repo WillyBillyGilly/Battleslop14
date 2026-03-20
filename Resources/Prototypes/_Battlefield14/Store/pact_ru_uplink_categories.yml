@@ -194,6 +194,22 @@
         tags:
           - RussianUplink
 
+- type: listing
+  id: UplinkPACTRUIglae
+  name:  uplink-PACTRU-iglacrate-name
+  description: uplink-PACTRU-iglacrate-desc
+  productEntity: CrateSecgearPACTFilledIgla
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/Igla.rsi, state: icon }
+  cost:
+    PACTRequisition: 24 # 4 minutes
+  categories:
+    - UplinkPACTRUWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
 # Ammo
 
 - type: listing

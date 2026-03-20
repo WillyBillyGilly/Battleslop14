@@ -66,6 +66,22 @@
           - AmericanUplink
 
 - type: listing
+  id: UplinkNATOUSStinger
+  name:  uplink-natous-stingercrate-name
+  description: uplink-natous-stingercrate-desc
+  productEntity: CrateSecgearNATOFilledStinger
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/stinger.rsi, state: icon }
+  cost:
+    NATORequisition: 24 # 4 minutes
+  categories:
+    - UplinkNATOUSWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
   id: UplinkNATOUSM320
   name:  uplink-natous-m320-name
   description: uplink-natous-m320-desc

@@ -198,6 +198,53 @@
   - type: StaminaDamageOnCollide
     damage: 200 # It's a fucking rocket
 
+- type: entity
+  id: BulletRocketStingerMANPADSMissile
+  name: stinger missile
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types: # For reference, air to air missiles should be mainly direct damage, so they are worse at taking out ships; fighters have 1,000 health
+        Structural: 400
+        Blunt: 20
+        Heat: 20
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/fighterweapon_projectiles.rsi
+    layers:
+    - state: aim9
+  - type: Ammo
+    muzzleFlash: MuzzleFlashEffectSmall
+  - type: ShipWeaponProjectile
+  - type: RadarBlip
+    radarColor: "#FCBA03"
+    scale: 2
+    requireNoGrid: true
+    shape: diamond
+  - type: TimedDespawn
+    lifetime: 3 # approx 500 meter range
+  - type: PointLight
+    radius: 3.5
+    color: orange
+    energy: 0.5
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 2
+    intensitySlope: 8
+    maxIntensity: 8
+  - type: GatheringProjectile
+  - type: MiningGatheringSoft
+  - type: MiningGatheringHard
+  - type: TargetSeeking
+    acceleration: 300
+    detectionRange: 275
+    scanArc: 40
+    launchSpeed: 8
+    maxSpeed: 180
+    trackDelay: 0.5
+
 ## RU
 
 - type: entity
@@ -461,3 +508,50 @@
     maxTileBreak: 0
   - type: StaminaDamageOnCollide
     damage: 200 # It's a fucking rocket
+
+- type: entity
+  id: BulletRocketIglaMANPADSMissile
+  name: igla missile
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types: # For reference, air to air missiles should be mainly direct damage, so they are worse at taking out ships; fighters have 1,000 health
+        Structural: 400
+        Blunt: 20
+        Heat: 20
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/fighterweapon_projectiles.rsi
+    layers:
+    - state: aim9
+  - type: Ammo
+    muzzleFlash: MuzzleFlashEffectSmall
+  - type: ShipWeaponProjectile
+  - type: RadarBlip
+    radarColor: "#FCBA03"
+    scale: 2
+    requireNoGrid: true
+    shape: diamond
+  - type: TimedDespawn
+    lifetime: 3 # approx 500 meter range
+  - type: PointLight
+    radius: 3.5
+    color: orange
+    energy: 0.5
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 2
+    intensitySlope: 8
+    maxIntensity: 8
+  - type: GatheringProjectile
+  - type: MiningGatheringSoft
+  - type: MiningGatheringHard
+  - type: TargetSeeking
+    acceleration: 300
+    detectionRange: 275
+    scanArc: 40
+    launchSpeed: 8
+    maxSpeed: 180
+    trackDelay: 0.5

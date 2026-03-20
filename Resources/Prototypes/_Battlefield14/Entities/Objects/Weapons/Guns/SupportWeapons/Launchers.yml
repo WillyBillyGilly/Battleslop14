@@ -73,7 +73,7 @@
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
   - type: GunRequiresWield
-#  - type: AmmoCounter
+  - type: AmmoCounter
   - type: MagazineVisuals
     magState: mag
     steps: 2
@@ -142,6 +142,36 @@
   - type: AmmoCounter
   - type: BasicEntityAmmoProvider
     proto: BulletRocket83mmNE
+    capacity: 1
+
+- type: entity
+  name: FIM-92 Stinger MANPADS
+  parent: [ BaseWeaponLauncher , BaseGunWieldable , WeaponHandlingLauncherDisposable ]
+  id: WeaponLauncherUSStinger
+  description: You know who the CIA decided to give this thing to? The Mujahideen. They were fighting the communists at the time though so I suppose it's justified.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/stinger.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/stinger.rsi
+    slots:
+    - Back
+    - suitStorage
+  - type: Item
+    size: Huge
+  - type: Appearance
+  - type: Gun
+    projectileSpeed: 8
+    fireRate: 0.75
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
+  - type: GunRequiresWield
+  - type: AmmoCounter
+  - type: BasicEntityAmmoProvider
+    proto: BulletRocketStingerMANPADSMissile
     capacity: 1
 
 # RU
@@ -257,4 +287,34 @@
   components:
   - type: BasicEntityAmmoProvider
     proto: BulletRocketRPG26ThermobaricArmingDistance
+    capacity: 1
+
+- type: entity
+  name: 9K38 Igla MANPADS
+  parent: [ BaseWeaponLauncher , BaseGunWieldable , WeaponHandlingLauncherDisposable ]
+  id: WeaponLauncherRUIgla
+  description: The high tech equivalent of throwing a really long spear at someone, if that person was a helicopter and the spear could heat track it.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/Igla.rsi
+    layers:
+      - state: icon
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/Igla.rsi
+    slots:
+    - Back
+    - suitStorage
+  - type: Item
+    size: Huge
+  - type: Appearance
+  - type: Gun
+    projectileSpeed: 8
+    fireRate: 0.75
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
+  - type: GunRequiresWield
+  - type: AmmoCounter
+  - type: BasicEntityAmmoProvider
+    proto: BulletRocketIglaMANPADSMissile
     capacity: 1
