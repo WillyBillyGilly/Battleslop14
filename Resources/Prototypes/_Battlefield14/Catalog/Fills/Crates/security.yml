@@ -59,6 +59,19 @@
     access: [["NATOSoldier"]]
 
 - type: entity
+  id: CrateSecgearNATOFilledStinger
+  suffix: Filled, Stinger
+  parent: CrateSecgear
+  name: FIM-92 Stinger MANPADS crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponLauncherUSStinger
+          amount: 5
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
+- type: entity
   id: CrateSecgearNATOFilledM27IAR
   suffix: Filled, M27IAR
   parent: CrateSecgear
@@ -317,6 +330,19 @@
   - type: StorageFill
     contents:
         - id: WeaponLauncherRURPG26Thermobaric
+          amount: 5
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
+- type: entity
+  id: CrateSecgearPACTFilledIgla
+  suffix: Filled, Igla
+  parent: CrateSecgear
+  name: Igla MANPADS crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponLauncherRUIgla
           amount: 5
   - type: AccessReader
     access: [["PACTSoldier"]]

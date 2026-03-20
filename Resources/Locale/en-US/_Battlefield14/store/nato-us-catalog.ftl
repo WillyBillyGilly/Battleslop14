@@ -30,6 +30,9 @@ uplink-natous-SMAWDcrate-desc = 5 disposable anti-infantry SMAW-D tubes.
 uplink-natous-AT4crate-name = AT4 x5
 uplink-natous-AT4crate-desc = 5 disposable 'eighty-four' milimeter launchers firing HEAT warheads.
 
+uplink-natous-stingercrate-name = FIM-92 Stinger MANPADS x5
+uplink-natous-stingercrate-desc = 5 stinger MANPADS systems for shooting down fighters.
+
 uplink-natous-1776railgun-name = 17.76mm Liberator railgun
 uplink-natous-1776railgun-desc = A singlular unit of the experimental Liberator railgun, fires shortened 17.76mm depleted-uranium penetrators.
 

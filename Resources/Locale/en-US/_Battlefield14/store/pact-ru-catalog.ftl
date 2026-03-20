@@ -36,6 +36,9 @@ uplink-PACTRU-rshg2crate-desc = 5 disposable RShG-2 thermobaric launchers.
 uplink-PACTRU-RPOAShmelcrate-name = RPO-A Shmel x5
 uplink-PACTRU-RPOAShmelcrate-desc = 5 disposable RPO-A thermobaric launchers.
 
+uplink-PACTRU-iglacrate-name = Igla MANPADS x5
+uplink-PACTRU-iglacrate-desc = 5 igla MANPADS systems for shooting down fighters.
+
 uplink-PACTRU-GM94crate-name = GM-94 x2
 uplink-PACTRU-GM94crate-desc = 2 GM-94 pump-action grenade launchers, along with two boxes each of HE-Frag, Thermobaric, and chemical smoke grenades.
 
