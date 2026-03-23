@@ -10,7 +10,7 @@
   addComponents:
   - type: IFF
     color: "#047abd"
-    readOnly: true
+#    readOnly: true
 
 - type: gameMap
   id: USSBarackObama

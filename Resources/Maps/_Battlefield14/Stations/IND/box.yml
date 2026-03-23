@@ -4,10 +4,10 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 03/19/2026 04:47:00
-  entityCount: 20908
+  time: 03/23/2026 06:20:24
+  entityCount: 20903
 maps:
-- 20897
+- 2421
 grids:
 - 1
 orphans: []
@@ -48,12 +48,12 @@ entities:
   entities:
   - uid: 1
     components:
-    - type: InitRepairSnapshot
     - type: MetaData
       name: Independant 'Box' station
     - type: Transform
       pos: -92,-82
-      parent: 20897
+      parent: 2421
+    - type: InitRepairSnapshot
     - type: MapGrid
       chunks:
         0,4:
@@ -3319,9 +3319,9 @@ entities:
     - type: SpreaderGrid
       spreadQueues:
         Kudzu: []
-        MetalFoam: []
-        Puddle: []
         Smoke: []
+        Puddle: []
+        MetalFoam: []
     - type: GravityShake
       shakeTimes: 10
     - type: GasTileOverlay
@@ -3575,7 +3575,7 @@ entities:
             1: 13104
           39,4:
             0: 36488
-            4: 4353
+            2: 4353
           40,5:
             0: 4120
             1: 61152
@@ -4709,7 +4709,7 @@ entities:
             1: 65518
           24,7:
             1: 11
-            2: 52224
+            3: 52224
           21,9:
             1: 62136
           21,10:
@@ -4979,7 +4979,7 @@ entities:
           24,6:
             1: 3822
           24,8:
-            2: 12
+            3: 12
             0: 3584
           25,5:
             1: 65535
@@ -4987,11 +4987,11 @@ entities:
             1: 4095
           25,7:
             1: 15
-            2: 4352
-            3: 52224
+            3: 4352
+            4: 52224
           25,8:
-            2: 1
-            3: 12
+            3: 1
+            4: 12
             0: 3840
           26,5:
             1: 65331
@@ -5000,9 +5000,9 @@ entities:
             1: 1023
           26,7:
             1: 52239
-            3: 4352
+            4: 4352
           26,8:
-            3: 1
+            4: 1
             1: 12
             0: 3840
           27,5:
@@ -5065,9 +5065,9 @@ entities:
             1: 7
             0: 3976
           28,10:
-            4: 1911
+            2: 1911
           28,11:
-            4: 1911
+            2: 1911
           25,13:
             1: 56797
           25,14:
@@ -5081,9 +5081,7 @@ entities:
           26,14:
             1: 3855
           26,15:
-            1: 65529
-            5: 2
-            6: 4
+            1: 65535
           26,16:
             1: 65295
           27,13:
@@ -5097,9 +5095,9 @@ entities:
           27,16:
             1: 56717
           28,12:
-            7: 1911
+            5: 1911
           28,13:
-            4: 1911
+            2: 1911
           28,14:
             0: 15
             1: 3840
@@ -5418,9 +5416,9 @@ entities:
             1: 65535
           30,23:
             1: 79
-            8: 60928
+            6: 60928
           30,24:
-            8: 238
+            6: 238
             1: 58368
           31,21:
             1: 29055
@@ -5428,9 +5426,9 @@ entities:
             1: 65399
           31,23:
             1: 15
-            8: 30464
+            6: 30464
           31,24:
-            8: 119
+            6: 119
             1: 61448
           32,20:
             1: 65359
@@ -5771,7 +5769,7 @@ entities:
             0: 35016
           37,4:
             0: 13874
-            4: 2176
+            2: 2176
           38,3:
             0: 240
           36,6:
@@ -5790,10 +5788,10 @@ entities:
           37,5:
             0: 546
           38,4:
-            4: 64401
+            2: 64401
             0: 1032
           38,5:
-            4: 79
+            2: 79
             0: 16384
           38,6:
             1: 4096
@@ -5953,6 +5951,25 @@ entities:
           temperature: 293.15
           moles:
           - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          temperature: 293.15
+          moles:
+          - 0
           - 6666.982
           - 0
           - 0
@@ -5973,63 +5990,6 @@ entities:
           moles:
           - 6666.982
           - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 293.15
-          moles:
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 293.15
-          moles:
-          - 21.6852
-          - 81.57766
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 293.15
-          moles:
-          - 21.813705
-          - 82.06108
           - 0
           - 0
           - 0
@@ -6083,7 +6043,7 @@ entities:
           - 0
           - 0
         chunkSize: 4
-  - uid: 20897
+  - uid: 2421
     components:
     - type: MetaData
       name: Map Entity
@@ -9788,48 +9748,6 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-  - uid: 6531
-    components:
-    - type: Transform
-      parent: 6530
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-  - uid: 6532
-    components:
-    - type: Transform
-      parent: 6530
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-  - uid: 6533
-    components:
-    - type: Transform
-      parent: 6530
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-  - uid: 6534
-    components:
-    - type: Transform
-      parent: 6530
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-  - uid: 6535
-    components:
-    - type: Transform
-      parent: 6530
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-  - uid: 6536
-    components:
-    - type: Transform
-      parent: 6530
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: AsteroidRock
   entities:
   - uid: 7324
@@ -12297,6 +12215,11 @@ entities:
       parent: 1
 - proto: ButtonFrameCautionSecurity
   entities:
+  - uid: 6534
+    components:
+    - type: Transform
+      pos: 103.5,133.5
+      parent: 1
   - uid: 6968
     components:
     - type: Transform
@@ -49018,26 +48941,26 @@ entities:
       parent: 1
 - proto: CapturePointMedical
   entities:
-  - uid: 6281
+  - uid: 2850
     components:
     - type: Transform
-      pos: 122.5,58.5
+      rot: 3.141592653589793 rad
+      pos: 113.5,66.5
       parent: 1
 - proto: CapturePointResearch
   entities:
-  - uid: 12054
+  - uid: 2851
     components:
     - type: Transform
       rot: 3.141592653589793 rad
-      pos: 159.5,65.5
+      pos: 141.5,65.5
       parent: 1
 - proto: CapturePointSecurity
   entities:
-  - uid: 6282
+  - uid: 6532
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 100.5,127.5
+      pos: 86.5,130.5
       parent: 1
 - proto: CarbonDioxideCanister
   entities:
@@ -58732,18 +58655,6 @@ entities:
       powerLoad: 5
     - type: Battery
       startingCharge: 0
-- proto: ComputerRoboticsControl
-  entities:
-  - uid: 13961
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 141.5,65.5
-      parent: 1
-    - type: ApcPowerReceiver
-      powerLoad: 5
-    - type: Battery
-      startingCharge: 0
 - proto: ComputerSolarControl
   entities:
   - uid: 9265
@@ -59340,6 +59251,13 @@ entities:
     - type: Transform
       pos: 77.5,53.5
       parent: 1
+- proto: CrateMaterialsBasicFilled
+  entities:
+  - uid: 2422
+    components:
+    - type: Transform
+      pos: 107.5,129.5
+      parent: 1
 - proto: CrateMaterialSteel
   entities:
   - uid: 12059
@@ -59383,51 +59301,6 @@ entities:
     - type: Transform
       pos: 76.5,127.5
       parent: 1
-- proto: CrateSecgear
-  entities:
-  - uid: 6530
-    components:
-    - type: Transform
-      pos: 84.5,132.5
-      parent: 1
-    - type: EntityStorage
-      air:
-        volume: 200
-        immutable: False
-        temperature: 293.14923
-        moles:
-        - 1.8856695
-        - 7.0937095
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 6532
-          - 6536
-          - 6535
-          - 6534
-          - 6533
-          - 6531
-        paper_label: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
 - proto: CrateSecurityNonlethal
   entities:
   - uid: 6529
@@ -73399,11 +73272,6 @@ entities:
     - type: Transform
       pos: 81.5,93.5
       parent: 1
-  - uid: 2422
-    components:
-    - type: Transform
-      pos: 81.5,79.5
-      parent: 1
   - uid: 2424
     components:
     - type: Transform
@@ -73803,11 +73671,6 @@ entities:
     components:
     - type: Transform
       pos: 89.5,93.5
-      parent: 1
-  - uid: 2851
-    components:
-    - type: Transform
-      pos: 89.5,79.5
       parent: 1
   - uid: 2853
     components:
@@ -79612,6 +79475,19 @@ entities:
           - Toggle
 - proto: LockableButtonSecurity
   entities:
+  - uid: 6533
+    components:
+    - type: Transform
+      pos: 103.5,133.5
+      parent: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        6281:
+        - - Pressed
+          - Toggle
+        6530:
+        - - Pressed
+          - Toggle
   - uid: 6967
     components:
     - type: Transform
@@ -82049,7 +81925,7 @@ entities:
       parent: 11051
     - type: SpecialRespawn
       stationMap:
-      - 20897
+      - 2421
       - 1
     - type: Physics
       canCollide: False
@@ -88480,11 +88356,6 @@ entities:
     - type: Transform
       pos: 81.5,93.5
       parent: 1
-  - uid: 2421
-    components:
-    - type: Transform
-      pos: 81.5,79.5
-      parent: 1
   - uid: 2423
     components:
     - type: Transform
@@ -88884,11 +88755,6 @@ entities:
     components:
     - type: Transform
       pos: 89.5,93.5
-      parent: 1
-  - uid: 2850
-    components:
-    - type: Transform
-      pos: 89.5,79.5
       parent: 1
   - uid: 2852
     components:
@@ -91883,11 +91749,21 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 150.5,73.5
       parent: 1
+  - uid: 6281
+    components:
+    - type: Transform
+      pos: 104.5,134.5
+      parent: 1
   - uid: 6468
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 73.5,74.5
+      parent: 1
+  - uid: 6530
+    components:
+    - type: Transform
+      pos: 105.5,134.5
       parent: 1
   - uid: 6672
     components:
@@ -108848,6 +108724,18 @@ entities:
     components:
     - type: Transform
       pos: 179.5,65.5
+      parent: 1
+  - uid: 6282
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 89.5,79.5
+      parent: 1
+  - uid: 6531
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 81.5,79.5
       parent: 1
   - uid: 6675
     components:

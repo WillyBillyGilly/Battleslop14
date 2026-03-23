@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 03/15/2026 06:38:44
-  entityCount: 3720
+  time: 03/21/2026 05:22:21
+  entityCount: 3721
 maps: []
 grids:
 - 1
@@ -119,9 +119,9 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
       spreadQueues:
+        MetalFoam: []
         Puddle: []
         Kudzu: []
-        MetalFoam: []
         Smoke: []
     - type: Shuttle
       dampingModifier: 0.25
@@ -1404,7 +1404,7 @@ entities:
       pos: 20.5,-21.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -15868.454
+      secondsUntilStateChange: -15937.132
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -10947,6 +10947,13 @@ entities:
     - type: Transform
       pos: 3.5,-42.5
       parent: 1
+- proto: CrateSecgearNATOFilledStinger
+  entities:
+  - uid: 3721
+    components:
+    - type: Transform
+      pos: 2.5,-46.5
+      parent: 1
 - proto: CrateServiceJanitorialSupplies
   entities:
   - uid: 2430
@@ -12320,7 +12327,7 @@ entities:
       pos: 10.5,-42.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -13706.859
+      secondsUntilStateChange: -13775.537
       state: Closing
   - uid: 2294
     components:

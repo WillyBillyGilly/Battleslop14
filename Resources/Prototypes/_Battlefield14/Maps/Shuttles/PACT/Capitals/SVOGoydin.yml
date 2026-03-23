@@ -10,7 +10,7 @@
   addComponents:
   - type: IFF
     color: "#bd0404"
-    readOnly: true
+#    readOnly: true
 
 - type: gameMap
   id: SVOGoydin
