@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 03/18/2026 03:23:29
-  entityCount: 3273
+  time: 03/21/2026 05:24:29
+  entityCount: 3274
 maps: []
 grids:
 - 1
@@ -483,10 +483,10 @@ entities:
     - type: GridPathfinding
     - type: SpreaderGrid
       spreadQueues:
-        Smoke: []
+        MetalFoam: []
         Puddle: []
         Kudzu: []
-        MetalFoam: []
+        Smoke: []
     - type: GravityShake
       shakeTimes: 10
     - type: GasTileOverlay
@@ -688,7 +688,7 @@ entities:
           7,5:
             2: 65399
           7,6:
-            2: 63351
+            2: 30583
           7,7:
             2: 30591
           7,8:
@@ -11256,6 +11256,13 @@ entities:
     components:
     - type: Transform
       pos: 14.5,45.5
+      parent: 1
+- proto: CrateSecgearPACTFilledIgla
+  entities:
+  - uid: 3274
+    components:
+    - type: Transform
+      pos: 14.5,44.5
       parent: 1
 - proto: CrateSecgearPACTFilledRPG7
   entities:
