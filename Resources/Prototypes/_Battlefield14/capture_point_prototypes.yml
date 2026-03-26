@@ -47,7 +47,7 @@
   - type: POICapture
     poiName: "Control Point Alpha"
     timeToCapture: 60 # 1 minute to capture
-    gracePeriod: 0
+    gracePeriod: 600 # 10 minutes until open
     doAfterDelay: 3
     controllingFaction: null
     isBeingCaptured: false
