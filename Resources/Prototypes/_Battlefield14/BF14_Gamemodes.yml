@@ -1,9 +1,8 @@
 - type: gamePreset
-  id: Battlefield14
+  id: USMC_vs_VDV
   alias:
-  - battlefield14
-  - BF14
-  name: Battlefield
+  - USMCvsVDV
+  name: USMC vs. VDV
   showInVote: true
   description: Larp and frag.
   rules:

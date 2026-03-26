@@ -4,7 +4,7 @@
   name: 'USS Barack Obama'
   minimumDistance: 3000
   maximumDistance: 3000
-  spawnGamePreset: [ Battlefield14 , NFAdventure ]
+  spawnGamePreset: [ USMC_vs_VDV ]
   spawnGroup: Required
   gridPath: /Maps/_Battlefield14/Shuttles/NATO/Capitals/USSBarackObama.yml
   addComponents:
