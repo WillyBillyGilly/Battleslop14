@@ -71,11 +71,11 @@ trait-steadfast-desc = When others would buckle from the weight of your injuries
 # BF14 ^ removed "For most species,"
 
 trait-dermal-armor-name = Thick skin
-trait-dermal-armor-desc = You were born with thick skin, you have a 1.5 flat reduction to Blunt, Slash, and Piercing damage, but you take 25% more Shock damage.
+trait-dermal-armor-desc = You were born with thick skin, you have a 3.5 flat reduction to Blunt, Slash, and Piercing damage, but you take 25% more Shock damage.
 
 # BF14 wuz here (and edited the dermal armo(u)r .ftl)
 #Dermal Armor
-#Your skin has been replaced with a flexible, yet sturdy, hard-polymer shell wrapped in a layer of synthetic flesh. Provides 1.5 flat reduction to Blunt, Slash, and Piercing damage, but you take 25% more Shock damage.
+#Your skin has been replaced with a flexible, yet sturdy, hard-polymer shell wrapped in a layer of synthetic flesh. Provides 3.5 flat reduction to Blunt, Slash, and Piercing damage, but you take 25% more Shock damage.
 
 trait-ironman-name = Ironman
 trait-ironman-desc = You live strictly on hard cash. You can't withdraw from your bank account, but you start the shift with a Baeg Voucher to make your way.
@@ -87,7 +87,10 @@ trait-alcohol-tolerance-name = Alcohol Tolerance
 trait-alcohol-tolerance-desc = Your body shrugs off the visual effects of booze. Drinks blur your vision far less, but this does not affect alcohol poisoning or how drunk you become.
 
 trait-platelet-factories-name = Platelet Factories
-trait-platelet-factories-desc = Your body has been augmented with a series of bio-tailored organs that enhance long-term survivability. These organs attempt to keep you alive even in the face of advanced trauma, all the way up until—but not including—death. Your natural healing slowly repairs any damage type, including exotic injuries like radiation exposure or cellular damage.
+trait-platelet-factories-desc = Your body has been augmented with a series of bio-tailored organs that enhance long-term survivability. These organs attempt to keep you alive even in the face of advanced trauma, all the way up until—but not including—death. Your natural healing slowly repairs burn and brute damage types.
 
 trait-nanite-repair-drones-name = Nanite Repair Drones
 trait-nanite-repair-drones-desc = Your Chassis has Nanite Repair Drones coursing through it that respond to physical trauma. While not as quick as manual repair, these will cut down significantly on day to day maintainance.
+
+trait-hardened-lymphocytes-name = Hardened Lymphocytes
+trait-hardened-lymphocytes-desc = Your marrow has been treated with melanocyte-hardened stem cells that abate harm from radiation exposure. Effective up to 1 rad; suitable for light salvage and mining operations.
