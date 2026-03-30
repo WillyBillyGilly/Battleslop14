@@ -6,7 +6,7 @@ namespace Content.Shared._Mono.Claws.Components;
 /// <summary>
 /// This is claw component used for <see cref="SharedClawsSystem"/> System.
 /// </summary>
-[RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentState, AutoGenerateComponentPause]
 public sealed partial class ClawsComponent : Component
 {
     [DataField, AutoNetworkedField]
@@ -18,12 +18,9 @@ public sealed partial class ClawsComponent : Component
     [DataField]
     public LocId? ClawGrowthNotification;
 
-    [DataField]
+    [DataField, AutoPausedField]
     public TimeSpan GrowTimer = TimeSpan.Zero;
 
-    [DataField]
-    public TimeSpan AccumulatedBonusGrowth = TimeSpan.Zero;
-
-    [DataField]
+    [AutoPausedField]
     public TimeSpan DeclawItemHoldTimer = TimeSpan.Zero;
 }

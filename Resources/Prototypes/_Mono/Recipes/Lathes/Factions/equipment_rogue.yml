@@ -5,12 +5,17 @@
   parent: MonoHardsuitT1Recipe
   result: ClothingOuterHardsuitPirateScaf
 
-# T2 medic
+# T2 VG
 
 - type: latheRecipe
-  id: ClothingOuterHardsuitPDVMedic
+  id: ClothingOuterHardsuitViperGroupStandardRogue
   parent: MonoHardsuitT2Recipe
-  result: ClothingOuterHardsuitPDVMedic
+  result: ClothingOuterHardsuitViperGroupStandard
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitViperGroupMedicRogue
+  parent: MonoHardsuitT2Recipe
+  result: ClothingOuterHardsuitViperGroupMedic
 
 # T2 syndie
 
@@ -31,7 +36,7 @@
   parent: MonoHardsuitT3Recipe
   result: ClothingOuterHardsuitCybersunStealth
 
-# T3 plastitanium
+# T3 synthalloy
 
 - type: latheRecipe
   id: ClothingOuterHardsuitJuggernautRogue

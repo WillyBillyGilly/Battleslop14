@@ -12,7 +12,6 @@
   whitelisted: true
   startingGear: SrGear
   alwaysUseSpawner: true
-  assignedCompany: Colonial
   icon: "JobIconHeadOfSecurity" # Mono
   requireAdminNotify: true
   supervisors: job-supervisors-centcom

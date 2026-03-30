@@ -9,7 +9,6 @@
     - id: UnknownShuttleWyrmApoc
     - id: UnknownShuttleNebulaApoc
     - id: UnknownShuttleWyvernApoc
-    - id: UnknownShuttleRazorNApoc
 
 - type: entity
   parent: BaseRandomShuttleRule
@@ -20,11 +19,11 @@
     startAudio:
       path: /Audio/Misc/notice1.ogg
     weight: 7
-    maxOccurrences: 6
+    maxOccurrences: 4
   - type: GameRule
     minPlayers: 32
   - type: LoadMapRule
-    gridPath: /Maps/_Mono/ShuttleEvent/zenith.yml
+    preloadedGrid: AIZenith
 
 - type: entity
   parent: BaseRandomShuttleRule
@@ -35,11 +34,11 @@
     startAudio:
       path: /Audio/Misc/notice1.ogg
     weight: 7
-    maxOccurrences: 6
+    maxOccurrences: 2
   - type: GameRule
     minPlayers: 10
   - type: LoadMapRule
-    gridPath: /Maps/_Mono/ShuttleEvent/zenith_e.yml
+    preloadedGrid: AIZenithE
 
 - type: entity
   parent: BaseRandomShuttleRule
@@ -54,7 +53,7 @@
   - type: GameRule
     minPlayers: 10
   - type: LoadMapRule
-    gridPath: /Maps/_Mono/ShuttleEvent/nebula.yml
+    preloadedGrid: AINebula
 
 - type: entity
   parent: BaseRandomShuttleRule
@@ -69,7 +68,7 @@
   - type: GameRule
     minPlayers: 10
   - type: LoadMapRule
-    gridPath: /Maps/_Mono/ShuttleEvent/wyrm.yml
+    preloadedGrid: AIWyrm
 
 - type: entity
   parent: BaseRandomShuttleRule
@@ -79,24 +78,9 @@
     startAnnouncement: station-event-ai-capital-detected
     startAudio:
       path: /Audio/Misc/delta_alt.ogg
-    weight: 3 # Lower since it can spawn at any time in round on apoc, and it can spawn three times max.
-    maxOccurrences: 3
+    weight: 1 # Lower since it can spawn at any time in round on apoc, and it can spawn three times max.
+    maxOccurrences: 1
   - type: GameRule
     minPlayers: 30
   - type: LoadMapRule
-    gridPath: /Maps/_Mono/ShuttleEvent/wyvern.yml
-
-- type: entity
-  parent: BaseRandomShuttleRule
-  id: UnknownShuttleRazorNApoc
-  components:
-  - type: StationEvent
-    startAnnouncement: station-event-ai-shuttle-detected
-    startAudio:
-      path: /Audio/Misc/notice1.ogg
-    weight: 3 # billions must die
-    maxOccurrences: 3
-  - type: GameRule
-    minPlayers: 10
-  - type: LoadMapRule
-    gridPath: /Maps/_Mono/ShuttleEvent/razorn.yml
+    preloadedGrid: AIWyvern

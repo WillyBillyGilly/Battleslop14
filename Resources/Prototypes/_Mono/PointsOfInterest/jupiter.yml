@@ -35,7 +35,7 @@
         - type: StationNameSetup
           mapNameTemplate: 'PDV Jupiter Class Carrier'
         - type: ExtraStationInformation
-          icon: /Textures/_NF/Interface/Pirate/piratelogo.png
+          iconPath: /Textures/_NF/Interface/Pirate/piratelogo.png
           stationSubtext: 'frontier-lobby-jupiter-subtext'
           stationDescription: 'frontier-lobby-jupiter-description'
           lobbySortOrder: 2

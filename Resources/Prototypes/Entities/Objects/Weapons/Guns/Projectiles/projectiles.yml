@@ -90,15 +90,6 @@
         mask:
         - Impassable
         - BulletImpassable
-      fly-by: &flybyfixture
-        shape: !type:PhysShapeCircle
-          radius: 1.5
-        layer:
-        - Impassable
-        - MidImpassable
-        - HighImpassable
-        - LowImpassable
-        hard: False
   - type: Projectile
     impactEffect: BulletImpactEffect
     damage:
@@ -134,7 +125,6 @@
         mask:
         - Impassable
         - BulletImpassable
-      fly-by: *flybyfixture
 
 - type: entity
   id: BaseBulletPractice
@@ -240,7 +230,6 @@
         mask:
           - Impassable
           - BulletImpassable
-      fly-by: *flybyfixture
   - type: Ammo
   - type: Projectile
     damage:
@@ -282,7 +271,6 @@
         hard: false
         mask:
         - Opaque # Mono
-      fly-by: *flybyfixture
   - type: Ammo
     muzzleFlash: MuzzleFlashEffectOmnilaser #imp
   - type: StaminaDamageOnCollide
@@ -322,7 +310,6 @@
         hard: false
         mask:
         - Opaque # Mono
-      fly-by: *flybyfixture
   - type: Ammo
     muzzleFlash: MuzzleFlashEffectOmnilaser #imp
   - type: StaminaDamageOnCollide
@@ -359,7 +346,6 @@
         hard: false
         mask:
         - Opaque
-      fly-by: *flybyfixture
   - type: Projectile
 #   soundHit:  Waiting on serv3
     damage:
@@ -401,7 +387,6 @@
         hard: false
         mask:
         - Opaque
-      fly-by: *flybyfixture
   - type: Projectile
     #   soundHit:  Waiting on serv3
     impactEffect: BulletImpactEffectDisabler
@@ -492,8 +477,6 @@
     muzzleFlash: HitscanEffect
   - type: TimedDespawn
     lifetime: 1.5 # Frontier 1.5<1, Monolith 1<1.5
-  - type: ChunkLoader
-    loadingDistance: 16
   - type: PointLight
     radius: 2.5
     color: "#FF8888" # Frontier: white<FF8888
@@ -501,16 +484,6 @@
   - type: GatheringProjectile
   - type: MiningGatheringSoft # mono
   - type: MiningGatheringHard # mono
-
-- type: entity # Mono, splits exo PKA from ship PKA
-  id: BulletKineticExosuit
-  parent: BulletKineticShuttle
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    noDamageDelete: false
-  - type: GatheringProjectile
-    amount: 8
 
 - type: entity
   id: BulletCharge
@@ -577,7 +550,6 @@
         hard: false
         mask:
         - Opaque
-      fly-by: *flybyfixture
   - type: Projectile
     damage:
       types:
@@ -926,7 +898,6 @@
         mask:
         - Impassable
         - BulletImpassable
-      fly-by: *flybyfixture
   - type: Vapor
     active: true
   - type: Appearance
@@ -990,7 +961,6 @@
           mask:
             - Impassable
             - BulletImpassable # Mono
-        fly-by: *flybyfixture
     - type: GrapplingProjectile
     # Mono - so you can grapple asteroids
     - type: ChunkLoader
@@ -1025,7 +995,6 @@
         hard: false
         mask:
         - Opaque # Mono
-      fly-by: *flybyfixture
   - type: Ammo
     muzzleFlash: MuzzleFlashEffectOmnilaser #imp
   - type: StaminaDamageOnCollide
@@ -1068,7 +1037,6 @@
         hard: false
         mask:
         - Opaque # Mono
-      fly-by: *flybyfixture
   - type: Ammo
 
 - type: entity
@@ -1176,7 +1144,6 @@
         hard: false
         mask:
         - Opaque # Mono
-      fly-by: *flybyfixture
   - type: Ammo
     muzzleFlash: MuzzleFlashEffectHeavyLaser #imp
   - type: Projectile
@@ -1305,7 +1272,6 @@
         hard: false
         mask:
         - Opaque
-      fly-by: *flybyfixture
   - type: Projectile
     damage:
       types:
@@ -1377,7 +1343,6 @@
         hard: false
         mask:
         - Opaque
-      fly-by: *flybyfixture
   - type: Projectile
     impactEffect: BulletImpactEffectRedDisabler
     damage:

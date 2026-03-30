@@ -7,13 +7,12 @@ using Content.Shared.Popups;
 using Content.Shared.Weapons.Melee.Events;
 
 namespace Content.Shared._Mono.Claws;
-
 public abstract partial class SharedClawsSystem
 {
     public void UpdateDeclaw(EntityUid uid, Declawed declawed, ClawsComponent claws, float updateTime)
     {
         if (!_state.IsAlive(uid))
-            return;
+                    return;
 
         var hands = _hands.EnumerateHands(uid).ToArray();
         if (!_hands.EnumerateHeld(uid).Any())
@@ -44,7 +43,7 @@ public abstract partial class SharedClawsSystem
 
         claws.DeclawItemHoldTimer = TimeSpan.Zero;
 
-        Dirty(uid, claws);
+        Dirty(uid,claws);
     }
 
     public void Declaw(EntityUid uid, ClawsComponent claws)

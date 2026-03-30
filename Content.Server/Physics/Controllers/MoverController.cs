@@ -354,7 +354,6 @@ public sealed class MoverController : SharedMoverController
             shuttle.LastThrust = Vector2.Zero;
 
             var count = inputs.Count;
-            piloted.ActiveSources = count;
             if (count == 0)
             {
                 _thruster.DisableLinearThrusters(shuttle);

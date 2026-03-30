@@ -641,7 +641,7 @@ namespace Content.Server.Database
             // This allows us to semi-efficiently load all entities we need in a single DB query.
             // Then we can update & insert without further round-trips to the DB.
 
-            var players = updates.Select(u => u.User.UserId).Distinct().ToList();
+            var players = updates.Select(u => u.User.UserId).Distinct().ToArray();
             var dbTimes = (await db.DbContext.PlayTime
                     .Where(p => players.Contains(p.PlayerId))
                     .ToArrayAsync())
@@ -875,10 +875,8 @@ namespace Content.Server.Database
         {
             await using var db = await GetDb();
 
-            var playerIdsList = playerIds.ToList();
-
             var players = await db.DbContext.Player
-                .Where(player => playerIdsList.Contains(player.UserId))
+                .Where(player => playerIds.Contains(player.UserId))
                 .ToListAsync();
 
             var round = new Round
@@ -909,11 +907,10 @@ namespace Content.Server.Database
         public async Task AddRoundPlayers(int id, Guid[] playerIds)
         {
             await using var db = await GetDb();
-            var playerIdsList = playerIds.ToList();
 
             // ReSharper disable once SuggestVarOrType_Elsewhere
             Dictionary<Guid, int> players = await db.DbContext.Player
-                .Where(player => playerIdsList.Contains(player.UserId))
+                .Where(player => playerIds.Contains(player.UserId))
                 .ToDictionaryAsync(player => player.UserId, player => player.Id);
 
             foreach (var player in playerIds)

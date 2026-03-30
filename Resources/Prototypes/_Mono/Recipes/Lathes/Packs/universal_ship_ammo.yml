@@ -13,7 +13,8 @@
   #- 255mmCartridgeAmmoRecipe
   #- CharonetteSlugCartridgeAmmoRecipe
   # Missiles
-  - VanykMagazineAmmoRecipe
+  - VanykCartridgeAmmoRecipe
+  - TovekCartridgeAmmoRecipe
   - VesperaMagazineAmmoRecipe
 
 - type: latheRecipePack

@@ -20,7 +20,6 @@
     contents:
     - id: ClothingOuterSuitRad
     - id: GeigerCounter
-    - id: MedkitRadiationFilled #Mono
 
 - type: entity
   abstract: true

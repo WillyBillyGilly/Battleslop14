@@ -1,5 +1,3 @@
-#Author: Helicast
-
 - type: vessel
   id: Carrion
   parent: BaseVesselAntag

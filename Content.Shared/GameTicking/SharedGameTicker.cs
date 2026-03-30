@@ -179,13 +179,13 @@ namespace Content.Shared.GameTicking
     public sealed class StationDisplayInformation(
         LocId? stationSubtext,
         LocId? stationDescription,
-        SpriteSpecifier? stationIcon,
+        ResPath? stationIcon,
         int lobbySortOrder
         )
     {
         public LocId? StationSubtext { get; } = stationSubtext;
         public LocId? StationDescription { get; } = stationDescription;
-        public SpriteSpecifier? StationIcon { get; } = stationIcon;
+        public ResPath? StationIcon { get; } = stationIcon;
         public int LobbySortOrder { get; } = lobbySortOrder;
     }
 

@@ -6,7 +6,7 @@ namespace Content.Server._NF.Station.Components;
 public sealed partial class ExtraStationInformationComponent : Component
 {
     [DataField]
-    public SpriteSpecifier? Icon;
+    public ResPath? IconPath;
 
     [DataField]
     public LocId? StationSubtext;

@@ -42,11 +42,5 @@ namespace Content.Server.GameTicking.Presets
         /// </summary>
         [DataField("supportedMaps", customTypeSerializer: typeof(PrototypeIdSerializer<GameMapPoolPrototype>))]
         public string? MapPool;
-
-        /// <summary>
-        /// Mono - as how much votes should each player click count.
-        /// </summary>
-        [DataField]
-        public float Weight = 1f;
     }
 }

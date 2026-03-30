@@ -9,7 +9,7 @@
   parent: BaseVessel
   name: MI Triage
   description: A extremely compact medical ship that packs a punch.
-  price: 49200 #Approx 41K with a 20% tax.
+  price: 42000
   category: Small
   group: Medical
   shuttlePath: /Maps/_Mono/Shuttles/triage.yml
@@ -17,7 +17,8 @@
   class:
   - Medical
   engine:
-  - Uranium
+  - APU
+  - RTG
 
 - type: gameMap
   id: Triage

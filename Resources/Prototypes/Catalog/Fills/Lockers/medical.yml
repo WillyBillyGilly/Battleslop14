@@ -16,7 +16,6 @@
 #        amount: 2
       - id: Gauze
         amount: 2 # BF14
-      - id: PillCanisterTricordrazine #Mono
 
 - type: entity
   id: LockerWallMedicalFilled
@@ -37,7 +36,6 @@
 #        amount: 2
       - id: Gauze
         amount: 2 # BF14
-      - id: PillCanisterTricordrazine #Mono
 
 - type: entity
   id: LockerMedicalFilled

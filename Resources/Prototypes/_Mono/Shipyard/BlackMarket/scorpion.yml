@@ -1,5 +1,3 @@
-#Author: Starch(!)
-
 - type: vessel
   id: Scorpion
   parent: BaseVesselAntag

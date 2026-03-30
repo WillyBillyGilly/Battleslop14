@@ -96,8 +96,8 @@
 
 - type: latheRecipe
   parent: BaseVoucherRecipe
-  id: AltairVoucherTSF
-  result: ShipVoucherAltair
+  id: PolarisVoucherTSF
+  result: ShipVoucherPolaris
   completetime: 6
   materials:
     Steel: 40000

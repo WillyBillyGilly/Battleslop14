@@ -305,28 +305,9 @@
         coefficients:
           Shock: 1.25
         flatReductions:
-          Blunt: 3.5
-          Slash: 3.5
-          Piercing: 3.5
-          
-- type: trait
-  id: HardenedLymphocytes
-  name: trait-hardened-lymphocytes-name
-  description: trait-hardened-lymphocytes-desc
-  category: Physical
-  cost: 4
-  speciesBlacklist:
-  - IPC
-  blacklist:
-    components:
-    - BorgChassis
-  components:
-  - type: DamageProtectionBuff
-    modifiers:
-      dermal:
-        id: HardenedLymphocytesTrait
-        flatReductions:
-          Radiation: 1
+          Blunt: 1.5
+          Slash: 1.5
+          Piercing: 1.5
 
 #- type: trait # trait BF14 doesnt fit gameplay
 #  id: Ironman
@@ -372,7 +353,7 @@
   name: trait-platelet-factories-name
   description: trait-platelet-factories-desc
   category: Physical
-  cost: 6
+  cost: 10
   mutuallyExclusiveTraits:
   - Hemophilia
   speciesBlacklist:
@@ -383,10 +364,7 @@
   components:
   - type: PlateletFactories
     intervalSeconds: 1
-    damagePerInterval:
-      groups:
-        Brute: -1.5
-        Burn: -2
+    healPerSecond: .5
     critMultiplier: .25
 
 - type: trait
@@ -420,7 +398,4 @@
   components:
   - type: PlateletFactories
     intervalSeconds: 1
-    damagePerInterval:
-      groups:
-        Brute: -1.5
-        Burn: -2
+    healPerSecond: .5

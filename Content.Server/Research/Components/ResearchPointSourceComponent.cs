@@ -3,9 +3,9 @@ namespace Content.Server.Research.Components;
 [RegisterComponent]
 public sealed partial class ResearchPointSourceComponent : Component
 {
-    [DataField]
+    [DataField("pointspersecond"), ViewVariables(VVAccess.ReadWrite)]
     public int PointsPerSecond;
 
-    [DataField]
-    public bool Active = true;
+    [DataField("active"), ViewVariables(VVAccess.ReadWrite)]
+    public bool Active;
 }

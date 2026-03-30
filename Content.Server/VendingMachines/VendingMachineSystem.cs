@@ -58,6 +58,7 @@ namespace Content.Server.VendingMachines
         [Dependency] private readonly BankSystem _bankSystem = default!; // Frontier
         [Dependency] private readonly PopupSystem _popupSystem = default!; // Frontier
         [Dependency] private readonly IAdminLogManager _adminLogger = default!; // Frontier
+        [Dependency] private readonly ContrabandTurnInSystem _contraband = default!; // Frontier
         [Dependency] private readonly StackSystem _stack = default!; // Frontier
         [Dependency] private readonly VendingMachinePurchaseSystem _vendingPurchase = default!; // Mono
 
@@ -543,6 +544,8 @@ namespace Content.Server.VendingMachines
             }
 
             var ent = Spawn(vendComponent.NextItemToEject, spawnCoordinates);
+
+            _contraband.ClearContrabandValue(ent); // Frontier
 
             // Mono: Track vending machine purchases for pricing modifications
             // Only track if this was a paid purchase (not a random eject or force eject)
