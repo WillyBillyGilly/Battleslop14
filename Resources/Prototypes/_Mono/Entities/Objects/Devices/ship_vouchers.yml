@@ -157,7 +157,7 @@
     - Bailiff
     - Security
     vessels:
-    - Altair
+    - PolarisShip
     accessGroups:
     - GeneralNfsdAccess
 
@@ -183,9 +183,9 @@
 
 - type: entity
   parent: BaseShipLPC
-  id: ShipVoucherAltair
-  name: TSF altair LPC
-  description: A small card that contains the data for the procurement of an Altair-class frigate from the flagship's reserves.
+  id: ShipVoucherPolaris
+  name: TSF polaris LPC
+  description: A small card that contains the data for the procurement of a Polaris-class frigate from the flagship's reserves.
   components:
   - type: Sprite
     layers:
@@ -197,7 +197,7 @@
     consoleType: Security
     companyName: TSF
     vessels:
-    - Altair
+    - PolarisShip
   - type: StaticPrice
     vendPrice: 300000
 

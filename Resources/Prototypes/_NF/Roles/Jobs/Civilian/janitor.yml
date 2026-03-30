@@ -12,7 +12,6 @@
   supervisors: job-supervisors-sr
   weight: 100
   displayWeight: 40
-  assignedCompany: Colonial
   canBeAntag: false
   access:
   - Service

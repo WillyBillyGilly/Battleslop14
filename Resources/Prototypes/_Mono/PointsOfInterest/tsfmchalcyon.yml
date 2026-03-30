@@ -14,9 +14,9 @@
   id: TSFMCHalcyon
   parent: [BasePOI, BaseRepairablePOI]
   name: 'TSFMC Flagship Halcyon'
-  minimumDistance: 4500 # Mono
-  maximumDistance: 5500 # Mono
-  spawnGamePreset: [ NFPirate, MonoStandard, MonoRogueTSF, MonoTSFUSSP, MonoADS, MonoChimera, MonoMixed, MonoAllAtOnce ] #BF14 removed NFAdventure [ NFAdventure, NFPirate, MonoStandard, MonoRogueTSF, MonoTSFUSSP, MonoADS, MonoChimera, MonoMixed, MonoAllAtOnce ]
+  minimumDistance: 2500 # Mono
+  maximumDistance: 4000 # Mono
+  spawnGamePreset: [ MonoStandard, MonoRogueTSF, MonoRogueUSSP, MonoADS, MonoChimera, MonoMixed, MonoAllAtOnce ] #BF14 [ NFAdventure, NFPirate, MonoStandard, MonoRogueTSF, MonoRogueUSSP, MonoADS, MonoChimera, MonoMixed, MonoAllAtOnce ]
   spawnGroup: Optional #BF14
   gridPath: /Maps/_Mono/POI/tsfmchalcyon.yml
   addComponents:
@@ -42,9 +42,7 @@
         - type: StationNameSetup
           mapNameTemplate: 'TSFMC Flagship Halcyon'
         - type: ExtraStationInformation
-          icon:
-            sprite: _NF/Structures/Decoration/banner.rsi
-            state: nfsd-banner
+          iconPath: /Textures/_NF/Structures/Decoration/banner.rsi/nfsd-banner.png
           stationSubtext: 'frontier-lobby-nfsd-subtext'
           stationDescription: 'frontier-lobby-nfsd-description'
           lobbySortOrder: 2

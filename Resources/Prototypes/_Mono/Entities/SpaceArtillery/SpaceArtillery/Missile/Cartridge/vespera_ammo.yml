@@ -10,8 +10,9 @@
     size: Small
   - type: BallisticAmmoProvider
     proto: VesperaCartridge
-    capacity: 78
+    capacity: 26
     mayTransfer: true
+    infiniteUnspawned: true
     whitelist:
       tags:
       - VesperaCartridge

@@ -855,7 +855,7 @@ entities:
     - type: Transform
       pos: -3.5,-0.5
       parent: 85
-- proto: ResearchDisk10000
+- proto: ResearchDisk
   entities:
   - uid: 87
     components:

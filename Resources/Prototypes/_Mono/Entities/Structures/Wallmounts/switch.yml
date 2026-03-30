@@ -4,4 +4,4 @@
   parent: LockableButton
   components:
   - type: AccessReader
-    access: [["Mercenary"]]
+    access: [["USSP"]]

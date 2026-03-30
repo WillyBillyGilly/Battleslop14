@@ -1638,7 +1638,7 @@
       - !type:GenericStatusEffect
         key: RadiationProtection
         component: RadiationProtection
-        time: 15 #Mono: 2 >> 15, 1 pill = 5min
+        time: 2
         type: Add
         refresh: false
       - !type:HealthChange

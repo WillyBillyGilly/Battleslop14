@@ -23,6 +23,5 @@ public enum ShipGunType
 {
     Ballistic,
     Energy,
-    Missile,
-    Other
+    Missile
 }

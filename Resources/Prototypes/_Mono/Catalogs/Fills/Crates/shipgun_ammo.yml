@@ -63,23 +63,23 @@
   parent: CrateAmmoSecureMercenary
   id: CrateAmmoBoxVanyk
   name: ASM-302 Vanyk HEAT missile box
-  description: Contains 60 missles. 2 full loads.
+  description: Contains 24 missiles. 2 full loads.
   components:
   - type: StorageFill
     contents:
-    - id: VanykMagazine
-      amount: 2 # 2 reloads
+    - id: VanykCartridge
+      amount: 24 # 2 reloads
 
 - type: entity
   parent: CrateAmmoSecureMercenary
   id: CrateAmmoBoxVespera
   name: ASM-417 Vespera HE missile box
-  description: Contains 12 bursts of 13 missiles. 2 full loads.
+  description: Contains 2 bursts of 13 missiles. One full load.
   components:
   - type: StorageFill
     contents:
     - id: VesperaMagazine
-      amount: 2 # 2 reload
+      amount: 1 # 1 reload
 
 - type: entity
   parent: CrateAmmoSecureMercenary

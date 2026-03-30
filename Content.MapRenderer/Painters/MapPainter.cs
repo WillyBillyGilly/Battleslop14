@@ -38,9 +38,8 @@ namespace Content.MapRenderer.Painters
                 Fresh = true,
                 // Seriously whoever made MapPainter use GameMapPrototype I wish you step on a lego one time.
                 Map = map,
+                NoValidate = true, // Mono
             });
-            pair.ServerLogHandler.FailureLevel = LogLevel.Fatal;
-            pair.ClientLogHandler.FailureLevel = LogLevel.Fatal;
 
             await foreach (var image in RenderPair(stopwatch, pair))
                 yield return image;
@@ -57,9 +56,8 @@ namespace Content.MapRenderer.Painters
                 DummyTicker = false,
                 Connected = true,
                 Fresh = false,
+                NoValidate = true, // Mono
             });
-            pair.ServerLogHandler.FailureLevel = LogLevel.Fatal;
-            pair.ClientLogHandler.FailureLevel = LogLevel.Fatal;
 
             var server = pair.Server;
             var client = pair.Client;
@@ -73,14 +71,6 @@ namespace Content.MapRenderer.Painters
 
                 foreach (var grid in sMapManager.GetAllGrids(mapId))
                     sEntityManager.QueueDeleteEntity(grid);
-            });
-
-            await pair.RunTicksSync(10);
-            await Task.WhenAll(client.WaitIdleAsync(), server.WaitIdleAsync());
-
-            await server.WaitPost(() =>
-            {
-                var mapId = sEntityManager.System<GameTicker>().DefaultMap;
 
                 try
                 {

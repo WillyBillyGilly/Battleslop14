@@ -212,6 +212,9 @@
   description: Hacked and reprogrammed by a rogue AI departmental drones.
   abstract: true
   components:
+  - type: Loadout
+    prototypes:
+    - MobRogueSiliconLootT1
   - type: CanMoveInAir
   - type: Fixtures
     fixtures:
@@ -257,14 +260,6 @@
     volume: -9
     range: 5
     sound: /Audio/Effects/shuttle_thruster.ogg
-
-- type: entity
-  id: RogueSiliconT1LootLoadout
-  abstract: true
-  components:
-  - type: Loadout
-    prototypes:
-    - MobRogueSiliconLootT1
 
 # VARIATIONS
 ## Tier 1
@@ -541,7 +536,6 @@
   parent:
   - MobRogueSiliconDroneBase
   - MobRogueSiliconProjectileBatteryAmmo
-  - RogueSiliconT1LootLoadout
   id: MobRogueSiliconDroneLethals
   description: Hacked by a rogue AI, these security drones are programmed to kill.
   categories: [ HideSpawnMenu ]
@@ -566,7 +560,6 @@
   parent:
   - MobRogueSiliconDroneBase
   - MobRogueSiliconProjectileBatteryAmmo
-  - RogueSiliconT1LootLoadout
   id: MobRogueSiliconDroneNonLethals
   description: These engineering drones are capable of shooting disabler bolts. Dangerous in combination with other enemies.
   categories: [ HideSpawnMenu ]
@@ -594,7 +587,6 @@
   parent:
   - MobRogueSiliconDroneBase
   - MobRogueSiliconProjectileBatteryAmmo
-  - RogueSiliconT1LootLoadout
   id: MobRogueSiliconDroneScience
   description: A science drone, this rogue drone comes equipped with an experimental C.H.I.M.P. cannon.
   categories: [ HideSpawnMenu ]

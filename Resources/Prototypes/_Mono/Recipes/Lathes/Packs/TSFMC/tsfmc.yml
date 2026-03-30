@@ -21,7 +21,7 @@
   id: MonoTSFVouchersDynamic
   recipes:
   - FlyssaVoucherTSF
-  - AltairVoucherTSF
+  - PolarisVoucherTSF
 
 - type: latheRecipePack
   id: MonoTSFMiscDynamic
@@ -31,6 +31,8 @@
   - SutureTSF
   - MeshTSF
   - NanolaminateFoamGrenadeTSF
+  - SynthalloyProductionTsf
+  - SynthalloyProductionTechDisk
   - PortableRecharger
   - MotionDetectorTSF
   - BasicBorgCombatModuleTSF

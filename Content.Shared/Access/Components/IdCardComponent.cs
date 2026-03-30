@@ -1,4 +1,3 @@
-using Content.Shared._Mono.Company;
 using Content.Shared.Access.Systems;
 using Content.Shared.PDA;
 using Content.Shared.Roles;
@@ -50,7 +49,7 @@ public sealed partial class IdCardComponent : Component
     /// </summary>
     [DataField]
     [AutoNetworkedField]
-    public ProtoId<CompanyPrototype> CompanyName = "None";
+    public string? CompanyName;
 
     /// <summary>
     /// Determines if accesses from this card should be logged by <see cref="AccessReaderComponent"/>

@@ -45,7 +45,7 @@ public abstract class SharedFlatpackSystem : EntitySystem
         if (args.Slot.ID != ent.Comp.SlotId || args.Cancelled)
             return;
 
-        if (TryComp<MachineBoardComponent>(args.Item, out var board) && board.Flatpackable) // Mono
+        if (HasComp<MachineBoardComponent>(args.Item))
             return;
 
         if (TryComp<ComputerBoardComponent>(args.Item, out var computer) && computer.Prototype != null)

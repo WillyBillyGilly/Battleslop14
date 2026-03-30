@@ -10,7 +10,6 @@
   shuttlePath: /Maps/_Mono/Shuttles/Carrier/antlion.yml
   guidebookPage: Null
   class:
-  - Fighter
   - Salvage
   engine:
   - APU

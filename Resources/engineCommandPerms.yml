@@ -8,6 +8,7 @@
   - vvread
   - vvwrite
   - vvinvoke
+  - scale
   - spin
 
 - Flags: DEBUG
@@ -72,7 +73,6 @@
   - tpto
   - tpgrid
   - aghost
-  - customvote
 
 - Flags: MAPPING
   Commands:

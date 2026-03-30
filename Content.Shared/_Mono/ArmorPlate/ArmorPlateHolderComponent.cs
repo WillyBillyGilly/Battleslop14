@@ -41,6 +41,5 @@ public sealed partial class ArmorPlateHolderComponent : Component
     /// </summary>
     [DataField]
     public float StaminaDamageMultiplier = 1.0f;
-
 }
 

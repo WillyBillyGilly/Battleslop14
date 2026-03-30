@@ -37,18 +37,10 @@ public sealed class ClawsSystem : SharedClawsSystem
             if (TryGetStage<Declawed>(comp, out var declawed))
                 UpdateDeclaw(uid, declawed, comp, _updateCooldown);
 
-            if (HasComp<ClawsGrowthSuppressionComponent>(uid))
-            {
-                comp.AccumulatedBonusGrowth = TimeSpan.Zero;
-                continue;
-            }
-
             if (!_protoMan.TryIndex(comp.ClawStage, out var claw) || !claw.CanGrow)
                 continue;
 
-            comp.GrowTimer += TimeSpan.FromSeconds(_updateCooldown) + comp.AccumulatedBonusGrowth;
-
-            comp.AccumulatedBonusGrowth = TimeSpan.Zero;
+            comp.GrowTimer += TimeSpan.FromSeconds(_updateCooldown);
 
             if (comp.GrowTimer < claw.GrowCooldown)
             {
@@ -61,7 +53,7 @@ public sealed class ClawsSystem : SharedClawsSystem
             comp.ClawStage = comp.Claws.GetValueOrDefault(TryGetStageNumber(comp) + 1);
 
             if (comp.ClawGrowthNotification != null)
-                _popup.PopupEntity(Loc.GetString(comp.ClawGrowthNotification), uid, uid, PopupType.Large);
+                _popup.PopupEntity(Loc.GetString(comp.ClawGrowthNotification), uid, PopupType.Large);
 
             UpdateClaws(uid, comp);
             Dirty(uid, comp);

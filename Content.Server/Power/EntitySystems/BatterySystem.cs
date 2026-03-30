@@ -21,10 +21,6 @@ namespace Content.Server.Power.EntitySystems
 
         [Dependency] private readonly SharedContainerSystem _containers = default!; // WD EDIT
 
-        // Mono
-        private float _updateInterval = 1f;
-        private float _updateAccumulator = 0f;
-
         public override void Initialize()
         {
             base.Initialize();
@@ -95,12 +91,6 @@ namespace Content.Server.Power.EntitySystems
 
         public override void Update(float frameTime)
         {
-            // Mono
-            _updateAccumulator += frameTime;
-            if (_updateAccumulator < _updateInterval)
-                return;
-            _updateAccumulator -= _updateAccumulator;
-
             var query = EntityQueryEnumerator<BatterySelfRechargerComponent, BatteryComponent>();
             while (query.MoveNext(out var uid, out var comp, out var batt))
             {
@@ -113,7 +103,7 @@ namespace Content.Server.Power.EntitySystems
                         continue;
                 }
 
-                TrySetCharge(uid, batt.CurrentCharge + comp.AutoRechargeRate * _updateInterval, batt); // Frontier: Upstream - #28984
+                TrySetCharge(uid, batt.CurrentCharge + comp.AutoRechargeRate * frameTime, batt); // Frontier: Upstream - #28984
             }
         }
 

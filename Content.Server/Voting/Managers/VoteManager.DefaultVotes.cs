@@ -233,9 +233,7 @@ namespace Content.Server.Voting.Managers
 
             foreach (var (k, v) in presets)
             {
-                options.Options.Add((Loc.GetString(v.Name), k));
-                if (v.Weight != 1f)
-                    options.Weights.Add(k, v.Weight);
+                options.Options.Add((Loc.GetString(v), k));
             }
 
             WirePresetVoteInitiator(options, initiator);
@@ -249,13 +247,13 @@ namespace Content.Server.Voting.Managers
                 {
                     picked = (string) _random.Pick(args.Winners);
                     _chatManager.DispatchServerAnnouncement(
-                        Loc.GetString("ui-vote-gamemode-tie", ("picked", Loc.GetString(presets[picked].Name))));
+                        Loc.GetString("ui-vote-gamemode-tie", ("picked", Loc.GetString(presets[picked]))));
                 }
                 else
                 {
                     picked = (string) args.Winner;
                     _chatManager.DispatchServerAnnouncement(
-                        Loc.GetString("ui-vote-gamemode-win", ("winner", Loc.GetString(presets[picked].Name))));
+                        Loc.GetString("ui-vote-gamemode-win", ("winner", Loc.GetString(presets[picked]))));
                 }
                 _adminLogger.Add(LogType.Vote, LogImpact.Medium, $"Preset vote finished: {picked}");
                 var ticker = _entityManager.EntitySysManager.GetEntitySystem<GameTicker>();
@@ -587,9 +585,9 @@ namespace Content.Server.Voting.Managers
             DirtyCanCallVoteAll();
         }
 
-        private Dictionary<string, (string Name, float Weight)> GetGamePresets() // Mono - add weight
+        private Dictionary<string, string> GetGamePresets()
         {
-            var presets = new Dictionary<string, (string, float)>();
+            var presets = new Dictionary<string, string>();
 
             foreach (var preset in _prototypeManager.EnumeratePrototypes<GamePresetPrototype>())
             {
@@ -602,7 +600,7 @@ namespace Content.Server.Voting.Managers
                 if(_playerManager.PlayerCount > (preset.MaxPlayers ?? int.MaxValue))
                     continue;
 
-                presets[preset.ID] = (preset.ModeTitle, preset.Weight);
+                presets[preset.ID] = preset.ModeTitle;
             }
             return presets;
         }

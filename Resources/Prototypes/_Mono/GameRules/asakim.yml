@@ -18,7 +18,7 @@
   - type: GameRule
     minPlayers: 40
   - type: LoadMapRule
-    gridPath: /Maps/_Mono/ShuttleEvent/asakim_small.yml
+    preloadedGrid: AsakimSmall
 
 - type: entity
   parent: BaseRandomShuttleRule
@@ -33,4 +33,4 @@
   - type: GameRule
     minPlayers: 60
   - type: LoadMapRule
-    gridPath: /Maps/_Mono/ShuttleEvent/asakim_medium.yml
+    preloadedGrid: AsakimMedium

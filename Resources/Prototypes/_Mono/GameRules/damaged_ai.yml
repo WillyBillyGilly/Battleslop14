@@ -27,7 +27,7 @@
   - type: GameRule
     minPlayers: 32
   - type: LoadMapRule
-    gridPath: /Maps/_Mono/ShuttleEvent/zenith.yml
+    preloadedGrid: AIZenith
 
 - type: entity
   parent: BaseRandomShuttleRule
@@ -42,7 +42,7 @@
   - type: GameRule
     minPlayers: 32
   - type: LoadMapRule
-    gridPath: /Maps/_Mono/ShuttleEvent/zenith_e.yml
+    preloadedGrid: AIZenithE
 
 - type: entity
   parent: BaseRandomShuttleRule
@@ -57,7 +57,7 @@
   - type: GameRule
     minPlayers: 32
   - type: LoadMapRule
-    gridPath: /Maps/_Mono/ShuttleEvent/nebula.yml
+    preloadedGrid: AINebula
 
 - type: entity
   parent: BaseRandomShuttleRule
@@ -72,7 +72,7 @@
   - type: GameRule
     minPlayers: 15
   - type: LoadMapRule
-    gridPath: /Maps/_Mono/ShuttleEvent/wyrm.yml
+    preloadedGrid: AIWyrm
 
 - type: entity
   parent: BaseRandomShuttleRule
@@ -87,7 +87,7 @@
   - type: GameRule
     minPlayers: 15
   - type: LoadMapRule
-    gridPath: /Maps/_Mono/ShuttleEvent/razorn.yml
+    preloadedGrid: AIRazorN
 
 - type: entity
   parent: BaseRandomShuttleRule
@@ -102,4 +102,4 @@
   - type: GameRule
     minPlayers: 60
   - type: LoadMapRule
-    gridPath: /Maps/_Mono/ShuttleEvent/wyvern.yml
+    preloadedGrid: AIWyvern

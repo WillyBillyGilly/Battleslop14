@@ -14,7 +14,7 @@
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: ResearchServer
   - type: ResearchPointSource
-    pointsPerSecond: 30
+    pointspersecond: 30
     active: true
   - type: TechnologyDatabase
     supportedDisciplines:

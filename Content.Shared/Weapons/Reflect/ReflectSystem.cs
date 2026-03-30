@@ -232,7 +232,7 @@ public sealed class ReflectSystem : EntitySystem
             if (reflect.DamageOnReflectModifier != 0)
             {
                 _damageable.TryChangeDamage(reflector, projectileComp.Damage * reflect.DamageOnReflectModifier,
-                    projectileComp.IgnoreResistances, armorPenetration: projectileComp.ArmorPenetration, origin: projectileComp.Shooter); // Mono - Added armorpen
+                    projectileComp.IgnoreResistances, origin: projectileComp.Shooter);
             }
             // WD EDIT END
 

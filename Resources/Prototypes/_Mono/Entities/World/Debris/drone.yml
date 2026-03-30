@@ -1,7 +1,6 @@
 - type: entity
   id: MonoDroneSpawnerT1
   parent: MarkerBase
-  categories: [Spawner]
   components:
   - type: RandomSpawner
     prototypes:
@@ -13,7 +12,6 @@
 - type: entity
   id: MonoDroneSpawnerT2Inner
   parent: MarkerBase
-  categories: [Spawner]
   components:
   - type: RandomSpawner
     prototypes:
@@ -25,7 +23,6 @@
 - type: entity
   id: MonoDroneSpawnerT2Middle
   parent: MarkerBase
-  categories: [Spawner]
   components:
   - type: EntityTableSpawner
     table: !type:NestedSelector

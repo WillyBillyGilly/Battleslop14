@@ -234,7 +234,7 @@
         orGroup: GiftPool
       - id: WeaponFlareGun
         orGroup: GiftPool
-      - id: ResearchDisk10000
+      - id: ResearchDisk
         orGroup: GiftPool
       - id: Machete
         orGroup: GiftPool

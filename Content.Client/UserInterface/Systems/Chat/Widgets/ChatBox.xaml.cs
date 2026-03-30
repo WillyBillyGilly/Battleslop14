@@ -148,7 +148,7 @@ public partial class ChatBox : UIWidget
                 ("size", 8+sizeIncrease)
             ));
         } // WD EDIT END
-        Contents.AddMessage(formatted, tagsAllowed: null);
+        Contents.AddMessage(formatted);
     }
 
     public void Focus(ChatSelectChannel? channel = null)

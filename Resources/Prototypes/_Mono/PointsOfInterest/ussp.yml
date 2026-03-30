@@ -38,9 +38,7 @@
         - type: StationNameSetup
           mapNameTemplate: 'Camelot Station'
         - type: ExtraStationInformation
-          icon:
-            sprite: _NF/Structures/Storage/Crates/secure_ammo.rsi
-            state: icon
+          iconPath: /Textures/_NF/Structures/Storage/Crates/secure_ammo.rsi/icon.png
           stationSubtext: 'frontier-lobby-camelot-subtext'
           stationDescription: 'frontier-lobby-camelot-description'
           lobbySortOrder: 4

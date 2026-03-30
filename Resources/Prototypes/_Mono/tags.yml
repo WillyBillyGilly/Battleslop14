@@ -17,9 +17,6 @@
   id: CassetteTape
 
 - type: Tag
-  id: IgnoreClawPenalty
-
-- type: Tag
   id: Mask
 
 - type: Tag
@@ -440,13 +437,10 @@
 - type: Tag
   id: ChimeraFloor
 
-# Mono tech disks
+# hhhh (Mono tech disk, whoever put it unsorted fuck you)
 
 - type: Tag
   id: TechDiskMono
-
-- type: Tag
-  id: ResearchDisk10000
 
 # survival kit
 
@@ -490,8 +484,3 @@
 
 - type: Tag
   id: Dragoon
-
-# Bomb Collars
-
-- type: Tag
-  id: BombCollar

@@ -126,9 +126,6 @@ public sealed partial class StationPickerControl : PickerControl
 
         foreach (var (stationEntity, stationJobInformation) in stationList)
         {
-            var icon = stationJobInformation.StationDisplayInfo?.StationIcon;
-            var iconTexture = icon != null ? _spriteSystem.Frame0(icon) : null;
-
             var viewState = new StationListItem.ViewState(
                 stationEntity,
                 stationJobInformation.GetStationNameWithJobCount(),
@@ -139,7 +136,7 @@ public sealed partial class StationPickerControl : PickerControl
                     ? _loc.GetString(stationJobInformation.StationDisplayInfo.StationDescription)
                     : "",
                 _lastSelectedStation?.StationEntity == stationEntity,
-                iconTexture
+                stationJobInformation.StationDisplayInfo?.StationIcon?.CanonPath
             );
 
             // Always select the first station in the list if none is selected yet.
