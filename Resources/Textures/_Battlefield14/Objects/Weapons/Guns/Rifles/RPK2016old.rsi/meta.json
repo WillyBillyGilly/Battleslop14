@@ -3,7 +3,7 @@
   "license": "CC-BY-NC-SA-4.0",
   "copyright": "sprites by JoeHammad",
   "size": {
-    "x": 64,
+    "x": 48,
     "y": 32
   },
   "states": [
@@ -20,9 +20,6 @@
       "name": "mag-0"
     },
     {
-      "name": "collimator"
-    },
-    {
       "name": "inhand-left",
       "directions": 4
     },
@@ -36,14 +33,6 @@
     },
     {
       "name": "wielded-inhand-right",
-      "directions": 4
-    },
-    {
-      "name": "equipped-BACKPACK",
-      "directions": 4
-    },
-    {
-      "name": "equipped-SUITSTORAGE",
       "directions": 4
     }
   ]
