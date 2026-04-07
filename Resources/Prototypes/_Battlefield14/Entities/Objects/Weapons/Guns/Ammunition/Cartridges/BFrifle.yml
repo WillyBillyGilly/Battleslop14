@@ -86,7 +86,7 @@
   - type: CartridgeAmmo
     proto: BulletRifleBF9x39
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/intermediate_steel.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/12.7x55.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
@@ -160,7 +160,7 @@
     - Cartridge
     - BF_CartridgeRifle127x55
   - type: CartridgeAmmo
-    proto: BulletRifleBF127x55Duplex_Spread
+    proto: BulletRifleBF127x55Duplex
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/12.7x55.rsi
     layers:
@@ -168,13 +168,3 @@
       map: ["enum.AmmoVisualLayers.Base"]
   - type: Appearance
   - type: SpentAmmoVisuals
-
-- type: entity
-  id: BulletRifleBF127x55Duplex_Spread
-  categories: [ HideSpawnMenu ]
-  parent: BulletRifleBF127x55Duplex
-  components:
-  - type: ProjectileSpread
-    proto: BulletRifleBF127x55Duplex
-    count: 2
-    spread: 2

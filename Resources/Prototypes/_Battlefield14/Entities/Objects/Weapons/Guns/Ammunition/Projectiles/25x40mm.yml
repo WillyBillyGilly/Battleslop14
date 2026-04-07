@@ -111,13 +111,8 @@
       types:
         Blunt: 40
     deleteOnCollide: true
-  - type: SubmunitionProjectile
-    submunitionPrototype: Bullet25x40APDSPenetrator
-    distanceDelay: 4
-    submunitionDelay: 0
-    submunitionCount: 1
-    spreadAngle: 0
-    velocityMultiplier: 1.0
+  - type: StaminaDamageOnCollide
+    damage: 30 # ~4 hits to stun
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
     layers:
@@ -200,6 +195,35 @@
     radarColor: "#FF9900"
 
 - type: entity
+  id: Bullet25x40Flechette
+  name: 25x40mm flechette
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 3
+        Slash: 2
+        Piercing: 7
+    armorPenetration: 0.1
+  - type: StaminaDamageOnCollide
+    damage: 1 # ~100 hits to stun
+    deleteOnCollide: true
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: sabot
+    scale: 0.6, 0.6
+  - type: ShipWeaponProjectile
+  - type: TimedDespawn
+    lifetime: 1.5
+  - type: PointLight
+    radius: 0.8
+    color: orange
+    energy: 0.15
+
+- type: entity
   id: Bullet25x40APDSPenetrator
   name: 25x40mm APDS Penetrator
   parent: BaseBullet
@@ -209,18 +233,17 @@
     damage:
       types:
         Structural: 40
-        Piercing: 80
+        Piercing: 60
     armorPenetration: 0.5
   - type: StaminaDamageOnCollide
-    damage: 30 # ~4 hits to stun
+    damage: 15 # ~7 hits to stun
   - type: ArmorPiercing
     piercingThickness: 5
     deleteOnCollide: false
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
     layers:
-    - state: shard
-    scale: 1.5, 1.5
+    - state: sabot
   - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 10
@@ -233,3 +256,6 @@
     requireNoGrid: true
     shape: triangle
     radarColor: "#FF9900"
+  - type: Tracer # Mono
+    color: "#3d8bef"
+    length: 3

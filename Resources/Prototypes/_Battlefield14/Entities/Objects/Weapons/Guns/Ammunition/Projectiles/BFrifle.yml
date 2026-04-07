@@ -157,6 +157,30 @@
   - type: Projectile
     damage:
       types:
+        Piercing: 60
+  - type: StaminaDamageOnCollide
+    damage: 14 # ~8 hits to stun
+  - type: SubmunitionProjectile
+    submunitionPrototype: BulletRifleBF127x55DuplexSubmunition
+    distanceDelay: 1
+    submunitionDelay: 0
+    submunitionCount: 2
+    spreadAngle: 2
+    velocityMultiplier: 1.0
+
+- type: entity
+  id: BulletRifleBF127x55DuplexSubmunition
+  name: bullet (12.7x55 duplex)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: rifle
+  - type: Projectile
+    damage:
+      types:
         Piercing: 30 # x2 = 60
   - type: StaminaDamageOnCollide
     damage: 7 # ~15 hits to stun, x2 = ~8
