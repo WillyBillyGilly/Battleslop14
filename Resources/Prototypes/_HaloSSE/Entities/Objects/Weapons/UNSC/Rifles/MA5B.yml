@@ -58,4 +58,8 @@
         whitelist:
           tags:
             - BF_CartridgeRifle762x51
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
   - type: Appearance
