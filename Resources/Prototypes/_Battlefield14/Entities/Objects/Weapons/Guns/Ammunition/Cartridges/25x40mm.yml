@@ -31,15 +31,15 @@
   parent: BF_CartridgeGrenade25x40HE
   components:
   - type: CartridgeAmmo
-    proto: Bullet25x40Fragment_Spread
+    proto: Bullet25x40Flechette_Spread
 
 - type: entity
-  id: Bullet25x40Fragment_Spread
+  id: Bullet25x40Flechette_Spread
   categories: [ HideSpawnMenu ]
-  parent: Bullet25x40Fragment
+  parent: Bullet25x40Flechette
   components:
   - type: ProjectileSpread
-    proto: Bullet25x40Fragment
+    proto: Bullet25x40Flechette
     count: 15
     spread: 8
 
