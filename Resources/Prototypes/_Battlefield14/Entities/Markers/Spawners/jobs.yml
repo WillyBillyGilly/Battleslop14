@@ -207,6 +207,18 @@
       - state: green
       - state: passenger
 
+- type: entity
+  id: SpawnPointVKSFighterPilot
+  parent: SpawnPointJobBase
+  name: VKS Fighter Pilot
+  components:
+  - type: SpawnPoint
+    job_id: VKSFighterPilot
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
 ### IND
 
 # Western Private Security
