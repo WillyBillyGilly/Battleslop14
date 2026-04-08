@@ -69,7 +69,7 @@
   name: uplink-NATO-magazine-box-STANAG-name
   description: uplink-NATO-magazine-box-STANAG-desc
   productEntity: BoxMagazineSTANAG
-  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/STANAG.rsi, state: base }
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/STANAG.rsi, state: icon }
   cost:
     NATORequisition: 4 # 40 seconds
   categories:
