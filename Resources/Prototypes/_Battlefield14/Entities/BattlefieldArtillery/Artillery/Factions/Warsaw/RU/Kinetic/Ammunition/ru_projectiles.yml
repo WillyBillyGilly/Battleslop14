@@ -806,7 +806,7 @@
     spreadAngle: 0
     velocityMultiplier: 2.1
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/shell.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
     layers:
     - state: bigsabot
   - type: ShipWeaponProjectile
