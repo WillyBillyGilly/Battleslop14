@@ -2,7 +2,7 @@
   name: entrenching tool
   parent: Shovel
   id: EntrenchingTool
-  description: "An old relic from the Glorious Leader. Capable of 18 functions, including digging, chopping, cutting, picking, prying, wire cutting, shoveling."
+  description: Standard issue military spade, for diggin', pryin', screwin', cuttin', and even chuckin'.
   components:
   - type: Sprite
     sprite: _NF/Objects/Tools/cm-shovel.rsi
