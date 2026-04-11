@@ -132,3 +132,8 @@
   - type: SpeedModifiedOnWield
     walkModifier: 0.9
     sprintModifier: 0.9
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes AK-74 pattern magazines.
+        color: "#4f94ad"
+        requireDetailRange: true

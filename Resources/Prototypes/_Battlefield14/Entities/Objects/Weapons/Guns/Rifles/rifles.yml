@@ -82,6 +82,11 @@
   - type: EyeCursorOffset
     maxOffset: 5
     pvsIncrease: 0.25
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes STANAG magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
 
 - type: entity
   name: M4A1 Carbine
@@ -155,6 +160,11 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes STANAG magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
 
 - type: entity
   name: M4A1 Carbine SUPP.
@@ -348,6 +358,11 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes AK-74 pattern magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
 
 - type: entity
   name: AKS-74u
@@ -415,6 +430,11 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes AK-74 pattern magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
 
 - type: entity
   name: AKS-74UB
@@ -638,6 +658,11 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes AKM pattern magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
 
 - type: entity
   name: AK-203
@@ -750,6 +775,11 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes AS-VAL pattern magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
 
 - type: entity
   name: SR-3M
@@ -818,9 +848,13 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes AK-74 pattern magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
 
 - type: entity
-  name: SR-3M
   parent: WeaponRifleRUSR3M
   id: WeaponRifleRUSR3MShort
   suffix: 20 round magazine
@@ -906,6 +940,11 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes ASH-12 pattern magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
 
 - type: entity
   name: ASH-12 SUPP.
