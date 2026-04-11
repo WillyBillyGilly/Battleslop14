@@ -39,6 +39,12 @@
   - type: EmitSoundOnLand
     sound:
       collection: FragGrenadeSFX
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a random timer between 3-5 seconds, produces shrapnel.
+        fontSize: 12
+        color: "#4f94ad"
+        requireDetailRange: true
 
 - type: entity
   id: BulletGrenadeM67Fragment
@@ -98,6 +104,11 @@
   - type: EmitSoundOnLand
     sound:
       collection: FragGrenadeSFX
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a random timer between 3-5 seconds.
+        color: "#4f94ad"
+        requireDetailRange: true
 
 - type: entity
   name: double stacked MK21 hand grenade
@@ -138,7 +149,7 @@
 - type: entity
   name: MK21 Offensive Grenade Sword
   description: You crazy son of a bitch.
-  parent: GrenadeBase
+  parent: MK21Handgrenade
   id: MK21HandgrenadeSword
   components:
   - type: Item
@@ -217,12 +228,11 @@
   - type: EmitSoundOnLand
     sound:
       collection: SmokeGrenadeSFX
- # - type: ExtendDescription
- #  descriptionList:
- #  - description: "Smoke lasts 30 seconds."
- #    fontSize: 12
- #    color: "#1c89b1"
- #    requireDetailRange: true
+  - type: ExtendDescription
+    descriptionList:
+      - description: Smoke lasts 30 seconds.
+        color: "#4f94ad"
+        requireDetailRange: true
 
 - type: entity
   name: M84 flashbang
@@ -258,6 +268,11 @@
   - type: EmitSoundOnLand
     sound:
       collection: FlashGrenadeSFX
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a random timer between 2-4 seconds.
+        color: "#4f94ad"
+        requireDetailRange: true
 
 - type: entity
   name: M58 CS gas grenade
@@ -292,12 +307,11 @@
   - type: EmitSoundOnLand
     sound:
       collection: SmokeGrenadeSFX
- # - type: ExtendDescription
- #  descriptionList:
- #  - description: "Smoke lasts 30 seconds."
- #    fontSize: 12
- #    color: "#1c89b1"
- #    requireDetailRange: true
+  - type: ExtendDescription
+    descriptionList:
+      - description: Smoke lasts 30 seconds.
+        color: "#4f94ad"
+        requireDetailRange: true
 
 - type: entity
   name: M34 White Phosphorus smoke grenade
@@ -333,12 +347,11 @@
   - type: EmitSoundOnLand
     sound:
       collection: SmokeGrenadeSFX
- # - type: ExtendDescription
- #  descriptionList:
- #  - description: "Smoke lasts 30 seconds."
- #    fontSize: 12
- #    color: "#1c89b1"
- #    requireDetailRange: true
+  - type: ExtendDescription
+    descriptionList:
+      - description: Smoke lasts 30 seconds.
+        color: "#4f94ad"
+        requireDetailRange: true
 
 # RU
 
@@ -375,6 +388,11 @@
   - type: EmitSoundOnLand
     sound:
       collection: FragGrenadeSFX
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a random timer between 3-5 seconds.
+        color: "#4f94ad"
+        requireDetailRange: true
 
 - type: entity
   name: F-1 Grenade
@@ -415,6 +433,11 @@
   - type: EmitSoundOnLand
     sound:
       collection: FragGrenadeSFX
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a random timer between 3-5 seconds, produces shrapnel.
+        color: "#4f94ad"
+        requireDetailRange: true
 
 - type: entity
   id: BulletGrenadeF1Fragment
@@ -495,9 +518,15 @@
   - type: Explosive
     explosionType: Default
     maxIntensity: 10
-    intensitySlope: 3
-    totalIntensity: 80
+    intensitySlope: 2
+    totalIntensity: 30
     canCreateVacuum: false
+  - type: ContainerContainer
+    containers:
+      cluster-payload: !type:Container
+  - type: ProjectileGrenade
+    fillPrototype: BulletGrenadeF1Fragment
+    capacity: 30
   - type: EmitSoundOnPickup
     sound: /Audio/_Battlefield14/Weapons/Grenades/grab1.ogg
   - type: EmitSoundOnDrop
@@ -505,6 +534,11 @@
   - type: EmitSoundOnLand
     sound:
       collection: FragGrenadeSFX
+  - type: ExtendDescription
+    descriptionList:
+      - description: Activate to pull the pin, arming the contact fuze, activate again to disarm, produces shrapnel. Will bounce off walls. Useless without gravity.
+        color: "#4f94ad"
+        requireDetailRange: true
 
 - type: entity
   name: RDG-2 Smoke grenade
@@ -535,12 +569,11 @@
   - type: EmitSoundOnLand
     sound:
       collection: SmokeGrenadeSFX
- # - type: ExtendDescription
- #   descriptionList:
- #   - description: "Smoke lasts 30 seconds."
- #     fontSize: 12
- #     color: "#1c89b1"
- #     requireDetailRange: true
+  - type: ExtendDescription
+    descriptionList:
+      - description: Smoke lasts 30 seconds.
+        color: "#4f94ad"
+        requireDetailRange: true
 
 - type: entity
   name: zarya flashbang
@@ -576,6 +609,11 @@
   - type: EmitSoundOnLand
     sound:
       collection: FlashGrenadeSFX
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a random timer between 2-4 seconds.
+        color: "#4f94ad"
+        requireDetailRange: true
 
 - type: entity
   name: K-51 CS gas grenade
@@ -610,12 +648,11 @@
   - type: EmitSoundOnLand
     sound:
       collection: SmokeGrenadeSFX
- # - type: ExtendDescription
- #  descriptionList:
- #  - description: "Smoke lasts 30 seconds."
- #    fontSize: 12
- #    color: "#1c89b1"
- #    requireDetailRange: true
+  - type: ExtendDescription
+    descriptionList:
+      - description: Smoke lasts 30 seconds.
+        color: "#4f94ad"
+        requireDetailRange: true
 
 - type: entity
   name: K-52 sarin gas grenade
@@ -651,9 +688,8 @@
   - type: EmitSoundOnLand
     sound:
       collection: SmokeGrenadeSFX
- # - type: ExtendDescription
- #  descriptionList:
- #  - description: "Smoke lasts 30 seconds."
- #    fontSize: 12
- #    color: "#1c89b1"
- #    requireDetailRange: true
+  - type: ExtendDescription
+    descriptionList:
+      - description: Smoke lasts 30 seconds.
+        color: "#4f94ad"
+        requireDetailRange: true

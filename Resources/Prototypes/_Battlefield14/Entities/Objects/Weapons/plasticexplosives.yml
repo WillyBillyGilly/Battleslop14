@@ -116,3 +116,8 @@
         base:
           Primed: { state: primed }
           Unprimed: { state: base }
+  - type: ExtendDescription
+    descriptionList:
+      - description: Remote signal required for use.
+        color: "#4f94ad"
+        requireDetailRange: true
