@@ -119,6 +119,7 @@
   - LoadoutHandsGlovesSoldierCombat
   - LoadoutHandsGlovesSoldierMercCombat
   - LoadoutHandsGlovesSoldierMercFingerless
+  - LoadoutHandsGlovesSoldierWristwatch
 
 - type: loadoutGroup
   id: BF_WPSGloves
@@ -127,6 +128,7 @@
   loadouts:
   - LoadoutHandsGlovesSoldierBlack
   - LoadoutHandsGlovesSoldierFingerless
+  - LoadoutHandsGlovesSoldierWristwatch
 
 # FEET
 
