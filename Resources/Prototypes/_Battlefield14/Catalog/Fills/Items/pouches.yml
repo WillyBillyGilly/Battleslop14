@@ -170,7 +170,7 @@
 - type: entity
   parent: PouchFlares
   id: PouchFlaresFilledGlowsticksRed
-  name: glowtick pouch
+  name: glowstick pouch
   suffix: Filled, glowsticks, red
   components:
   - type: StorageFill
@@ -182,7 +182,7 @@
   parent: PouchFlares
   id: PouchFlaresFilledGlowsticksBlue
   suffix: Filled, glowsticks, blue
-  name: glowtick pouch
+  name: glowstick pouch
   components:
   - type: StorageFill
     contents:
@@ -193,7 +193,7 @@
   parent: PouchFlares
   id: PouchFlaresFilledGlowsticksGreen
   suffix: Filled, glowsticks, green
-  name: glowtick pouch
+  name: glowstick pouch
   components:
   - type: StorageFill
     contents:
