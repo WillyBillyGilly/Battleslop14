@@ -65,7 +65,7 @@
   suffix: Announce, USS Barack Obama
   components:
   - type: AnnounceOnSpawn
-    message: "USS Barack Obama at 100% combat readiness"
+    message: "USS Barack Obama at 100% combat readiness."
     sender: "USS Barack Obama"
     sound:
       path: /Audio/Announcements/bloblarm.ogg
@@ -77,7 +77,7 @@
   suffix: Announce, SVO Goydin
   components:
   - type: AnnounceOnSpawn
-    message: "SVO Goydin at 100% combat readiness"
+    message: "SVO Goydin at 100% combat readiness."
     sender: "SVO Goydin"
     sound:
       path: /Audio/Announcements/bloblarm.ogg
