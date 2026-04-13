@@ -422,7 +422,7 @@ public abstract partial class SharedProjectileSystem : EntitySystem
                 else if (BarricadeBlock.Omnidirectional)
                 {
                     directionallyAllowed = true;
-                    //_sawmill.Debug("Has the omnidirectional component");
+                    //_sawmill.Debug("Has the omnidirectional field");
                 }
 
                 if (directionallyAllowed)
