@@ -19,8 +19,8 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    totalIntensity: 90
-    intensitySlope: 4
+    totalIntensity: 40
+    intensitySlope: 3
     maxIntensity: 30
     maxTileBreak: 0
   - type: Sprite
@@ -75,8 +75,8 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: FireBomb
-    totalIntensity: 100
-    intensitySlope: 5
+    totalIntensity: 50
+    intensitySlope: 3
     maxIntensity: 30
     maxTileBreak: 0
   - type: SpawnOnTrigger
