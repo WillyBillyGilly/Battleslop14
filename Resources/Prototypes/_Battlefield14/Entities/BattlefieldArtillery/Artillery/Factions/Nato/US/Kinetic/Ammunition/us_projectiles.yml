@@ -413,8 +413,8 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: MicroBomb
-    totalIntensity: 60
-    intensitySlope: 4
+    totalIntensity: 50
+    intensitySlope: 3
     maxIntensity: 20
     maxTileBreak: 1
   - type: Sprite
