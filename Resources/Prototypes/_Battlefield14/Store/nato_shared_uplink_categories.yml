@@ -309,3 +309,53 @@
       whitelist:
         tags:
           - AmericanUplink
+
+# Ship vouchers
+
+- type: listing
+  id: UplinkNATOUSMGTadpole
+  name: uplink-natous-tadpole-mg-name
+  description: uplink-natous-tadpole-mg-desc
+  productEntity: ShipVoucherTadpoleMG
+  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_shipgun_box.rsi, state: base }
+  cost:
+    NATORequisition: 50
+  categories:
+    - UplinkNATOUSShips
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOUSAATadpole
+  name: uplink-natous-tadpole-aa-name
+  description: uplink-natous-tadpole-aa-desc
+  productEntity: ShipVoucherTadpoleAA
+  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_shipgun_box.rsi, state: base }
+  cost:
+    NATORequisition: 75
+  categories:
+    - UplinkNATOUSShips
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOUSTowpole
+  name: uplink-natous-tadpole-tow-name
+  description: uplink-natous-tadpole-tow-desc
+  productEntity: ShipVoucherTowpole
+  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_shipgun_box.rsi, state: base }
+  cost:
+    NATORequisition: 150
+  categories:
+    - UplinkNATOUSShips
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink

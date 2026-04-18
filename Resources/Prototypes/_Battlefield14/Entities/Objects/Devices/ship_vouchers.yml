@@ -20,6 +20,60 @@
     vessels:
     - AAVP8
 
+- type: entity
+  parent: BaseShipLPC
+  id: ShipVoucherTadpoleAA
+  name: USMC Tadpole-20A AA Gunship
+  description: A small card that contains the data for the procurement of a Tadpole-20A AA Gunship from naval reserves.
+  components:
+  - type: Sprite
+    layers:
+    - state: mtech
+    - state: stripetsfmc
+    - state: vouchermilitary
+  - type: ShipyardVoucher
+    destroyOnEmpty: true
+    consoleType: Custom
+    companyName: USMC
+    vessels:
+    - Tadpole-20A
+
+- type: entity
+  parent: BaseShipLPC
+  id: ShipVoucherTadpoleMG
+  name: USMC Tadpole-20L MG Gunship
+  description: A small card that contains the data for the procurement of a Tadpole-20L MG Gunship from naval reserves.
+  components:
+  - type: Sprite
+    layers:
+    - state: mtech
+    - state: stripetsfmc
+    - state: vouchermilitary
+  - type: ShipyardVoucher
+    destroyOnEmpty: true
+    consoleType: Custom
+    companyName: USMC
+    vessels:
+    - Tadpole-20L
+
+- type: entity
+  parent: BaseShipLPC
+  id: ShipVoucherTowpole
+  name: USMC Tadpole-20T 'Towpole'
+  description: A small card that contains the data for the procurement of a Tadpole-20T TOW-3 Gunship.
+  components:
+  - type: Sprite
+    layers:
+    - state: mtech
+    - state: stripetsfmc
+    - state: vouchermilitary
+  - type: ShipyardVoucher
+    destroyOnEmpty: true
+    consoleType: Custom
+    companyName: USMC
+    vessels:
+    - Tadpole-20T
+
 ### PACT
 ## RU
 # VDV

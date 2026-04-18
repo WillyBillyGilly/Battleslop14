@@ -1,0 +1,27 @@
+- type: vessel
+  id: Tadpole-20T
+  parent: BaseVesselAntag
+  name: USMC Tadpole-20T
+  description: Prototype security gunship, equipped with TOW-3 gun systems. Known as the 'Towpole'
+  price: 10000
+  purchasable: false # voucher only, money doesn't matter
+  category: Small
+  shuttlePath: /Maps/_Battlefield14/Shuttles/NATO/towpole.yml
+
+- type: gameMap
+  id: Tadpole-20T
+  mapName: 'USMC Tadpole-20T'
+  mapPath: /Maps/_Battlefield14/Shuttles/NATO/towpole.yml
+  minPlayers: 0
+  stations:
+    Tadpole-20T:
+      stationProto: StandardFrontierSecurityVessel
+      gridComponents:
+      - type: VesselInfo
+        description: "Prototype security gunship, equipped with TOW-3 gun systems. Known as the 'Towpole'"
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: 'USMC Tadpole-20T {1}'
+        nameGenerator:
+          !type:NanotrasenNameGenerator
+          prefixCreator: '14'

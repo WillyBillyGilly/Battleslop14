@@ -11,3 +11,4 @@ store-category-bf-utility = Utility
 store-category-bf-medical = Medical
 store-category-bf-explosives = Explosives
 store-category-bf-shipammo = Ship Ammo
+store-category-bf-ships = Ships

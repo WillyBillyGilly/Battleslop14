@@ -28,6 +28,9 @@
   - type: ShipyardListing
     shuttles:
     - AAVP8
+    - Tadpole-20A
+    - Tadpole-20L
+    - Tadpole-20T
 
 - type: entity
   id: ComputerShipyardUnitedStatesNavalGracePeriod

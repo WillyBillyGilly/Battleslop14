@@ -98,3 +98,14 @@ uplink-natous-40x46mm-mpapers-desc = Contains 8 40x46mm MP-APERS cartridges.
 
 uplink-natous-M242-APDS-name = M242 Bushmaster 25mm APDS magazine
 uplink-natous-M242-APDS-desc = One 25mm APDS magazine for the M242 Bushmaster.
+
+## Ships
+
+uplink-natous-tadpole-mg-name = Tadpole-20L ship voucher
+uplink-natous-tadpole-mg-desc = Tadpole-20 security gunship fitted with 4 M5 Browning systems.
+
+uplink-natous-tadpole-tow-name = Tadpole-20T ship voucher
+uplink-natous-tadpole-tow-desc = Tadpole-20 security gunship fitted with 4 TOW-3 systems.
+
+uplink-natous-tadpole-aa-name = Tadpole-20A ship voucher
+uplink-natous-tadpole-aa-desc = Tadpole-20 security gunship fitted with 4 CIWS anti-air defense systems.
