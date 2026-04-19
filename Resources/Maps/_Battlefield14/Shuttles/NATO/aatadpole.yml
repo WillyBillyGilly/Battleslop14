@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 04/18/2026 05:36:56
-  entityCount: 165
+  time: 04/19/2026 04:43:46
+  entityCount: 154
 maps: []
 grids:
 - 1
@@ -262,85 +262,43 @@ entities:
     - type: Transform
       pos: 3.5,2.5
       parent: 1
-- proto: BarbwireFloor
-  entities:
-  - uid: 50
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 3.5,-1.5
-      parent: 1
-  - uid: 55
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 3.5,0.5
-      parent: 1
-  - uid: 56
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -2.5,-1.5
-      parent: 1
-  - uid: 57
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -2.5,0.5
-      parent: 1
-- proto: BarricadePlasteel
+- proto: BlastDoor
   entities:
   - uid: 9
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
-      pos: 2.5,0.5
+      pos: 3.5,-0.5
       parent: 1
   - uid: 12
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -1.5,-1.5
-      parent: 1
-  - uid: 75
-    components:
-    - type: Transform
       rot: 1.5707963267948966 rad
-      pos: 2.5,-1.5
+      pos: 3.5,-1.5
       parent: 1
-  - uid: 133
+  - uid: 50
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
-      pos: -1.5,0.5
+      pos: -2.5,-1.5
       parent: 1
-- proto: BarricadePlasteelFolding
-  entities:
-  - uid: 74
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 2.5,-0.5
-      parent: 1
-  - uid: 121
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -1.5,-0.5
-      parent: 1
-- proto: BlastDoor
-  entities:
   - uid: 53
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
-      pos: -2.5,0.5
+      pos: -2.5,-0.5
       parent: 1
   - uid: 54
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
-      pos: -2.5,-0.5
+      pos: -2.5,0.5
+      parent: 1
+  - uid: 56
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 3.5,0.5
       parent: 1
   - uid: 78
     components:
@@ -356,30 +314,6 @@ entities:
     components:
     - type: Transform
       pos: 1.5,3.5
-      parent: 1
-  - uid: 137
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -2.5,-1.5
-      parent: 1
-  - uid: 139
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 3.5,0.5
-      parent: 1
-  - uid: 140
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 3.5,-0.5
-      parent: 1
-  - uid: 141
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 3.5,-1.5
       parent: 1
 - proto: CableApcExtension
   entities:
@@ -674,17 +608,7 @@ entities:
       startingCharge: 0
 - proto: ComputerWallmountRadar
   entities:
-  - uid: 145
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -1.5,2.5
-      parent: 1
-    - type: ApcPowerReceiver
-      powerLoad: 5
-    - type: Battery
-      startingCharge: 0
-  - uid: 146
+  - uid: 55
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
@@ -694,7 +618,7 @@ entities:
       powerLoad: 5
     - type: Battery
       startingCharge: 0
-  - uid: 147
+  - uid: 57
     components:
     - type: Transform
       rot: 3.141592653589793 rad
@@ -1074,13 +998,13 @@ entities:
       parent: 1
     - type: DeviceLinkSource
       linkedPorts:
-        141:
+        56:
         - - Pressed
           - Toggle
-        140:
+        9:
         - - Pressed
           - Toggle
-        139:
+        12:
         - - Pressed
           - Toggle
   - uid: 126
@@ -1090,13 +1014,13 @@ entities:
       parent: 1
     - type: DeviceLinkSource
       linkedPorts:
+        50:
+        - - Pressed
+          - Toggle
         53:
         - - Pressed
           - Toggle
         54:
-        - - Pressed
-          - Toggle
-        137:
         - - Pressed
           - Toggle
 - proto: SmallGyroscope

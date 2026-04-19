@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 04/18/2026 05:37:41
-  entityCount: 169
+  time: 04/19/2026 04:46:19
+  entityCount: 158
 maps: []
 grids:
 - 1
@@ -282,74 +282,26 @@ entities:
     - type: Transform
       pos: 3.5,2.5
       parent: 1
-- proto: BarbwireFloor
+- proto: BlastDoor
   entities:
+  - uid: 9
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 3.5,0.5
+      parent: 1
+  - uid: 12
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 3.5,-0.5
+      parent: 1
   - uid: 50
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 3.5,-1.5
       parent: 1
-  - uid: 55
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 3.5,0.5
-      parent: 1
-  - uid: 56
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -2.5,-1.5
-      parent: 1
-  - uid: 57
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -2.5,0.5
-      parent: 1
-- proto: BarricadePlasteel
-  entities:
-  - uid: 9
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 2.5,0.5
-      parent: 1
-  - uid: 12
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -1.5,-1.5
-      parent: 1
-  - uid: 102
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 2.5,-1.5
-      parent: 1
-  - uid: 106
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -1.5,0.5
-      parent: 1
-- proto: BarricadePlasteelFolding
-  entities:
-  - uid: 101
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 2.5,-0.5
-      parent: 1
-  - uid: 105
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -1.5,-0.5
-      parent: 1
-- proto: BlastDoor
-  entities:
   - uid: 53
     components:
     - type: Transform
@@ -357,6 +309,12 @@ entities:
       pos: -2.5,0.5
       parent: 1
   - uid: 54
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -2.5,-1.5
+      parent: 1
+  - uid: 55
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
@@ -376,30 +334,6 @@ entities:
     components:
     - type: Transform
       pos: 1.5,3.5
-      parent: 1
-  - uid: 166
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -2.5,-1.5
-      parent: 1
-  - uid: 167
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 3.5,0.5
-      parent: 1
-  - uid: 168
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 3.5,-0.5
-      parent: 1
-  - uid: 169
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 3.5,-1.5
       parent: 1
 - proto: CableApcExtension
   entities:
@@ -694,16 +628,6 @@ entities:
       startingCharge: 0
 - proto: ComputerWallmountRadar
   entities:
-  - uid: 145
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -1.5,2.5
-      parent: 1
-    - type: ApcPowerReceiver
-      powerLoad: 5
-    - type: Battery
-      startingCharge: 0
   - uid: 146
     components:
     - type: Transform
@@ -1118,13 +1042,13 @@ entities:
       parent: 1
     - type: DeviceLinkSource
       linkedPorts:
-        169:
+        9:
         - - Pressed
           - Toggle
-        168:
+        12:
         - - Pressed
           - Toggle
-        167:
+        50:
         - - Pressed
           - Toggle
   - uid: 126
@@ -1134,13 +1058,13 @@ entities:
       parent: 1
     - type: DeviceLinkSource
       linkedPorts:
-        53:
+        55:
         - - Pressed
           - Toggle
         54:
         - - Pressed
           - Toggle
-        166:
+        53:
         - - Pressed
           - Toggle
 - proto: SmallGyroscope
