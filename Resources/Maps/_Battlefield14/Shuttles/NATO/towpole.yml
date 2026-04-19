@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 04/19/2026 04:45:56
-  entityCount: 154
+  time: 04/19/2026 06:19:51
+  entityCount: 153
 maps: []
 grids:
 - 1
@@ -63,10 +63,10 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
       spreadQueues:
-        Puddle: []
-        Smoke: []
         Kudzu: []
         MetalFoam: []
+        Puddle: []
+        Smoke: []
     - type: Shuttle
       dampingModifier: 0.25
     - type: GridPathfinding
@@ -841,52 +841,6 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: Paper
-  entities:
-  - uid: 165
-    components:
-    - type: Transform
-      pos: 0.47001672,1.5677094
-      parent: 1
-    - type: Paper
-      stampState: paper_stamp-nf-sheriff
-      stampedBy:
-      - reapply: False
-        stampType: RubberStamp
-        stampedColor: '#4C653AFF'
-        stampedName: stamp-component-stamped-name-hos
-      content: >+
-        Congratulations on your new Bradley M20 IFV purchase!
-
-
-        There are 3 models available:
-
-        M20L, armed with M5 Browning .50 BMG machine guns
-
-        M20A, armed with CIWS anti-air defense systems.
-
-        M20, armed with TOW-3 Anti-Tank Guided Missiles.
-
-
-        Complimentary ammo has been placed in your vehicle.
-
-
-        You can toggle the viewing, left and right blast doors with the associated buttons.
-
-
-        The Bradley does not have a reverse gear. It is recommended to drive it in "Park" mode.
-
-
-        The Bradley does not have IFF. Be careful with your allies and enemies.
-
-
-        If you will ever have to reload the guns, you must walk outside of the Bradley and manually reload them.
-
-    - type: Tag
-      tags:
-      - Document
-      - Paper
-      - NFPaperStampProtected
 - proto: PlastitaniumWindow
   entities:
   - uid: 61
