@@ -20,6 +20,60 @@
     vessels:
     - AAVP8
 
+- type: entity
+  parent: BaseShipLPC
+  id: ShipVoucherBradleyAA
+  name: USMC Bradley M20A 'Linebacker' AA Gunship
+  description: A small card that contains the data for the procurement of a Bradley M20A 'Linebacker' AA Gunship from naval reserves.
+  components:
+  - type: Sprite
+    layers:
+    - state: mtech
+    - state: stripetsfmc
+    - state: vouchermilitary
+  - type: ShipyardVoucher
+    destroyOnEmpty: true
+    consoleType: Custom
+    companyName: USMC
+    vessels:
+    - M20A
+
+- type: entity
+  parent: BaseShipLPC
+  id: ShipVoucherBradleyMG
+  name: USMC Bradley M20L 'Gunner' MG Gunship
+  description: A small card that contains the data for the procurement of a Bradley M20L 'Gunner' MG Gunship from naval reserves.
+  components:
+  - type: Sprite
+    layers:
+    - state: mtech
+    - state: stripetsfmc
+    - state: vouchermilitary
+  - type: ShipyardVoucher
+    destroyOnEmpty: true
+    consoleType: Custom
+    companyName: USMC
+    vessels:
+    - M20L
+
+- type: entity
+  parent: BaseShipLPC
+  id: ShipVoucherBradleyTow
+  name: USMC Bradley M20 IFV
+  description: A small card that contains the data for the procurement of a Bradley M20 TOW-3 and autocannon IFV.
+  components:
+  - type: Sprite
+    layers:
+    - state: mtech
+    - state: stripetsfmc
+    - state: vouchermilitary
+  - type: ShipyardVoucher
+    destroyOnEmpty: true
+    consoleType: Custom
+    companyName: USMC
+    vessels:
+    - M20
+
 ### PACT
 ## RU
 # VDV

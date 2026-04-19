@@ -1,0 +1,27 @@
+- type: vessel
+  id: M20A
+  parent: BaseVesselAntag
+  name: USMC Bradley M20A Linebacker
+  description: Next-Generation Bradley vehicle, equipped with CIWS gun systems.
+  price: 10000
+  purchasable: false # voucher only, money doesn't matter
+  category: Small
+  shuttlePath: /Maps/_Battlefield14/Shuttles/NATO/aatadpole.yml
+
+- type: gameMap
+  id: M20A
+  mapName: 'USMC Bradley M20A Linebacker'
+  mapPath: /Maps/_Battlefield14/Shuttles/NATO/aatadpole.yml
+  minPlayers: 0
+  stations:
+    M20A:
+      stationProto: StandardFrontierSecurityVessel
+      gridComponents:
+      - type: VesselInfo
+        description: "Next-Generation Bradley vehicle, equipped with CIWS gun systems."
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: 'USMC Bradley M20A Linebacker{1}'
+        nameGenerator:
+          !type:NanotrasenNameGenerator
+          prefixCreator: '14'

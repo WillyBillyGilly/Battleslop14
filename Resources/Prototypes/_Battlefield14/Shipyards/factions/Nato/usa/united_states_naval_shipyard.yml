@@ -28,6 +28,9 @@
   - type: ShipyardListing
     shuttles:
     - AAVP8
+    - M20A
+    - M20L
+    - M20
 
 - type: entity
   id: ComputerShipyardUnitedStatesNavalGracePeriod

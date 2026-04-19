@@ -1,0 +1,27 @@
+- type: vessel
+  id: M20L
+  parent: BaseVesselAntag
+  name: USMC Bradley M20L Gunner
+  description: Next-Generation Bradley vehicle, equipped with M5 Browning gun systems.
+  price: 10000
+  purchasable: false # voucher only, money doesn't matter
+  category: Small
+  shuttlePath: /Maps/_Battlefield14/Shuttles/NATO/mgtadpole.yml
+
+- type: gameMap
+  id: M20L
+  mapName: 'USMC Bradley M20L Gunner'
+  mapPath: /Maps/_Battlefield14/Shuttles/NATO/mgtadpole.yml
+  minPlayers: 0
+  stations:
+    M20L:
+      stationProto: StandardFrontierSecurityVessel
+      gridComponents:
+      - type: VesselInfo
+        description: "Next-Generation Bradley vehicle, equipped with M5 Browning gun systems."
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: 'USMC Bradley M20L Gunner{1}'
+        nameGenerator:
+          !type:NanotrasenNameGenerator
+          prefixCreator: '14'

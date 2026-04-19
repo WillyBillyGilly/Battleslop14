@@ -28,6 +28,10 @@
   id: UplinkNATOUSShipAmmo
   name: store-category-bf-shipammo
 
+- type: storeCategory
+  id: UplinkNATOUSShips
+  name: store-category-bf-ships
+
 ## PACT
 # Russian
 

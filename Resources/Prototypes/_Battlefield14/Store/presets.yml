@@ -12,6 +12,7 @@
     - UplinkNATOUSMedical
     - UplinkNATOUSExplosives
     - UplinkNATOUSShipAmmo
+    - UplinkNATOUSShips
     currencyWhitelist:
     - NATORequisition
     balance:

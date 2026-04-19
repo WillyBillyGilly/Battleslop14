@@ -1,0 +1,27 @@
+- type: vessel
+  id: M20
+  parent: BaseVesselAntag
+  name: USMC Bradley M20 IFV
+  description: Next-Generation Bradley vehicle, equipped with a TOW-3 gun system and an autocannon.
+  price: 10000
+  purchasable: false # voucher only, money doesn't matter
+  category: Small
+  shuttlePath: /Maps/_Battlefield14/Shuttles/NATO/towpole.yml
+
+- type: gameMap
+  id: M20
+  mapName: 'USMC Bradley M20 IFV'
+  mapPath: /Maps/_Battlefield14/Shuttles/NATO/towpole.yml
+  minPlayers: 0
+  stations:
+    M20:
+      stationProto: StandardFrontierSecurityVessel
+      gridComponents:
+      - type: VesselInfo
+        description: "Next-Generation Bradley vehicle, equipped with a TOW-3 gun system and an autocannon."
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: 'USMC Bradley M20 IFV{1}'
+        nameGenerator:
+          !type:NanotrasenNameGenerator
+          prefixCreator: '14'
