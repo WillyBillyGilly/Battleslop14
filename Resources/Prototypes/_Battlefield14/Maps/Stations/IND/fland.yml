@@ -34,7 +34,6 @@
           lobbySortOrder: 1
         - type: StationJobs
           availableJobs:
-            USSFCaptain: [ 1, 1 ]
             USSFCrewman: [ 1, 1 ]
             NGSquadLeader: [ 1, 1 ]
             NGRifleman: [ 2, 2 ]

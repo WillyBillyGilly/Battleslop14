@@ -5,7 +5,7 @@
   minimumDistance: 3000
   maximumDistance: 3000
   spawnGamePreset: [ USMC_vs_VDV ]
-  spawnGroup: Required
+  spawnGroup: Optional
   gridPath: /Maps/_Battlefield14/Shuttles/NATO/Capitals/USSBarackObama.yml
   addComponents:
   - type: IFF

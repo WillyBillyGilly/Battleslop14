@@ -8,7 +8,7 @@
     damage:
       types:
         Piercing: 22
-    armorPenetration: -0.3
+    armorPenetration: -0.1
 
 - type: entity
   id: BulletPistolBF45ACP
@@ -20,7 +20,7 @@
     damage:
       types:
         Piercing: 26
-    armorPenetration: -0.4
+    armorPenetration: -0.2
   - type: StaminaDamageOnCollide
     damage: 9 # ~11 hits to stun
 

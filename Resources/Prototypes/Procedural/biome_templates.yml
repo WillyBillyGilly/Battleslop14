@@ -136,39 +136,39 @@
         - FloraTree
         - FloraTreeLarge
     # Rock formations
-    - !type:BiomeEntityLayer
-      allowedTiles:
-        - FloorPlanetGrass
-        - FloorPlanetDirt
-      threshold: -0.30
-      noise:
-        seed: 0
-        noiseType: Cellular
-        frequency: 0.05
-        lacunarity: 2
-        fractalType: FBm
-        octaves: 5
-        cellularDistanceFunction: Euclidean
-        cellularReturnType: Distance2
-      entities:
-        - MonoPlanetmapOreBase
-    - !type:BiomeDummyLayer
-      id: Loot
-    # Water
-    - !type:BiomeEntityLayer
-      allowedTiles:
-        - FloorPlanetGrass
-        - FloorPlanetDirt
-      threshold: 0.95
-      noise:
-        seed: 3
-        noiseType: OpenSimplex2
-        frequency: 0.003
-        lacunarity: 1.50
-        fractalType: Ridged
-        octaves: 1
-      entities:
-        - FloorWaterEntity
+#BF14    - !type:BiomeEntityLayer
+#BF14      allowedTiles:
+#BF14        - FloorPlanetGrass
+#BF14        - FloorPlanetDirt
+#BF14      threshold: -0.30
+#BF14      noise:
+#BF14        seed: 0
+#BF14        noiseType: Cellular
+#BF14        frequency: 0.05
+#BF14        lacunarity: 2
+#BF14        fractalType: FBm
+#BF14        octaves: 5
+#BF14        cellularDistanceFunction: Euclidean
+#BF14        cellularReturnType: Distance2
+#BF14      entities:
+#BF14        - MonoPlanetmapOreBase
+#BF14    - !type:BiomeDummyLayer
+#BF14      id: Loot
+#BF14    # Water
+#BF14    - !type:BiomeEntityLayer
+#BF14      allowedTiles:
+#BF14        - FloorPlanetGrass
+#BF14        - FloorPlanetDirt
+#BF14      threshold: 0.95
+#BF14      noise:
+#BF14        seed: 3
+#BF14        noiseType: OpenSimplex2
+#BF14        frequency: 0.003
+#BF14        lacunarity: 1.50
+#BF14        fractalType: Ridged
+#BF14        octaves: 1
+#BF14      entities:
+#BF14        - FloorWaterEntity
     # Fill remainder with dirt.
     - !type:BiomeTileLayer
       threshold: -1.0
@@ -180,30 +180,30 @@
         seed: 0
         frequency: 0.02
         fractalType: None
-    # Water sand
-    - !type:BiomeTileLayer
-      tile: FloorPlanetDirt
-      threshold: 0.95
-      noise:
-        seed: 3
-        noiseType: OpenSimplex2
-        frequency: 0.003
-        lacunarity: 1.50
-        fractalType: Ridged
-        octaves: 1
-    # Rock formation sand
-    - !type:BiomeTileLayer
-      tile: FloorPlanetDirt
-      threshold: -0.30
-      noise:
-        seed: 0
-        noiseType: Cellular
-        frequency: 0.05
-        lacunarity: 2
-        fractalType: FBm
-        octaves: 5
-        cellularDistanceFunction: Euclidean
-        cellularReturnType: Distance2
+#    # Water sand
+#    - !type:BiomeTileLayer
+#      tile: FloorPlanetDirt
+#      threshold: 0.95
+#      noise:
+#        seed: 3
+#        noiseType: OpenSimplex2
+#        frequency: 0.003
+#        lacunarity: 1.50
+#        fractalType: Ridged
+#        octaves: 1
+#    # Rock formation sand
+#    - !type:BiomeTileLayer
+#      tile: FloorPlanetDirt
+#      threshold: -0.30
+#      noise:
+#        seed: 0
+#        noiseType: Cellular
+#        frequency: 0.05
+#        lacunarity: 2
+#        fractalType: FBm
+#        octaves: 5
+#        cellularDistanceFunction: Euclidean
+#        cellularReturnType: Distance2
 
 # Lava
 - type: biomeTemplate
@@ -372,21 +372,21 @@
       entities:
         - FloraTreeSnow
     # Rock formations
-    - !type:BiomeEntityLayer
-      allowedTiles:
-        - FloorSnow
-      threshold: -0.30
-      noise:
-        seed: 0
-        noiseType: Cellular
-        frequency: 0.05
-        lacunarity: 2
-        fractalType: FBm
-        octaves: 5
-        cellularDistanceFunction: Euclidean
-        cellularReturnType: Distance2
-      entities:
-        - MonoPlanetmapOreSnow
+#BF14    - !type:BiomeEntityLayer
+#BF14      allowedTiles:
+#BF14        - FloorSnow
+#BF14      threshold: -0.30
+#BF14      noise:
+#BF14        seed: 0
+#BF14        noiseType: Cellular
+#BF14        frequency: 0.05
+#BF14        lacunarity: 2
+#BF14        fractalType: FBm
+#BF14        octaves: 5
+#BF14        cellularDistanceFunction: Euclidean
+#BF14        cellularReturnType: Distance2
+#BF14      entities:
+#BF14        - MonoPlanetmapOreSnow
     # Ice tiles
     - !type:BiomeTileLayer
       tile: FloorIce
@@ -401,22 +401,22 @@
         cellularDistanceFunction: Euclidean
         cellularReturnType: Distance2
     # Liquid plasma rivers. Ice moon baby
-    - !type:BiomeEntityLayer
-      allowedTiles:
-      - FloorSnow
-      - FloorIce
-      threshold: 0.95
-      noise:
-        seed: 3
-        noiseType: OpenSimplex2
-        frequency: 0.003
-        lacunarity: 1.50
-        fractalType: Ridged
-        octaves: 1
-      entities:
-      - FloorLiquidPlasmaEntity
-    - !type:BiomeDummyLayer
-      id: Loot
+#BF14    - !type:BiomeEntityLayer
+#BF14      allowedTiles:
+#BF14      - FloorSnow
+#BF14      - FloorIce
+#BF14      threshold: 0.95
+#BF14      noise:
+#BF14        seed: 3
+#BF14        noiseType: OpenSimplex2
+#BF14        frequency: 0.003
+#BF14        lacunarity: 1.50
+#BF14        fractalType: Ridged
+#BF14        octaves: 1
+#BF14      entities:
+#BF14      - FloorLiquidPlasmaEntity
+#BF14    - !type:BiomeDummyLayer
+#BF14      id: Loot
     - !type:BiomeTileLayer
       threshold: -0.7
       tile: FloorSnow

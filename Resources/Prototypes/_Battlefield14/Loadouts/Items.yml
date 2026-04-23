@@ -55,8 +55,7 @@
 - type: loadout
   id: LoadoutMiscItemsPouchFlares
   equipment:
-    leftarmband:
-    - PouchFlaresFilled
+    leftarmband: PouchFlaresFilled
 
 - type: loadout
   id: LoadoutMiscItemsPouchFlaresGlowsticksGreen

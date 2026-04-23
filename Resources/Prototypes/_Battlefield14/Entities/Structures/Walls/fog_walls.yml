@@ -26,6 +26,15 @@
     lifetime: 420
 
 - type: entity
+  parent: RMCFogWallPermanent
+  id: BF14FogWall10
+  description: It looks way too dangerous to traverse. Best wait until it has cleared up.
+  suffix: 10 minutes
+  components:
+  - type: TimedDespawn
+    lifetime: 600
+
+- type: entity
   id: BF14FogSpawner2
   parent: MarkerBase
   name: fog blocker
@@ -71,4 +80,20 @@
   - type: RandomSpawner
     prototypes:
     - BF14FogWall7
+    chance: 1
+
+- type: entity
+  id: BF14FogSpawner10
+  parent: MarkerBase
+  name: fog blocker
+  suffix: 10 minutes
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _RMC14/Effects/fog.rsi
+        state: smoke
+  - type: RandomSpawner
+    prototypes:
+    - BF14FogWall10
     chance: 1

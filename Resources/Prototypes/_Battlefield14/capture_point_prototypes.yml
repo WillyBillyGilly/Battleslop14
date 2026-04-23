@@ -47,17 +47,27 @@
   - type: POICapture
     poiName: "Control Point Alpha"
     timeToCapture: 60 # 1 minute to capture
-    gracePeriod: 600 # 10 minutes until open
+    gracePeriod: 0
     doAfterDelay: 3
     controllingFaction: null
     isBeingCaptured: false
     capturingFaction: null
     currentCaptureProgress: 0
 
+- type: entity
+  parent: BaseCapturePoint
+  id: BaseCapturePointGracePeriod600
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: POICapture
+    poiName: "Control Point Alpha"
+    gracePeriod: 600 # 10 minutes until open
+
 # Specific Control points for map locations
 - type: entity
   id: CapturePointEngineering
-  parent: BaseCapturePoint
+  parent: BaseCapturePointGracePeriod600
   name: engineering control point
   suffix: 120s / 2m
   components:
@@ -70,7 +80,7 @@
 
 - type: entity
   id: CapturePointMedical
-  parent: BaseCapturePoint
+  parent: BaseCapturePointGracePeriod600
   name: medical control point
   suffix: 180s / 3m
   components:
@@ -83,7 +93,7 @@
 
 - type: entity
   id: CapturePointBridge
-  parent: BaseCapturePoint
+  parent: BaseCapturePointGracePeriod600
   name: bridge control point
   suffix: 180s / 3m
   components:
@@ -104,7 +114,7 @@
 
 - type: entity
   id: CapturePointSecurity
-  parent: BaseCapturePoint
+  parent: BaseCapturePointGracePeriod600
   name: security control point
   suffix: 180s / 3m
   components:
@@ -117,7 +127,7 @@
 
 - type: entity
   id: CapturePointCargo
-  parent: BaseCapturePoint
+  parent: BaseCapturePointGracePeriod600
   name: cargo control point
   suffix: 120s / 2m
   components:
@@ -130,7 +140,7 @@
 
 - type: entity
   id: CapturePointAtmospherics
-  parent: BaseCapturePoint
+  parent: BaseCapturePointGracePeriod600
   name: atmospherics control point
   suffix: 120s / 2m
   components:
@@ -143,7 +153,7 @@
 
 - type: entity
   id: CapturePointResearch
-  parent: BaseCapturePoint
+  parent: BaseCapturePointGracePeriod600
   name: research control point
   suffix: 120s / 2m
   components:

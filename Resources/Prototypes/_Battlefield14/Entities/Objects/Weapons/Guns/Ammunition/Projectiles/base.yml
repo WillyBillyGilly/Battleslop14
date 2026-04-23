@@ -2,7 +2,6 @@
   id: BaseBulletPistol
   name: bullet
   parent: BaseBullet
-  categories: [ HideSpawnMenu ]
   abstract: true
   components:
   - type: Sprite
@@ -22,7 +21,6 @@
   id: BaseBulletPDW
   name: bullet
   parent: BaseBullet
-  categories: [ HideSpawnMenu ]
   abstract: true
   components:
   - type: Sprite
@@ -44,7 +42,6 @@
   id: BaseBulletIntermediate
   name: bullet
   parent: BaseBullet
-  categories: [ HideSpawnMenu ]
   abstract: true
   components:
   - type: Sprite
@@ -55,6 +52,7 @@
     damage:
       types:
         Piercing: 25
+    armorPenetration: 0.1
   - type: StaminaDamageOnCollide
     damage: 7 # ~15 hits to stun
   - type: ArmorPiercing
@@ -64,7 +62,6 @@
   id: BaseBulletRifle
   name: bullet
   parent: BaseBullet
-  categories: [ HideSpawnMenu ]
   abstract: true
   components:
   - type: Sprite
@@ -74,7 +71,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 25
+        Piercing: 30
   - type: StaminaDamageOnCollide
     damage: 8 # ~13 hits to stun
   - type: ArmorPiercing
