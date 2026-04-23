@@ -19,6 +19,23 @@
       - CrateSecgearNATOFilledAT4
     chance: 1
 
+- type: entity
+  parent: MarkerBase
+  id: RandomWeaponNATOUSShotgun
+  name: random NATO US shotgun crate
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/SMAW.rsi
+        state: icon
+  - type: RandomSpawner
+    offset: 0
+    prototypes:
+      - CrateSecgearNATOFilledM870
+      - CrateSecgearNATOFilledM590
+    chance: 1
+
 ## PACT
 # RU
 
@@ -55,4 +72,21 @@
       - CrateSecgearPACTFilledRPG7
       - CrateSecgearPACTFilledRPG26Thermobaric
       - CrateSecgearPACTFilledRPG30
+    chance: 1
+
+- type: entity
+  parent: MarkerBase
+  id: RandomWeaponPACTRUShotgun
+  name: random PACT RU shotgun crate
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/SV98.rsi
+        state: icon
+  - type: RandomSpawner
+    offset: 0
+    prototypes:
+      - CrateSecgearPACTFilledKS23M
+      - CrateSecgearPACTFilledKSK
     chance: 1

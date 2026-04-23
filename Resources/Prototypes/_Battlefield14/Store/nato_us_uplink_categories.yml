@@ -168,7 +168,7 @@
   productEntity: CrateSecgearNATOFilledM590
   icon: { sprite: _Mono/Objects/Weapons/Guns/Shotguns/Helepolis.rsi, state: icon }
   cost:
-    NATORequisition: 18 # 3 minutes
+    NATORequisition: 8 # 1 minute 20 seconds
   categories:
     - UplinkNATOUSWeapons
   conditions:

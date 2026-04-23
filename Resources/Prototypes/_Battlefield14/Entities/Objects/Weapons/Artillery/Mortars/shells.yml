@@ -21,7 +21,6 @@
     delayPerTile: 0.15
     fireSound: /Audio/_VXS14/Weapons/Guns/Artillery/fire1.ogg
     preExplosionSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarflyby.ogg
-    insertSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarload.ogg
     explosionEntity: ArtilleryMarkerM252HEFrag
     useDirectExplosion: false
   - type: Explosive
@@ -50,7 +49,6 @@
     delayPerTile: 0.12
     fireSound: /Audio/_VXS14/Weapons/Guns/Artillery/fire1.ogg
     preExplosionSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarflyby.ogg
-    insertSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarload.ogg
     explosionEntity: ArtilleryMarkerM252Smoke
     useDirectExplosion: false # Allows smoke to work
   - type: Explosive
@@ -121,7 +119,6 @@
     delayPerTile: 0.15
     fireSound: /Audio/_VXS14/Weapons/Guns/Artillery/fire1.ogg
     preExplosionSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarflyby.ogg
-    insertSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarload.ogg
     explosionEntity: ArtilleryMarker2B14HEFrag
     useDirectExplosion: false
   - type: Explosive
@@ -164,7 +161,7 @@
     delayPerTile: 0.12
     fireSound: /Audio/_VXS14/Weapons/Guns/Artillery/fire1.ogg
     preExplosionSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarflyby.ogg
-    insertSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarload.ogg
+    insertSound: null # BF14/Audio/_VXS14/Weapons/Guns/Artillery/mortarload.ogg put this on the mortar instead, in the item slot
     explosionEntity: ArtilleryMarker2B14Smoke
     useDirectExplosion: false # Allows smoke to work
   - type: Explosive

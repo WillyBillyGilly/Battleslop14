@@ -29,6 +29,7 @@
         - GlassBeaker # BF14
         - Tourniquet # BF14
         - Packet # BF14
+        - GasTank # BF14
       components:
         - Hypospray
         - Injector

@@ -279,10 +279,6 @@
     maxAngle: 30
     angleIncrease: 1
     projectileSpeed: 40 # Shorter barrel
-  - type: CursorOffsetRequiresWield
-  - type: EyeCursorOffset
-    maxOffset: 5
-    pvsIncrease: 0.25
 
 - type: entity
   name: M4A1 Carbine (ACOG)
@@ -308,6 +304,10 @@
     maxAngle: 30
     angleIncrease: 1
     projectileSpeed: 40 # Shorter barrel
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 5
+    pvsIncrease: 0.25
 
 - type: entity
   name: M4A1 Carbine SUPP.

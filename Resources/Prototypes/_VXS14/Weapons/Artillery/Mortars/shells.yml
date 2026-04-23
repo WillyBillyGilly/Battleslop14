@@ -15,7 +15,7 @@
     delayPerTile: 0.15
     fireSound: /Audio/_VXS14/Weapons/Guns/Artillery/fire1.ogg
     preExplosionSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarflyby.ogg
-    insertSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarload.ogg
+    insertSound: /Audio/_Battlefield14/null.ogg # BF14 /Audio/_VXS14/Weapons/Guns/Artillery/mortarload.ogg put this on the mortar instead, in the item slot | insertSound: null didn't work btw
   - type: DamageOnLand
     damage:
       types:
