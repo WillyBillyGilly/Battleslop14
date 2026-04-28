@@ -76,3 +76,9 @@
   id: LoadoutMiscItemsGasMaskPouch
   equipment:
     leftarmband: ClothingArmbandGasMaskPouch
+
+- type: loadout
+  id: LoadoutMiscItemsBinoculars
+  storage:
+    back:
+    - Binoculars
