@@ -160,14 +160,15 @@
   maxLimit: 1
   loadouts:
   - LoadoutMiscItemsIFFFlashcardNATO
-  - LoadoutMiscItemsMREFlask
-  - LoadoutMiscItemsMonsterWhite
   - LoadoutMiscItemsEntrenchingTool
+  - LoadoutMiscItemsBinoculars
+  - LoadoutMiscItemsMonsterWhite
   - LoadoutMiscItemsHandheldStationMapUnpowered
-  - LoadoutMiscItemsBible
   - LoadoutMiscItemsPouchFlaresGlowsticksBlue
-  - LoadoutMiscItemsCalculator
   - LoadoutMiscItemsGasMaskPouch
+  - LoadoutMiscItemsBible
+  - LoadoutMiscItemsCalculator
+  - LoadoutMiscItemsMREFlask
 
 - type: loadoutGroup
   id: BF_MiscItemsPACT
@@ -176,14 +177,15 @@
   maxLimit: 1
   loadouts:
   - LoadoutMiscItemsIFFFlashcardPACT
-  - LoadoutMiscItemsMREFlask
-  - LoadoutMiscItemsMonsterWhite
   - LoadoutMiscItemsEntrenchingTool
+  - LoadoutMiscItemsBinoculars
+  - LoadoutMiscItemsMonsterWhite
   - LoadoutMiscItemsHandheldStationMapUnpowered
-  - LoadoutMiscItemsBible
   - LoadoutMiscItemsPouchFlaresGlowsticksRed
-  - LoadoutMiscItemsCalculator
   - LoadoutMiscItemsGasMaskPouch
+  - LoadoutMiscItemsBible
+  - LoadoutMiscItemsCalculator
+  - LoadoutMiscItemsMREFlask
 
 - type: loadoutGroup
   id: BF_MiscItemsIND
@@ -192,13 +194,13 @@
   maxLimit: 1
   loadouts:
   - LoadoutMiscItemsIFFFlashcardIND
-  - LoadoutMiscItemsMREFlask
+  - LoadoutMiscItemsEntrenchingTool
   - LoadoutMiscItemsMonsterWhite
   - LoadoutMiscItemsHandheldStationMapUnpowered
-  - LoadoutMiscItemsBible
   - LoadoutMiscItemsPouchFlaresGlowsticksGreen
+  - LoadoutMiscItemsBible
   - LoadoutMiscItemsCalculator
-  - LoadoutMiscItemsGasMaskPouch
+  - LoadoutMiscItemsMREFlask
 
 # SIDEARMS
 

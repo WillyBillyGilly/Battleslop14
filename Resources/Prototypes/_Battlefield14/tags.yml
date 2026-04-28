@@ -104,6 +104,9 @@
   id: MagazineRifleM14
 
 - type: Tag
+  id: MagazineSniperM40A5
+
+- type: Tag
   id: MagazineBeltBoxM249
 
 - type: Tag

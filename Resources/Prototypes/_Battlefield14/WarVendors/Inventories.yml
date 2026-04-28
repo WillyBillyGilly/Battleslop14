@@ -4,6 +4,7 @@
     EVAKitCombatUSMC: 50
     WeaponRifleUSM16A4: 50
     WeaponRifleUSM4: 5
+    WeaponSniperUSM40A1: 1
     WeaponSubmachinegunUSMP5: 5
     WeaponPistolM9: 2
     MagazinePistolM9: 10
@@ -37,6 +38,8 @@
     BoxMagazineMP5: 5
     MagazineBox9x19mmBig: 5
     ShellBoxBF12GaugeBuckshot: 10
+    MagazineBox762x51Big: 1
+    MagazineBox762x51: 5
     BoxFlare: 4
     CrayonBox: 1
 
@@ -103,6 +106,8 @@
     ClothingOuterArmorPlateCarrierBlack: 5 # FREE PLATES
     ClothingHeadHelmetSoftsuitVKS: 50
     ClothingOuterSoftsuitVKS: 50
+    WeaponSniperRUSVDSObrez: 1
+    MagazineSniperSVDS: 3
 
 - type: vendingMachineInventory
   id: PACTVDVAmmoInventory

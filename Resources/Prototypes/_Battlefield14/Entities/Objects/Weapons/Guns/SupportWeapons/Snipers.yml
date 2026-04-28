@@ -199,7 +199,7 @@
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/SV98.rsi
-  - type: Gun # TODO make this function like goobstation lever action
+  - type: Gun
     fireRate: 0.5
     projectileSpeed: 60 # it's a sniper
     damageModifier: 1.5
@@ -254,6 +254,119 @@
   - type: UseDelay
     delay: 0.5
 
+- type: entity
+  name: M40A1
+  parent: [BaseWeaponSniper, BaseGunWieldable]
+  id: WeaponSniperUSM40A1
+  description: A modified civilian hunting rifle, equipped with high specifications for military or police (or maybe military police) snipers.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/M40.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/M40.rsi
+  - type: GunRequiresWield
+  - type: Item
+    shape:
+    - 0,0,5,2
+  - type: Gun
+    fireRate: 1
+    projectileSpeed: 55 # it's a sniper
+    damageModifier: 2.5
+    soundGunshot:
+      path: /Audio/_Battlefield14/Weapons/Guns/misc/lever_fire.ogg
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+  - type: BallisticAmmoProvider
+    capacity: 5
+    proto: BF_CartridgeRifle762x51
+    whitelist:
+      tags:
+      - BF_CartridgeRifle762x51
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+#  - type: ChamberMagazineAmmoProvider # doesn't work with BallisticAmmoProvider :(
+#    autoCycle: false
+#    canRack: false
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 10
+    pvsIncrease: 0.8
+  - type: Appearance
+  - type: StaticPrice
+    price: 3000
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _Battlefield14/Interface/MousePointer/optics.rsi
+      state: acog
+
+- type: entity
+  name: M40A5
+  parent: [BaseWeaponRifle, BaseGunWieldable]
+  id: WeaponSniperUSM40A5
+  description: A modified civilian hunting rifle, equipped with high specifications for military or police (or maybe military police) snipers.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/M40.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/M40.rsi
+  - type: GunRequiresWield
+  - type: Gun
+    fireRate: 0.5
+    projectileSpeed: 55 # it's a sniper
+    damageModifier: 2.5
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/dmr.ogg
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineSniperM40A5
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineSniperM40A5
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle762x51
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle762x51
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: ChamberMagazineAmmoProvider
+    autoCycle: false
+    canRack: false
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 10
+    pvsIncrease: 0.8
+  - type: Appearance
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _Battlefield14/Interface/MousePointer/optics.rsi
+      state: acog
+
 # RU
 
 - type: entity
@@ -275,7 +388,7 @@
   - type: Item
     shape:
     - 0,0,5,2
-  - type: Gun # TODO make this function like goobstation lever action
+  - type: Gun
     fireRate: 0.5
     projectileSpeed: 55 # it's a sniper
     damageModifier: 2.5
@@ -405,3 +518,71 @@
     rsi:
       sprite: _Battlefield14/Interface/MousePointer/optics.rsi
       state: svd
+
+- type: entity
+  name: SVDS obrez
+  parent: [BaseWeaponRifle, BaseGunWieldable]
+  id: WeaponSniperRUSVDSObrez
+  description: What have you done to her?
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/SVDSobrez.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/SVDSobrez.rsi
+    slots:
+    - Back
+    - suitStorage
+    - SUITSTORAGE2
+    clothingVisuals:
+      suitstorage2:
+      - state: equipped-BACKPACK
+  - type: Item
+    size: Large
+  - type: GunWieldBonus
+    minAngle: -15
+    maxAngle: -30
+  - type: Gun
+    fireRate: 3
+    minAngle: 20
+    maxAngle: 60
+    angleIncrease: 5
+    angleDecay: 15
+    projectileSpeed: 40
+    damageModifier: 1.5
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/dmr.ogg
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineSniperSVDS
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineSniperSVDS
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle762x54r
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle762x54r
+#  - type: ContainerContainer
+#    containers:
+#      gun_magazine: !type:ContainerSlot
+#      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
