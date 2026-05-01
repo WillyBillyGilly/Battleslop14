@@ -23,7 +23,23 @@
   productEntity: MagazineBox545x39
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/intermediate_steel.rsi, state: 545-nameplate }
   cost:
-    PACTRequisition: 1 # 10 seconds
+    PACTRequisition: 2 # 20 seconds
+  categories:
+    - UplinkPACTRUAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkPACTAmmoBox762Big
+  name: uplink-PACT-ammo-box-762-big-name
+  description: uplink-PACT-ammo-box-762-big-desc
+  productEntity: MagazineBox762x39Big
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/intermediate.rsi, state: 762-nameplate }
+  cost:
+    PACTRequisition: 6 # 1 minutes
   categories:
     - UplinkPACTRUAmmo
   conditions:
@@ -34,12 +50,44 @@
 
 - type: listing
   id: UplinkPACTAmmoBox762
-  name: uplink-PACT-ammo-box-762-big-name
-  description: uplink-PACT-ammo-box-762-big-desc
-  productEntity: MagazineBox762x39Big
+  name: uplink-PACT-ammo-box-762-name
+  description: uplink-PACT-ammo-box-762-desc
+  productEntity: MagazineBox762x39
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/intermediate.rsi, state: 762-nameplate }
   cost:
+    PACTRequisition: 2 # 20 seconds
+  categories:
+    - UplinkPACTRUAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkPACTAmmoBox762x54rBig
+  name: uplink-PACT-ammo-box-762x54r-big-name
+  description: uplink-PACT-ammo-box-762x54r-big-desc
+  productEntity: MagazineBox762x54rBig
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/7.62x54mmR.rsi, state: icon-nameplate }
+  cost:
     PACTRequisition: 6 # 1 minutes
+  categories:
+    - UplinkPACTRUAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkPACTAmmoBox762x54r
+  name: uplink-PACT-ammo-box-762x54r-name
+  description: uplink-PACT-ammo-box-762x54r-desc
+  productEntity: MagazineBox762x54r
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/7.62x54mmR.rsi, state: icon-nameplate }
+  cost:
+    PACTRequisition: 2 # 20 seconds
   categories:
     - UplinkPACTRUAmmo
   conditions:

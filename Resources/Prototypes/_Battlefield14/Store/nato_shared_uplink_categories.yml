@@ -23,7 +23,7 @@
   productEntity: MagazineBox556x45
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/intermediate.rsi, state: 556-nameplate }
   cost:
-    NATORequisition: 1 # 10 seconds
+    NATORequisition: 2 # 20 seconds
   categories:
     - UplinkNATOUSAmmo
   conditions:
