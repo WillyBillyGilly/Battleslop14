@@ -7,8 +7,17 @@ uplink-PACT-ammo-box-545-desc = Contains 60 loose 5.45x39mm rounds.
 uplink-PACT-ammo-box-545-big-name = Bulk ammo box (5.45x39mm)
 uplink-PACT-ammo-box-545-big-desc = Contains 200 loose 5.45x39mm rounds.
 
+uplink-PACT-ammo-box-762-name = Ammo pack (7.62x39mm)
+uplink-PACT-ammo-box-762-desc = Contains 60 loose 7.62x39mm rounds.
+
 uplink-PACT-ammo-box-762-big-name = Bulk ammo box (7.62x39mm)
 uplink-PACT-ammo-box-762-big-desc = Contains 200 loose 7.62x39mm rounds.
+
+uplink-PACT-ammo-box-762x54r-name = Ammo pack (7.62x54mmR)
+uplink-PACT-ammo-box-762x54r-desc = Contains 30 loose 7.62x54mmR rounds.
+
+uplink-PACT-ammo-box-762x54r-big-name = Bulk ammo box (7.62x54mmR)
+uplink-PACT-ammo-box-762x54r-big-desc = Contains 175 loose 7.62x54mmR rounds.
 
 uplink-PACT-ammo-box-9mm-big-name = Bulk ammo box (9x19mm)
 uplink-PACT-ammo-box-9mm-big-desc = Contains 300 loose 9x19mm rounds.

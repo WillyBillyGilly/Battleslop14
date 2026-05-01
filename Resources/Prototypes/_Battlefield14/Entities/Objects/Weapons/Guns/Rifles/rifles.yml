@@ -483,7 +483,7 @@
   name: SCAR-L
   parent: WeaponRifleUSM16A3
   id: WeaponRifleBESCARL
-  description: The classic American slugthrower.
+  description: Meant to replace the M4A1 in US service, but lost the bid and was overshadowed by the SCAR-H. Still sees service in belgium.
   components:
   - type: Item # Controls inhand sprites
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/SCAR.rsi
@@ -539,7 +539,7 @@
   name: SCAR-H
   parent: BaseWeaponRifle
   id: WeaponRifleBESCARH
-  description: The classic American slugthrower.
+  description: The big brother of the SCAR-L, not entirely replacing the M4A1 but select units can choose to take a few.
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/SCAR.rsi
@@ -553,7 +553,7 @@
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/SCAR.rsi
   - type: GunWieldBonus
     minAngle: -14
-    maxAngle: -20
+    maxAngle: -18
   - type: Gun
     minAngle: 16
     maxAngle: 30

@@ -15,6 +15,7 @@
     sprite: _HaloSSE/Objects/Weapons/UNSC/Rifles/MA5B.rsi
   - type: Wieldable
     unwieldOnUse: false
+  - type: AmmoCounter
   - type: GunWieldBonus
     minAngle: -14
     maxAngle: -16
@@ -22,13 +23,13 @@
     minAngle: 16
     maxAngle: 32
     angleIncrease: 1
-    projectileSpeed: 40
+    projectileSpeed: 45
     availableModes:
     - SemiAuto
     - Burst
     selectedMode: Burst
     shotsPerBurst: 5
-    burstCooldown: 0.1
+    burstCooldown: 0.2
     burstFireRate: 7
     fireRate: 7
     soundGunshot:
