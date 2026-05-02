@@ -66,6 +66,69 @@
 
 - type: entity
   parent: BaseItem
+  id: MagazineBeltBoxMG3Short
+  name: "MG-3 drum (7.62x51)"
+  description: A big circular drum that has a belt in it, for 7.62x51 millimeter ammo.
+  components:
+  - type: Tag
+    tags:
+      - MagazineBeltBoxMG3
+  - type: Item
+    size: Normal
+#    shape:
+#      - 0,0,2,1 # 3 wide
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgeRifle762x51
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgeRifle762x51
+    capacity: 50
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/BeltBoxes/MG3Short.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: MagazineBeltBoxMG3Short
+  id: MagazineBeltBoxMG3
+  name: "MG-3 belt box (7.62x51)"
+  description: A big box that has a belt in it, for 7.62x51 millimeter ammo.
+  components:
+  - type: Item
+    size: Normal
+    shape:
+      - 0,0,2,1 # 3 wide
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgeRifle762x51
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgeRifle762x51
+    capacity: 100
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/BeltBoxes/M249.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: BaseItem
   id: MagazineBeltBoxPKM
   name: "PKM belt box (7.62x54mmR)"
   description: A big box that has a belt in it, for 7.62x54 millimeter rimmed ammo.
