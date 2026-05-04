@@ -62,6 +62,7 @@
     gloves: ClothingHandsGlovesCombat
     back: ClothingBackpackRucksackTan
     suitstorage: WeaponRifleUSM30MRC
+    suitstorage2: WeaponGrenadeLauncherUSM320
     pocket1: PouchMedkitFilledMarsoc
     pocket2: PouchGrenadesFilledUSMCRifleman
     leftarmband: Tourniquet
@@ -70,7 +71,6 @@
   storage:
     back:
     - BoxMRE
-    - WeaponGrenadeLauncherUSM320
     - BoxMagazine40x46Mixed
     - ArmorPlateMedium
     - ClothingMaskGasM40Green
@@ -95,6 +95,7 @@
     gloves: ClothingHandsGlovesCombat
     back: ClothingBackpackRucksackBlack
     suitstorage: WeaponRifleUSM30MRC
+    suitstorage2: WeaponGrenadeLauncherUSM320
     pocket1: PouchMedkitFilledMarsoc
     pocket2: PouchGrenadesFilledUSMCRifleman
     leftarmband: ClothingArmbandMassScanner
@@ -103,7 +104,6 @@
   storage:
     back:
     - BoxMRE
-    - WeaponGrenadeLauncherUSM320
     - BoxMagazine40x46Mixed
     - ArmorPlateMedium
     - ClothingMaskGasM40Green
