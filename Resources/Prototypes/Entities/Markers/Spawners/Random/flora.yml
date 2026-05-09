@@ -11,10 +11,10 @@
   - type: RandomSpawner
     prototypes:
       - FloraTreeLarge
-      - FloraTreeConifer
-      - FloraTreeSnow
+#BF14      - FloraTreeConifer
+#BF14      - FloraTreeSnow
       - FloraTree
-    chance: 0.95
-    rarePrototypes:
-      - ShadowTree
-    rareChance: 0.05
+#BF14    chance: 0.95
+#BF14    rarePrototypes:
+#BF14      - ShadowTree
+#BF14    rareChance: 0.05

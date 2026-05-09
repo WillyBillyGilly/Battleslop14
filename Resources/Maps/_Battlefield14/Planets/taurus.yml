@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 04/23/2026 08:18:02
-  entityCount: 17566
+  entityCount: 17603
 maps:
 - 3
 grids:
@@ -95035,16 +95035,6 @@ entities:
     - type: Transform
       pos: -61.5,37.5
       parent: 1
-  - uid: 18921
-    components:
-    - type: Transform
-      pos: -76.5,57.5
-      parent: 1
-  - uid: 18922
-    components:
-    - type: Transform
-      pos: -77.5,-12.5
-      parent: 1
   - uid: 18924
     components:
     - type: Transform
@@ -95064,11 +95054,6 @@ entities:
     components:
     - type: Transform
       pos: 43.5,-6.5
-      parent: 1
-  - uid: 18929
-    components:
-    - type: Transform
-      pos: 42.5,19.5
       parent: 1
   - uid: 18930
     components:
@@ -95104,11 +95089,6 @@ entities:
     components:
     - type: Transform
       pos: 26.5,-29.5
-      parent: 1
-  - uid: 18937
-    components:
-    - type: Transform
-      pos: 48.5,-23.5
       parent: 1
   - uid: 18938
     components:
@@ -95165,11 +95145,6 @@ entities:
     - type: Transform
       pos: 39.5,50.5
       parent: 1
-  - uid: 19060
-    components:
-    - type: Transform
-      pos: 6.5,19.5
-      parent: 1
   - uid: 19061
     components:
     - type: Transform
@@ -95179,11 +95154,6 @@ entities:
     components:
     - type: Transform
       pos: -22.5,19.5
-      parent: 1
-  - uid: 19063
-    components:
-    - type: Transform
-      pos: 0.5,25.5
       parent: 1
   - uid: 19064
     components:
@@ -95265,11 +95235,6 @@ entities:
     - type: Transform
       pos: -87.5,-12.5
       parent: 1
-  - uid: 19081
-    components:
-    - type: Transform
-      pos: -1.5,19.5
-      parent: 1
   - uid: 19082
     components:
     - type: Transform
@@ -95290,20 +95255,10 @@ entities:
     - type: Transform
       pos: -61.5,29.5
       parent: 1
-  - uid: 19086
-    components:
-    - type: Transform
-      pos: -73.5,51.5
-      parent: 1
   - uid: 19087
     components:
     - type: Transform
       pos: -20.5,25.5
-      parent: 1
-  - uid: 19088
-    components:
-    - type: Transform
-      pos: 10.5,25.5
       parent: 1
   - uid: 19090
     components:
@@ -95424,6 +95379,236 @@ entities:
     components:
     - type: Transform
       pos: -22.5,30.5
+      parent: 1
+  - uid: 19198
+    components:
+    - type: Transform
+      pos: 20.5,10.5
+      parent: 1
+  - uid: 19199
+    components:
+    - type: Transform
+      pos: 20.5,2.5
+      parent: 1
+  - uid: 19200
+    components:
+    - type: Transform
+      pos: 26.5,2.5
+      parent: 1
+  - uid: 19201
+    components:
+    - type: Transform
+      pos: 26.5,11.5
+      parent: 1
+  - uid: 19202
+    components:
+    - type: Transform
+      pos: -76.5,-6.5
+      parent: 1
+  - uid: 19203
+    components:
+    - type: Transform
+      pos: -76.5,-12.5
+      parent: 1
+  - uid: 19204
+    components:
+    - type: Transform
+      pos: -68.5,-6.5
+      parent: 1
+  - uid: 19205
+    components:
+    - type: Transform
+      pos: -68.5,-12.5
+      parent: 1
+  - uid: 19206
+    components:
+    - type: Transform
+      pos: -9.5,-6.5
+      parent: 1
+  - uid: 19207
+    components:
+    - type: Transform
+      pos: -10.5,8.5
+      parent: 1
+  - uid: 19208
+    components:
+    - type: Transform
+      pos: -19.5,10.5
+      parent: 1
+  - uid: 19210
+    components:
+    - type: Transform
+      pos: -22.5,-0.5
+      parent: 1
+  - uid: 19211
+    components:
+    - type: Transform
+      pos: -6.5,3.5
+      parent: 1
+  - uid: 19212
+    components:
+    - type: Transform
+      pos: 26.5,37.5
+      parent: 1
+  - uid: 19214
+    components:
+    - type: Transform
+      pos: 20.5,31.5
+      parent: 1
+  - uid: 19215
+    components:
+    - type: Transform
+      pos: 26.5,31.5
+      parent: 1
+  - uid: 19216
+    components:
+    - type: Transform
+      pos: 26.5,54.5
+      parent: 1
+  - uid: 19223
+    components:
+    - type: Transform
+      pos: 52.5,19.5
+      parent: 1
+  - uid: 19224
+    components:
+    - type: Transform
+      pos: 46.5,27.5
+      parent: 1
+  - uid: 19225
+    components:
+    - type: Transform
+      pos: 36.5,19.5
+      parent: 1
+  - uid: 19226
+    components:
+    - type: Transform
+      pos: 36.5,25.5
+      parent: 1
+  - uid: 19228
+    components:
+    - type: Transform
+      pos: 44.5,19.5
+      parent: 1
+  - uid: 19229
+    components:
+    - type: Transform
+      pos: 58.5,12.5
+      parent: 1
+  - uid: 19230
+    components:
+    - type: Transform
+      pos: 58.5,-0.5
+      parent: 1
+  - uid: 19231
+    components:
+    - type: Transform
+      pos: 64.5,1.5
+      parent: 1
+  - uid: 19232
+    components:
+    - type: Transform
+      pos: 57.5,-26.5
+      parent: 1
+  - uid: 19233
+    components:
+    - type: Transform
+      pos: 48.5,-26.5
+      parent: 1
+  - uid: 19234
+    components:
+    - type: Transform
+      pos: 48.5,-20.5
+      parent: 1
+  - uid: 19235
+    components:
+    - type: Transform
+      pos: 35.5,-6.5
+      parent: 1
+  - uid: 19236
+    components:
+    - type: Transform
+      pos: 35.5,-12.5
+      parent: 1
+  - uid: 19237
+    components:
+    - type: Transform
+      pos: 52.5,-12.5
+      parent: 1
+  - uid: 19238
+    components:
+    - type: Transform
+      pos: 52.5,-6.5
+      parent: 1
+  - uid: 19239
+    components:
+    - type: Transform
+      pos: 13.5,-6.5
+      parent: 1
+  - uid: 19240
+    components:
+    - type: Transform
+      pos: 13.5,-12.5
+      parent: 1
+  - uid: 19241
+    components:
+    - type: Transform
+      pos: -1.5,-12.5
+      parent: 1
+  - uid: 19242
+    components:
+    - type: Transform
+      pos: -1.5,-6.5
+      parent: 1
+  - uid: 19245
+    components:
+    - type: Transform
+      pos: -1.5,19.5
+      parent: 1
+  - uid: 19246
+    components:
+    - type: Transform
+      pos: -1.5,25.5
+      parent: 1
+  - uid: 19250
+    components:
+    - type: Transform
+      pos: 8.5,25.5
+      parent: 1
+  - uid: 19251
+    components:
+    - type: Transform
+      pos: 8.5,19.5
+      parent: 1
+  - uid: 19252
+    components:
+    - type: Transform
+      pos: -7.5,37.5
+      parent: 1
+  - uid: 19253
+    components:
+    - type: Transform
+      pos: -81.5,51.5
+      parent: 1
+  - uid: 19254
+    components:
+    - type: Transform
+      pos: -81.5,57.5
+      parent: 1
+  - uid: 19255
+    components:
+    - type: Transform
+      pos: -90.5,57.5
+      parent: 1
+  - uid: 19256
+    components:
+    - type: Transform
+      pos: -71.5,57.5
+      parent: 1
+  - uid: 19257
+    components:
+    - type: Transform
+      pos: -71.5,51.5
       parent: 1
 - proto: AirlockNfsdGlassLockedNATOCommon
   entities:
