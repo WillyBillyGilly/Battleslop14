@@ -19,7 +19,7 @@
   mapPath: /Maps/_Battlefield14/Stations/IND/box.yml
   minPlayers: 0
   maxPlayers: 120
-  fallback: true
+#  fallback: true
   randomRotation: false
   maxRandomOffset: 0
   stations:

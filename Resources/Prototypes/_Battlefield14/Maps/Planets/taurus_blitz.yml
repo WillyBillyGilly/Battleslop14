@@ -3,7 +3,7 @@
   mapName: 'Taurus'
   mapPath: /Maps/_Battlefield14/Planets/taurus_blitz.yml
   minPlayers: 20
-  maxPlayers: 40
+  maxPlayers: 50
   randomRotation: false
   maxRandomOffset: 0
   stations:
