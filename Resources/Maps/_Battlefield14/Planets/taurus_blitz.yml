@@ -51,7 +51,7 @@ entities:
   - uid: 1
     components:
     - type: MetaData
-      name: Taurus
+      name: Taurus Blitz
     - type: Transform
       parent: 3
     - type: MapGrid
