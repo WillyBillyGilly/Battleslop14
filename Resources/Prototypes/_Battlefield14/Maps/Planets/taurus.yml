@@ -21,12 +21,12 @@
         - type: StationJobs
           availableJobs:
             NGSquadLeader: [ 3, 3 ]
-            NGRifleman: [ -1, -1 ]
+            NGRifleman: [ 5, 5 ]
             NGAutomaticRifleman: [ 1, 1 ]
             NGMedic: [ 3, 3 ]
             NGRecon: [ 3, 3 ]
             VDVSquadLeader: [ 3, 3 ]
-            VDVRifleman: [ -1, -1 ]
+            VDVRifleman: [ 5, 5 ]
             VDVAutomaticRifleman: [ 3, 3 ]
             VDVMedic: [ 3, 3 ]
             VDVRecon: [ 3, 3 ]
