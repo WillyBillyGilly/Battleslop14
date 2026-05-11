@@ -42,6 +42,12 @@
    path:
      path: /Audio/_Battlefield14/Lobby/devildog.ogg
 
+ - type: jukebox
+   id: thehumanshields
+   name: The Human Shields - The Stringini Bros
+   path:
+     path: /Audio/_Battlefield14/Jukebox/thehumanshields.ogg
+
 # Eastern / east associated songs
 
  - type: jukebox
