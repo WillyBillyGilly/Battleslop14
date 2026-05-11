@@ -58,7 +58,7 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: BF_CartridgeRifle556x45
+        startingItem: BF_CartridgeRifle556x45TracerGreen
         priority: 1
         whitelist:
           tags:

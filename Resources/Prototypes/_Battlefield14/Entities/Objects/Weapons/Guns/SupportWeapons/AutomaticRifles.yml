@@ -101,7 +101,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazineRifleAK74blackdrum
+        startingItem: MagazineRifleAK74blackdrumTracerRed
         insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin_drum.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout_drum.ogg
         priority: 2
@@ -111,7 +111,7 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: BF_CartridgeRifle545x39
+        startingItem: BF_CartridgeRifle545x39TracerRed
         priority: 1
         whitelist:
           tags:

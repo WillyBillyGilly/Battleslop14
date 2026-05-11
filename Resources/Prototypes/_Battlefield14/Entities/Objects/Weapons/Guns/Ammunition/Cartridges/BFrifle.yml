@@ -18,6 +18,14 @@
   - type: SpentAmmoVisuals
 
 - type: entity
+  id: BF_CartridgeRifle556x45TracerGreen
+  name: cartridge (5.56x45mm green tracer)
+  parent: BF_CartridgeRifle556x45
+  components:
+  - type: CartridgeAmmo
+    proto: BulletRifleBF556x45TracerGreen
+
+- type: entity
   id: BF_CartridgeRifle545x39
   name: cartridge (5.45x39mm)
   parent: BaseCartridgeRifle
@@ -35,6 +43,14 @@
       map: ["enum.AmmoVisualLayers.Base"]
   - type: Appearance
   - type: SpentAmmoVisuals
+
+- type: entity
+  id: BF_CartridgeRifle545x39TracerRed
+  name: cartridge (5.45x39mm red tracer)
+  parent: BF_CartridgeRifle545x39
+  components:
+  - type: CartridgeAmmo
+    proto: BulletRifleBF545x39TracerRed
 
 - type: entity
   id: BF_CartridgeRifle762x39

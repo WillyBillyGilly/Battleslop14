@@ -304,6 +304,25 @@
       - state: foregrip
       - state: mag-30-0
         map: ["enum.GunVisualLayers.Mag"]
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleSTANAGTracerGreen
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleSTANAG
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle556x45TracerGreen
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle556x45
   - type: GunWieldBonus
     minAngle: -24
     maxAngle: -27
@@ -954,6 +973,25 @@
       - state: foregrip
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleAK12TracerRed
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleAK74
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle545x39TracerRed
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle545x39
   - type: Gun
     angleIncrease: 1
   - type: CursorOffsetRequiresWield

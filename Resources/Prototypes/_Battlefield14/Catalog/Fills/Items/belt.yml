@@ -10,6 +10,16 @@
         amount: 8
 
 - type: entity
+  id: ClothingBeltMilitaryWebbingUSFilledSTANAGTracerGreen
+  parent: ClothingBeltMilitaryWebbingUS
+  suffix: Filled STANAG, green tracer
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineRifleSTANAGTracerGreen
+        amount: 8
+
+- type: entity
   id: ClothingBeltMilitaryWebbingUSFilledSTANAGShort
   parent: ClothingBeltMilitaryWebbingUS
   suffix: Filled 20 rnd STANAG
@@ -17,6 +27,16 @@
   - type: StorageFill
     contents:
       - id: MagazineRifleSTANAGShort
+        amount: 8
+
+- type: entity
+  id: ClothingBeltMilitaryWebbingUSFilledSTANAGShortTracerGreen
+  parent: ClothingBeltMilitaryWebbingUS
+  suffix: Filled 20 rnd STANAG green tracer
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineRifleSTANAGShortTracerGreen
         amount: 8
 
 - type: entity
@@ -183,6 +203,16 @@
         amount: 8
 
 - type: entity
+  id: ClothingBeltMilitaryWebbingRUFilledAK12TracerRed
+  parent: ClothingBeltMilitaryWebbingRU
+  suffix: Filled AK12 red tracer
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineRifleAK12TracerRed
+        amount: 8
+
+- type: entity
   id: ClothingBeltMilitaryWebbingRUFilledAK74blackdrum
   parent: ClothingBeltMilitaryWebbingRU
   suffix: Filled 75 round drum
@@ -190,6 +220,16 @@
   - type: StorageFill
     contents:
       - id: MagazineRifleAK74blackdrum
+        amount: 4
+
+- type: entity
+  id: ClothingBeltMilitaryWebbingRUFilledAK74blackdrumTracerRed
+  parent: ClothingBeltMilitaryWebbingRU
+  suffix: Filled 75 round drum red tracer
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineRifleAK74blackdrumTracerRed
         amount: 4
 
 - type: entity

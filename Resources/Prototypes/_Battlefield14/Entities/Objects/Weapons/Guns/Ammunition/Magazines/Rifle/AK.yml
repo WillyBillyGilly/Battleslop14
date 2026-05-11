@@ -55,6 +55,18 @@
   - type: Appearance
 
 - type: entity
+  parent: MagazineRifleAK12
+  id: MagazineRifleAK12TracerRed
+  components:
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgeRifle545x39TracerRed
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgeRifle545x39
+    capacity: 30
+
+- type: entity
   parent: MagazineRifleAK74
   id: MagazineRifleAK74blackdrum
   name: "AK-74 pattern 75 round drum magazine (5.45x39)"
@@ -80,6 +92,17 @@
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
 
+- type: entity
+  parent: MagazineRifleAK74blackdrum
+  id: MagazineRifleAK74blackdrumTracerRed
+  components:
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgeRifle545x39TracerRed
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgeRifle545x39
+    capacity: 75
 
 - type: entity
   parent: BaseMagazineRifle
