@@ -46,7 +46,7 @@
   equipment:
     id: USMCSquadLeaderPDA
     ears: ClothingHeadsetAltUS
-    belt: ClothingBeltMilitaryWebbingUSFilledSTANAG
+    belt: ClothingBeltMilitaryWebbingUSFilledSTANAGTracerGreen
     jumpsuit: ClothingUniformJumpsuitCamoUS
     head: ClothingHeadHatHelmetUS
 #    eyes: ClothingEyesGogglesTan
