@@ -1,11 +1,23 @@
 - type: entity
   parent: BookBase
   id: BookLiteralWhos
-  name: "Book of literal who's"
+  name: "book of literal who's"
   description: Who are these people? It's impossible to find anyone in here!
   components:
   - type: Sprite
-    sprite: _Battlefield14/Objects/Misc/books/literalwhos.rsi
+    sprite: _Battlefield14/Objects/Misc/books.rsi
     layers:
-    - state: icon
+    - state: literalwhos
+      scale: 0.5, 0.5
+
+- type: entity
+  parent: BookLiteralWhos
+  id: BookNophono
+  name: shit nophono cares about
+  description: Coincidentally contains everything you care about and nothing I care about
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/books.rsi
+    layers:
+    - state: snca
       scale: 0.5, 0.5

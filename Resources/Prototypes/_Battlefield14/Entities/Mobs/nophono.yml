@@ -1,0 +1,116 @@
+- type: entity
+  name: nophono
+  parent: [ SimpleSpaceMobBase, MobCombat ]
+  id: Nophono
+  description: He cares.
+  components:
+  - type: LanguageKnowledge # Einstein Engines - Languages (all mobs should speak TauCeti unless otherwise specified, to prevent universal.)
+    speaks:
+    - TauCetiBasic
+    understands:
+    - TauCetiBasic
+    - Russian
+    - English
+    - Sign
+    - German
+    - Mexican
+    - Esperanto
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: nophono
+      sprite: _Battlefield14/Mobs/nophono.rsi
+  - type: Physics
+  - type: ComplexInteraction
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.48
+        density: 200
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MovementAlwaysTouching
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 3.5
+    baseSprintSpeed: 5
+    weightlessAcceleration: 2
+    weightlessFriction: 2
+    baseWeightlessModifier: 2
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+#      1000: Critical nophono can't quit
+      3000: Dead
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: nophono
+      Critical:
+        Base: dead
+      Dead:
+        Base: dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      1000: 0.85
+      2000: 0.7
+  - type: PassiveDamage
+    allowedStates:
+    - Alive
+    damageCap: 3000
+    damage:
+      types:
+        Heat: -12
+      groups:
+        Brute: -12
+  - type: Butcherable
+    spawned:
+    - id: BookNophono
+      amount: 1
+  - type: Bloodstream
+    bloodMaxVolume: 3000
+  - type: MeleeWeapon
+    soundHit:
+      collection: Punch
+    damage:
+      types:
+        Asphyxiation: 25
+        Bloodloss: 15
+        Structural: 35
+    animation: WeaponArcFist
+  - type: Puller
+    needsHands: false
+  - type: ActionGrant
+    actions:
+    - ActionBlink
+    - ActionSmiteNoReq
+    - ActionKnock
+  - type: ZombieImmune
+  - type: NightVision
+    activateSound: null
+    deactivateSound: null
+  - type: RadarConsole
+    maxRange: 512
+    followEntity: true
+  - type: ActivatableUI
+    key: enum.RadarConsoleUiKey.Key
+    inHandsOnly: false
+    singleUser: true
+  - type: UserInterface
+    interfaces:
+      enum.RadarConsoleUiKey.Key:
+        type: RadarConsoleBoundUserInterface
+  - type: GhostTakeoverAvailable
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: "nophono"
+    description: "you care"
+    rules: "you're nophono, do whatever the fuck you want"
+    raffle:
+      settings: short
