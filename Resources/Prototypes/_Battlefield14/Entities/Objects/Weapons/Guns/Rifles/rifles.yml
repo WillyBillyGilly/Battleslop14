@@ -499,6 +499,93 @@
     nameSegments: [names_AR15_police]
 
 - type: entity
+  name: M14
+  parent: [BaseWeaponRifle, BaseGunWieldable]
+  id: WeaponRifleUSM14
+  description: The M14 was kindof a flop, it tried to be an infantry rifle, a machinegun, and a sniper all at once. It was meh at the first and decent enough at the third to stick around with national guard or police armouries and some designated marksmen in the proper army.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/M14.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/M14.rsi
+  - type: Item
+    shape:
+    - 0,0,5,2
+  - type: GunWieldBonus
+    minAngle: -20
+    maxAngle: -40
+  - type: Gun
+    fireRate: 5
+    minAngle: 20
+    maxAngle: 60
+    angleIncrease: 4
+    angleDecay: 16
+    projectileSpeed: 50
+    soundGunshot:
+      collection: BF_M14_Gunshots
+      params:
+        volume: -5
+        variation: 0.125
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+      - FullAuto
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_rack.ogg
+      params:
+        volume: -5
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_chforward.ogg
+      params:
+        volume: -5
+    soundBoltOpened:
+      path: /Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_chback.ogg
+      params:
+        volume: -5
+        variation: 0.125
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleM14
+        insertSound:
+          path:  /Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_magin.ogg
+          params:
+            volume: -6
+        ejectSound:
+          path: /Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_magout.ogg
+          params:
+            volume: -6
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleM14
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle762x51
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle762x51
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+
+# Belgium
+
+- type: entity
   name: SCAR-L
   parent: WeaponRifleUSM16A3
   id: WeaponRifleBESCARL
@@ -636,6 +723,8 @@
     rsi:
       sprite: _Battlefield14/Interface/MousePointer/optics.rsi
       state: eotech
+
+# Germany
 
 - type: entity
   name: G3A3
