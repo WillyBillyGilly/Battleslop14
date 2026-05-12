@@ -5,17 +5,17 @@
   categories: [ HideSpawnMenu ]
 
 - type: entity
-  id: BulletRifleBF556x45TracerGreen
+  id: BulletRifleBF556x45TracerRed
   name: bullet (5.56x45)
   parent: BaseBulletIntermediate
   categories: [ HideSpawnMenu ]
   components:
   - type: PointLight
     radius: 2
-    color: green
+    color: red
     energy: 1.6
   - type: Tracer
-    color: lime
+    color: red
     length: 3
 
 - type: entity
@@ -25,17 +25,17 @@
   categories: [ HideSpawnMenu ]
 
 - type: entity
-  id: BulletRifleBF545x39TracerRed
+  id: BulletRifleBF545x39TracerGreen
   name: bullet (5.45x39)
   parent: BaseBulletIntermediate
   categories: [ HideSpawnMenu ]
   components:
   - type: PointLight
     radius: 2
-    color: red
+    color: green
     energy: 1.6
   - type: Tracer
-    color: red
+    color: lime
     length: 3
 
 - type: entity

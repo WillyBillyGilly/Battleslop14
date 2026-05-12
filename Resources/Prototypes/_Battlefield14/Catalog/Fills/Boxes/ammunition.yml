@@ -18,6 +18,16 @@
         amount: 8
 
 - type: entity
+  name: box of STANAG tracer magazines
+  parent: BoxMagazineSTANAG
+  id: BoxMagazineSTANAGTracerRed
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineRifleSTANAGTracerRed
+        amount: 8
+
+- type: entity
   name: box of 20 round STANAG magazines
   parent: BoxMagazine
   id: BoxMagazineSTANAGShort
@@ -29,6 +39,16 @@
   - type: StorageFill
     contents:
       - id: MagazineRifleSTANAGShort
+        amount: 8
+
+- type: entity
+  name: box of 20 round STANAG tracer magazines
+  parent: BoxMagazineSTANAGShort
+  id: BoxMagazineSTANAGShortTracerRed
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineRifleSTANAGShortTracerRed
         amount: 8
 
 - type: entity
@@ -139,7 +159,7 @@
 
 # RU
 - type: entity
-  name: box of 5.45x39mm AK-74 magazines
+  name: box of AK-74 magazines
   parent: BoxMagazine
   id: BoxMagazineAK74
   description: A box full of 5.45x39mm '74 pattern magazines.
@@ -150,7 +170,7 @@
         amount: 8
 
 - type: entity
-  name: box of 5.45x39mm AK-12 magazines
+  name: box of AK-12 magazines
   parent: BoxMagazine
   id: BoxMagazineAK12
   description: A box full of 5.45x39mm '74 pattern magazines.
@@ -161,7 +181,17 @@
         amount: 8
 
 - type: entity
-  name: box of 7.62x39mm AKM magazines
+  name: box of AK-12 tracer magazines
+  parent: BoxMagazineAK12
+  id: BoxMagazineAK12TracerGreen
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineRifleAK12TracerGreen
+        amount: 8
+
+- type: entity
+  name: box of AKM magazines
   parent: BoxMagazine
   id: BoxMagazineAKM
   description: A box full of 7.62x39mm '47 pattern magazines.
@@ -172,7 +202,7 @@
         amount: 8
 
 - type: entity
-  name: box of 7.62x39mm AK-203 magazines
+  name: box of AK-203 magazines
   parent: BoxMagazine
   id: BoxMagazineAK203
   description: A box full of 7.62x39mm '47 pattern magazines.
@@ -183,7 +213,7 @@
         amount: 8
 
 - type: entity
-  name: box of 9x39mm AS-VAL magazines
+  name: box of AS-VAL magazines
   parent: BoxMagazine
   id: BoxMagazineASVAL
   description: A box full of 9x39mm AS-VAL compatible magazines.
@@ -194,7 +224,7 @@
         amount: 8
 
 - type: entity
-  name: box of 9x39mm AS-VAL magazines
+  name: box of AS-VAL magazines
   parent: BoxMagazine
   suffix: Short
   id: BoxMagazineASVALShort
@@ -206,7 +236,7 @@
         amount: 8
 
 - type: entity
-  name: box of 7.62x54mmR SV-98 magazines
+  name: box of SV-98 magazines
   parent: BoxMagazine
   id: BoxMagazineSV98
   description: A box full of 7.62x54mmR SV-98 compatible magazines.
@@ -217,7 +247,7 @@
         amount: 8
 
 - type: entity
-  name: box of 7.62x54mmR SVDS magazines
+  name: box of SVDS magazines
   parent: BoxMagazine
   id: BoxMagazineSVDS
   description: A box full of 7.62x54mmR SVDS compatible magazines.
@@ -228,7 +258,7 @@
         amount: 8
 
 - type: entity
-  name: box of 12 gauge KS-K buckshot magazines
+  name: box of KS-K buckshot magazines
   parent: BoxMagazine
   id: BoxMagazineKSKBuckshot
   description: A box full of 12 gauge KS-K compatible magazines.
@@ -239,7 +269,7 @@
         amount: 8
 
 - type: entity
-  name: box of 12 gauge KS-K slug magazines
+  name: box of KS-K slug magazines
   parent: BoxMagazine
   id: BoxMagazineKSKSlug
   description: A box full of 12 gauge KS-K compatible magazines.

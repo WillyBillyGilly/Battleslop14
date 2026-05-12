@@ -32,7 +32,8 @@
 - type: vendingMachineInventory
   id: NATOUSMCAmmoInventory
   startingInventory:
-    BoxMagazineSTANAG: 5
+    BoxMagazineSTANAG: 3
+    BoxMagazineSTANAGTracerRed: 2
     MagazineBox556x45Big: 2
     MagazineBox556x45: 5
     BoxMagazineMP5: 5
@@ -112,7 +113,8 @@
 - type: vendingMachineInventory
   id: PACTVDVAmmoInventory
   startingInventory:
-    BoxMagazineAK12: 2
+    BoxMagazineAK12: 1
+    BoxMagazineAK12TracerGreen: 1
     BoxMagazineAK74: 3
     BoxMagazineVityaz: 5
     MagazineBox545x39Big: 2
