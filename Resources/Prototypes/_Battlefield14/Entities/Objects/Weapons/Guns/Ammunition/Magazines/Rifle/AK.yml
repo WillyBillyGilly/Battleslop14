@@ -56,10 +56,11 @@
 
 - type: entity
   parent: MagazineRifleAK12
-  id: MagazineRifleAK12TracerRed
+  id: MagazineRifleAK12TracerGreen
+  name: "AK-12 magazine (5.45x39mm green tracer)"
   components:
   - type: BallisticAmmoProvider
-    proto: BF_CartridgeRifle545x39TracerRed
+    proto: BF_CartridgeRifle545x39TracerGreen
     mayTransfer: true
     whitelist:
       tags:
@@ -94,10 +95,11 @@
 
 - type: entity
   parent: MagazineRifleAK74blackdrum
-  id: MagazineRifleAK74blackdrumTracerRed
+  id: MagazineRifleAK74blackdrumTracerGreen
+  name: "AK-74 pattern 75 round drum magazine (5.45x39 green tracer)"
   components:
   - type: BallisticAmmoProvider
-    proto: BF_CartridgeRifle545x39TracerRed
+    proto: BF_CartridgeRifle545x39TracerGreen
     mayTransfer: true
     whitelist:
       tags:

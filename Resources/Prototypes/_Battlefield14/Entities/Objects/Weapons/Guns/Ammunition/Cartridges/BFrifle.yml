@@ -18,12 +18,12 @@
   - type: SpentAmmoVisuals
 
 - type: entity
-  id: BF_CartridgeRifle556x45TracerGreen
-  name: cartridge (5.56x45mm green tracer)
+  id: BF_CartridgeRifle556x45TracerRed
+  name: cartridge (5.56x45mm red tracer)
   parent: BF_CartridgeRifle556x45
   components:
   - type: CartridgeAmmo
-    proto: BulletRifleBF556x45TracerGreen
+    proto: BulletRifleBF556x45TracerRed
 
 - type: entity
   id: BF_CartridgeRifle545x39
@@ -45,12 +45,12 @@
   - type: SpentAmmoVisuals
 
 - type: entity
-  id: BF_CartridgeRifle545x39TracerRed
-  name: cartridge (5.45x39mm red tracer)
+  id: BF_CartridgeRifle545x39TracerGreen
+  name: cartridge (5.45x39mm green tracer)
   parent: BF_CartridgeRifle545x39
   components:
   - type: CartridgeAmmo
-    proto: BulletRifleBF545x39TracerRed
+    proto: BulletRifleBF545x39TracerGreen
 
 - type: entity
   id: BF_CartridgeRifle762x39

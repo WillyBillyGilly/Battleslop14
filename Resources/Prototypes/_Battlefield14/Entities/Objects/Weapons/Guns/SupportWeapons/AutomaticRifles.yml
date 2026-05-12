@@ -26,6 +26,25 @@
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M27-IAR.rsi
   - type: Wieldable
     unwieldOnUse: false
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleSTANAGTracerRed
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleSTANAG
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle556x45TracerRed
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle556x45
   - type: GunWieldBonus
     minAngle: -19
     maxAngle: -35
@@ -101,7 +120,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazineRifleAK74blackdrumTracerRed
+        startingItem: MagazineRifleAK74blackdrumTracerGreen
         insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin_drum.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout_drum.ogg
         priority: 2
@@ -111,7 +130,7 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: BF_CartridgeRifle545x39TracerRed
+        startingItem: BF_CartridgeRifle545x39TracerGreen
         priority: 1
         whitelist:
           tags:

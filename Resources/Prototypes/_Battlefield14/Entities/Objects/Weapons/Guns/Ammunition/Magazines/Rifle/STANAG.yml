@@ -30,12 +30,12 @@
 
 - type: entity
   parent: MagazineRifleSTANAG
-  id: MagazineRifleSTANAGTracerGreen
-  name: "STANAG magazine (5.56x45 green tracer)"
+  id: MagazineRifleSTANAGTracerRed
+  name: "STANAG magazine (5.56x45 red tracer)"
   description: STANdardised AGreement magazine, standard for most NATO weaponry, can fit in platforms like the M16, L85, and the M249 believe it or not.
   components:
   - type: BallisticAmmoProvider
-    proto: BF_CartridgeRifle556x45TracerGreen
+    proto: BF_CartridgeRifle556x45TracerRed
     mayTransfer: true
     whitelist:
       tags:
@@ -64,12 +64,12 @@
 
 - type: entity
   parent: MagazineRifleSTANAGShort
-  id: MagazineRifleSTANAGShortTracerGreen
-  name: "STANAG magazine (5.56x45 green tracer)"
+  id: MagazineRifleSTANAGShortTracerRed
+  name: "STANAG magazine (5.56x45 red tracer)"
   description: STANdardised AGreement magazine, standard for most NATO weaponry, can fit in platforms like the M16, L85, and the M249 believe it or not.
   components:
   - type: BallisticAmmoProvider
-    proto: BF_CartridgeRifle556x45TracerGreen
+    proto: BF_CartridgeRifle556x45TracerRed
     mayTransfer: true
     whitelist:
       tags:
