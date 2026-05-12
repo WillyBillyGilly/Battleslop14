@@ -82,7 +82,7 @@
 
 - type: entity
   name: Mk-14 EBR
-  parent: [BaseWeaponRifle, BaseGunWieldable]
+  parent: WeaponRifleUSM14
   id: WeaponSniperUSM14EBR
   description: The M14 was kindof a flop, it tried to be too many things at once. After it was replaced it had a second life as a designated marksman rifle, even recieving this upgraded chassis.
   components:
@@ -97,9 +97,6 @@
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/M14EBR.rsi
   - type: GunRequiresWield
-  - type: Item
-    shape:
-    - 0,0,5,2
   - type: GunWieldBonus # needed so min angle doesn't go negative
     minAngle: 0
     maxAngle: 0
@@ -118,52 +115,6 @@
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
-  - type: ChamberMagazineAmmoProvider
-    soundRack:
-      path: /Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_rack.ogg
-      params:
-        volume: -5
-    soundBoltClosed:
-      path: /Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_chforward.ogg
-      params:
-        volume: -5
-    soundBoltOpened:
-      path: /Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_chback.ogg
-      params:
-        volume: -5
-        variation: 0.125
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: MagazineRifleM14
-        insertSound:
-          path:  /Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_magin.ogg
-          params:
-            volume: -6
-        ejectSound:
-          path: /Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_magout.ogg
-          params:
-            volume: -6
-        priority: 2
-        whitelist:
-          tags:
-            - MagazineRifleM14
-      gun_chamber:
-        name: Chamber
-        startingItem: BF_CartridgeRifle762x51
-        priority: 1
-        whitelist:
-          tags:
-            - BF_CartridgeRifle762x51
-  - type: ContainerContainer
-    containers:
-      gun_magazine: !type:ContainerSlot
-      gun_chamber: !type:ContainerSlot
-  - type: MagazineVisuals
-    magState: mag
-    steps: 1
-    zeroVisible: true
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
     maxOffset: 10

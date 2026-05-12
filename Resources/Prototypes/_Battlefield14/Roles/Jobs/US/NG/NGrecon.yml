@@ -39,7 +39,7 @@
   equipment:
     id: NGReconPDA
     ears: ClothingHeadsetAltUS
-    belt: ClothingBeltMilitaryWebbingUSFilledSTANAG
+    belt: ClothingBeltMilitaryWebbingUSFilledM14
     jumpsuit: ClothingUniformJumpsuitCamoUSM81Urban
     head: ClothingHeadHatHelmetUSUrban
     helmetattachment: ClothingHelmetAttachmentNVGsBasic # TODO replace with BF14 version
@@ -47,7 +47,7 @@
     outerClothing: ClothingOuterArmorPlateCarrierTan
     shoes: ClothingShoesBootsJackFilled
 #    back: ClothingBackpackRucksackTan
-    suitstorage: WeaponRifleUSM4
+    suitstorage: WeaponRifleUSM14
     pocket1: PouchFirstAidFilled
     pocket2: PouchGrenadesFilledUSMCScout
   storage:

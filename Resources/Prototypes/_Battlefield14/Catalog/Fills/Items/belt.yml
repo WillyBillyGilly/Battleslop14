@@ -110,6 +110,16 @@
       - id: MagazinePistolM9
         amount: 2
 
+- type: entity
+  id: ClothingBeltMilitaryWebbingUSFilledM14
+  parent: ClothingBeltMilitaryWebbingUS
+  suffix: Filled M14
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineRifleM14
+        amount: 8
+
 # MARSOC
 
 - type: entity
