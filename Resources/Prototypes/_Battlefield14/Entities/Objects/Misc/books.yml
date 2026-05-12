@@ -1,0 +1,11 @@
+- type: entity
+  parent: BookBase
+  id: BookLiteralWhos
+  name: "Book of literal who's"
+  description: Who are these people? It's impossible to find anyone in here!
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/books/literalwhos.rsi
+    layers:
+    - state: icon
+      scale: 0.5, 0.5
