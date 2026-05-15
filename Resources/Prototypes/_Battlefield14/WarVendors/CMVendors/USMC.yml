@@ -67,7 +67,7 @@
       - id: CombatKnife
         amount: 10
       - id: JetpackBlackFilled
-        amount: 50
+        amount: 10
       - id: HandHeldMassScanner
         amount: 50
       - id: Crowbar
@@ -85,7 +85,7 @@
 
 - type: entity
   parent: ColMarTechBase
-  id: CMVendNATOUSMCGearVendor
+  id: CMVendNATOUSMCWarVendorGear
   name: USMC gear vendor
   description: Marine-Grade weaponry from a vending machine.
   suffix: ColMarTech
@@ -97,9 +97,6 @@
       map: ["enum.VendingMachineVisualLayers.Base"]
     - state: "off"
       map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
-#      shader: unshaded
-#    - state: panel
-#      map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: CMAutomatedVendor
     sections:
     - name: Identification
@@ -136,8 +133,6 @@
         amount: 2
     - name: Utility
       entries:
-      - id: JetpackBlackFilled
-        amount: 20
       - id: BarbedWire10
         amount: 1
       - id: HandheldStationMapUnpowered
@@ -152,9 +147,58 @@
         amount: 3
       - id: Boombox
         amount: 2
+    - name: EVA
+      entries:
+      - id: JetpackBlackFilled
+        amount: 10
       - id: DoubleEmergencyOxygenTankFilled
         amount: 50
       - id: ClothingHeadHelmetSoftsuitNasa
         amount: 50
       - id: ClothingOuterSoftsuitNASA
         amount: 50
+
+- type: entity
+  parent: ColMarTechBase
+  id: CMVendNATOUSMCWarVendorAmmo
+  name: USMC ammo vendor
+  description: Marine-Grade weaponry from a vending machine.
+  suffix: ColMarTech
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/armoury.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+  - type: CMAutomatedVendor
+    sections:
+    - name: Magazine boxes
+      entries:
+      - id: BoxMagazineSTANAG
+        amount: 3
+      - id: BoxMagazineSTANAGTracerRed
+        amount: 2
+      - id: BoxMagazineMP5
+        amount: 5
+      - id: BoxFlare
+        amount: 4
+    - name: Loose rounds
+      entries:
+      - id: MagazineBox556x45Big
+        amount: 2
+      - id: MagazineBox556x45
+        amount: 5
+      - id: MagazineBox762x51Big
+        amount: 1
+      - id: MagazineBox762x51
+        amount: 15
+      - id: MagazineBox9x19mmBig
+        amount: 5
+      - id: ShellBoxBF12GaugeBuckshot
+        amount: 10
+    - name: Misc
+      entries:
+      - id: CrayonBox
+        amount: 1
