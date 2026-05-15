@@ -1,6 +1,4 @@
 - type: entity
-  # COMMENTED OUT: Missing parent 'BaseStructureUnanchorable'
-  # parent: [BaseStructureUnanchorable, VendingMachine]
   parent: VendingMachine
   id: NATOUSMCWarVendor
   name: USMC FREEDOM war vendor
@@ -13,15 +11,15 @@
     normalState: normal-unshaded
 #  - type: Advertise
 #    pack: WarVendAds
-  - type: SpeakOnUIClosed
-    pack: GenericVendGoodbyes
+#  - type: SpeakOnUIClosed
+#    pack: GenericVendGoodbyes
   - type: Speech
   - type: Sprite
     sprite: _Battlefield14/Structures/armoury.rsi
     layers:
     - state: "off"
       map: ["enum.VendingMachineVisualLayers.Base"]
-    - state: "off"
+    - state: "normal-unshaded"
       map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
       shader: unshaded
     - state: panel
@@ -30,8 +28,6 @@
     mod: 0
 
 - type: entity
-  # COMMENTED OUT: Missing parent 'BaseStructureUnanchorable'
-  # parent: [BaseStructureUnanchorable, VendingMachine]
   parent: VendingMachine
   id: NATOUSMCAmmoVendor
   name: USMC ammo vendor
@@ -44,15 +40,15 @@
     normalState: normal-unshaded
 #  - type: Advertise
 #    pack: WarVendAds
-  - type: SpeakOnUIClosed
-    pack: GenericVendGoodbyes
+#  - type: SpeakOnUIClosed
+#    pack: GenericVendGoodbyes
   - type: Speech
   - type: Sprite
     sprite: _Battlefield14/Structures/armoury.rsi
     layers:
     - state: "off"
       map: ["enum.VendingMachineVisualLayers.Base"]
-    - state: "off"
+    - state: "normal-unshaded"
       map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
       shader: unshaded
     - state: panel
@@ -61,8 +57,6 @@
     mod: 0
 
 - type: entity
-  # COMMENTED OUT: Missing parent 'BaseStructureUnanchorable'
-  # parent: [BaseStructureUnanchorable, VendingMachine]
   parent: VendingMachine
   id: NATOUSMCGearVendor
   name: USMC gear vendor
@@ -75,15 +69,15 @@
     normalState: normal-unshaded
 #  - type: Advertise
 #    pack: WarVendAds
-  - type: SpeakOnUIClosed
-    pack: GenericVendGoodbyes
+#  - type: SpeakOnUIClosed
+#    pack: GenericVendGoodbyes
   - type: Speech
   - type: Sprite
     sprite: _Battlefield14/Structures/armoury.rsi
     layers:
     - state: "off"
       map: ["enum.VendingMachineVisualLayers.Base"]
-    - state: "off"
+    - state: "normal-unshaded"
       map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
       shader: unshaded
     - state: panel
@@ -92,8 +86,6 @@
     mod: 0
 
 - type: entity
-  # COMMENTED OUT: Missing parent 'BaseStructureUnanchorable'
-  # parent: [BaseStructureUnanchorable, VendingMachine]
   parent: VendingMachine
   id: NATOUSMCShipVendor
   name: USMC ship vendor
@@ -106,15 +98,15 @@
     normalState: normal-unshaded
 #  - type: Advertise
 #    pack: WarVendAds
-  - type: SpeakOnUIClosed
-    pack: GenericVendGoodbyes
+#  - type: SpeakOnUIClosed
+#    pack: GenericVendGoodbyes
   - type: Speech
   - type: Sprite
     sprite: _Battlefield14/Structures/armoury.rsi
     layers:
     - state: "off"
       map: ["enum.VendingMachineVisualLayers.Base"]
-    - state: "off"
+    - state: "normal-unshaded"
       map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
       shader: unshaded
     - state: panel
@@ -123,8 +115,6 @@
     mod: 0
 
 - type: entity
-  # COMMENTED OUT: Missing parent 'BaseStructureUnanchorable'
-  # parent: [BaseStructureUnanchorable, VendingMachine]
   parent: VendingMachine
   id: PACTVDVWarVendor
   name: VDV war vendor
@@ -137,15 +127,15 @@
     normalState: normal-unshaded
 #  - type: Advertise
 #    pack: WarVendAds
-  - type: SpeakOnUIClosed
-    pack: GenericVendGoodbyes
+#  - type: SpeakOnUIClosed
+#    pack: GenericVendGoodbyes
   - type: Speech
   - type: Sprite
     sprite: _Battlefield14/Structures/armoury.rsi
     layers:
     - state: "off"
       map: ["enum.VendingMachineVisualLayers.Base"]
-    - state: "off"
+    - state: "normal-unshaded"
       map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
       shader: unshaded
     - state: panel
@@ -154,8 +144,6 @@
     mod: 0
 
 - type: entity
-  # COMMENTED OUT: Missing parent 'BaseStructureUnanchorable'
-  # parent: [BaseStructureUnanchorable, VendingMachine]
   parent: VendingMachine
   id: PACTVDVAmmoVendor
   name: VDV ammo vendor
@@ -168,15 +156,15 @@
     normalState: normal-unshaded
 #  - type: Advertise
 #    pack: WarVendAds
-  - type: SpeakOnUIClosed
-    pack: GenericVendGoodbyes
+#  - type: SpeakOnUIClosed
+#    pack: GenericVendGoodbyes
   - type: Speech
   - type: Sprite
     sprite: _Battlefield14/Structures/armoury.rsi
     layers:
     - state: "off"
       map: ["enum.VendingMachineVisualLayers.Base"]
-    - state: "off"
+    - state: "normal-unshaded"
       map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
       shader: unshaded
     - state: panel
@@ -185,8 +173,6 @@
     mod: 0
 
 - type: entity
-  # COMMENTED OUT: Missing parent 'BaseStructureUnanchorable'
-  # parent: [BaseStructureUnanchorable, VendingMachine]
   parent: VendingMachine
   id: PACTVDVGearVendor
   name: VDV gear vendor
@@ -199,15 +185,15 @@
     normalState: normal-unshaded
 #  - type: Advertise
 #    pack: WarVendAds
-  - type: SpeakOnUIClosed
-    pack: GenericVendGoodbyes
+#  - type: SpeakOnUIClosed
+#    pack: GenericVendGoodbyes
   - type: Speech
   - type: Sprite
     sprite: _Battlefield14/Structures/armoury.rsi
     layers:
     - state: "off"
       map: ["enum.VendingMachineVisualLayers.Base"]
-    - state: "off"
+    - state: "normal-unshaded"
       map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
       shader: unshaded
     - state: panel
@@ -216,8 +202,6 @@
     mod: 0
 
 - type: entity
-  # COMMENTED OUT: Missing parent 'BaseStructureUnanchorable'
-  # parent: [BaseStructureUnanchorable, VendingMachine]
   parent: VendingMachine
   id: PACTVDVShipVendor
   name: VDV ship vendor
@@ -230,15 +214,15 @@
     normalState: normal-unshaded
 #  - type: Advertise
 #    pack: WarVendAds
-  - type: SpeakOnUIClosed
-    pack: GenericVendGoodbyes
+#  - type: SpeakOnUIClosed
+#    pack: GenericVendGoodbyes
   - type: Speech
   - type: Sprite
     sprite: _Battlefield14/Structures/armoury.rsi
     layers:
     - state: "off"
       map: ["enum.VendingMachineVisualLayers.Base"]
-    - state: "off"
+    - state: "normal-unshaded"
       map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
       shader: unshaded
     - state: panel

@@ -1,0 +1,240 @@
+- type: entity
+  parent: ColMarTechBase
+  id: CMVendPACTVDVWarVendor
+  name: VDV war vendor
+  description: Please sir, may I have a little more?
+  suffix: ColMarTech
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/armoury.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "normal-unshaded"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+#      shader: unshaded
+#    - state: panel
+#      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: CMAutomatedVendor
+    sections:
+    - name: Armour
+      choices: { BF14Armour: 1 }
+      entries:
+      - id: EVAKitCombatRU
+        name: voidsuit
+        recommended: true
+#      - id: ClothingOuterArmorPlateCarrierBlack
+#        name: plate carrier
+    - name: Backpack/belt
+      choices: { BF14Storage: 2 }
+      entries:
+      - id: ClothingBackpackRucksackTan
+        replaceSlot: back
+        name: tan rucksack
+      - id: ClothingBackpackRucksackBlack
+        replaceSlot: back
+        name: black rucksack
+        recommended: true
+      - id: ClothingBeltMilitaryWebbingRU
+        replaceSlot: belt
+        name: belt rig
+      - id: ClothingBeltAssault
+        replaceSlot: belt
+        name: assault belt
+      - id: ClothingBeltMedicalEMTFilledBF14Basic
+        replaceSlot: belt
+        name: basic medical belt
+        amount: 4
+    - name: Weapons
+      entries:
+      - id: WeaponRifleRUAK12
+        amount: 50
+      - id: WeaponRifleRUAKS74U
+        amount: 5
+      - id: WeaponSubmachinegunRUVityaz
+        amount: 5
+      - id: WeaponPistolMP443
+        amount: 2
+    - name: Utility
+      entries:
+      - id: RiotBulletShield
+        amount: 3
+      - id: CombatKnife
+        amount: 10
+      - id: JetpackBlackFilled
+        amount: 10
+      - id: HandHeldMassScanner
+        amount: 50
+      - id: Crowbar
+        amount: 50
+    - name: Sustainment
+      entries:
+      - id: BoxMRE
+        amount: 50
+      - id: FoodSnackNutribrick
+        amount: 50
+      - id: DrinkMREFlask
+        amount: 50
+      - id: OxygenTankFilled
+        amount: 50
+    - name: Misc
+      entries:
+      - id: WeaponSniperRUSVDSObrez
+        amount: 1
+      - id: MagazineSniperSVDS
+        amount: 3
+
+- type: entity
+  parent: ColMarTechBase
+  id: CMVendPACTVDVWarVendorGear
+  name: VDV gear vendor
+  description: SLEDGEHAMMERRR.
+  suffix: ColMarTech
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/armoury.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "normal-unshaded"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+  - type: CMAutomatedVendor
+    sections:
+    - name: Identification
+      entries:
+      - id: BoxIFFPACTWhite
+        amount: 10
+      - id: BoxIFFPACTRed
+        amount: 10
+      - id: BoxIFFPACTStGeorge
+        amount: 10
+    - name: Breaching
+      entries:
+      - id: BreachingCharge
+        amount: 10
+      - id: SecBreachingHammer
+        amount: 1
+      - id: BoxChargeFuzeKit
+        amount: 5
+      - id: TM62Flatpack
+        amount: 10
+    - name: Grenades
+      entries:
+      - id: RURGD5Handgrenade
+        amount: 10
+      - id: RUF1Handgrenade
+        amount: 5
+      - id: RGOImpactHandgrenade
+        amount: 5
+      - id: RUZaryaFlashBangHandgrenade
+        amount: 20
+      - id: RURDG2SmokeHandgrenade
+        amount: 20
+    - name: Storage
+      entries:
+      - id: PouchMags
+        amount: 5
+      - id: ClothingArmbandDumpPouchBlack
+        amount: 2
+    - name: Utility
+      entries:
+      - id: BarbedWire10
+        amount: 1
+      - id: HandheldStationMapUnpowered
+        amount: 5
+      - id: Zipties
+        amount: 15
+      - id: Handcuffs
+        amount: 5
+      - id: SyndicateWhistle
+        amount: 3
+      - id: Boombox
+        amount: 2
+    - name: EVA
+      entries:
+      - id: JetpackBlackFilled
+        amount: 10
+      - id: DoubleEmergencyOxygenTankFilled
+        amount: 50
+      - id: ClothingHeadHelmetSoftsuitNasa
+        amount: 50
+      - id: ClothingOuterSoftsuitNASA
+        amount: 50
+
+- type: entity
+  parent: ColMarTechBase
+  id: CMVendPACTVDVWarVendorAmmo
+  name: VDV ammo vendor
+  description: Bang Bang Bang!
+  suffix: ColMarTech
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/armoury.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "normal-unshaded"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+  - type: CMAutomatedVendor
+    sections:
+    - name: Magazine boxes
+      entries:
+      - id: BoxMagazineAK12
+        amount: 1
+      - id: BoxMagazineAK12TracerGreen
+        amount: 1
+      - id: BoxMagazineAK74
+        amount: 3
+      - id: BoxMagazineVityaz
+        amount: 5
+      - id: BoxMagazineASVALShort
+        amount: 5
+      - id: BoxMagazineAKM
+        amount: 2
+      - id: BoxFlare
+        amount: 4
+    - name: Loose rounds
+      entries:
+      - id: MagazineBox556x45Big
+        amount: 2
+      - id: MagazineBox556x45
+        amount: 5
+      - id: MagazineBox762x39Big
+        amount: 2
+      - id: MagazineBox762x39
+        amount: 5
+      - id: MagazineBox9x19mmBig
+        amount: 5
+      - id: ShellBoxBF12GaugeBuckshot
+        amount: 10
+    - name: Misc
+      entries:
+      - id: MagazinePistolMP443
+        amount: 10
+      - id: CrayonBox
+        amount: 1
+
+- type: entity
+  parent: ColMarTechBase
+  id: CMVendPACTVDVWarVendorShips
+  name: VDV ship LPC vendor
+  description: Time to fly this into anti-air defences.
+  suffix: ColMarTech
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/armoury.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "normal-unshaded"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+  - type: CMAutomatedVendor
+    sections:
+    - name: Transports
+      entries:
+      - id: ShipVoucherKTV1
+        amount: 8

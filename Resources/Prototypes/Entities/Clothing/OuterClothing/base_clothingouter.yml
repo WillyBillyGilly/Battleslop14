@@ -197,6 +197,17 @@
   - type: StaticPrice # Frontier
     price: 20 # Frontier
     vendPrice: 1500 # Frontier
+  - type: Reflect # BF14
+    reflectProb: 0.01
+    spread: 360 # 270
+    reflects:
+    - Energy
+    - NonEnergy
+  - type: FootstepModifier # BF14
+    footstepSoundCollection:
+      collection: BF_Footsteps_Voidsuit
+      params:
+        variation: 0.07
 
 - type: entity
   abstract: true
