@@ -17011,28 +17011,28 @@ entities:
     - type: Transform
       pos: 7.4801464,-46.947853
       parent: 1
-- proto: NATOUSMCAmmoVendor
+- proto: CMVendNATOUSMCWarVendorGear
   entities:
   - uid: 196
     components:
     - type: Transform
       pos: 15.5,-12.5
       parent: 1
-- proto: NATOUSMCGearVendor
+- proto: CMVendNATOUSMCWarVendorAmmo
   entities:
   - uid: 198
     components:
     - type: Transform
       pos: 16.5,-12.5
       parent: 1
-- proto: NATOUSMCShipVendor
+- proto: CMVendPACTVDVWarVendorShips
   entities:
   - uid: 195
     components:
     - type: Transform
       pos: 17.5,-12.5
       parent: 1
-- proto: NATOUSMCWarVendor
+- proto: CMVendNATOUSMCWarVendor
   entities:
   - uid: 197
     components:
