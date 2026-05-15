@@ -1,0 +1,14 @@
+- type: soundCollection
+  id: BF_Footsteps_Generic
+  files:
+  - "/Audio/_HaloSSE/Effects/Footsteps/generic_walk.ogg"
+
+- type: soundCollection
+  id: BF_Footsteps_Boots
+  files:
+  - "/Audio/_HaloSSE/Effects/Footsteps/marine_boots.ogg"
+
+- type: soundCollection
+  id: BF_Footsteps_Voidsuit
+  files:
+  - "/Audio/_HaloSSE/Effects/Footsteps/spartan_boots.ogg"
