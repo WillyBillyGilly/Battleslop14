@@ -1,8 +1,8 @@
 - type: entity
   parent: ColMarTechBase
-  id: CMVendNATOUSMCWarVendor
-  name: USMC FREEDOM war vendor
-  description: Marine-Grade weaponry from a vending machine.
+  id: CMVendPACTVDVWarVendor
+  name: VDV war vendor
+  description: Please sir, may I have a little more?
   suffix: ColMarTech
   components:
   - type: Sprite
@@ -20,10 +20,10 @@
     - name: Armour
       choices: { BF14Armour: 1 }
       entries:
-      - id: EVAKitCombatUSMC
+      - id: EVAKitCombatRU
         name: voidsuit
         recommended: true
-#      - id: ClothingOuterArmorPlateCarrierTan
+#      - id: ClothingOuterArmorPlateCarrierBlack
 #        name: plate carrier
     - name: Backpack/belt
       choices: { BF14Storage: 2 }
@@ -31,16 +31,13 @@
       - id: ClothingBackpackRucksackTan
         replaceSlot: back
         name: tan rucksack
-        recommended: true
       - id: ClothingBackpackRucksackBlack
         replaceSlot: back
         name: black rucksack
-      - id: ClothingBackpackMercenary
-        replaceSlot: back
-        name: ALICE backpack
-      - id: ClothingBeltMilitaryWebbingUS
+        recommended: true
+      - id: ClothingBeltMilitaryWebbingRU
         replaceSlot: belt
-        name: ALICE belt rig
+        name: belt rig
       - id: ClothingBeltAssault
         replaceSlot: belt
         name: assault belt
@@ -50,15 +47,13 @@
         amount: 4
     - name: Weapons
       entries:
-      - id: WeaponRifleUSM16A4
+      - id: WeaponRifleRUAK12
         amount: 50
-      - id: WeaponRifleUSM4
+      - id: WeaponRifleRUAKS74U
         amount: 5
-      - id: WeaponSniperUSM40A1
-        amount: 1
-      - id: WeaponSubmachinegunUSMP5
+      - id: WeaponSubmachinegunRUVityaz
         amount: 5
-      - id: WeaponPistolM9
+      - id: WeaponPistolMP443
         amount: 2
     - name: Utility
       entries:
@@ -82,12 +77,18 @@
         amount: 50
       - id: OxygenTankFilled
         amount: 50
+    - name: Misc
+      entries:
+      - id: WeaponSniperRUSVDSObrez
+        amount: 1
+      - id: MagazineSniperSVDS
+        amount: 3
 
 - type: entity
   parent: ColMarTechBase
-  id: CMVendNATOUSMCWarVendorGear
-  name: USMC gear vendor
-  description: Marine-Grade weaponry from a vending machine.
+  id: CMVendPACTVDVWarVendorGear
+  name: VDV gear vendor
+  description: SLEDGEHAMMERRR.
   suffix: ColMarTech
   components:
   - type: Sprite
@@ -101,29 +102,33 @@
     sections:
     - name: Identification
       entries:
-      - id: BoxIFFNATOBlue
+      - id: BoxIFFPACTWhite
         amount: 10
-      - id: BoxIFFNATOGreen
+      - id: BoxIFFPACTRed
         amount: 10
-      - id: BoxIFFNATOYellow
+      - id: BoxIFFPACTStGeorge
         amount: 10
     - name: Breaching
       entries:
       - id: BreachingCharge
         amount: 10
-      - id: FUBAR
+      - id: SecBreachingHammer
         amount: 1
-      - id: RemoteSignallerM57
+      - id: BoxChargeFuzeKit
+        amount: 5
+      - id: TM62Flatpack
         amount: 10
     - name: Grenades
       entries:
-      - id: MK21Handgrenade
-        amount: 15
-      - id: M67Handgrenade
+      - id: RURGD5Handgrenade
+        amount: 10
+      - id: RUF1Handgrenade
         amount: 5
-      - id: USM84FlashBangHandgrenade
+      - id: RGOImpactHandgrenade
+        amount: 5
+      - id: RUZaryaFlashBangHandgrenade
         amount: 20
-      - id: USM18SmokeHandgrenade
+      - id: RURDG2SmokeHandgrenade
         amount: 20
     - name: Storage
       entries:
@@ -137,13 +142,11 @@
         amount: 1
       - id: HandheldStationMapUnpowered
         amount: 5
-      - id: BoxIPOCK
-        amount: 5
       - id: Zipties
         amount: 15
       - id: Handcuffs
         amount: 5
-      - id: Whistle
+      - id: SyndicateWhistle
         amount: 3
       - id: Boombox
         amount: 2
@@ -160,9 +163,9 @@
 
 - type: entity
   parent: ColMarTechBase
-  id: CMVendNATOUSMCWarVendorAmmo
-  name: USMC ammo vendor
-  description: Marine-Grade weaponry from a vending machine.
+  id: CMVendPACTVDVWarVendorAmmo
+  name: VDV ammo vendor
+  description: Bang Bang Bang!
   suffix: ColMarTech
   components:
   - type: Sprite
@@ -176,12 +179,18 @@
     sections:
     - name: Magazine boxes
       entries:
-      - id: BoxMagazineSTANAG
+      - id: BoxMagazineAK12
+        amount: 1
+      - id: BoxMagazineAK12TracerGreen
+        amount: 1
+      - id: BoxMagazineAK74
         amount: 3
-      - id: BoxMagazineSTANAGTracerRed
-        amount: 2
-      - id: BoxMagazineMP5
+      - id: BoxMagazineVityaz
         amount: 5
+      - id: BoxMagazineASVALShort
+        amount: 5
+      - id: BoxMagazineAKM
+        amount: 2
       - id: BoxFlare
         amount: 4
     - name: Loose rounds
@@ -190,9 +199,9 @@
         amount: 2
       - id: MagazineBox556x45
         amount: 5
-      - id: MagazineBox762x51Big
-        amount: 1
-      - id: MagazineBox762x51
+      - id: MagazineBox762x39Big
+        amount: 2
+      - id: MagazineBox762x39
         amount: 5
       - id: MagazineBox9x19mmBig
         amount: 5
@@ -200,16 +209,16 @@
         amount: 10
     - name: Misc
       entries:
-      - id: MagazinePistolM9
+      - id: MagazinePistolMP443
         amount: 10
       - id: CrayonBox
         amount: 1
 
 - type: entity
   parent: ColMarTechBase
-  id: CMVendNATOUSMCWarVendorShips
-  name: USMC ship LPC vendor
-  description: Marine-Grade space ships from a vending machine.
+  id: CMVendPACTVDVWarVendorShips
+  name: VDV ship LPC vendor
+  description: Time to fly this into anti-air defences.
   suffix: ColMarTech
   components:
   - type: Sprite
@@ -223,5 +232,5 @@
     sections:
     - name: Transports
       entries:
-      - id: ShipVoucherAAVP8
+      - id: ShipVoucherKTV1
         amount: 8
