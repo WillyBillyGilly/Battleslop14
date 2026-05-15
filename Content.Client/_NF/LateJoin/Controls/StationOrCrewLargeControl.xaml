@@ -37,7 +37,7 @@
                                  MaxSize="30 30"
                                  Stretch="KeepAspectCentered" />
                 </BoxContainer>
-                <customControls:HSeparator SeparatorColor="#BABABA" StyleClasses="LowDivider" Margin="0 0 36 0" />
+<!--                 <customControls:HSeparator SeparatorColor="#BABABA" StyleClasses="LowDivider" Margin="0 0 36 0" /> -->
 
                 <RichTextLabel Text="{Loc 'frontier-lobby-station-subtext'}" />
 
@@ -72,7 +72,7 @@
                                  MaxSize="30 30"
                                  Stretch="KeepAspectCentered" />
                 </BoxContainer>
-                <customControls:HSeparator SeparatorColor="#BABABA" StyleClasses="LowDivider" Margin="0 0 36 0" />
+<!--                 <customControls:HSeparator SeparatorColor="#BABABA" StyleClasses="LowDivider" Margin="0 0 36 0" /> -->
 
                 <RichTextLabel Text="{Loc 'frontier-lobby-crew-subtext'}" />
 
