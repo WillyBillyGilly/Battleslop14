@@ -111,3 +111,14 @@ uplink-PACTRU-43x30-box-ChemicalSmoke-desc = Contains 8 43x30 chemical smoke gre
 
 uplink-PACTRU-gromn-frag-name = A-300 Grom-N 30mm fragmentation magazine
 uplink-PACTRU-gromn-frag-desc = One 30mm fragmentation magazine for the A-300 Grom-N.
+
+## Ships
+
+uplink-PACTRU-bmp-s-name = BMD-5 Ship voucher
+uplink-PACTRU-bmp-s-desc = A ship voucher for a BMD-5, with a Kornet and Grom-N preloaded with Frag.
+
+uplink-PACTRU-bmp-aa-name = BMD-5A Ship voucher
+uplink-PACTRU-bmp-aa-desc = A ship voucher for a BMD-5A, with 4 23mm cannons.
+
+uplink-PACTRU-bmp-mg-name = BMD-5N Ship voucher
+uplink-PACTRU-bmp-mg-desc = A ship voucher for a BMD-5N, with 4 Kord HMGs.

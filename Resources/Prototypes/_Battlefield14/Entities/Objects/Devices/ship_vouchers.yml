@@ -95,3 +95,57 @@
     companyName: VDV
     vessels:
     - KTV1
+
+- type: entity
+  parent: BaseShipLPC
+  id: ShipVoucherBMD4
+  name: VDV BMD-5 IFV
+  description: A small card that authorizes the acquisition of a BMD-5 IFV.
+  components:
+  - type: Sprite
+    layers:
+    - state: htech
+    - state: stripeussp
+    - state: icon1
+  - type: ShipyardVoucher
+    destroyOnEmpty: true
+    consoleType: Custom
+    companyName: VDV
+    vessels:
+    - BMD4
+
+- type: entity
+  parent: BaseShipLPC
+  id: ShipVoucherBMD4A
+  name: VDV BMD-5A LPC
+  description: A small card that authorizes the acquisition of a BMD-5A gunship.
+  components:
+  - type: Sprite
+    layers:
+    - state: htech
+    - state: stripeussp
+    - state: icon1
+  - type: ShipyardVoucher
+    destroyOnEmpty: true
+    consoleType: Custom
+    companyName: VDV
+    vessels:
+    - BMD4A
+
+- type: entity
+  parent: BaseShipLPC
+  id: ShipVoucherBMD4N
+  name: VDV BMD-5N LPC
+  description: A small card that authorizes the acquisition of a BMD-5N gunship.
+  components:
+  - type: Sprite
+    layers:
+    - state: htech
+    - state: stripeussp
+    - state: icon1
+  - type: ShipyardVoucher
+    destroyOnEmpty: true
+    consoleType: Custom
+    companyName: VDV
+    vessels:
+    - BMD4N
