@@ -10,8 +10,9 @@
     layers:
     - state: "off"
       map: ["enum.VendingMachineVisualLayers.Base"]
-    - state: "off"
+    - state: "normal-unshaded"
       map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
 #      shader: unshaded
 #    - state: panel
 #      map: ["enum.WiresVisualLayers.MaintenancePanel"]
@@ -96,8 +97,9 @@
     layers:
     - state: "off"
       map: ["enum.VendingMachineVisualLayers.Base"]
-    - state: "off"
+    - state: "normal-unshaded"
       map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
   - type: CMAutomatedVendor
     sections:
     - name: Identification
@@ -173,8 +175,9 @@
     layers:
     - state: "off"
       map: ["enum.VendingMachineVisualLayers.Base"]
-    - state: "off"
+    - state: "normal-unshaded"
       map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
   - type: CMAutomatedVendor
     sections:
     - name: Magazine boxes
@@ -226,8 +229,9 @@
     layers:
     - state: "off"
       map: ["enum.VendingMachineVisualLayers.Base"]
-    - state: "off"
+    - state: "normal-unshaded"
       map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
   - type: CMAutomatedVendor
     sections:
     - name: Transports

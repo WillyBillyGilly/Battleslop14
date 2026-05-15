@@ -17025,7 +17025,7 @@ entities:
     - type: Transform
       pos: 16.5,-12.5
       parent: 1
-- proto: CMVendPACTVDVWarVendorShips
+- proto: CMVendNATOUSMCWarVendorShips
   entities:
   - uid: 195
     components:
