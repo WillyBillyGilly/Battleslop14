@@ -4,7 +4,7 @@
   name: M67 Grenade
   description: The classic GI hand grenade post vietnam.
   parent: GrenadeBase
-  id: M67Handgrenade
+  id: OffensiveGrenadeUSM67
   components:
   - type: OnUseTimerTrigger
     delay: 3.5
@@ -75,7 +75,7 @@
   name: MK21 Offensive Grenade
   description: USMC standard issue blast grenade.
   parent: GrenadeBase
-  id: MK21Handgrenade
+  id: DefensiveGrenadeUSMK21
   components:
   - type: OnUseTimerTrigger
     delay: 3.5
@@ -113,8 +113,8 @@
 - type: entity
   name: double stacked MK21 hand grenade
   description: two MK21 blast grenades stacked together.
-  parent: MK21Handgrenade
-  id: MK21HandgrenadeStackTwo
+  parent: DefensiveGrenadeUSMK21
+  id: DefensiveGrenadeUSMK21StackTwo
   components:
   - type: Item
     size: Normal
@@ -131,9 +131,9 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: DemolitionCharge
-    maxIntensity: 200
+    maxIntensity: 12.5
     intensitySlope: 8
-    totalIntensity: 300
+    totalIntensity: 140
     canCreateVacuum: true
   - type: TimerTriggerVisuals
     primingSound:
@@ -149,8 +149,8 @@
 - type: entity
   name: MK21 Offensive Grenade Sword
   description: You crazy son of a bitch.
-  parent: MK21Handgrenade
-  id: MK21HandgrenadeSword
+  parent: DefensiveGrenadeUSMK21
+  id: DefensiveGrenadeUSMK21Sword
   components:
   - type: Item
     size: Large
@@ -203,7 +203,7 @@
   name: M18 Smoke grenade
   description: A simple grey smoke grenade, canned smoke for your convenience. At least, you think it’s canned smoke, you’re not entirely sure how these things actually work.
   parent: GrenadeBase
-  id: USM18SmokeHandgrenade
+  id: SmokeGrenadeUSM18
   components:
   - type: OnUseTimerTrigger
     delay: 2.5
@@ -238,7 +238,7 @@
   name: M84 flashbang
   description: Think fast.
   parent: GrenadeBase
-  id: USM84FlashBangHandgrenade
+  id: FlashbangGrenadeUSM84
   components:
   - type: OnUseTimerTrigger
     delay: 2

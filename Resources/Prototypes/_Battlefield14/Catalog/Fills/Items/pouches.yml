@@ -101,9 +101,9 @@
   components:
   - type: StorageFill
     contents:
-    - id: M67Handgrenade
+    - id: OffensiveGrenadeUSM67
       amount: 3
-    - id: USM18SmokeHandgrenade
+    - id: SmokeGrenadeUSM18
       amount: 3
 
 - type: entity
@@ -113,7 +113,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: M67Handgrenade
+    - id: OffensiveGrenadeUSM67
       amount: 3
     - id: USM58CSGasHandgrenade
       amount: 3
@@ -125,9 +125,9 @@
   components:
   - type: StorageFill
     contents:
-    - id: MK21Handgrenade
+    - id: DefensiveGrenadeUSMK21
       amount: 3
-    - id: USM18SmokeHandgrenade
+    - id: SmokeGrenadeUSM18
       amount: 3
 
 - type: entity
@@ -137,9 +137,9 @@
   components:
   - type: StorageFill
     contents:
-    - id: USM84FlashBangHandgrenade
+    - id: FlashbangGrenadeUSM84
       amount: 3
-    - id: USM18SmokeHandgrenade
+    - id: SmokeGrenadeUSM18
       amount: 3
 
 - type: entity
@@ -149,7 +149,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: MK21Handgrenade
+    - id: DefensiveGrenadeUSMK21
       amount: 3
     - id: USM58CSGasHandgrenade
       amount: 3

@@ -50,10 +50,10 @@
     BreachingCharge: 10 # replace with breaching charges and put C4 in req
     JetpackBlackFilled: 20
     BarbedWire10: 1
-    USM84FlashBangHandgrenade: 20
-    MK21Handgrenade: 15
-    M67Handgrenade: 5
-    USM18SmokeHandgrenade: 20
+    FlashbangGrenadeUSM84: 20
+    DefensiveGrenadeUSMK21: 15
+    OffensiveGrenadeUSM67: 5
+    SmokeGrenadeUSM18: 20
     FUBAR: 1
     DoubleEmergencyOxygenTankFilled: 100
     BoxIFFNATOBlue: 10

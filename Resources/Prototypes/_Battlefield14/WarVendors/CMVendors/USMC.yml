@@ -119,13 +119,13 @@
         amount: 10
     - name: Grenades
       entries:
-      - id: MK21Handgrenade
+      - id: DefensiveGrenadeUSMK21
         amount: 15
-      - id: M67Handgrenade
+      - id: OffensiveGrenadeUSM67
         amount: 5
-      - id: USM84FlashBangHandgrenade
+      - id: FlashbangGrenadeUSM84
         amount: 20
-      - id: USM18SmokeHandgrenade
+      - id: SmokeGrenadeUSM18
         amount: 20
     - name: Storage
       entries:

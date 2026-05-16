@@ -15,7 +15,7 @@
     - 0,0,3,3
   - type: StorageFill
     contents:
-      - id: MK21Handgrenade
+      - id: DefensiveGrenadeUSMK21
         amount: 8
   - type: Sprite
     layers:
@@ -33,7 +33,7 @@
     - 0,0,3,3
   - type: StorageFill
     contents:
-      - id: USM18SmokeHandgrenade
+      - id: SmokeGrenadeUSM18
         amount: 8
   - type: Sprite
     layers:
@@ -51,7 +51,7 @@
     - 0,0,3,3
   - type: StorageFill
     contents:
-      - id: USM84FlashBangHandgrenade
+      - id: FlashbangGrenadeUSM84
         amount: 8
   - type: Sprite
     layers:
