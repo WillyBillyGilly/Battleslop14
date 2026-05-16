@@ -14508,7 +14508,7 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 13.5,25.5
       parent: 1
-- proto: RUF1Handgrenade
+- proto: DefensiveGrenadeRUF1
   entities:
   - uid: 1591
     components:

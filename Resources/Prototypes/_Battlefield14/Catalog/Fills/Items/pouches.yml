@@ -161,10 +161,10 @@
   components:
   - type: StorageFill
     contents:
-    - id: RURGD5Handgrenade
+    - id: OffensiveGrenadeRURGD5
       amount: 2
     - id: RGOImpactHandgrenade
-    - id: RURDG2SmokeHandgrenade
+    - id: SmokeGrenadeRURDG
       amount: 3
 
 - type: entity
@@ -174,9 +174,9 @@
   components:
   - type: StorageFill
     contents:
-    - id: RUZaryaFlashBangHandgrenade
+    - id: FlashbangGrenadeRUZarya
       amount: 3
-    - id: RURDG2SmokeHandgrenade
+    - id: SmokeGrenadeRURDG
       amount: 3
 
 - type: entity
@@ -186,9 +186,9 @@
   components:
   - type: StorageFill
     contents:
-    - id: RURGD5Handgrenade
+    - id: OffensiveGrenadeRURGD5
       amount: 3
-    - id: RUK51CSGasHandgrenade
+    - id: SmokeCSGrenadeRUK51
       amount: 3
 
 - type: entity

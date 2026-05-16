@@ -134,11 +134,11 @@
     BreachingCharge: 10
     JetpackBlackFilled: 20
     BarbedWire10: 1
-    RUZaryaFlashBangHandgrenade: 20
-    RURGD5Handgrenade: 10
-    RUF1Handgrenade: 5
+    FlashbangGrenadeRUZarya: 20
+    OffensiveGrenadeRURGD5: 10
+    DefensiveGrenadeRUF1: 5
     RGOImpactHandgrenade: 5
-    RURDG2SmokeHandgrenade: 20
+    SmokeGrenadeRURDG: 20
     TM62Flatpack: 10
     BoxChargeFuzeKit: 5
     SecBreachingHammer: 1

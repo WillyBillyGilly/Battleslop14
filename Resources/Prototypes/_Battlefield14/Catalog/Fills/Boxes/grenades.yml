@@ -226,7 +226,7 @@
     - 0,0,3,3
   - type: StorageFill
     contents:
-      - id: RURGD5Handgrenade
+      - id: OffensiveGrenadeRURGD5
         amount: 8
   - type: Sprite
     layers:
@@ -262,7 +262,7 @@
     - 0,0,3,3
   - type: StorageFill
     contents:
-      - id: RURDG2SmokeHandgrenade
+      - id: SmokeGrenadeRURDG
         amount: 8
   - type: Sprite
     layers:
@@ -280,7 +280,7 @@
     - 0,0,3,3
   - type: StorageFill
     contents:
-      - id: RUZaryaFlashBangHandgrenade
+      - id: FlashbangGrenadeRUZarya
         amount: 8
   - type: Sprite
     layers:
@@ -298,7 +298,7 @@
     - 0,0,3,3
   - type: StorageFill
     contents:
-      - id: RUK51CSGasHandgrenade
+      - id: SmokeCSGrenadeRUK51
         amount: 8
   - type: Sprite
     layers:
@@ -317,7 +317,7 @@
     - 0,0,3,3
   - type: StorageFill
     contents:
-      - id: RUK52SarinGasHandgrenade
+      - id: SmokeSarinGrenadeRUK52
         amount: 8
   - type: Sprite
     layers:
