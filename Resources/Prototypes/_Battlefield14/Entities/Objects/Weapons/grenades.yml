@@ -478,7 +478,7 @@
   name: RGO Offensive Impact grenade
   description: What does this even stand for? Russian Grenade something? oh well, pull the pin, chuck it, and it blows up.
   parent: BaseItem
-  id: RGOImpactHandgrenade
+  id: ImpactGrenadeRURGO
   components:
   - type: Item
     size: Small
