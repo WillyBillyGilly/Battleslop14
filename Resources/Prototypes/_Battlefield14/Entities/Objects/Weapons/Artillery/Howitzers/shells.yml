@@ -1,0 +1,69 @@
+## NATO
+# US
+
+- type: entity
+  id: ShellHowitzer155M777HEFrag
+  parent: DebugMortarShell
+  suffix: HE-FRAG, 155mm, M777, NATO, US
+  name: M795 155mm HE-F shell
+  description: High explosive fragmentation, a howitzer shell designed to destroy manpower and light fortifications.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/BattlefieldArtillery/GroundArtillery/Mortar/shells.rsi
+    state: HE
+  - type: Tag
+    tags:
+      - MortarShell
+      - ShellHowitzer155M777
+  - type: Item
+    size: Normal
+  - type: MortarShell
+    delayPerTile: 0.05
+    fireSound: /Audio/_Battlefield14/Weapons/BattlefieldArtillery/cannon2.ogg
+    preExplosionSound: /Audio/_Civ14/Weapons/Explosives/Cannons/new_artillery_incoming01.ogg
+    explosionEntity: ArtilleryMarkerM777HEFrag
+    useDirectExplosion: false
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 60
+    intensitySlope: 4
+    maxIntensity: 8
+
+- type: entity
+  id: ShellHowitzer155M777Smoke
+  parent: ShellHowitzer155M777HEFrag
+  suffix: smoke, 155mm, M777, NATO, US
+  name: M825 155mm smoke shell
+  description: A howitzer shell designed to cover advancing troops in smoke.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/BattlefieldArtillery/GroundArtillery/Mortar/shells.rsi
+    state: smoke
+  - type: MortarShell
+    delayPerTile: 0.05
+    explosionEntity: ArtilleryMarkerM777Smoke
+
+- type: entity
+  id: ShellHowitzer155M777Flare
+  parent: ShellHowitzer155M777HEFrag
+  suffix: flare, 155mm, M777, NATO, US
+  name: M118 155mm illumination shell
+  description: A howitzer shell that releases a parachute and visible spectrum flare.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/BattlefieldArtillery/GroundArtillery/Mortar/shells.rsi
+    state: illumination
+  - type: MortarShell
+    delayPerTile: 0.05
+    explosionEntity: ArtilleryMarkerM777Flare
+
+- type: entity
+  id: ShellHowitzer155M777WhitePhosphorus
+  parent: ShellHowitzer155M777Smoke
+  suffix: WAR CRIME, white phosphorus smoke, 155mm, M777, NATO, US
+  name: M825A1 155mm white phosphorus smoke shell
+  description: A howitzer shell that releases white phosphorus smoke on impact.
+  components:
+  - type: MortarShell
+    delayPerTile: 0.05
+    explosionEntity: ArtilleryMarkerM777WhitePhosphorus

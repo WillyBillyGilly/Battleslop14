@@ -32,6 +32,11 @@
     graph: MortarNATOUS81mmM252
     node: MortarM252Deployed
     deconstructionTarget: start
+  - type: ExtendDescription
+    descriptionList:
+      - description: Maximum range 40 meters.
+        color: "#4f94ad"
+        requireDetailRange: true
 
 - type: entity
   parent: BaseItem
@@ -91,6 +96,11 @@
     graph: MortarPACTRU82mm2B14
     node: Mortar2B14Deployed
     deconstructionTarget: start
+  - type: ExtendDescription
+    descriptionList:
+      - description: Maximum range 40 meters.
+        color: "#4f94ad"
+        requireDetailRange: true
 
 - type: entity
   parent: BaseItem

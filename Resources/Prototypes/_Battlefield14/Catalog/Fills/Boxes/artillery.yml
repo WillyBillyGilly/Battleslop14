@@ -37,6 +37,7 @@
 ### Shells
 ## NATO
 # US
+# Mortar
 
 - type: entity
   parent: BoxMagazine
@@ -131,6 +132,104 @@
   - type: StorageFill
     contents:
       - id: ShellMortar81M252Flare
+        amount: 6
+  - type: Sprite
+    layers:
+      - state: box_security
+
+# Howitzer
+
+- type: entity
+  parent: BoxMagazine
+  id: BoxArtilleryShellHowitzerM777HEFrag
+  name: box of 155mm HE-Frag shells
+  description: Contains six HE-EF 155mm howitzer shells compatible with the M777 howitzer.
+  suffix: HE-Frag
+  components:
+  - type: Item
+    size: Huge
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,5,3
+    whitelist:
+      tags:
+        - MortarShell
+  - type: StorageFill
+    contents:
+      - id: ShellHowitzer155M777HEFrag
+        amount: 6
+  - type: Sprite
+    layers:
+      - state: box_security
+
+- type: entity
+  parent: BoxMagazine
+  id: BoxArtilleryShellHowitzerM777Smoke
+  name: box of 155mm smoke shells
+  description: Contains six 155mm howitzer smoke shells compatible with the M777 howitzer.
+  suffix: HE-Frag
+  components:
+  - type: Item
+    size: Huge
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,5,3
+    whitelist:
+      tags:
+        - MortarShell
+  - type: StorageFill
+    contents:
+      - id: ShellHowitzer155M777Smoke
+        amount: 6
+  - type: Sprite
+    layers:
+      - state: box_security
+
+- type: entity
+  parent: BoxMagazine
+  id: BoxArtilleryShellHowitzerM777Flare
+  name: box of 155mm illumination shells
+  description: Contains six 155mm howitzer illumination shells compatible with the M777 howitzer.
+  suffix: HE-Frag
+  components:
+  - type: Item
+    size: Huge
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,5,3
+    whitelist:
+      tags:
+        - MortarShell
+  - type: StorageFill
+    contents:
+      - id: ShellHowitzer155M777Flare
+        amount: 6
+  - type: Sprite
+    layers:
+      - state: box_security
+
+- type: entity
+  parent: BoxMagazine
+  id: BoxArtilleryShellHowitzerM777WhitePhosphorus
+  name: box of 155mm white phosphorus smoke shells
+  description: Contains six 155mm howitzer white phosphorus smoke shells compatible with the M777 howitzer.
+  suffix: HE-Frag
+  components:
+  - type: Item
+    size: Huge
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,5,3
+    whitelist:
+      tags:
+        - MortarShell
+  - type: StorageFill
+    contents:
+      - id: ShellHowitzer155M777WhitePhosphorus
         amount: 6
   - type: Sprite
     layers:
