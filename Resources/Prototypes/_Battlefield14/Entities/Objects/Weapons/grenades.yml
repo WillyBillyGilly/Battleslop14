@@ -137,9 +137,9 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: DemolitionCharge
-    maxIntensity: 15
+    maxIntensity: 12.5
     intensitySlope: 8
-    totalIntensity: 150
+    totalIntensity: 135
     canCreateVacuum: true
   - type: TimerTriggerVisuals
     primingSound:
