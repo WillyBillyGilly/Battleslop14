@@ -278,7 +278,7 @@
   name: M58 CS gas grenade
   description: Dispenses irritating CS gas for non-lethal incapacitation and dispersion of riots.
   parent: GrenadeBase
-  id: USM58CSGasHandgrenade
+  id: SmokeCSGrenadeUSM58
   components:
   - type: OnUseTimerTrigger
     delay: 2.5
@@ -317,7 +317,7 @@
   name: M34 White Phosphorus smoke grenade
   description: Willy Pete, a war criminal to rival Cuban Pete.
   parent: GrenadeBase
-  id: USHandgrenadeM34WhitePhosphorus
+  id: SmokeWhitePhosphorusGrenadeUSM34
   suffix: WAR CRIME
   components:
   - type: OnUseTimerTrigger

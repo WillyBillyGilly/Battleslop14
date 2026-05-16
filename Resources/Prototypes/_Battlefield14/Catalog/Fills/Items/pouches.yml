@@ -115,7 +115,7 @@
     contents:
     - id: OffensiveGrenadeUSM67
       amount: 3
-    - id: USM58CSGasHandgrenade
+    - id: SmokeCSGrenadeUSM58
       amount: 3
 
 - type: entity
@@ -151,7 +151,7 @@
     contents:
     - id: DefensiveGrenadeUSMK21
       amount: 3
-    - id: USM58CSGasHandgrenade
+    - id: SmokeCSGrenadeUSM58
       amount: 3
 
 - type: entity

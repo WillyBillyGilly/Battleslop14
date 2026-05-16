@@ -69,7 +69,7 @@
     - 0,0,3,3
   - type: StorageFill
     contents:
-      - id: USM58CSGasHandgrenade
+      - id: SmokeCSGrenadeUSM58
         amount: 8
   - type: Sprite
     layers:
@@ -88,7 +88,7 @@
     - 0,0,3,3
   - type: StorageFill
     contents:
-      - id: USHandgrenadeM34WhitePhosphorus
+      - id: SmokeWhitePhosphorusGrenadeUSM34
         amount: 8
   - type: Sprite
     layers:

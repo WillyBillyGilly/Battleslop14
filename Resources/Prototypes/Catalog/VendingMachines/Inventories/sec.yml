@@ -4,7 +4,7 @@
     SecurityWhistle: 3 # Frontier 5<1
     Handcuffs: 6 # Frontier 8<3
     FlashbangGrenadeUSM84: 3 #BF14     GrenadeFlashBang: 3 # Frontier 4<1
-    USM58CSGasHandgrenade: 3 #BF14     TearGasGrenade: 3 # Frontier 4<1
+    SmokeCSGrenadeUSM58: 3 #BF14     TearGasGrenade: 3 # Frontier 4<1
 #BF14    ClusterBangFull: 2 # Frontier 2<1
     GrenadeStinger: 3 # Frontier 4<1
     Flash: 4 # Frontier 5<1
