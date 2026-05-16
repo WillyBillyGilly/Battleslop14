@@ -1,0 +1,32 @@
+- type: constructionGraph
+  id: MK21StackTwo
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: MK21Stack
+          completed:
+            - !type:AdminLog
+              message: "Two MK21 grenades were stacked"
+            - !type:SpawnPrototype
+              prototype: OffensiveGrenadeUSMK21StackTwo
+              amount: 1
+            - !type:DeleteEntity
+          steps:
+            - tag: OffensiveGrenadeUSMK21
+              doAfter: 2
+
+    - node: MK21Unstack
+      entity: OffensiveGrenadeUSMK21StackTwo
+      edges:
+        - to: start
+          completed:
+            - !type:AdminLog
+              message: "Two MK21 grenades were separated"
+            - !type:SpawnPrototype
+              prototype: OffensiveGrenadeUSMK21
+              amount: 2
+            - !type:DeleteEntity
+          steps:
+            - tool: Prying
+              doAfter: 2

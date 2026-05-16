@@ -85,6 +85,7 @@
   - type: Tag
     tags:
       - Grenade
+      - OffensiveGrenadeUSMK21
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Grenades/MK21.rsi
   - type: ExplodeOnTrigger
@@ -109,6 +110,11 @@
       - description: Has a random timer between 3-5 seconds.
         color: "#4f94ad"
         requireDetailRange: true
+  - type: Material
+  - type: Construction
+    graph: MK21StackTwo
+    node: start
+    deconstructionTarget: start
 
 - type: entity
   name: double stacked MK21 hand grenade
@@ -131,9 +137,9 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: DemolitionCharge
-    maxIntensity: 12.5
+    maxIntensity: 15
     intensitySlope: 8
-    totalIntensity: 140
+    totalIntensity: 150
     canCreateVacuum: true
   - type: TimerTriggerVisuals
     primingSound:
@@ -145,6 +151,10 @@
   - type: EmitSoundOnLand
     sound:
       collection: FragGrenadeSFX
+  - type: Construction
+    graph: MK21StackTwo
+    node: MK21Unstack
+    deconstructionTarget: MK21Unstack
 
 - type: entity
   name: MK21 Offensive Grenade Sword
