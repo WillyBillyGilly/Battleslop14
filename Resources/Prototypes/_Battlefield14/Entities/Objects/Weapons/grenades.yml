@@ -4,7 +4,7 @@
   name: M67 Grenade
   description: The classic GI hand grenade post vietnam.
   parent: GrenadeBase
-  id: OffensiveGrenadeUSM67
+  id: DefensiveGrenadeUSM67
   components:
   - type: OnUseTimerTrigger
     delay: 3.5
@@ -75,7 +75,7 @@
   name: MK21 Offensive Grenade
   description: USMC standard issue blast grenade.
   parent: GrenadeBase
-  id: DefensiveGrenadeUSMK21
+  id: OffensiveGrenadeUSMK21
   components:
   - type: OnUseTimerTrigger
     delay: 3.5
@@ -113,8 +113,8 @@
 - type: entity
   name: double stacked MK21 hand grenade
   description: two MK21 blast grenades stacked together.
-  parent: DefensiveGrenadeUSMK21
-  id: DefensiveGrenadeUSMK21StackTwo
+  parent: OffensiveGrenadeUSMK21
+  id: OffensiveGrenadeUSMK21StackTwo
   components:
   - type: Item
     size: Normal
@@ -149,8 +149,8 @@
 - type: entity
   name: MK21 Offensive Grenade Sword
   description: You crazy son of a bitch.
-  parent: DefensiveGrenadeUSMK21
-  id: DefensiveGrenadeUSMK21Sword
+  parent: OffensiveGrenadeUSMK21
+  id: OffensiveGrenadeUSMK21Sword
   components:
   - type: Item
     size: Large

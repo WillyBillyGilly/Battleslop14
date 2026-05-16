@@ -15,7 +15,7 @@
     - 0,0,3,3
   - type: StorageFill
     contents:
-      - id: DefensiveGrenadeUSMK21
+      - id: OffensiveGrenadeUSMK21
         amount: 8
   - type: Sprite
     layers:

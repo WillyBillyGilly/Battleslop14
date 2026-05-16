@@ -367,7 +367,7 @@
   id: UplinkNATOUSMK21Sword
   name: uplink-natous-mk21-sword-name
   description: uplink-natous-mk21-sword-desc
-  productEntity: DefensiveGrenadeUSMK21Sword
+  productEntity: OffensiveGrenadeUSMK21Sword
   icon: { sprite: _Battlefield14/Objects/Weapons/Grenades/MK21sword.rsi, state: icon }
   cost:
     NATORequisition: 30 # 5 minutes

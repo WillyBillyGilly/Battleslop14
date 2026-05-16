@@ -101,7 +101,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: OffensiveGrenadeUSM67
+    - id: DefensiveGrenadeUSM67
       amount: 3
     - id: SmokeGrenadeUSM18
       amount: 3
@@ -113,7 +113,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: OffensiveGrenadeUSM67
+    - id: DefensiveGrenadeUSM67
       amount: 3
     - id: SmokeCSGrenadeUSM58
       amount: 3
@@ -125,7 +125,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: DefensiveGrenadeUSMK21
+    - id: OffensiveGrenadeUSMK21
       amount: 3
     - id: SmokeGrenadeUSM18
       amount: 3
@@ -149,7 +149,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: DefensiveGrenadeUSMK21
+    - id: OffensiveGrenadeUSMK21
       amount: 3
     - id: SmokeCSGrenadeUSM58
       amount: 3

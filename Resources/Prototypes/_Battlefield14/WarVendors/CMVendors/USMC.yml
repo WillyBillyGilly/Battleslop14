@@ -119,9 +119,9 @@
         amount: 10
     - name: Grenades
       entries:
-      - id: DefensiveGrenadeUSMK21
+      - id: OffensiveGrenadeUSMK21
         amount: 15
-      - id: OffensiveGrenadeUSM67
+      - id: DefensiveGrenadeUSM67
         amount: 5
       - id: FlashbangGrenadeUSM84
         amount: 20
