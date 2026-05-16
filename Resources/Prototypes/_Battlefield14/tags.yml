@@ -167,6 +167,9 @@
   id: MagazineGrenadeLauncherXM25
 
 - type: Tag
+  id: OffensiveGrenadeUSMK21
+
+- type: Tag
   id: SpeedLoader357magnum
 
 - type: Tag

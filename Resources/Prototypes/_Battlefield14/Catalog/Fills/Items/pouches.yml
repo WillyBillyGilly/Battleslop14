@@ -101,9 +101,9 @@
   components:
   - type: StorageFill
     contents:
-    - id: M67Handgrenade
+    - id: DefensiveGrenadeUSM67
       amount: 3
-    - id: USM18SmokeHandgrenade
+    - id: SmokeGrenadeUSM18
       amount: 3
 
 - type: entity
@@ -113,9 +113,9 @@
   components:
   - type: StorageFill
     contents:
-    - id: M67Handgrenade
+    - id: DefensiveGrenadeUSM67
       amount: 3
-    - id: USM58CSGasHandgrenade
+    - id: SmokeCSGrenadeUSM58
       amount: 3
 
 - type: entity
@@ -125,9 +125,9 @@
   components:
   - type: StorageFill
     contents:
-    - id: MK21Handgrenade
+    - id: OffensiveGrenadeUSMK21
       amount: 3
-    - id: USM18SmokeHandgrenade
+    - id: SmokeGrenadeUSM18
       amount: 3
 
 - type: entity
@@ -137,9 +137,9 @@
   components:
   - type: StorageFill
     contents:
-    - id: USM84FlashBangHandgrenade
+    - id: FlashbangGrenadeUSM84
       amount: 3
-    - id: USM18SmokeHandgrenade
+    - id: SmokeGrenadeUSM18
       amount: 3
 
 - type: entity
@@ -149,9 +149,9 @@
   components:
   - type: StorageFill
     contents:
-    - id: MK21Handgrenade
+    - id: OffensiveGrenadeUSMK21
       amount: 3
-    - id: USM58CSGasHandgrenade
+    - id: SmokeCSGrenadeUSM58
       amount: 3
 
 - type: entity
@@ -161,10 +161,10 @@
   components:
   - type: StorageFill
     contents:
-    - id: RURGD5Handgrenade
+    - id: OffensiveGrenadeRURGD5
       amount: 2
-    - id: RGOImpactHandgrenade
-    - id: RURDG2SmokeHandgrenade
+    - id: ImpactGrenadeRURGO
+    - id: SmokeGrenadeRURDG
       amount: 3
 
 - type: entity
@@ -174,9 +174,9 @@
   components:
   - type: StorageFill
     contents:
-    - id: RUZaryaFlashBangHandgrenade
+    - id: FlashbangGrenadeRUZarya
       amount: 3
-    - id: RURDG2SmokeHandgrenade
+    - id: SmokeGrenadeRURDG
       amount: 3
 
 - type: entity
@@ -186,9 +186,9 @@
   components:
   - type: StorageFill
     contents:
-    - id: RURGD5Handgrenade
+    - id: OffensiveGrenadeRURGD5
       amount: 3
-    - id: RUK51CSGasHandgrenade
+    - id: SmokeCSGrenadeRUK51
       amount: 3
 
 - type: entity

@@ -122,15 +122,15 @@
         amount: 10
     - name: Grenades
       entries:
-      - id: RURGD5Handgrenade
+      - id: OffensiveGrenadeRURGD5
         amount: 10
-      - id: RUF1Handgrenade
+      - id: DefensiveGrenadeRUF1
         amount: 5
-      - id: RGOImpactHandgrenade
+      - id: ImpactGrenadeRURGO
         amount: 5
-      - id: RUZaryaFlashBangHandgrenade
+      - id: FlashbangGrenadeRUZarya
         amount: 20
-      - id: RURDG2SmokeHandgrenade
+      - id: SmokeGrenadeRURDG
         amount: 20
     - name: Storage
       entries:
