@@ -58,7 +58,7 @@
         Slash: 8
         Piercing: 8
   - type: StaminaDamageOnCollide
-    damage: 2 # ~50 hits to stun
+    damage: 4 # ~50 hits to stun
     deleteOnCollide: true
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
@@ -461,7 +461,7 @@
         Slash: 8
         Piercing: 8
   - type: StaminaDamageOnCollide
-    damage: 2 # ~50 hits to stun
+    damage: 4 # ~50 hits to stun
     deleteOnCollide: true
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
