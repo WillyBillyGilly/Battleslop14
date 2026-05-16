@@ -1,0 +1,11 @@
+- type: entity
+  parent: [BaseMetalBarricade, BaseBarricadeSteel]
+  id: BarricadeSandbags
+  name: sandbag barricade
+  description: A tough barricade built to keep the bad out.
+  components:
+  - type: Sprite
+    sprite: /Textures/_RMC14/Structures/Walls/Barricades/barricade.rsi
+    drawdepth: WallTops
+    layers:
+    - state: sandbag

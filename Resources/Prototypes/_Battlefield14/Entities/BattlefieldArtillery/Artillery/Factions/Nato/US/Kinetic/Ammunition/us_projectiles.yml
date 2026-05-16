@@ -458,7 +458,7 @@
     deleteOnCollide: true
   - type: HeFragProjectile
     fillPrototype: Bullet40x46mmFragFragment
-    capacity: 40
+    capacity: 60
     randomAngle: true
     minVelocity: 8
     maxVelocity: 15
@@ -528,7 +528,7 @@
         Piercing: 12
     deleteOnCollide: true
   - type: StaminaDamageOnCollide
-    damage: 6 # ~17 hits to stun
+    damage: 8 # ~12.5 hits to stun
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:

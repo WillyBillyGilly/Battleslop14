@@ -1,0 +1,36 @@
+- type: entity
+  id: HowitzerNATOUS155mmM777A2
+  parent: BaseStructure # no moving once placed, disassemble with wrench
+  name: M777A2 155mm howitzer
+  suffix: 155mm
+  description: An 81mm battalion mortar. It offers a fairly moderate rate of fire, tolerable accuracy, and fires a wide variety of relatively inexpensive ammunition. Dont shoot straight up.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/BattlefieldArtillery/GroundArtillery/Howitzer/howitzer.rsi
+    state: howitzer
+    drawdepth: OverMobs
+  - type: Mortar
+    baseAccuracy: 0.5
+    accuracyDegradation: 0.1
+    minOffsetX: -175
+    maxOffsetX: 175
+    minOffsetY: -175
+    maxOffsetY: 175
+    minSafeDistance: 10
+  - type: ContainerContainer
+    containers:
+      mortar_chamber: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      mortar_chamber:
+        name: Chamber
+        priority: 1
+        insertSound: /Audio/_Battlefield14/Weapons/BattlefieldArtillery/reload2.ogg
+        whitelist:
+          tags:
+            - ShellHowitzer155M777
+  - type: ExtendDescription
+    descriptionList:
+      - description: Minimum range 10 meters, maximum range 175 meters.
+        color: "#4f94ad"
+        requireDetailRange: true

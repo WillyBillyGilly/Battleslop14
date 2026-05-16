@@ -1,0 +1,114 @@
+- type: entity
+  id: ArtilleryMarkerM777HEFrag
+  name: artillery strike M795 155mm HE-Frag
+  components:
+  - type: Sprite
+    sprite: /Textures/Objects/Fun/goldbikehorn.rsi
+    visible: false
+    state: icon
+  - type: TriggerOnSpawn
+  - type: DeleteOnTrigger
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: MicroBomb
+    totalIntensity: 120
+    intensitySlope: 4
+    maxIntensity: 10
+    maxTileBreak: 1
+  - type: ContainerContainer
+    containers:
+      cluster-payload: !type:Container
+  - type: ProjectileGrenade
+    triggerKey: trigger
+    fillPrototype: Bullet40x46mmFragFragment
+    capacity: 70
+    randomAngle: true
+    MaxVelocity: 10
+    MinVelocity: 8
+
+- type: entity
+  id: ArtilleryMarkerM777Smoke
+  name: artillery strike M825 155mm smoke
+  components:
+  - type: Sprite
+    sprite: /Textures/Objects/Fun/goldbikehorn.rsi
+    visible: false
+    state: icon
+  - type: TriggerOnSpawn
+  - type: TimedDespawn
+    lifetime: 30
+  - type: SmokeOnTrigger
+    keysIn:
+    - trigger
+    duration: 30
+    spreadAmount: 30
+  - type: EmitSoundOnTrigger
+    keysIn:
+    - trigger
+    sound: /Audio/Items/smoke_grenade_smoke.ogg
+    positional: true
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 10
+    intensitySlope: 5
+    maxIntensity: 1
+
+- type: entity
+  id: ArtilleryMarkerM777Flare
+  name: artillery strike M118 155mm illumination flare shell
+  components:
+  - type: Sprite
+    sprite: /Textures/Objects/Fun/goldbikehorn.rsi
+    visible: false
+    state: icon
+  - type: IgnitionSource
+    ignited: true
+    temperature: 1000
+  - type: TimedDespawn
+    lifetime: 300
+  - type: EmitSoundOnSpawn
+    sound: /Audio/_RMC14/Items/fulton.ogg
+  - type: AmbientSound
+    enabled: true
+    volume: 0
+    range: 7
+    sound:
+      path: /Audio/Items/Flare/flare_burn.ogg
+      params:
+        loop: true
+  - type: IgniteOnCollide
+    fireStacks: 1
+  - type: PointLight
+    enabled: true
+    color: "#fffbc8"
+    radius: 15.0
+    energy: 8.0
+
+- type: entity
+  id: ArtilleryMarkerM777WhitePhosphorus
+  name: artillery strike M825A1 155mm white phosphorus smoke
+  components:
+  - type: Sprite
+    sprite: /Textures/Objects/Fun/goldbikehorn.rsi
+    visible: false
+    state: icon
+  - type: TriggerOnSpawn
+  - type: TimedDespawn
+    lifetime: 30
+  - type: SmokeOnTrigger
+    keysIn:
+    - trigger
+    duration: 30
+    spreadAmount: 30
+  - type: EmitSoundOnTrigger
+    keysIn:
+    - trigger
+    sound: /Audio/Items/smoke_grenade_smoke.ogg
+    positional: true
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 10
+    intensitySlope: 5
+    maxIntensity: 1
