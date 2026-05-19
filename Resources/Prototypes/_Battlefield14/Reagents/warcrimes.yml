@@ -171,10 +171,15 @@
   physicalDesc: reagent-physical-desc-chalky
   flavor: bitter
   color: "#ffffff"
+  flammability: 2
+  tileReactions:
+  - !type:FlammableTileReaction {}
   metabolisms:
     Poison:
       metabolismRate: 0.2
       effects:
+      - !type:FlammableReaction
+        multiplier: 0.4
       - !type:HealthChange
         conditions:
         damage:

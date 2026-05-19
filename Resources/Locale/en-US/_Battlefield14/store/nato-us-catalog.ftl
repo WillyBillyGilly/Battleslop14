@@ -33,6 +33,9 @@ uplink-natous-SMAWDcrate-desc = 5 disposable anti-infantry SMAW-D tubes.
 uplink-natous-AT4crate-name = AT4 x5
 uplink-natous-AT4crate-desc = 5 disposable 'eighty-four' milimeter launchers firing HEAT warheads.
 
+uplink-natous-M202crate-name = M202 FLASH x5
+uplink-natous-M202crate-desc = 5 disposable M202 FLASH 4 tube incendiary rocket launchers.
+
 uplink-natous-stingercrate-name = FIM-92 Stinger MANPADS x5
 uplink-natous-stingercrate-desc = 5 stinger MANPADS systems for shooting down fighters.
 
