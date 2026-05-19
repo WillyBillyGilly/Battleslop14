@@ -17,6 +17,7 @@
       - CrateSecgearNATOFilledSMAW
       - CrateSecgearNATOFilledSMAWDisposable
       - CrateSecgearNATOFilledAT4
+      - CrateSecgearNATOFilledM202FLASH
     chance: 1
 
 - type: entity

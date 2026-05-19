@@ -1,0 +1,12 @@
+- type: entity
+  id: PuddleWhitePhosphorus
+  parent: PuddleTemporary
+  suffix: white phosphorus
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      puddle:
+        maxVol: 1000
+        reagents:
+        - ReagentId: WhitePhosphorus
+          Quantity: 10

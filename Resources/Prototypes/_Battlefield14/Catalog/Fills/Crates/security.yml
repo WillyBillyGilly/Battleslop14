@@ -53,7 +53,20 @@
   components:
   - type: StorageFill
     contents:
-        - id: WeaponLauncherUSSMAWDisposable
+        - id: WeaponLauncherUSSMAWDisposableFolded
+          amount: 5
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
+- type: entity
+  id: CrateSecgearNATOFilledM202FLASH
+  suffix: Filled, M202 FLASH
+  parent: CrateSecgear
+  name: M202 FLASH crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponLauncherUSM202FLASHFolded
           amount: 5
   - type: AccessReader
     access: [["NATOSoldier"]]

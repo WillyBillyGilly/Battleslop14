@@ -199,6 +199,63 @@
     damage: 200 # It's a fucking rocket
 
 - type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: BulletRocketM202FLASHArmingDistance
+  name: 66mm incendiary rocket
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: smallfrag
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 20
+    deleteOnCollide: true
+  - type: SubmunitionProjectile
+    submunitionPrototype: BulletRocketM202FLASH
+    distanceDelay: 4
+    submunitionDelay: 0
+    submunitionCount: 1
+    spreadAngle: 0
+    velocityMultiplier: 1
+  - type: StaminaDamageOnCollide
+    damage: 40
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBulletTrigger
+  id: BulletRocketM202FLASH
+  name: 66mm incendiary rocket
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: smallfrag
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 40
+  - type: HeFragProjectile
+    fillPrototype: BulletGrenadeM67Fragment
+    capacity: 30
+    randomAngle: true
+    minVelocity: 8
+    maxVelocity: 15
+#  - type: SpawnOnTrigger
+#    proto: PuddleWhitePhosphorus does not work to ignite a tile fire
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: FireBomb
+    totalIntensity: 67
+    intensitySlope: 4
+    maxIntensity: 10
+    maxTileBreak: 0
+  - type: StaminaDamageOnCollide
+    damage: 70 # It's a fucking rocket
+
+- type: entity
   id: BulletRocketStingerMANPADSMissile
   name: stinger missile
   parent: BaseBulletTrigger

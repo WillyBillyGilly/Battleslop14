@@ -1,8 +1,76 @@
 - type: entity
-  name: disposable rocket launcher
+  parent: BaseItem
+  id: BaseWeaponLauncherDisposableFolded
+  abstract: true
+  suffix: folded
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/SMAWD.rsi
+    layers:
+      - state: icon-storage
+  - type: Clothing
+    quickEquip: false
+    unequipDelay: 1
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/SMAWD.rsi
+    slots:
+    - Back
+    - suitStorage
+    - SUITSTORAGE2
+    clothingVisuals:
+      suitstorage2:
+      - state: equipped-BACKPACK
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+    - id: WeaponLauncherUSSMAWDisposable
+    sound:
+      path: /Audio/_Goobstation/Items/weapons/Sniper/pickup2.ogg
+      params:
+        variation: 0.125
+  - type: ExtendDescription
+    descriptionList:
+      - description: Use to unfold.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+- type: entity
   parent: [ BaseWeaponLauncher , BaseGunWieldable , WeaponHandlingLauncherDisposable ]
   id: BaseWeaponLauncherDisposable
-  description: SMAW-D, D for disposable. Fires an anti-infantry Novel Explosive round, cannot be reloaded, drop after use.
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/SMAWD.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    quickEquip: false
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/SMAWD.rsi
+    slots:
+    - Back
+    - suitStorage
+    - SUITSTORAGE2
+    clothingVisuals:
+      suitstorage2:
+      - state: equipped-BACKPACK
+    unequipDelay: 1
+  - type: Item
+  - type: Appearance
+  - type: Gun
+    projectileSpeed: 40
+    fireRate: 0.75
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
+  - type: GunRequiresWield
+  - type: AmmoCounter
+  - type: BasicEntityAmmoProvider
+    proto: BulletRocket83mmNE
+    capacity: 1
+
+- type: entity
+  parent: [ BaseWeaponLauncher , BaseGunWieldable , WeaponHandlingLauncherDisposable ]
+  id: BaseWeaponLauncherDisposableUnfolded
   abstract: true
   components:
   - type: Sprite
@@ -15,10 +83,6 @@
     slots:
     - Back
     - suitStorage
-    - SUITSTORAGE2
-    clothingVisuals:
-      suitstorage2:
-      - state: equipped-BACKPACK
     unequipDelay: 1
   - type: Item
   - type: Appearance
@@ -152,8 +216,22 @@
     capacity: 1
 
 - type: entity
+  parent: BaseWeaponLauncherDisposableFolded
+  id: WeaponLauncherUSSMAWDisposableFolded
   name: SMAW-D
-  parent: BaseWeaponLauncherDisposable
+  description: SMAW-D, D for disposable. Fires an anti-infantry Novel Explosive round, cannot be reloaded, drop after use.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/SMAWD.rsi
+    layers:
+      - state: icon-storage
+  - type: SpawnItemsOnUse
+    items:
+    - id: WeaponLauncherUSSMAWDisposable
+
+- type: entity
+  name: SMAW-D
+  parent: BaseWeaponLauncherDisposableUnfolded
   id: WeaponLauncherUSSMAWDisposable
   description: SMAW-D, D for disposable. Fires an anti-infantry Novel Explosive round, cannot be reloaded, drop after use.
   components:
@@ -167,6 +245,62 @@
   - type: BasicEntityAmmoProvider
     proto: BulletRocket83mmNEArmingDistance
     capacity: 1
+
+- type: entity
+  parent: BaseWeaponLauncherDisposableFolded
+  id: WeaponLauncherUSM202FLASHFolded
+  name: M202 FLASH
+  description: Flame Assault Shoulder. A 4 tube rocket launcher firing 66mm incendiary rockets, brutal.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/M202.rsi
+    layers:
+      - state: icon-folded
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/M202.rsi
+  - type: Item # Controls inhand sprites
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/M202-folded.rsi
+  - type: SpawnItemsOnUse
+    items:
+    - id: WeaponLauncherUSM202FLASH
+
+- type: entity
+  name: M202 FLASH
+  parent: BaseWeaponLauncherDisposableUnfolded
+  id: WeaponLauncherUSM202FLASH
+  description: Flame Assault Shoulder. A 4 tube rocket launcher firing 66mm incendiary rockets, brutal.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/M202.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/M202.rsi
+  - type: BasicEntityAmmoProvider
+    proto: BulletRocketM202FLASHArmingDistance
+    capacity: 4
+  - type: GunWieldBonus
+    minAngle: 0
+    maxAngle: 0
+  - type: Gun
+    minAngle: 2
+    maxAngle: 10
+    angleIncrease: 4
+    availableModes:
+    - SemiAuto
+    - Burst
+    selectedMode: SemiAuto
+    burstFireRate: 240
+    shotsPerBurst: 4
+    fireRate: 2
+    soundGunshot:
+      path: /Audio/_Battlefield14/Weapons/FighterWeapons/rocket3.ogg
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a minimum arming distance of 4 tiles.
+        color: "#4f94ad"
+        requireDetailRange: true
 
 - type: entity
   name: FIM-92 Stinger MANPADS

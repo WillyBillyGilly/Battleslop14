@@ -66,6 +66,22 @@
           - AmericanUplink
 
 - type: listing
+  id: UplinkNATOUSM202FLASH
+  name: uplink-natous-M202crate-name
+  description: uplink-natous-M202crate-desc
+  productEntity: CrateSecgearNATOFilledM202FLASH
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/M202.rsi, state: icon }
+  cost:
+    NATORequisition: 30 # 5 minutes
+  categories:
+    - UplinkNATOUSWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
   id: UplinkNATOUSStinger
   name: uplink-natous-stingercrate-name
   description: uplink-natous-stingercrate-desc
