@@ -29,7 +29,6 @@
     energy: 2.5
     softness: 0.9
     color: "#EEEEFF"
-  - type: Anchorable
   - type: InteractionOutline
   - type: Damageable
     damageContainer: Inorganic
