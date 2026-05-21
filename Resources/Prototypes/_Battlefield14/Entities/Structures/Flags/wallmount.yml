@@ -1,0 +1,137 @@
+- type: entity
+  parent: BaseFlag
+  id: USMCFlag
+  name: united states marine corps flag
+  description: OOOH FUCKING RAH MOTHERFUCKER.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/Flags/wallmount.rsi
+    state: usmcflag
+  - type: DisassembleOnAltVerb
+    prototype: USMCFlagFolded
+    doAfter: 3
+
+- type: entity
+  id: USMCFlagFolded
+  parent: BaseItem
+  name: united states marine corps flag
+  description: OOOH FUCKING RAH MOTHERFUCKER.
+  components:
+  - type: Sprite
+    sprite: Clothing/Multiple/towel.rsi
+    layers:
+    - state: icon
+      color: "#a64453"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#a64453"
+      right:
+      - state: inhand-right
+        color: "#a64453"
+    size: Small
+  - type: SpawnAfterInteract
+    prototype: USMCFlag
+    doAfter: 3
+    removeOnInteract: true
+
+- type: entity
+  parent: BaseFlag
+  id: RusfedFlag
+  name: russian federation flag
+  description: Irridentism is awesome!
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/Flags/wallmount.rsi
+    state: rusfedflag
+  - type: DisassembleOnAltVerb
+    prototype: RusfedFlagFolded
+    doAfter: 3
+
+- type: entity
+  id: RusfedFlagFolded
+  parent: BaseItem
+  name: russian federation flag
+  description: Irridentism is awesome!
+  components:
+  - type: Sprite
+    sprite: Clothing/Multiple/towel.rsi
+    layers:
+    - state: icon
+      color: "#01257d"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#01257d"
+      right:
+      - state: inhand-right
+        color: "#01257d"
+    size: Small
+  - type: SpawnAfterInteract
+    prototype: RusfedFlag
+    doAfter: 3
+    removeOnInteract: true
+
+- type: entity
+  parent: BaseFlag
+  id: TrollwaffenFlag
+  name: trollwaffen flag
+  description: No longer larping.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/Flags/wallmount.rsi
+    state: trollwaffen
+  - type: DisassembleOnAltVerb
+    prototype: TrollwaffenFlagFolded
+    doAfter: 3
+
+- type: entity
+  id: TrollwaffenFlagFolded
+  parent: BaseItem
+  name: trollwaffen flag
+  description: No longer larping.
+  components:
+  - type: Sprite
+    sprite: Clothing/Multiple/towel.rsi
+    layers:
+    - state: icon
+      color: "#1f3c49"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#1f3c49"
+      right:
+      - state: inhand-right
+        color: "#1f3c49"
+    size: Small
+  - type: SpawnAfterInteract
+    prototype: TrollwaffenFlag
+    doAfter: 3
+    removeOnInteract: true
+
+- type: entity
+  parent: BaseFlag
+  id: SansFlag
+  name: sans flag
+  description: You're in for a bad time.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/Flags/wallmount.rsi
+    state: sansundertale
+  - type: DisassembleOnAltVerb
+    prototype: SansFlagFolded
+    doAfter: 3
+  
+- type: entity
+  id: SansFlagFolded
+  parent: TrollwaffenFlagFolded
+  name: sans flag
+  description: You're in for a bad time.
+  components:
+  - type: SpawnAfterInteract
+    prototype: SansFlag
+    doAfter: 3
+    removeOnInteract: true

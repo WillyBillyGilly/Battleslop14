@@ -1,0 +1,166 @@
+- type: entity
+  id: WhiteFlagPole
+  name: white flag
+  description: A flag pole, bearing a white flag.
+  parent: BaseStructure
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/Flags/flagpoles.rsi
+    layers:
+      - state: whiteflag
+        offset: 0, 1
+    drawdepth: OverMobs
+    noRot: true
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "0.17,0.17,-0.17,-0.17"
+#        density: 190
+#        mask:
+#        - MachineMask
+#        layer:
+#        - LowImpassable
+  - type: InteractionOutline
+  - type: SpriteFade
+
+- type: entity
+  id: NATOFlagPole
+  name: NATO flag
+  description: A flag pole, bearing the flag of the national atlantic treaty organisation.
+  parent: WhiteFlagPole
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/Flags/flagpoles.rsi
+    layers:
+      - state: natoflag
+        offset: 0, 1
+    drawdepth: OverMobs
+    noRot: true
+
+- type: entity
+  id: USAFlagPole
+  name: united states flag
+  description: A flag pole, bearing the flag of the united states of america
+  parent: WhiteFlagPole
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/Flags/flagpoles.rsi
+    layers:
+      - state: usaflag
+        offset: 0, 1
+    drawdepth: OverMobs
+    noRot: true
+
+- type: entity
+  id: GermanFlagPole
+  name: deutchsland flag
+  description: A flag pole, bearing the flag of germany.
+  parent: WhiteFlagPole
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/Flags/flagpoles.rsi
+    layers:
+      - state: germanflag
+        offset: 0, 1
+    drawdepth: OverMobs
+    noRot: true
+
+- type: entity
+  id: BritishFlagPole
+  name: great britain flag
+  description: A flag pole, bearing the union jack.
+  parent: WhiteFlagPole
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/Flags/flagpoles.rsi
+    layers:
+      - state: britishflag
+        offset: 0, 1
+    drawdepth: OverMobs
+    noRot: true
+
+- type: entity
+  id: AustrianFlagPole
+  name: austria flag
+  description: A flag pole, bearing the flag of austria.
+  parent: WhiteFlagPole
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/Flags/flagpoles.rsi
+    layers:
+      - state: britishflag
+        offset: 0, 1
+    drawdepth: OverMobs
+    noRot: true
+
+- type: entity
+  id: rusfedFlagPole
+  name: russian federation flag
+  description: A flag pole, bearing the flag of the russian federation.
+  parent: WhiteFlagPole
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/Flags/flagpoles.rsi
+    layers:
+      - state: rusfedflag
+        offset: 0, 1
+    drawdepth: OverMobs
+    noRot: true
+
+- type: entity
+  id: DDRFlagPole
+  name: ost deutchsland flag
+  description: A flag pole, bearing the flag of east germany.
+  parent: WhiteFlagPole
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/Flags/flagpoles.rsi
+    layers:
+      - state: ddrflag
+        offset: 0, 1
+    drawdepth: OverMobs
+    noRot: true
+
+- type: entity
+  id: SovietFlagPole
+  name: soviet flag
+  description: A flag pole, bearing the flag of the USSR.
+  parent: WhiteFlagPole
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/Flags/flagpoles.rsi
+    layers:
+      - state: sovietflag
+        offset: 0, 1
+    drawdepth: OverMobs
+    noRot: true
+
+- type: entity
+  id: CzechFlagPole
+  name: czech republic flag
+  description: A flag pole, bearing the flag of the czech republic.
+  parent: WhiteFlagPole
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/Flags/flagpoles.rsi
+    layers:
+      - state: cslaflag
+        offset: 0, 1
+    drawdepth: OverMobs
+    noRot: true
+
+- type: entity
+  id: FinnishFlagPole
+  name: finnish flag
+  description: A flag pole, bearing the flag of finnland.
+  parent: WhiteFlagPole
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/Flags/flagpoles.rsi
+    layers:
+      - state: finnflag
+        offset: 0, 1
+    drawdepth: OverMobs
+    noRot: true

@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 04/20/2026 02:56:17
-  entityCount: 3744
+  time: 05/21/2026 08:10:46
+  entityCount: 3748
 maps: []
 grids:
 - 1
@@ -119,10 +119,10 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
       spreadQueues:
-        MetalFoam: []
-        Puddle: []
-        Kudzu: []
         Smoke: []
+        Kudzu: []
+        Puddle: []
+        MetalFoam: []
     - type: Shuttle
       dampingModifier: 0.25
     - type: GridPathfinding
@@ -1424,7 +1424,7 @@ entities:
       pos: 20.5,-21.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -17680.537
+      secondsUntilStateChange: -17786.96
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -10795,6 +10795,34 @@ entities:
     - type: Transform
       pos: 13.509247,-51.55244
       parent: 1
+- proto: CMVendNATOUSMCWarVendor
+  entities:
+  - uid: 197
+    components:
+    - type: Transform
+      pos: 14.5,-12.5
+      parent: 1
+- proto: CMVendNATOUSMCWarVendorAmmo
+  entities:
+  - uid: 198
+    components:
+    - type: Transform
+      pos: 16.5,-12.5
+      parent: 1
+- proto: CMVendNATOUSMCWarVendorGear
+  entities:
+  - uid: 196
+    components:
+    - type: Transform
+      pos: 15.5,-12.5
+      parent: 1
+- proto: CMVendNATOUSMCWarVendorShips
+  entities:
+  - uid: 195
+    components:
+    - type: Transform
+      pos: 17.5,-12.5
+      parent: 1
 - proto: ComputerAlert
   entities:
   - uid: 1100
@@ -12445,7 +12473,7 @@ entities:
       pos: 10.5,-42.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -15518.942
+      secondsUntilStateChange: -15625.366
       state: Closing
   - uid: 2294
     components:
@@ -17011,34 +17039,6 @@ entities:
     - type: Transform
       pos: 7.4801464,-46.947853
       parent: 1
-- proto: CMVendNATOUSMCWarVendorGear
-  entities:
-  - uid: 196
-    components:
-    - type: Transform
-      pos: 15.5,-12.5
-      parent: 1
-- proto: CMVendNATOUSMCWarVendorAmmo
-  entities:
-  - uid: 198
-    components:
-    - type: Transform
-      pos: 16.5,-12.5
-      parent: 1
-- proto: CMVendNATOUSMCWarVendorShips
-  entities:
-  - uid: 195
-    components:
-    - type: Transform
-      pos: 17.5,-12.5
-      parent: 1
-- proto: CMVendNATOUSMCWarVendor
-  entities:
-  - uid: 197
-    components:
-    - type: Transform
-      pos: 14.5,-12.5
-      parent: 1
 - proto: NATOUSUplinkMachine
   entities:
   - uid: 768
@@ -19905,6 +19905,30 @@ entities:
           - Reverse
         - - Middle
           - Off
+- proto: USMCFlag
+  entities:
+  - uid: 3746
+    components:
+    - type: Transform
+      pos: 13.5,-0.5
+      parent: 1
+  - uid: 3748
+    components:
+    - type: Transform
+      pos: 15.5,-29.5
+      parent: 1
+  - uid: 3749
+    components:
+    - type: Transform
+      pos: 16.5,-62.5
+      parent: 1
+- proto: USMCFlagFolded
+  entities:
+  - uid: 3747
+    components:
+    - type: Transform
+      pos: 13.550386,-1.3762331
+      parent: 1
 - proto: VendingMachineChefvend
   entities:
   - uid: 1003
