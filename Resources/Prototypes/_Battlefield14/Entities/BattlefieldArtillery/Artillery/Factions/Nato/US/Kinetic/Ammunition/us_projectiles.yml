@@ -377,9 +377,9 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: MicroBomb
-    totalIntensity: 80
+    totalIntensity: 60
     intensitySlope: 4
-    maxIntensity: 6
+    maxIntensity: 3
     maxTileBreak: 1
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
@@ -422,7 +422,7 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: DemolitionCharge
-    totalIntensity: 100
+    totalIntensity: 80
     intensitySlope: 5
     maxIntensity: 25
     maxTileBreak: 2
