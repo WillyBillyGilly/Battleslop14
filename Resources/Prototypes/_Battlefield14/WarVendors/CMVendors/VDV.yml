@@ -118,8 +118,6 @@
         amount: 1
       - id: BoxChargeFuzeKit
         amount: 5
-      - id: TM62Flatpack
-        amount: 10
     - name: Grenades
       entries:
       - id: OffensiveGrenadeRURGD5
@@ -132,6 +130,8 @@
         amount: 20
       - id: SmokeGrenadeRURDG
         amount: 20
+      - id: TM62Item
+        amount: 10
     - name: Storage
       entries:
       - id: PouchMags
@@ -142,6 +142,8 @@
       entries:
       - id: BarbedWire10
         amount: 1
+      - id: Multitool
+        amount: 3
       - id: HandheldStationMapUnpowered
         amount: 5
       - id: Zipties

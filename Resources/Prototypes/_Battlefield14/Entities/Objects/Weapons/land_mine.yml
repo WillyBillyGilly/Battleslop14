@@ -1,8 +1,9 @@
 - type: entity
   name: TM-62
-  description: FUCK CQB, SLAVIC USE TM-62
+  description: FUCK CQB, SLAVIC USE TM-62.
   parent: BaseLandMine
   id: TM62
+  suffix: Armed, Placed
   components:
 #  - type: Item # Lets you pick it up and toss it, but also detonates instantly when it touches any entity
 #    size: Large
@@ -36,14 +37,25 @@
   - type: DeviceLinkSink
     ports:
       - Trigger
+  - type: Construction
+    graph: TM62Disarm
+    node: start
+    deconstructionTarget: start
 
 - type: entity
-  parent: BaseFlatpack
-  id: TM62Flatpack
-  name: TM-62 flatpack
-  description: A flatpack with a single TM-62 inside, opened with a multitool.
+  parent: BaseItem
+  id: TM62Item
+  name: TM-62
+  description: FUCK CQB, SLAVIC USE TM-62.
+  suffix: Disarmed, Placeable
   components:
-  - type: Flatpack
-    entity: TM62
+  - type: Sprite
+    drawdepth: Items
+    sprite: _Battlefield14/Objects/Weapons/Landmines/TM62.rsi
+    state: icon
   - type: Item
     size: Normal
+  - type: SpawnAfterInteract
+    prototype: TM62
+    doAfter: 3
+    removeOnInteract: true

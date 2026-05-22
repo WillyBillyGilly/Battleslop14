@@ -3,3 +3,9 @@
   files:
   - "/Audio/_Battlefield14/Weapons/BattlefieldArtillery/autocannon1.ogg"
   - "/Audio/_Battlefield14/Weapons/BattlefieldArtillery/autocannon2.ogg"
+
+- type: soundCollection
+  id: BF_20MM_Gunshots
+  files:
+  - "/Audio/_Battlefield14/Weapons/BattlefieldArtillery/Close_20mm_1.ogg"
+  - "/Audio/_Battlefield14/Weapons/BattlefieldArtillery/Close_20mm_2.ogg"
