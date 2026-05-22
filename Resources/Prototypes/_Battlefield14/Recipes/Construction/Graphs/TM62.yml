@@ -1,0 +1,18 @@
+- type: constructionGraph
+  id: TM62Disarm
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: TM62Disarm
+          completed:
+            - !type:AdminLog
+              message: "A TM-62 was diasrmed"
+            - !type:SpawnPrototype
+              prototype: TM62Item
+              amount: 1
+            - !type:DeleteEntity
+          steps:
+            - tool: Pulsing
+              doAfter: 2
+

@@ -137,6 +137,8 @@
       entries:
       - id: BarbedWire10
         amount: 1
+      - id: Multitool
+        amount: 3
       - id: HandheldStationMapUnpowered
         amount: 5
       - id: BoxIPOCK

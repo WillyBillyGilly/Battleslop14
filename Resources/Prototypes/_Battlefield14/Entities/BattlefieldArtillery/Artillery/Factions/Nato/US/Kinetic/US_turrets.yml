@@ -167,7 +167,7 @@
     maxAngle: 3
     shootThermalSignature: 25000
     soundGunshot:
-      path: /Audio/_Mono/Weapons/Guns/Gunshots/slammer.ogg
+      collection: BF_20MM_Gunshots
     soundEmpty:
       path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
   - type: SpaceArtillery
@@ -209,6 +209,70 @@
     shipType: Ballistic
   - type: ShipGunClass
     shipClass: Light
+
+- type: entity
+  id: WeaponTurretPhalanxRecharging
+  name: Phalanx CIWS (LPWS)
+  parent: BallisticArtilleryBase
+  description: A close-in weapon system standard across U.S. and NATO fleets. Designed to intercept missiles, rockets, and light craft using extreme rates of fire and automated targeting. Doctrine discourages use against personnel. An intricate series of autoloaders beneath the floor resupplies ammo constantly.
+  suffix: BF14, NATO, US, Recharging, PORT ONLY
+  components:
+  - type: StaticPrice
+    price: 800
+  - type: Sprite
+    sprite: _Battlefield14/BattlefieldArtillery/pdt.rsi
+    layers:
+    - state: space_artillery
+  - type: Appearance
+  - type: FireControlRotate
+  - type: AmmoCounter
+  - type: Battery
+    maxCharge: 8000
+    startingCharge: 8000
+  - type: ExaminableBattery
+  - type: WirelessNetworkConnection
+    range: 500
+  - type: Gun
+    fireRate: 20
+    recoil: 0
+    projectileSpeed: 150
+    shootThermalSignature: 25000
+    soundGunshot:
+      collection: BF_20MM_Gunshots
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
+  - type: SpaceArtillery
+    powerChargeRate: 200
+    powerUsePassive: 300
+    powerUseActive: 0
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 30
+  - type: Actions
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 7500
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+  - type: ProjectileBatteryAmmoProvider
+    proto: Bullet20mmPhalanx
+    fireCost: 10
+#  - type: RadarBlip
+#    radarColor: "#FF6600"
+#    scale: 1
+  - type: ShipGunType
+    shipType: Ballistic
+  - type: ShipGunClass
+    shipClass: Light
+  - type: ShipRepairable
+    repairTime: 30
+    repairCost: 120
 
 # M242 Bushmaster 25mm Autocannon
 - type: entity
@@ -403,6 +467,67 @@
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
+#  - type: RadarBlip
+#    radarColor: "#FF4400"
+#    scale: 2
+  - type: ShipGunType
+    shipType: Ballistic
+  - type: ShipGunClass
+    shipClass: Medium
+
+- type: entity
+  id: WeaponTurretBofors40mmRecharging
+  name: L/99 Bofors Cannon
+  parent: BallisticArtilleryBase
+  description: A modernized Bofors pattern autocannon retained through NATO standardization agreements. Adapted for naval and orbital defense roles. Long service lineage, incremental improvements, and familiar limitations. Remains in service largely due to projectile mass and institutional inertia. An intricate series of autoloaders beneath the floor resupplies ammo constantly.
+  suffix: BF14, NATO, US, Recharging, PORT ONLY
+  components:
+  - type: StaticPrice
+    price: 800
+  - type: Sprite
+    sprite: _Battlefield14/BattlefieldArtillery/flak.rsi
+    layers:
+    - state: space_artillery
+  - type: Appearance
+  - type: FireControlRotate
+  - type: AmmoCounter
+  - type: Battery
+    maxCharge: 8000
+    startingCharge: 8000
+  - type: ExaminableBattery
+  - type: WirelessNetworkConnection
+    range: 500
+  - type: Gun
+    fireRate: 1.5
+    recoil: 0
+    projectileSpeed: 220
+    shootThermalSignature: 1500000
+    soundGunshot:
+      collection: BF_Bofors_Gunshots
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
+  - type: SpaceArtillery
+    powerChargeRate: 200
+    powerUsePassive: 600
+    powerUseActive: 0
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 5
+  - type: Actions
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 7500
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+  - type: ProjectileBatteryAmmoProvider
+    proto: Bullet40mmBofors
+    fireCost: 100
 #  - type: RadarBlip
 #    radarColor: "#FF4400"
 #    scale: 2
