@@ -59,6 +59,9 @@
   id: BF_CartridgeShotgun4Gauge
 
 - type: Tag
+  id: BlisterPack
+
+- type: Tag
   id: CartridgeSMAW
 
 - type: Tag

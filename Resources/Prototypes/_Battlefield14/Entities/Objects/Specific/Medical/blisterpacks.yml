@@ -1,0 +1,103 @@
+- type: entity
+  name: blister pack
+  id: BlisterPack
+  parent: [BaseStorageItem, RecyclableItemPlasticTiny]
+  description: Holds up to 6 pills.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Specific/Medical/blisterpack.rsi
+    layers:
+    - state: base
+    - map: [ "enum.StorageContainerVisualLayers.Fill" ]
+      visible: false
+#  - type: Icon
+#    sprite: _Battlefield14/Objects/Specific/Medical/blisterpack.rsi
+#    state: icon
+  - type: StorageContainerVisuals
+    maxFillLevels: 6
+    fillBaseName: fill-
+  - type: Tag
+    tags:
+      - PillCanister
+      - BlisterPack
+  - type: Storage
+    grid:
+    - 0,0,1,2
+    quickInsert: true
+    areaInsert: true
+    areaInsertRadius: 1
+    storageInsertSound: /Audio/Effects/pill_insert.ogg
+    storageRemoveSound: /Audio/Effects/pill_remove.ogg
+    whitelist:
+      tags:
+      - Pill
+  - type: Appearance
+  - type: Dumpable
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_Goobstation/Items/handling/pillbottle_pickup.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_Goobstation/Items/handling/pillbottle_drop.ogg
+
+- type: entity
+  parent: BlisterPack
+  id: BlisterPackBicaridine
+  suffix: Bicaridine 15u, 6
+  components:
+  - type: Label
+    currentLabel: bicaridine 15u
+  - type: StorageFill
+    contents:
+    - id: PillBicaridine
+      amount: 6
+
+- type: entity
+  parent: BlisterPack
+  id: BlisterPackKelotane
+  suffix: Kelotane 15u, 6
+  components:
+  - type: Label
+    currentLabel: kelotane 15u
+  - type: StorageFill
+    contents:
+    - id: PillKelotane
+      amount: 6
+
+- type: entity
+  parent: BlisterPack
+  id: BlisterPackTricordrazine
+  suffix: Tricordrazine 15u, 6
+  components:
+  - type: Label
+    currentLabel: tricordrazine 15u
+  - type: StorageFill
+    contents:
+    - id: PillTricordrazine
+      amount: 6
+
+- type: entity
+  parent: BlisterPack
+  id: BlisterPackMeralyne
+  suffix: Meralyne 7.5u, 6
+  components:
+  - type: Label
+    currentLabel: meralyne 7.5u
+  - type: StorageFill
+    contents:
+    - id: PillMeralyne
+      amount: 6
+
+- type: entity
+  parent: BlisterPack
+  id: BlisterPackDermaline
+  suffix: Dermaline 7.5u, 6
+  components:
+  - type: Label
+    currentLabel: dermaline 7.5u
+  - type: StorageFill
+    contents:
+    - id: PillDermaline
+      amount: 6

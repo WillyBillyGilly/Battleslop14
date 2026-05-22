@@ -38,6 +38,7 @@
         - Gauze
         - Ointment
         - PillCanister
+        - BlisterPack
         - Tourniquet
       components:
         - Hypospray

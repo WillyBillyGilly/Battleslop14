@@ -1,0 +1,58 @@
+- type: entity
+  id: MedicationBoxBase
+  parent: [BaseStorageItem, RecyclableItemCardboard]
+  name: medication box
+  description: A small cardboard box holding some blister packets.
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Specific/Medical/medicationbox.rsi
+    layers:
+    - state: base
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_Goobstation/Items/handling/ammobox_pickup.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_Goobstation/Items/handling/ammobox_drop.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_Goobstation/Items/handling/ammobox_drop.ogg
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,0,1
+#    whitelist:
+#      tags:
+#      - BlisterPack
+  - type: Item
+    size: Small
+  - type: Tag
+    tags:
+    - Toolbox
+  - type: GenericVisualizer
+    visuals:
+      enum.StorageVisuals.Open:
+        base:
+          True: { state: open }
+          False: { state: closed }
+  - type: Appearance
+
+- type: entity
+  id: MedicationBoxPillsBicaridine
+  parent: MedicationBoxBase
+  name: medication box
+  suffix: Bicaridine
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Specific/Medical/medicationbox.rsi
+    layers:
+    - state: base
+    - state: overlay_stripe_red
+    - state: overlay_pills_red
+  - type: Label
+    currentLabel: bicaridine
+  - type: StorageFill
+    contents:
+    - id: BlisterPackBicaridine
+      amount: 2
