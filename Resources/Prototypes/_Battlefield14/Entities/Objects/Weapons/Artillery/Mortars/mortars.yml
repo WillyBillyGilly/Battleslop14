@@ -11,10 +11,10 @@
   - type: Mortar
     baseAccuracy: 0.5
     accuracyDegradation: 0.2
-    minOffsetX: -40
-    maxOffsetX: 40
-    minOffsetY: -40
-    maxOffsetY: 40
+    minOffsetX: -80
+    maxOffsetX: 80
+    minOffsetY: -80
+    maxOffsetY: 80
     minSafeDistance: 0
   - type: ContainerContainer
     containers:
@@ -34,7 +34,7 @@
     deconstructionTarget: start
   - type: ExtendDescription
     descriptionList:
-      - description: Maximum range 40 meters.
+      - description: Maximum range 80 meters.
         color: "#4f94ad"
         requireDetailRange: true
 
@@ -75,10 +75,10 @@
   - type: Mortar
     baseAccuracy: 0.5
     accuracyDegradation: 0.2
-    minOffsetX: -40
-    maxOffsetX: 40
-    minOffsetY: -40
-    maxOffsetY: 40
+    minOffsetX: -80
+    maxOffsetX: 80
+    minOffsetY: -80
+    maxOffsetY: 80
     minSafeDistance: 0
   - type: ContainerContainer
     containers:
@@ -98,7 +98,7 @@
     deconstructionTarget: start
   - type: ExtendDescription
     descriptionList:
-      - description: Maximum range 40 meters.
+      - description: Maximum range 80 meters.
         color: "#4f94ad"
         requireDetailRange: true
 
