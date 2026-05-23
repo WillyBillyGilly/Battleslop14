@@ -1,0 +1,279 @@
+- type: entity
+  name: syrette
+  parent: BaseItem
+  description: A miniature single use syringe.
+  id: BF14SyretteBase
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Specific/Medical/syrette.rsi
+    layers:
+    - state: syrette
+  - type: Item
+    size: Tiny
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 5
+  - type: ExaminableSolution
+    solution: pen
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 10
+    onlyAffectsMobs: false
+    injectOnly: true
+  - type: UseDelay
+    delay: 0.2
+  - type: Appearance
+  - type: Tag
+    tags:
+    - Syrette
+  - type: TrashOnSolutionEmpty
+    solution: pen
+
+- type: entity
+  parent: BaseItem
+  id: BF14SyretteCappedBase
+  abstract: true
+  name: syrette
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Specific/Medical/syrette.rsi
+    layers:
+    - state: syrette
+    - state: cap_red
+  - type: SpawnItemsOnUse
+    items:
+    - id: BF14SyretteCapRed
+    - id: BF14SyretteInaprovaline
+    sound:
+      path: /Audio/Items/Handcuffs/rope_breakout.ogg
+      params:
+        variation: 0.125
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - Syrette
+
+- type: entity
+  parent: BaseItem
+  id: BF14SyretteCapBase
+  name: syrette cap
+  abstract: true
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Specific/Medical/syrette.rsi
+    layers:
+    - state: cap_red
+  - type: Item
+    size: Tiny
+  - type: SpaceGarbage
+  - type: ActiveTimerTrigger
+    timeRemaining: 30
+  - type: DeleteOnTrigger
+  - type: Tag
+    tags:
+    - Trash
+
+- type: entity
+  parent: BF14SyretteCapBase
+  id: BF14SyretteCapRed
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Specific/Medical/syrette.rsi
+    layers:
+    - state: cap_red
+
+- type: entity
+  parent: BF14SyretteCapBase
+  id: BF14SyretteCapBlue
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Specific/Medical/syrette.rsi
+    layers:
+    - state: cap_blue
+
+- type: entity
+  parent: BF14SyretteCapBase
+  id: BF14SyretteCapGreen
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Specific/Medical/syrette.rsi
+    layers:
+    - state: cap_green
+
+- type: entity
+  parent: BF14SyretteCapBase
+  id: BF14SyretteCapYellow
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Specific/Medical/syrette.rsi
+    layers:
+    - state: cap_yellow
+
+- type: entity
+  parent: BF14SyretteCappedBase
+  id: BF14SyretteInaprovalineCapped
+  suffix: Inaprovaline, capped
+  description: A miniature single use syringe. Filled with a mixture of inaprovaline and iron.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Specific/Medical/syrette.rsi
+    layers:
+    - state: syrette
+    - state: cap_blue
+  - type: SpawnItemsOnUse
+    items:
+    - id: BF14SyretteCapBlue
+    - id: BF14SyretteInaprovaline
+
+- type: entity
+  parent: BF14SyretteBase
+  id: BF14SyretteInaprovaline
+  suffix: Inaprovaline
+  description: A miniature single use syringe. Filled with a mixture of inaprovaline and iron.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 10
+        reagents:
+        - ReagentId: Inaprovaline
+          Quantity: 6
+        - ReagentId: Iron
+          Quantity: 4
+
+- type: entity
+  parent: BF14SyretteCappedBase
+  id: BF14SyretteMeralyneCapped
+  suffix: Meralyne, capped
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    - id: BF14SyretteCapRed
+    - id: BF14SyretteMeralyne
+
+- type: entity
+  parent: BF14SyretteBase
+  id: BF14SyretteMeralyne
+  suffix: Meralyne
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 5
+        reagents:
+        - ReagentId: Meralyne
+          Quantity: 5
+
+- type: entity
+  parent: BF14SyretteCappedBase
+  id: BF14SyretteDermalineCapped
+  suffix: Dermaline, capped
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Specific/Medical/syrette.rsi
+    layers:
+    - state: syrette
+    - state: cap_yellow
+  - type: SpawnItemsOnUse
+    items:
+    - id: BF14SyretteCapYellow
+    - id: BF14SyretteDermaline
+
+- type: entity
+  parent: BF14SyretteBase
+  id: BF14SyretteDermaline
+  suffix: Dermaline
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 5
+        reagents:
+        - ReagentId: Dermaline
+          Quantity: 5
+
+- type: entity
+  parent: BF14SyretteBase
+  id: BF14SyretteEpinephrine
+  suffix: Epinephrine
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 5
+        reagents:
+        - ReagentId: Epinephrine
+          Quantity: 5
+
+- type: entity
+  parent: BF14SyretteBase
+  id: BF14SyretteSaline
+  suffix: Saline
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 5
+        reagents:
+        - ReagentId: Saline
+          Quantity: 5
+
+- type: entity
+  parent: BF14SyretteBase
+  id: BF14SyretteHypervene
+  suffix: Hypervene
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 5
+        reagents:
+        - ReagentId: Hypervene
+          Quantity: 5
+
+- type: entity
+  parent: BF14SyretteBase
+  id: BF14SyrettePhalanximine
+  suffix: Phalanximine
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 5
+        reagents:
+        - ReagentId: Phalanximine
+          Quantity: 5
+
+- type: entity
+  parent: BF14SyretteBase
+  id: BF14SyretteArithrazine
+  suffix: Arithrazine
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 5
+        reagents:
+        - ReagentId: Arithrazine
+          Quantity: 5
+
+- type: entity
+  parent: BF14SyretteBase
+  id: BF14SyretteFentanyl
+  suffix: Fentanyl
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 5
+        reagents:
+        - ReagentId: Fentanyl
+          Quantity: 5

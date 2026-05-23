@@ -59,6 +59,9 @@
   id: BF_CartridgeShotgun4Gauge
 
 - type: Tag
+  id: BlisterPack
+
+- type: Tag
   id: CartridgeSMAW
 
 - type: Tag
@@ -81,6 +84,9 @@
 
 - type: Tag
   id: ShellMortar822B14
+
+- type: Tag
+  id: Syrette
 
 - type: Tag
   id: MagazineRifleAKM
@@ -168,6 +174,9 @@
 
 - type: Tag
   id: MagazineGrenadeLauncherXM25
+
+- type: Tag
+  id: MedicationBox
 
 - type: Tag
   id: OffensiveGrenadeUSMK21

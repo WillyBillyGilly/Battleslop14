@@ -45,7 +45,7 @@ public sealed class DoAfterOverlay : Overlay
         _meta = _entManager.EntitySysManager.GetEntitySystem<MetaDataSystem>();
         _container = _entManager.EntitySysManager.GetEntitySystem<SharedContainerSystem>();
         _progressColor = _entManager.System<ProgressColorSystem>();
-        var sprite = new SpriteSpecifier.Rsi(new("/Textures/Interface/Misc/progress_bar.rsi"), "icon");
+        var sprite = new SpriteSpecifier.Rsi(new("/Textures/_Battlefield14/Interface/Misc/progress_bar.rsi"), "icon"); // BF14
         _barTexture = _entManager.EntitySysManager.GetEntitySystem<SpriteSystem>().Frame0(sprite);
 
         _unshadedShader = protoManager.Index<ShaderPrototype>("unshaded").Instance();
