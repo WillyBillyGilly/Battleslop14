@@ -56,12 +56,12 @@
         probability: 0.05
         conditions:
         - !type:ReagentThreshold
-          min: 5
+          min: 5.5 # BF14
       - !type:Drunk
         boozePower: 15
         conditions:
         - !type:ReagentThreshold
-          min: 5
+          min: 5.5 # BF14
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold

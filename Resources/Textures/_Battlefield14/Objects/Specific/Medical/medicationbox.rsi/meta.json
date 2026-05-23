@@ -20,6 +20,9 @@
       "name": "overlay_ampuole"
     },
     {
+      "name": "overlay_ampuole_red"
+    },
+    {
       "name": "overlay_stripe_blue"
     },
     {
@@ -47,6 +50,12 @@
       "name": "overlay_stripe_grey"
     },
     {
+      "name": "overlay_stripe_white"
+    },
+    {
+      "name": "overlay_stripe_purple"
+    },
+    {
       "name": "overlay_pills_blue"
     },
     {
@@ -72,6 +81,9 @@
     },
     {
       "name": "overlay_pills_black"
+    },
+    {
+      "name": "overlay_pills_purple"
     }
   ]
 }

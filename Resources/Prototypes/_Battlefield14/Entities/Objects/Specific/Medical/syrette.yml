@@ -264,3 +264,16 @@
         reagents:
         - ReagentId: Arithrazine
           Quantity: 5
+
+- type: entity
+  parent: BF14SyretteBase
+  id: BF14SyretteFentanyl
+  suffix: Fentanyl
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 5
+        reagents:
+        - ReagentId: Fentanyl
+          Quantity: 5

@@ -202,7 +202,7 @@
     sprite: _Battlefield14/Objects/Specific/Medical/medicationbox.rsi
     layers:
     - state: base
-    - state: overlay_stripe_lightyellow
+    - state: overlay_stripe_white
     - state: overlay_ampuole
   - type: Label
     currentLabel: epinephrine
@@ -262,8 +262,27 @@
     - state: overlay_stripe_yellow
     - state: overlay_ampuole
   - type: Label
-    currentLabel: Arithrazine
+    currentLabel: arithrazine
   - type: StorageFill
     contents:
     - id: BlisterPackSyretteArithrazine
       amount: 2
+
+- type: entity
+  id: MedicationBoxSyrettesFentanyl
+  parent: MedicationBoxBase
+  name: syrette box
+  suffix: Fentanyl
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Specific/Medical/medicationbox.rsi
+    layers:
+    - state: base
+    - state: overlay_stripe_maroon
+    - state: overlay_ampuole_red
+  - type: Label
+    currentLabel: fentanyl
+  - type: StorageFill
+    contents:
+    - id: BlisterPackSyretteFentanyl
+      amount: 1

@@ -32,3 +32,4 @@
 #    MedTekCartridge: 3 # Frontier
   contrabandInventory: # Frontier
     FoodApple: 1
+    MedicationBoxSyrettesFentanyl: 1
