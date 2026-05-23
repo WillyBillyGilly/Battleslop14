@@ -83,9 +83,10 @@
     contents:
       - id: HandheldHealthAnalyzerUnpowered # BF14
       - id: MedicationBoxSyrettesPhalanximine # BF14
+      - id: MedicationBoxSyrettesArithrazine # BF14
 #BF14      - id: RadAutoInjector
       - id: BlisterPackPotassiumIodide # BF14
-      - id: MedicationBoxSyrettesArithrazine # BF14
+      - id: BlisterPackBicaridine
 
 - type: entity
   id: MedkitAdvancedFilled
