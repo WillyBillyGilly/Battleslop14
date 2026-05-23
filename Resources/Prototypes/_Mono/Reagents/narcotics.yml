@@ -8,21 +8,22 @@
   color: "#b4dae0"
   metabolisms:
     Medicine:
-      metabolismRate: 1
+      metabolismRate: 0.5 # BF14 1 > 0.5
       effects:
       - !type:HealthChange
         conditions:
         - !type:TotalDamage
           min: 5
         - !type:ReagentThreshold
-          max: 5
+          max: 5.5
         damage:
           groups:
-            Burn: -3
-            Brute: -6 # its a painkiller
-            Toxin: -1
+            Burn: -1.5 # -3
+            Brute: -3 # -6 # its a painkiller
+#BF14            Toxin: -1
+            Airloss: -1.5
     Narcotic:
-      metabolismRate: 1
+      metabolismRate: 0.5 # BF14 1 > 0.5
       effects:
       - !type:MovespeedModifier
         walkSpeedModifier: 0.40
@@ -36,11 +37,14 @@
         time: 5
         type: Add
       - !type:GenericStatusEffect
+        conditions:
+        - !type:ReagentThreshold
+          min: 5.5 # BF14
         key: SeeingRainbows
         component: SeeingRainbows
         type: Add
         time: 20
-        refresh: false
+        refresh: true
       - !type:Emote
         emote: Laugh
         showInChat: true
@@ -49,8 +53,11 @@
         - !type:ReagentThreshold
           max: 20
       - !type:Drunk
+        conditions:
+        - !type:ReagentThreshold
+          min: 5.5 # BF14
         slurSpeech: true
-        boozePower: 75
+        boozePower: 5 # BF14 75
         # OD effects
       - !type:ChemVomit
         probability: 0.05
