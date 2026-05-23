@@ -40,6 +40,7 @@
         - PillCanister
         - BlisterPack
         - Tourniquet
+        - Syrette
       components:
         - Hypospray
         - Injector

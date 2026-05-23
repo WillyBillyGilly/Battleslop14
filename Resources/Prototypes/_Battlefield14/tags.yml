@@ -86,6 +86,9 @@
   id: ShellMortar822B14
 
 - type: Tag
+  id: Syrette
+
+- type: Tag
   id: MagazineRifleAKM
 
 - type: Tag

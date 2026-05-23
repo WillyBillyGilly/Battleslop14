@@ -96,6 +96,44 @@
       amount: 2
 
 - type: entity
+  id: MedicationBoxPillsDylovene
+  parent: MedicationBoxBase
+  name: pill box
+  suffix: Dylovene
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Specific/Medical/medicationbox.rsi
+    layers:
+    - state: base
+    - state: overlay_stripe_green
+    - state: overlay_pills_green
+  - type: Label
+    currentLabel: dylovene
+  - type: StorageFill
+    contents:
+    - id: BlisterPackDylovene
+      amount: 2
+
+- type: entity
+  id: MedicationBoxPillsDexalin
+  parent: MedicationBoxBase
+  name: pill box
+  suffix: Dexalin
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Specific/Medical/medicationbox.rsi
+    layers:
+    - state: base
+    - state: overlay_stripe_blue
+    - state: overlay_pills_blue
+  - type: Label
+    currentLabel: dexalin
+  - type: StorageFill
+    contents:
+    - id: BlisterPackDexalin
+      amount: 2
+
+- type: entity
   id: MedicationBoxPillsIron
   parent: MedicationBoxBase
   name: pill box
@@ -113,3 +151,63 @@
     contents:
     - id: BlisterPackIron
       amount: 2
+
+# Syrettes
+
+- type: entity
+  id: MedicationBoxSyrettesMeralyne
+  parent: MedicationBoxBase
+  name: syrette box
+  suffix: Meralyne
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Specific/Medical/medicationbox.rsi
+    layers:
+    - state: base
+    - state: overlay_stripe_maroon
+    - state: overlay_ampuole
+  - type: Label
+    currentLabel: meralyne
+  - type: StorageFill
+    contents:
+    - id: BlisterPackSyretteMeralyne
+      amount: 1
+
+- type: entity
+  id: MedicationBoxSyrettesDermaline
+  parent: MedicationBoxBase
+  name: syrette box
+  suffix: Dermaline
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Specific/Medical/medicationbox.rsi
+    layers:
+    - state: base
+    - state: overlay_stripe_dirtyyellow
+    - state: overlay_ampuole
+  - type: Label
+    currentLabel: dermaline
+  - type: StorageFill
+    contents:
+    - id: BlisterPackSyretteDermaline
+      amount: 1
+
+- type: entity
+  id: MedicationBoxSyrettesEpinephrine
+  parent: MedicationBoxBase
+  name: syrette box
+  suffix: Epinephrine
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Specific/Medical/medicationbox.rsi
+    layers:
+    - state: base
+    - state: overlay_stripe_lightyellow
+    - state: overlay_ampuole
+  - type: Label
+    currentLabel: epinephrine
+  - type: StorageFill
+    contents:
+    - id: BlisterPackSyretteEpinephrine
+      amount: 1
+

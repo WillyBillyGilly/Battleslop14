@@ -12,9 +12,6 @@
     - state: base
     - map: [ "enum.StorageContainerVisualLayers.Fill" ]
       visible: false
-#  - type: Icon
-#    sprite: _Battlefield14/Objects/Specific/Medical/blisterpack.rsi
-#    state: icon
   - type: StorageContainerVisuals
     maxFillLevels: 6
     fillBaseName: fill-
@@ -41,6 +38,34 @@
   - type: EmitSoundOnDrop
     sound:
       path: /Audio/_Goobstation/Items/handling/pillbottle_drop.ogg
+
+- type: entity
+  id: BlisterPackSyrette
+  parent: BlisterPack
+  description: Holds up to 5 syrettes.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Specific/Medical/blisterpack.rsi
+    layers:
+    - state: base-ampuole
+    - map: [ "enum.StorageContainerVisualLayers.Fill" ]
+      visible: false
+  - type: StorageContainerVisuals
+    maxFillLevels: 5
+    fillBaseName: fill-ampuole-
+  - type: Tag
+    tags:
+      - PillCanister
+      - BlisterPack
+  - type: Storage
+    grid:
+    - 0,0,4,0
+    whitelist:
+      tags:
+      - Syrette
+  - type: Appearance
+
+# Pills
 
 - type: entity
   parent: BlisterPack
@@ -121,3 +146,46 @@
     contents:
     - id: PillDermaline
       amount: 6
+
+# Syrettes
+
+- type: entity
+  parent: BlisterPackSyrette
+  id: BlisterPackSyretteBicaridine
+  suffix: Bicaridine 5u, 5
+  components:
+  - type: StorageFill
+    contents:
+    - id: BF14SyretteBicaridine
+      amount: 5
+
+- type: entity
+  parent: BlisterPackSyrette
+  id: BlisterPackSyretteMeralyne
+  suffix: Meralyne 5u, 5
+  components:
+  - type: StorageFill
+    contents:
+    - id: BF14SyretteMeralyne
+      amount: 5
+
+- type: entity
+  parent: BlisterPackSyrette
+  id: BlisterPackSyretteDermaline
+  suffix: Dermaline 5u, 5
+  components:
+  - type: StorageFill
+    contents:
+    - id: BF14SyretteDermaline
+      amount: 5
+
+- type: entity
+  parent: BlisterPackSyrette
+  id: BlisterPackSyretteEpinephrine
+  suffix: Epinephrine 5u, 5
+  components:
+  - type: StorageFill
+    contents:
+    - id: BF14SyretteEpinephrine
+      amount: 5
+

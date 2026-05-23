@@ -19,7 +19,7 @@
     MedkitToxinFilled: 5 #BF14
     MedkitRadiationFilled: 5 #BF14
     MedkitCombatFilled: 2 #BF14
-    EpinephrineChemistryBottle: 3
+    MedicationBoxSyrettesEpinephrine: 3 # BF14
     Syringe: 5
     BoxBottle: 3
 #    ClothingEyesHudMedical: 2
