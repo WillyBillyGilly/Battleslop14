@@ -31,7 +31,8 @@
         - Packet # BF14
         - GasTank # BF14
         - Syrette # BF14
-        - MedicationBox
+        - MedicationBox # BF14
+        - BlisterPack # BF14
       components:
         - Hypospray
         - Injector

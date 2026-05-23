@@ -55,7 +55,6 @@
     fillBaseName: fill-ampuole-
   - type: Tag
     tags:
-      - PillCanister
       - BlisterPack
   - type: Storage
     grid:

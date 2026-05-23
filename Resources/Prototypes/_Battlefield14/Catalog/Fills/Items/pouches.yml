@@ -10,7 +10,7 @@
     - id: PillCanisterTricordrazine
     - id: Tourniquet
     - id: PillCanisterIron # Tramadol
-    - id: InaprovalineMedipen
+    - id: BF14SyretteInaprovalineCapped
 
 - type: entity
   parent: PouchMedkit
@@ -26,7 +26,7 @@
       - id: PillCanisterKelotane
       - id: PillCanisterTricordrazine
 #      - id: PillCanisterTramadol
-      - id: InaprovalineMedipen
+      - id: BF14SyretteInaprovalineCapped
 
 - type: entity
   parent: PouchMedkit
@@ -39,7 +39,7 @@
       - id: MedicatedSuture
       - id: RegenerativeMesh
       - id: BF14HyposprayFilledAdvanced
-      - id: InaprovalineMedipen # BF14
+      - id: BF14SyretteInaprovalineCapped
       - id: PillCanisterTricordrazine
       - id: Tourniquet
         amount: 2
