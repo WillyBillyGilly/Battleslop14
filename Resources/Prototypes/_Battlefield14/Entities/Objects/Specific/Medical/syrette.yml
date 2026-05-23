@@ -71,7 +71,7 @@
     size: Tiny
   - type: SpaceGarbage
   - type: ActiveTimerTrigger
-    timeRemaining: 60
+    timeRemaining: 30
   - type: DeleteOnTrigger
   - type: Tag
     tags:
