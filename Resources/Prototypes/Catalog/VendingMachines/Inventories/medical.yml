@@ -7,11 +7,11 @@
 #BF14    Bloodpack: 5
     Gauze: 5 # Frontier
     Tourniquet: 20 # BF14
-    PillCanisterBicaridine: 5 #BF14
-    PillCanisterKelotane: 5 #BF14
-    PillCanisterTricordrazine: 5 #BF14
+    MedicationBoxPillsBicaridine: 5 #BF14
+    MedicationBoxPillsKelotane: 5 #BF14
+    MedicationBoxPillsTricordrazine: 5 #BF14
 #    PillCanisterTramadol: 5
-    PillCanisterIron: 5 #BF14
+    MedicationBoxPillsIron: 5 #BF14
     MedkitFilled: 5 #BF14
     MedkitBruteFilled: 5 #BF14
     MedkitBurnFilled: 5 #BF14

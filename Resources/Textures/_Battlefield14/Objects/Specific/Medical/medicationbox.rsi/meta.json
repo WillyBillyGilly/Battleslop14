@@ -23,19 +23,37 @@
       "name": "overlay_stripe_blue"
     },
     {
+      "name": "overlay_stripe_lightblue"
+    },
+    {
       "name": "overlay_stripe_green"
     },
     {
       "name": "overlay_stripe_red"
     },
     {
+      "name": "overlay_stripe_yellow"
+    },
+    {
+      "name": "overlay_stripe_grey"
+    },
+    {
       "name": "overlay_pills_blue"
+    },
+    {
+      "name": "overlay_pills_lightblue"
     },
     {
       "name": "overlay_pills_green"
     },
     {
       "name": "overlay_pills_red"
+    },
+    {
+      "name": "overlay_pills_yellow"
+    },
+    {
+      "name": "overlay_pills_grey"
     }
   ]
 }

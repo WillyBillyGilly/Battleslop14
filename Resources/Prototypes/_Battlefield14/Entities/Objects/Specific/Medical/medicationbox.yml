@@ -39,9 +39,28 @@
   - type: Appearance
 
 - type: entity
+  id: MedicationBoxPillsTricordrazine
+  parent: MedicationBoxBase
+  name: pill box
+  suffix: Tricordrazine
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Specific/Medical/medicationbox.rsi
+    layers:
+    - state: base
+    - state: overlay_stripe_lightblue
+    - state: overlay_pills_lightblue
+  - type: Label
+    currentLabel: tricordrazine
+  - type: StorageFill
+    contents:
+    - id: BlisterPackTricordrazine
+      amount: 2
+
+- type: entity
   id: MedicationBoxPillsBicaridine
   parent: MedicationBoxBase
-  name: medication box
+  name: pill box
   suffix: Bicaridine
   components:
   - type: Sprite
@@ -55,4 +74,42 @@
   - type: StorageFill
     contents:
     - id: BlisterPackBicaridine
+      amount: 2
+
+- type: entity
+  id: MedicationBoxPillsKelotane
+  parent: MedicationBoxBase
+  name: pill box
+  suffix: Kelotane
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Specific/Medical/medicationbox.rsi
+    layers:
+    - state: base
+    - state: overlay_stripe_yellow
+    - state: overlay_pills_yellow
+  - type: Label
+    currentLabel: kelotane
+  - type: StorageFill
+    contents:
+    - id: BlisterPackKelotane
+      amount: 2
+
+- type: entity
+  id: MedicationBoxPillsIron
+  parent: MedicationBoxBase
+  name: pill box
+  suffix: Iron
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Specific/Medical/medicationbox.rsi
+    layers:
+    - state: base
+    - state: overlay_stripe_grey
+    - state: overlay_pills_grey
+  - type: Label
+    currentLabel: iron
+  - type: StorageFill
+    contents:
+    - id: BlisterPackIron
       amount: 2

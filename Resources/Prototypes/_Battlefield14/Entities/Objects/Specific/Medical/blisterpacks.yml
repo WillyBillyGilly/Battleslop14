@@ -47,8 +47,6 @@
   id: BlisterPackBicaridine
   suffix: Bicaridine 15u, 6
   components:
-  - type: Label
-    currentLabel: bicaridine 15u
   - type: StorageFill
     contents:
     - id: PillBicaridine
@@ -59,8 +57,6 @@
   id: BlisterPackKelotane
   suffix: Kelotane 15u, 6
   components:
-  - type: Label
-    currentLabel: kelotane 15u
   - type: StorageFill
     contents:
     - id: PillKelotane
@@ -71,8 +67,6 @@
   id: BlisterPackTricordrazine
   suffix: Tricordrazine 15u, 6
   components:
-  - type: Label
-    currentLabel: tricordrazine 15u
   - type: StorageFill
     contents:
     - id: PillTricordrazine
@@ -80,11 +74,39 @@
 
 - type: entity
   parent: BlisterPack
+  id: BlisterPackDexalin
+  suffix: Dexalin 15u, 6
+  components:
+  - type: StorageFill
+    contents:
+    - id: PillDexalin
+      amount: 6
+
+- type: entity
+  parent: BlisterPack
+  id: BlisterPackDylovene
+  suffix: Dylovene 15u, 6
+  components:
+  - type: StorageFill
+    contents:
+    - id: PillDylovene
+      amount: 6
+
+- type: entity
+  parent: BlisterPack
+  id: BlisterPackIron
+  suffix: Iron 10u, 6
+  components:
+  - type: StorageFill
+    contents:
+    - id: PillIron
+      amount: 6
+
+- type: entity
+  parent: BlisterPack
   id: BlisterPackMeralyne
   suffix: Meralyne 7.5u, 6
   components:
-  - type: Label
-    currentLabel: meralyne 7.5u
   - type: StorageFill
     contents:
     - id: PillMeralyne
@@ -95,8 +117,6 @@
   id: BlisterPackDermaline
   suffix: Dermaline 7.5u, 6
   components:
-  - type: Label
-    currentLabel: dermaline 7.5u
   - type: StorageFill
     contents:
     - id: PillDermaline
