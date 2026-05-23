@@ -8,7 +8,7 @@
     sprite: _NF/Objects/Specific/Medical/firstaidkits.rsi # Frontier: _NF prefix
     state: firstaid
   - type: Storage
-    maxItemSize: Small
+    maxItemSize: Normal # BF14
     defaultStorageOrientation: Vertical # BF14
     grid:
     - 0,0,3,2 # BF14
@@ -30,6 +30,8 @@
         - Tourniquet # BF14
         - Packet # BF14
         - GasTank # BF14
+        - Syrette # BF14
+        - MedicationBox
       components:
         - Hypospray
         - Injector
@@ -38,7 +40,9 @@
         - SurgeryTool # Shitmed Change
         - BreathMask # BF14
   - type: Item
-    size: Normal # BF14
+    size: Large
+    shape:
+    - 0,0,1,1 # BF14
     sprite: _NF/Objects/Specific/Medical/firstaidkits.rsi # Frontier: _NF prefix
     heldPrefix: firstaid
   - type: PhysicalComposition

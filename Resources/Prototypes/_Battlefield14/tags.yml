@@ -176,6 +176,9 @@
   id: MagazineGrenadeLauncherXM25
 
 - type: Tag
+  id: MedicationBox
+
+- type: Tag
   id: OffensiveGrenadeUSMK21
 
 - type: Tag

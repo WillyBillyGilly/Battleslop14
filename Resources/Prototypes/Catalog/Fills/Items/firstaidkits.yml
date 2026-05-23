@@ -9,9 +9,9 @@
       - id: Brutepack
       - id: Ointment
       - id: Gauze
-      - id: PillCanisterTricordrazine
-      - id: PillCanisterIron #BF14
-      - id: InaprovalineMedipen # BF14
+      - id: BlisterPackTricordrazine # BF14
+      - id: BlisterPackIron #BF14
+      - id: BF14SyretteInaprovalineCapped # BF14
         amount: 2
       - id: HandheldHealthAnalyzerUnpowered #BF14
       # see https://github.com/tgstation/blob/master/code/game/objects/items/storage/firstaid.dm for example contents
@@ -25,9 +25,7 @@
     contents:
       - id: Ointment
         amount: 2
-      - id: PillCanisterKelotane
-#      - id: PillCanisterTramadol # BF14
-      - id: BurnAutoInjector # BF14
+      - id: MedicationBoxPillsKelotane # BF14
       - id: HandheldHealthAnalyzerUnpowered #BF14
 
 - type: entity
@@ -40,10 +38,8 @@
       - id: Brutepack
         amount: 2
       - id: Gauze
-      - id: PillCanisterBicaridine # BF14
-      - id: PillCanisterIron # BF14
-#      - id: PillCanisterTramadol
-      - id: BruteAutoInjector # BF14
+      - id: MedicationBoxPillsBicaridine # BF14
+      - id: BlisterPackIron # BF14
       - id: SyringeSaline # BF14
       - id: HandheldHealthAnalyzerUnpowered #BF14
 
@@ -54,12 +50,12 @@
   components:
   - type: StorageFill
     contents:
-      - id: SyringeIpecac
-      - id: SyringeEthylredoxrazine
-      - id: AntiPoisonMedipen
-      - id: PillCanisterDylovene
-      - id: PillCanisterCharcoal
       - id: HandheldHealthAnalyzerUnpowered #BF14
+      - id: BlisterPackEthylredoxrazine # BF14
+#BF14      - id: AntiPoisonMedipen
+      - id: BlisterPackDylovene # BF14
+      - id: MedicationBoxSyrettesHypervene # BF14
+      - id: SyringeIpecac
 
 - type: entity
   id: MedkitOxygenFilled
@@ -68,15 +64,15 @@
   components:
   - type: StorageFill
     contents:
+      - id: HandheldHealthAnalyzerUnpowered #BF14
       - id: ClothingMaskBreathMedical
       - id: EmergencyOxygenTankFilled
-      - id: EmergencyMedipen
-      - id: SyringeInaprovaline
-      - id: InaprovalineMedipen # BF14
+#BF14      - id: EmergencyMedipen
+#BF14      - id: SyringeInaprovaline
+      - id: BF14SyretteInaprovalineCapped # BF14
         amount: 2
-      - id: PillCanisterDexalin
+      - id: MedicationBoxPillsDexalin
       - id: SyringeSaline # BF14
-      - id: HandheldHealthAnalyzerUnpowered #BF14
 
 - type: entity
   id: MedkitRadiationFilled
@@ -85,11 +81,11 @@
   components:
   - type: StorageFill
     contents:
-      - id: SyringePhalanximine
-      - id: RadAutoInjector
-      - id: PillCanisterPotassiumIodide
-      - id: PillCanisterHyronalin
-      - id: HandheldHealthAnalyzerUnpowered #BF14
+      - id: HandheldHealthAnalyzerUnpowered # BF14
+      - id: MedicationBoxSyrettesPhalanximine # BF14
+#BF14      - id: RadAutoInjector
+      - id: BlisterPackPotassiumIodide # BF14
+      - id: MedicationBoxSyrettesArithrazine # BF14
 
 - type: entity
   id: MedkitAdvancedFilled
@@ -116,8 +112,8 @@
       - id: RegenerativeMesh
       - id: SyringeEphedrine
       - id: SyringeSaline
-      - id: BruteAutoInjector
-      - id: BurnAutoInjector
+      - id: BlisterPackSyretteMeralyne
+      - id: BlisterPackSyretteDermaline
       - id: PillCanisterTricordrazine # BF14
       - id: HandheldHealthAnalyzerUnpowered #BF14
 

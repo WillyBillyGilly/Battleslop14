@@ -41,6 +41,7 @@
         - BlisterPack
         - Tourniquet
         - Syrette
+        - MedicationBox
       components:
         - Hypospray
         - Injector
@@ -69,6 +70,8 @@
         - Ointment
         - PillCanister
         - Tourniquet
+        - Syrette
+        - MedicationBox
       components:
         - Hypospray
         - Injector

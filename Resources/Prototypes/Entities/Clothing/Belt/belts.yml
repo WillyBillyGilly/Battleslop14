@@ -281,6 +281,8 @@
         - GlassBeaker # BF14
         - Tourniquet # BF14
         - Packet # BF14
+        - Syrette # BF14
+        - MedicationBox
       components:
         - Hypospray
         - Injector

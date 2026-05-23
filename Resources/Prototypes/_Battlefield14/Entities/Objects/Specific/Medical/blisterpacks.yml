@@ -119,12 +119,32 @@
 
 - type: entity
   parent: BlisterPack
+  id: BlisterPackEthylredoxrazine
+  suffix: Ethylredoxrazine 10u, 6
+  components:
+  - type: StorageFill
+    contents:
+    - id: PillEthylredoxrazine
+      amount: 6
+
+- type: entity
+  parent: BlisterPack
   id: BlisterPackIron
   suffix: Iron 10u, 6
   components:
   - type: StorageFill
     contents:
     - id: PillIron
+      amount: 6
+
+- type: entity
+  parent: BlisterPack
+  id: BlisterPackPotassiumIodide
+  suffix: Potassium Iodide 10u, 6
+  components:
+  - type: StorageFill
+    contents:
+    - id: PillPotassiumIodide
       amount: 6
 
 - type: entity
@@ -187,5 +207,35 @@
   - type: StorageFill
     contents:
     - id: BF14SyretteEpinephrine
+      amount: 5
+
+- type: entity
+  parent: BlisterPackSyrette
+  id: BlisterPackSyretteHypervene
+  suffix: Hypervene 5u, 5
+  components:
+  - type: StorageFill
+    contents:
+    - id: BF14SyretteHypervene
+      amount: 5
+
+- type: entity
+  parent: BlisterPackSyrette
+  id: BlisterPackSyrettePhalanximine
+  suffix: Phalanximine 5u, 5
+  components:
+  - type: StorageFill
+    contents:
+    - id: BF14SyrettePhalanximine
+      amount: 5
+
+- type: entity
+  parent: BlisterPackSyrette
+  id: BlisterPackSyretteArithrazine
+  suffix: Arithrazine 5u, 5
+  components:
+  - type: StorageFill
+    contents:
+    - id: BF14SyretteArithrazine
       amount: 5
 

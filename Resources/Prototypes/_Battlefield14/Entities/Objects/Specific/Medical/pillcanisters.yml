@@ -13,7 +13,7 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 20
+        maxVol: 50
         reagents:
         - ReagentId: Meralyne
           Quantity: 7.5
@@ -30,3 +30,23 @@
     contents:
     - id: PillMeralyne
       amount: 15
+
+- type: entity
+  name: pill
+  suffix: Ethylredoxrazine 10u
+  parent: Pill
+  id: PillEthylredoxrazine
+  components:
+  - type: Pill
+    pillType: 7
+  - type: Sprite
+    state: pill8
+  - type: Label
+    currentLabel: ethylredoxrazine 10u
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 50
+        reagents:
+        - ReagentId: Ethylredoxrazine
+          Quantity: 10

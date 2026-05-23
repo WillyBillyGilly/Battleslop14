@@ -19,7 +19,7 @@
     sound:
       path: /Audio/_Goobstation/Items/handling/ammobox_drop.ogg
   - type: Storage
-    maxItemSize: Normal
+    maxItemSize: Small
     grid:
     - 0,0,0,1
 #    whitelist:
@@ -29,7 +29,8 @@
     size: Small
   - type: Tag
     tags:
-    - Toolbox
+    - MedicationBox
+    - PillCanister
   - type: GenericVisualizer
     visuals:
       enum.StorageVisuals.Open:
@@ -211,3 +212,59 @@
     - id: BlisterPackSyretteEpinephrine
       amount: 1
 
+- type: entity
+  id: MedicationBoxSyrettesHypervene
+  parent: MedicationBoxBase
+  name: syrette box
+  suffix: Hypervene
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Specific/Medical/medicationbox.rsi
+    layers:
+    - state: base
+    - state: overlay_stripe_lightyellow
+    - state: overlay_ampuole
+  - type: Label
+    currentLabel: hypervene
+  - type: StorageFill
+    contents:
+    - id: BlisterPackSyretteHypervene
+      amount: 1
+
+- type: entity
+  id: MedicationBoxSyrettesPhalanximine
+  parent: MedicationBoxBase
+  name: syrette box
+  suffix: Phalanximine
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Specific/Medical/medicationbox.rsi
+    layers:
+    - state: base
+    - state: overlay_stripe_green
+    - state: overlay_ampuole
+  - type: Label
+    currentLabel: phalanximine
+  - type: StorageFill
+    contents:
+    - id: BlisterPackSyrettePhalanximine
+      amount: 2
+
+- type: entity
+  id: MedicationBoxSyrettesArithrazine
+  parent: MedicationBoxBase
+  name: syrette box
+  suffix: Arithrazine
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Specific/Medical/medicationbox.rsi
+    layers:
+    - state: base
+    - state: overlay_stripe_yellow
+    - state: overlay_ampuole
+  - type: Label
+    currentLabel: Arithrazine
+  - type: StorageFill
+    contents:
+    - id: BlisterPackSyretteArithrazine
+      amount: 2

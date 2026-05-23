@@ -119,7 +119,7 @@
 
 - type: entity
   parent: BF14SyretteCappedBase
-  id: BF14SyretteCappedBaseInaprovaline
+  id: BF14SyretteInaprovalineCapped
   suffix: Inaprovaline, capped
   description: A miniature single use syringe. Filled with a mixture of inaprovaline and iron.
   components:
@@ -151,7 +151,7 @@
 
 - type: entity
   parent: BF14SyretteCappedBase
-  id: BF14SyretteCappedBaseMeralyne
+  id: BF14SyretteMeralyneCapped
   suffix: Meralyne, capped
   components:
   - type: SpawnItemsOnUse
@@ -174,7 +174,7 @@
 
 - type: entity
   parent: BF14SyretteCappedBase
-  id: BF14SyretteCappedBaseDermaline
+  id: BF14SyretteDermalineCapped
   suffix: Dermaline, capped
   components:
   - type: Sprite
@@ -213,3 +213,54 @@
         - ReagentId: Epinephrine
           Quantity: 5
 
+- type: entity
+  parent: BF14SyretteBase
+  id: BF14SyretteSaline
+  suffix: Saline
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 5
+        reagents:
+        - ReagentId: Saline
+          Quantity: 5
+
+- type: entity
+  parent: BF14SyretteBase
+  id: BF14SyretteHypervene
+  suffix: Hypervene
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 5
+        reagents:
+        - ReagentId: Hypervene
+          Quantity: 5
+
+- type: entity
+  parent: BF14SyretteBase
+  id: BF14SyrettePhalanximine
+  suffix: Phalanximine
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 5
+        reagents:
+        - ReagentId: Phalanximine
+          Quantity: 5
+
+- type: entity
+  parent: BF14SyretteBase
+  id: BF14SyretteArithrazine
+  suffix: Arithrazine
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 5
+        reagents:
+        - ReagentId: Arithrazine
+          Quantity: 5
