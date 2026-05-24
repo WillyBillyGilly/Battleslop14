@@ -91,6 +91,14 @@
   - type: SpentAmmoVisuals
 
 - type: entity
+  id: BF_CartridgeRifle762x51TracerRed
+  name: cartridge (7.62x51mm red tracer)
+  parent: BF_CartridgeRifle762x51
+  components:
+  - type: CartridgeAmmo
+    proto: BulletRifleBF762x51TracerRed
+
+- type: entity
   id: BF_CartridgeRifle9x39
   name: cartridge (9x39mm)
   parent: BaseCartridgeRifle

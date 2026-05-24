@@ -3,6 +3,9 @@
 uplink-natous-m249para-name = M249 Para LMG x2
 uplink-natous-m249para-desc = A crate with two M249 Para's with four spare belt boxes.
 
+uplink-natous-M240B-name = M240B MMG x2
+uplink-natous-M240B-desc = A crate with two M240B's and four spare belt boxes.
+
 uplink-natous-m320-name = M320 x2
 uplink-natous-m320-desc = Two M320 grenade launchers, fires 40x46mm grenades, two fragmentation, two smoke, and one HE box included.
 

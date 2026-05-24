@@ -58,7 +58,7 @@ uplink-PACT-wrist-scanner-name = Wrist mounted mass scanner
 uplink-PACT-wrist-scanner-desc = A portable radar mounted on the wrist for easy access at any time.
 
 uplink-PACT-barbwirecrate-name = Barbed wire coil x5
-uplink-PACT-barbwirecrate-desc = 5 stacks of 10 barbed wire, able to lay down 1 coils each, for a total of 50.
+uplink-PACT-barbwirecrate-desc = 5 stacks of 10 barbed wire, able to lay down 10 coils each, for a total of 50.
 
 ## Medical
 

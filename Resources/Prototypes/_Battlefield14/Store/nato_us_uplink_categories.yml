@@ -18,6 +18,22 @@
           - AmericanUplink
 
 - type: listing
+  id: UplinkNATOUSM240B
+  name: uplink-natous-M240B-name
+  description: uplink-natous-M240B-desc
+  productEntity: CrateSecgearNATOFilledM240B
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/MachineGuns/M240B.rsi, state: icon }
+  cost:
+    NATORequisition: 100 # 16 minutes 40 seconds approx
+  categories:
+    - UplinkNATOUSWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
   id: UplinkNATOUSSMAW
   name: uplink-natous-SMAWcrate-name
   description: uplink-natous-SMAWcrate-desc

@@ -209,3 +209,14 @@
   - "/Audio/_Battlefield14/Weapons/Guns/G3/fire-04.ogg"
   - "/Audio/_Battlefield14/Weapons/Guns/G3/fire-05.ogg"
   - "/Audio/_Battlefield14/Weapons/Guns/G3/fire-06.ogg"
+
+- type: soundCollection
+  id: BF_M60_Gunshots # N60- used for M240B
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/M60/fire-01.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M60/fire-02.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M60/fire-03.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M60/fire-04.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M60/fire-05.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M60/fire-06.ogg"
+

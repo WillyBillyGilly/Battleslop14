@@ -16,6 +16,21 @@
     access: [["NATOSoldier"]]
 
 - type: entity
+  id: CrateSecgearNATOFilledM240B
+  suffix: Filled, M240B
+  parent: CrateSecgear
+  name: M240B crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponMachineGunUSM240B
+          amount: 2
+        - id: MagazineBeltBoxM240
+          amount: 4
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
+- type: entity
   id: CrateSecgearNATOFilledSMAW
   suffix: Filled, SMAW
   parent: CrateSecgear
