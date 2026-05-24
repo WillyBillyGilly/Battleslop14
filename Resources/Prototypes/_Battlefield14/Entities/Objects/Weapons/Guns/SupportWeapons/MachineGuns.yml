@@ -95,6 +95,89 @@
         requireDetailRange: true
 
 - type: entity
+  name: M240B
+  parent: WeaponMachineGunUSM249Para
+  id: WeaponMachineGunUSM240B
+  description: When you add the belgian MAG 58 and a decade of desert warfare, you get this thing.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/MachineGuns/M240B.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/MachineGuns/M240B.rsi
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: GunWieldBonus
+    minAngle: -19
+    maxAngle: -35
+  - type: Gun
+    minAngle: 19 # Wielded = 0
+    maxAngle: 55 # wielded = 20
+    angleIncrease: 1
+    angleDecay: 12
+    availableModes:
+    - FullAuto
+    - Burst
+    selectedMode: FullAuto
+    fireRate: 6
+    projectileSpeed: 50 # full length barrel
+    shotsPerBurst: 5 # Fictional, to help with conserving ammo
+    burstCooldown: 0.5
+    soundGunshot:
+      collection: BF_M60_Gunshots
+      params:
+        volume: -5
+        variation: 0.125
+  - type: ChamberMagazineAmmoProvider
+    boltClosed: null
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/M60/rack.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineBeltBoxM240
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/M60/boxinsert.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/M60/boxremove.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineBeltBoxM240
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle762x51
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle762x51
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: ClothingSpeedModifier
+    walkModifier: 0.8
+    sprintModifier: 0.8
+  - type: HeldSpeedModifier
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes MAG 58 pattern belt boxes.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+- type: entity
   name: MK 48
   parent: WeaponMachineGunUSM249Para
   id: WeaponMachineGunUSMK48
@@ -165,6 +248,11 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes maximi pattern belt boxes.
+        color: "#4f94ad"
+        requireDetailRange: true
 
 # DE
 
