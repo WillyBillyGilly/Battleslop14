@@ -48,6 +48,18 @@
    path:
      path: /Audio/_Battlefield14/Jukebox/thehumanshields.ogg
 
+ - type: jukebox
+   id: morethevictim
+   name: More the Victim - Linkin park
+   path:
+     path: /Audio/_Battlefield14/Jukebox/morethevictim.ogg
+
+ - type: jukebox
+   id: somewhereibelong
+   name: Somewhere I Belong - Linkin park
+   path:
+     path: /Audio/_Battlefield14/Jukebox/somewhereibelong.ogg
+
 # Eastern / east associated songs
 
  - type: jukebox

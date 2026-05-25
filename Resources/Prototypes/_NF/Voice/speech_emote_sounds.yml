@@ -97,7 +97,7 @@
 - type: emoteSounds
   id: NfsdCat
   sound:
-    path: /Audio/_NF/Animals/nfsdcat_meow.ogg
+    path: /Audio/Animals/cat_meow.ogg
     params:
       variation: 0.125
 

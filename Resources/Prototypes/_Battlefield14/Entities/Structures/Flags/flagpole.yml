@@ -8,7 +8,7 @@
     sprite: _Battlefield14/Structures/Flags/flagpoles.rsi
     layers:
       - state: whiteflag
-        offset: 0, 1
+        offset: 0.25, 1
     drawdepth: OverMobs
     noRot: true
   - type: Fixtures
@@ -35,7 +35,7 @@
     sprite: _Battlefield14/Structures/Flags/flagpoles.rsi
     layers:
       - state: natoflag
-        offset: 0, 1
+        offset: 0.25, 1
     drawdepth: OverMobs
     noRot: true
 
@@ -49,7 +49,7 @@
     sprite: _Battlefield14/Structures/Flags/flagpoles.rsi
     layers:
       - state: usaflag
-        offset: 0, 1
+        offset: 0.25, 1
     drawdepth: OverMobs
     noRot: true
 
@@ -63,7 +63,7 @@
     sprite: _Battlefield14/Structures/Flags/flagpoles.rsi
     layers:
       - state: germanflag
-        offset: 0, 1
+        offset: 0.25, 1
     drawdepth: OverMobs
     noRot: true
 
@@ -77,7 +77,7 @@
     sprite: _Battlefield14/Structures/Flags/flagpoles.rsi
     layers:
       - state: britishflag
-        offset: 0, 1
+        offset: 0.25, 1
     drawdepth: OverMobs
     noRot: true
 
@@ -91,7 +91,7 @@
     sprite: _Battlefield14/Structures/Flags/flagpoles.rsi
     layers:
       - state: britishflag
-        offset: 0, 1
+        offset: 0.25, 1
     drawdepth: OverMobs
     noRot: true
 
@@ -105,7 +105,7 @@
     sprite: _Battlefield14/Structures/Flags/flagpoles.rsi
     layers:
       - state: rusfedflag
-        offset: 0, 1
+        offset: 0.25, 1
     drawdepth: OverMobs
     noRot: true
 
@@ -119,7 +119,7 @@
     sprite: _Battlefield14/Structures/Flags/flagpoles.rsi
     layers:
       - state: ddrflag
-        offset: 0, 1
+        offset: 0.25, 1
     drawdepth: OverMobs
     noRot: true
 
@@ -133,7 +133,7 @@
     sprite: _Battlefield14/Structures/Flags/flagpoles.rsi
     layers:
       - state: sovietflag
-        offset: 0, 1
+        offset: 0.25, 1
     drawdepth: OverMobs
     noRot: true
 
@@ -147,7 +147,7 @@
     sprite: _Battlefield14/Structures/Flags/flagpoles.rsi
     layers:
       - state: cslaflag
-        offset: 0, 1
+        offset: 0.25, 1
     drawdepth: OverMobs
     noRot: true
 
@@ -161,6 +161,6 @@
     sprite: _Battlefield14/Structures/Flags/flagpoles.rsi
     layers:
       - state: finnflag
-        offset: 0, 1
+        offset: 0.25, 1
     drawdepth: OverMobs
     noRot: true
