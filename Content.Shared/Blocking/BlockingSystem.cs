@@ -164,6 +164,8 @@ public sealed partial class BlockingSystem : SharedBlockingSystem // Mono
     {
         if (_net.IsClient)
             return;
+        if (!comp.visualEnt.IsValid())
+            return;
         _transformSystem.SetParent(comp.visualEnt, EntityUid.Invalid);
         _fixtureSystem.DestroyFixture(uid, BlockingComponent.ExpandedFixtureID, true);
     }
