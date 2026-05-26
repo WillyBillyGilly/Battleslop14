@@ -219,7 +219,7 @@
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
     maxOffset: 5
-    pvsIncrease: 0.25
+    pvsIncrease: 0.35
   - type: WieldedCrosshair
     rsi:
       sprite: _Battlefield14/Interface/MousePointer/optics.rsi
@@ -334,7 +334,7 @@
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
     maxOffset: 5
-    pvsIncrease: 0.25
+    pvsIncrease: 0.35
   - type: WieldedCrosshair
     rsi:
       sprite: _Battlefield14/Interface/MousePointer/optics.rsi
@@ -1086,7 +1086,7 @@
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
     maxOffset: 5
-    pvsIncrease: 0.25
+    pvsIncrease: 0.35
 
 - type: entity
   name: AK-74 FSB MOD.
@@ -1125,7 +1125,7 @@
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
     maxOffset: 5
-    pvsIncrease: 0.25
+    pvsIncrease: 0.35
   - type: WieldedCrosshair
     rsi:
       sprite: _Battlefield14/Interface/MousePointer/optics.rsi

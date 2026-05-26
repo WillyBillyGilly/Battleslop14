@@ -60,6 +60,12 @@
    path:
      path: /Audio/_Battlefield14/Jukebox/somewhereibelong.ogg
 
+ - type: jukebox
+   id: acidspit
+   name: Acid Spit - Mega Drive
+   path:
+     path: /Audio/_Battlefield14/Jukebox/acidspit.ogg
+
 # Eastern / east associated songs
 
  - type: jukebox

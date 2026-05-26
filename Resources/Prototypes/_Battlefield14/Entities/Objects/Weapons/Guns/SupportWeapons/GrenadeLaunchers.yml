@@ -212,7 +212,7 @@
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
     maxOffset: 5
-    pvsIncrease: 0.25
+    pvsIncrease: 0.35
   - type: GunRequiresWield
 
 # PACT
