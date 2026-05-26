@@ -196,7 +196,7 @@
   - type: EyeCursorOffset
   - type: CursorOffsetRequiresWield
     maxOffset: 5
-    pvsIncrease: 0.25
+    pvsIncrease: 0.35
 
 - type: entity
   name: AT4
@@ -381,7 +381,7 @@
   - type: EyeCursorOffset
   - type: CursorOffsetRequiresWield
     maxOffset: 5
-    pvsIncrease: 0.25
+    pvsIncrease: 0.35
 
 - type: entity
   name: RPG-30
