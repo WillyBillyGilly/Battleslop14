@@ -284,21 +284,21 @@
     minAngle: 0
     maxAngle: 0
   - type: Gun
-    minAngle: 2
+    minAngle: 3
     maxAngle: 10
     angleIncrease: 4
     availableModes:
     - SemiAuto
     - Burst
     selectedMode: SemiAuto
-    burstFireRate: 240
+    burstFireRate: 4
     shotsPerBurst: 4
-    fireRate: 2
+    fireRate: 1.5
     soundGunshot:
       path: /Audio/_Battlefield14/Weapons/FighterWeapons/rocket3.ogg
   - type: ExtendDescription
     descriptionList:
-      - description: Has a minimum arming distance of 4 tiles.
+      - description: Has a minimum arming distance of 6 tiles.
         color: "#4f94ad"
         requireDetailRange: true
 

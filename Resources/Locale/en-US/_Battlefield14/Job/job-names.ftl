@@ -1,10 +1,10 @@
 #United States#
 
-job-name-usmc-squadleader = Squad Leader
+job-name-usmc-squadleader = Marine Squad Leader
 job-name-usmc-rifleman = Marine Rifleman
-job-name-usmc-automatic-rifleman = Automatic Rifleman
+job-name-usmc-automatic-rifleman = Marine Automatic Rifleman
 job-name-usmc-medic = Navy Corpsman
-job-name-usmc-recon = Force Recon
+job-name-usmc-recon = Marine Force Recon
 
 job-name-ussf-captain = USSF Colonel
 job-name-ussf-crewman = USSF Crewman
@@ -23,11 +23,11 @@ job-name-uspd-officer = Police Officer
 
 #Russian Federation#
 
-job-name-vdv-squadleader = Senior Rifleman
+job-name-vdv-squadleader = VDV Senior Rifleman
 job-name-vdv-rifleman = VDV Rifleman
-job-name-vdv-automatic-rifleman = Automatic Rifleman
-job-name-vdv-medic = Combat Medic
-job-name-vdv-recon = Recon Scout
+job-name-vdv-automatic-rifleman = VDV Automatic Rifleman
+job-name-vdv-medic = VDV Combat Medic
+job-name-vdv-recon = VDV Recon Scout
 
 job-name-vks-captain = VKS General Major
 job-name-vks-crewman = VKS Crewman

@@ -18,27 +18,27 @@
   - sprite: Mobs/Customization/scars.rsi
     state: scar_eye_left
 
-- type: marking
-  id: ScarTopSurgeryShort
-  bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [Human, Dwarf, Goblin, Felinid, Oni] # Frontier: added Felinid, Oni, Goblin
-  sexRestriction: [Male]
-  followSkinColor: true
-  sprites:
-  - sprite: Mobs/Customization/scars.rsi
-    state: scar_top_surgery_short
-
-- type: marking
-  id: ScarTopSurgeryLong
-  bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [Human, Dwarf, Goblin, Felinid, Oni] # Frontier: added Felinid, Oni, Goblin
-  sexRestriction: [Male]
-  followSkinColor: true
-  sprites:
-  - sprite: Mobs/Customization/scars.rsi
-    state: scar_top_surgery_long
+#BF14 - type: marking
+#BF14   id: ScarTopSurgeryShort
+#BF14   bodyPart: Chest
+#BF14   markingCategory: Chest
+#BF14   speciesRestriction: [Human, Dwarf, Goblin, Felinid, Oni] # Frontier: added Felinid, Oni, Goblin
+#BF14   sexRestriction: [Male]
+#BF14   followSkinColor: true
+#BF14   sprites:
+#BF14   - sprite: Mobs/Customization/scars.rsi
+#BF14     state: scar_top_surgery_short
+#BF14 
+#BF14 - type: marking
+#BF14   id: ScarTopSurgeryLong
+#BF14   bodyPart: Chest
+#BF14   markingCategory: Chest
+#BF14   speciesRestriction: [Human, Dwarf, Goblin, Felinid, Oni] # Frontier: added Felinid, Oni, Goblin
+#BF14   sexRestriction: [Male]
+#BF14   followSkinColor: true
+#BF14   sprites:
+#BF14   - sprite: Mobs/Customization/scars.rsi
+#BF14     state: scar_top_surgery_long
 
 - type: marking
   id: ScarChest

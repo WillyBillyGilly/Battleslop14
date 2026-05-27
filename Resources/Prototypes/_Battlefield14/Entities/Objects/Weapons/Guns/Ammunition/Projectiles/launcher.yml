@@ -100,18 +100,18 @@
       types:
         Structural: 150
         Blunt: 250
+  - type: ExplodeOnTrigger
   - type: HeFragProjectile
-    fillPrototype: Bullet84mmHEATFragment
-    capacity: 40
+    fillPrototype: BulletGrenadeM67Fragment
+    capacity: 20
     randomAngle: true
     minVelocity: 8
     maxVelocity: 15
-  - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    totalIntensity: 300
+    totalIntensity: 100
     intensitySlope: 5
-    maxIntensity: 25
+    maxIntensity: 6
     maxTileBreak: 0
   - type: StaminaDamageOnCollide
     damage: 200 # It's a fucking rocket
@@ -191,7 +191,7 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: DemolitionCharge
-    totalIntensity: 300
+    totalIntensity: 200
     intensitySlope: 25
     maxIntensity: 100
     maxTileBreak: 1
@@ -215,7 +215,7 @@
     deleteOnCollide: true
   - type: SubmunitionProjectile
     submunitionPrototype: BulletRocketM202FLASH
-    distanceDelay: 4
+    distanceDelay: 2
     submunitionDelay: 0
     submunitionCount: 1
     spreadAngle: 0
@@ -236,21 +236,13 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 40
-  - type: HeFragProjectile
-    fillPrototype: BulletGrenadeM67Fragment
-    capacity: 30
-    randomAngle: true
-    minVelocity: 8
-    maxVelocity: 15
-#  - type: SpawnOnTrigger
-#    proto: PuddleWhitePhosphorus does not work to ignite a tile fire
+        Blunt: 30
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: FireBomb
-    totalIntensity: 67
+    totalIntensity: 35
     intensitySlope: 4
-    maxIntensity: 10
+    maxIntensity: 2
     maxTileBreak: 0
   - type: StaminaDamageOnCollide
     damage: 70 # It's a fucking rocket
@@ -401,7 +393,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 250
+        Blunt: 200
   - type: HeFragProjectile
     fillPrototype: BulletRPG7OG7VFragment
     capacity: 40
@@ -411,9 +403,9 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    totalIntensity: 300
+    totalIntensity: 100
     intensitySlope: 5
-    maxIntensity: 25
+    maxIntensity: 7
     maxTileBreak: 0
   - type: StaminaDamageOnCollide
     damage: 200 # It's a fucking rocket
@@ -547,10 +539,10 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 250
+        Blunt: 200
   - type: HeFragProjectile
-    fillPrototype: BulletRPG7OG7VFragment
-    capacity: 40
+    fillPrototype: BulletGrenadeF1Fragment
+    capacity: 20
     randomAngle: true
     minVelocity: 8
     maxVelocity: 15
@@ -559,9 +551,9 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: FireBomb
-    totalIntensity: 350
+    totalIntensity: 110
     intensitySlope: 6
-    maxIntensity: 25
+    maxIntensity: 6
     maxTileBreak: 0
   - type: StaminaDamageOnCollide
     damage: 200 # It's a fucking rocket

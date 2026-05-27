@@ -16,11 +16,11 @@
   fireStates: 3
   sound: # BF14
     collection: CivExplosion
-  smallSound: 
+  smallSound:
      collection: CivExplosionSmall
-  soundFar: 
+  soundFar:
      collection: CivExplosionDistant
-  smallSoundFar: 
+  smallSoundFar:
      collection: CivExplosionDistantFar
 
 - type: explosion
@@ -39,11 +39,11 @@
   fireStates: 3
   sound: # BF14
     collection: CivExplosion
-  smallSound: 
+  smallSound:
      collection: CivExplosionSmall
-  soundFar: 
+  soundFar:
      collection: CivExplosionDistant
-  smallSoundFar: 
+  smallSoundFar:
      collection: CivExplosionDistantFar
 
 - type: explosion
@@ -63,11 +63,11 @@
   fireStates: 6
   sound: # BF14
     collection: CivExplosion
-  smallSound: 
+  smallSound:
      collection: CivExplosionSmall
-  soundFar: 
+  soundFar:
      collection: CivExplosionDistant
-  smallSoundFar: 
+  smallSoundFar:
      collection: CivExplosionDistantFar
 
 - type: explosion
@@ -113,11 +113,11 @@
   fireStates: 3
   sound: # BF14
     collection: CivExplosion
-  smallSound: 
+  smallSound:
      collection: CivExplosionSmall
-  soundFar: 
+  soundFar:
      collection: CivExplosionDistant
-  smallSoundFar: 
+  smallSoundFar:
      collection: CivExplosionDistantFar
 
 - type: explosion
@@ -151,6 +151,14 @@
   lightColor: Orange
   texturePath: /Textures/Effects/fire.rsi
   fireStates: 6
+  sound: # BF14
+    collection: CivExplosion
+  smallSound:
+     collection: CivExplosionSmall
+  soundFar:
+     collection: CivExplosionDistant
+  smallSoundFar:
+     collection: CivExplosionDistantFar
 
 - type: explosion
   id: FireBomb
@@ -162,7 +170,7 @@
   lightColor: Orange
   texturePath: /Textures/Effects/fire.rsi
   fireStates: 6
-  fireStacks: 3 # BF14 2 > 3
+  fireStacks: 2
   throwEntitiesOnExplosion: false # BF14, for thermobarics
   sound:
     collection: CivExplosionGrenade

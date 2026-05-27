@@ -125,6 +125,13 @@
         mask:
         - Impassable
         - BulletImpassable
+  - type: PointLight # BF14
+    radius: 2
+    color: orange
+    energy: 1.6
+  - type: Tracer # BF14
+    color: orange
+    length: 2
 
 - type: entity
   id: BaseBulletPractice

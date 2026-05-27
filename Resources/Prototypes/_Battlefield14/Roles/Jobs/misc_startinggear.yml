@@ -4,13 +4,10 @@
     jumpsuit: ClothingUniformJumpsuitColorWhite
     ears: ClothingHeadsetGrey
     gloves: ClothingHandsGlovesFingerless
+    outerClothing: ClothingOuterArmorBasicSlim
     shoes: ClothingShoesBootsJackFilled
     back: ClothingBackpackRucksackBlack
     neck: FlashlightMilitaryUS
-    suitstorage: WeaponPistolM9
-    pocket1: MagazinePistolM9
+    suitstorage: WeaponRifleUSM4
+    pocket1: WeaponPistolBEFiveSeven
     pocket2: PouchFirstAidFilled
-  storage:
-    back:
-    - MagazinePistolM9
-    - MagazinePistolM9
