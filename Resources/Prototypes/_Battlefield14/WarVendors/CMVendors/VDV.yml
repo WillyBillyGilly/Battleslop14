@@ -80,6 +80,8 @@
         amount: 50
     - name: Misc
       entries:
+      - id: RusfedFlagFolded
+        amount: 3
       - id: WeaponSniperRUSVDSObrez
         amount: 1
       - id: MagazineSniperSVDS

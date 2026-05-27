@@ -72,7 +72,8 @@
     - id: BookNophono
       amount: 1
   - type: Bloodstream
-    bloodMaxVolume: 10000
+    bloodMaxVolume: 3000
+    maxBleedAmount: 0
     bloodlossDamage:
       types:
         Bloodloss: 0.5
