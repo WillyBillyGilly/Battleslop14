@@ -58726,17 +58726,17 @@ entities:
       powerLoad: 5
     - type: Battery
       startingCharge: 0
-- proto: ComputerStationRecords
-  entities:
-  - uid: 9441
-    components:
-    - type: Transform
-      pos: 82.5,92.5
-      parent: 1
-    - type: ApcPowerReceiver
-      powerLoad: 5
-    - type: Battery
-      startingCharge: 0
+#- proto: ComputerStationRecords
+#  entities:
+#  - uid: 9441
+#    components:
+#    - type: Transform
+#      pos: 82.5,92.5
+#      parent: 1
+#    - type: ApcPowerReceiver
+#      powerLoad: 5
+#    - type: Battery
+#      startingCharge: 0
   - uid: 11483
     components:
     - type: Transform

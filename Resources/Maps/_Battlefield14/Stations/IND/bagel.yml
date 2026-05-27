@@ -61632,17 +61632,17 @@ entities:
       powerLoad: 5
     - type: Battery
       startingCharge: 0
-- proto: ComputerStationRecords
-  entities:
-  - uid: 584
-    components:
-    - type: Transform
-      pos: -23.5,-18.5
-      parent: 60
-    - type: ApcPowerReceiver
-      powerLoad: 5
-    - type: Battery
-      startingCharge: 0
+#- proto: ComputerStationRecords
+#  entities:
+#  - uid: 584
+#    components:
+#    - type: Transform
+#      pos: -23.5,-18.5
+#      parent: 60
+#    - type: ApcPowerReceiver
+#      powerLoad: 5
+#    - type: Battery
+#      startingCharge: 0
   - uid: 10938
     components:
     - type: Transform

@@ -145,8 +145,8 @@
     selectedMode: SemiAuto
     fireRate: 2
     projectileSpeed: 35
-    burstFireRate: 20
-    burstCooldown: 3
+    burstFireRate: 240
+    burstCooldown: 2
     shotsPerBurst: 2
     soundGunshot:
       collection: BF_SPAS12_Gunshots

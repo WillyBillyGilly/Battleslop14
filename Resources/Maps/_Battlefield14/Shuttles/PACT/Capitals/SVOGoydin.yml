@@ -11254,18 +11254,18 @@ entities:
       powerLoad: 5
     - type: Battery
       startingCharge: 0
-- proto: ComputerTabletopStationRecords
-  entities:
-  - uid: 971
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 20.5,29.5
-      parent: 1
-    - type: ApcPowerReceiver
-      powerLoad: 5
-    - type: Battery
-      startingCharge: 0
+#- proto: ComputerTabletopStationRecords
+#  entities:
+#  - uid: 971
+#    components:
+#    - type: Transform
+#      rot: 3.141592653589793 rad
+#      pos: 20.5,29.5
+#      parent: 1
+#    - type: ApcPowerReceiver
+#      powerLoad: 5
+#    - type: Battery
+#      startingCharge: 0
 - proto: ComputerTabletopSurveillanceCameraMonitor
   entities:
   - uid: 3320
