@@ -83,6 +83,10 @@
         amount: 50
       - id: OxygenTankFilled
         amount: 50
+    - name: Misc
+      entries:
+      - id: USMCFlagFolded
+        amount: 3
 
 - type: entity
   parent: ColMarTechBase
