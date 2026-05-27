@@ -44,21 +44,29 @@
   - type: DeathMatchRule
     rewardSpawns:
     - id: HealingToolbox
-    - id: ClothingOuterArmorBasicSlim
+    - id: MagazineRifleSTANAG # BF14
       orGroup: loot
-    - id: ClothingHeadHelmetBasic
+    - id: WeaponRifleUSM16A1 # BF14
       orGroup: loot
-    - id: SoapNT
+    - id: Machete
       orGroup: loot
     - id: Bola
       orGroup: loot
-    - id: Spear
+    - id: MedicationBoxSyrettesFentanyl # BF14
       orGroup: loot
-    - id: ClothingShoesGaloshes
+    - id: MedicationBoxSyrettesMeralyne # BF14
+      orGroup: loot
+    - id: Machete # BF14
       orGroup: loot
     - id: FoodPieBananaCream
       orGroup: loot
     - id: Stimpack
+      orGroup: loot
+    - id: WeaponRifleUNSCMA5B # BF14
+      orGroup: loot
+    - id: WeaponSubmachinegunUSMP5 # BF14
+      orGroup: loot
+    - id: WeaponSubmachinegunUSMAC10 # BF14
       orGroup: loot
   - type: KillCalloutRule
   - type: PointManager

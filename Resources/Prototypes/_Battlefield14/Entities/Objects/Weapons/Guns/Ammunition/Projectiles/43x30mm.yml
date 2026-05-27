@@ -19,7 +19,7 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: HandGrenade
-    totalIntensity: 50
+    totalIntensity: 30
     intensitySlope: 3
     maxIntensity: 3
     maxTileBreak: 0
@@ -43,11 +43,11 @@
   - type: Projectile
     damage:
       types:
-        Structural: 10
-        Slash: 10
-        Piercing: 10
+        Structural: 5
+        Slash: 8
+        Piercing: 8
   - type: StaminaDamageOnCollide
-    damage: 6 # ~17 hits to stun
+    damage: 5 # ~20 hits to stun
     deleteOnCollide: true
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
@@ -75,9 +75,9 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: FireBomb
-    totalIntensity: 60
+    totalIntensity: 30
     intensitySlope: 6
-    maxIntensity: 6
+    maxIntensity: 3
     maxTileBreak: 0
   - type: SpawnOnTrigger
     proto: InstantEffectGravityWellThermobaric

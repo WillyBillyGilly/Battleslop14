@@ -171,7 +171,7 @@
   - type: StorageFill
     contents:
     - id: BlisterPackSyretteMeralyne
-      amount: 1
+      amount: 2
 
 - type: entity
   id: MedicationBoxSyrettesDermaline
@@ -190,7 +190,7 @@
   - type: StorageFill
     contents:
     - id: BlisterPackSyretteDermaline
-      amount: 1
+      amount: 2
 
 - type: entity
   id: MedicationBoxSyrettesEpinephrine
@@ -209,7 +209,7 @@
   - type: StorageFill
     contents:
     - id: BlisterPackSyretteEpinephrine
-      amount: 1
+      amount: 2
 
 - type: entity
   id: MedicationBoxSyrettesHypervene
@@ -228,7 +228,7 @@
   - type: StorageFill
     contents:
     - id: BlisterPackSyretteHypervene
-      amount: 1
+      amount: 2
 
 - type: entity
   id: MedicationBoxSyrettesPhalanximine
@@ -285,4 +285,4 @@
   - type: StorageFill
     contents:
     - id: BlisterPackSyretteFentanyl
-      amount: 1
+      amount: 2
