@@ -72,7 +72,13 @@
     - id: BookNophono
       amount: 1
   - type: Bloodstream
-    bloodMaxVolume: 3000
+    bloodMaxVolume: 10000
+    bloodlossDamage:
+      types:
+        Bloodloss: 0.5
+    bloodlossHealDamage:
+      types:
+        Bloodloss: -1
   - type: MeleeWeapon
     soundHit:
       collection: Punch
@@ -114,3 +120,4 @@
     rules: "you're nophono, do whatever the fuck you want"
     raffle:
       settings: short
+  - type: Insulated
