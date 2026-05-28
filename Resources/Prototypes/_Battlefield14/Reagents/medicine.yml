@@ -63,6 +63,8 @@
           max: 15.5
         damage:
           Brute: -2
+      - !type:ModifyBleedAmount
+        amount: -0.75
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold

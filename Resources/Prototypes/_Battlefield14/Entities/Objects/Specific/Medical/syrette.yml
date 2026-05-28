@@ -9,6 +9,7 @@
     sprite: _Battlefield14/Objects/Specific/Medical/syrette.rsi
     layers:
     - state: syrette
+      map: ["enum.SolutionContainerLayers.Fill"]
   - type: Item
     size: Tiny
   - type: SolutionContainerManager
@@ -22,6 +23,10 @@
     transferAmount: 10
     onlyAffectsMobs: false
     injectOnly: true
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: syrette_e
   - type: UseDelay
     delay: 0.2
   - type: Appearance
