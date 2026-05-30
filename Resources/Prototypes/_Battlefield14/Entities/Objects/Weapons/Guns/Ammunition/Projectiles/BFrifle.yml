@@ -50,7 +50,7 @@
 
 - type: entity
   id: BulletRifleBF762x51TracerRed
-  parent: [BulletRifleBF762x51 , BaseTracerGreen]
+  parent: [BulletRifleBF762x51 , BaseTracerRed]
   categories: [ HideSpawnMenu ]
 
 - type: entity
