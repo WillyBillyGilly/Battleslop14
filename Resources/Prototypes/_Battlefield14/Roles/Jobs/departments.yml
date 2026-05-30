@@ -32,7 +32,7 @@
   color: "#203564"
   weight: 83
   roles:
-#  - NGLieutenant
+  - NGLieutenant
   - NGSquadLeader
   - NGRifleman
   - NGAutomaticRifleman
@@ -89,3 +89,12 @@
   - WPSSecurityOfficer
   - WPSWarden
   - WPSMarshal
+
+- type: department
+  id: BF14Civilian
+  name: department-Civilian
+  description: department-NFCivilian-description # Frontier
+  color: "#9FED58"
+  weight: 1
+  roles:
+  - CivilianUS

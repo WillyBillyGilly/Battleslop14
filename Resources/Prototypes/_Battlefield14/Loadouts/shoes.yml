@@ -1,0 +1,14 @@
+- type: loadout
+  id: LoadoutShoesColourBlack
+  equipment:
+    shoes: ClothingShoesColorBlack
+
+- type: loadout
+  id: LoadoutShoesColourBrown
+  equipment:
+    shoes: ClothingShoesColorBrown
+
+- type: loadout
+  id: LoadoutShoesWorkboots
+  equipment:
+    shoes: ClothingShoesBootsWork

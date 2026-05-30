@@ -38,3 +38,7 @@ job-name-vks-fighter-pilot = VKS Fighter Pilot
 job-name-wps-marshal = Marshal
 job-name-wps-warden = Brig Chief
 job-name-wps-officer = Security Officer
+
+#Civilian#
+
+job-name-ind-civilian = Civilian

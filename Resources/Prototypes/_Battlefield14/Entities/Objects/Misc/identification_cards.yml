@@ -236,8 +236,22 @@
 
 - type: entity
   parent: IDCardStandard
+  id: NGLieutenantIDCard
+  name: National Guard ID card
+  suffix: squad leader
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: NGLieutenant
+
+- type: entity
+  parent: IDCardStandard
   id: NGSquadLeaderIDCard
-  name: Marine Corps ID card
+  name: National Guard ID card
   suffix: squad leader
   components:
   - type: Sprite
@@ -251,7 +265,7 @@
 - type: entity
   parent: IDCardStandard
   id: NGRiflemanIDCard
-  name: Marine Corps ID card
+  name: National Guard ID card
   suffix: rifleman
   components:
   - type: Sprite
@@ -265,7 +279,7 @@
 - type: entity
   parent: IDCardStandard
   id: NGAutomaticRiflemanIDCard
-  name: Marine Corps ID card
+  name: National Guard ID card
   suffix: automatic rifleman
   components:
   - type: Sprite
@@ -279,7 +293,7 @@
 - type: entity
   parent: IDCardStandard
   id: NGMedicIDCard
-  name: Marine Corps ID card
+  name: National Guard ID card
   suffix: navy corpsman
   components:
   - type: Sprite
@@ -293,7 +307,7 @@
 - type: entity
   parent: IDCardStandard
   id: NGReconIDCard
-  name: Marine Corps ID card
+  name: National Guard ID card
   suffix: force recon
   components:
   - type: Sprite

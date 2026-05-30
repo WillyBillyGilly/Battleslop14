@@ -58,7 +58,7 @@
 # National Guard
 
 - type: playTimeTracker
-  id: JobNGCaptain
+  id: JobNGLieutenant
 
 - type: playTimeTracker
   id: JobNGSquadLeader
@@ -145,3 +145,8 @@
 
 - type: playTimeTracker
   id: JobWPSMarshal
+
+# Civilian
+
+- type: playTimeTracker
+  id: JobCivilianUS

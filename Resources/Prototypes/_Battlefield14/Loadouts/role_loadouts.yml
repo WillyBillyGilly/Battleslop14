@@ -74,7 +74,7 @@
 - type: roleLoadout
   id: JobUSSFCaptain
   groups:
-  - BF_CrewGlasses
+  - BF_SoldierGlassesTan
   - BF_NATOIFF
   - BF_BackpacksBlack
   - BF_MiscItemsNATO
@@ -102,6 +102,18 @@
   - ContractorWallet
 
 # NG
+
+- type: roleLoadout
+  id: JobNGLieutenant
+  groups:
+  - BF_SoldierGlassesTan
+  - BF_SoldierGloves
+  - BF_NATOIFF
+  - BF_BackpacksTan
+  - BF_MiscItemsNATO
+  - BF_PistolsUSMCSL
+  - BF_Map
+  - ContractorWallet
 
 - type: roleLoadout
   id: JobNGSquadLeader
@@ -281,7 +293,7 @@
   id: JobVKSCaptain
   groups:
   - BF_VDVHead
-  - BF_CrewGlasses
+  - BF_SoldierGlassesGreen
   - BF_PACTIFF
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
@@ -366,5 +378,15 @@
   - BF_CombatMasks
   - BF_WPSGloves
   - BF_BackpacksBlack
+  - BF_MiscItemsIND
+  - ContractorWallet
+
+# Civilian
+
+- type: roleLoadout
+  id: JobCivilianUS
+  groups:
+  - BF_JumpsuitsCivilianUS
+  - BF_ShoesCivilian
   - BF_MiscItemsIND
   - ContractorWallet

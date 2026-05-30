@@ -1,0 +1,34 @@
+- type: loadout
+  id: LoadoutJumpsuitCivilianTshirtJeans
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitTshirtJeans
+
+- type: loadout
+  id: LoadoutJumpsuitCivilianTshirtJeansGray
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitTshirtJeansGray
+
+- type: loadout
+  id: LoadoutJumpsuitCivilianTshirtJeansGrayGraphicChud
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitTshirtJeansGraphicChud
+
+- type: loadout
+  id: LoadoutJumpsuitCivilianTshirtJeansGrayGraphicHate
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitTshirtJeansGraphicHate
+
+- type: loadout
+  id: LoadoutJumpsuitCivilianPatrioticUSA1
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPatrioticUSA1
+
+- type: loadout
+  id: LoadoutJumpsuitCivilianPatrioticUSA2
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPatrioticUSA2
+
+- type: loadout
+  id: LoadoutJumpsuitCivilianPatrioticUSA3
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPatrioticUSA3

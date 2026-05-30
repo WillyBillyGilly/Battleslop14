@@ -41,6 +41,7 @@
             USMCAutomaticRifleman: [-1, -1]
             USMCMedic: [-1, -1]
             USMCRecon: [-1, -1]
+            NGLieutenant: [-1, -1]
             NGSquadLeader: [-1, -1]
             NGRifleman: [-1, -1]
             NGAutomaticRifleman: [-1, -1]
@@ -56,6 +57,7 @@
             VDVRecon: [-1, -1]
             WPSSecurityOfficer: [-1, -1]
             WPSWarden: [-1, -1]
-            WPSMarshal: [-1, -1] # BF14 ^
+            WPSMarshal: [-1, -1]
+            CivilianUS: [ -1, -1 ] # BF14 ^
         - type: StationDeadDrop
           maxDeadDrops: 20 # Testing
