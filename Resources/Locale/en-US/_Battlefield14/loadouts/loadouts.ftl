@@ -10,3 +10,5 @@ loadout-group-BF14-backpack = Backpack
 loadout-group-BF14-miscitem = Misc. Item
 loadout-group-BF14-sidearm = Sidearm
 loadout-group-BF14-map = Navigation
+loadout-group-BF14-jumpsuit = Uniform
+loadout-group-BF14-shoes = Shoes

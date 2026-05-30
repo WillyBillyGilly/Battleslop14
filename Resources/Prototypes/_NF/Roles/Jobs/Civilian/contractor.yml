@@ -5,6 +5,7 @@
   playTimeTracker: JobPassenger
   icon: "JobIconContractor"
   supervisors: job-supervisors-hire
+  setPreference: false # BF14
   displayWeight: 40 # Top
   accessGroups: # Frontier
   - GeneralAccess # Frontier

@@ -10,7 +10,7 @@ job-description-ussf-captain = Lead your battlegroup, whether that be from the f
 job-description-ussf-crewman = Maintain whatever capital ship/port you're assigned to.
 job-description-ussf-fighter-pilot = Eviscerate infantry, splash bandits, lust over your F-22 Raptor.
 
-job-description-ng-lieutenant = Take top-down control of your national guard platoon and keep everything running smoothly
+job-description-ng-lieutenant = Take top-down control of your national guard platoon and keep everything running smoothly.
 job-description-ng-squadleader = Coordinate optimal Russian shooting.
 job-description-ng-rifleman = Shoot Russians.
 job-description-ng-automatic-rifleman = Lay down suppressing fire and resupply your team-mates.
@@ -38,3 +38,7 @@ job-description-vks-fighter-pilot = Eviscerate infantry, splash bandits, lust ov
 job-description-wps-marshal = Co-ordinate your goons, secure your outpost for your contractor.
 job-description-wps-warden = Keep the brig secure and clean.
 job-description-wps-officer = Keep the peace, keep the area safe, make money.
+
+#Civilian#
+
+job-description-ind-civilian = Live your life and look after numero uno.

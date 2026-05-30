@@ -2,7 +2,7 @@
   id: BF14Taurus
   mapName: 'Taurus'
   mapPath: /Maps/_Battlefield14/Planets/taurus.yml
-  minPlayers: 20
+  minPlayers: 10
   maxPlayers: 50
   fallback: True
   randomRotation: false
@@ -15,11 +15,12 @@
           mapNameTemplate: "Taurus, Florida"
         - type: ExtraStationInformation
           iconPath: /Textures/_NF/Structures/Decoration/banner.rsi/nfsd-banner.png
-          stationSubtext: 'frontier-lobby-frontier-subtext' # TODO
-          stationDescription: 'frontier-lobby-frontier-subtext' # TODO
+          stationSubtext: "Florida, United States"
+          stationDescription: "A coastal town in southern florida"
           lobbySortOrder: 1
         - type: StationJobs
           availableJobs:
+            NGLieutenant: [ 1, 1 ]
             NGSquadLeader: [ 3, 3 ]
             NGRifleman: [ 5, 5 ]
             NGAutomaticRifleman: [ 1, 1 ]
@@ -30,5 +31,9 @@
             VDVAutomaticRifleman: [ 3, 3 ]
             VDVMedic: [ 3, 3 ]
             VDVRecon: [ 3, 3 ]
+            USPDChief: [ 1, 1 ]
+            USPDWarden: [ 1, 1 ]
+            USPDOfficer: [ 1, 1 ]
+            CivilianUS: [ 3, 3]
         - type: StationBiome
           biome: Grasslands

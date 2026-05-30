@@ -1,0 +1,80 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitTshirtJeansGraphicChud
+  name: graphic tee (chud)
+  description: CAUSE IM A CHUUD, IM AN INCEEEELLL.
+  components:
+  - type: Sprite
+    sprite: Nyanotrasen/Clothing/Uniforms/Jumpsuit/tshirtjeans.rsi
+  - type: Clothing
+    sprite: Nyanotrasen/Clothing/Uniforms/Jumpsuit/tshirtjeans.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: chud
+        sprite: _Battlefield14/Clothing/Uniforms/Overlays/textlarge.rsi
+        scale: 0.5, 0.5
+        offset: 0, 0.25
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitTshirtJeansGraphicHate
+  name: graphic tee (hate)
+  description: Annihilate everything that exists.
+  components:
+  - type: Sprite
+    sprite: Nyanotrasen/Clothing/Uniforms/Jumpsuit/tshirtjeans.rsi
+  - type: Clothing
+    sprite: Nyanotrasen/Clothing/Uniforms/Jumpsuit/tshirtjeans.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: hate
+        sprite: _Battlefield14/Clothing/Uniforms/Overlays/textlarge.rsi
+        scale: 0.5, 0.5
+        offset: 0, 0.25
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitTshirtJeansGrayGraphicZ
+  name: graphic tee (Z)
+  description: Support your troops with a shirt with a letter on it.
+  components:
+  - type: Sprite
+    sprite: Nyanotrasen/Clothing/Uniforms/Jumpsuit/tshirtjeansgray.rsi
+  - type: Clothing
+    sprite: Nyanotrasen/Clothing/Uniforms/Jumpsuit/tshirtjeansgray.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: z
+        sprite: _Battlefield14/Clothing/Uniforms/Overlays/text.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitPatrioticUSA1
+  name: patriotic shirt
+  description: Worn by true patriots.
+  components:
+  - type: Sprite
+    sprite: _Civ14/Clothing/Uniforms/Jumpsuit/boomerwaffen1.rsi
+  - type: Clothing
+    sprite: _Civ14/Clothing/Uniforms/Jumpsuit/boomerwaffen1.rsi
+
+- type: entity
+  parent: ClothingUniformJumpsuitPatrioticUSA1
+  id: ClothingUniformJumpsuitPatrioticUSA2
+  components:
+  - type: Sprite
+    sprite: _Civ14/Clothing/Uniforms/Jumpsuit/boomerwaffen2.rsi
+  - type: Clothing
+    sprite: _Civ14/Clothing/Uniforms/Jumpsuit/boomerwaffen2.rsi
+
+- type: entity
+  parent: ClothingUniformJumpsuitPatrioticUSA1
+  id: ClothingUniformJumpsuitPatrioticUSA3
+  components:
+  - type: Sprite
+    sprite: _Civ14/Clothing/Uniforms/Jumpsuit/boomerwaffen3.rsi
+  - type: Clothing
+    sprite: _Civ14/Clothing/Uniforms/Jumpsuit/boomerwaffen3.rsi
