@@ -13,7 +13,7 @@
   - type: DeleteOnTrigger
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: DemolitionCharge
+    explosionType: MicroBomb
     maxIntensity: 9
     intensitySlope: 4
     totalIntensity: 80
@@ -132,7 +132,7 @@
   - type: DeleteOnTrigger
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: DemolitionCharge
+    explosionType: MicroBomb
     maxIntensity: 9
     intensitySlope: 4
     totalIntensity: 80
