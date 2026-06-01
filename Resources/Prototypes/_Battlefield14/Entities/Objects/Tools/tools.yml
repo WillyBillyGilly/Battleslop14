@@ -36,7 +36,13 @@
   - type: MultipleTool
     statusShowBehavior: true
     entries:
-      - behavior: Digging
+      - behavior:
+        - Digging
+        - Prying
+        - Hammering
+        - Cutting
+        - Slicing
+        - Sawing
         sprite:
           sprite: _NF/Objects/Tools/cm-shovel.rsi
           state: icon
@@ -52,27 +58,6 @@
           path: /Audio/Items/screwdriver.ogg
         changeSound:
           path: /Audio/Items/shovel_dig.ogg
-      - behavior:
-        - Prying
-        - Hammering
-        sprite:
-          sprite: _NF/Objects/Tools/cm-shovel.rsi
-          state: icon
-        useSound:
-          path: /Audio/Items/crowbar.ogg
-        changeSound:
-          path: /Audio/Items/shovel_dig.ogg
-      - behavior:
-        - Cutting
-        - Slicing
-        - Sawing
-        sprite:
-          sprite: _NF/Objects/Tools/cm-shovel.rsi
-          state: icon
-        useSound:
-          path: /Audio/Items/wirecutter.ogg
-        changeSound:
-          path: /Audio/Items/shovel_dig.ogg
   - type: ThrowingAngle
     angle: 45
   - type: DamageOtherOnHit
@@ -84,3 +69,8 @@
   - type: Utensil
     types:
       - Knife
+  - type: ExtendDescription
+    descriptionList:
+      - description: Use in hand to switch between screwdriver mode and other tool qualities.
+        color: "#4f94ad"
+        requireDetailRange: true

@@ -41,6 +41,11 @@
     graph: TM62Disarm
     node: start
     deconstructionTarget: start
+  - type: ExtendDescription
+    descriptionList:
+      - description: It is ARMED. Use a multitool to disarm, or use the context menu to link it to a device.
+        color: red
+        requireDetailRange: true
 
 - type: entity
   parent: BaseItem
@@ -59,3 +64,8 @@
     prototype: TM62
     doAfter: 3
     removeOnInteract: true
+  - type: ExtendDescription
+    descriptionList:
+      - description: It is disarmed, left click on a tile to place and arm it.
+        color: green
+        requireDetailRange: true
