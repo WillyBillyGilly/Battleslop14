@@ -51,10 +51,10 @@
   - type: StorageFill
     contents:
       - id: HandheldHealthAnalyzerUnpowered #BF14
+      - id: MedicationBoxPillsDylovene # BF14
+      - id: MedicationBoxSyrettesHypervene # BF14
       - id: BlisterPackEthylredoxrazine # BF14
 #BF14      - id: AntiPoisonMedipen
-      - id: BlisterPackDylovene # BF14
-      - id: MedicationBoxSyrettesHypervene # BF14
       - id: SyringeIpecac
 
 - type: entity

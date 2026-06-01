@@ -102,6 +102,7 @@
   parent: BaseTreeLarge
   id: FloraTreeLargeOpaque
   name: large tree
+  suffix: opaque
   components:
   - type: Sprite
     layers:
@@ -117,3 +118,25 @@
         treelarge05: ""
         treelarge06: ""
   - type: Occluder
+    boundingBox: -0.3, -0.3, 0.3, 0.3
+
+- type: entity
+  parent: BaseTree
+  id: FloraTreeOpaque
+  suffix: opaque
+  components:
+  - type: Sprite
+    layers:
+    - state: tree01
+      map: ["random"]
+  - type: RandomSprite
+    available:
+    - random:
+        tree01: ""
+        tree02: ""
+        tree03: ""
+        tree04: ""
+        tree05: ""
+        tree06: ""
+  - type: Occluder
+    boundingBox: -0.3, -0.3, 0.3, 0.3

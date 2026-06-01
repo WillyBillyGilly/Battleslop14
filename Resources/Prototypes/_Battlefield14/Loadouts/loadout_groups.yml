@@ -248,4 +248,5 @@
   maxLimit: 1
   loadouts:
   - LoadoutMapTaurus
+  - LoadoutMapSpringfield
   - LoadoutMiscItemsHandheldStationMapUnpowered

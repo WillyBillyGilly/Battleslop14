@@ -1,22 +1,21 @@
 - type: gameMap
-  id: BF14Taurus
-  mapName: 'Taurus'
-  mapPath: /Maps/_Battlefield14/Planets/taurus.yml
+  id: BF14Springfield
+  mapName: 'Springfield'
+  mapPath: /Maps/_Battlefield14/Planets/springfield.yml
   minPlayers: 10
   maxPlayers: 50
-  fallback: True
   randomRotation: false
   maxRandomOffset: 0
   stations:
-    BF14Taurus:
+    BF14Springfield:
       stationProto: StandardFrontierStation
       components:
         - type: StationNameSetup
-          mapNameTemplate: "Taurus, Florida"
+          mapNameTemplate: "Springfield, Kentucky"
         - type: ExtraStationInformation
           iconPath: /Textures/_NF/Structures/Decoration/banner.rsi/nfsd-banner.png
-          stationSubtext: "Florida, United States"
-          stationDescription: "A coastal town in southern florida"
+          stationSubtext: "Kentucky, United States"
+          stationDescription: "A town sorrounded by thick forrest in northern kentucky"
           lobbySortOrder: 1
         - type: StationJobs
           availableJobs:

@@ -256,6 +256,8 @@
     state: frosted_window
   # - type: StaticPrice # Frontier
   #   price: 35 # Frontier
+  - type: Occluder # BF14 welcome back
+    boundingBox: -0.5,-0.5,0.5,-0.28125
 
 - type: entity
   parent: Window
