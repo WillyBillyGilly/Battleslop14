@@ -9,3 +9,5 @@
     drawdepth: WallTops
     layers:
     - state: sandbag
+  - type: Damageable
+    damageModifierSet: BarricadeSandbag

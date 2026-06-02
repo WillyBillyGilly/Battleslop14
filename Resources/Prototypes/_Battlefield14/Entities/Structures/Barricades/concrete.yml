@@ -1,0 +1,13 @@
+- type: entity
+  parent: [BaseMetalBarricade, BaseBarricadeSteel]
+  id: BarricadeConcrete
+  name: concrete barricade
+  description: A tough barricade built to stop incoming cars, coincidentally happens to work against bullets too.
+  components:
+  - type: Sprite
+    sprite: _Civ14/Objects/structures.rsi
+    drawdepth: WallTops
+    layers:
+    - state: concrete
+  - type: Damageable
+    damageModifierSet: Concrete

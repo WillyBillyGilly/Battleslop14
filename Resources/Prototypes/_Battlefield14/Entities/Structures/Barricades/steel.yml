@@ -1,0 +1,36 @@
+- type: entity
+  abstract: true
+  id: BaseBarricadeSteel
+  components:
+  - type: Sprite
+    sprite: /Textures/_RMC14/Structures/Walls/Barricades/barricade.rsi
+    drawdepth: WallTops
+    layers:
+    - state: metal
+  - type: Damageable
+    damageModifierSet: BarricadeSteel
+  - type: Construction
+    graph: BarricadeSteel
+
+- type: entity
+  parent: [BaseMetalBarricade, BaseBarricadeSteel]
+  id: BarricadeSteel
+  name: steel barricade
+  description: A tough barricade built to keep the bad out.
+
+- type: entity
+  parent: [BaseMetalBarricadeFolding, BaseBarricadeSteel]
+  id: BarricadeSteelFolding
+  name: folding steel barricade
+  description: A tough barricade built to keep the bad out. This one can be opened with a latch.
+  components:
+  - type: Damageable
+    damageModifierSet: BarricadeSteelFolding
+  - type: Sprite
+    layers:
+    - state: folding_metal
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Appearance
+  - type: Door
+    openSpriteState: folding_metal_closed
+    closedSpriteState: folding_metal
