@@ -40,6 +40,9 @@
             "name": "camonet"
         },
         {
+            "name": "camonet_opaque"
+        },
+        {
             "name": "crowd_barrier",
             "directions": 4
         },

@@ -209,6 +209,7 @@
   - LoadoutMiscItemsGasMaskPouch
   - LoadoutMiscItemsBible
   - LoadoutMiscItemsCalculator
+  - LoadoutMiscItemsCamonet15
   - LoadoutMiscItemsMREFlask
 
 - type: loadoutGroup
@@ -225,6 +226,7 @@
   - LoadoutMiscItemsGasMaskPouch
   - LoadoutMiscItemsBible
   - LoadoutMiscItemsCalculator
+  - LoadoutMiscItemsCamonet15
   - LoadoutMiscItemsMREFlask
 
 - type: loadoutGroup
