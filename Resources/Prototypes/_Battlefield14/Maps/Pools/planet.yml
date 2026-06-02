@@ -1,5 +1,5 @@
 - type: gameMapPool
-  id: BF14MapPoolEarthFlorida
+  id: BF14MapPoolEarthUSA
   maps:
   - BF14Taurus
-  - BF14TaurusBlitz
+  - BF14Springfield

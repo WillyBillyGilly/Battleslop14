@@ -168,7 +168,7 @@
   id: BoxArtilleryShellHowitzerM777Smoke
   name: box of 155mm smoke shells
   description: Contains six 155mm howitzer smoke shells compatible with the M777 howitzer.
-  suffix: HE-Frag
+  suffix: Smoke
   components:
   - type: Item
     size: Huge
@@ -192,7 +192,7 @@
   id: BoxArtilleryShellHowitzerM777Flare
   name: box of 155mm illumination shells
   description: Contains six 155mm howitzer illumination shells compatible with the M777 howitzer.
-  suffix: HE-Frag
+  suffix: Flare
   components:
   - type: Item
     size: Huge
@@ -216,7 +216,7 @@
   id: BoxArtilleryShellHowitzerM777WhitePhosphorus
   name: box of 155mm white phosphorus smoke shells
   description: Contains six 155mm howitzer white phosphorus smoke shells compatible with the M777 howitzer.
-  suffix: HE-Frag
+  suffix: WAR CRIME
   components:
   - type: Item
     size: Huge

@@ -15,6 +15,23 @@
         !type:TabletopEmptySetup
         boardPrototype: PhotoMapTaurus
 
+- type: entity
+  parent: BaseBattlemap
+  id: MapSpringfield
+  name: 'map (springfield)'
+  description: It's a map of Springfield, Kentucky. The red squares mark objectives.
+  components:
+    - type: Item
+      size: Tiny
+    - type: Sprite
+      sprite: Objects/Misc/bureaucracy.rsi
+      state: paper_dotmatrix
+    - type: TabletopGame
+      size: 370, 335
+      setup:
+        !type:TabletopEmptySetup
+        boardPrototype: PhotoMapSpringfield
+
 # Image protos
 
 - type: entity
@@ -25,4 +42,14 @@
   components:
   - type: Sprite
     sprite: _Battlefield14/GroundMaps/Taurus.rsi
+    state: map
+
+- type: entity
+  parent: BaseBoardTabletop
+  id: PhotoMapSpringfield
+  name: map of Springfield
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/GroundMaps/Springfield.rsi
     state: map

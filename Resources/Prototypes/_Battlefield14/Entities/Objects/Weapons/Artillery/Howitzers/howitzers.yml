@@ -3,7 +3,7 @@
   parent: BaseStructure # no moving once placed, disassemble with wrench
   name: M777A2 155mm howitzer
   suffix: 155mm
-  description: An 81mm battalion mortar. It offers a fairly moderate rate of fire, tolerable accuracy, and fires a wide variety of relatively inexpensive ammunition. Dont shoot straight up.
+  description: A 155mm stationary howitzer. It offers a fairly moderate rate of fire, high accuracy, and fires a wide variety of relatively inexpensive ammunition. Dont shoot straight up.
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/BattlefieldArtillery/GroundArtillery/Howitzer/howitzer.rsi

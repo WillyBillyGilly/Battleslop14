@@ -3,3 +3,9 @@
   storage:
     back:
     - MapTaurus
+
+- type: loadout
+  id: LoadoutMapSpringfield
+  storage:
+    back:
+    - MapSpringfield

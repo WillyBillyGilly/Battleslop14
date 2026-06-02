@@ -1,0 +1,64 @@
+- type: entity
+  id: CapturePointSpringfieldHospital
+  parent: BaseCapturePoint
+  name: hospital control point
+  suffix: springfield, 180s / 3m
+  components:
+  - type: POICapture
+    poiName: "Springfield Hospital"
+    timeToCapture: 180
+  - type: NavMapBeacon
+    defaultText: "Hospital"
+    color: "#FFFF00"
+
+- type: entity
+  id: CapturePointSpringfieldPoliceDepartment
+  parent: BaseCapturePoint
+  name: springfield PD control point
+  suffix: springfield, 180s / 3m
+  components:
+  - type: POICapture
+    poiName: "Springfield Police Department"
+    timeToCapture: 180
+  - type: NavMapBeacon
+    defaultText: "Police Department"
+    color: "#FFFF00"
+
+- type: entity
+  id: CapturePointSpringfieldCinema
+  parent: BaseCapturePoint
+  name: springfield cinema control point
+  suffix: springfield, 120s / 2m
+  components:
+  - type: POICapture
+    poiName: "Cinema"
+    timeToCapture: 120
+  - type: NavMapBeacon
+    defaultText: "Cinema"
+    color: "#FFFF00"
+
+- type: entity
+  id: CapturePointSpringfieldSuburbs
+  parent: BaseCapturePoint
+  name: springfield suburbs control point
+  suffix: springfield, 120s / 2m
+  components:
+  - type: POICapture
+    poiName: "Suburbs"
+    timeToCapture: 120
+  - type: NavMapBeacon
+    defaultText: "Suburbs"
+    color: "#FFFF00"
+
+- type: entity
+  id: CapturePointSpringfieldHotel
+  parent: BaseCapturePoint
+  name: springfield hotel control point
+  suffix: springfield, 120s / 2m
+  components:
+  - type: POICapture
+    poiName: "Springfield Hotel"
+    timeToCapture: 120
+  - type: NavMapBeacon
+    defaultText: "Hotel"
+    color: "#FFFF00"
