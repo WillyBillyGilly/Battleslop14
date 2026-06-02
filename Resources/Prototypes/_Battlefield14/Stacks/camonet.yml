@@ -52,7 +52,7 @@
   suffix: "15"
   components:
   - type: Sprite
-    state: barbed_wire
+    state: headscarfolive
   - type: Stack
     stackType: Camonet
     count: 15
@@ -63,7 +63,7 @@
   suffix: "10"
   components:
   - type: Sprite
-    state: barbed_wire
+    state: headscarfolive
   - type: Stack
     stackType: Camonet
     count: 10
@@ -74,7 +74,7 @@
   suffix: "5"
   components:
   - type: Sprite
-    state: barbed_wire
+    state: headscarfolive
   - type: Stack
     stackType: Camonet
     count: 5
@@ -85,7 +85,7 @@
   suffix: Single
   components:
   - type: Sprite
-    state: barbed_wire
+    state: headscarfolive
   - type: Stack
     stackType: Camonet
     count: 1

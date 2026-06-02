@@ -82,3 +82,9 @@
   storage:
     back:
     - Binoculars
+
+- type: loadout
+  id: LoadoutMiscItemsCamonet15
+  storage:
+    back:
+    - Camonet15
