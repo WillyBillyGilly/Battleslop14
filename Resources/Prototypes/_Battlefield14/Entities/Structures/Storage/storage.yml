@@ -59,3 +59,38 @@
         acts: [ "Destruction" ]
   - type: Occluder
     boundingBox: -0.4, -0.3, 0.4, 0.4
+
+- type: entity
+  parent: BaseStructure
+  id: BFShelfWood
+  name: shelf
+  description: A shelf for storing things on.
+  components:
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path:
+          "/Audio/Weapons/dodgeball.ogg"
+  - type: Anchorable
+  - type: InteractionOutline
+  - type: PlaceableSurface
+  - type: Sprite
+    sprite: _Civ14/Objects/structures.rsi
+    state: shelfwood
+    snapCardinals: true
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.3,-0.3,0.3,0.3"
+        density: 140
+        mask:
+        - TableMask
+        - LowImpassable
+        - HighImpassable
+        layer:
+        - MachineLayer
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
