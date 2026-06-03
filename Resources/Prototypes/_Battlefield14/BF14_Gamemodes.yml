@@ -10,12 +10,12 @@
   - NFAdventure
 
 - type: gamePreset
-  id: GroundwarFlorida
+  id: GroundwarUSA
   alias:
-  - Florida
-  name: Ground war, Florida
+  - USA
+  name: Ground war, USA
   showInVote: true # objectives not working yet, could poison the view of the map into a mindless TDM
-  supportedMaps: BF14MapPoolEarthFlorida
+  supportedMaps: BF14MapPoolEarthUSA
   description: Larp and frag.
   rules:
   - NFAdventure

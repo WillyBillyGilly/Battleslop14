@@ -1,0 +1,18 @@
+- type: job
+  id: CivilianUS
+  name: job-name-ind-civilian
+  description: job-description-ind-civilian
+  playTimeTracker: JobCivilianUS
+  displayWeight: 10
+#  startingGear: PassengerGear
+  alwaysUseSpawner: true
+  icon: "JobIconUS"
+#  supervisors: job-supervisors-everyone
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    languagesUnderstood:
+    - English
+  access:
+  - Maintenance

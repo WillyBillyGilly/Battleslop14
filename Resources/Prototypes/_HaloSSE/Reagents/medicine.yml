@@ -51,3 +51,12 @@
       - !type:MovespeedModifier
         walkSpeedModifier: 0.75
         sprintSpeedModifier: 0.75
+      - !type:PopupMessage
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Biofoam
+          min: 10.5
+        visualType: MediumCaution
+        messages: ["reagent-effect-overdose1", "reagent-effect-overdose2", "reagent-effect-overdose3"]
+        type: Local
+        probability: 0.2

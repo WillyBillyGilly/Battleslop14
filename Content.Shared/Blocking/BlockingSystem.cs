@@ -29,6 +29,7 @@ using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
+using YamlDotNet.Core.Tokens;
 
 namespace Content.Shared.Blocking;
 
@@ -163,6 +164,8 @@ public sealed partial class BlockingSystem : SharedBlockingSystem // Mono
     {
         if (_net.IsClient)
             return;
+        if (!comp.visualEnt.IsValid())
+            return;
         _transformSystem.SetParent(comp.visualEnt, EntityUid.Invalid);
         _fixtureSystem.DestroyFixture(uid, BlockingComponent.ExpandedFixtureID, true);
     }
@@ -231,13 +234,14 @@ public sealed partial class BlockingSystem : SharedBlockingSystem // Mono
     private void OnShutdown(EntityUid uid, BlockingComponent component, ComponentShutdown args)
     {
         //In theory the user should not be null when this fires off
-        if (component.User != null)
+        var value = component?.User;
+        if (value != null && value != EntityUid.Invalid && component != null)
         {
-            _actionsSystem.RemoveProvidedActions(component.User.Value, uid);
-            StopBlockingHelper(uid, component, component.User.Value);
-            removeExpandedFixture(component.User.Value, component);
+            var user = value.Value;
+            _actionsSystem.RemoveProvidedActions(user, uid);
+            StopBlockingHelper(uid, component,user);
+            removeExpandedFixture(user, component);
             // Mono start
-            var user = component.User.Value;
             if (HasComp<BlockingVisualsComponent>(user))
                 RemCompDeferred<BlockingVisualsComponent>(user);
             // Mono end

@@ -1,0 +1,33 @@
+- type: entity
+  parent: CrateGeneric
+  id: LargeBin
+  name: large bin
+  components:
+  - type: Icon
+    sprite: _Civ14/Objects/storage/crate.rsi
+    state: largebin
+  - type: Sprite
+    sprite: _Civ14/Objects/storage/crate.rsi
+    layers:
+    - state: largebinopenf
+      map: ["enum.StorageVisualLayers.Base"]
+    - state: largebin
+      map: ["enum.StorageVisualLayers.Door"]
+    - state: manifest
+      sprite: _Civ14/Objects/storage/crate.rsi
+      map: ["enum.PaperLabelVisuals.Layer"]
+  - type: EntityStorageVisuals
+    stateDoorOpen: largebinopenb
+    stateDoorClosed: largebin
+  - type: GenericVisualizer
+    visuals:
+      enum.PaperLabelVisuals.HasLabel:
+        enum.PaperLabelVisuals.Layer:
+          True: { visible: true }
+          False: { visible: false }
+      enum.PaperLabelVisuals.LabelType:
+        enum.PaperLabelVisuals.Layer:
+          Paper: { state: manifest }
+          Bounty: { state: manifest }
+          CaptainsPaper: { state: manifest }
+          Invoice: { state: manifest }

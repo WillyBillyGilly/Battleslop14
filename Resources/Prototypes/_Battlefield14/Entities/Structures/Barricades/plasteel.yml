@@ -1,0 +1,36 @@
+- type: entity
+  abstract: true
+  id: BaseBarricadePlasteel
+  components:
+  - type: Sprite
+    sprite: /Textures/_RMC14/Structures/Walls/Barricades/barricade.rsi
+    drawdepth: WallTops
+    layers:
+    - state: plasteel
+  - type: Damageable
+    damageModifierSet: BarricadePlasteel
+  - type: Construction
+    graph: BarricadePlasteel
+
+- type: entity
+  parent: [BaseMetalBarricade, BaseBarricadePlasteel]
+  id: BarricadePlasteel
+  name: plasteel barricade
+  description: A hardened barricade built to keep the extra bad out.
+
+- type: entity
+  parent: [BaseMetalBarricadeFolding, BaseBarricadePlasteel]
+  id: BarricadePlasteelFolding
+  name: folding plasteel barricade
+  description: A hardened barricade built to keep the extra bad out. This one can be opened with a latch.
+  components:
+  - type: Damageable
+    damageModifierSet: BarricadePlasteelFolding
+  - type: Sprite
+    layers:
+    - state: folding_plasteel
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Appearance
+  - type: Door
+    openSpriteState: folding_plasteel_closed
+    closedSpriteState: folding_plasteel

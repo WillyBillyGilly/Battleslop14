@@ -43,6 +43,9 @@
   - type: ShipRepairable
     repairTime: 2
     repairCost: 3
+  - type: Reflect # BF14
+    reflectProb: 0.01
+    spread: 270
 
 - type: entity
   abstract: true
@@ -87,6 +90,9 @@
   - type: ShipRepairable
     repairTime: 3
     repairCost: 6
+  - type: Reflect # BF14
+    reflectProb: 0.02
+    spread: 270
 
 - type: entity
   abstract: true
@@ -131,6 +137,9 @@
   - type: ShipRepairable
     repairTime: 5
     repairCost: 8
+  - type: Reflect # BF14
+    reflectProb: 0.03
+    spread: 270
 
 - type: entity
   abstract: true
@@ -175,6 +184,9 @@
   - type: ShipRepairable
     repairTime: 10
     repairCost: 12
+  - type: Reflect # BF14
+    reflectProb: 0.03
+    spread: 270
 
 - type: entity
   abstract: true
@@ -217,6 +229,8 @@
     price: 75
   - type: ArmorThickness
     thickness: 20
+  - type: Reflect # BF14
+    reflectProb: 0.03
 
 - type: entity
   parent: WallReinforced

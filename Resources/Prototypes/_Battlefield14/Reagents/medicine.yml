@@ -63,6 +63,8 @@
           max: 15.5
         damage:
           Brute: -2
+      - !type:ModifyBleedAmount
+        amount: -0.75
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
@@ -85,6 +87,24 @@
         - !type:ReagentThreshold
           min: 30
         probability: 0.02
+      - !type:PopupMessage
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Meralyne
+          max: 15.5
+        visualType: Medium
+        messages: ["medicine-effect-brute1", "medicine-effect-brute2", "medicine-effect-brute3"]
+        type: Local
+        probability: 0.1
+      - !type:PopupMessage
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Meralyne
+          min: 15.5
+        visualType: MediumCaution
+        messages: ["reagent-effect-overdose1", "reagent-effect-overdose2", "reagent-effect-overdose3"]
+        type: Local
+        probability: 0.2
 
 - type: reagent
   id: Hypervene

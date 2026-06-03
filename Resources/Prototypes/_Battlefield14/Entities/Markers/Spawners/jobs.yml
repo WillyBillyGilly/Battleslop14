@@ -110,6 +110,20 @@
       scale: 1.5,1.5
 
 # ARNG
+
+- type: entity
+  id: SpawnPointNGLieutenant
+  parent: SpawnPointJobBase
+  name: NG Lieutenant
+  components:
+  - type: SpawnPoint
+    job_id: NGLieutenant
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: natoallycaptain
+      scale: 1.5,1.5
+
 - type: entity
   id: SpawnPointNGSquadLeader
   parent: SpawnPointJobBase
@@ -434,4 +448,19 @@
     sprite: _Battlefield14/Interface/Misc/class_icons.rsi
     layers:
     - state: indsquadleader
+      scale: 1.5,1.5
+
+# Civilian
+
+- type: entity
+  id: SpawnPointCivilianUS
+  parent: SpawnPointJobBase
+  name: Civilian US
+  components:
+  - type: SpawnPoint
+    job_id: CivilianUS
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/job_icons.rsi
+    layers:
+    - state: US
       scale: 1.5,1.5

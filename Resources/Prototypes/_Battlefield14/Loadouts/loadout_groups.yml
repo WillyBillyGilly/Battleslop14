@@ -106,6 +106,20 @@
 
 # BODY (uniform/armour)
 
+- type: loadoutGroup
+  id: BF_JumpsuitsCivilianUS
+  name: loadout-group-BF14-jumpsuit
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LoadoutJumpsuitCivilianTshirtJeans
+  - LoadoutJumpsuitCivilianTshirtJeansGray
+  - LoadoutJumpsuitCivilianTshirtJeansGrayGraphicChud
+  - LoadoutJumpsuitCivilianTshirtJeansGrayGraphicHate
+  - LoadoutJumpsuitCivilianPatrioticUSA1
+  - LoadoutJumpsuitCivilianPatrioticUSA2
+  - LoadoutJumpsuitCivilianPatrioticUSA3
+
 # BACK
 
 - type: loadoutGroup
@@ -151,6 +165,16 @@
 
 # FEET
 
+- type: loadoutGroup
+  id: BF_ShoesCivilian
+  name: loadout-group-BF14-shoes
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LoadoutShoesColourBlack
+  - LoadoutShoesColourBrown
+  - LoadoutShoesWorkboots
+
 # SIDEARMS
 
 - type: loadoutGroup
@@ -185,6 +209,7 @@
   - LoadoutMiscItemsGasMaskPouch
   - LoadoutMiscItemsBible
   - LoadoutMiscItemsCalculator
+  - LoadoutMiscItemsCamonet15
   - LoadoutMiscItemsMREFlask
 
 - type: loadoutGroup
@@ -201,6 +226,7 @@
   - LoadoutMiscItemsGasMaskPouch
   - LoadoutMiscItemsBible
   - LoadoutMiscItemsCalculator
+  - LoadoutMiscItemsCamonet15
   - LoadoutMiscItemsMREFlask
 
 - type: loadoutGroup
@@ -224,4 +250,5 @@
   maxLimit: 1
   loadouts:
   - LoadoutMapTaurus
+  - LoadoutMapSpringfield
   - LoadoutMiscItemsHandheldStationMapUnpowered

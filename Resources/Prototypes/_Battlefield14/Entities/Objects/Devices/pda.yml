@@ -268,6 +268,22 @@
 
 - type: entity
   parent: BasePDA
+  id: NGLieutenantPDA
+  name: N.G. PDA
+  description: Filled with my little dark age edits.
+  suffix: lieutenant
+  components:
+  - type: Icon
+    sprite: _Battlefield14/Objects/Devices/pda.rsi
+    state: pda-us
+  - type: Pda
+    id: NGLieutenantIDCard
+    state: pda-us
+  - type: PdaBorderColor
+    borderColor: "#203564"
+
+- type: entity
+  parent: BasePDA
   id: NGSquadLeaderPDA
   name: N.G. PDA
   description: Filled with my little dark age edits.

@@ -19,7 +19,7 @@ public sealed partial class BlockingComponent : Component
     /// The entity that's blocking
     /// </summary>
     [ViewVariables, AutoNetworkedField]
-    public EntityUid? User;
+    public EntityUid? User = null;
 
     /// <summary>
     /// Is it currently blocking?

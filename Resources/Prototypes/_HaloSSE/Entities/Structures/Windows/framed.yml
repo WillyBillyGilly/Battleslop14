@@ -41,6 +41,9 @@
         !type:DamageTrigger
         damage: 150 #excess damage (nuke?). avoid computational cost of spawning entities.
       behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WindowShatter
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
@@ -49,12 +52,12 @@
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          collection: GlassBreak
+          collection: WindowShatter
       - !type:SpawnEntitiesBehavior
         spawn:
           ShardGlass:
             min: 1
-            max: 2
+            max: 3
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: Appearance
@@ -91,6 +94,11 @@
             max: 1
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
+  - type: DamageVisuals
+    thresholds: [5, 10, 20]
+    trackAllDamage: true
+    damageOverlay:
+      sprite: Structures/Windows/cracks.rsi
   - type: ArmorThickness # BF14
     thickness: 3
 

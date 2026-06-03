@@ -34,6 +34,7 @@
 #  - Mercenary # Frontier # BF14 commented this out
 #  - Pilot # Frontier # BF14 commented this out
 #  - Borg # Frontier # BF14 commented this out
+  editorHidden: true # BF14
 
 - type: department
   id: CentralCommand

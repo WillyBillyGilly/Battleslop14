@@ -14,8 +14,9 @@
 #BF14      - FloraTreeConifer
 #BF14      - FloraTreeSnow
       - FloraTree
-    chance: 0.85
+    chance: 0.5
     rarePrototypes:
 #BF14      - ShadowTree
       - FloraTreeLargeOpaque # BF14
-    rareChance: 0.15
+      - FloraTreeOpaque # BF14
+    rareChance: 0.5

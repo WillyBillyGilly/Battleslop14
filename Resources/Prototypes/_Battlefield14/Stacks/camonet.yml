@@ -1,0 +1,91 @@
+- type: stack
+  id: Camonet
+  name: camouflage netting
+  icon: { sprite: _Civ14/Clothing/Masks/headscarfolive.rsi, state: headscarfolive }
+  spawn: Camonet1
+  maxCount: 10
+
+- type: entity
+  abstract: true
+  id: CamonetBase
+  parent: BaseItem
+  name: camouflage netting
+  description: A camo netting designed to break up silhouettes and hide personnel or materiel.
+  components:
+  - type: Tag
+    tags:
+    - Metal
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Stack
+    stackType: Camonet
+#    baseLayer: base
+#    layerStates:
+#    - barbed_wire
+#    - barbed_wire_2
+#    - barbed_wire_3
+  - type: Sprite
+    sprite: _Civ14/Clothing/Masks/headscarfolive.rsi
+    state: headscarfolive
+    layers:
+    - state: headscarfolive
+      map: ["base"]
+  - type: Item
+    size: Small
+  - type: Appearance
+  - type: SpawnAfterInteract
+    prototype: CamonetFloor
+    doAfter: 2
+    removeOnInteract: true
+
+- type: entity
+  parent: CamonetBase
+  id: Camonet15
+  suffix: "15"
+  components:
+  - type: Sprite
+    state: headscarfolive
+  - type: Stack
+    stackType: Camonet
+    count: 15
+
+- type: entity
+  parent: CamonetBase
+  id: Camonet10
+  suffix: "10"
+  components:
+  - type: Sprite
+    state: headscarfolive
+  - type: Stack
+    stackType: Camonet
+    count: 10
+
+- type: entity
+  parent: CamonetBase
+  id: Camonet5
+  suffix: "5"
+  components:
+  - type: Sprite
+    state: headscarfolive
+  - type: Stack
+    stackType: Camonet
+    count: 5
+
+- type: entity
+  parent: CamonetBase
+  id: Camonet1
+  suffix: Single
+  components:
+  - type: Sprite
+    state: headscarfolive
+  - type: Stack
+    stackType: Camonet
+    count: 1

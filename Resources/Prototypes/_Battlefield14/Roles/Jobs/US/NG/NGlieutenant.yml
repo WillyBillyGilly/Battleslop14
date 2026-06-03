@@ -1,0 +1,57 @@
+- type: job
+  id: NGLieutenant
+  name: job-name-ng-lieutenant
+  description: job-description-ng-lieutenant
+  playTimeTracker: JobNGLieutenant
+  weight: 79
+  startingGear: NGLieutenantGear
+  alwaysUseSpawner: true
+  icon: "JobIconNATOAllyCaptain"
+  requireAdminNotify: true
+  supervisors: job-supervisors-usgov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    - Esperanto
+    languagesUnderstood:
+    - English
+    - Esperanto
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - USMC
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantNATOUS ]
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - NATOCommon
+  - NATOCommand
+  - NATOMaintenance
+  - NATOSoldier
+  - NATOArmory
+  - NATOFunds
+  - NATOCrew
+  - NATOCaptain
+
+- type: startingGear
+  id: NGLieutenantGear
+  equipment:
+    id: NGLieutenantPDA
+    ears: ClothingHeadsetAltUS
+    jumpsuit: ClothingUniformJumpsuitSpaceForceCaptain
+    shoes: ClothingShoesBootsJackFilled
+    belt: ClothingBeltCommandFilledUS
+    pocket1: PouchFirstAidFilled
+  storage:
+    back:
+    - ClothingMaskGasM40
+    - FlashlightMilitaryUS
+    - Tourniquet
+    - Zipties
