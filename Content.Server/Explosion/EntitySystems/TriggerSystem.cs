@@ -265,7 +265,7 @@ namespace Content.Server.Explosion.EntitySystems
 
             var critMessage = Loc.GetString(component.CritMessage, ("user", implanted.ImplantedEntity.Value), ("specie", speciesText), ("grid", stationText!), ("position", posText));
             var deathMessage = Loc.GetString(component.DeathMessage, ("user", implanted.ImplantedEntity.Value), ("specie", speciesText), ("grid", stationText!), ("position", posText));
-             var reviveMessage = Loc.GetString(component.ReviveMessage, ("user", implanted.ImplantedEntity.Value), ("specie", speciesText), ("grid", gridText), ("position", posText)); // Mono
+             var reviveMessage = Loc.GetString(component.ReviveMessage, ("user", implanted.ImplantedEntity.Value), ("specie", speciesText), ("grid", stationText!), ("position", posText)); // Mono
 
             if (!TryComp<MobStateComponent>(implanted.ImplantedEntity, out var mobstate))
                 return;
@@ -278,16 +278,16 @@ namespace Content.Server.Explosion.EntitySystems
                 {
                     case MobState.Critical:
                     {
-                        _radioSystem.SendRadioMessage(uid, critMessage, radioChannel, uid, null, language);
+                            _radioSystem.SendRadioMessage(uid, critMessage, radioChannel, uid, null, language);
 
-                        var message = mobstate.PreviousState == MobState.Dead ? reviveMessage : critMessage;
-                        _radioSystem.SendRadioMessage(uid, message, radioChannel, uid, null, language);
-                        break;
+                            var message = mobstate.PreviousState == MobState.Dead ? reviveMessage : critMessage;
+                            _radioSystem.SendRadioMessage(uid, message, radioChannel, uid, null, language);
+                            break;
                     }
                     case MobState.Dead:
                     {
-                        _radioSystem.SendRadioMessage(uid, deathMessage, radioChannel, uid, null, language);
-                        break;
+                            _radioSystem.SendRadioMessage(uid, deathMessage, radioChannel, uid, null, language);
+                            break;
                     }
                 }
             }
