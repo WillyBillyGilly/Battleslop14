@@ -135,6 +135,17 @@
 
 ## IND
 
+# Scav
+
+- type: playTimeTracker
+  id: RUScav
+
+- type: playTimeTracker
+  id: RUScavGuard
+
+- type: playTimeTracker
+  id: RUScavBoss
+
 # Western Private Security
 
 - type: playTimeTracker

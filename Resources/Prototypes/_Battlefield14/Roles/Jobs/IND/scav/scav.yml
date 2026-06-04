@@ -1,0 +1,25 @@
+- type: job
+  id: RUScav
+  name: Scavenger
+  description: A local inhabitant of the war torn region, unaligned to anybody. Loot, steal and kill just to survive a another day.
+  playTimeTracker: RUScav
+  weight: 20
+  startingGear: RUScavengerGear
+  alwaysUseSpawner: true
+  icon: "JobIconRU"
+  requireAdminNotify: false
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    languagesUnderstood:
+    - Russian
+  access:
+  - Maintenance
+
+- type: startingGear
+  id: RUScavengerGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitAncient # temp, unless i dont bother giving them proper hobo clothing
+    shoes: ClothingShoesBootsJackFilled

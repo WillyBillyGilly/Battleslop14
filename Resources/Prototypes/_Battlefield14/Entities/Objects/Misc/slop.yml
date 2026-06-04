@@ -1,5 +1,31 @@
 - type: entity
   parent: BasePlushie
+  id: PlushieScav
+  name: scav plushie
+  description: You get a feeling this guy is eyeing you up on if your gear is worth the -0.25 scav rep for killing you.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/scav.rsi
+    state: icon
+  - type: Item
+    size: Normal
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/_Battlefield14/Collections/scav/interact.ogg
+  - type: EmitSoundOnLand
+    sound:
+      collection: ScavPlush
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/_Battlefield14/Collections/scav/interact.ogg
+  - type: MeleeWeapon
+    soundHit:
+      collection: ScavPlush
+  - type: UseDelay
+    delay: 30.0
+
+- type: entity
+  parent: BasePlushie
   id: PlushieSteamhappy
   name: steamhappy plushie
   description: A cute toy that resembles an emoji used in the steam chatting feature.

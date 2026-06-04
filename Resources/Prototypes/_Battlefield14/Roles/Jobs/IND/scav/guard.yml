@@ -1,0 +1,29 @@
+- type: job
+  id: RUScavGuard
+  name: Leader guard
+  description: A scavenger apart of the local region's leader gang. Tasked with aiding the scavenger leader.
+  playTimeTracker: RUScavGuard
+  weight: 20
+  startingGear: RUScavGuardGear
+  alwaysUseSpawner: true
+  icon: "JobIconINDScavGuard"
+  requireAdminNotify: false
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    languagesUnderstood:
+    - Russian
+  access:
+  - Maintenance
+
+- type: startingGear
+  id: RUScavGuardGear
+  equipment:
+    ears: ClothingHeadsetAltScav
+    jumpsuit: ClothingUniformJumpsuitCombatScavGuard
+    head: ClothingHeadHatHelmetRU
+    outerClothing: ClothingOuterArmorPlateCarrierBlack
+    shoes: ClothingShoesBootsJackFilled
+    pocket1: PouchFirstAidFilled

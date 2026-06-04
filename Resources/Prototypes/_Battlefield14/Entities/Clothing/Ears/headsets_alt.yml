@@ -36,6 +36,24 @@
 
 - type: entity
   parent: ClothingHeadsetAlt
+  id: ClothingHeadsetAltScav
+  name: Scav over-ear headset
+  components:
+    - type: Headset
+    - type: EncryptionKeyHolder
+      keySlots: 5
+    - type: ContainerFill
+      containers:
+        key_slots:
+          - EncryptionKeyScav
+          - EncryptionKeyCommon
+    - type: Sprite
+      sprite: Clothing/Ears/Headsets/security.rsi
+    - type: Clothing
+      sprite: Clothing/Ears/Headsets/security.rsi
+
+- type: entity
+  parent: ClothingHeadsetAlt
   id: ClothingHeadsetAltWPS
   name: Chevron private security over-ear headset
   components:

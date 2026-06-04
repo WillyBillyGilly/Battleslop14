@@ -1,0 +1,30 @@
+- type: job
+  id: RUScavBoss
+  name: Scavenger leader
+  description: A local scavenger gang leader. you rule these lands, your say is final.
+  playTimeTracker: RUScavBoss
+  weight: 20
+  startingGear: RUScavBossGear
+  alwaysUseSpawner: true
+  icon: "JobIconINDScavBoss"
+  requireAdminNotify: false
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    languagesUnderstood:
+    - Russian
+  access:
+  - Maintenance
+
+- type: startingGear
+  id: RUScavBossGear
+  equipment:
+    ears: ClothingHeadsetAltScav
+    jumpsuit: ClothingUniformJumpsuitCombatScavGuard
+    head: ClothingHeadHatHelmetRUAltyn
+    outerClothing: ClothingOuterArmorPlateCarrierBlack
+    shoes: ClothingShoesBootsJackFilled
+    pocket1: PouchFirstAidFilled
+    neck: ClothingNeckVambrace
