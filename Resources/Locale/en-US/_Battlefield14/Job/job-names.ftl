@@ -33,6 +33,10 @@ job-name-vks-captain = VKS General Major
 job-name-vks-crewman = VKS Crewman
 job-name-vks-fighter-pilot = VKS Fighter Pilot
 
+job-name-omon-lieutenant = OMON Unit Commander
+job-name-omon-squadleader = OMON Sergeant
+job-name-omon-rifleman = OMON Riot Officer
+
 #Western Private Security#
 
 job-name-wps-marshal = Marshal

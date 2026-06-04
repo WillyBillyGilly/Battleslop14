@@ -347,6 +347,49 @@
   groups:
   - ContractorWallet
 
+# OMON
+
+- type: roleLoadout
+  id: JobOMONLieutenant
+  groups:
+  - BF_SoldierGlassesGreen
+  - BF_CombatMasks
+  - BF_SoldierGloves
+  - BF_PACTIFF
+  - BF_HelmetAttachmentPACT
+  - BF_BackpacksBlack
+  - BF_MiscItemsPACT
+  - BF_PistolsVDVSL
+  - BF_Map
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobOMONSquadLeader
+  groups:
+  - BF_SoldierGlassesGreen
+  - BF_CombatMasks
+  - BF_SoldierGloves
+  - BF_PACTIFF
+  - BF_HelmetAttachmentPACT
+  - BF_BackpacksBlack
+  - BF_MiscItemsPACT
+  - BF_PistolsVDVSL
+  - BF_Map
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobOMONRifleman
+  groups:
+  - BF_SoldierGlassesGreen
+  - BF_CombatMasks
+  - BF_SoldierGloves
+  - BF_PACTIFF
+  - BF_HelmetAttachmentPACT
+  - BF_BackpacksBlack
+  - BF_MiscItemsPACT
+  - BF_Map
+  - ContractorWallet
+
 ### IND
 
 # WPS

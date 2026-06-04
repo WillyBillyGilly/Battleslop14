@@ -1,0 +1,59 @@
+- type: job
+  id: OMONRifleman
+  name: job-name-omon-rifleman
+  description: job-description-omon-rifleman
+  playTimeTracker: JobOMONRifleman
+  weight: 71
+  startingGear: OMONRiflemanGear
+  alwaysUseSpawner: true
+  icon: "JobIconPACTAllyRifleman"
+  requireAdminNotify: false
+  supervisors: job-supervisors-rugov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    languagesUnderstood:
+    - Russian
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - VDV
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantPACTRU ]
+  # - !type:AddComponentSpecial
+  #   components:
+  #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
+  #     # - type: ChatRank
+  #     #   rank: BF-rank-private
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - PACTCommon
+  - PACTMaintenance
+  - PACTSoldier
+  - PACTArmory
+
+- type: startingGear
+  id: OMONRiflemanGear
+  equipment:
+    id: VDVRiflemanPDA # TODO
+    ears: ClothingHeadsetAltRU
+    belt: ClothingBeltMilitaryWebbingRU
+    jumpsuit: ClothingUniformJumpsuitRUOMON
+    outerClothing: ClothingOuterArmorWebVestSec
+    shoes: ClothingShoesBootsJackFilled
+    pocket1: PouchFirstAidFilled
+    pocket2: PouchGrenadesFilledVDVScout
+  storage:
+    back:
+    - ArmorPlateLight
+    - FlashlightMilitaryAlt
+    - ClothingMaskGasRussia
+    - Tourniquet
+    - Zipties

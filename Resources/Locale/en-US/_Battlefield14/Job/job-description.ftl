@@ -33,6 +33,10 @@ job-description-vks-captain = Lead your battlegroup, whether that be from the fr
 job-description-vks-crewman = Maintain whatever capital ship/port you're assigned to.
 job-description-vks-fighter-pilot = Eviscerate infantry, splash bandits, lust over your SU-57 Felon.
 
+job-description-omon-lieutenant = Take top-down control of your OMON platoon and keep everything running smoothly.
+job-description-omon-squadleader = Coordinate optimal rioter beating and/or shooting.
+job-description-omon-rifleman = Beat rioters with sticks, maybe shoot them if it gets bad.
+
 #Western Private Security#
 
 job-description-wps-marshal = Co-ordinate your goons, secure your outpost for your contractor.
