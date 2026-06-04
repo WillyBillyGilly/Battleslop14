@@ -48,7 +48,7 @@
   - type: BlockWeather
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: BaseWall
   id: N14BaseWallSlanted
   suffix: slanted
   abstract: true
@@ -136,7 +136,7 @@
           collection: WoodDestroyHeavy
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: BaseWall
   id: N14WallBrickSlantedIndestructible
   name: brick wall
   components:
@@ -155,7 +155,7 @@
   suffix: slanted
     
 - type: entity
-  parent: BaseWallIndestructible
+  parent: BaseWall
   id: N14WallBrickAltSlantedIndestructible
   name: brick wall
   components:
@@ -174,7 +174,7 @@
   suffix: slanted
     
 - type: entity
-  parent: BaseWallIndestructible
+  parent: BaseWall
   id: N14WallBrickGraySlantedIndestructible
   name: brick wall
   components:
@@ -193,7 +193,7 @@
   suffix: slanted
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: BaseWall
   id: N14WallConcreteSlantedIndestructible
   name: concrete wall
   components:
@@ -206,7 +206,7 @@
     base: slantedconcrete
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: BaseWall
   id: N14WallConcreteAltSlantedIndestructible
   name: concrete wall
   components:
@@ -225,7 +225,7 @@
   suffix: slanted
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: BaseWall
   id: N14WallMetalSlantedIndestructible
   name: metal wall
   components:
@@ -244,7 +244,7 @@
   suffix: slanted
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: BaseWall
   id: N14WallReinfMetalSlantedIndestructible
   name: reinforced metal wall
   components:
@@ -263,7 +263,7 @@
   suffix: slanted
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: BaseWall
   id: N14WallRoughScrapSlantedIndestructible
   name: rough scrap wall
   components:
@@ -282,7 +282,7 @@
   suffix: slanted
     
 - type: entity
-  parent: BaseWallIndestructible
+  parent: BaseWall
   id: N14WallIndustrialRustSlantedIndestructible
   name: industrial rust wall
   components:
@@ -301,7 +301,7 @@
   suffix: slanted
     
 - type: entity
-  parent: BaseWallIndestructible
+  parent: BaseWall
   id: N14WallMetalRustSlantedIndestructible
   name: metal rust wall
   components:
@@ -320,7 +320,7 @@
   suffix: slanted
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: BaseWall
   id: N14WallScrapBlueSlantedIndestructible
   name: blue scrap wall
   components:
@@ -339,7 +339,7 @@
   suffix: slanted
     
 - type: entity
-  parent: BaseWallIndestructible
+  parent: BaseWall
   id: N14WallScrapRedSlantedIndestructible
   name: red scrap wall
   components:
@@ -358,7 +358,7 @@
   suffix: slanted
     
 - type: entity
-  parent: BaseWallIndestructible
+  parent: BaseWall
   id: N14WallScrapWhiteSlantedIndestructible
   name: white scrap wall
   components:
@@ -377,7 +377,7 @@
   suffix: slanted
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: BaseWall
   id: N14WallSidingSlantedIndestructible
   name: siding wall
   components:
@@ -396,7 +396,7 @@
   suffix: slanted
     
 - type: entity
-  parent: BaseWallIndestructible
+  parent: BaseWall
   id: N14WallSidingBlueSlantedIndestructible
   name: blue siding wall
   components:
@@ -415,7 +415,7 @@
   suffix: slanted
 
 - type: entity
-  parent: BaseWallIndestructible
+  parent: BaseWall
   id: N14WallSidingRedSlantedIndestructible
   name: red siding wall
   components:
@@ -434,7 +434,7 @@
   suffix: slanted
     
 - type: entity
-  parent: BaseWallIndestructible
+  parent: BaseWall
   id: N14WallSidingGreenSlantedIndestructible
   name: green siding wall
   components:

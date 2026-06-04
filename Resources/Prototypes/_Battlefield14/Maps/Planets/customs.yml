@@ -4,19 +4,18 @@
   mapPath: /Maps/_Battlefield14/Planets/customs.yml
   minPlayers: 10
   maxPlayers: 50
-  fallback: True
   randomRotation: false
   maxRandomOffset: 0
   stations:
-    BF14Taurus:
+    BF14Customs:
       stationProto: StandardFrontierStation
       components:
         - type: StationNameSetup
-          mapNameTemplate: "Customs, Russia"
+          mapNameTemplate: "Tarkov, Norvinsk"
         - type: ExtraStationInformation
           iconPath: /Textures/_NF/Structures/Decoration/banner.rsi/nfsd-banner.png
-          stationSubtext: "Norvinsk regoin, Russia"
-          stationDescription: "A customs office in a rural part of Russia"
+          stationSubtext: "Norvinsk, Russian Federation"
+          stationDescription: "A customs office in a war torn region of the Russian Federation."
           lobbySortOrder: 1
         - type: StationJobs
           availableJobs:
@@ -31,8 +30,8 @@
             VDVAutomaticRifleman: [ 3, 3 ]
             VDVMedic: [ 3, 3 ]
             VDVRecon: [ 3, 3 ]
-            RUScavBoss: [ 1, 1 ]
-            RUScavGuard: [ 2, 2 ]
             RUScav: [ 6, 6 ]
+            RUScavGuard: [ 2, 2 ]
+            RUScavBoss: [ 1, 1 ]
         - type: StationBiome
           biome: Grasslands
