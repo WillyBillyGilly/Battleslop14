@@ -6,7 +6,7 @@
   weight: 20
   startingGear: RUScavBossGear
   alwaysUseSpawner: true
-  icon: "JobIconINDScavBoss"
+  icon: "JobIconINDSquadLeader"
   requireAdminNotify: false
   canBeAntag: false
   special:
@@ -24,7 +24,7 @@
     ears: ClothingHeadsetAltScav
     jumpsuit: ClothingUniformJumpsuitCombatScavGuard
     head: ClothingHeadHatHelmetRUAltyn
-    outerClothing: ClothingOuterArmorPlateCarrierBlack
+    outerClothing: ClothingOuterArmorPlateCarrierHeavy
     shoes: ClothingShoesBootsJackFilled
     pocket1: PouchFirstAidFilled
-    neck: ClothingNeckVambrace
+    armbandright: ClothingArmbandVambrace

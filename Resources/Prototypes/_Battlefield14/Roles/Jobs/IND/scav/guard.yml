@@ -6,7 +6,7 @@
   weight: 20
   startingGear: RUScavGuardGear
   alwaysUseSpawner: true
-  icon: "JobIconINDScavGuard"
+  icon: "JobIconINDSecurity"
   requireAdminNotify: false
   canBeAntag: false
   special:
