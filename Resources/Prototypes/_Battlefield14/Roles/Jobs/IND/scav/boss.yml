@@ -23,7 +23,7 @@
   id: RUScavBossGear # other gear is in the stronghold armory
   equipment:
     ears: ClothingHeadsetAltScav
-    jumpsuit: ClothingUniformJumpsuitCombatScavGuard
+    jumpsuit: ClothingUniformJumpsuitCombatScavBoss
     head: ClothingHeadHatHelmetRUAltyn
     outerClothing: ClothingOuterArmorPlateCarrierHeavy
     shoes: ClothingShoesBootsJackFilled
