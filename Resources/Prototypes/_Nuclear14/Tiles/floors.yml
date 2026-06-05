@@ -1709,7 +1709,6 @@
   id: WaterDeep
   name: water deep
   sprite: /Textures/_Nuclear14/Tiles/ms13/Water/water_deep.png
-  friction: 0.01
   isSubfloor: true
   isSpace: false # TODO: Make this true once default gas mix is set, water = space for boats
   footstepSounds:
@@ -1724,7 +1723,6 @@
   id: WaterMedium
   name: water medium
   sprite: /Textures/_Nuclear14/Tiles/ms13/Water/water_medium.png
-  friction: 0.01
   isSubfloor: true
   isSpace: false # TODO: Make this true once default gas mix is set, water = space for boats
   footstepSounds:
@@ -1739,7 +1737,6 @@
   id: WaterShallow
   name: water shallow
   sprite: /Textures/_Nuclear14/Tiles/ms13/Water/water_shallow.png
-  friction: 0.01
   isSubfloor: true
   isSpace: false # TODO: Make this true once default gas mix is set, water = space for boats
   footstepSounds:
