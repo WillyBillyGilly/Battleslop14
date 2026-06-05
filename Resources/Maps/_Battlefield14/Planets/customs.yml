@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 06/04/2026 23:41:19
-  entityCount: 8917
+  time: 06/05/2026 13:50:58
+  entityCount: 8956
 maps:
 - 2
 grids:
@@ -722,9 +722,9 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
       spreadQueues:
-        Kudzu: []
         Smoke: []
         MetalFoam: []
+        Kudzu: []
         Puddle: []
       updateAccumulator: 0.57951164
     - type: Shuttle
@@ -5421,9 +5421,9 @@ entities:
           version: 7
     - type: SpreaderGrid
       spreadQueues:
-        Kudzu: []
         Smoke: []
         MetalFoam: []
+        Kudzu: []
         Puddle: []
     - type: GridPathfinding
     - type: Gravity
@@ -8730,6 +8730,100 @@ entities:
     - type: Transform
       pos: 74.58003,-28.501503
       parent: 1
+- proto: ClothingHeadHatHelmetHardhat
+  entities:
+  - uid: 5069
+    components:
+    - type: Transform
+      pos: 128.64363,29.63528
+      parent: 1
+  - uid: 5070
+    components:
+    - type: Transform
+      pos: 146.38338,3.5948167
+      parent: 1
+  - uid: 5089
+    components:
+    - type: Transform
+      pos: 56.583828,2.2907677
+      parent: 1
+  - uid: 5090
+    components:
+    - type: Transform
+      pos: 70.675,0.9356594
+      parent: 1
+  - uid: 5092
+    components:
+    - type: Transform
+      pos: 85.636345,-4.4810743
+      parent: 1
+  - uid: 5093
+    components:
+    - type: Transform
+      pos: 101.366646,-37.444508
+      parent: 1
+  - uid: 5094
+    components:
+    - type: Transform
+      pos: 148.29395,-16.093784
+      parent: 1
+  - uid: 5095
+    components:
+    - type: Transform
+      pos: 128.50662,0.3443439
+      parent: 1
+  - uid: 5096
+    components:
+    - type: Transform
+      pos: 128.53787,0.65739155
+      parent: 1
+  - uid: 5097
+    components:
+    - type: Transform
+      pos: 139.58125,16.581919
+      parent: 1
+  - uid: 5098
+    components:
+    - type: Transform
+      pos: 246.24211,24.574898
+      parent: 1
+- proto: ClothingHeadHatHelmetHazardHelmet
+  entities:
+  - uid: 5101
+    components:
+    - type: Transform
+      pos: 212.2573,-5.557337
+      parent: 1
+  - uid: 5102
+    components:
+    - type: Transform
+      pos: 212.5698,-5.854418
+      parent: 1
+  - uid: 5103
+    components:
+    - type: Transform
+      pos: 182.37013,-9.013351
+      parent: 1
+  - uid: 5104
+    components:
+    - type: Transform
+      pos: 175.60791,2.8784032
+      parent: 1
+  - uid: 5105
+    components:
+    - type: Transform
+      pos: 164.3323,-10.896788
+      parent: 1
+  - uid: 5111
+    components:
+    - type: Transform
+      pos: -1.8587403,-31.674225
+      parent: 1
+  - uid: 5112
+    components:
+    - type: Transform
+      pos: -4.507178,-37.021687
+      parent: 1
 - proto: ClothingHeadHatHelmetRU
   entities:
   - uid: 6966
@@ -8756,16 +8850,6 @@ entities:
     components:
     - type: Transform
       pos: 123.091286,57.69924
-      parent: 1
-  - uid: 6994
-    components:
-    - type: Transform
-      pos: 139.67426,16.04808
-      parent: 1
-  - uid: 6995
-    components:
-    - type: Transform
-      pos: 146.61046,3.6585684
       parent: 1
   - uid: 6996
     components:
@@ -8841,38 +8925,16 @@ entities:
       parent: 1
 - proto: ClothingOuterArmorPlateCarrierBlack
   entities:
-  - uid: 6732
+  - uid: 5074
     components:
     - type: Transform
-      pos: 70.65321,1.0293378
+      pos: 15.51273,-22.784441
       parent: 1
-    - type: ClothingSpeedModifier
-      sprintModifier: 1
-      walkModifier: 1
-  - uid: 6733
+  - uid: 5087
     components:
     - type: Transform
-      pos: 85.8387,-4.3698397
+      pos: 6.6363997,19.083263
       parent: 1
-    - type: ClothingSpeedModifier
-      sprintModifier: 1
-      walkModifier: 1
-  - uid: 6735
-    components:
-    - type: Transform
-      pos: 128.53125,3.2031684
-      parent: 1
-    - type: ClothingSpeedModifier
-      sprintModifier: 1
-      walkModifier: 1
-  - uid: 6740
-    components:
-    - type: Transform
-      pos: 139.53543,16.223492
-      parent: 1
-    - type: ClothingSpeedModifier
-      sprintModifier: 1
-      walkModifier: 1
 - proto: ClothingOuterArmorPlateCarrierCivillian
   entities:
   - uid: 6728
@@ -9011,12 +9073,66 @@ entities:
   - uid: 1625
     components:
     - type: Transform
-      pos: 154.08086,70.982605
+      pos: 154.2043,70.99912
       parent: 1
   - uid: 4495
     components:
     - type: Transform
       pos: 253.07195,35.372673
+      parent: 1
+- proto: ClothingOuterArmorWebVestSec
+  entities:
+  - uid: 5071
+    components:
+    - type: Transform
+      pos: 46.443157,-4.653908
+      parent: 1
+  - uid: 5072
+    components:
+    - type: Transform
+      pos: 86.09297,-4.497093
+      parent: 1
+  - uid: 5073
+    components:
+    - type: Transform
+      pos: 128.67303,3.4269066
+      parent: 1
+- proto: ClothingOuterHazardSuit
+  entities:
+  - uid: 5099
+    components:
+    - type: Transform
+      pos: 214.30417,-7.558613
+      parent: 1
+  - uid: 5100
+    components:
+    - type: Transform
+      pos: 214.7573,-7.683814
+      parent: 1
+  - uid: 5106
+    components:
+    - type: Transform
+      pos: 182.81921,-9.2393875
+      parent: 1
+  - uid: 5107
+    components:
+    - type: Transform
+      pos: 175.54861,1.877708
+      parent: 1
+  - uid: 5108
+    components:
+    - type: Transform
+      pos: 164.45125,-13.878402
+      parent: 1
+  - uid: 5109
+    components:
+    - type: Transform
+      pos: -2.5618653,-32.119846
+      parent: 1
+  - uid: 5110
+    components:
+    - type: Transform
+      pos: -3.9915528,-37.53767
       parent: 1
 - proto: CMPlatform
   entities:
@@ -16014,6 +16130,27 @@ entities:
     components:
     - type: Transform
       pos: 16.5,35.5
+      parent: 1
+    - type: Fixtures
+      fixtures: {}
+  - uid: 5088
+    components:
+    - type: Transform
+      pos: 6.5,19.5
+      parent: 1
+    - type: Fixtures
+      fixtures: {}
+  - uid: 5113
+    components:
+    - type: Transform
+      pos: -4.5,-37.5
+      parent: 1
+    - type: Fixtures
+      fixtures: {}
+  - uid: 5114
+    components:
+    - type: Transform
+      pos: -2.5,-31.5
       parent: 1
     - type: Fixtures
       fixtures: {}
@@ -53798,6 +53935,66 @@ entities:
     components:
     - type: Transform
       pos: 248.17331,38.918167
+      parent: 1
+  - uid: 5075
+    components:
+    - type: Transform
+      pos: 230.7018,38.971977
+      parent: 1
+  - uid: 5076
+    components:
+    - type: Transform
+      pos: 228.80324,34.99656
+      parent: 1
+  - uid: 5077
+    components:
+    - type: Transform
+      pos: 224.58449,32.25247
+      parent: 1
+  - uid: 5078
+    components:
+    - type: Transform
+      pos: 218.48769,29.438011
+      parent: 1
+  - uid: 5079
+    components:
+    - type: Transform
+      pos: 192.79218,56.682037
+      parent: 1
+  - uid: 5080
+    components:
+    - type: Transform
+      pos: 179.83337,55.732212
+      parent: 1
+  - uid: 5081
+    components:
+    - type: Transform
+      pos: 166.2103,63.848827
+      parent: 1
+  - uid: 5082
+    components:
+    - type: Transform
+      pos: 161.14975,56.109085
+      parent: 1
+  - uid: 5083
+    components:
+    - type: Transform
+      pos: 152.501,65.92449
+      parent: 1
+  - uid: 5084
+    components:
+    - type: Transform
+      pos: 155.45413,67.402084
+      parent: 1
+  - uid: 5085
+    components:
+    - type: Transform
+      pos: 157.59866,68.52787
+      parent: 1
+  - uid: 5086
+    components:
+    - type: Transform
+      pos: 175.62102,68.43551
       parent: 1
   - uid: 5736
     components:
