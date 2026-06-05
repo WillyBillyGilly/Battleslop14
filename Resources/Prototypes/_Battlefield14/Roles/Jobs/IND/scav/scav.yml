@@ -20,5 +20,3 @@
 
 - type: startingGear
   id: RUScavGear # go find shit bum
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitAncient

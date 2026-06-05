@@ -354,9 +354,13 @@
 - type: roleLoadout
   id: JobRUScav
   groups:
+  - BF_HeadCivilianRU
+  - BF_JumpsuitsCivilianRU
+  - BF_OuterCivilianRU
   - BF_ShoesCivilian
   - BF_MiscItemsIND
   - ContractorWallet
+  - BF_CombatMasks
 
 - type: roleLoadout
   id: JobRUScavGuard

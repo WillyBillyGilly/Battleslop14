@@ -133,6 +133,48 @@
 # MISC
 
 - type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatHelmetHazardHelmet
+  name: hazard suit helmet
+  description: A thick helmet for a hazard suit that would be worn by workers at chemical plants. Its pretty good at absorbing explosions.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Helmets/hazardhelmet.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Helmets/hazardhelmet.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Caustic: 0.05
+        Heat: 0.30
+      flatReductions:
+        Blunt: 1
+        Slash: 1
+        Piercing: 1
+  - type: ExplosionResistance
+    damageCoefficient: 0.8
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95
+  - type: HeldSpeedModifier
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatHelmetHardhat
+  name: Hardhat
+  description: A plastic hardhat, no its not gonna protect you from anything unless its raining bricks.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Helmets/hardhat.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Helmets/hardhat.rsi
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 1
+        Slash: 1
+
+- type: entity
   parent: ClothingHeadHatHelmetUS
   id: ClothingHeadHatHelmetSecurityBF14
   name: security helmet
