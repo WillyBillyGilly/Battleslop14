@@ -2,9 +2,9 @@
   id: RUScav
   name: Scavenger
   description: A local inhabitant of the war torn region, unaligned to anybody. Loot, steal and kill just to survive a another day.
-  playTimeTracker: RUScav
+  playTimeTracker: JobRUScav
   weight: 20
-  startingGear: RUScavengerGear
+  startingGear: RUScavGear
   alwaysUseSpawner: true
   icon: "JobIconRU"
   requireAdminNotify: false
@@ -19,7 +19,6 @@
   - Maintenance
 
 - type: startingGear
-  id: RUScavengerGear
+  id: RUScavGear # go find shit bum
   equipment:
-    jumpsuit: ClothingUniformJumpsuitAncient # temp, unless i dont bother giving them proper hobo clothing
-    shoes: ClothingShoesBootsJackFilled
+    jumpsuit: ClothingUniformJumpsuitAncient

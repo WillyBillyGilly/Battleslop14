@@ -91,6 +91,11 @@
         Heat: 0.9
   - type: ExplosionResistance
     damageCoefficient: 0.85
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - FacialHair
 
 - type: entity
   parent: ClothingHeadHatHelmetUS

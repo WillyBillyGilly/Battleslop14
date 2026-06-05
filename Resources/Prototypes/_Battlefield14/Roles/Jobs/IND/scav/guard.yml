@@ -1,13 +1,14 @@
 - type: job
   id: RUScavGuard
-  name: Leader guard
+  name: Scavenger guard
   description: A scavenger apart of the local region's leader gang. Tasked with aiding the scavenger leader.
-  playTimeTracker: RUScavGuard
+  playTimeTracker: JobRUScavGuard
   weight: 20
   startingGear: RUScavGuardGear
   alwaysUseSpawner: true
   icon: "JobIconINDSecurity"
   requireAdminNotify: false
+  supervisors: The local scavenger boss.
   canBeAntag: false
   special:
   - !type:AddLanguageSpecial
@@ -19,7 +20,7 @@
   - Maintenance
 
 - type: startingGear
-  id: RUScavGuardGear
+  id: RUScavGuardGear # other gear is in the stronghold armory
   equipment:
     ears: ClothingHeadsetAltScav
     jumpsuit: ClothingUniformJumpsuitCombatScavGuard

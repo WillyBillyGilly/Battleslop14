@@ -138,13 +138,13 @@
 # Scav
 
 - type: playTimeTracker
-  id: RUScav
+  id: JobRUScav
 
 - type: playTimeTracker
-  id: RUScavGuard
+  id: JobRUScavGuard
 
 - type: playTimeTracker
-  id: RUScavBoss
+  id: JobRUScavBoss
 
 # Western Private Security
 

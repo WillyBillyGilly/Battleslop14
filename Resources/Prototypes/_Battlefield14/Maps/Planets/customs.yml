@@ -11,7 +11,7 @@
       stationProto: StandardFrontierStation
       components:
         - type: StationNameSetup
-          mapNameTemplate: "Tarkov, Norvinsk"
+          mapNameTemplate: "Norvinsk, Russian Federation"
         - type: ExtraStationInformation
           iconPath: /Textures/_NF/Structures/Decoration/banner.rsi/nfsd-banner.png
           stationSubtext: "Norvinsk, Russian Federation"
@@ -33,5 +33,3 @@
             RUScav: [ 6, 6 ]
             RUScavGuard: [ 2, 2 ]
             RUScavBoss: [ 1, 1 ]
-        - type: StationBiome
-          biome: Grasslands

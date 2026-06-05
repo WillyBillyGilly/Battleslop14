@@ -2,12 +2,13 @@
   id: RUScavBoss
   name: Scavenger leader
   description: A local scavenger gang leader. you rule these lands, your say is final.
-  playTimeTracker: RUScavBoss
+  playTimeTracker: JobRUScavBoss
   weight: 20
   startingGear: RUScavBossGear
   alwaysUseSpawner: true
-  icon: "JobIconINDSquadLeader"
+  icon: "JobIconINDCaptain"
   requireAdminNotify: false
+  supervisors: Nobody, youre the king of the world baby!
   canBeAntag: false
   special:
   - !type:AddLanguageSpecial
@@ -19,7 +20,7 @@
   - Maintenance
 
 - type: startingGear
-  id: RUScavBossGear
+  id: RUScavBossGear # other gear is in the stronghold armory
   equipment:
     ears: ClothingHeadsetAltScav
     jumpsuit: ClothingUniformJumpsuitCombatScavGuard
@@ -27,3 +28,5 @@
     outerClothing: ClothingOuterArmorPlateCarrierHeavy
     shoes: ClothingShoesBootsJackFilled
     pocket1: PouchFirstAidFilled
+    rightarmband: ClothingArmbandGraeves
+    leftarmband: ClothingArmbandVambrace
