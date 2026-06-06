@@ -98,3 +98,6 @@
   weight: 1
   roles:
   - CivilianUS
+  - RUScav
+  - RUScavGuard
+  - RUScavBoss

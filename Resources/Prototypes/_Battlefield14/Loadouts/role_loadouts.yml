@@ -349,6 +349,35 @@
 
 ### IND
 
+# Scav
+
+- type: roleLoadout
+  id: JobRUScav
+  groups:
+  - BF_HeadCivilianRU
+  - BF_JumpsuitsCivilianRU
+  - BF_OuterCivilianRU
+  - BF_ShoesCivilian
+  - BF_MiscItemsIND
+  - ContractorWallet
+  - BF_CombatMasks
+
+- type: roleLoadout
+  id: JobRUScavGuard
+  groups:
+  - BF_MiscItemsIND
+  - ContractorWallet
+  - BF_WPSGloves
+  - BF_CombatMasks
+
+- type: roleLoadout
+  id: JobRUScavBoss
+  groups:
+  - BF_MiscItemsIND
+  - ContractorWallet
+  - BF_WPSGloves
+  - BF_CombatMasks
+
 # WPS
 
 - type: roleLoadout

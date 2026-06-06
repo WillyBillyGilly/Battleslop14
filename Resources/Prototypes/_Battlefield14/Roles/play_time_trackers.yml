@@ -135,6 +135,17 @@
 
 ## IND
 
+# Scav
+
+- type: playTimeTracker
+  id: JobRUScav
+
+- type: playTimeTracker
+  id: JobRUScavGuard
+
+- type: playTimeTracker
+  id: JobRUScavBoss
+
 # Western Private Security
 
 - type: playTimeTracker
