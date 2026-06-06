@@ -3,7 +3,7 @@
   name: Scavenger guard
   description: A scavenger apart of the local region's leader gang. Tasked with aiding the scavenger leader.
   playTimeTracker: JobRUScavGuard
-  weight: 20
+  weight: 21
   startingGear: RUScavGuardGear
   alwaysUseSpawner: true
   icon: "JobIconINDSecurity"

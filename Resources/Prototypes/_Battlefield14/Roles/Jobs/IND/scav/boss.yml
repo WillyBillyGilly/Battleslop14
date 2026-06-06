@@ -3,7 +3,7 @@
   name: Scavenger leader
   description: A local scavenger gang leader. you rule these lands, your say is final.
   playTimeTracker: JobRUScavBoss
-  weight: 20
+  weight: 22
   startingGear: RUScavBossGear
   alwaysUseSpawner: true
   icon: "JobIconINDCaptain"

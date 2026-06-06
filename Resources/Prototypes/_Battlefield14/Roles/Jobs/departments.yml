@@ -77,6 +77,18 @@
   - VKSCrewman
   - VKSFighterPilot
 
+- type: department
+  id: OMON
+  name: department-OMON-name
+  description: department-OMON-description
+  color: "#203564"
+  weight: 62
+  roles:
+  - OMONLieutenant # Unit Commander
+  - OMONSquadLeader # Sergeant
+  - OMONRifleman # Riot Officer
+  editorHidden: true
+
 ## IND
 
 - type: department

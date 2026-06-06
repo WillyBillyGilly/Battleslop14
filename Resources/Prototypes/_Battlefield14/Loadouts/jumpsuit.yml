@@ -40,14 +40,14 @@
     jumpsuit: ClothingUniformJumpsuitTshirtJeansGray
 
 - type: loadout
-  id: LoadoutJumpsuitCivilianTshirtJeansGrayGraphicChud
+  id: LoadoutJumpsuitCivilianPlainGraphicChud
   equipment:
-    jumpsuit: ClothingUniformJumpsuitTshirtJeansGraphicChud
+    jumpsuit: ClothingUniformJumpsuitPlainGraphicChud
 
 - type: loadout
-  id: LoadoutJumpsuitCivilianTshirtJeansGrayGraphicHate
+  id: LoadoutJumpsuitCivilianPlainGraphicHate
   equipment:
-    jumpsuit: ClothingUniformJumpsuitTshirtJeansGraphicHate
+    jumpsuit: ClothingUniformJumpsuitPlainGraphicHate
 
 - type: loadout
   id: LoadoutJumpsuitCivilianPatrioticUSA1

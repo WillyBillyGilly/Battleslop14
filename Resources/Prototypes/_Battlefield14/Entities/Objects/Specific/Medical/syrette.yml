@@ -41,6 +41,7 @@
   id: BF14SyretteCappedBase
   abstract: true
   name: syrette
+  description: A miniature single use syringe. This one has a cap on it.
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Specific/Medical/syrette.rsi
@@ -60,6 +61,11 @@
   - type: Tag
     tags:
     - Syrette
+  - type: ExtendDescription
+    descriptionList:
+      - description: Use in hand to remove cap.
+        color: "#4f94ad"
+        requireDetailRange: true
 
 - type: entity
   parent: BaseItem
@@ -204,6 +210,21 @@
         reagents:
         - ReagentId: Dermaline
           Quantity: 5
+
+- type: entity
+  parent: BF14SyretteCappedBase
+  id: BF14SyretteEpinephrineCapped
+  suffix: Epinephrine, capped
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Specific/Medical/syrette.rsi
+    layers:
+    - state: syrette
+    - state: cap_yellow
+  - type: SpawnItemsOnUse
+    items:
+    - id: BF14SyretteCapYellow
+    - id: BF14SyretteEpinephrine
 
 - type: entity
   parent: BF14SyretteBase

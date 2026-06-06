@@ -14,7 +14,7 @@
     sprite: /Textures/_Battlefield14/Interface/Misc/job_icons.rsi
     state: RU
 
-# Nato classes
+# NATO classes
 
 - type: jobIcon
   parent: JobIcon
@@ -130,7 +130,7 @@
     sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
     state: natoallyengineer
 
- # Pact classes
+ # PACT classes
 
 - type: jobIcon
   parent: JobIcon
@@ -194,6 +194,29 @@
   icon:
     sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
     state: pactspecialforces
+
+# PACT allies
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconPACTAllyCaptain
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: pactallycaptain
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconPACTAllySquadleader
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: pactallysquadleader
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconPACTAllyRifleman
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: pactallyinfantry
 
 # Independants
 

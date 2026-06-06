@@ -10,9 +10,9 @@
     - id: KeloDermChemistryBottle
     - id: EpinephrineChemistryBottle
     - id: Tourniquet
-    - id: EmergencyMedipen
-    - id: InaprovalineMedipen
-    - id: InaprovalineMedipen
+    - id: BF14SyretteEpinephrineCapped
+    - id: BF14SyretteInaprovalineCapped
+      amount: 2
 
 - type: entity
   id: ClothingArmbandThighHolsterFilledUS

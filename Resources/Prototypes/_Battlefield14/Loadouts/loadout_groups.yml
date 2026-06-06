@@ -135,10 +135,9 @@
   minLimit: 1
   maxLimit: 1
   loadouts:
-  - LoadoutJumpsuitCivilianTshirtJeans
-  - LoadoutJumpsuitCivilianTshirtJeansGray
-  - LoadoutJumpsuitCivilianTshirtJeansGrayGraphicChud
-  - LoadoutJumpsuitCivilianTshirtJeansGrayGraphicHate
+  - LoadoutUniformJumpsuitPlain
+  - LoadoutJumpsuitCivilianPlainGraphicChud
+  - LoadoutJumpsuitCivilianPlainGraphicHate
   - LoadoutJumpsuitCivilianPatrioticUSA1
   - LoadoutJumpsuitCivilianPatrioticUSA2
   - LoadoutJumpsuitCivilianPatrioticUSA3

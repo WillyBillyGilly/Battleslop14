@@ -30,6 +30,10 @@ department-VDV-description = S NEBA PRIVET.
 department-VKS-name = Russian Aerospace Forces (VKS)
 department-VKS-description = I can see my house from here!
 
+# OMON
+department-OMON-name = Russian Special Purpose Police (OMON)
+department-OMON-description = Secure the homefront, deal with riots or national disasters.
+
 ### IND
 
 # Western Private Security

@@ -83,7 +83,13 @@
       "name": "pactspecialforces"
     },
     {
+      "name": "pactallycaptain"
+    },
+    {
       "name": "pactallysquadleader"
+    },
+    {
+      "name": "pactallyinfantry"
     },
     {
       "name": "indcaptain"

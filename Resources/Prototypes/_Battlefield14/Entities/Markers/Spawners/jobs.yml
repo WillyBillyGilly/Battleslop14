@@ -407,6 +407,47 @@
     - state: pactfighterpilot
       scale: 1.5,1.5
 
+# OMON
+
+- type: entity
+  id: SpawnPointOMONLieutenant
+  parent: SpawnPointJobBase
+  name: OMON Lieutenant
+  components:
+  - type: SpawnPoint
+    job_id: OMONLieutenant
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: pactalllycaptain
+      scale: 1.5,1.5
+
+- type: entity
+  id: SpawnPointOMONSquadLeader
+  parent: SpawnPointJobBase
+  name: OMONSquadLeader
+  components:
+  - type: SpawnPoint
+    job_id: OMONSquadLeader
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: pactallysquadleader
+      scale: 1.5,1.5
+
+- type: entity
+  id: SpawnPointOMONRifleman
+  parent: SpawnPointJobBase
+  name: OMON Riot Officer
+  components:
+  - type: SpawnPoint
+    job_id: OMONRifleman
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: pactallyinfantry
+      scale: 1.5,1.5
+
 ### IND
 
 # Scav

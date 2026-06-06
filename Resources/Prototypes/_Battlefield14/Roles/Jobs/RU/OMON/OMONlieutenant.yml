@@ -1,0 +1,62 @@
+- type: job
+  id: OMONLieutenant
+  name: job-name-omon-lieutenant
+  description: job-description-omon-lieutenant
+  playTimeTracker: JobOMONLieutenant
+  weight: 73
+  startingGear: OMONLieutenantGear
+  alwaysUseSpawner: true
+  icon: "JobIconPACTAllyCaptain"
+  requireAdminNotify: true
+  supervisors: job-supervisors-rugov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    - Esperanto
+    languagesUnderstood:
+    - Russian
+    - Esperanto
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - VDV
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantPACTRU ]
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - PACTCommon
+  - PACTCommand
+  - PACTMaintenance
+  - PACTSoldier
+  - PACTArmory
+  - PACTFunds
+  - PACTCrew
+  - PACTCaptain
+
+- type: startingGear
+  id: OMONLieutenantGear
+  equipment:
+    id: VDVSquadLeaderPDA # TODO
+    ears: ClothingHeadsetAltRU
+    belt: ClothingBeltCommandFilledRU
+    jumpsuit: ClothingUniformJumpsuitRUOMON
+    outerClothing: ClothingOuterArmorWebVestSec
+    shoes: ClothingShoesBootsJackFilled
+    pocket1: PouchFirstAidFilled
+    pocket2: PouchGrenadesFilledVDVScout
+    rightarmband: ClothingArmbandThighHolsterFilledRU
+  storage:
+    back:
+    - ArmorPlateLight
+    - FlashlightMilitaryAlt
+    - ClothingMaskGasRussia
+    - SyndicateWhistle
+    - Tourniquet
+    - Zipties

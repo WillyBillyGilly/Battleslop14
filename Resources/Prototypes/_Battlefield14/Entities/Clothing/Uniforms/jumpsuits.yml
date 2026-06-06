@@ -53,7 +53,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitCamoRU
   name: russian camo jumpsuit
-  description: Helo zelenski, its donetsk children.
+  description: Helo zelenski, it's donetsk children.
   components:
   - type: Sprite
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/rucamo.rsi
@@ -66,7 +66,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitCamoRUEMR
   name: russian camo jumpsuit (EMR)
-  description: Helo zelenski, its donetsk children.
+  description: Helo zelenski, it's donetsk children.
   components:
   - type: Sprite
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/emrcamo.rsi
@@ -107,6 +107,19 @@
   - type: SuitSensor
     randomMode: false
     mode: SensorVitals
+  - type: Faction
+    factionId: "Warpact"
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitRUOMON
+  name: OMON camo jumpsuit
+  description: Helo school children, it's RPO-A shmel.
+  components:
+  - type: Sprite
+    sprite: _Civ14/Clothing/Uniforms/Jumpsuit/omon.rsi
+  - type: Clothing
+    sprite: _Civ14/Clothing/Uniforms/Jumpsuit/omon.rsi
   - type: Faction
     factionId: "Warpact"
 

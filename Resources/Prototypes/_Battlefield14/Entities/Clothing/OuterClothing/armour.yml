@@ -96,10 +96,11 @@
         volume: -7 # dawg this shit loud and i cant be bothered to make it quieter
 
 - type: entity
-  parent: [ClothingOuterArmorBasic, ClothingArmorPlateLight]
-  id: ClothingOuterArmorWebVestSec
-  name: security web vest
-  description: A standard issue plate carrier for contract security officers on orbital stations.
+  parent: [ClothingOuterArmorBase, ClothingArmorPlate]
+  id: ClothingOuterArmorWebVestSecEmpty
+  name: police web vest
+  description: A standard issue plate carrier for police and security officers across the globe and beyond.
+  suffix: Empty
   components:
   - type: Sprite
     sprite: _Battlefield14/Clothing/OuterClothing/Armor/webvestsec.rsi
@@ -119,6 +120,11 @@
     walkModifier: 0.9
     sprintModifier: 0.85
   - type: HeldSpeedModifier
+
+- type: entity
+  parent: [ClothingOuterArmorWebVestSecEmpty, ClothingArmorPlateLight]
+  id: ClothingOuterArmorWebVestSec
+  suffix: Kevlar insert
 
 - type: entity
   parent: [ClothingOuterArmorBasic, ClothingArmorPlateLight]

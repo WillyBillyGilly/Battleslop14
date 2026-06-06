@@ -133,6 +133,17 @@
 - type: playTimeTracker
   id: JobVKSFighterPilot
 
+# OMON
+
+- type: playTimeTracker
+  id: JobOMONLieutenant # Unit Commander
+
+- type: playTimeTracker
+  id: JobOMONSquadLeader # Sergeant
+
+- type: playTimeTracker
+  id: JobOMONRifleman # Riot Officer
+
 ## IND
 
 # Scav
