@@ -96,31 +96,6 @@
         volume: -7 # dawg this shit loud and i cant be bothered to make it quieter
 
 - type: entity
-  parent: [ClothingOuterArmorBasic, ClothingArmorPlateLight]
-  id: ClothingOuterArmorWebVestSec
-  name: police web vest
-  description: A standard issue plate carrier for police and security officers across the globe and beyond.
-  components:
-  - type: Sprite
-    sprite: _Battlefield14/Clothing/OuterClothing/Armor/webvestsec.rsi
-  - type: Clothing
-    sprite: _Battlefield14/Clothing/OuterClothing/Armor/webvestsec.rsi
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.85
-        Slash: 0.85
-        Piercing: 0.6
-        Heat: 0.85
-        Caustic: 0.9
-  - type: ExplosionResistance
-    damageCoefficient: 0.75
-  - type: ClothingSpeedModifier
-    walkModifier: 0.9
-    sprintModifier: 0.85
-  - type: HeldSpeedModifier
-
-- type: entity
   parent: [ClothingOuterArmorBase, ClothingArmorPlate]
   id: ClothingOuterArmorWebVestSecEmpty
   name: police web vest

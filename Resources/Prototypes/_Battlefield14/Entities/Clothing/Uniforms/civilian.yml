@@ -66,14 +66,14 @@
 
 - type: entity
   parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitTshirtJeansGraphicChud
+  id: ClothingUniformJumpsuitPlainGraphicChud
   name: graphic tee (chud)
   description: CAUSE IM A CHUUD, IM AN INCEEEELLL.
   components:
   - type: Sprite
-    sprite: Nyanotrasen/Clothing/Uniforms/Jumpsuit/tshirtjeans.rsi
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/plain.rsi
   - type: Clothing
-    sprite: Nyanotrasen/Clothing/Uniforms/Jumpsuit/tshirtjeans.rsi
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/plain.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
@@ -84,14 +84,14 @@
 
 - type: entity
   parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitTshirtJeansGraphicHate
+  id: ClothingUniformJumpsuitPlainGraphicHate
   name: graphic tee (hate)
   description: Annihilate everything that exists.
   components:
   - type: Sprite
-    sprite: Nyanotrasen/Clothing/Uniforms/Jumpsuit/tshirtjeans.rsi
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/plain.rsi
   - type: Clothing
-    sprite: Nyanotrasen/Clothing/Uniforms/Jumpsuit/tshirtjeans.rsi
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/plain.rsi
     clothingVisuals:
       jumpsuit:
       - state: equipped-INNERCLOTHING
