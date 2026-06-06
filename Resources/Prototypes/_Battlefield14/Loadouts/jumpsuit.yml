@@ -1,4 +1,35 @@
 - type: loadout
+  id: LoadoutUniformJumpsuitEngineer
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitEngineer
+
+- type: loadout
+  id: LoadoutUniformJumpsuitMechanic
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMechanic
+
+- type: loadout
+  id: LoadoutUniformJumpsuitWorker
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitWorker
+
+- type: loadout
+  id: LoadoutUniformJumpsuitHunter
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHunter
+
+
+- type: loadout
+  id: LoadoutUniformJumpsuitDealer
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitDealer
+
+- type: loadout
+  id: LoadoutUniformJumpsuitPlain
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPlain
+
+- type: loadout
   id: LoadoutJumpsuitCivilianTshirtJeans
   equipment:
     jumpsuit: ClothingUniformJumpsuitTshirtJeans

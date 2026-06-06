@@ -1,0 +1,22 @@
+- type: job
+  id: RUScav
+  name: Scavenger
+  description: A local inhabitant of the war torn region, unaligned to anybody. Loot, steal and kill just to survive a another day.
+  playTimeTracker: JobRUScav
+  weight: 20
+  startingGear: RUScavGear
+  alwaysUseSpawner: true
+  icon: "JobIconRU"
+  requireAdminNotify: false
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    languagesUnderstood:
+    - Russian
+  access:
+  - Maintenance
+
+- type: startingGear
+  id: RUScavGear # go find shit bum

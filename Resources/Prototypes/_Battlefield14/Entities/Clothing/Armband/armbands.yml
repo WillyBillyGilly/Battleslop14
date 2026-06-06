@@ -123,6 +123,60 @@
 
 - type: entity
   parent: ClothingArmbandBase
+  id: ClothingArmbandVambrace
+  name: Ballsitic vambrace
+  description: A pair of level IIA kevlar vambrace to protect your forearms from shrapnel and the ocassional .22lr.
+  components:
+  - type: Item
+    size: Large
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Accessories/vambrace.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Accessories/vambrace.rsi
+    clothingVisuals:
+      leftarmband:
+      - state: equipped-ARMBANDLEFT
+      rightarmband:
+      - state: equipped-ARMBANDRIGHT
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 1
+        Slash: 1
+        Piercing: 1
+  - type: ClothingSpeedModifier
+    walkModifier: 0.97
+    sprintModifier: 0.97
+
+- type: entity
+  parent: ClothingArmbandBase
+  id: ClothingArmbandGraeves
+  name: Ballsitic greaves
+  description: A pair of level IIA kevlar greaves to protect your shins from shrapnel and the ocassional .22lr.
+  components:
+  - type: Item
+    size: Large
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Accessories/greaves.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Accessories/greaves.rsi
+    clothingVisuals:
+      leftarmband:
+      - state: equipped-ARMBANDLEFT
+      rightarmband:
+      - state: equipped-ARMBANDRIGHT
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 1
+        Slash: 1
+        Piercing: 1
+  - type: ClothingSpeedModifier
+    walkModifier: 0.97
+    sprintModifier: 0.97
+
+- type: entity
+  parent: ClothingArmbandBase
   id: ClothingArmbandMassScanner
   name: wrist-mounted mass scanner
   description: A portable radar mounted on the wrist for easy access at any time.

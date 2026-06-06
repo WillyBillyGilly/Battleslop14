@@ -1,6 +1,16 @@
 # HEAD
 
 - type: loadoutGroup
+  id: BF_HeadCivilianRU
+  name: Hats
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - LoadoutHeadHatHelmetHardhat
+  - LoadoutHeadHatHelmetHazardHelmet
+  - LoadoutHeadHatPompon
+
+- type: loadoutGroup
   id: BF_VDVHead
   name: loadout-group-BF14-vdvhead
   minLimit: 0
@@ -107,6 +117,19 @@
 # BODY (uniform/armour)
 
 - type: loadoutGroup
+  id: BF_JumpsuitsCivilianRU
+  name: loadout-group-BF14-jumpsuit
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LoadoutUniformJumpsuitPlain
+  - LoadoutUniformJumpsuitDealer
+  - LoadoutUniformJumpsuitHunter
+  - LoadoutUniformJumpsuitWorker
+  - LoadoutUniformJumpsuitMechanic
+  - LoadoutUniformJumpsuitEngineer
+
+- type: loadoutGroup
   id: BF_JumpsuitsCivilianUS
   name: loadout-group-BF14-jumpsuit
   minLimit: 1
@@ -196,6 +219,17 @@
 # MISC
 
 - type: loadoutGroup
+  id: BF_OuterCivilianRU
+  name: Outer clothes
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - LoadoutOuterBlackTrenchcoat
+  - LoadoutOuterWorkerHighViz
+  - LoadoutOuterWorkJacket
+  - LoadoutOuterHazardSuit
+
+- type: loadoutGroup
   id: BF_MiscItemsNATO
   name: loadout-group-BF14-miscitem
   minLimit: 0
@@ -249,6 +283,7 @@
   minLimit: 0
   maxLimit: 1
   loadouts:
+  - LoadoutMapCustoms
   - LoadoutMapTaurus
   - LoadoutMapSpringfield
   - LoadoutMiscItemsHandheldStationMapUnpowered

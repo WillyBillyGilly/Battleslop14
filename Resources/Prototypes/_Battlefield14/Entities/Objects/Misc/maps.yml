@@ -1,5 +1,22 @@
 - type: entity
   parent: BaseBattlemap
+  id: MapCustoms
+  name: 'hand drawn map (Norvinsk customs)'
+  description: It's a map of Norvinsk customs, theres no way they want you to use this to navigate around.
+  components:
+    - type: Item
+      size: Tiny
+    - type: Sprite
+      sprite: _Battlefield14/Objects/Misc/maps.rsi
+      state: customs
+    - type: TabletopGame
+      size: 1200, 700
+      setup:
+        !type:TabletopEmptySetup
+        boardPrototype: PhotoMapCustoms
+
+- type: entity
+  parent: BaseBattlemap
   id: MapTaurus
   name: 'map (taurus)'
   description: It's a map of Taurus, Florida. The red squares mark objectives.
@@ -33,6 +50,16 @@
         boardPrototype: PhotoMapSpringfield
 
 # Image protos
+
+- type: entity
+  parent: BaseBoardTabletop
+  id: PhotoMapCustoms
+  name: map of Norvinsk customs
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/GroundMaps/customs.rsi
+    state: map
 
 - type: entity
   parent: BaseBoardTabletop

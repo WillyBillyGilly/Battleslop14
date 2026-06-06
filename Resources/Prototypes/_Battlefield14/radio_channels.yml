@@ -13,3 +13,11 @@
   frequency: 1220
   color: "#d30000"
   longRange: true
+
+- type: radioChannel
+  id: ScavRadio
+  name: chat-radio-scav
+  keycode: '1'
+  frequency: 1290
+  color: "#fca503"
+  longRange: true

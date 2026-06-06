@@ -73,6 +73,31 @@
 # RU
 
 - type: entity
+  parent: ClothingHeadHatHelmetUSRiot
+  id: ClothingHeadHatHelmetRUAltyn
+  name: altyn helmet
+  description: Rated to stop shrapnel and pistol rounds, you didnt think it could stop rifle rounds like M855 did you?
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Helmets/rualtyn.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Helmets/rualtyn.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.85
+        Slash: 0.85
+        Piercing: 0.85
+        Heat: 0.9
+  - type: ExplosionResistance
+    damageCoefficient: 0.85
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - FacialHair
+
+- type: entity
   parent: ClothingHeadHatHelmetUS
   id: ClothingHeadHatHelmetRU
   name: russian camo helmet
@@ -106,6 +131,48 @@
     sprite: _Battlefield14/Clothing/Head/Helmets/emrhelmetriot.rsi
 
 # MISC
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatHelmetHazardHelmet
+  name: hazard suit helmet
+  description: A thick helmet for a hazard suit that would be worn by workers at chemical plants. Its pretty good at absorbing explosions.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Helmets/hazardhelmet.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Helmets/hazardhelmet.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Caustic: 0.05
+        Heat: 0.30
+      flatReductions:
+        Blunt: 1
+        Slash: 1
+        Piercing: 1
+  - type: ExplosionResistance
+    damageCoefficient: 0.8
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95
+  - type: HeldSpeedModifier
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatHelmetHardhat
+  name: Hardhat
+  description: A plastic hardhat, no its not gonna protect you from anything unless its raining bricks.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Helmets/hardhat.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Helmets/hardhat.rsi
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 1
+        Slash: 1
 
 - type: entity
   parent: ClothingHeadHatHelmetUS

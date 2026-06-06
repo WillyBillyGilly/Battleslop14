@@ -1,5 +1,71 @@
 - type: entity
   parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitPlain
+  name: plain attire
+  description: Black pants, white shirt.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/plain.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/plain.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitDealer
+  name: dealer attire
+  description: Black pants, black hoodie just like what a drug dealer would wear.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/dealer.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/dealer.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitHunter
+  name: hunter attire
+  description: A cheap and crappy camo shirt with a pair of jeans.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/hunting.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/hunting.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitWorker
+  name: worker attire
+  description: Tough worker pants with a high viz strip.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/worker.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/worker.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitMechanic
+  name: mechanic jumpsuit
+  description: A simple onsie jumpsuit, this one is blue meaning its worn by mechanics.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/mechanic.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/mechanic.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitEngineer
+  name: engineer jumpsuit
+  description: A simple onsie jumpsuit, this one is blue meaning its worn by engineer.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/engineer.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/engineer.rsi
+
+- type: entity
+  parent: ClothingUniformBase
   id: ClothingUniformJumpsuitTshirtJeansGraphicChud
   name: graphic tee (chud)
   description: CAUSE IM A CHUUD, IM AN INCEEEELLL.

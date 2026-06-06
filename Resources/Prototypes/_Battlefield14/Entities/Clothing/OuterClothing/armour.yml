@@ -26,6 +26,33 @@
   - type: HeldSpeedModifier
 
 - type: entity
+  parent: ClothingOuterArmorBase
+  id: ClothingOuterArmorPlateCarrierCivillian
+  name: civilian ballistic vest
+  description: A civilian vest, basicaly useless as it cannot take plates. But hey atleast its light.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/OuterClothing/Armor/civcarrier.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/OuterClothing/Armor/civcarrier.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.70
+        Heat: 0.9
+        Caustic: 0.9
+  - type: ExplosionResistance
+    damageCoefficient: 0.75
+  - type: StaminaDamageResistance
+    coefficient: 0.7
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95
+  - type: HeldSpeedModifier
+
+- type: entity
   parent: ClothingOuterArmorPlateCarrierBlack
   id: ClothingOuterArmorPlateCarrierTan
   name: tan plate carrier
@@ -35,6 +62,38 @@
     sprite: _Battlefield14/Clothing/OuterClothing/Armor/tancarrier.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/OuterClothing/Armor/tancarrier.rsi
+
+- type: entity
+  parent: ClothingOuterArmorBase
+  id: ClothingOuterArmorPlateCarrierHeavy
+  name: heavy ballistic vest
+  description: A standard issue armor vest for "mission essential" personell, cannot take plates.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/OuterClothing/Armor/heavycarrier.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/OuterClothing/Armor/heavycarrier.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.35
+        Heat: 0.7
+        Caustic: 0.8
+  - type: ExplosionResistance
+    damageCoefficient: 0.65
+  - type: StaminaDamageResistance
+    coefficient: 0.55
+  - type: ClothingSpeedModifier
+    walkModifier: 0.8
+    sprintModifier: 0.8
+  - type: HeldSpeedModifier
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: HeavyVest
+      params:
+        volume: -7 # dawg this shit loud and i cant be bothered to make it quieter
 
 - type: entity
   parent: [ClothingOuterArmorBasic, ClothingArmorPlateLight]

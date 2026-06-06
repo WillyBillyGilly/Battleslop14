@@ -1,0 +1,19 @@
+- type: loadout
+  id: LoadoutOuterHazardSuit
+  equipment:
+    head: ClothingOuterHazardSuit
+
+- type: loadout
+  id: LoadoutOuterWorkJacket
+  equipment:
+    head: ClothingOuterWorkJacket
+
+- type: loadout
+  id: LoadoutOuterBlackTrenchcoat
+  equipment:
+    head: ClothingOuterBlackTrenchcoat
+
+- type: loadout
+  id: LoadoutOuterWorkerHighViz
+  equipment:
+    head: ClothingOuterWorkerHighViz

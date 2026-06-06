@@ -450,6 +450,47 @@
 
 ### IND
 
+# Scav
+
+- type: entity
+  id: SpawnPointScav
+  parent: SpawnPointJobBase
+  name: RU Scav
+  components:
+  - type: SpawnPoint
+    job_id: RUScav
+  - type: Sprite
+    sprite: /Textures/_Battlefield14/Interface/Misc/job_icons.rsi
+    layers:
+    - state: RU
+      scale: 1.5,1.5
+
+- type: entity
+  id: SpawnPointScavGuard
+  parent: SpawnPointJobBase
+  name: RU Scav Guard
+  components:
+  - type: SpawnPoint
+    job_id: RUScavGuard
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: indsecurity
+      scale: 1.5,1.5
+
+- type: entity
+  id: SpawnPointScavBoss
+  parent: SpawnPointJobBase
+  name: RU Scav Boss
+  components:
+  - type: SpawnPoint
+    job_id: RUScavBoss
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: indcaptain
+      scale: 1.5,1.5
+
 # Western Private Security
 
 - type: entity
