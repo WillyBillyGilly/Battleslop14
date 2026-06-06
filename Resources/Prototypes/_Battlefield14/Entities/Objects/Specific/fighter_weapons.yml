@@ -200,7 +200,7 @@
 - type: entity
   id: LightFighterGSH301
   name: GSh-30-1 30mm autocannon
-  description: It may be from the 80's but the 30mm frag coming out doesn't care. Approx range 256 meters.
+  description: It may be from the 80's but the 30mm frag coming out doesn't care. Reccomended against light armour. Approx range 256 meters.
   suffix: Fighter weapon, Light, Gun
   parent: [ BaseMechWeaponRange, LightFighterEquipment ]
   components:
@@ -230,7 +230,7 @@
 - type: entity
   id: LightFighterS8
   name: S-8 Rocket pod
-  description: 80mm rockets coming at you can be described as highly concerning. Approx range 256 meters.
+  description: 80mm rockets coming at you can be described as highly concerning. Reccomended against infantry. Approx range 256 meters.
   suffix: Fighter weapon, Light, Gun
   parent: [ BaseMechWeaponRange, LightFighterEquipment ]
   components:
@@ -253,7 +253,7 @@
     maxCharge: 180
   - type: ProjectileBatteryAmmoProvider
     proto: BulletRocketS8
-    fireCost: 180 # ~90 shots
+    fireCost: 65 # ~115 shots
   - type: Appearance
   - type: AmmoCounter
 
