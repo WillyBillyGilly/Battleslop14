@@ -1,4 +1,23 @@
 - type: entity
+  id: BF_CartridgePistol9x18
+  name: cartridge (9x18mm Makarov)
+  parent: BaseCartridgePistol
+  components:
+  - type: CartridgeAmmo
+    proto: BulletPistolBF9x18
+  - type: Tag
+    tags:
+    - Cartridge
+    - BF_CartridgePistol9x18
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/pistol.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
   id: BF_CartridgePistol9x19
   name: cartridge (9x19mm Parabellum)
   parent: BaseCartridgePistol
@@ -9,6 +28,25 @@
     tags:
     - Cartridge
     - BF_CartridgePistol9x19
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/pistol.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  id: BF_CartridgePistol762x25
+  name: cartridge (7.62x25mm Tokarev)
+  parent: BaseCartridgePistol
+  components:
+  - type: CartridgeAmmo
+    proto: BulletPistolBF762x25
+  - type: Tag
+    tags:
+    - Cartridge
+    - BF_CartridgePistol762x25
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/pistol.rsi
     layers:
@@ -47,6 +85,25 @@
     tags:
     - Cartridge
     - BF_CartridgePistol357
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/pistol.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  id: BF_CartridgePistol50AE
+  name: cartridge (.50 Action Express)
+  parent: BaseCartridgePistol
+  components:
+  - type: CartridgeAmmo
+    proto: BulletPistolBF50AE
+  - type: Tag
+    tags:
+    - Cartridge
+    - BF_CartridgePistol50AE
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/pistol.rsi
     layers:

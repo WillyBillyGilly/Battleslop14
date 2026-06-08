@@ -2,6 +2,223 @@
 # US
 
 - type: entity
+  name: deagle
+  parent: BaseWeaponPistol
+  id: WeaponPistolDealge
+  description: The deagle, a well known and very impractical handgun. Chambered in the large .50 Action express it packs a pounch.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Pistols/deagle.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    minAngle: 0
+    maxAngle: 15
+    angleIncrease: 2
+    angleDecay: 10
+    fireRate: 3
+    projectileSpeed: 30
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      collection: BF_Deagle_Gunshots
+      params:
+        volume: -3
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/Beretta/rack.ogg
+      params:
+        volume: -1
+    soundBoltOpened:
+      path: /Audio/_Battlefield14/Weapons/Guns/Beretta/slidepull.ogg
+      params:
+        volume: -1
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/Beretta/sliderel.ogg
+      params:
+        volume: -1
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePistolDeagle
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/Beretta/magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/Beretta/magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistolDeagle
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgePistol50AE
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgePistol50AE
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+
+- type: entity
+  name: silver deagle
+  parent: WeaponPistolDealge
+  id: WeaponPistolSilverDealge
+  description: The deagle, a well known and very impractical handgun. Chambered in the large .50 Action express it packs a pounch. This one has a silver finish.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Pistols/silverdeagle.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  name: golden deagle
+  parent: WeaponPistolDealge
+  id: WeaponPistolGoldDealge
+  description: The deagle, a well known and very impractical handgun. Chambered in the large .50 Action express it packs a pounch. This one has ben plated in gold because why not.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Pistols/golddeagle.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  name: Glock-17
+  parent: BaseWeaponPistol
+  id: WeaponPistolGlock17
+  description: The Glock-17 pistol, the media called it a "ghost gun" due to its high use of polymers, which led to people thinking you could get it through metal detectors without getting discovered.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Pistols/glock17.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    minAngle: 0
+    maxAngle: 15
+    angleIncrease: 2
+    angleDecay: 10
+    fireRate: 5
+    projectileSpeed: 30
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      collection: BF_Glock17_Gunshots
+      params:
+        volume: -3
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/Beretta/rack.ogg
+      params:
+        volume: -1
+    soundBoltOpened:
+      path: /Audio/_Battlefield14/Weapons/Guns/Beretta/slidepull.ogg
+      params:
+        volume: -1
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/Beretta/sliderel.ogg
+      params:
+        volume: -1
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePistolGlock17
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/Beretta/magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/Beretta/magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistolGlock17
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgePistol9x19
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgePistol9x19
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+
+- type: entity
+  name: M1911
+  parent: BaseWeaponPistol
+  id: WeaponPistolM1911
+  description: The legendary M1911. Adopted by the US Army in March 29, 1911.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Pistols/m1911.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    minAngle: 0
+    maxAngle: 15
+    angleIncrease: 2
+    angleDecay: 10
+    fireRate: 5
+    projectileSpeed: 30
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      collection: BF_M1911_Gunshots
+      params:
+        volume: -3
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/Beretta/rack.ogg
+      params:
+        volume: -1
+    soundBoltOpened:
+      path: /Audio/_Battlefield14/Weapons/Guns/Beretta/slidepull.ogg
+      params:
+        volume: -1
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/Beretta/sliderel.ogg
+      params:
+        volume: -1
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePistolM1911
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/Beretta/magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/Beretta/magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistolM1911
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgePistol45ACP
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgePistol45ACP
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+
+- type: entity
   name: M9 Beretta
   parent: BaseWeaponPistol
   id: WeaponPistolM9  # USM9
@@ -129,6 +346,196 @@
 
 ## PACT
 # RU
+
+- type: entity
+  name: TT-33 Tokarev
+  parent: BaseWeaponPistol
+  id: WeaponPistolTT33
+  description: The soviet copy of the legendary M1911, made to be cheaper and crappier in every way. Its the most effective when shot at a slight downward angle at point blank range.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Pistols/tt33.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    minAngle: 0
+    maxAngle: 15
+    angleIncrease: 2
+    angleDecay: 10
+    fireRate: 5
+    projectileSpeed: 30
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      collection: BF_M1911_Gunshots
+      params:
+        volume: -3
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/Beretta/rack.ogg
+      params:
+        volume: -1
+    soundBoltOpened:
+      path: /Audio/_Battlefield14/Weapons/Guns/Beretta/slidepull.ogg
+      params:
+        volume: -1
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/Beretta/sliderel.ogg
+      params:
+        volume: -1
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePistolTT33
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/Beretta/magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/Beretta/magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistolTT33
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgePistol762x25
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgePistol762x25
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+
+- type: entity
+  name: APS Stechkin
+  parent: BaseWeaponPistol
+  id: WeaponPistolAPS
+  description: A select-fire pistol designed for vehicle crews.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Pistols/aps.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    minAngle: 0
+    maxAngle: 15
+    angleIncrease: 2
+    angleDecay: 10
+    fireRate: 5
+    projectileSpeed: 30
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    soundGunshot:
+      collection: BF_PM_Gunshots
+      params:
+        volume: -3
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/Beretta/rack.ogg
+      params:
+        volume: -1
+    soundBoltOpened:
+      path: /Audio/_Battlefield14/Weapons/Guns/Beretta/slidepull.ogg
+      params:
+        volume: -1
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/Beretta/sliderel.ogg
+      params:
+        volume: -1
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePistolAPS
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/Beretta/magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/Beretta/magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistolAPS
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgePistol9x18
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgePistol9x18
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+
+- type: entity
+  name: PM Makarov
+  parent: BaseWeaponPistol
+  id: WeaponPistolPM
+  description: A cheap and simple pistol made to replace the TT-33 Tokarev.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Pistols/pm.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    minAngle: 0
+    maxAngle: 15
+    angleIncrease: 2
+    angleDecay: 10
+    fireRate: 5
+    projectileSpeed: 30
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      collection: BF_PM_Gunshots
+      params:
+        volume: -3
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/Beretta/rack.ogg
+      params:
+        volume: -1
+    soundBoltOpened:
+      path: /Audio/_Battlefield14/Weapons/Guns/Beretta/slidepull.ogg
+      params:
+        volume: -1
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/Beretta/sliderel.ogg
+      params:
+        volume: -1
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePistolPM
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/Beretta/magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/Beretta/magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistolPM
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgePistol9x18
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgePistol9x18
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
 
 - type: entity
   name: MP443 'grok' # Grach

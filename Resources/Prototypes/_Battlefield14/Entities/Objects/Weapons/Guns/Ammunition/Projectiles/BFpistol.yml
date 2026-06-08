@@ -1,4 +1,16 @@
 - type: entity
+  id: BulletPistolBF9x18
+  name: bullet (9x18 Makarov)
+  parent: BaseBulletPistol
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 20
+    armorPenetration: -0.15
+
+- type: entity
   id: BulletPistolBF9x19
   name: bullet (9x19 Parabellum)
   parent: BaseBulletPistol
@@ -9,6 +21,20 @@
       types:
         Piercing: 22
     armorPenetration: -0.1
+
+- type: entity
+  id: BulletPistolBF762x25
+  name: bullet (7.62x25mm Tokarev)
+  parent: BaseBulletPistol
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 23
+    armorPenetration: -0.25
+  - type: StaminaDamageOnCollide
+    damage: 9 # ~11 hits to stun
 
 - type: entity
   id: BulletPistolBF45ACP

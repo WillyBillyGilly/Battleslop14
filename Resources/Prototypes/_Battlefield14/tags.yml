@@ -1,4 +1,43 @@
 - type: Tag
+  id: MagazinePistolKedr
+
+- type: Tag
+  id: BF_CartridgeRifle366
+
+- type: Tag
+  id: MagazineRifleVPO215
+
+- type: Tag
+  id: MagazineRifleMagpullMosin
+
+- type: Tag
+  id: MagazinePistolDeagle
+
+- type: Tag
+  id: MagazinePistolGlock17
+
+- type: Tag
+  id: MagazinePistolM1911
+
+- type: Tag
+  id: MagazinePistolTT33
+
+- type: Tag
+  id: MagazinePistolAPS
+
+- type: Tag
+  id: MagazinePistolPM
+
+- type: Tag
+  id: BF_CartridgePistol50AE
+
+- type: Tag
+  id: BF_CartridgePistol762x25
+
+- type: Tag
+  id: BF_CartridgePistol9x18
+
+- type: Tag
   id: BF_CartridgeGrenade25x40
 
 - type: Tag

@@ -1,4 +1,39 @@
 - type: soundCollection
+  id: BF_Deagle_Gunshots # Deagle, .50 AE
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/Deagle/fire1.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/Deagle/fire2.ogg"
+
+- type: soundCollection
+  id: BF_Glock17_Gunshots # Glock17, 9x19mm
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/Glock17/fire1.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/Glock17/fire2.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/Glock17/fire3.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/Glock17/fire4.ogg"
+
+- type: soundCollection
+  id: BF_M1911_Gunshots # M1911, .45 ACP
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/M1911/fire1.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M1911/fire2.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M1911/fire3.ogg"
+
+- type: soundCollection
+  id: BF_PPSh_Gunshots # PPSH-41, 7.62x25mm
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/PPSh/fire1.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/PPSh/fire2.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/PPSh/fire3.ogg"
+
+- type: soundCollection
+  id: BF_PM_Gunshots # PM/APS, 9x18mm
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/PM/fire1.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/PM/fire2.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/PM/fire3.ogg"
+
+- type: soundCollection
   id: BF_M16_Gunshots # M16's/M4's, 5.56x45 - Used by AR-15 pattern weapons
   files:
   - "/Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_fire-01.ogg"

@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "license": "CC-BY-NC-SA-4.0",
+  "copyright": "Made by WillyBillyGilly. Do not re-use these sprites without permission from WillyBillyGilly.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "lowgun"
+    },
+    {
+      "name": "midgun"
+    },
+    {
+      "name": "highgun"
+    },
+    {
+      "name": "lowammo"
+    },
+    {
+      "name": "midammo"
+    },
+    {
+      "name": "highammo"
+    },
+    {
+      "name": "lowarmor"
+    },
+    {
+      "name": "midarmor"
+    },
+    {
+      "name": "higharmor"
+    }
+  ]
+}

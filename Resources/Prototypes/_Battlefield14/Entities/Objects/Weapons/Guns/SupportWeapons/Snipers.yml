@@ -395,6 +395,154 @@
     delay: 0.2
 
 - type: entity
+  name: VPO-215
+  parent: [BaseWeaponRifle, BaseGunWieldable]
+  id: WeaponSniperVPO215
+  description: A russian civilian market hunting rifle chambered in .366 TKM. Classified as a shotgun under russian law due to its partial rifling.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/vpo215.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/vpo215.rsi
+  - type: GunRequiresWield
+  - type: Item
+    shape:
+    - 0,0,5,2
+  - type: Gun
+    fireRate: 0.5
+    projectileSpeed: 55 # it's a sniper
+    damageModifier: 2 # shitty rifle
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/heavy_rifle_1.ogg
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleVPO215
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleVPO215
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle366
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle366
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: ChamberMagazineAmmoProvider
+    autoCycle: false
+    canRack: false
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 10
+    pvsIncrease: 0.8
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.90
+    sprintModifier: 0.90
+  - type: Appearance
+  - type: StaticPrice
+    price: 3000
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _Battlefield14/Interface/MousePointer/optics.rsi
+      state: svd
+  - type: UseDelay
+    delay: 0.2
+
+- type: entity
+  name: magpull Mosin-Nagant
+  parent: [BaseWeaponRifle, BaseGunWieldable]
+  id: WeaponSniperMagpullMosin
+  description: A Mosin-Nagant with aftermarket magpull furnitrue made to imrpove ergonomics and allow the use of detachable magazines.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/magpullmosin.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/magpullmosin.rsi
+  - type: GunRequiresWield
+  - type: Item
+    shape:
+    - 0,0,5,2
+  - type: Gun
+    fireRate: 0.5
+    projectileSpeed: 55 # it's a sniper
+    damageModifier: 1.75 # old gun + larger mag size compared to the SV-98
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/heavy_rifle_1.ogg
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleMagpullMosin
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleMagpullMosin
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle762x54r
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle762x54r
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: ChamberMagazineAmmoProvider
+    autoCycle: false
+    canRack: false
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 10
+    pvsIncrease: 0.8
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.90
+    sprintModifier: 0.90
+  - type: Appearance
+  - type: StaticPrice
+    price: 3000
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _Battlefield14/Interface/MousePointer/optics.rsi
+      state: svd
+  - type: UseDelay
+    delay: 0.2
+
+- type: entity
   name: SVDS
   parent: [BaseWeaponRifle, BaseGunWieldable]
   id: WeaponSniperRUSVDS

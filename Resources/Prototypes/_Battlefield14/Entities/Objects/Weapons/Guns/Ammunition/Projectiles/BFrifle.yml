@@ -1,4 +1,19 @@
 - type: entity
+  id: BulletRifleBF366
+  name: bullet (366)
+  parent: BaseBulletIntermediate
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 32
+        Structural: 3
+    armorPenetration: 0.15
+  - type: StaminaDamageOnCollide
+    damage: 8 # ~13 hits to stun
+
+- type: entity
   id: BulletRifleBF556x45
   name: bullet (5.56x45)
   parent: BaseBulletIntermediate

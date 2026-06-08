@@ -1,4 +1,50 @@
 - type: entity
+  parent: BaseAmmoProvider
+  id: BaseAmmoClip366
+  name: clip (.366)
+  description: A 7 round clip capable of holding both 7.62x39mm and .366 TKM. This one has come preloaded with .366 TKM
+  abstract: true
+  components:
+    - type: Sprite
+      sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Loaders/762x39clip.rsi
+    - type: BallisticAmmoProvider
+      mayTransfer: true
+      whitelist:
+        tags:
+        - BF_CartridgeRifle762x39
+        - BF_CartridgeRifle366
+      capacity: 7
+      proto: BF_CartridgeRifle366
+    - type: MagazineVisuals
+      magState: mag
+      steps: 8
+      zeroVisible: false
+    - type: Appearance
+
+- type: entity
+  parent: BaseAmmoProvider
+  id: BaseAmmoClip762x39
+  name: clip (7.62x39)
+  description: A 5 round clip capable of holding both 7.62x39mm and .366 TKM. This one has come preloaded with 7.62x39mm
+  abstract: true
+  components:
+    - type: Sprite
+      sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Loaders/762x39clip.rsi
+    - type: BallisticAmmoProvider
+      mayTransfer: true
+      whitelist:
+        tags:
+        - BF_CartridgeRifle762x39
+        - BF_CartridgeRifle366
+      capacity: 7
+      proto: BaseAmmoClipGeneric762x39
+    - type: MagazineVisuals
+      magState: mag
+      steps: 8
+      zeroVisible: false
+    - type: Appearance
+
+- type: entity
   id: SpeedLoader357magnum
   name: "speed loader (.357 magnum)"
   parent: BaseSpeedLoader45_magnum

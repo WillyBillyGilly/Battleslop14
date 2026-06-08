@@ -1,0 +1,140 @@
+## Weapons
+
+#- type: entity
+#  parent: MarkerBase
+#  id: RandomWeaponMapLowTier
+#  name: Low tier weapon
+#  components:
+#  - type: Sprite
+#    layers:
+#      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+#        state: lowgun
+#  - type: RandomSpawner
+#    offset: 0
+#    prototypes:
+#      - should be pistols, shitty rifles like bolties and civilian weaponry, smoke flash nades
+#    chance: 1
+
+#- type: entity
+#  parent: MarkerBase
+#  id: RandomWeaponMapMidTier
+#  name: mid tier weapon
+#  components:
+#  - type: Sprite
+#    layers:
+#      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+#        state: midgun
+#  - type: RandomSpawner
+#    offset: 0
+#    prototypes:
+#      - shitty shotguns, midtier rifles, smgs
+#    chance: 1
+
+#- type: entity
+#  parent: MarkerBase
+#  id: RandomWeaponMapHighTier
+#  name: high tier weapon
+#  components:
+#  - type: Sprite
+#    layers:
+#      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+#        state: highgun
+#  - type: RandomSpawner
+#    offset: 0
+#    prototypes:
+#      - good rifles, shotguns, snipers, nades
+#    chance: 1
+
+## ARMOR
+
+#- type: entity
+#  parent: MarkerBase
+#  id: RandomArmorMapLowTier
+#  name: Low tier armor
+#  components:
+#  - type: Sprite
+#    layers:
+#      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+#        state: lowarmor
+#  - type: RandomSpawner
+#    offset: 0
+#    prototypes:
+#      - protective civ clothing, shitty armor,
+#    chance: 1
+
+#- type: entity
+#  parent: MarkerBase
+#  id: RandomArmorMapMidTier
+#  name: Mid tier armor
+#  components:
+#  - type: Sprite
+#    layers:
+#      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+#        state: midarmor
+#  - type: RandomSpawner
+#    offset: 0
+#    prototypes:
+#      - mid tier armor like the sec web vest, kevlar plates
+#    chance: 1
+
+#- type: entity
+#  parent: MarkerBase
+#  id: RandomArmorMapHighTier
+#  name: High tier armor
+#  components:
+#  - type: Sprite
+#    layers:
+#      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+#        state: higharmor
+#  - type: RandomSpawner
+#    offset: 0
+#    prototypes:
+#      - plate carriers, ceramic plates
+#    chance: 1
+
+## AMMO
+
+#- type: entity
+#  parent: MarkerBase
+#  id: RandomAmmoMapLowTier
+#  name: Low tier ammo
+#  components:
+#  - type: Sprite
+#    layers:
+#      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+#        state: lowammo
+#  - type: RandomSpawner
+#    offset: 0
+#    prototypes:
+#      - ammo for low tier guns
+#    chance: 1
+
+#- type: entity
+#  parent: MarkerBase
+#  id: RandomAmmoMapMidTier
+#  name: Mid tier ammo
+#  components:
+#  - type: Sprite
+#    layers:
+#      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+#        state: midammo
+#  - type: RandomSpawner
+#    offset: 0
+#    prototypes:
+#      - ammo for mid tier guns
+#    chance: 1
+
+#- type: entity
+#  parent: MarkerBase
+#  id: RandomAmmoMapHighTier
+#  name: High tier ammo
+#  components:
+#  - type: Sprite
+#    layers:
+#      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+#        state: midammo
+#  - type: RandomSpawner
+#    offset: 0
+#    prototypes:
+#      - ammo for high tier guns and ammo boxes for low/mid tier guns
+#    chance: 1

@@ -259,6 +259,161 @@
 # RU
 
 - type: entity
+  name: PP-91 Kedr
+  parent: BaseWeaponSubMachineGun
+  id: WeaponSubmachinegunRUKedr
+  description: A cheap, compact, and concealable package, made for police officers and security units.
+  components:
+  - type: Item
+    size: Normal
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/kedr.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+      offset: 0.2, 0
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+      offset: 0.2, 0
+  - type: Clothing
+    sprite: null
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+    - SUITSTORAGE2
+    clothingVisuals:
+      suitstorage2:
+      - state: null
+  - type: Gun
+    minAngle: 3
+    maxAngle: 30
+    fireRate: 16.5 #worse damage than 9x19
+    angleIncrease: 2.2
+    angleDecay: 20
+    projectileSpeed: 35 # pistol caliber
+    availableModes:
+    - FullAuto
+    soundGunshot:
+      collection: BF_MP5_Gunshots
+      params:
+        volume: -5
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_rack.ogg
+      params:
+        volume: -3
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_slap.ogg
+      params:
+        volume: -3
+    soundBoltOpened:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_chlock.ogg
+      params:
+        volume: -3
+        variation: 0.125
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineSubmachinegunKedr
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistolKedr
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgePistol9x18
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgePistol9x18
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+
+- type: entity
+  name: PPSh-41
+  parent: BaseWeaponSubMachineGun
+  id: WeaponSubmachinegunRUPPsh41
+  description: A World War 2 open-bolt submachine gun made by the USSR in large numbers.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/PPsh.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/PPsh.rsi
+  - type: Gun
+    minAngle: 0
+    maxAngle: 10
+    fireRate: 9.5
+    angleIncrease: 1.5
+    angleDecay: 15
+    projectileSpeed: 35 # pistol caliber
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    soundGunshot:
+      collection: BF_PPSh_Gunshots
+      params:
+        volume: -5
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_rack.ogg
+      params:
+        volume: -3
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_slap.ogg
+      params:
+        volume: -3
+    soundBoltOpened:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_chlock.ogg
+      params:
+        volume: -3
+        variation: 0.125
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineSubmachinegunPPSh
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistolPPSh
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgePistol762x25
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgePistol762x25
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+
+- type: entity
   name: PP-19 Vityaz-SN
   parent: BaseWeaponSubMachineGun
   id: WeaponSubmachinegunRUVityaz
