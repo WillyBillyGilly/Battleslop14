@@ -1,6 +1,6 @@
 - type: entity
   name: nophono
-  parent: [ SimpleSpaceMobBase, MobCombat ]
+  parent: [ BaseMob, MobDamageable, MobCombat, InventoryBase ]
   id: Nophono
   description: He cares.
   components:
@@ -22,7 +22,6 @@
       state: nophono
       sprite: _Battlefield14/Mobs/nophono.rsi
   - type: Physics
-  - type: ComplexInteraction
   - type: Fixtures
     fixtures:
       fix1:
@@ -34,6 +33,7 @@
         - MobMask
         layer:
         - MobLayer
+  - type: ContainerContainer
   - type: MovementAlwaysTouching
   - type: MovementSpeedModifier
     baseWalkSpeed: 3.5
@@ -91,6 +91,14 @@
     animation: WeaponArcFist
   - type: Puller
     needsHands: false
+  - type: Inventory
+    templateId: nophono
+  - type: InventorySlots
+  - type: Hands
+  - type: Body
+    prototype: Aghost
+    thermalVisibility: false
+  - type: ComplexInteraction
   - type: ActionGrant
     actions:
     - ActionBlink

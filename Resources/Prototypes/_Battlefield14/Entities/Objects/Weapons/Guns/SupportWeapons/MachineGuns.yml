@@ -150,7 +150,7 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: BF_CartridgeRifle762x51
+        startingItem: BF_CartridgeRifle762x51TracerRed
         priority: 1
         whitelist:
           tags:
@@ -234,7 +234,7 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: BF_CartridgeRifle762x51
+        startingItem: BF_CartridgeRifle762x51TracerRed
         priority: 1
         whitelist:
           tags:
@@ -317,7 +317,7 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: BF_CartridgeRifle762x51
+        startingItem: BF_CartridgeRifle762x51TracerRed
         priority: 1
         whitelist:
           tags:
