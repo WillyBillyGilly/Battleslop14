@@ -12,9 +12,9 @@
   - type: RandomSpawner
     offset: 0.3
     prototypes:
-      - WeaponPistolTT33
-      - WeaponPistolPM
-      - WeaponPistolAPS
+      - WeaponPistolRUTT33
+      - WeaponPistolRUPM
+      - WeaponPistolRUAPS
       - WeaponRifleRUMP18
       - WeaponShotgunRUMP133
     chance: 1
@@ -31,7 +31,7 @@
   - type: RandomSpawner
     offset: 0.3
     prototypes:
-      - WeaponPistolAPS
+      - WeaponPistolRUAPS
       - WeaponRifleRUVPO136
       - WeaponSubmachinegunRUKedr
       - WeaponSubmachinegunRUPPsh41

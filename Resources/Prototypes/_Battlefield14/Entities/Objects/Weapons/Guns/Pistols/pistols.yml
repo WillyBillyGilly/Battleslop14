@@ -4,8 +4,8 @@
 - type: entity
   name: deagle
   parent: BaseWeaponPistol
-  id: WeaponPistolDealge
-  description: The deagle, a well known and very impractical handgun. Chambered in the large .50 Action express it packs a pounch.
+  id: WeaponPistolILDealge
+  description: The deagle, a well known and very impractical handgun. Chambered in the large .50 Action express it packs a punch.
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Pistols/deagle.rsi
@@ -67,8 +67,8 @@
 - type: entity
   name: silver deagle
   parent: WeaponPistolDealge
-  id: WeaponPistolSilverDealge
-  description: The deagle, a well known and very impractical handgun. Chambered in the large .50 Action express it packs a pounch. This one has a silver finish.
+  id: WeaponPistolSilverILDealge
+  description: The deagle, a well known and very impractical handgun. Chambered in the large .50 Action express it packs a punch. This one has a silver finish.
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Pistols/silverdeagle.rsi
@@ -81,8 +81,8 @@
 - type: entity
   name: golden deagle
   parent: WeaponPistolDealge
-  id: WeaponPistolGoldDealge
-  description: The deagle, a well known and very impractical handgun. Chambered in the large .50 Action express it packs a pounch. This one has ben plated in gold because why not.
+  id: WeaponPistolGoldILDealge
+  description: The deagle, a well known and very impractical handgun. Chambered in the large .50 Action express it packs a punch. This one has ben plated in gold because why not.
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Pistols/golddeagle.rsi
@@ -95,7 +95,7 @@
 - type: entity
   name: Glock-17
   parent: BaseWeaponPistol
-  id: WeaponPistolGlock17
+  id: WeaponPistolATGlock17
   description: The Glock-17 pistol, the media called it a "ghost gun" due to its high use of polymers, which led to people thinking you could get it through metal detectors without getting discovered.
   components:
   - type: Sprite
@@ -158,7 +158,7 @@
 - type: entity
   name: M1911
   parent: BaseWeaponPistol
-  id: WeaponPistolM1911
+  id: WeaponPistolUSM1911
   description: The legendary M1911. Adopted by the US Army in March 29, 1911.
   components:
   - type: Sprite
@@ -350,7 +350,7 @@
 - type: entity
   name: TT-33 Tokarev
   parent: BaseWeaponPistol
-  id: WeaponPistolTT33
+  id: WeaponPistolRUTT33
   description: The soviet copy of the legendary M1911, made to be cheaper and crappier in every way. Its the most effective when shot at a slight downward angle at point blank range.
   components:
   - type: Sprite
@@ -413,7 +413,7 @@
 - type: entity
   name: APS Stechkin
   parent: BaseWeaponPistol
-  id: WeaponPistolAPS
+  id: WeaponPistolRUAPS
   description: A select-fire pistol designed for vehicle crews.
   components:
   - type: Sprite
@@ -477,7 +477,7 @@
 - type: entity
   name: PM Makarov
   parent: BaseWeaponPistol
-  id: WeaponPistolPM
+  id: WeaponPistolRUPM
   description: A cheap and simple pistol made to replace the TT-33 Tokarev.
   components:
   - type: Sprite
