@@ -59242,7 +59242,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 260.5,25.5
       parent: 1
-- proto: WeaponPistolGoldDealge
+- proto: WeaponPistolGoldDeagle
   entities:
   - uid: 9992
     components:
