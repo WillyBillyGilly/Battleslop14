@@ -66,10 +66,11 @@
    path:
      path: /Audio/_Battlefield14/Jukebox/faint.ogg
 
- -  id: acidspit
-    name: Acid Spit - Mega Drive
-    path:
-     path: /Audio/_Battlefield14/Jukebox/acidspit.ogg
+ - type: jukebox
+   id: acidspit
+   name: Acid Spit - Mega Drive
+   path:
+    path: /Audio/_Battlefield14/Jukebox/acidspit.ogg
 
  - type: jukebox
    id: videostalker
