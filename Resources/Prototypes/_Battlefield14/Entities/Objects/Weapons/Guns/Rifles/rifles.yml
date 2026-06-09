@@ -803,31 +803,10 @@
 # Rifles - RU
 
 - type: entity
-  name: OP-SKS Simonov
-  parent: WeaponRifleRUSKS
-  id: WeaponRifleRUOPSKS
-  description: A SKS with a scope mount made for the civiliian hunter market.
-  components:
-  - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/opsks.rsi
-    layers:
-      - state: base
-        map: ["enum.GunVisualLayers.Base"]
-  - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/opsks.rsi
-  - type: CursorOffsetRequiresWield
-  - type: EyeCursorOffset
-    maxOffset: 10
-    pvsIncrease: 0.8
-  - type: SpeedModifiedOnWield
-    walkModifier: 0.90
-    sprintModifier: 0.90
-
-- type: entity
   name: SKS Simonov
   parent: [BaseWeaponShotgun, BaseGunWieldable]
   id: WeaponRifleRUSKS
-  description: A old self loading rifle designed and adapted right after world war 2. It was replaced not too loog after with the AK-47.
+  description: A old self loading rifle designed and adapted right after world war 2. It was replaced not too long after with the AK-47.
   components:
   - type: Item
     size: Huge
@@ -852,7 +831,7 @@
     fireRate: 5
     projectileSpeed: 55
     soundGunshot:
-      collection: BF_AK_762_Gunshots
+      collection: BF_SKS_Gunshots
       params:
         volume: -5
         variation: 0.125
@@ -868,6 +847,27 @@
       params:
         volume: -5
   - type: Appearance
+
+- type: entity
+  name: OP-SKS Simonov
+  parent: WeaponRifleRUSKS
+  id: WeaponRifleRUOPSKS
+  description: A SKS with a scope mount made for the civiliian hunter market.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/opsks.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/opsks.rsi
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 10
+    pvsIncrease: 0.8
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.90
+    sprintModifier: 0.90
 
 - type: entity
   name: MP-18
@@ -900,7 +900,7 @@
     projectileSpeed: 55 # it's a sniper
     damageModifier: 2 # less dmg than the sv-98 because it a shitty gun and ment to be shitty
     soundGunshot:
-      collection: BF_AK_762_Gunshots
+      collection: BF_MP18_Gunshots
       params:
         volume: -5
         variation: 0.125

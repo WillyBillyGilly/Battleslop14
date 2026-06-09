@@ -418,7 +418,7 @@
     projectileSpeed: 55 # it's a sniper
     damageModifier: 2 # shitty rifle
     soundGunshot:
-      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/heavy_rifle_1.ogg
+      collection: BF_VPO215_Gunshots
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
@@ -492,7 +492,7 @@
     projectileSpeed: 55 # it's a sniper
     damageModifier: 1.75 # old gun + larger mag size compared to the SV-98
     soundGunshot:
-      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/heavy_rifle_1.ogg
+      collection: BF_MP18_Gunshots
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
