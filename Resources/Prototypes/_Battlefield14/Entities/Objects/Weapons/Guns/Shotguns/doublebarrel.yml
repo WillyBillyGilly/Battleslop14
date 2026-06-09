@@ -1,0 +1,69 @@
+- type: entity
+  name: double barrel shotgun
+  parent: BaseItem
+  id: BaseWeaponDoubleBarrel
+  description: A rooty tooty point and shooty.
+  abstract: true
+  components:
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,3,1
+    sprite: Objects/Weapons/Guns/Shotguns/db_shotgun_inhands_64x.rsi
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Shotguns/db_shotgun.rsi
+    layers:
+    - state: icon
+      map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Shotguns/db_shotgun.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: Gun
+    selectedMode: SemiAuto
+    fireRate: 1.5
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      collection: BF_M870_Gunshots
+      params:
+        volume: -5
+        variation: 0.125
+    projectileSpeed: 45 # Mono
+  - type: UseDelay
+    delay: 0.66
+  - type: ContainerContainer
+    containers:
+      revolver-ammo: !type:Container
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+        - BF_CartridgeShotgun12Gauge
+    mayTransfer: true
+    proto: BF_CartridgeShotgun12GaugeBuckshot
+    capacity: 2
+    chambers: [ True, True ]
+    ammoSlots: [ null, null ]
+    soundEject:
+      path: /Audio/Weapons/Guns/MagOut/revolver_magout.ogg
+    soundInsert:
+      collection: BF_M870_ShellIn
+      params:
+        volume: -5
+
+- type: entity
+  name: double barrel shotgun
+  parent: [BaseWeaponDoubleBarrel, BaseGunWieldable]
+  id: doublebarrelshotguntest
+  description: An old yet faithful design, and a favorite among irregular forces. Uses 12 gauge shotgun shells.
+  components:
+  - type: GunRequiresWield #remove when inaccuracy on spreads is fixed
+  - type: Gun
+    fireRate: 1.5
+  - type: GunSpreadModifier
+    spread: 0.6
+  - type: Tag
+    tags:
+    - WeaponShotgunKammerer
