@@ -1,31 +1,5 @@
 - type: entity
-  parent: ClothingOuterStorageBase
-  id: ClothingOuterHazardSuit
-  name: hazard suit
-  description: A thick rubber hazard suit that would be worn by workers at chemical plants. Its pretty good at absorbing explosions.
-  components:
-  - type: Sprite
-    sprite: _Battlefield14/Clothing/OuterClothing/Misc/hazardsuit.rsi
-  - type: Clothing
-    sprite: _Battlefield14/Clothing/OuterClothing/Misc/hazardsuit.rsi
-  - type: Armor
-    modifiers:
-      coefficients:
-        Caustic: 0.05
-        Heat: 0.30
-      flatReductions:
-        Blunt: 1
-        Slash: 1
-        Piercing: 1
-  - type: ExplosionResistance
-    damageCoefficient: 0.6
-  - type: ClothingSpeedModifier
-    walkModifier: 0.75
-    sprintModifier: 0.75
-  - type: HeldSpeedModifier
-
-- type: entity
-  parent: ClothingOuterStorageBase
+  parent: ClothingOuterBase
   id: ClothingOuterWorkJacket
   name: work jacket
   description: A work jacket worn by blue collar workers.
@@ -36,7 +10,7 @@
     sprite: _Battlefield14/Clothing/OuterClothing/Misc/worker.rsi
 
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: ClothingOuterBase
   id: ClothingOuterBlackTrenchcoat
   name: trench coat
   description: "It has a tag on the inside, with 'Not Important' written on it"
@@ -47,7 +21,7 @@
     sprite: _Battlefield14/Clothing/OuterClothing/Misc/trenchcoat.rsi
 
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: ClothingOuterBase
   id: ClothingOuterWorkerHighViz
   name: high-viz vest
   description: A high visibility vest worn by blue collar workers.

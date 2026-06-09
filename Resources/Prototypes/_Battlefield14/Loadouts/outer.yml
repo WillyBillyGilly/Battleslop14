@@ -1,9 +1,4 @@
 - type: loadout
-  id: LoadoutOuterHazardSuit
-  equipment:
-    outerClothing: ClothingOuterHazardSuit
-
-- type: loadout
   id: LoadoutOuterWorkJacket
   equipment:
     outerClothing: ClothingOuterWorkJacket

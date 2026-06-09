@@ -97,6 +97,37 @@
 
 - type: entity
   parent: [ClothingOuterArmorBase, ClothingArmorPlate]
+  id: ClothingOuterArmorBasicPlateCarrierEmpty
+  name: basic plate carrier
+  description: A slick and lightweight plate carrier with minimal protection. Popular with airsoft players and larpers.
+  suffix: Empty
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/OuterClothing/Armor/basiccarrier.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/OuterClothing/Armor/basiccarrier.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.8
+        Heat: 0.9
+        Caustic: 0.9
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.8
+  - type: HeldSpeedModifier
+
+- type: entity
+  parent: [ClothingOuterArmorBasicPlateCarrierEmpty, ClothingArmorPlateLight]
+  id: ClothingOuterArmorBasicPlateCarrierKevlar
+  suffix: Kevlar insert
+
+- type: entity
+  parent: [ClothingOuterArmorBase, ClothingArmorPlate]
   id: ClothingOuterArmorWebVestSecEmpty
   name: police web vest
   description: A standard issue plate carrier for police and security officers across the globe and beyond.
@@ -124,6 +155,40 @@
 - type: entity
   parent: [ClothingOuterArmorWebVestSecEmpty, ClothingArmorPlateLight]
   id: ClothingOuterArmorWebVestSec
+  suffix: Kevlar insert
+
+- type: entity
+  parent: ClothingOuterArmorWebVestSec
+  id: ClothingOuterArmorSurplusVestEmpty
+  name: surplus plate carrier
+  description: A outdated plate carrier.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/OuterClothing/Armor/surplusvest.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/OuterClothing/Armor/surplusvest.rsi
+  suffix: Empty
+
+- type: entity
+  parent: [ClothingOuterArmorSurplusVestEmpty, ClothingArmorPlateLight]
+  id: ClothingOuterArmorSurplusVestKevlar
+  suffix: Kevlar insert
+
+- type: entity
+  parent: ClothingOuterArmorWebVestSec
+  id: ClothingOuterArmorSurplusVestUNEmpty
+  name: UN plate carrier
+  description: A outdated plate carrier given out to UN troopers.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/OuterClothing/Armor/unvest.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/OuterClothing/Armor/unvest.rsi
+  suffix: Empty
+
+- type: entity
+  parent: [ClothingOuterArmorSurplusVestUNEmpty, ClothingArmorPlateLight]
+  id: ClothingOuterArmorSurplusVestUNKevlar
   suffix: Kevlar insert
 
 - type: entity

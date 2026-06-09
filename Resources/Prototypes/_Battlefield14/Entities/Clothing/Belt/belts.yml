@@ -54,6 +54,27 @@
     damageCoefficient: 0
 
 - type: entity
+  parent: ClothingBeltMilitaryWebbingUS
+  id: ClothingBeltMilitaryWebbingIkea
+  name: makeshift ikea rig
+  description: Worn by tactical bums.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Belt/ikea_webbing.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Belt/ikea_webbing.rsi
+  - type: Item
+    size: Huge
+  - type: ExplosionResistance
+    damageCoefficient: 1
+  - type: Storage
+    maxItemSize: Normal
+    defaultStorageOrientation: Vertical
+    grid:
+    - 0,0,3,1
+
+
+- type: entity
   parent: [ClothingBeltStorageBase, ContentsExplosionResistanceBase]
   id: ClothingBeltStationSecurity
   name: security belt
