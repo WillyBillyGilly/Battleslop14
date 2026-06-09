@@ -397,7 +397,7 @@
 - type: entity
   name: VPO-215
   parent: [BaseWeaponRifle, BaseGunWieldable]
-  id: WeaponSniperVPO215
+  id: WeaponSniperRUVPO215
   description: A russian civilian market hunting rifle chambered in .366 TKM. Classified as a shotgun under russian law due to its partial rifling.
   components:
   - type: Sprite
@@ -469,20 +469,20 @@
     delay: 0.2
 
 - type: entity
-  name: magpull Mosin-Nagant
+  name: magpul Mosin-Nagant
   parent: [BaseWeaponRifle, BaseGunWieldable]
-  id: WeaponSniperMagpullMosin
-  description: A Mosin-Nagant with aftermarket magpull furnitrue made to imrpove ergonomics and allow the use of detachable magazines.
+  id: WeaponSniperRUMagpulMosin
+  description: A Mosin-Nagant with aftermarket magpul furnitrue made to imrpove ergonomics and allow the use of detachable magazines.
   components:
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/magpullmosin.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/magpulmosin.rsi
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/magpullmosin.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/magpulmosin.rsi
   - type: GunRequiresWield
   - type: Item
     shape:
@@ -500,7 +500,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazineRifleMagpullMosin
+        startingItem: MagazineRifleMagpulMosin
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2

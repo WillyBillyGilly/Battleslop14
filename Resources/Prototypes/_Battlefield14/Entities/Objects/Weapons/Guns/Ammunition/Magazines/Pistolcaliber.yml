@@ -1,7 +1,7 @@
 - type: entity
   parent: BaseMagazinePistol
   id: MagazinePistolDeagle
-  name: Dealge magazine (.50 AE)
+  name: deagle magazine (.50 AE)
   description: A .50 Action express magazine, large and bulky just like the gun it self.
   components:
   - type: Tag

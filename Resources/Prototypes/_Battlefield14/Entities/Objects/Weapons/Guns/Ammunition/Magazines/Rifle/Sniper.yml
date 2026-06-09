@@ -30,9 +30,9 @@
 
 - type: entity
   parent: BaseMagazineRifle
-  id: MagazineRifleMagpullMosin
+  id: MagazineRifleMagpulMosin
   name: "Mosin-Nagant magazine (7.62x54mmR)"
-  description: A magpull aftermarket, 10 round magazine for the Mosin-Nagant,
+  description: A magpul aftermarket, 10 round magazine for the Mosin-Nagant,
   components:
   - type: Tag
     tags:

@@ -10352,7 +10352,7 @@ entities:
       containers:
         ballistic-ammo: !type:Container
           ents: []
-- proto: MagazineRifleMagpullMosin
+- proto: MagazineRifleMagpulMosin
   entities:
   - uid: 9998
     components:
@@ -56449,11 +56449,6 @@ entities:
     - type: Transform
       pos: 97.24916,-16.048016
       parent: 1
-  - uid: 10003
-    components:
-    - type: Transform
-      pos: 97.483536,-16.266918
-      parent: 1
 - proto: ShellBoxBF12GaugeSlug
   entities:
   - uid: 10004
@@ -59260,7 +59255,7 @@ entities:
     - type: Transform
       pos: 97.421036,-16.641973
       parent: 1
-- proto: WeaponSniperMagpullMosin
+- proto: WeaponSniperRUMagpulMosin
   entities:
   - uid: 9997
     components:

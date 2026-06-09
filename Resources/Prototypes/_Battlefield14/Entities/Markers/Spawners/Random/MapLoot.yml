@@ -37,8 +37,9 @@
       - WeaponSubmachinegunRUPPsh41
       - WeaponSubmachinegunRUVityaz
       - WeaponShotgunRUMP133
+      - WeaponRifleRUAKMUDraco
       - WeaponRifleRUSKS
-      - WeaponSniperVPO215
+      - WeaponSniperRUVPO215
     chance: 1
 
 - type: entity
@@ -59,8 +60,8 @@
       - WeaponShotgunRUMP133
       - WeaponShotgunRURMB93
       - WeaponRifleRUOPSKS
-      - WeaponSniperVPO215
-      - WeaponSniperMagpullMosin
+      - WeaponSniperRUVPO215
+      - WeaponSniperRUMagpulMosin
     chance: 1
 
 ## AMMO
@@ -103,7 +104,7 @@
       - MagazineBox762x39
       - MagazineRifleAKM
       - MagazineRifleVPO215
-      - MagazineRifleMagpullMosin
+      - MagazineRifleMagpulMosin
       - MagazineSubmachinegunPPSh
       - MagazineSubmachinegunKedr
       - MagazineSubmachinegunVityaz
@@ -129,7 +130,7 @@
       - MagazineRifleAKM
       - MagazineRifleAK74
       - MagazineRifleVPO215
-      - MagazineRifleMagpullMosin
+      - MagazineRifleMagpulMosin
       - MagazineSubmachinegunPPSh
       - MagazineSubmachinegunKedr
       - MagazineSubmachinegunVityaz

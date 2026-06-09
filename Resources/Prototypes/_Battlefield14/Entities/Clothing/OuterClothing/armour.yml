@@ -118,7 +118,7 @@
     damageCoefficient: 0.9
   - type: ClothingSpeedModifier
     walkModifier: 0.95
-    sprintModifier: 0.8
+    sprintModifier: 0.85
   - type: HeldSpeedModifier
 
 - type: entity
