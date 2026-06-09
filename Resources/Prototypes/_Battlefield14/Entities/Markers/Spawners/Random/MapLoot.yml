@@ -179,7 +179,7 @@
      - ClothingOuterArmorPlateCarrierCivillian
      - ClothingOuterArmorSurplusVestUNEmpty
      - ClothingHeadHatHelmetUN
-     - ClothingHeadHatHelmetRU
+     - ClothingHeadHatHelmetSurplus
     chance: 1
 
 - type: entity
@@ -206,5 +206,5 @@
      - ClothingBackpackRucksackBlack
      - ClothingBackpackRucksackTan
      - ClothingHeadHatHelmetUN
-     - ClothingHeadHatHelmetRU
+     - ClothingHeadHatHelmetSurplus
     chance: 1

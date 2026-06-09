@@ -141,7 +141,7 @@
         - BF_CartridgePistol9x18
     capacity: 20
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/M9.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/PM.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -149,7 +149,7 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: mag
-    steps: 3
+    steps: 8
     zeroVisible: false
   - type: Appearance
 
@@ -172,7 +172,7 @@
         - BF_CartridgePistol9x18
     capacity: 8
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/M9.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/PM.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -180,7 +180,7 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: mag
-    steps: 3
+    steps: 8
     zeroVisible: false
   - type: Appearance
 
@@ -203,7 +203,7 @@
         - BF_CartridgePistol9x18
     capacity: 30
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/MP5.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/vlad.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
