@@ -4,7 +4,7 @@
 - type: entity
   name: deagle
   parent: BaseWeaponPistol
-  id: WeaponPistolILDealge
+  id: WeaponPistolILDeagle
   description: The deagle, a well known and very impractical handgun. Chambered in the large .50 Action express it packs a punch.
   components:
   - type: Sprite
@@ -66,8 +66,8 @@
 
 - type: entity
   name: silver deagle
-  parent: WeaponPistolDealge
-  id: WeaponPistolSilverILDealge
+  parent: WeaponPistolDeagle
+  id: WeaponPistolSilverILDeagle
   description: The deagle, a well known and very impractical handgun. Chambered in the large .50 Action express it packs a punch. This one has a silver finish.
   components:
   - type: Sprite
@@ -80,8 +80,8 @@
 
 - type: entity
   name: golden deagle
-  parent: WeaponPistolDealge
-  id: WeaponPistolGoldILDealge
+  parent: WeaponPistolDeagle
+  id: WeaponPistolGoldILDeagle
   description: The deagle, a well known and very impractical handgun. Chambered in the large .50 Action express it packs a punch. This one has ben plated in gold because why not.
   components:
   - type: Sprite
