@@ -57,12 +57,12 @@
   - type: ContainerFill
     containers:
       item:
-      - WeaponPistolM9
+      - WeaponPistolILDeagle
   - type: StorageFill
     contents:
       - id: Handcuffs
       - id: Flash
-      - id: MagazinePistolM9
+      - id: MagazinePistolDeagle
         amount: 3
 
 - type: entity
