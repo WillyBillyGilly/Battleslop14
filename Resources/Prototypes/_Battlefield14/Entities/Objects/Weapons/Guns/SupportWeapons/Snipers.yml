@@ -472,7 +472,7 @@
   name: magpul Mosin-Nagant
   parent: [BaseWeaponRifle, BaseGunWieldable]
   id: WeaponSniperRUMagpulMosin
-  description: A Mosin-Nagant with aftermarket magpul furnitrue made to imrpove ergonomics and allow the use of detachable magazines.
+  description: A Mosin-Nagant with aftermarket magpul furniture made to improve ergonomics and allow the use of detachable magazines.
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/magpulmosin.rsi

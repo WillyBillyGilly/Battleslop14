@@ -143,6 +143,9 @@
   id: MagazineRifleG3
 
 - type: Tag
+  id: MagazineRifleG36
+
+- type: Tag
   id: MagazineRifleSTANAG
 
 - type: Tag
@@ -204,6 +207,9 @@
 
 - type: Tag
   id: MagazinePistolMAC10
+
+- type: Tag
+  id: MagazinePistolPPSh
 
 - type: Tag
   id: MagazineShotgunKSK

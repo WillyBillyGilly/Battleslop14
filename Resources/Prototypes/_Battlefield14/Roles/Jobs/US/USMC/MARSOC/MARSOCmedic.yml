@@ -65,7 +65,7 @@
     pocket1: PouchMagsPistolLargeFilledMP7
     pocket2: PouchMedkitFilledMarsoc
     leftarmband: Tourniquet
-    rightarmband: ClothingArmbandThighHolsterFilledUS
+    rightarmband: ClothingArmbandThighHolsterFilledUSMK27
     wallet: ClothingWalletLeatherBlack
   storage:
     back:
@@ -98,7 +98,7 @@
     pocket1: PouchMagsPistolLargeFilledMP7
     pocket2: PouchGrenadesFilledUSMCScout
     leftarmband: ClothingArmbandMassScanner
-    rightarmband: ClothingArmbandThighHolsterFilledUS
+    rightarmband: ClothingArmbandThighHolsterFilledUSMK27
     wallet: ClothingWalletLeatherBlack
   storage:
     back:

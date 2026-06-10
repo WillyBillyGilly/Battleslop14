@@ -25,6 +25,16 @@
       - WeaponPistolM9
 
 - type: entity
+  id: ClothingArmbandThighHolsterFilledUSMK27
+  parent: ClothingArmbandThighHolster
+  suffix: Filled, US, Mk 27
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - WeaponPistolUSMK27
+
+- type: entity
   id: ClothingArmbandThighHolsterFilledRU
   parent: ClothingArmbandThighHolster
   suffix: Filled, RU, MP443

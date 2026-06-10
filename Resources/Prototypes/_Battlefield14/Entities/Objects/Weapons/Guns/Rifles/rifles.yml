@@ -583,6 +583,124 @@
     zeroVisible: true
   - type: Appearance
 
+- type: entity
+  name: G36K
+  parent: WeaponRifleUSM16A3
+  id: WeaponRifleDEG36K
+  description: Plastic fantastic, or plastich fantastich if you're german.. or deutsch.
+  components:
+  - type: Item # Controls inhand sprites
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G36K.rsi
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G36K.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G36K.rsi
+  - type: GunWieldBonus
+    minAngle: -29
+    maxAngle: -34
+  - type: Gun
+    minAngle: 31
+    maxAngle: 42
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    selectedMode: FullAuto
+    fireRate: 6
+    projectileSpeed: 45
+    soundGunshot:
+      collection: BF_SCARL_Gunshots
+      params:
+        volume: -5
+        variation: 0.125
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/SCAR/rack.ogg
+      params:
+        volume: -2
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/SCAR/boltcatch.ogg
+      params:
+        volume: -5
+    soundBoltOpened:
+      path: /Audio/_Battlefield14/Weapons/Guns/SCAR/chpull.ogg
+      params:
+        volume: -5
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleG36
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleG36
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle556x45
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle556x45
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _Battlefield14/Interface/MousePointer/optics.rsi
+      state: M68
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes G36 pattern magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+- type: entity
+  name: G36C
+  parent: WeaponRifleDEG36K
+  id: WeaponRifleDEG36C
+  description: Plastic fantastic, or plastich fantastich if you're german.. or deutsch.
+  components:
+  - type: Item # Controls inhand sprites
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G36c.rsi
+    size: Large
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G36c.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G36c.rsi
+  - type: GunWieldBonus
+    minAngle: -24
+    maxAngle: -28
+  - type: Gun
+    minAngle: 26
+    maxAngle: 42
+    angleIncrease: 1.25
+    projectileSpeed: 40 # Shorter barrel
+    fireRate: 6
+    soundGunshot:
+      collection: BF_SCARL_Gunshots
+      params:
+        volume: -5
+        variation: 0.125
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _Battlefield14/Interface/MousePointer/optics.rsi
+      state: M68
+
 # Belgium
 
 - type: entity
@@ -593,7 +711,6 @@
   components:
   - type: Item # Controls inhand sprites
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/SCAR.rsi
-    size: Large
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/SCAR.rsi
     layers:
