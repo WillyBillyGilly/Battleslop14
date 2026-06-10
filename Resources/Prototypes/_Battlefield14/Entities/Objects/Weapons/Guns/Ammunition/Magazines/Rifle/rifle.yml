@@ -91,6 +91,54 @@
 
 - type: entity
   parent: BaseMagazineRifle
+  id: MagazineRifleG36
+  name: "G36 magazine (5.56x45)"
+  description: Standard magazine for the G36 family of rifles.
+  components:
+  - type: Tag
+    tags:
+      - MagazineRifleG36
+      - Magazine
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgeRifle556x45
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgeRifle556x45
+    capacity: 30
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/G36.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a G36 pattern locking system.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+- type: entity
+  parent: MagazineRifleG36
+  id: MagazineRifleG36TracerRed
+  name: "G36 magazine (5.56x45 red tracer)"
+  components:
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgeRifle556x45TracerRed
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgeRifle556x45
+    capacity: 30
+
+- type: entity
+  parent: BaseMagazineRifle
   id: MagazineRifleASH12
   name: "ASH-12 magazine (12.7x55)"
   description: Big and chunky mag, holding 20 12.7x55 bullets for eradicating "cag operators" in CQB with Russian brutality.

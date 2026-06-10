@@ -17,9 +17,9 @@ job-name-ng-automatic-rifleman = N.G. Automatic Rifleman
 job-name-ng-medic = N.G. Combat Medic
 job-name-ng-recon = N.G. Cavalry Scout
 
-job-name-uspd-chief = Police Chief
-job-name-uspd-warden = Warden
-job-name-uspd-officer = Police Officer
+job-name-uspd-chief = USPD Police Chief
+job-name-uspd-warden = USPD Warden
+job-name-uspd-officer = USPD Police Officer
 
 #Russian Federation#
 
@@ -39,9 +39,9 @@ job-name-omon-rifleman = OMON Riot Officer
 
 #Western Private Security#
 
-job-name-wps-marshal = Marshal
-job-name-wps-warden = Brig Chief
-job-name-wps-officer = Security Officer
+job-name-wps-marshal = Chevron Marshal
+job-name-wps-warden = Chevron Brig Chief
+job-name-wps-officer = Chevron Security Officer
 
 #Civilian#
 
