@@ -26,6 +26,17 @@
   - type: HeldSpeedModifier
 
 - type: entity
+  parent: ClothingOuterArmorPlateCarrierBlack
+  id: ClothingOuterArmorPlateCarrierTan
+  name: tan plate carrier
+  description: A standard issue armor vest for cannon fodder.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/OuterClothing/Armor/tancarrier.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/OuterClothing/Armor/tancarrier.rsi
+
+- type: entity
   parent: ClothingOuterArmorBase
   id: ClothingOuterArmorPlateCarrierCivillian
   name: civilian ballistic vest
@@ -51,17 +62,6 @@
     walkModifier: 0.95
     sprintModifier: 0.95
   - type: HeldSpeedModifier
-
-- type: entity
-  parent: ClothingOuterArmorPlateCarrierBlack
-  id: ClothingOuterArmorPlateCarrierTan
-  name: tan plate carrier
-  description: A standard issue armor vest for cannon fodder.
-  components:
-  - type: Sprite
-    sprite: _Battlefield14/Clothing/OuterClothing/Armor/tancarrier.rsi
-  - type: Clothing
-    sprite: _Battlefield14/Clothing/OuterClothing/Armor/tancarrier.rsi
 
 - type: entity
   parent: ClothingOuterArmorBase
@@ -93,7 +93,7 @@
     footstepSoundCollection:
       collection: HeavyVest
       params:
-        volume: -7 # dawg this shit loud and i cant be bothered to make it quieter
+        volume: -7
 
 - type: entity
   parent: [ClothingOuterArmorBase, ClothingArmorPlate]
@@ -158,7 +158,7 @@
   suffix: Kevlar insert
 
 - type: entity
-  parent: ClothingOuterArmorWebVestSec
+  parent: ClothingOuterArmorWebVestSecEmpty
   id: ClothingOuterArmorSurplusVestEmpty
   name: surplus plate carrier
   description: A old surplus plate carrier, its origin is unknown.
@@ -175,7 +175,7 @@
   suffix: Kevlar insert
 
 - type: entity
-  parent: ClothingOuterArmorWebVestSec
+  parent: ClothingOuterArmorWebVestSecEmpty
   id: ClothingOuterArmorSurplusVestUNEmpty
   name: UN plate carrier
   description: A outdated plate carrier given out to UN troopers.
@@ -187,9 +187,9 @@
   suffix: Empty
 
 - type: entity
-  parent: [ClothingOuterArmorSurplusVestUNEmpty, ClothingArmorPlateLight]
+  parent: [ClothingOuterArmorSurplusVestUNEmpty, ClothingArmorPlateMedium]
   id: ClothingOuterArmorSurplusVestUNKevlar
-  suffix: Kevlar insert
+  suffix: Ceramic plate
 
 - type: entity
   parent: [ClothingOuterArmorBasic, ClothingArmorPlateLight]
