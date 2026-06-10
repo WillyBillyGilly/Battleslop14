@@ -1,4 +1,252 @@
 - type: entity
+  parent: BaseMagazinePistol
+  id: MagazinePistolDeagle
+  name: deagle magazine (.50 AE)
+  description: A .50 Action express magazine, large and bulky just like the gun it self.
+  components:
+  - type: Tag
+    tags:
+      - MagazinePistolDeagle
+      - Magazine
+      - PistolMagazine
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgePistol50AE
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgePistol50AE
+    capacity: 7
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/deagle.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: BaseMagazinePistol
+  id: MagazinePistolTT33
+  name: TT-33 magazine (7.62x25mm)
+  description: A 7.62x25mm magazine for the Tokarev pistol.
+  components:
+  - type: Tag
+    tags:
+      - MagazinePistolTT33
+      - Magazine
+      - PistolMagazine
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgePistol762x25
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgePistol762x25
+    capacity: 8
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/tt33.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: BaseMagazinePistol
+  id: MagazinePistolM1911
+  name: M1911 magazine (.45 ACP)
+  description: A .45 ACP magazine, the gods caliber.
+  components:
+  - type: Tag
+    tags:
+      - MagazinePistolM1911
+      - Magazine
+      - PistolMagazine
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgePistol45ACP
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgePistol45ACP
+    capacity: 7
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/M1911.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 6
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: BaseMagazinePistol
+  id: MagazinePistolGlock17
+  name: Glock-17 magazine (9x19mm)
+  description: A 9x19mm magazine made for the Glock-17 pistol, no the 17 in the name doesnt stand for the magazine capacity.
+  components:
+  - type: Tag
+    tags:
+      - MagazinePistolGlock17
+      - Magazine
+      - PistolMagazine
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgePistol9x19
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgePistol9x19
+    capacity: 17
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/Glock17.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: BaseMagazinePistol
+  id: MagazinePistolAPS
+  name: APS magazine (9x18mm)
+  description: A 9x18mm magazine made for the APS Stechkin.
+  components:
+  - type: Tag
+    tags:
+      - MagazinePistolAPS
+      - Magazine
+      - PistolMagazine
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgePistol9x18
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgePistol9x18
+    capacity: 20
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/PM.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 8
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: BaseMagazinePistol
+  id: MagazinePistolPM
+  name: PM magazine (9x18mm)
+  description: A single stack 9x18mm magazine made for the PM Makarov.
+  components:
+  - type: Tag
+    tags:
+      - MagazinePistolPM
+      - Magazine
+      - PistolMagazine
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgePistol9x18
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgePistol9x18
+    capacity: 8
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/PM.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 8
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: BaseMagazineSMG
+  id: MagazineSubmachinegunKedr
+  name: PP-91 Kedr magazine (9x18mm)
+  description: A magazine for the moderner leg shredder.
+  components:
+  - type: Tag
+    tags:
+      - MagazinePistolKedr
+      - Magazine
+      - PistolMagazine
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgePistol9x18
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgePistol9x18
+    capacity: 30
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/vlad.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: BaseMagazineSMG
+  id: MagazineSubmachinegunPPSh
+  name: PPSh-41 magazine (7.62x25mm)
+  description: A magazine for the leg shredder.
+  components:
+  - type: Tag
+    tags:
+      - MagazinePistolPPSh
+      - Magazine
+      - PistolMagazine
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgePistol762x25
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgePistol762x25
+    capacity: 30
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/MP5.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
   parent: BaseMagazineSMG
   id: MagazineSubmachinegunMP5
   name: MP5 magazine (9x19mm)

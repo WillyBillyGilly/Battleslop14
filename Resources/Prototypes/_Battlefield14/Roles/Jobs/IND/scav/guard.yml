@@ -24,7 +24,7 @@
   equipment:
     ears: ClothingHeadsetAltScav
     jumpsuit: ClothingUniformJumpsuitCombatScavGuard
-    head: ClothingHeadHatHelmetRU
-    outerClothing: ClothingOuterArmorWebVestSec
+    head: ClothingHeadHatHelmetSurplus
+    outerClothing: ClothingOuterArmorSurplusVestKevlar
     shoes: ClothingShoesBootsJackFilled
     pocket1: PouchFirstAidFilled

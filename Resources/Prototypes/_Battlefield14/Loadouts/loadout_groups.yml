@@ -6,8 +6,6 @@
   minLimit: 0
   maxLimit: 1
   loadouts:
-  - LoadoutHeadHatHelmetHardhat
-  - LoadoutHeadHatHelmetHazardHelmet
   - LoadoutHeadHatPompon
 
 - type: loadoutGroup
@@ -226,7 +224,6 @@
   - LoadoutOuterBlackTrenchcoat
   - LoadoutOuterWorkerHighViz
   - LoadoutOuterWorkJacket
-  - LoadoutOuterHazardSuit
 
 - type: loadoutGroup
   id: BF_MiscItemsNATO

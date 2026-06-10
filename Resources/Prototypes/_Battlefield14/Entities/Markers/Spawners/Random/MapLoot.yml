@@ -1,0 +1,211 @@
+## Weapons
+
+- type: entity
+  parent: MarkerBase
+  id: RandomWeaponMapLowTierRU
+  name: Low tier russian weapon
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+        state: lowgun
+  - type: RandomSpawner
+    offset: 0.3
+    prototypes:
+      - WeaponPistolRUTT33
+      - WeaponPistolRUPM
+      - WeaponPistolRUAPS
+      - WeaponRifleRUMP18
+      - WeaponShotgunRUMP133
+    chance: 1
+
+- type: entity
+  parent: MarkerBase
+  id: RandomWeaponMapMidTierRU
+  name: mid tier russian weapon
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+        state: midgun
+  - type: RandomSpawner
+    offset: 0.3
+    prototypes:
+      - WeaponPistolRUAPS
+      - WeaponRifleRUVPO136
+      - WeaponSubmachinegunRUKedr
+      - WeaponSubmachinegunRUPPsh41
+      - WeaponSubmachinegunRUVityaz
+      - WeaponShotgunRUMP133
+      - WeaponRifleRUAKMUDraco
+      - WeaponRifleRUSKS
+      - WeaponSniperRUVPO215
+    chance: 1
+
+- type: entity
+  parent: MarkerBase
+  id: RandomWeaponMapHighTierRU
+  name: high tier russian weapon
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+        state: highgun
+  - type: RandomSpawner
+    offset: 0.3
+    prototypes:
+      - WeaponRifleRUAKS74U
+      - WeaponRifleRUAKMS
+      - WeaponRifleRUAKMUDraco
+      - WeaponShotgunRUMP133
+      - WeaponShotgunRURMB93
+      - WeaponRifleRUOPSKS
+      - WeaponSniperRUVPO215
+      - WeaponSniperRUMagpulMosin
+    chance: 1
+
+## AMMO
+
+- type: entity
+  parent: MarkerBase
+  id: RandomAmmoMapLowTierRU
+  name: Low tier russian ammo
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+        state: lowammo
+  - type: RandomSpawner
+    offset: 0.3
+    prototypes:
+      - MagazinePistolPM
+      - MagazinePistolTT33
+      - MagazinePistolAPS
+      - MagazineBox762x54r
+      - ShellBoxBF12GaugeBuckshot
+      - SmokeGrenadeRURDG
+    chance: 1
+
+- type: entity
+  parent: MarkerBase
+  id: RandomAmmoMapMidTierRU
+  name: Mid tier russian ammo
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+        state: midammo
+  - type: RandomSpawner
+    offset: 0.3
+    prototypes:
+      - MagazinePistolAPS
+      - MagazineBox762x54r
+      - ShellBoxBF12GaugeBuckshot
+      - MagazineBox762x39
+      - MagazineRifleAKM
+      - MagazineRifleVPO215
+      - MagazineRifleMagpulMosin
+      - MagazineSubmachinegunPPSh
+      - MagazineSubmachinegunKedr
+      - MagazineSubmachinegunVityaz
+      - SmokeGrenadeRURDG
+      - DefensiveGrenadeRUF1
+      - FlashbangGrenadeRUZarya
+    chance: 1
+
+- type: entity
+  parent: MarkerBase
+  id: RandomAmmoMapHighTierRU
+  name: High tier russian ammo
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+        state: highammo
+  - type: RandomSpawner
+    offset: 0.3
+    prototypes:
+      - ShellBoxBF12GaugeBuckshot
+      - MagazineBox762x39
+      - MagazineRifleAKM
+      - MagazineRifleAK74
+      - MagazineRifleVPO215
+      - MagazineRifleMagpulMosin
+      - MagazineSubmachinegunPPSh
+      - MagazineSubmachinegunKedr
+      - MagazineSubmachinegunVityaz
+      - FlashbangGrenadeRUZarya
+      - SmokeGrenadeRURDG
+      - OffensiveGrenadeRURGD5
+      - ImpactGrenadeRURGO
+    chance: 1
+
+## GEAR
+
+- type: entity
+  parent: MarkerBase
+  id: RandomGearMapLowTierRU
+  name: Low tier russian gear
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+        state: lowarmor
+  - type: RandomSpawner
+    offset: 0.3
+    prototypes:
+      - ClothingHeadHatHelmetHardhat
+      - ClothingBeltMilitaryWebbingIkea
+      - ClothingOuterArmorPlateCarrierCivillian
+      - ArmorPlateLight
+    chance: 1
+
+- type: entity
+  parent: MarkerBase
+  id: RandomGearMapMidTierRU
+  name: Mid tier russian gear
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+        state: midarmor
+  - type: RandomSpawner
+    offset: 0.3
+    prototypes:
+     - ArmorPlateLight
+     - ClothingOuterArmorSurplusVestEmpty
+     - ClothingOuterArmorBasicPlateCarrierEmpty
+     - ClothingBeltMilitaryWebbingRU
+     - ClothingBeltMilitaryWebbingIkea
+     - ClothingOuterArmorPlateCarrierCivillian
+     - ClothingOuterArmorSurplusVestUNEmpty
+     - ClothingHeadHatHelmetUN
+     - ClothingHeadHatHelmetSurplus
+    chance: 1
+
+- type: entity
+  parent: MarkerBase
+  id: RandomGearMapHighTierRU
+  name: High tier russian gear
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+        state: higharmor
+  - type: RandomSpawner
+    offset: 0.3
+    prototypes:
+     - ClothingOuterArmorSurplusVestUNKevlar
+     - ArmorPlateMedium
+     - ArmorPlateLight
+     - ClothingOuterArmorPlateCarrierBlack
+     - ClothingOuterArmorPlateCarrierTan
+     - ClothingOuterArmorBasicPlateCarrierKevlar
+     - ClothingOuterArmorSurplusVestEmpty
+     - ClothingOuterArmorBasicPlateCarrierKevlar
+     - ClothingBeltMilitaryWebbingRU
+     - ClothingBackpackRucksackBlack
+     - ClothingBackpackRucksackTan
+     - ClothingHeadHatHelmetUN
+     - ClothingHeadHatHelmetSurplus
+    chance: 1
