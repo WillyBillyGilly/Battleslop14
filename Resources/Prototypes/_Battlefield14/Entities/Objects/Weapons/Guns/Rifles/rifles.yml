@@ -920,6 +920,178 @@
 # Rifles - RU
 
 - type: entity
+  name: SKS Simonov
+  parent: [BaseWeaponShotgun, BaseGunWieldable]
+  id: WeaponRifleRUSKS
+  description: A old self loading rifle designed and adapted right after world war 2. It was replaced not too long after with the AK-47.
+  components:
+  - type: Item
+    size: Huge
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/sks.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/sks.rsi
+  - type: GunWieldBonus
+    minAngle: -29
+    maxAngle: -27
+  - type: Gun
+    minAngle: 31
+    maxAngle: 40
+    angleIncrease: 1
+    angleDecay: 16
+    availableModes:
+    - SemiAuto
+    selectedMode: SemiAuto
+    fireRate: 5
+    projectileSpeed: 55
+    soundGunshot:
+      collection: BF_SKS_Gunshots
+      params:
+        volume: -5
+        variation: 0.125
+  - type: BallisticAmmoProvider
+    autoCycle: true
+    whitelist:
+      tags:
+      - BF_CartridgeRifle762x39
+    capacity: 10
+    proto: BF_CartridgeRifle762x39
+    soundInsert:
+      collection: BF_M870_ShellIn
+      params:
+        volume: -5
+  - type: Appearance
+
+- type: entity
+  name: OP-SKS Simonov
+  parent: WeaponRifleRUSKS
+  id: WeaponRifleRUOPSKS
+  description: A SKS with a scope mount made for the civiliian hunter market.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/opsks.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/opsks.rsi
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 10
+    pvsIncrease: 0.8
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.90
+    sprintModifier: 0.90
+
+- type: entity
+  name: MP-18
+  parent: [WeaponFlareGun, BaseGunWieldable]
+  id: WeaponRifleRUMP18
+  description: A single-shot break-action hunting rifle made for the russian civilian market. Chambered in 7.62x54mmR.
+  components:
+  - type: Item
+    size: Huge
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/MP18.rsi
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/MP18.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/MP18.rsi
+  - type: GunWieldBonus
+    minAngle: -29
+    maxAngle: -27
+  - type: Gun
+    minAngle: 31
+    maxAngle: 40
+    angleIncrease: 1
+    angleDecay: 16
+    availableModes:
+    - SemiAuto
+    selectedMode: SemiAuto
+    fireRate: 5
+    projectileSpeed: 55 # it's a sniper
+    damageModifier: 2 # less dmg than the sv-98 because it a shitty gun and ment to be shitty
+    soundGunshot:
+      collection: BF_MP18_Gunshots
+      params:
+        volume: -5
+        variation: 0.125
+  - type: ItemSlots
+    slots:
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle762x54r
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle762x54r
+  - type: Appearance
+
+- type: entity
+  name: VPO-136
+  parent: WeaponRifleRUAK74
+  id: WeaponRifleRUVPO136
+  description: A de-militarized AKM made for the civillian market.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/VPO136.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/VPO136.rsi
+  - type: GunWieldBonus
+    minAngle: -29
+    maxAngle: -27
+  - type: Gun
+    minAngle: 31
+    maxAngle: 40
+    angleIncrease: 1
+    angleDecay: 16
+    availableModes:
+    - SemiAuto
+    selectedMode: SemiAuto
+    fireRate: 4
+    projectileSpeed: 40
+    soundGunshot:
+      collection: BF_AK_762_Gunshots
+      params:
+        volume: -5
+        variation: 0.125
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleAKM
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleAKM
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle762x39
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle762x39
+  - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes AKM pattern magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+- type: entity
   name: AK-74
   parent: BaseWeaponRifle
   id: WeaponRifleRUAK74
@@ -1579,10 +1751,10 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
 
 - type: entity
-  name: ASH-12
+  name: ShAK-12
   parent: BaseWeaponRifle
   id: WeaponRifleRUASH12
-  description: Also known as the sHAK-12, this weapon was designed to provide the maximum firepower for close quarters combat, and provides it with the monsterous 12.7x55 round.
+  description: Used to be known as the ASh-12, this weapon was designed to provide the maximum firepower for close quarters combat, and provides it with the monsterous 12.7x55 round.
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/ASH12.rsi
@@ -1653,10 +1825,10 @@
         requireDetailRange: true
 
 - type: entity
-  name: ASH-12 SUPP.
+  name: ShAK-12 SUPP.
   parent: WeaponRifleRUASH12
   id: WeaponRifleRUASH12Suppressed
-  description: Also known as the sHAK-12, this weapon was designed to provide the maximum firepower for close quarters combat, and provides it with the monsterous 12.7x55 round. The suppressor is not for any stealth purpose, but to give you the mercy of not burning your eyes out as your skull gets a new canoe shape.
+  description: Used to be known as the ASh-12, this weapon was designed to provide the maximum firepower for close quarters combat, and provides it with the monsterous 12.7x55 round. The suppressor is not for any stealth purpose, but to give you the mercy of not burning your eyes out as your skull gets a new canoe shape.
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/ASH12.rsi

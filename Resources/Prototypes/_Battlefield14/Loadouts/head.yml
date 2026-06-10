@@ -4,11 +4,6 @@
     head: ClothingHeadHatPompon
 
 - type: loadout
-  id: LoadoutHeadHatHelmetHazardHelmet
-  equipment:
-    head: ClothingHeadHatHelmetHazardHelmet
-
-- type: loadout
   id: LoadoutHeadHatHelmetHardhat
   equipment:
     head: ClothingHeadHatHelmetHardhat
