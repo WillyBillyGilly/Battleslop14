@@ -153,7 +153,7 @@
     contents:
       - id: MagazineBeltBoxMK48
         amount: 2
-      - id: MagazinePistolM9
+      - id: MagazinePistolGlock17
         amount: 2
 
 - type: entity
@@ -165,7 +165,7 @@
     contents:
       - id: MagazineBeltBoxMK48
         amount: 2
-      - id: MagazinePistolM9
+      - id: MagazinePistolGlock17
         amount: 2
 
 - type: entity

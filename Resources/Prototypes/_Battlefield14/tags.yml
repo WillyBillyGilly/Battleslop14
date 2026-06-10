@@ -209,6 +209,9 @@
   id: MagazinePistolMAC10
 
 - type: Tag
+  id: MagazinePistolPPSh
+
+- type: Tag
   id: MagazineShotgunKSK
 
 - type: Tag

@@ -65,7 +65,7 @@
     pocket1: PouchMedkitFilledMarsoc
     pocket2: PouchGrenadesFilledUSMCRifleman
     leftarmband: Tourniquet
-    rightarmband: ClothingArmbandThighHolsterFilledUS
+    rightarmband: ClothingArmbandThighHolsterFilledUSMK27
     wallet: ClothingWalletLeatherBlack
   storage:
     back:
@@ -73,8 +73,8 @@
     - ShellBoxBF12GaugeBreaching
     - BoxMRE
     - ClothingMaskGasM40Green
-    - MagazinePistolM9
-    - MagazinePistolM9
+    - MagazinePistolGlock17
+    - MagazinePistolGlock17
     - CrowbarRed
     - Tourniquet
     - Zipties
@@ -98,7 +98,7 @@
     pocket1: PouchMedkitFilledMarsoc
     pocket2: PouchGrenadesFilledUSMCRifleman
     leftarmband: ClothingArmbandMassScanner
-    rightarmband: ClothingArmbandThighHolsterFilledUS
+    rightarmband: ClothingArmbandThighHolsterFilledUSMK27
     wallet: ClothingWalletLeatherBlack
   storage:
     back:
@@ -106,8 +106,8 @@
     - ShellBoxBF12GaugeBreaching
     - BoxMRE
     - ClothingMaskGasM40Green
-    - MagazinePistolM9
-    - MagazinePistolM9
+    - MagazinePistolGlock17
+    - MagazinePistolGlock17
     - DoubleEmergencyOxygenTankFilled
     - CrowbarRed
     - Tourniquet
