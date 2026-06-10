@@ -2,59 +2,59 @@
 #TO DO - why is kippah white not works?
 
 #human,dwarf,slime
-- type: marking
-  id: BurqaSolid
-  bodyPart: Hair
-  markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Oni, Goblin, Felinid] # Frontier: add Oni, Goblin, Felinid
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/headcovers.rsi
-    state: burqasolid
-
-- type: marking
-  id: HijabFashionable
-  bodyPart: Hair
-  markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Oni, Goblin, Felinid, Vulpkanin] # Frontier: add Oni, Goblin, Felinid, Vulpkanin
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/headcovers.rsi
-    state: hijabchic
-
-- type: marking
-  id: HijabSimple
-  bodyPart: Hair
-  markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Oni, Goblin, Felinid, Vulpkanin] # Frontier: add Oni, Goblin, Felinid, Vulpkanin
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/headcovers.rsi
-    state: hijabsimple
-
-- type: marking
-  id: Niqab
-  bodyPart: Hair
-  markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Oni, Goblin, Felinid] # Frontier: add Oni, Goblin, Felinid
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/headcovers.rsi
-    state: niqab
-
-- type: marking
-  id: TichelFashionable
-  bodyPart: Hair
-  markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Oni, Goblin, Felinid, Vulpkanin] # Frontier: add Oni, Goblin, Felinid, Vulpkanin
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/headcovers.rsi
-    state: tichelfashionable
-
-- type: marking
-  id: TichelSimple
-  bodyPart: Hair
-  markingCategory: Hair
-  speciesRestriction: [Human, Dwarf, SlimePerson, Oni, Goblin, Felinid, Vulpkanin] # Frontier: add Oni, Goblin, Felinid, Vulpkanin
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/headcovers.rsi
-    state: tichelsimple
+#- type: marking
+#  id: BurqaSolid
+#  bodyPart: Hair
+#  markingCategory: Hair
+#  speciesRestriction: [Human, Dwarf, SlimePerson, Oni, Goblin, Felinid] # Frontier: add Oni, Goblin, Felinid
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/headcovers.rsi
+#    state: burqasolid
+#
+#- type: marking
+#  id: HijabFashionable
+#  bodyPart: Hair
+#  markingCategory: Hair
+#  speciesRestriction: [Human, Dwarf, SlimePerson, Oni, Goblin, Felinid, Vulpkanin] # Frontier: add Oni, Goblin, Felinid, Vulpkanin
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/headcovers.rsi
+#    state: hijabchic
+#
+#- type: marking
+#  id: HijabSimple
+#  bodyPart: Hair
+#  markingCategory: Hair
+#  speciesRestriction: [Human, Dwarf, SlimePerson, Oni, Goblin, Felinid, Vulpkanin] # Frontier: add Oni, Goblin, Felinid, Vulpkanin
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/headcovers.rsi
+#    state: hijabsimple
+#
+#- type: marking
+#  id: Niqab
+#  bodyPart: Hair
+#  markingCategory: Hair
+#  speciesRestriction: [Human, Dwarf, SlimePerson, Oni, Goblin, Felinid] # Frontier: add Oni, Goblin, Felinid
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/headcovers.rsi
+#    state: niqab
+#
+#- type: marking
+#  id: TichelFashionable
+#  bodyPart: Hair
+#  markingCategory: Hair
+#  speciesRestriction: [Human, Dwarf, SlimePerson, Oni, Goblin, Felinid, Vulpkanin] # Frontier: add Oni, Goblin, Felinid, Vulpkanin
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/headcovers.rsi
+#    state: tichelfashionable
+#
+#- type: marking
+#  id: TichelSimple
+#  bodyPart: Hair
+#  markingCategory: Hair
+#  speciesRestriction: [Human, Dwarf, SlimePerson, Oni, Goblin, Felinid, Vulpkanin] # Frontier: add Oni, Goblin, Felinid, Vulpkanin
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/headcovers.rsi
+#    state: tichelsimple
 
 #lizard
 - type: marking

@@ -323,20 +323,6 @@
   - type: BasicEntityAmmoProvider
     proto: BulletRocketStingerMANPADSMissile
     capacity: 1
-  - type: ActivatableUI
-    key: enum.RadarConsoleUiKey.Key
-    inHandsOnly: true
-    singleUser: true
-  - type: UserInterface
-    interfaces:
-      enum.RadarConsoleUiKey.Key:
-        type: RadarConsoleBoundUserInterface
-  - type: RadarConsole
-    maxRange: 512
-    followEntity: true
-  - type: DetectionRangeMultiplier
-    infraredMultiplier: 0.5
-    visualMultiplier: 0.75
 
 # RU
 
@@ -434,12 +420,12 @@
   description: The high tech equivalent of throwing a really long spear at someone, if that person was a helicopter and the spear could heat track it.
   components:
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/Igla.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/SLONIGLA.rsi
     layers:
       - state: icon
         map: ["enum.GunVisualLayers.Base"]
   - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/Igla.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/SLONIGLA.rsi
   - type: Gun
     projectileSpeed: 8
     fireRate: 0.75
@@ -448,17 +434,3 @@
   - type: BasicEntityAmmoProvider
     proto: BulletRocketIglaMANPADSMissile
     capacity: 1
-  - type: ActivatableUI
-    key: enum.RadarConsoleUiKey.Key
-    inHandsOnly: true
-    singleUser: true
-  - type: UserInterface
-    interfaces:
-      enum.RadarConsoleUiKey.Key:
-        type: RadarConsoleBoundUserInterface
-  - type: RadarConsole
-    maxRange: 512
-    followEntity: true
-  - type: DetectionRangeMultiplier
-    infraredMultiplier: 0.5
-    visualMultiplier: 0.75

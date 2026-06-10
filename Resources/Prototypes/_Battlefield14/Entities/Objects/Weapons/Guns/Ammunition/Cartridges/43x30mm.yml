@@ -51,7 +51,6 @@
   - type: CartridgeAmmo
     proto: Bullet43x30mmThermobaricArmingDistance
 
-
 - type: entity
   id: Cartridge43x30mmChemicalSmoke
   name: cartridge (43x30mm CS gas)
@@ -66,6 +65,7 @@
     - Cartridge43x30mmGrenade
     - Grenade
   - type: CartridgeAmmo
+    deleteOnSpawn: true
     proto: Bullet43x30mmChemicalSmoke
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
