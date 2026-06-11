@@ -997,7 +997,7 @@
   - type: AccessReader
     access: [["Security"]]
   - type: MarketModifier # Frontier
-    mod: 5 # Frontier
+    mod: 0 # 5 # Frontier
   - type: PointLight
     radius: 1
     energy: 1.2
