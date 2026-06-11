@@ -419,7 +419,7 @@
   - type: Sprite
     sprite: _Battlefield14/Interface/Misc/class_icons.rsi
     layers:
-    - state: pactalllycaptain
+    - state: pactallycaptain
       scale: 1.5,1.5
 
 - type: entity
