@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 06/01/2026 15:55:53
-  entityCount: 26653
+  time: 06/11/2026 15:05:56
+  entityCount: 26656
 maps:
 - 20961
 grids:
@@ -1623,8 +1623,8 @@ entities:
     - type: SpreaderGrid
       spreadQueues:
         Kudzu: []
-        MetalFoam: []
         Puddle: []
+        MetalFoam: []
         Smoke: []
     - type: GravityShake
       shakeTimes: 10
@@ -93072,6 +93072,16 @@ entities:
       parent: 1
 - proto: CableHV
   entities:
+  - uid: 4060
+    components:
+    - type: Transform
+      pos: 180.5,220.5
+      parent: 1
+  - uid: 4061
+    components:
+    - type: Transform
+      pos: 181.5,220.5
+      parent: 1
   - uid: 24061
     components:
     - type: Transform
@@ -118097,6 +118107,13 @@ entities:
     components:
     - type: Transform
       pos: 105.5,44.5
+      parent: 1
+- proto: SpawnPointObserver
+  entities:
+  - uid: 4059
+    components:
+    - type: Transform
+      pos: 196.5,148.5
       parent: 1
 - proto: SpawnPointUSPDChief
   entities:
