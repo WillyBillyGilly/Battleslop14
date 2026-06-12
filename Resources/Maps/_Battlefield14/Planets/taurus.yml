@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 05/30/2026 08:47:00
-  entityCount: 17807
+  time: 06/11/2026 15:07:00
+  entityCount: 17808
 maps:
 - 3
 grids:
@@ -841,8 +841,8 @@ entities:
     - type: SpreaderGrid
       spreadQueues:
         Kudzu: []
-        MetalFoam: []
         Puddle: []
+        MetalFoam: []
         Smoke: []
     - type: Shuttle
       dampingModifier: 0.25
@@ -74962,6 +74962,13 @@ entities:
     components:
     - type: Transform
       pos: -57.5,-57.5
+      parent: 1
+- proto: SpawnPointObserver
+  entities:
+  - uid: 247
+    components:
+    - type: Transform
+      pos: 117.5,-87.5
       parent: 1
 - proto: SpawnPointUSPDChief
   entities:
