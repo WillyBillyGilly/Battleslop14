@@ -39,6 +39,7 @@
         startingItem: MagazineShotgunKSK
         insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
+        swap: false
         priority: 2
         whitelist:
           tags:
@@ -67,7 +68,7 @@
 
 - type: entity
   name: M26 MASS
-  parent: BaseWeaponRifle # BaseWeaponShotgun breaks the gun right now
+  parent: BaseWeaponRifle
   id: WeaponShotgunUSM26
   description: A peculiar bolt action shotgun, meant for breaching doors.
   suffix: INCOMPLETE DO NOT MAP
@@ -172,6 +173,7 @@
         startingItem: MagazineShotgunUSAS
         insertSound: /Audio/_Battlefield14/Weapons/Guns/M249/uc_m249_boxinsert.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/M249/uc_m249_boxremove.ogg
+        swap: false
         priority: 2
         whitelist:
           tags:
@@ -215,6 +217,7 @@
         startingItem: MagazineShotgunUSASDrumFrag
         insertSound: /Audio/_Battlefield14/Weapons/Guns/M249/uc_m249_boxinsert.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/M249/uc_m249_boxremove.ogg
+        swap: false
         priority: 2
         whitelist:
           tags:

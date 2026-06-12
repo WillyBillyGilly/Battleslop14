@@ -1,3 +1,4 @@
+## NATO
 # US
 - type: entity
   name: M27-IAR
@@ -33,6 +34,7 @@
         startingItem: MagazineRifleSTANAGTracerRed
         insertSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magin.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magout.ogg
+        swap: false
         priority: 2
         whitelist:
           tags:
@@ -49,8 +51,8 @@
     minAngle: -19
     maxAngle: -35
   - type: Gun
-    minAngle: 19
-    maxAngle: 50
+    minAngle: 19 # wielded = 0
+    maxAngle: 50 # wielded = 15
     angleIncrease: 0.7
     angleDecay: 16
     availableModes:
@@ -74,6 +76,54 @@
     maxOffset: 5
     pvsIncrease: 0.35
 
+# DE
+
+- type: entity
+  name: MG36
+  parent: WeaponRifleDEG36K
+  id: WeaponRifleDEMG36
+  description: A G36 with a heavier barrel, a double drum magazine (usually), and less of a tendancy to melt under sustained fire.
+  components:
+  - type: Item # Controls inhand sprites
+    sprite: _Battlefield14/Objects/Weapons/Guns/MachineGuns/MG36onmob.rsi
+    size: Large
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/MachineGuns/MG36.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/MachineGuns/MG36onmob.rsi
+  - type: GunWieldBonus
+    minAngle: -17
+    maxAngle: -24
+  - type: Gun
+    minAngle: 20 # wielded = 3
+    maxAngle: 40 # wielded = 24
+    angleIncrease: 1.5
+    projectileSpeed: 50
+    fireRate: 8
+    soundGunshot:
+      collection: BF_SCARL_Gunshots
+      params:
+        volume: -5
+        variation: 0.125
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 5
+    pvsIncrease: 0.35
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _Battlefield14/Interface/MousePointer/optics31.rsi
+      state: hensoldt
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+
+## PACT
 # RU
 
 - type: entity
@@ -123,6 +173,7 @@
         startingItem: MagazineRifleAK74blackdrumTracerGreen
         insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin_drum.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout_drum.ogg
+        swap: false
         priority: 2
         whitelist:
           tags:
