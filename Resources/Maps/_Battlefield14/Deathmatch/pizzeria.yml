@@ -4846,7 +4846,7 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
-- proto: RandomAmmoMapHighTierRU
+- proto: RandomAmmoMapHighTierUS
   entities:
   - uid: 211
     components:
@@ -4928,7 +4928,7 @@ entities:
     - type: Transform
       pos: 12.5,11.5
       parent: 1
-- proto: RandomAmmoMapLowTierRU
+- proto: RandomAmmoMapLowTierUS
   entities:
   - uid: 165
     components:
@@ -5120,7 +5120,7 @@ entities:
     - type: Transform
       pos: 17.5,-13.5
       parent: 1
-- proto: RandomAmmoMapMidTierRU
+- proto: RandomAmmoMapMidTierUS
   entities:
   - uid: 207
     components:
@@ -5386,7 +5386,7 @@ entities:
     - type: Transform
       pos: -11.5,7.5
       parent: 1
-- proto: RandomWeaponMapHighTierRU
+- proto: RandomWeaponMapHighTierUS
   entities:
   - uid: 213
     components:
@@ -5423,7 +5423,7 @@ entities:
     - type: Transform
       pos: 15.5,8.5
       parent: 1
-- proto: RandomWeaponMapLowTierRU
+- proto: RandomWeaponMapLowTierUS
   entities:
   - uid: 154
     components:
@@ -5525,7 +5525,7 @@ entities:
     - type: Transform
       pos: 19.5,-10.5
       parent: 1
-- proto: RandomWeaponMapMidTierRU
+- proto: RandomWeaponMapMidTierUS
   entities:
   - uid: 205
     components:
