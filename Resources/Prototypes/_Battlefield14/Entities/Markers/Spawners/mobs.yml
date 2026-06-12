@@ -1,0 +1,12 @@
+- type: entity
+  name: Bear5
+  id: SpawnMobBear5Hostile
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - Bear5

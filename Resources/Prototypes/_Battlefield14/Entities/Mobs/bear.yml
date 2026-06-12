@@ -1,0 +1,117 @@
+- type: entity
+  name: bear5
+  parent: [ BaseMob, MobCombat, MobDamageable ]
+  id: Bear5
+  description: You wouldnt want to know.....
+  suffix: hostile
+  components:
+  - type: LanguageKnowledge # Einstein Engines - Languages (all mobs should speak TauCeti unless otherwise specified, to prevent universal.)
+    speaks:
+    - TauCetiBasic
+    understands:
+    - TauCetiBasic
+    - Russian
+    - English
+    - Sign
+    - German
+    - Mexican
+    - Esperanto
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: alive
+      scale: "0.075, 0.075"
+      sprite: _Battlefield14/Mobs/bear.rsi
+  - type: Physics
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: HTN
+    rootTask:
+      task: SimpleHumanoidHostileCompound
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.48
+        density: 200
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: ContainerContainer
+  - type: MovementAlwaysTouching
+  - type: Tag
+    tags:
+    - FootstepSound
+    - DoorBumpOpener
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 0.75
+    baseSprintSpeed: 0.75
+    weightlessAcceleration: 2
+    weightlessFriction: 2
+    baseWeightlessModifier: 2
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+#      1000: Critical
+      5000: Dead
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: alive
+      Critical:
+        Base: dead
+      Dead:
+        Base: dead
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: BearMovement
+      params:
+        volume: 3
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      1000: 1.5
+      2000: 2
+      3000: 3
+      4000: 4
+      4500: 5.5
+      4700: 8
+      4850: 12
+      4950: 15
+  - type: SpamEmitSound
+    minInterval: 90
+    maxInterval: 180
+    sound:
+      collection: BearAmbient
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/_Battlefield14/Misc/bear/attack.ogg
+    damage:
+      types:
+        Blunt: 500
+    animation: WeaponArcFist
+  - type: Puller
+    needsHands: false
+  - type: Body
+    prototype: Aghost
+    thermalVisibility: false
+  - type: ComplexInteraction
+  - type: ZombieImmune
+  - type: NightVision
+    activateSound: null
+    deactivateSound: null
+  - type: RadarConsole
+    maxRange: 512
+    followEntity: true
+  - type: ActivatableUI
+    key: enum.RadarConsoleUiKey.Key
+    inHandsOnly: false
+    singleUser: true
+  - type: UserInterface
+    interfaces:
+      enum.RadarConsoleUiKey.Key:
+        type: RadarConsoleBoundUserInterface
+  - type: Insulated
