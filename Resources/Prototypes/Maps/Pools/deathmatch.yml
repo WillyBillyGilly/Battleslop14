@@ -2,3 +2,5 @@
   id: DeathMatchMapPool
   maps:
   - BF14DeathAsteroid # BF14
+  - BF14Pizzeria # BF14
+  - BF14SkeldBunker # BF14
