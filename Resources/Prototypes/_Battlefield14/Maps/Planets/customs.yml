@@ -19,12 +19,11 @@
           lobbySortOrder: 1
         - type: StationJobs
           availableJobs:
-            NGLieutenant: [ 1, 1 ]
-            NGSquadLeader: [ 3, 3 ]
-            NGRifleman: [ 6, 6 ]
-            NGAutomaticRifleman: [ 1, 1 ]
-            NGMedic: [ 3, 3 ]
-            NGRecon: [ 3, 3 ]
+            USMCSquadLeader: [ 3, 3 ]
+            USMCRifleman: [ 6, 6 ]
+            USMCAutomaticRifleman: [ 1, 1 ]
+            USMCMedic: [ 3, 3 ]
+            USMCRecon: [ 3, 3 ]
             VDVSquadLeader: [ 3, 3 ]
             VDVRifleman: [ 6, 6 ]
             VDVAutomaticRifleman: [ 3, 3 ]
