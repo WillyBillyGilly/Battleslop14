@@ -50,6 +50,7 @@
         startingItem: MagazineBeltBoxM249
         insertSound: /Audio/_Battlefield14/Weapons/Guns/M249/uc_m249_boxinsert.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/M249/uc_m249_boxremove.ogg
+        swap: false
         priority: 2
         whitelist:
           tags:
@@ -143,6 +144,7 @@
         startingItem: MagazineBeltBoxM240
         insertSound: /Audio/_Battlefield14/Weapons/Guns/M60/boxinsert.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/M60/boxremove.ogg
+        swap: false
         priority: 2
         whitelist:
           tags:
@@ -227,6 +229,7 @@
         startingItem: MagazineBeltBoxMK48
         insertSound: /Audio/_Battlefield14/Weapons/Guns/M249/uc_m249_boxinsert.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/M249/uc_m249_boxremove.ogg
+        swap: false
         priority: 2
         whitelist:
           tags:
@@ -310,6 +313,7 @@
         startingItem: MagazineBeltBoxMG3Short
         insertSound: /Audio/_Battlefield14/Weapons/Guns/M249/uc_m249_boxinsert.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/M249/uc_m249_boxremove.ogg
+        swap: false
         priority: 2
         whitelist:
           tags:
@@ -404,6 +408,7 @@
         startingItem: MagazineBeltBoxPKM
         insertSound: /Audio/_Battlefield14/Weapons/Guns/M249/uc_m249_boxinsert.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/M249/uc_m249_boxremove.ogg
+        swap: false
         priority: 2
         whitelist:
           tags:

@@ -59,6 +59,7 @@
         startingItem: MagazineRifleSTANAGShort
         insertSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magin.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magout.ogg
+        swap: false
         priority: 2
         whitelist:
           tags:
@@ -127,6 +128,7 @@
         startingItem: MagazineRifleSTANAG
         insertSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magin.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magout.ogg
+        swap: false
         priority: 2
         whitelist:
           tags:
@@ -177,6 +179,7 @@
         startingItem: MagazineRifleSTANAG
         insertSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magin.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magout.ogg
+        swap: false
         priority: 2
         whitelist:
           tags:
@@ -314,6 +317,7 @@
         startingItem: MagazineRifleSTANAGTracerRed
         insertSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magin.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magout.ogg
+        swap: false
         priority: 2
         whitelist:
           tags:
@@ -565,10 +569,12 @@
           path: /Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_magout.ogg
           params:
             volume: -6
+        swap: false
         priority: 2
         whitelist:
           tags:
             - MagazineRifleM14
+        whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
         startingItem: BF_CartridgeRifle762x51
@@ -640,6 +646,7 @@
         startingItem: MagazineRifleG36
         insertSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magin.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magout.ogg
+        swap: false
         priority: 2
         whitelist:
           tags:
@@ -692,7 +699,7 @@
     minAngle: 26
     maxAngle: 42
     angleIncrease: 1.5
-    projectileSpeed: 40 # Shorter barrel
+    projectileSpeed: 45
     fireRate: 6
     soundGunshot:
       collection: BF_SCARL_Gunshots
@@ -858,6 +865,7 @@
         startingItem: MagazineRifleSCARH
         insertSound: /Audio/_Battlefield14/Weapons/Guns/SCAR/magin-762.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/SCAR/magout-762.ogg
+        swap: false
         priority: 2
         whitelist:
           tags:
@@ -938,6 +946,7 @@
         startingItem: MagazineRifleG3
         insertSound: /Audio/_Battlefield14/Weapons/Guns/G3/magin.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/G3/magout.ogg
+        swap: false
         priority: 2
         whitelist:
           tags:
@@ -1116,6 +1125,7 @@
         startingItem: MagazineRifleAKM
         insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
+        swap: false
         priority: 2
         whitelist:
           tags:
@@ -1182,6 +1192,7 @@
         startingItem: MagazineRifleAK74
         insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
+        swap: false
         priority: 2
         whitelist:
           tags:
@@ -1211,7 +1222,7 @@
 
 - type: entity
   name: AKS-74u
-  parent: BaseWeaponRifle
+  parent: WeaponRifleRUAK74
   id: WeaponRifleRUAKS74U
   description: You know when they decided to bring this out? Afghanistan. Rough.
   components:
@@ -1238,48 +1249,6 @@
     availableModes:
     - SemiAuto
     - FullAuto
-    soundGunshot:
-      collection: BF_AK_545_Gunshots
-      params:
-        volume: -5
-        variation: 0.125
-  - type: ChamberMagazineAmmoProvider
-    boltClosed: null # means the bolt doesnt lock back like M16 pattern rifles, also means you need to cycle the gun after an empty mag
-    soundRack:
-      path: /Audio/_Battlefield14/Weapons/Guns/AK_GENERIC/rack.ogg
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: MagazineRifleAK74
-        insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
-        ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
-        priority: 2
-        whitelist:
-          tags:
-            - MagazineRifleAK74
-        whitelistFailPopup: gun-magazine-whitelist-fail
-      gun_chamber:
-        name: Chamber
-        startingItem: BF_CartridgeRifle545x39
-        priority: 1
-        whitelist:
-          tags:
-            - BF_CartridgeRifle545x39
-  - type: ContainerContainer
-    containers:
-      gun_magazine: !type:ContainerSlot
-      gun_chamber: !type:ContainerSlot
-  - type: MagazineVisuals
-    magState: mag
-    steps: 1
-    zeroVisible: true
-  - type: Appearance
-  - type: ExtendDescription
-    descriptionList:
-      - description: Takes AK-74 pattern magazines.
-        color: "#4f94ad"
-        requireDetailRange: true
 
 - type: entity
   name: AKS-74UB
@@ -1353,6 +1322,7 @@
         startingItem: MagazineRifleAK12
         insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
+        swap: false
         priority: 2
         whitelist:
           tags:
@@ -1402,6 +1372,7 @@
         startingItem: MagazineRifleAK12TracerGreen
         insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
+        swap: false
         priority: 2
         whitelist:
           tags:
@@ -1505,6 +1476,7 @@
         startingItem: MagazineRifleAKM
         insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
+        swap: false
         priority: 2
         whitelist:
           tags:
@@ -1554,6 +1526,7 @@
         startingItem: MagazineRifleAK203
         insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
+        swap: false
         priority: 2
         whitelist:
           tags:
@@ -1593,25 +1566,6 @@
     angleDecay: 16
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/draco.rsi
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: MagazineRifleAKM
-        insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
-        ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
-        priority: 2
-        whitelist:
-          tags:
-            - MagazineRifleAKM
-        whitelistFailPopup: gun-magazine-whitelist-fail
-      gun_chamber:
-        name: Chamber
-        startingItem: BF_CartridgeRifle762x39
-        priority: 1
-        whitelist:
-          tags:
-            - BF_CartridgeRifle762x39
   - type: Appearance
 
 - type: entity
@@ -1676,6 +1630,7 @@
         startingItem: MagazineRifleASVALShort
         insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
+        swap: false
         priority: 2
         whitelist:
           tags:
@@ -1705,7 +1660,7 @@
 
 - type: entity
   name: SR-3M
-  parent: BaseWeaponRifle
+  parent: WeaponRifleRUASVAL
   id: WeaponRifleRUSR3M
   description: Essentially a chopped down AS-VAL without a suppressor for special forces and concealed carry.
   components:
@@ -1749,6 +1704,7 @@
         startingItem: MagazineRifleASVAL
         insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
+        swap: false
         priority: 2
         whitelist:
           tags:
@@ -1761,20 +1717,6 @@
         whitelist:
           tags:
             - BF_CartridgeRifle9x39
-  - type: ContainerContainer
-    containers:
-      gun_magazine: !type:ContainerSlot
-      gun_chamber: !type:ContainerSlot
-  - type: MagazineVisuals
-    magState: mag
-    steps: 1
-    zeroVisible: true
-  - type: Appearance
-  - type: ExtendDescription
-    descriptionList:
-      - description: Takes AK-74 pattern magazines.
-        color: "#4f94ad"
-        requireDetailRange: true
 
 - type: entity
   parent: WeaponRifleRUSR3M
@@ -1841,6 +1783,7 @@
         startingItem: MagazineRifleASH12
         insertSound: /Audio/_Battlefield14/Weapons/Guns/FAL/uc_fal_magin.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/FAL/uc_fal_magout.ogg
+        swap: false
         priority: 2
         whitelist:
           tags:
