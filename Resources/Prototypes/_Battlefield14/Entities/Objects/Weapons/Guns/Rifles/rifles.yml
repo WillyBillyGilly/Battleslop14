@@ -10,7 +10,7 @@
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M16A2.rsi
   - type: Icon
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
-    state: icon-full-M16A4
+    state: icon-full-M16A1
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
     layers:
@@ -92,7 +92,7 @@
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M16A2.rsi
   - type: Icon
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
-    state: icon-full-M16A4
+    state: icon-full-M16A2
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
     layers:
@@ -165,6 +165,9 @@
       - state: rifle-length-barrel-clamshell
       - state: mag-30-0
         map: ["enum.GunVisualLayers.Mag"]
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
+    state: icon-full-M16A2
   - type: Gun
     projectileSpeed: 55 # twenty inch barrel
   - type: ItemSlots
@@ -665,23 +668,64 @@
         requireDetailRange: true
 
 - type: entity
-  name: G36C
+  name: G36
   parent: WeaponRifleDEG36K
-  id: WeaponRifleDEG36C
+  id: WeaponRifleDEG36
   description: Plastic fantastic, or plastich fantastich if you're german.. or deutsch.
   components:
   - type: Item # Controls inhand sprites
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G36c.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G36.rsi
     size: Large
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G36c.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G36.rsi
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G36c.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G36.rsi
+  - type: GunWieldBonus
+    minAngle: -24
+    maxAngle: -28
+  - type: Gun
+    minAngle: 26
+    maxAngle: 42
+    angleIncrease: 1.5
+    projectileSpeed: 40 # Shorter barrel
+    fireRate: 6
+    soundGunshot:
+      collection: BF_SCARL_Gunshots
+      params:
+        volume: -5
+        variation: 0.125
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 5
+    pvsIncrease: 0.35
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _Battlefield14/Interface/MousePointer/optics31.rsi
+      state: hensoldt
+
+- type: entity
+  name: G36C
+  parent: WeaponRifleDEG36K
+  id: WeaponRifleDEG36C
+  description: Plastic fantastic, or plastich fantastich if you're german.. or deutsch.
+  components:
+  - type: Item # Controls inhand sprites
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G36C.rsi
+    size: Large
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G36C.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G36C.rsi
   - type: GunWieldBonus
     minAngle: -24
     maxAngle: -28
