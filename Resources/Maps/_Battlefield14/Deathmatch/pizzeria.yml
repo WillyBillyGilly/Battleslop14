@@ -5262,7 +5262,7 @@ entities:
     - type: Transform
       pos: 19.5,-9.5
       parent: 1
-- proto: RandomGearMapHighTierRU
+- proto: RandomGearMapHighTierUNI
   entities:
   - uid: 234
     components:
@@ -5289,7 +5289,7 @@ entities:
     - type: Transform
       pos: 14.5,11.5
       parent: 1
-- proto: RandomGearMapMidTierRU
+- proto: RandomGearMapMidTierUNI
   entities:
   - uid: 239
     components:

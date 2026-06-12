@@ -1,3 +1,141 @@
+#### AMERICAN LOOT
+
+- type: entity
+  parent: MarkerBase
+  id: RandomWeaponMapLowTierUS
+  name: Low tier american weapon
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+        state: lowgun
+  - type: RandomSpawner
+    offset: 0.3
+    prototypes:
+      - WeaponPistolUSM1911
+      - WeaponPistolM9
+      - WeaponPistolATGlock17
+      - WeaponShotgunUSM590
+    chance: 1
+
+- type: entity
+  parent: MarkerBase
+  id: RandomWeaponMapMidTierUS
+  name: mid tier american weapon
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+        state: midgun
+  - type: RandomSpawner
+    offset: 0.3
+    prototypes:
+      - WeaponPistolILDeagle
+      - WeaponPistolATGlock17
+      - WeaponRifleUSAR15
+      - WeaponSubmachinegunUSMP5
+      - WeaponSubmachinegunUSMAC10
+      - WeaponSubmachinegunUSMAC10Supp
+      - WeaponShotgunUSM590
+      - WeaponRifleRUAKMUDraco
+      - WeaponRifleUSM14
+      - WeaponSniperUSM40A1
+    chance: 1
+
+- type: entity
+  parent: MarkerBase
+  id: RandomWeaponMapHighTierus
+  name: high tier american weapon
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+        state: highgun
+  - type: RandomSpawner
+    offset: 0.3
+    prototypes:
+      - WeaponRifleUSCAR15
+      - WeaponRifleUSAR15
+      - WeaponRifleRUAKMUDraco
+      - WeaponShotgunUSM590
+      - WeaponShotgunUSM870
+      - WeaponSniperUSM14EBR
+      - WeaponSniperUSM40A1
+      - WeaponSniperUSM40A5
+    chance: 1
+
+## AMMO
+
+- type: entity
+  parent: MarkerBase
+  id: RandomAmmoMapLowTierUS
+  name: Low tier american ammo
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+        state: lowammo
+  - type: RandomSpawner
+    offset: 0.3
+    prototypes:
+      - MagazinePistolDeagle
+      - MagazinePistolM9
+      - MagazinePistolM1911
+      - MagazinePistolGlock17
+      - ShellBoxBF12GaugeBuckshot
+      - SmokeGrenadeUSM18
+    chance: 1
+
+- type: entity
+  parent: MarkerBase
+  id: RandomAmmoMapMidTierUS
+  name: Mid tier american ammo
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+        state: midammo
+  - type: RandomSpawner
+    offset: 0.3
+    prototypes:
+      - MagazinePistolDeagle
+      - MagazinePistolGlock17
+      - MagazineBox762x51
+      - ShellBoxBF12GaugeBuckshot
+      - MagazineRifleM14
+      - MagazineRifleAKM
+      - MagazineRifleSTANAG
+      - MagazineSniperM40A5
+      - MagazineSubmachinegunMP5
+      - MagazineSubmachinegunMAC10
+      - SmokeGrenadeUSM18
+      - OffensiveGrenadeUSM67
+      - FlashbangGrenadeUSM84
+    chance: 1
+
+- type: entity
+  parent: MarkerBase
+  id: RandomAmmoMapHighTierUS
+  name: High tier american ammo
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+        state: highammo
+  - type: RandomSpawner
+    offset: 0.3
+    prototypes:
+      - ShellBoxBF12GaugeBuckshot
+      - MagazineRifleAKM
+      - MagazineRifleSTANAG
+      - MagazineSniperM40A5
+      - MagazineSubmachinegunMP5
+      - MagazineSubmachinegunMAC10
+      - FlashbangGrenadeUSM84
+      - SmokeGrenadeUSM18
+      - OffensiveGrenadeUSMK21
+    chance: 1
+#### RUSSIAN LOOT
 ## Weapons
 
 - type: entity
@@ -139,13 +277,13 @@
       - OffensiveGrenadeRURGD5
       - ImpactGrenadeRURGO
     chance: 1
-
+#### UNIVERSAL LOOT
 ## GEAR
 
 - type: entity
   parent: MarkerBase
-  id: RandomGearMapLowTierRU
-  name: Low tier russian gear
+  id: RandomGearMapLowTierUNI
+  name: Low tier universal gear
   components:
   - type: Sprite
     layers:
@@ -162,8 +300,8 @@
 
 - type: entity
   parent: MarkerBase
-  id: RandomGearMapMidTierRU
-  name: Mid tier russian gear
+  id: RandomGearMapMidTierUNI
+  name: Mid tier universal gear
   components:
   - type: Sprite
     layers:
@@ -185,8 +323,8 @@
 
 - type: entity
   parent: MarkerBase
-  id: RandomGearMapHighTierRU
-  name: High tier russian gear
+  id: RandomGearMapHighTierUNI
+  name: High tier universal gear
   components:
   - type: Sprite
     layers:
