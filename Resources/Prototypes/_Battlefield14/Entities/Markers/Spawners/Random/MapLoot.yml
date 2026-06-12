@@ -8,7 +8,7 @@
   - type: Sprite
     layers:
       - sprite: _Battlefield14/Objects/Misc/markers.rsi
-        state: lowgun
+        state: lowgunus
   - type: RandomSpawner
     offset: 0.3
     prototypes:
@@ -26,7 +26,7 @@
   - type: Sprite
     layers:
       - sprite: _Battlefield14/Objects/Misc/markers.rsi
-        state: midgun
+        state: midgunus
   - type: RandomSpawner
     offset: 0.3
     prototypes:
@@ -50,7 +50,7 @@
   - type: Sprite
     layers:
       - sprite: _Battlefield14/Objects/Misc/markers.rsi
-        state: highgun
+        state: highgunus
   - type: RandomSpawner
     offset: 0.3
     prototypes:
@@ -74,7 +74,7 @@
   - type: Sprite
     layers:
       - sprite: _Battlefield14/Objects/Misc/markers.rsi
-        state: lowammo
+        state: lowammous
   - type: RandomSpawner
     offset: 0.3
     prototypes:
@@ -94,7 +94,7 @@
   - type: Sprite
     layers:
       - sprite: _Battlefield14/Objects/Misc/markers.rsi
-        state: midammo
+        state: midammous
   - type: RandomSpawner
     offset: 0.3
     prototypes:
@@ -121,7 +121,7 @@
   - type: Sprite
     layers:
       - sprite: _Battlefield14/Objects/Misc/markers.rsi
-        state: highammo
+        state: highammous
   - type: RandomSpawner
     offset: 0.3
     prototypes:
@@ -146,7 +146,7 @@
   - type: Sprite
     layers:
       - sprite: _Battlefield14/Objects/Misc/markers.rsi
-        state: lowgun
+        state: lowgunru
   - type: RandomSpawner
     offset: 0.3
     prototypes:
@@ -165,7 +165,7 @@
   - type: Sprite
     layers:
       - sprite: _Battlefield14/Objects/Misc/markers.rsi
-        state: midgun
+        state: midgunru
   - type: RandomSpawner
     offset: 0.3
     prototypes:
@@ -188,7 +188,7 @@
   - type: Sprite
     layers:
       - sprite: _Battlefield14/Objects/Misc/markers.rsi
-        state: highgun
+        state: highgunru
   - type: RandomSpawner
     offset: 0.3
     prototypes:
@@ -212,7 +212,7 @@
   - type: Sprite
     layers:
       - sprite: _Battlefield14/Objects/Misc/markers.rsi
-        state: lowammo
+        state: lowammoru
   - type: RandomSpawner
     offset: 0.3
     prototypes:
@@ -232,7 +232,7 @@
   - type: Sprite
     layers:
       - sprite: _Battlefield14/Objects/Misc/markers.rsi
-        state: midammo
+        state: midammoru
   - type: RandomSpawner
     offset: 0.3
     prototypes:
@@ -259,7 +259,7 @@
   - type: Sprite
     layers:
       - sprite: _Battlefield14/Objects/Misc/markers.rsi
-        state: highammo
+        state: highammoru
   - type: RandomSpawner
     offset: 0.3
     prototypes:

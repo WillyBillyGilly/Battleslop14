@@ -8,22 +8,40 @@
   },
   "states": [
     {
-      "name": "lowgun"
+      "name": "lowgunus"
     },
     {
-      "name": "midgun"
+      "name": "midgunus"
     },
     {
-      "name": "highgun"
+      "name": "highgunus"
     },
     {
-      "name": "lowammo"
+      "name": "lowammous"
     },
     {
-      "name": "midammo"
+      "name": "midammous"
     },
     {
-      "name": "highammo"
+      "name": "highammous"
+    },
+    {
+      "name": "lowgunru"
+    },
+    {
+      "name": "midgunru"
+    },
+    {
+      "name": "highgunru"
+    },
+    {
+      "name": "lowammoru"
+    },
+    {
+      "name": "midammoru"
+    },
+    {
+      "name": "highammoru"
     },
     {
       "name": "lowarmor"
