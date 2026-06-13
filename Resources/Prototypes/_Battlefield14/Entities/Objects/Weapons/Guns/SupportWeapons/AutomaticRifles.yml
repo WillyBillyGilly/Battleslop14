@@ -34,7 +34,6 @@
         startingItem: MagazineRifleSTANAGTracerRed
         insertSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magin.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magout.ogg
-        swap: false
         priority: 2
         whitelist:
           tags:
@@ -86,7 +85,6 @@
   components:
   - type: Item # Controls inhand sprites
     sprite: _Battlefield14/Objects/Weapons/Guns/MachineGuns/MG36onmob.rsi
-    size: Large
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/MachineGuns/MG36.rsi
     layers:

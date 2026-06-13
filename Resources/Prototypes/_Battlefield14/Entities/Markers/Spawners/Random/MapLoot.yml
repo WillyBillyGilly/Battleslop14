@@ -1,9 +1,9 @@
-#### AMERICAN LOOT
+#### NATO LOOT
 
 - type: entity
   parent: MarkerBase
-  id: RandomWeaponMapLowTierUS
-  name: Low tier american weapon
+  id: RandomWeaponMapLowTierNATO
+  name: Low tier NATO weapon
   components:
   - type: Sprite
     layers:
@@ -20,6 +20,146 @@
 
 - type: entity
   parent: MarkerBase
+  id: RandomWeaponMapMidTierNATO
+  name: mid tier NATO weapon
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+        state: midgunus
+  - type: RandomSpawner
+    offset: 0.3
+    prototypes:
+      - WeaponPistolATGlock17
+      - WeaponPistolBEFiveSeven
+      - WeaponRifleUSAR15
+      - WeaponSubmachinegunUSMP5
+      - WeaponSubmachinegunUSMAC10
+      - WeaponSubmachinegunUSMAC10Supp
+      - WeaponRifleUSM16A2
+      - WeaponShotgunUSM590
+      - WeaponShotgunUSM870
+      - WeaponRifleUSM14
+      - WeaponSniperUSM40A1
+    chance: 1
+
+- type: entity
+  parent: MarkerBase
+  id: RandomWeaponMapHighTierNATO
+  name: high tier NATO weapon
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+        state: highgunus
+  - type: RandomSpawner
+    offset: 0.3
+    prototypes:
+      - WeaponRifleBESCARH
+      - WeaponRifleBESCARL
+      - WeaponRifleDEG3A3
+      - WeaponRifleDEG36
+      - WeaponRifleUSM16A4
+      - WeaponShotgunUSM870
+      - WeaponSubmachinegunDEMP7
+    chance: 1
+
+## AMMO
+
+- type: entity
+  parent: MarkerBase
+  id: RandomAmmoMapLowTierNATO
+  name: Low tier NATO ammo
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+        state: lowammous
+  - type: RandomSpawner
+    offset: 0.3
+    prototypes:
+      - MagazinePistolM9
+      - MagazinePistolM1911
+      - MagazinePistolGlock17
+      - ShellBoxBF12GaugeBuckshot
+      - SmokeGrenadeUSM18
+    chance: 1
+
+- type: entity
+  parent: MarkerBase
+  id: RandomAmmoMapMidTierNATO
+  name: Mid tier NATO ammo
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+        state: midammous
+  - type: RandomSpawner
+    offset: 0.3
+    prototypes:
+      - MagazinePistolGlock17
+      - MagazinePistolFiveSeven
+      - MagazineBox762x51
+      - MagazineBox556x45
+      - ShellBoxBF12GaugeBuckshot
+      - MagazineRifleM14
+      - MagazineRifleSTANAG
+      - MagazineRifleG36
+      - MagazineSubmachinegunMP5
+      - MagazineSubmachinegunMAC10
+      - SmokeGrenadeUSM18
+      - DefensiveGrenadeUSM67
+      - FlashbangGrenadeUSM84
+    chance: 1
+
+- type: entity
+  parent: MarkerBase
+  id: RandomAmmoMapHighTierNATO
+  name: High tier NATO ammo
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+        state: highammous
+  - type: RandomSpawner
+    offset: 0.3
+    prototypes:
+      - ShellBoxBF12GaugeBuckshot
+      - MagazineBox762x51
+      - MagazineBox556x45
+      - MagazineRifleSTANAG
+      - MagazineRifleG36
+      - MagazineRifleG3
+      - MagazineRifleSCARH
+      - MagazineSubmachinegunMP5
+      - MagazineSubmachinegunMAC10
+      - FlashbangGrenadeUSM84
+      - SmokeGrenadeUSM18
+      - OffensiveGrenadeUSMK21
+    chance: 1
+
+#### AMERICAN LOOT
+
+- type: entity
+  parent: MarkerBase
+  id: RandomWeaponMapLowTierUS
+  name: Low tier american weapon
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _Battlefield14/Objects/Misc/markers.rsi
+        state: lowgunus
+  - type: RandomSpawner
+    offset: 0.3
+    prototypes:
+      - WeaponPistolUSM1911
+      - WeaponPistolM9
+      - WeaponPistolUSMK27
+      - WeaponShotgunUSM590
+    chance: 1
+
+- type: entity
+  parent: MarkerBase
   id: RandomWeaponMapMidTierUS
   name: mid tier american weapon
   components:
@@ -31,20 +171,21 @@
     offset: 0.3
     prototypes:
       - WeaponPistolILDeagle
-      - WeaponPistolATGlock17
+      - WeaponPistolUSMK27
       - WeaponRifleUSAR15
       - WeaponSubmachinegunUSMP5
       - WeaponSubmachinegunUSMAC10
       - WeaponSubmachinegunUSMAC10Supp
       - WeaponShotgunUSM590
-      - WeaponRifleRUAKMUDraco
+      - WeaponShotgunUSM870
+      - WeaponRifleUSM16A1
       - WeaponRifleUSM14
       - WeaponSniperUSM40A1
     chance: 1
 
 - type: entity
   parent: MarkerBase
-  id: RandomWeaponMapHighTierus
+  id: RandomWeaponMapHighTierUS
   name: high tier american weapon
   components:
   - type: Sprite
@@ -54,11 +195,12 @@
   - type: RandomSpawner
     offset: 0.3
     prototypes:
-      - WeaponRifleUSCAR15
-      - WeaponRifleUSAR15
-      - WeaponRifleRUAKMUDraco
-      - WeaponShotgunUSM590
+      - WeaponRifleUSM4A1
+      - WeaponRifleUSM4A1ACOG
+      - WeaponRifleUSM16A2
+      - WeaponRifleUSM16A4
       - WeaponShotgunUSM870
+      - WeaponRifleUSM14
       - WeaponSniperUSM14EBR
       - WeaponSniperUSM40A1
       - WeaponSniperUSM40A5
@@ -101,15 +243,15 @@
       - MagazinePistolDeagle
       - MagazinePistolGlock17
       - MagazineBox762x51
+      - MagazineBox556x45
       - ShellBoxBF12GaugeBuckshot
       - MagazineRifleM14
-      - MagazineRifleAKM
       - MagazineRifleSTANAG
       - MagazineSniperM40A5
       - MagazineSubmachinegunMP5
       - MagazineSubmachinegunMAC10
       - SmokeGrenadeUSM18
-      - OffensiveGrenadeUSM67
+      - DefensiveGrenadeUSM67
       - FlashbangGrenadeUSM84
     chance: 1
 
@@ -126,7 +268,8 @@
     offset: 0.3
     prototypes:
       - ShellBoxBF12GaugeBuckshot
-      - MagazineRifleAKM
+      - MagazineBox762x51
+      - MagazineBox556x45
       - MagazineRifleSTANAG
       - MagazineSniperM40A5
       - MagazineSubmachinegunMP5
@@ -200,6 +343,7 @@
       - WeaponRifleRUOPSKS
       - WeaponSniperRUVPO215
       - WeaponSniperRUMagpulMosin
+      - WeaponPistolRevolverRUMP412
     chance: 1
 
 ## AMMO
@@ -264,6 +408,7 @@
     offset: 0.3
     prototypes:
       - ShellBoxBF12GaugeBuckshot
+      - MagazineBox545x39
       - MagazineBox762x39
       - MagazineRifleAKM
       - MagazineRifleAK74
@@ -272,11 +417,13 @@
       - MagazineSubmachinegunPPSh
       - MagazineSubmachinegunKedr
       - MagazineSubmachinegunVityaz
+      - SpeedLoader357magnum
       - FlashbangGrenadeRUZarya
       - SmokeGrenadeRURDG
       - OffensiveGrenadeRURGD5
       - ImpactGrenadeRURGO
     chance: 1
+
 #### UNIVERSAL LOOT
 ## GEAR
 
