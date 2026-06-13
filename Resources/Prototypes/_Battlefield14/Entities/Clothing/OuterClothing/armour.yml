@@ -175,7 +175,7 @@
   suffix: Kevlar insert
 
 - type: entity
-  parent: ClothingOuterArmorWebVestSecEmpty
+  parent: ClothingOuterArmorPlateCarrierBlack
   id: ClothingOuterArmorSurplusVestUNEmpty
   name: UN plate carrier
   description: A outdated plate carrier given out to UN troopers.
