@@ -502,6 +502,37 @@
     nameSegments: [names_AR15_police]
 
 - type: entity
+  name: AR-15
+  parent: WeaponRifleUSM4
+  id: WeaponRifleUSAR15
+  description: The original rifle that started the M16 and M4 family of rifles, nowadways most western made guns copy it.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: carryhandle
+      - state: stock-adjustable
+      - state: carbine-length-barrel-clamshell
+      - state: mag-30-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: GunWieldBonus
+    minAngle: -24
+    maxAngle: -27
+  - type: Gun
+    minAngle: 26
+    maxAngle: 40
+    angleIncrease: 1
+    projectileSpeed: 40 # Shorter barrel
+    fireRate: 5
+    availableModes:
+    - SemiAuto
+    selectedMode: SemiAuto
+
+- type: entity
   name: M14
   parent: [BaseWeaponRifle, BaseGunWieldable]
   id: WeaponRifleUSM14
