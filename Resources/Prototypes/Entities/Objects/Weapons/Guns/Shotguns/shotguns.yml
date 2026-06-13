@@ -12,6 +12,8 @@
   - type: Item
     # If you update this also update the bulldog's size.
     size: Large
+    shape:
+    - 0,0,3,2
   - type: Clothing
     sprite: Objects/Weapons/Guns/Shotguns/db_shotgun.rsi
     quickEquip: false

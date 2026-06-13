@@ -7,8 +7,6 @@
   components:
   - type: Item
     size: Large
-    shape:
-    - 0,0,3,1
     sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/M870.rsi
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/M870.rsi
@@ -94,9 +92,6 @@
   description: A russian made pump-action shotgun. The RMB-93 is quite a unique piece of equipment with its barrel being placed bellow the magazine tube and its pumping action reversed.
   components:
   - type: Item
-    size: Large
-    shape:
-    - 0,0,3,1
     sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/rmb93.rsi
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/rmb93.rsi
@@ -135,9 +130,6 @@
   description: A russian made pump-action shotgun, used by russians for hunting.
   components:
   - type: Item
-    size: Large
-    shape:
-    - 0,0,3,1
     sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/mp133.rsi
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/mp133.rsi
@@ -214,7 +206,6 @@
   description: Special Purpose Automatic Shotgun; tried to rebrand into a Sporting purpose (automatic shotgun) to get around the assault weapons ban, which didn't work. # Comes with a handy claw for firing one handed
   components:
   - type: Item
-    size: Huge
     sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/spas12.rsi
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/spas12.rsi

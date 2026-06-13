@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 06/11/2026 15:05:56
-  entityCount: 26656
+  time: 06/13/2026 01:34:31
+  entityCount: 26674
 maps:
 - 20961
 grids:
@@ -1622,10 +1622,10 @@ entities:
       id: BF14Springfield
     - type: SpreaderGrid
       spreadQueues:
-        Kudzu: []
+        Smoke: []
         Puddle: []
         MetalFoam: []
-        Smoke: []
+        Kudzu: []
     - type: GravityShake
       shakeTimes: 10
     - type: GasTileOverlay
@@ -100940,6 +100940,23 @@ entities:
     - type: Transform
       pos: 244.5,157.5
       parent: 1
+- proto: ClothingHeadHatHelmetSurplus
+  entities:
+  - uid: 4062
+    components:
+    - type: Transform
+      pos: 170.29655,222.69882
+      parent: 1
+  - uid: 4063
+    components:
+    - type: Transform
+      pos: 170.29655,222.58417
+      parent: 1
+  - uid: 4118
+    components:
+    - type: Transform
+      pos: 170.30698,222.4695
+      parent: 1
 - proto: ClothingHeadHelmetRiot
   entities:
   - uid: 33513
@@ -100959,6 +100976,16 @@ entities:
       parent: 1
 - proto: ClothingHelmetAttachmentHelmetCamera
   entities:
+  - uid: 4119
+    components:
+    - type: Transform
+      pos: 176.5674,224.57513
+      parent: 1
+  - uid: 4134
+    components:
+    - type: Transform
+      pos: 176.66115,224.65852
+      parent: 1
   - uid: 33018
     components:
     - type: Transform
@@ -100980,18 +101007,6 @@ entities:
     components:
     - type: Transform
       pos: 170.5,221.5
-      parent: 1
-- proto: ClothingOuterArmorWebVestSec
-  entities:
-  - uid: 33522
-    components:
-    - type: Transform
-      pos: 170.3159,222.59286
-      parent: 1
-  - uid: 33523
-    components:
-    - type: Transform
-      pos: 170.3159,222.49846
       parent: 1
 - proto: CMPlatform
   entities:
@@ -111428,6 +111443,45 @@ entities:
       rot: 4.71238898038469 rad
       pos: 185.5,219.5
       parent: 1
+- proto: RandomAmmoMapLowTierNATO
+  entities:
+  - uid: 4064
+    components:
+    - type: Transform
+      pos: 106.5,173.5
+      parent: 1
+  - uid: 4104
+    components:
+    - type: Transform
+      pos: 222.5,151.5
+      parent: 1
+  - uid: 4116
+    components:
+    - type: Transform
+      pos: 88.5,149.5
+      parent: 1
+  - uid: 4120
+    components:
+    - type: Transform
+      pos: 60.5,173.5
+      parent: 1
+- proto: RandomAmmoMapMidTierUS
+  entities:
+  - uid: 4102
+    components:
+    - type: Transform
+      pos: 222.5,150.5
+      parent: 1
+  - uid: 4136
+    components:
+    - type: Transform
+      pos: 98.5,173.5
+      parent: 1
+  - uid: 4137
+    components:
+    - type: Transform
+      pos: 95.5,169.5
+      parent: 1
 - proto: RandomDrinkGlass
   entities:
   - uid: 27764
@@ -116253,6 +116307,13 @@ entities:
     - type: Transform
       pos: 176.5,176.5
       parent: 1
+- proto: RandomGearMapLowTierUNI
+  entities:
+  - uid: 4135
+    components:
+    - type: Transform
+      pos: 99.5,170.5
+      parent: 1
 - proto: RandomSnacks
   entities:
   - uid: 31812
@@ -116440,6 +116501,55 @@ entities:
     components:
     - type: Transform
       pos: 189.5,212.5
+      parent: 1
+- proto: RandomWeaponMapLowTierNATO
+  entities:
+  - uid: 4101
+    components:
+    - type: Transform
+      pos: 230.5,154.5
+      parent: 1
+  - uid: 4103
+    components:
+    - type: Transform
+      pos: 222.5,148.5
+      parent: 1
+  - uid: 4105
+    components:
+    - type: Transform
+      pos: 222.5,147.5
+      parent: 1
+  - uid: 4108
+    components:
+    - type: Transform
+      pos: 109.5,175.5
+      parent: 1
+  - uid: 4117
+    components:
+    - type: Transform
+      pos: 88.5,151.5
+      parent: 1
+  - uid: 4121
+    components:
+    - type: Transform
+      pos: 63.5,175.5
+      parent: 1
+- proto: RandomWeaponMapMidTierUS
+  entities:
+  - uid: 4106
+    components:
+    - type: Transform
+      pos: 228.5,147.5
+      parent: 1
+  - uid: 4107
+    components:
+    - type: Transform
+      pos: 222.5,149.5
+      parent: 1
+  - uid: 4138
+    components:
+    - type: Transform
+      pos: 95.5,172.5
       parent: 1
 - proto: RandomWeaponNATOUSLauncher
   entities:
@@ -117502,6 +117612,25 @@ entities:
     components:
     - type: Transform
       pos: 178.5,156.5
+      parent: 1
+- proto: ShellBoxBF12GaugeBuckshot
+  entities:
+  - uid: 4114
+    components:
+    - type: Transform
+      pos: 218.41487,157.54462
+      parent: 1
+  - uid: 4139
+    components:
+    - type: Transform
+      pos: 218.53987,157.73225
+      parent: 1
+- proto: ShellBoxBF12GaugeSlug
+  entities:
+  - uid: 4115
+    components:
+    - type: Transform
+      pos: 217.34195,157.49251
       parent: 1
 - proto: ShuttersNormalOpen
   entities:
@@ -122042,6 +122171,11 @@ entities:
       parent: 1
 - proto: TableWood
   entities:
+  - uid: 4109
+    components:
+    - type: Transform
+      pos: 106.5,173.5
+      parent: 1
   - uid: 21851
     components:
     - type: Transform
@@ -122351,11 +122485,6 @@ entities:
     components:
     - type: Transform
       pos: 169.5,174.5
-      parent: 1
-  - uid: 30207
-    components:
-    - type: Transform
-      pos: 106.5,173.5
       parent: 1
   - uid: 30431
     components:
@@ -136613,41 +136742,6 @@ entities:
     components:
     - type: Transform
       pos: 177.5,224.5
-      parent: 1
-- proto: WeaponPistolBEFiveSeven
-  entities:
-  - uid: 32981
-    components:
-    - type: Transform
-      pos: 230.5,154.5
-      parent: 1
-- proto: WeaponPistolFlintlock
-  entities:
-  - uid: 32982
-    components:
-    - type: Transform
-      pos: 222.5,148.5
-      parent: 1
-- proto: WeaponPistolM9
-  entities:
-  - uid: 32916
-    components:
-    - type: Transform
-      pos: 222.5,150.5
-      parent: 1
-- proto: WeaponRifleRUAKMUDraco
-  entities:
-  - uid: 32917
-    components:
-    - type: Transform
-      pos: 222.5,149.5
-      parent: 1
-- proto: WeaponRifleUSAR15Police
-  entities:
-  - uid: 32914
-    components:
-    - type: Transform
-      pos: 228.5,147.5
       parent: 1
 - proto: WeaponRifleUSM16A1
   entities:
