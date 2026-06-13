@@ -2,7 +2,7 @@
 # US
 
 - type: entity
-  name: deagle
+  name: desert eagle
   parent: BaseWeaponPistol
   id: WeaponPistolILDeagle
   description: The deagle, a well known and very impractical handgun. Chambered in the large .50 Action express it packs a punch.
@@ -15,11 +15,11 @@
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
-    minAngle: 0
+    minAngle: 5
     maxAngle: 15
-    angleIncrease: 2
-    angleDecay: 10
-    fireRate: 3
+    angleIncrease: 5
+    angleDecay: 6
+    fireRate: 5
     projectileSpeed: 30
     availableModes:
     - SemiAuto
@@ -65,7 +65,7 @@
   - type: Appearance
 
 - type: entity
-  name: silver deagle
+  name: silver desert eagle
   parent: WeaponPistolILDeagle
   id: WeaponPistolILDeagleSilver
   description: The deagle, a well known and very impractical handgun. Chambered in the large .50 Action express it packs a punch. This one has a silver finish.

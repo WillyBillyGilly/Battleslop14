@@ -202,9 +202,9 @@
         amount: 4
     - name: Loose rounds
       entries:
-      - id: MagazineBox556x45Big
+      - id: MagazineBox545x39Big
         amount: 2
-      - id: MagazineBox556x45
+      - id: MagazineBox545x39
         amount: 5
       - id: MagazineBox762x39Big
         amount: 2

@@ -49,7 +49,6 @@
         startingItem: Magazine68x52mmCaseless # NOT BF14
         insertSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagIn/m16_magin.ogg
         ejectSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagOut/skm_magout.ogg
-        swap: false
         priority: 2
         whitelist:
           tags:
@@ -125,7 +124,6 @@
         startingItem: Magazine68x52mmCaselessBig # NOT BF14
         insertSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magin.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magout.ogg
-        swap: false
         priority: 2
         whitelist:
           tags:
@@ -196,7 +194,6 @@
         startingItem: MagazineRifleAK203
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
-        swap: false
         priority: 2
         whitelist:
           tags:
