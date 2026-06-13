@@ -59,7 +59,6 @@
         startingItem: MagazineRifleSTANAGShort
         insertSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magin.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magout.ogg
-        swap: false
         priority: 2
         whitelist:
           tags:
@@ -128,7 +127,6 @@
         startingItem: MagazineRifleSTANAG
         insertSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magin.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magout.ogg
-        swap: false
         priority: 2
         whitelist:
           tags:
@@ -179,7 +177,6 @@
         startingItem: MagazineRifleSTANAG
         insertSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magin.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magout.ogg
-        swap: false
         priority: 2
         whitelist:
           tags:
@@ -317,7 +314,6 @@
         startingItem: MagazineRifleSTANAGTracerRed
         insertSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magin.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magout.ogg
-        swap: false
         priority: 2
         whitelist:
           tags:
@@ -569,7 +565,6 @@
           path: /Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_magout.ogg
           params:
             volume: -6
-        swap: false
         priority: 2
         whitelist:
           tags:
@@ -646,7 +641,6 @@
         startingItem: MagazineRifleG36
         insertSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magin.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magout.ogg
-        swap: false
         priority: 2
         whitelist:
           tags:
@@ -865,7 +859,6 @@
         startingItem: MagazineRifleSCARH
         insertSound: /Audio/_Battlefield14/Weapons/Guns/SCAR/magin-762.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/SCAR/magout-762.ogg
-        swap: false
         priority: 2
         whitelist:
           tags:
@@ -946,7 +939,6 @@
         startingItem: MagazineRifleG3
         insertSound: /Audio/_Battlefield14/Weapons/Guns/G3/magin.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/G3/magout.ogg
-        swap: false
         priority: 2
         whitelist:
           tags:
@@ -1125,7 +1117,6 @@
         startingItem: MagazineRifleAKM
         insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
-        swap: false
         priority: 2
         whitelist:
           tags:
@@ -1192,7 +1183,6 @@
         startingItem: MagazineRifleAK74
         insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
-        swap: false
         priority: 2
         whitelist:
           tags:
@@ -1322,7 +1312,6 @@
         startingItem: MagazineRifleAK12
         insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
-        swap: false
         priority: 2
         whitelist:
           tags:
@@ -1372,7 +1361,6 @@
         startingItem: MagazineRifleAK12TracerGreen
         insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
-        swap: false
         priority: 2
         whitelist:
           tags:
@@ -1476,7 +1464,6 @@
         startingItem: MagazineRifleAKM
         insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
-        swap: false
         priority: 2
         whitelist:
           tags:
@@ -1526,7 +1513,6 @@
         startingItem: MagazineRifleAK203
         insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
-        swap: false
         priority: 2
         whitelist:
           tags:
@@ -1630,7 +1616,6 @@
         startingItem: MagazineRifleASVALShort
         insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
-        swap: false
         priority: 2
         whitelist:
           tags:
@@ -1704,7 +1689,6 @@
         startingItem: MagazineRifleASVAL
         insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
-        swap: false
         priority: 2
         whitelist:
           tags:
@@ -1783,7 +1767,6 @@
         startingItem: MagazineRifleASH12
         insertSound: /Audio/_Battlefield14/Weapons/Guns/FAL/uc_fal_magin.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/FAL/uc_fal_magout.ogg
-        swap: false
         priority: 2
         whitelist:
           tags:
