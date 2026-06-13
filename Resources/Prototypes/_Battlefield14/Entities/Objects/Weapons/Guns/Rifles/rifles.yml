@@ -923,7 +923,6 @@
   components:
   - type: Item # Controls inhand sprites
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G36.rsi
-    size: Large
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G36.rsi
     layers:

@@ -85,7 +85,6 @@
   components:
   - type: Item # Controls inhand sprites
     sprite: _Battlefield14/Objects/Weapons/Guns/MachineGuns/MG36onmob.rsi
-    size: Large
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/MachineGuns/MG36.rsi
     layers:

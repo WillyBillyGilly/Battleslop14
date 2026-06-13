@@ -398,28 +398,29 @@
   id: JobRUScav
   groups:
   - BF_HeadCivilianRU
+  - BF_CombatMasks
   - BF_JumpsuitsCivilianRU
   - BF_OuterCivilianRU
+  - BF_WPSGloves
   - BF_ShoesCivilian
   - BF_MiscItemsIND
   - ContractorWallet
-  - BF_CombatMasks
 
 - type: roleLoadout
   id: JobRUScavGuard
   groups:
+  - BF_CombatMasks
+  - BF_WPSGloves
   - BF_MiscItemsIND
   - ContractorWallet
-  - BF_WPSGloves
-  - BF_CombatMasks
 
 - type: roleLoadout
   id: JobRUScavBoss
   groups:
+  - BF_CombatMasks
+  - BF_WPSGloves
   - BF_MiscItemsIND
   - ContractorWallet
-  - BF_WPSGloves
-  - BF_CombatMasks
 
 # WPS
 
@@ -460,5 +461,6 @@
   groups:
   - BF_JumpsuitsCivilianUS
   - BF_ShoesCivilian
+  - BF_WPSGloves
   - BF_MiscItemsIND
   - ContractorWallet
