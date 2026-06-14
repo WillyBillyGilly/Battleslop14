@@ -195,7 +195,7 @@
   components:
   - type: Tag
     tags:
-      - MagazineBeltBoxPKM
+      - MagazineBeltRP46
   - type: Item
     size: Normal
     shape:
