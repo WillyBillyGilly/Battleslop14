@@ -11,6 +11,50 @@
 
 - type: entity
   parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitTracksuitRed
+  name: red tracksuit
+  description: A black tracksuit. This is what a peasant gopnik wears.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/redtrack.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/redtrack.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitTracksuitBlue
+  name: blue tracksuit
+  description: A blue tracksuit. This is what a lesser gopnik wears.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/bluetrack.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/bluetrack.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitTracksuitBlack
+  name: black tracksuit
+  description: A black tracksuit. This is what a true gopnik wears.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/blacktrack.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/blacktrack.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitClerk
+  name: clerk attire
+  description: Blue jeans, white shirt, and a brown leather vest. Something the local koisk clerk would wear.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/clerk.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/clerk.rsi
+
+- type: entity
+  parent: ClothingUniformBase
   id: ClothingUniformJumpsuitDealer
   name: dealer attire
   description: Black pants, black hoodie just like what a drug dealer would wear.

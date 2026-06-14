@@ -7,6 +7,9 @@
   maxLimit: 1
   loadouts:
   - LoadoutHeadHatPompon
+  - LoadoutHeadHatUshanka
+  - LoadoutHeadHatTrackUshanka
+  - LoadoutHeadHatCabbie
 
 - type: loadoutGroup
   id: BF_VDVHead
@@ -126,6 +129,10 @@
   - LoadoutUniformJumpsuitWorker
   - LoadoutUniformJumpsuitMechanic
   - LoadoutUniformJumpsuitEngineer
+  - LoadoutUniformJumpsuitClerk
+  - LoadoutUniformJumpsuitTracksuitBlack
+  - LoadoutUniformJumpsuitTracksuitBlue
+  - LoadoutUniformJumpsuitTracksuitRed
 
 - type: loadoutGroup
   id: BF_JumpsuitsCivilianUS

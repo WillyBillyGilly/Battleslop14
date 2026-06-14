@@ -33,3 +33,30 @@
       !type:RoleTimeRequirement
       role: JobVDVSquadLeader
       time: 25200 # 7 hrs
+
+- type: loadoutEffectGroup
+  id: BF_RU_CIV_Gopnik1
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobRUScav
+      time: 5400 # 1.5 hrs
+
+- type: loadoutEffectGroup
+  id: BF_RU_CIV_Gopnik2
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobRUScav
+      time: 10800 # 3 hrs
+
+- type: loadoutEffectGroup
+  id: BF_RU_CIV_Gopnik3
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobRUScav
+      time: 21600 # 6 hrs

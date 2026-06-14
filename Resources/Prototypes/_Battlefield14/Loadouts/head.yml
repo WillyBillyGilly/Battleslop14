@@ -1,4 +1,25 @@
 - type: loadout
+  id: LoadoutHeadHatCabbie
+  equipment:
+    head: ClothingHeadHatCabbie
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: BF_RU_CIV_Gopnik3
+
+- type: loadout
+  id: LoadoutHeadHatTrackUshanka
+  equipment:
+    head: ClothingHeadHatTrackUshanka
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: BF_RU_CIV_Gopnik3
+
+- type: loadout
+  id: LoadoutHeadHatUshanka
+  equipment:
+    head: ClothingHeadHatUshankaBF
+
+- type: loadout
   id: LoadoutHeadHatPompon
   equipment:
     head: ClothingHeadHatPompon

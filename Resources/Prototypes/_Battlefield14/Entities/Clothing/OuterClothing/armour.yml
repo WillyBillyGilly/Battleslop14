@@ -96,6 +96,17 @@
         volume: -7
 
 - type: entity
+  parent: ClothingOuterArmorBase
+  id: ClothingOuterArmorTrackPlateCarrierHeavy
+  name: heavy ballistic vest
+  description: A standard issue armor vest for "mission essential" personell, cannot take plates. This one has painted on white stripes and a large middle finger on the chest.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/OuterClothing/Armor/trackheavycarrier.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/OuterClothing/Armor/trackheavycarrier.rsi
+
+- type: entity
   parent: [ClothingOuterArmorBase, ClothingArmorPlate]
   id: ClothingOuterArmorBasicPlateCarrierEmpty
   name: basic plate carrier
